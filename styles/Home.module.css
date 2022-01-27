@@ -8,6 +8,14 @@
 }
 
 .main h1 {
-	margin-top: -59px;
+	margin-top: -60px;
 }
+
+
+@media only screen and (min-width: 795px) {
+	.main {
+		height: -50px;
+	}
+}
+
 
