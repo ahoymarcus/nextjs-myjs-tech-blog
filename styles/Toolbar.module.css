@@ -1,0 +1,19 @@
+.main {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5e34752; /*#f5e34770;*/
+}
+
+.main div {
+	margin: 25px;
+	cursor: pointer;
+}
+
+.main div:hover {
+	color: rgb(168, 168, 168);
+}
+
+

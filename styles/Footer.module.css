@@ -1,7 +1,7 @@
 /* FOOTER */
 .footer { 
 	color: black; 
-	background-color: #f5e347b8; /*#ffe5ca; #c7bf7a; #589a58; */
+	background-color: #f5e34770; /*#ffe5ca; #c7bf7a; #589a58; */
 	font-size: 1.2rem; 
 	/*padding: 10px; */
 }
@@ -11,7 +11,7 @@
 	font-weight: 800; 
 	text-align: end; 
 	font-size: 1.2rem; 
-	padding: 8px 15px;
+	padding: 0px 15px;
 	/*margin-bottom: 5px; */
 }
 

@@ -7,14 +7,15 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 // components
-import Footer from '../components/Footer';
+import { Toolbar } from '../components/Toolbar';
+import { Footer } from '../components/Footer';
 
 
 
 
 export default function Home() {
   return (
-    <div className={styles.pageContainer}>
+    <div className="page-container">
       <Head>
 				<title>JS Tech Blog</title>
 				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
@@ -22,11 +23,13 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
+			<Toolbar />
+			
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					JavaScript News Blog
 				</h1>
-				<h3>Your one stop shop for the some awesome JavaScript news and technical information</h3>
+				<h3>Your one stop news for JavaScript and web development information</h3>
 			</main>
 			
 			<Footer />
