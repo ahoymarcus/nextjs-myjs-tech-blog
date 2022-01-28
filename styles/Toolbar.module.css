@@ -1,33 +1,24 @@
-/*.main {
-	width: 100%;
-	height: 70px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-color: #f5e34752; 
+.main {
+	background-color: #f5e34752;
 }
-
-.main div {
-	margin: 5px 25px;
-	cursor: pointer;
-}
-
-.main div:hover {
-	color: rgb(168, 168, 168);
-}*/
 
 .navHeader {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem;
+	padding: 0.8rem;
 }
 
+.navHeader .jsIconContainer {
+	color: #c08585;
+	font-weight: bold;
+}
 .navHeader span {
-	font-size: 1.3rem;
+	color: black;
+	font-size: 3rem;
 	font-weight: bold;
 	text-shadow: 2px 2px #f5e34796;
+	padding-left: 1rem;
 }
 
 .navToggle {
@@ -48,13 +39,14 @@
 	font-size: 1rem;
 	text-transform: capitalize;
 	letter-spacing: 0.1rem;
-	display: block;
 	padding: 0.5rem 1rem;
 	transition: all 0.3s linear;	
+	display: block;
 }
 .links a:hover {
-	background: #f5e34736;
-	color: hsl(205, 78%, 60%);
+	background: #f5e3470f;
+	color: #c08585;
+	font-weight: bold;
 	padding-left: 1.5rem;
 }
 
@@ -73,26 +65,22 @@
 }
 
 
-/*
-@media only screen and (min-width: 795px) {
-	.main {
-		height: 50px;
-	}
-}*/
 
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 942px) {
   .main {
-    max-width: 1170px;
-    margin: 0 auto;
+    /*max-width: 1170px;*/
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.8rem;
   }
   .navHeader {
     padding: 0;
   }
+	.navHeader span {
+		/*padding: 0;*/
+	}
   .navToggle {
     display: none;
   }
@@ -103,6 +91,7 @@
     display: flex;
   }
   .links a {
+		transition: 0s;
     padding: 0;
     margin: 0 0.5rem;
   }
@@ -122,5 +111,36 @@
     color: hsl(205, 90%, 76%);
   }
 }
+
+
+@media only screen and (min-width: 980px) {
+	.main {
+		/*padding-top: 0.8rem;
+		padding-bottom: 0.8rem;*/
+	}
+	.navHeader span {
+		padding-left: 1.5rem;
+		/*font-size: 2.6rem;*/
+	}
+}
+
+
+@media only screen and (min-width: 1040px) {
+	.main {
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		padding-left: 1.4rem;
+		padding-right: 1.4rem; 
+	}
+	.navHeader span {
+		padding-left: 1.8rem;
+		font-size: 3.6rem;
+	}
+	.socialIcons {
+		padding-right: 1.4rem;
+	}
+}
+
+
 
 

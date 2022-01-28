@@ -11,6 +11,10 @@
 	margin-top: -60px;
 }
 
+.main h3 {
+	text-align: center;
+}
+
 
 @media only screen and (min-width: 795px) {
 	.main {

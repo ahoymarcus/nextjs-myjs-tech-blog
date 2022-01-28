@@ -29,7 +29,7 @@ export default function Home() {
 				<h1 className={styles.title}>
 					JavaScript News Blog
 				</h1>
-				<h3>Your one stop news for JavaScript and web development information</h3>
+				<h3>Your one stop news for JavaScript and Web Development information</h3>
 			</main>
 			
 			<Footer />

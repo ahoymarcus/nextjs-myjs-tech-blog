@@ -21,11 +21,31 @@ export const Toolbar = () => {
 	
 	console.log(showLinks);
 	
+	/*
+		É necessário guardar também o valor do container externo.....
+	*/
+	const linksContainerRef = useRef(null);
+	const linksItemRef = useRef(null);
+	
+	
+	useEffect(() => {
+		console.log(linksItemRef.current.getBoundingClientRect());
+		const linksHeight = linksItemRef.current.getBoundingClientRect().height;
+		
+		
+		if (showLinks) {
+			linksContainerRef.current.style.height = `${linksHeight + 15}px`;
+		} else {
+			linksContainerRef.current.style.height = '0px';
+		}
+	}, [showLinks]);
+	
+	
 	
 	return (
 		<nav className={styles.main}>
 			<div className={styles.navHeader}>
-				<span>JS NEWS</span>
+				<div className={styles.jsIconContainer}><span >JS</span> NEWS</div>
 				<button 
 					className={styles.navToggle}
 					onClick={() => setShowLinks(!showLinks)}
@@ -33,14 +53,20 @@ export const Toolbar = () => {
 					<FaBars />
 				</button>
 			</div>
-			<div className={`${styles.linksContainer} ${showLinks ? styles.showContainer : ''}`}>
-				<ul className={styles.links}>
+			<div 
+				className={styles.linksContainer}
+				ref={linksContainerRef}
+			>
+				<ul 
+					className={styles.links}
+					ref={linksItemRef}
+				>
 					{links.map((link) => {
 						const { id, url, text } = link;
 						
 						return (
 							<li key={id}>
-								<Link href={`${url}/1`}>
+								<Link href={text === 'home' ? url : `${url}/1`}>
 									<a>{text}</a>
 								</Link>
 							</li>
