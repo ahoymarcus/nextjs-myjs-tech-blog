@@ -33,21 +33,23 @@ export const Toolbar = () => {
 					<FaBars />
 				</button>
 			</div>
-			<div className={`${styles.linksContainer} ${showLinks ? styles.showContainer : ''}`}>
-				<ul className={styles.links}>
-					{links.map((link) => {
-						const { id, url, text } = link;
-						
-						return (
-							<li key={id}>
-								<Link href={`${url}/1`}>
-									<a>{text}</a>
-								</Link>
-							</li>
-						);
-					})}	
-				</ul>
-			</div>
+			{showLinks && (
+				<div className={`${styles.linksContainer} ${styles.showContainer}`}>
+					<ul className={styles.links}>
+						{links.map((link) => {
+							const { id, url, text } = link;
+							
+							return (
+								<li key={id}>
+									<Link href={`${url}/1`}>
+										<a>{text}</a>
+									</Link>
+								</li>
+							);
+						})}	
+					</ul>
+				</div>
+			)}
 			<ul className={styles.socialIcons}>
 				{social.map((link) => {
 					const { id, url, icon } = link;

@@ -80,3 +80,47 @@
 	}
 }*/
 
+
+@media screen and (min-width: 800px) {
+  .main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .navHeader {
+    padding: 0;
+  }
+  .navToggle {
+    display: none;
+  }
+  .linksContainer {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .socialIcons {
+    display: flex;
+  }
+  .socialIcons a {
+    margin: 0 0.5rem;
+    color: hsl(205, 78%, 60%);
+    transition: all 0.3s linear;
+  }
+  .socialIcons a:hover {
+    color: hsl(205, 90%, 76%);
+  }
+}
+
+
