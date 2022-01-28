@@ -15,7 +15,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className="page-container">
+    <div className={styles.main}>
       <Head>
 				<title>JS Tech Blog</title>
 				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
@@ -23,15 +23,10 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
-			
-			
-			
-				<h1 className={styles.title}>
-					JavaScript News Blog
-				</h1>
-				<h3>Your one stop news for JavaScript and Web Development information</h3>
-			
-			
+			<h1 className={styles.title}>
+				JavaScript News Blog
+			</h1>
+			<h3>Your one stop news for JavaScript and Web Development information</h3>
 			
     </div> 
   )

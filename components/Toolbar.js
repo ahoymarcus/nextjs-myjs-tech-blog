@@ -13,6 +13,7 @@ import { FaBars } from 'react-icons/fa';
 
 
 
+const disabledLinks = ['news', 'vanilla-js', 'node-js', 'databases'];
 
 export const Toolbar = () => {
 	const router = useRouter();
@@ -67,7 +68,7 @@ export const Toolbar = () => {
 						return (
 							<li key={id}>
 								<Link href={text === 'home' ? url : `${url}/1`}>
-									<a>{text}</a>
+									<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
 								</Link>
 							</li>
 						);

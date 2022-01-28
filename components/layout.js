@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Toolbar />
-			<main className={styles.main}>
+			<main className={styles.pageContainer}>
 				{children}
 			</main>
 			<Footer />

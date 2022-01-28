@@ -49,6 +49,10 @@
 	font-weight: bold;
 	padding-left: 1.5rem;
 }
+.disabled {
+	cursor: not-allowed;
+	color: rgb(179, 179, 179);
+}
 
 .socialIcons {
 	display: none;
