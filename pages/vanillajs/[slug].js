@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-export default function JavascriptArticles() {
+export default function VanillajsArticles() {
 
 
 	return(
 		<div>
-			javascript
+			vanillajs
 		</div>
 	);
 };
