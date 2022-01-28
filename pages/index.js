@@ -7,8 +7,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 // components
-import { Toolbar } from '../components/Toolbar';
-import { Footer } from '../components/Footer';
+//import { Toolbar } from '../components/Toolbar';
+//import { Footer } from '../components/Footer';
 
 
 
@@ -23,16 +23,16 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
-			<Toolbar />
 			
-			<main className={styles.main}>
+			
+			
 				<h1 className={styles.title}>
 					JavaScript News Blog
 				</h1>
 				<h3>Your one stop news for JavaScript and Web Development information</h3>
-			</main>
 			
-			<Footer />
+			
+			
     </div> 
   )
 }
