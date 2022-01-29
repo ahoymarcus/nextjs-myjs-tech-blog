@@ -7,8 +7,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 // components
-//import { Toolbar } from '../components/Toolbar';
-//import { Footer } from '../components/Footer';
+
+// resources
+import webDevImg from '../public/images/web-development-image-medium.png';
 
 
 
@@ -28,6 +29,15 @@ export default function Home() {
 			</h1>
 			<h3>Your one stop news for JavaScript and Web Development information</h3>
 			
+			<div className={styles.image}>
+				<Image 
+					
+					src={webDevImg} 
+					alt="Imagem de uma tela de notebook" 
+					width={647}
+					height={324}
+				/>
+			</div>
     </div> 
   )
 }
