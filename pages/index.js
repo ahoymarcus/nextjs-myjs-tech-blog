@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Head>
-				<title>JS Tech Blog</title>
+				<title>JS News Blog</title>
 				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
 				
 				<link rel="icon" href="/favicon.ico" />

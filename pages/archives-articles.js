@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 // styles
-import styles from '../styles/ArticlesPage.module.css';
+import styles from '../styles/ArticlesListPage.module.css';
 
 // components
 import { ArticlesList } from '../components/ArticlesList';
@@ -45,7 +45,7 @@ export default function ArchivesArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>JS Tech Blog</title>
+				<title>Articles Archive - JS News Blog</title>
 				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
