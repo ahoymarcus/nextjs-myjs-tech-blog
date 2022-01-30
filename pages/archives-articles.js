@@ -5,7 +5,10 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 // styles
-import styles from '../styles/Reactjs.module.css';
+import styles from '../styles/ArticlesPage.module.css';
+
+// components
+import { ArticlesList } from '../components/ArticlesList';
 
 // articles data
 import { getSortedPostsData } from '../lib/posts'
@@ -54,30 +57,17 @@ export default function ArchivesArticles({ allPostsData }) {
 			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
 		
 			<section className={styles.postsSection}>
-				{currentArticles.map(({ id, date, title, description, subject }) => {
+				{currentArticles.map((article) => {
 					counter += 1;
 					
-					if (query.param !== subject) {
+					if (query.param !== article.subject) {
 						console.log(query.param === subject);
 						
 						return null;
 					}
 					
 					return (
-						<div key={id} className={styles.postContainer}>
-							<article className={styles.post}>
-								<h4>{title}</h4>
-								<br />
-								<p>{description}</p>
-								<br />
-								<p>{date}</p>
-							</article>
-							{counter !== numberOfCurrentPosts ? (
-								<div className={styles.lineBraker}></div>
-							) : (
-								null
-							)}
-						</div>
+						<ArticlesList key={article.id} {...article} counter={counter} numberOfCurrentPosts={numberOfCurrentPosts} />	
 					);
 				})}
 			</section>

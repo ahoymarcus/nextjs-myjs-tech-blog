@@ -1,0 +1,29 @@
+.main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f5e34736;
+	padding: 0 1rem;
+}
+
+.main h1 {
+	margin-top: 60px;
+}
+
+.main h3 {
+	text-align: center;
+	margin: 20px 0 80px 0;
+}
+
+.image {
+	margin-bottom: 100px;
+}
+
+.postsSection {
+	width: 650px;
+	margin-bottom: 200px;
+}
+
+
