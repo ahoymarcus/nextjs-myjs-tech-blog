@@ -13,14 +13,15 @@ import { FaBars } from 'react-icons/fa';
 
 
 
-const disabledLinks = ['news', 'vanilla-js', 'node-js', 'databases', 'archives'];
+//const disabledLinks = ['news', 'vanilla-js', 'node-js', 'databases', 'archives'];
+const disabledLinks = ['test'];
 
 export const Toolbar = () => {
 	const router = useRouter();
 	
 	const [ showLinks, setShowLinks ] = useState(false);
 	
-	console.log(showLinks);
+	//console.log(showLinks);
 	
 	/*
 		É necessário guardar também o valor do container externo.....
@@ -67,12 +68,30 @@ export const Toolbar = () => {
 						
 						return (
 							<li key={id}>
-								<Link href={text === 'home' ? url : `${url}`}>
+								<Link 
+									href={{
+										pathname: url, 
+										query: { routeParam: url } 
+									}}
+								>
 									<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
 								</Link>
 							</li>
 						);
-					})}	
+					})}
+					{/*links.map((link) => {
+						const { id, url, text } = link;
+						
+						return (
+							<li 
+								key={id}
+								onClick={() => router.push(url)}
+							>
+								<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
+								
+							</li>
+						);
+					})*/}						
 				</ul>
 			</div>
 			<ul className={styles.socialIcons}>

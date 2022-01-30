@@ -11,8 +11,9 @@ import { getSortedPostsData } from '../lib/posts'
 
 
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {	
 	const allPostsData = getSortedPostsData()
+	
 	
 	return {
 		props: {
@@ -59,13 +60,10 @@ export default function ReactjsArticles({ allPostsData }) {
 							) : (
 								null
 							)}
-						
 						</div>
 					);
 				})}
-				
 			</section>
-			
 		</div>
   );
 };
