@@ -1,10 +1,11 @@
 ---
 title: 'High Order Components'
 date: '2022-01-29'
+description: 'According to the site from Reactjs.org, a high order component, or HOC, is a pattern used for reuse components logics across many ordinaire components.'
 ---
 # High Order Components    
 
-According to the site from Reactjs.org, a high order component, or HOC, is a pattern used for reuse components logics across many ordinaire components.   
+According to the site Reactjs.org, a high order component, or HOC, is a pattern used for reuse components logics across many ordinaire components.   
 
 In concrete terms, they are a kind of component that receives other component as parameter, then applies the reusable logic to it and return the 'enhanced' component at the end.    
 

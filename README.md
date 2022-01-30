@@ -24,7 +24,7 @@ Dependências:
 
 - Next-JS
 - React-JS
-
+- Gray-matter
 
 
 <br />

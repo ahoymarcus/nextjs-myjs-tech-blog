@@ -23,7 +23,7 @@ export async function getStaticProps() {
 
 
 export default function ReactjsArticles({ allPostsData }) {
-	const { title, id, date } = allPostsData;
+	
 	
 	
   return (
@@ -39,22 +39,21 @@ export default function ReactjsArticles({ allPostsData }) {
 				React-JS and Next-JS articles
 			</h1>
 			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
-			
-			<section >
-				<ul className={styles.postContainer}>
-					{allPostsData.map(({ id, date, title }) => (
-						<li 
-							key={id}
-							className={styles.post}
-						>
-							{title}
-							<br />
-							{id}
-							<br />
-							{date}
-						</li>
-					))}
-				</ul>
+		
+			<section className={styles.postContainer}>
+				{allPostsData.map(({ id, date, title, description }) => (
+					<article 
+						key={id}
+						className={styles.post}
+					>
+						<h4>{title}</h4>
+						<br />
+						<p>{description}</p>
+						<br />
+						<p>{date}</p>
+					</article>
+				))}
+				
 			</section>
 			
 		</div>

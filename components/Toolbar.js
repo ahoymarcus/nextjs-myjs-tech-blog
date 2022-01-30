@@ -13,7 +13,7 @@ import { FaBars } from 'react-icons/fa';
 
 
 
-const disabledLinks = ['news', 'vanilla-js', 'node-js', 'databases'];
+const disabledLinks = ['news', 'vanilla-js', 'node-js', 'databases', 'archives'];
 
 export const Toolbar = () => {
 	const router = useRouter();
