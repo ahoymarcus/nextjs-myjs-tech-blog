@@ -12,6 +12,7 @@
 .navHeader .jsIconContainer {
 	color: #c08585;
 	font-weight: bold;
+	cursor: pointer;
 }
 .navHeader span {
 	color: black;

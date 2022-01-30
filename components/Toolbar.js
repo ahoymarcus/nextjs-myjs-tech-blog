@@ -47,7 +47,17 @@ export const Toolbar = () => {
 	return (
 		<nav className={styles.main}>
 			<div className={styles.navHeader}>
-				<div className={styles.jsIconContainer}><span >JS</span> NEWS</div>
+				<div 
+					className={styles.jsIconContainer}
+				>
+					<Link href="/">
+						<div>
+						<span >JS</span>
+						NEWS
+						</div>
+					</Link> 
+					
+				</div>
 				<button 
 					className={styles.navToggle}
 					onClick={() => setShowLinks(!showLinks)}

@@ -22,8 +22,20 @@
 }
 
 .postsSection {
-	width: 650px;
-	margin-bottom: 200px;
+	width: 100%;
+	margin-bottom: 250px;
 }
 
+@media only screen and (min-width: 700px) {
+	.postsSection {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.postsSection {
+		width: 70%;
+		
+	}
+}
 
