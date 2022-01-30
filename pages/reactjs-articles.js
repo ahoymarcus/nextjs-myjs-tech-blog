@@ -23,7 +23,8 @@ export async function getStaticProps() {
 
 
 export default function ReactjsArticles({ allPostsData }) {
-	
+	const numberOfPosts = allPostsData.length;
+	let counter = 0;
 	
 	
   return (
@@ -40,19 +41,28 @@ export default function ReactjsArticles({ allPostsData }) {
 			</h1>
 			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
 		
-			<section className={styles.postContainer}>
-				{allPostsData.map(({ id, date, title, description }) => (
-					<article 
-						key={id}
-						className={styles.post}
-					>
-						<h4>{title}</h4>
-						<br />
-						<p>{description}</p>
-						<br />
-						<p>{date}</p>
-					</article>
-				))}
+			<section className={styles.postsSection}>
+				{allPostsData.map(({ id, date, title, description }) => {
+					counter += 1;
+					
+					return (
+						<div key={id} className={styles.postContainer}>
+							<article className={styles.post}>
+								<h4>{title}</h4>
+								<br />
+								<p>{description}</p>
+								<br />
+								<p>{date}</p>
+							</article>
+							{counter !== numberOfPosts ? (
+								<div className={styles.lineBraker}></div>
+							) : (
+								null
+							)}
+						
+						</div>
+					);
+				})}
 				
 			</section>
 			
