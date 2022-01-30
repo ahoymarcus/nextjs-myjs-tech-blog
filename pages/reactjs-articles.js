@@ -4,41 +4,29 @@ import React from 'react';
 import Head from 'next/head';
 
 // styles
-import styles from '../../styles/Reactjs.module.css';
+import styles from '../styles/Reactjs.module.css';
 
 // articles data
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getSortedPostsData } from '../lib/posts'
 
 
 
-
-export async function getStaticPaths() {
-	const paths = getAllPostIds();
-	
-	console.log(paths);
-	
+export async function getStaticProps() {
+	const allPostsData = getSortedPostsData()
 	
 	return {
-		paths,
-		fallback: false
+		props: {
+			allPostsData
+		}
 	};
 };
 
 
-export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id)
-  return {
-    props: {
-      postData
-    }
-  }
-};
-
-
-export default function ReactjsArticle({ postData }) {
-	const { title, id, date } = postData;
-
-	return(
+export default function ReactjsArticles({ allPostsData }) {
+	const { title, id, date } = allPostsData;
+	
+	
+  return (
 		<div className={styles.main}>
       <Head>
 				<title>JS Tech Blog</title>
@@ -52,20 +40,26 @@ export default function ReactjsArticle({ postData }) {
 			</h1>
 			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
 			
-			<section>
-				<ul>
-					<li>
-						{title}
-						<br />
-						{id}
-						<br />
-						{date}
-					</li>
+			<section >
+				<ul className={styles.postContainer}>
+					{allPostsData.map(({ id, date, title }) => (
+						<li 
+							key={id}
+							className={styles.post}
+						>
+							{title}
+							<br />
+							{id}
+							<br />
+							{date}
+						</li>
+					))}
 				</ul>
 			</section>
 			
 		</div>
-	);
+  );
 };
+
 
 

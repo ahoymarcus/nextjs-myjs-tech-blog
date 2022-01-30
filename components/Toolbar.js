@@ -67,7 +67,7 @@ export const Toolbar = () => {
 						
 						return (
 							<li key={id}>
-								<Link href={text === 'home' ? url : `${url}/1`}>
+								<Link href={text === 'home' ? url : `${url}`}>
 									<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
 								</Link>
 							</li>
