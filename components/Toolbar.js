@@ -71,7 +71,7 @@ export const Toolbar = () => {
 								<Link 
 									href={{
 										pathname: url, 
-										query: { routeParam: url } 
+										query: { param: url.slice(1) }
 									}}
 								>
 									<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>

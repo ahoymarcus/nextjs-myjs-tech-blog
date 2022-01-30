@@ -1,6 +1,7 @@
 ---
 title: 'Next Attraction'
 date: '2022-00-00'
+subject: 'all'
 description: 'Soon a new presentation just around the block.'
 ---
 # Next Attraction    
