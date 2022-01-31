@@ -8,7 +8,7 @@ My personal blog with articles and informations about JavaScript and Web Develop
 <br />
 
 
-- [my Next-JS Blog App em Vercel](https://nextjs-weather-app-dun.vercel.app/)
+- [my Next-JS Blog App em Vercel](https://nextjs-myjs-tech-blog.vercel.app/)
 
 
 <br />
