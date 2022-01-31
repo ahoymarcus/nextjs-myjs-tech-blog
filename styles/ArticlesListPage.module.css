@@ -17,6 +17,14 @@
 	margin: 20px 0 80px 0;
 }
 
+.main h4 {
+	cursor: pointer;
+}
+.main h4:hover {
+	color: #c08585;
+}
+
+
 .image {
 	margin-bottom: 100px;
 }

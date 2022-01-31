@@ -43,6 +43,9 @@ export const Toolbar = () => {
 	}, [showLinks]);
 	
 	
+	console.log(links);
+	
+	
 	
 	return (
 		<nav className={styles.main}>
@@ -74,39 +77,26 @@ export const Toolbar = () => {
 					ref={linksItemRef}
 				>
 					{links.map((link) => {
-						const { id, url, text } = link;
+						const { id, staticUrl, text } = link;
 						
 						return (
 							<li key={id}>
 								<Link 
 									href={{
-										pathname: url, 
-										query: { param: url.slice(1) }
+										pathname: staticUrl, 
+										query: { param: staticUrl.slice(1) }
 									}}
 								>
 									<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
 								</Link>
 							</li>
 						);
-					})}
-					{/*links.map((link) => {
-						const { id, url, text } = link;
-						
-						return (
-							<li 
-								key={id}
-								onClick={() => router.push(url)}
-							>
-								<a className={disabledLinks.includes(text) ? styles.disabled : ""}>{text}</a>
-								
-							</li>
-						);
-					})*/}						
+					})}			
 				</ul>
 			</div>
 			<ul className={styles.socialIcons}>
-				{social.map((link) => {
-					const { id, url, icon } = link;
+				{social.map((socialLink) => {
+					const { id, url, icon } = socialLink;
 					
 					return (
 						<li key={id}>
@@ -118,13 +108,6 @@ export const Toolbar = () => {
 				})}			
 			</ul>
 			
-			{/*<div onClick={() => router.push('/')}>Home</div>
-			<div onClick={() => router.push('/news/1')}>News</div>
-			<div onClick={() => router.push('/javascript/1')}>JavaScript</div>
-			<div onClick={() => router.push('/reactjs/1')}>React-JS</div>
-			<div onClick={() => router.push('/nodejs/1')}>Node-JS</div>
-			<div onClick={() => router.push('/databases/1')}>Banco de Dados</div>
-			<div onClick={() => router.push('/archives/1')}>Archives</div>*/}
 		</nav>
 	);
 };

@@ -13,7 +13,7 @@
 	text-align: center;
 }
 
-.area1 { grid-area: area1; }
+.area1 { grid-area: area1; color: #c08585; }
 .area2 { grid-area: area2; }
 .area3 { grid-area: area3; }
 .area4 { grid-area: area4; margin-top: 10px;}
@@ -40,7 +40,7 @@
 	background-color: white;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	padding: 20px;
+	padding: 30px;
 	margin-bottom: 40px;
 	width: 90%;
 	text-align: center;

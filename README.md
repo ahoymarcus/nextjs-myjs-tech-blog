@@ -28,6 +28,7 @@ Dependências:
 - Gray-matter
 - Remark
 - Remark-html
+- Date-fns
 
 
 

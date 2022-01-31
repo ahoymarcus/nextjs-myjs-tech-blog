@@ -9,6 +9,8 @@ import styles from '../../styles/ArticleSinglePage.module.css';
 // articles data
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
+// components
+import Date from '../../components/date';
 
 
 
@@ -23,7 +25,7 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }) {
-	const postData = getPostData(params.id);
+	const postData = await getPostData(params.id);
 	
 	return {
 		props: {
@@ -57,7 +59,7 @@ export default function ReactjsArticle({ postData }) {
 				</div>
 				<div className={styles.area3}>
 					<h4>Date:</h4>
-					<p>{date}</p>
+					<p><Date dateString={postData.date} /></p>
 				</div>
 				<div className={styles.area4}>
 					<hr></hr>
@@ -68,15 +70,7 @@ export default function ReactjsArticle({ postData }) {
 			</aside>
 			
 			<section className={styles.articleSection}>
-				<ul>
-					<li className={styles.title}>
-						{title}
-						<br />
-						{id}
-						<br />
-						{date}
-					</li>
-				</ul>
+				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 			</section>
 			
 		</div>

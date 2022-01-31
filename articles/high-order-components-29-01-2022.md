@@ -6,6 +6,7 @@ description: 'According to the site from Reactjs.org, a high order component, or
 ---
 # High Order Components    
 
+
 According to the site Reactjs.org, a high order component, or HOC, is a pattern used for reuse components logics across many ordinaire components.   
 
 In concrete terms, they are a kind of component that receives other component as parameter, then applies the reusable logic to it and return the 'enhanced' component at the end.    
@@ -14,7 +15,7 @@ In this particular sense, it is possible to see that as components, HOCs vary fr
 
 One common example in the use of this patter would be to create a general layout that is shared between many components in a app.     
 
-![styling with HOCs](/public/images/articles/frontend/grid-layout-example.png)    
+![styling with HOCs](/public/images/grid-layout-example.png)    
    
 So, in a simple implementation, some dev could have a couple of components to be rendered across the application, just like a Navbar and a Footer, and hard code them in each page of the app.   
 
@@ -23,15 +24,15 @@ Though, it is easy to see that this solution brings a lot of duplication of code
 Now, with the help of HOCs, we can wrap of the desired component and inject the intended logic, and return a enhanced version of it to be finally rendered by the app.     
 
     
-## Advantages    
+### Advantages    
 
 - The advantages of using this kind of pattern comes through the fact that HOCs are like 'pure functions', as they just receives the necessary parameters and enhances the component through the composition of all the special logic in it, returning a enhanced component at the end.    
 
-		In this kind of composition, neither the HOC needs to know how these special logics works, but just to apply it in the component, nor the components need to know from hence thse especial logics come by.     
+	In this kind of composition, neither the HOC needs to know how these special logics works, but just to apply it in the component, nor the components need to know from hence thse especial logics come by.     
 
 - Another advantage from the use of the HOC pattern is the possibility to apply more than one transformation to a component in a chain of HOCs.    
 
-## An Example from Next.js    
+### An Example from Next.js    
 
 Layout.js   
      
@@ -74,10 +75,10 @@ At the above code, we have a basic layout that renders a Toolbar and a Footer, b
 Thats the reason for the {children} object there in the code, and it is the function of the HOC component to insert each and all the correct components and their props to be rendered in each case.
     
     
-## References        
+### References  
 
-1. [High Order Components - Reactjs.org] (https://pt-br.reactjs.org/docs/higher-order-components.html)       
-2. [Pure Functions - Geeksforgeeks.org](https://www.geeksforgeeks.org/pure-functions/)      
+[High Order Components - Reactjs.org](https://pt-br.reactjs.org/docs/higher-order-components.html)           
+[Pure Functions - Geeksforgeeks.org](https://www.geeksforgeeks.org/pure-functions/)      
 
 
 

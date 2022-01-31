@@ -1,21 +1,41 @@
 import React from 'react';
+import Link from 'next/link';
 
 // styles
 import styles from '../styles/ArticlesListComponent.module.css';
 
+// components
+import Date from '../components/date';
+
+import { links } from '../lib/links.js';
 
 
-export const ArticlesList = ({ title, description, date, counter, numberOfCurrentPosts }) => {
+
+
+export const ArticlesList = ({ id, title, description, date, subject, counter, numberOfCurrentPosts }) => {
 	console.log(counter, numberOfCurrentPosts);
+	
+	
+	console.log('subject = ', `/${subject}`);
+
+	const itemLinks = links.filter(link => {
+		if (link.staticUrl === `/${subject}`) {
+			return link;
+		}
+	});
+	
+	console.log(itemLinks);
+	const dynamicUrl = itemLinks[0].dynamicUrl;
+	
 	
 	return (
 		<div className={styles.postContainer}>
 			<article className={styles.post}>
-				<h4>{title}</h4>
+				<Link href={`${dynamicUrl}/${id}`}><h4>{title}</h4></Link>
 				<br />
 				<p>{description}</p>
 				<br />
-				<p>{date}</p>
+				<p><Date dateString={date} /></p>
 			</article>
 			{counter !== numberOfCurrentPosts ? (
 				<div className={styles.lineBraker}></div>
