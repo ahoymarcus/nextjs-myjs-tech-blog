@@ -1,5 +1,3 @@
-// https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
-// /reactjs/high-order-components-29-01-2022
 import React from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
@@ -9,6 +7,7 @@ import styles from '../styles/ArticlesListPage.module.css';
 
 // components
 import { ArticlesList } from '../components/ArticlesList';
+import Date from '../components/date';
 
 // articles data
 import { getSortedPostsData } from '../lib/posts'
@@ -27,7 +26,7 @@ export async function getStaticProps(context) {
 };
 
 
-export default function VanillajsArticles({ allPostsData }) {
+export default function ReactjsArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
@@ -45,7 +44,7 @@ export default function VanillajsArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>Vanilla JavaScript Articles - JS News Blog</title>
+				<title>Vanilla-JS Articles - JS News Blog</title>
 				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
 				
 				<link rel="icon" href="/favicon.ico" />

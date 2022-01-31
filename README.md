@@ -3,15 +3,7 @@
 
 <br />
 
-Our one stop for the some awesome JavaScript news and technical information.
-
-<br />
-
-A:
-
-
-
-
+My personal blog with articles and informations about JavaScript and Web Development.
 
 <br />
 
@@ -35,25 +27,25 @@ Dependências:
 <br />
 
 
-### I:
+### Imagem da Home page do JS News Blog:
 
-![Imagem da Home Page do Weather App](/public/images/)
-
-
-<br />
-
-
-### I:
-
-![Imagem do sistema de pesquisa do app](/public/images/)
+![Imagem da Home Page do Blog App](/public/images/nextjs-myjs-tech-blog-01.png)
 
 
 <br />
 
 
-### I:
+### Imagem da rota com a lista dos artigos para React-JS:
 
-![Imagem da página de uma cidade para o Weather App](/public/images/)
+![Imagem da rota com a lista dos artigos para React-JS](/public/images/nextjs-myjs-tech-blog-02.png)
+
+
+<br />
+
+
+### Imagem da rota de um artigo do blog:
+
+![Imagem da página de uma cidade para o Weather App](/public/images/nextjs-myjs-tech-blog-03.png)
 
 
 
