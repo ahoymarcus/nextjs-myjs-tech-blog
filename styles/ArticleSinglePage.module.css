@@ -53,17 +53,18 @@
 }
 
 .articleSection h3 {
-	margin: 80px 0px 20px;
+	margin: 80px 0px 0px;
 	font-size: 1.4rem;
 }
 
 .articleSection p {
-	margin: 0px 0px 25px;
+	font-size: 1.2rem;
+	margin: 50px 0px 50px;
 	line-height: 1.4rem;
 }
 
 .articleSection img {
-	margin: 80px 0px 80px;
+	margin: 45px 0px 45px;
 	
 }
 
@@ -78,14 +79,24 @@
 }
 
 .articleSection pre {
-	margin: 0px 0px 80px;
-	width: 90%;
+	margin: auto;
+	padding: 40px;
+	width: 85%;
 	overflow-x: auto;
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: hsl(209deg 9% 27%);
+	background-color: #f5e34736;
+}
+.articleSection code {
+	margin: 0px 0px 80px;
+	
 }
 
-.articleSection code {
-	
-	
+
+.articleSection strong {
+	margin-top: 30px;
 }
 
 

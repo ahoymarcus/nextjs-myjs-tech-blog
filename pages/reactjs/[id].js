@@ -6,11 +6,11 @@ import Head from 'next/head';
 // styles
 import styles from '../../styles/ArticleSinglePage.module.css';
 
-// articles data
-import { getAllPostIds, getPostData } from '../../lib/posts';
-
 // components
 import Date from '../../components/date';
+
+import { getAllPostIds, getPostData } from '../../lib/posts';
+
 
 
 

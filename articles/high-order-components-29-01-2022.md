@@ -13,14 +13,14 @@ In concrete terms, they are a kind of component that receives other component as
 
 In this particular sense, it is possible to see that as components, HOCs vary from other components, in the sense that it does not deal with transforming props into UI, like it is the common behavory for a component.   
 
-One common example in the use of this patter would be to create a general layout that is shared between many components in a app.     
+One common example in the use of this patter would be to create a general layout that is shared between many components in a app, avoiding the unnecessary that duplication of code and all the complexities related to it.   
+    
 
-![styling with HOCs](/grid-layout-example.png)    
+![styling with HOCs](/images/articles/frontend/grid-layout-example.png)    
    
-So, in a simple implementation, some dev could have a couple of components to be rendered across the application, just like a Navbar and a Footer, and hard code them in each page of the app.   
+So, as can be seem in the picture, a application could have a simple implementation where some generic components, like a Navbar and a Footer, could be inserted into the renderization of others components across the whole application, preventing the stress of hard coding the same functionality over and over again.    
 
-Though, it is easy to see that this solution brings a lot of duplication of code and a lot of complexities to a app.     
-
+     
 Now, with the help of HOCs, we can wrap of the desired component and inject the intended logic, and return a enhanced version of it to be finally rendered by the app.     
 
     
@@ -34,41 +34,55 @@ Now, with the help of HOCs, we can wrap of the desired component and inject the 
 
 ### An Example from Next.js    
 
-**Layout.js**    
-      
-```
+       
+
+Import to the layout component the two generic functionalities to be displayed across the application pages:   
+  
+  	
+#### Layout.js  	 
+```     
 import { Toolbar } from './Toolbar';
 import { Footer } from './Footer';
+```   
 
-export default function Layout({ children }) {
-	
-	
-	return (
-		<>
-			<Toolbar />
-			<main className={styles.pageContainer}>
-				{children}
-			</main>
-			<Footer />
-		</>
-	);
-};
-```     
+Then, the layout is exported to be used wrap the ordinaire components that need to display a Toolbar and a Footer:   
     
-  
-**HOC.js**    
-       
-```
-// imports the layout component
-import Layout from '../components/layout';
-
-export defalt function MyApp({ Component, pageProps }) {
+```    
+function Layout({ children }) {
   return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
-	);
+    <>
+      <Toolbar />
+      <main>
+        {children}
+      </main>
+      <Footer />
+    </>
+  );
+};
+export default Layout;
+```        
+ 
+
+Then, importing both the Layout created and the desired component into the High Order Component: 
+ 
+    
+#### HighOrderComponent.js 
+ 
+```
+import Layout from '../components/layout';
+```
+	 
+Finally, wrapping the the generic component in the Layout tag to be returned by HOC:	 
+	 
+```    
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
+export defalt MyApp;
 ```     
       
 At the above code, we have a basic layout that renders a Toolbar and a Footer, but it lacks the main component logic that will be changing depending of the actual component it will be rendering. 
