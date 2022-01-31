@@ -26,16 +26,16 @@ Now, with the help of HOCs, we can wrap of the desired component and inject the 
     
 ### Advantages    
 
-- The advantages of using this kind of pattern comes through the fact that HOCs are like 'pure functions', as they just receives the necessary parameters and enhances the component through the composition of all the special logic in it, returning a enhanced component at the end.    
+1. The advantages of using this kind of pattern comes through the fact that HOCs are like 'pure functions', as they just receives the necessary parameters and enhances the component through the composition of all the special logic in it, returning a enhanced component at the end.    
 
-	In this kind of composition, neither the HOC needs to know how these special logics works, but just to apply it in the component, nor the components need to know from hence thse especial logics come by.     
+	1.1. In this kind of composition, neither the HOC needs to know how these special logics works, but just to apply it in the component, nor the components need to know from hence thse especial logics come by.     
 
-- Another advantage from the use of the HOC pattern is the possibility to apply more than one transformation to a component in a chain of HOCs.    
+2. Another advantage from the use of the HOC pattern is the possibility to apply more than one transformation to a component in a chain of HOCs.    
 
 ### An Example from Next.js    
 
-Layout.js   
-     
+**Layout.js**    
+      
 ```
 import { Toolbar } from './Toolbar';
 import { Footer } from './Footer';
@@ -55,9 +55,10 @@ export default function Layout({ children }) {
 };
 ```     
     
-    
+  
+**HOC.js**    
+       
 ```
-HOC.js
 // imports the layout component
 import Layout from '../components/layout';
 
