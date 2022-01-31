@@ -46,15 +46,30 @@ export default function ReactjsArticle({ postData }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
-			<h1 className={styles.title}>
-				Title: {title}
-			</h1>
-			<h3>Subject: {subject}</h3>
-			<p>Resume: {description}</p>
+			<aside className={styles.articleSummary}>
+				<div className={styles.area1}>
+					<h3>Title:</h3>
+					<h1>{title}</h1>
+				</div>
+				<div className={styles.area2}>
+					<h4>Subject:</h4>
+					<p>{subject}</p>
+				</div>
+				<div className={styles.area3}>
+					<h4>Date:</h4>
+					<p>{date}</p>
+				</div>
+				<div className={styles.area4}>
+					<hr></hr>
+					<h4>Summary:</h4>
+					<p>{description}</p>
+				</div>		
+
+			</aside>
 			
 			<section className={styles.articleSection}>
 				<ul>
-					<li>
+					<li className={styles.title}>
 						{title}
 						<br />
 						{id}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // styles
-import styles from '../styles/ArticlesList.module.css';
+import styles from '../styles/ArticlesListComponent.module.css';
 
 
 

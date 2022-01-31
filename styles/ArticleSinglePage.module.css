@@ -1,0 +1,37 @@
+.main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f5e34736;
+	padding: 0 1rem;
+}
+
+
+.area1, .area2, .area3, .area4 {
+	text-align: center;
+}
+
+.area1 { grid-area: area1; }
+.area2 { grid-area: area2; }
+.area3 { grid-area: area3; }
+.area4 { grid-area: area4; margin-top: 10px;}
+
+.articleSummary {
+	width: 70%;
+	margin: 20px 0;
+	border: 1px solid #3d3d06;
+	border-radius: 4px;
+	padding: 10px;
+	
+	display: grid;
+	grid-template-areas:
+		'area1 area1 area1 area1 area2 area3'
+		'area4 area4 area4 area4 area4 area4'
+}
+
+.articleSummary th, .articleSummary td {
+	margin-right: 20px;
+}
+
