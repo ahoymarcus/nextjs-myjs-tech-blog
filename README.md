@@ -12,6 +12,7 @@ A:
 
 
 
+
 <br />
 
 
@@ -25,6 +26,9 @@ Dependências:
 - Next-JS
 - React-JS
 - Gray-matter
+- Remark
+- Remark-html
+
 
 
 <br />
