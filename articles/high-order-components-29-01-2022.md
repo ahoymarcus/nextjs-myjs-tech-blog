@@ -15,7 +15,7 @@ In this particular sense, it is possible to see that as components, HOCs vary fr
 
 One common example in the use of this patter would be to create a general layout that is shared between many components in a app.     
 
-![styling with HOCs](/public/images/grid-layout-example.png)    
+![styling with HOCs](/grid-layout-example.png)    
    
 So, in a simple implementation, some dev could have a couple of components to be rendered across the application, just like a Navbar and a Footer, and hard code them in each page of the app.   
 
