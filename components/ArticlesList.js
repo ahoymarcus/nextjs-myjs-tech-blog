@@ -12,7 +12,7 @@ import { links } from '../lib/links.js';
 
 
 
-export const ArticlesList = ({ id, title, description, date, subject, counter, numberOfCurrentPosts }) => {
+export const ArticlesList = ({ id, author, title, description, date, subject, counter, numberOfCurrentPosts }) => {
 	console.log('counter = ', counter, 'numberOfCurrentPosts = ', numberOfCurrentPosts);
 	
 
@@ -33,6 +33,7 @@ export const ArticlesList = ({ id, title, description, date, subject, counter, n
 		<div className={styles.postContainer}>
 			<article className={styles.post}>
 				<Link href={`${dynamicUrl}/${id}`}><h4>{title}</h4></Link>
+				<p>{author}</p>
 				<br />
 				<p>{description}</p>
 				<br />

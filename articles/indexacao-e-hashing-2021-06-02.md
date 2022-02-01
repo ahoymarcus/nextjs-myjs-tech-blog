@@ -1,4 +1,5 @@
 ---
+author: 'Marcus Vinicius Richa'
 title: 'Indexação e Hashing'
 date: '2021-06-02'
 subject: 'databases-articles'

@@ -1,4 +1,5 @@
 ---
+author: 'Marcus Vinicius Richa'
 title: 'Plano de Consultas em Bancos de Dados NoSQL'
 date: '2022-06-28'
 subject: 'databases-articles'

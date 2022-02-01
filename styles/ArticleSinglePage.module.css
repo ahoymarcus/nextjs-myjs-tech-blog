@@ -16,7 +16,8 @@
 .area1 { grid-area: area1; color: #c08585; }
 .area2 { grid-area: area2; }
 .area3 { grid-area: area3; }
-.area4 { grid-area: area4; margin-top: 10px;}
+.area4 { grid-area: area4; margin-top: 15px; }
+.area5 { grid-area: area5; margin-top: 5px; }
 
 
 /* Article Summary */
@@ -28,9 +29,11 @@
 	padding: 10px;
 	
 	display: grid;
+	grid-gap: 0.5rem;
 	grid-template-areas:
-		'area1 area1 area1 area1 area2 area3'
-		'area4 area4 area4 area4 area4 area4'
+		'area1 area1 area1 area4 area4'
+		'area5 area5 area5 area2 area3';
+	
 }
 
 

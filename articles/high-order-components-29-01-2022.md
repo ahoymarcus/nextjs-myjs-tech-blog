@@ -1,4 +1,5 @@
 ---
+author: 'Marcus Vinicius Richa'
 title: 'High Order Components'
 date: '2022-01-29'
 subject: 'reactjs-articles'
