@@ -26,7 +26,7 @@ export async function getStaticProps(context) {
 };
 
 
-export default function WebDevelopment({ allPostsData }) {
+export default function WebDevelopmentArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
