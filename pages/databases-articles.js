@@ -26,11 +26,11 @@ export async function getStaticProps(context) {
 };
 
 
-export default function ReactjsArticles({ allPostsData }) {
+export default function DatabasesArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
-	// console.log(query);
+	console.log('query = ', query);
 	// console.log(query instanceof String);
 	// console.log(typeof query);
 	
@@ -57,11 +57,11 @@ export default function ReactjsArticles({ allPostsData }) {
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {
+					console.log(query.param === article.subject);
+					
 					counter += 1;
 					
 					if (query.param !== article.subject) {
-						console.log(query.param === subject);
-						
 						return null;
 					}
 					

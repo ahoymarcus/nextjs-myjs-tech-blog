@@ -16,7 +16,7 @@ In this particular sense, it is possible to see that as components, HOCs vary fr
 One common example in the use of this patter would be to create a general layout that is shared between many components in a app, avoiding the unnecessary that duplication of code and all the complexities related to it.   
     
 
-![styling with HOCs](/images/articles/frontend/grid-layout-example.png)    
+![styling with HOCs](/images/articles/frontend/high-order-components-grid-layout-example.png)    
    
 So, as can be seem in the picture, a application could have a simple implementation where some generic components, like a Navbar and a Footer, could be inserted into the renderization of others components across the whole application, preventing the stress of hard coding the same functionality over and over again.    
 
@@ -92,8 +92,8 @@ Thats the reason for the {children} object there in the code, and it is the func
     
 ### References  
 
-[High Order Components - Reactjs.org](https://pt-br.reactjs.org/docs/higher-order-components.html)           
-[Pure Functions - Geeksforgeeks.org](https://www.geeksforgeeks.org/pure-functions/)      
+1. [High Order Components - Reactjs.org](https://pt-br.reactjs.org/docs/higher-order-components.html)           
+2. [Pure Functions - Geeksforgeeks.org](https://www.geeksforgeeks.org/pure-functions/)      
 
 
 

@@ -13,7 +13,7 @@ import { FaBars } from 'react-icons/fa';
 
 
 
-const disabledLinks = ['web-development', 'node-js', 'databases', 'marketing'];
+const disabledLinks = ['web-development', 'node-js', 'marketing'];
 //const disabledLinks = ['none'];
 
 export const Toolbar = () => {

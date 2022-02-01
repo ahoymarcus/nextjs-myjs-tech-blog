@@ -13,12 +13,13 @@ import { links } from '../lib/links.js';
 
 
 export const ArticlesList = ({ id, title, description, date, subject, counter, numberOfCurrentPosts }) => {
-	console.log(counter, numberOfCurrentPosts);
+	console.log('counter = ', counter, 'numberOfCurrentPosts = ', numberOfCurrentPosts);
 	
-	
-	console.log('subject = ', `/${subject}`);
 
 	const itemLinks = links.filter(link => {
+		console.log('link.staticUrl = ', link.staticUrl);
+		console.log('subject = ', `/${subject}`);
+		
 		if (link.staticUrl === `/${subject}`) {
 			return link;
 		}
