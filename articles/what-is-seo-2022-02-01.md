@@ -53,7 +53,7 @@ Next the process goes to the render queue and if all the criteria is met, the da
 
 
 **Nextjs.org**
-![Crawlers - Nextjs.org](/images/articles/web-development/craulers-user-agent.png)
+![Crawlers - Nextjs.org](/images/articles/web-development/what-is-seo-crawlers-user-agent.png)
 
 
 
@@ -75,7 +75,7 @@ First, security may be a problem when sites wants to keep certain routes out of 
 
 
 **Nextjs.org**
-![Crawlers - Nextjs.org](/images/articles/web-development/google-guides-forxml-sitemaps.png)
+![Crawlers - Nextjs.org](/images/articles/web-development/what-is-seo-google-guides-forxml-sitemaps.png)
 
 There is also the possibility of using the HTML **meta** tag together with the property "robots".
 
