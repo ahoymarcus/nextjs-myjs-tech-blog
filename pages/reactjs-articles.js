@@ -45,7 +45,7 @@ export default function ReactjsArticles({ allPostsData }) {
 		<div className={styles.main}>
       <Head>
 				<title>React-JS Articles - JS News Blog</title>
-				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
+				<meta name="description" content="Articles about the React-JS ecosystem ranging from a variaty of subjects, including Hooks, best pratices, news and even the Next-JS framework." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

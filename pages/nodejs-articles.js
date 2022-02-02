@@ -26,11 +26,11 @@ export async function getStaticProps(context) {
 };
 
 
-export default function ReactjsArticles({ allPostsData }) {
+export default function NodejsArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
-	// console.log(query);
+	console.log('query = ', query);
 	// console.log(query instanceof String);
 	// console.log(typeof query);
 	
@@ -45,7 +45,7 @@ export default function ReactjsArticles({ allPostsData }) {
 		<div className={styles.main}>
       <Head>
 				<title>Node-JS Articles - JS News Blog</title>
-				<meta name="description" content="A blog featuring news and technical information about the JavaScript stack and Web related material." /> 
+				<meta name="description" content="Articles about the Node-JS and backend development ranging from a variaty of subjects, including Express-JS, APIs, best practices, patterns, etc..." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -57,11 +57,11 @@ export default function ReactjsArticles({ allPostsData }) {
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {
+					console.log(query.param === article.subject);
+					
 					counter += 1;
 					
-					if (query.param !== article.subject) {
-						console.log(query.param === subject);
-						
+					if (query.param !== article.subject) {	
 						return null;
 					}
 					

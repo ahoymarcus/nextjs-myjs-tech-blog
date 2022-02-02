@@ -1,5 +1,3 @@
-// https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
-// /reactjs/high-order-components-29-01-2022
 import React from 'react';
 import Head from 'next/head';
 
@@ -36,7 +34,7 @@ export async function getStaticProps({ params }) {
 
 
 export default function WebDevelopmentArticle({ postData }) {
-	const { title, id, date, subject, description } = postData;
+	const { author, title, id, date, subject, description } = postData;
 	
 	
 	return(
@@ -53,6 +51,10 @@ export default function WebDevelopmentArticle({ postData }) {
 					<h3>Title:</h3>
 					<h1>{title}</h1>
 				</div>
+				<div className={styles.area4}>
+					<h4>Author:</h4>
+					<p>{author}</p>
+				</div>
 				<div className={styles.area2}>
 					<h4>Subject:</h4>
 					<p>{subject}</p>
@@ -61,7 +63,8 @@ export default function WebDevelopmentArticle({ postData }) {
 					<h4>Date:</h4>
 					<p><Date dateString={postData.date} /></p>
 				</div>
-				<div className={styles.area4}>
+				
+				<div className={styles.area5}>
 					<hr></hr>
 					<h4>Summary:</h4>
 					<p>{description}</p>

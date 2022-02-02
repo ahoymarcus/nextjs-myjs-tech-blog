@@ -1,5 +1,3 @@
-// https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
-// /reactjs/high-order-components-29-01-2022
 import React from 'react';
 import Head from 'next/head';
 
