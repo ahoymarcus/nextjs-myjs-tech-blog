@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Improving Core Web Vitals'
 date: '2022-02-03'
 subject: 'web-development-articles'
-description: '.'
+description: 'This article walks through some issues about the improvement of Web Vitals in a webpage or web app, and focuses specially in the framework Next-JS. With SEO, best pratices, the monitoring the Core Web Vitals and related tools, it is show a wider ranges of performance aspects.'
 ---
 
 # Improving Core Web Vitals
@@ -110,9 +110,10 @@ const codeSampleModal = dynamic(() => import('../components/CodeSampleModal'), {
 			}
 		</>
 	);
-
-```
-
+```         
+   
+    
+		
 #### Optimizing Fonts
 
 As it is known, fonts are a important way to improve branding for a webpage, but to also helps with performance, Nextjs changes the default process of linking the external font, but bringing them into **inline CSS at a build time**:
@@ -125,14 +126,15 @@ Here is an exemple:
 </style>
 ```
 
-
+       
 #### Optimizing Third-Party Scripts
 
 The third-party scripts are also important features to be included in the project of a webpage: analytics, ads, customer support widgets, etc...
 
 But their embedding can delay the early loading and Nextjs has another custom component for this matter.
 
-Bellow, the **SCript** component being using also in the also custom **Head** component, but it could be inserted anywhere else:
+Bellow, the we have a component that uses the **Script** custom component in the **Head** component, although it could be used anywhere else too:
+     
 
 ```
 import Head from 'next/head';
@@ -146,49 +148,11 @@ function IndexPage() {
 		</div>
 	);
 };
-```
+```       
+        
+     
 
-`Improving your Core Web Vitals
-570 points
-Improving your Core Web Vitals
-Optimizing Third-Party Scripts
-
-Many applications rely on third-party JavaScript to include different types of functionality, such as analytics, ads, and customer support widgets. However, embedding third-party authored code can delay page content from rendering and affect user performance if it is loaded too early.
-
-Next.js provides a built-in Script component that optimizes loading for any third-party script, while giving developers the option to decide when to fetch and execute it.
-
-Using the Script Component
-
-Using regular HTML, external scripts would need to be manually appended to next/head:
-
-import Head from 'next/head'
-
-function IndexPage() {
-  return (
-    <div>
-      <Head>
-        <script src="https://www.googletagmanager.com/gtag/js?id=123" />
-      </Head>
-    </div>
-  )
-}
-
-With the Next.js Script component, you can add it anywhere in the component without needing to usenext/head:
-
-import Script from 'next/script'
-
-function IndexPage() {
-  return (
-    <div>
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=123"
-      />
-    </div>
-  )
-}
-
-The Script component introduces a strategy property that allows you to decide when to fetch and execute a script for optimal loading. To not negatively affect Largest Contentful Paint (LCP), most third-party scripts should be deferred to load after all the contents of a page has finished loading, either immediately after the page becomes interactive (strategy="afterInteractive") or lazily during browser idle time (strategy="lazyOnload").`_`[`[link]`](https://nextjs.org/learn/seo/improve/third-party-scripts)`.
+`The Script component introduces a strategy property that allows you to decide when to fetch and execute a script for optimal loading. To not negatively affect Largest Contentful Paint (LCP), most third-party scripts should be deferred to load after all the contents of a page has finished loading, either immediately after the page becomes interactive (strategy="afterInteractive") or lazily during browser idle time (strategy="lazyOnload").`_`[`[link]`](https://nextjs.org/learn/seo/improve/third-party-scripts)`.
 
 
 
@@ -224,6 +188,10 @@ Monitoring a site is a process as important as it optimization, and the Nextjs f
 
 ### Further Reading
 
+[web-performance-and-core-vitals](/images/articles/web-development/web-performance-and-core-vitals-2022-02-02.md)
+
+[what-is-seo](/images/articles/web-development/what-is-seo-2022-02-01.md)
+
 [Web Performance Monitoring – Definition, Tips, and Top Web Monitoring Tools - Tek-Tools](https://www.tek-tools.com/apm/web-monitoring-tools-and-tips)
 
 
@@ -238,8 +206,7 @@ Monitoring a site is a process as important as it optimization, and the Nextjs f
 
 
 
-### Notes
 
-[^1]: [web-performance-and-core-vitals](/images/articles/web-development/web-performance-and-core-vitals-2022-02-02.md)
+[^1]:web-performance-and-core-vitals
 
-[^2]: [what-is-seo](/images/articles/web-development/what-is-seo-2022-02-01.md)
+[^2]:what-is-seo
