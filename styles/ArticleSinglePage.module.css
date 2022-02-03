@@ -22,7 +22,7 @@
 
 /* Article Summary */
 .articleSummary {
-	width: 70%;
+	width: 100%;
 	margin: 40px 0 180px;
 	border: 1px solid #3d3d06;
 	border-radius: 4px;
@@ -31,9 +31,39 @@
 	display: grid;
 	grid-gap: 0.5rem;
 	grid-template-areas:
-		'area1 area1 area1 area4 area4'
-		'area5 area5 area5 area2 area3';
-	
+		'area1 area1'
+		'area4 area4'
+		'area2 area3'
+		'area5 area5';
+}
+
+@media only screen and (min-width: 500px) {
+	.articleSummary {
+		width: 85%;
+	}
+}
+
+
+@media only screen and (min-width: 640px) {
+	.articleSummary {
+		width: 100%;
+		grid-template-areas:
+			'area1 area1 area1 area4 area4'
+			'area5 area5 area5 area2 area3';
+		
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	.articleSummary {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.articleSummary {
+		width: 70%;
+	}
 }
 
 
