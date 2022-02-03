@@ -162,20 +162,21 @@ function IndexPage() {
 Monitoring a site is a process as important as it optimization, and the Nextjs framework has also it own features to cope with this task. 
 
 
+
 ### Other Tools
-
-
-1. You can find field data collection in the following tools:
-
-  - PageSpeed Insights: Google's Page Speed measurement tool.
-  - Chrome User Experience Report: Field data open-source dataset.
-  -	Search Console: Google Search, Core Web Vitals report.
-
-2. If you are looking for lab data, Google also offers several measurement tools:
-
-  -	Lighthouse: Google's open-source, automated tool for improving the quality of web pages.
-  -	Chrome DevTools: Set of web developer tools built directly into the Google Chrome browser.
-
+  
+   
+1. You can find field data collection in the following tools:   
+    
+  - PageSpeed Insights: Google's Page Speed measurement tool.   
+  - Chrome User Experience Report: Field data open-source dataset.   
+  -	Search Console: Google Search, Core Web Vitals report.   
+    
+2. If you are looking for lab data, Google also offers several measurement tools:   
+    
+  -	Lighthouse: Google's open-source, automated tool for improving the quality of web pages.  
+  -	Chrome DevTools: Set of web developer tools built directly into the Google Chrome browser.  
+      
   **Note:** that for both tools, you will need to use Total Blocking Time (TBT) as an alternative to First Input Delay (FID) since FID can only be measured through field data.
 
 
@@ -207,6 +208,6 @@ Monitoring a site is a process as important as it optimization, and the Nextjs f
 
 
 
-[^1]:web-performance-and-core-vitals
+[^1]:web-performance-and-core-vitals-2022-02-02.md
 
-[^2]:what-is-seo
+[^2]:what-is-seo-2022-02-01.md
