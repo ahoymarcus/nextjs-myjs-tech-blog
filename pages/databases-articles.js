@@ -7,7 +7,6 @@ import styles from '../styles/ArticlesListPage.module.css';
 
 // components
 import { ArticlesList } from '../components/ArticlesList';
-import Date from '../components/date';
 
 // articles data
 import { getSortedPostsData } from '../lib/posts'
