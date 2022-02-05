@@ -44,7 +44,7 @@ export default function NodejsArticles({ allPostsData }) {
 		<div className={styles.main}>
       <Head>
 				<title>Node-JS Articles - JS News Blog</title>
-				<meta name="description" content="Articles about the Node-JS and backend development ranging from a variaty of subjects, including Express-JS, APIs, best practices, patterns, etc..." /> 
+				<meta name="description" content="Articles about the Node-JS and backend development ranging from a variaty of subjects, including Express-JS, APIs, REST, Authorizaton, jwt, best practices, patterns, etc..." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

@@ -21,6 +21,7 @@ Dependências:
 - Remark
 - Remark-html
 - Date-fns
+- Google-analytics
 
 
 

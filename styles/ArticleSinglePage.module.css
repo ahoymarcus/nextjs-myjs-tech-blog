@@ -92,13 +92,13 @@
 
 .articleSection p {
 	font-size: 1.2rem;
-	margin: 50px 0px 50px;
-	line-height: 1.4rem;
+	margin: 50px 0px 65px;
+	line-height: 1.6rem;
 }
 
 .articleSection img {
 	margin: 45px 0px 45px;
-	width: 100%;
+	width: 80%;
 }
 
 .articleSection ol {
@@ -113,6 +113,7 @@
 
 .articleSection pre {
 	margin: auto;
+	margin-bottom: 120px;
 	padding: 40px;
 	width: 85%;
 	overflow-x: auto;
@@ -123,7 +124,7 @@
 	background-color: #f5e34736;
 }
 .articleSection code {
-	margin: 0px 0px 80px;
+	
 	
 }
 

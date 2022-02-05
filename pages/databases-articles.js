@@ -44,7 +44,7 @@ export default function DatabasesArticles({ allPostsData }) {
 		<div className={styles.main}>
       <Head>
 				<title>Database Articles - JS News Blog</title>
-				<meta name="description" content="Articles about databases ranging from a variaty of subjects, including relational SQL databases and NoSQL." /> 
+				<meta name="description" content="Articles about databases ranging from a variaty of subjects like Optimization, Control of Access, Transactions, including relational SQL databases and NoSQL." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
