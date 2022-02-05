@@ -50,9 +50,9 @@ export default function WebDevelopmentArticles({ allPostsData }) {
 			</Head>
 			
 			<h1 className={styles.title}>
-				React-JS and Next-JS articles
+				Web Development articles
 			</h1>
-			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
+			<h3>Technical papers and general news about Web Development.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {

@@ -8,6 +8,19 @@ description: 'Understanding what is a SEO process and how to improve the site ra
 
 # What is SEO
 
+1. #### Introduction     
+2. #### The Web Crawlers
+3. #### Crawling and Indexing  
+4. #### Rendering and Ranking
+5. #### AMP Vs Core Web Vitals
+6. #### URL Structure
+7. #### The Use of Head Tag and its Properties
+8. #### The Use of Semantic HTML
+9. #### Further Reading
+10. #### References
+
+### Introduction
+
 The term SEO stands for 'Search Engine Optimization', and its purpose is to improve the sites positions on the search engine results.
 
 According to the site of Next-JS, the importance of SEO to a web page is to increase **conversion** to a page, since a `higher search ranking placement equates to more organic visitors`_`[`Nextjs.org [link]`](https://nextjs.org/learn/seo/introduction-to-seo/importance-of-seo)`.
@@ -15,26 +28,18 @@ According to the site of Next-JS, the importance of SEO to a web page is to incr
 
 Nextjs.org article also brings another interestings points:
 
-1. that SEO is 'Low-Cost', since it implies the cost of 'Time' and 'Effort', but that as a service it is 'free'.
-
-And in this case it is different from **SEM** (Search Engine Marketing), which is paid results placed at the top of search results as Advertisement.
-
-2. that there are three main pillars to this process:
-
-2.1. Tecnical: the effort to optimize the website for **crawling** and **performance**.
-
-2.2. Creation: implies the strategies to relate **content** and search **specific keywords**.
-
-2.3. Popularity: that mean all the **backlinks from third-party sites**, which attest reliability to the site.
+1. that SEO is 'Low-Cost', since it implies the cost of 'Time' and 'Effort', but that as a service it is 'free'.  
+	1.1. And in this case it is different from **SEM** (Search Engine Marketing), which is paid results placed at the top of search results as Advertisement.
+2. that there are three main pillars to this process:   
+	2.1. Tecnical: the effort to optimize the website for **crawling** and **performance**.    
+	2.2. Creation: implies the strategies to relate **content** and search **specific keywords**.    
+	2.3. Popularity: that mean all the **backlinks from third-party sites**, which attest reliability to the site.
 
 As for the steps that a search engine takes to create ranks, we have: 
 
 1. **Crawling**: parsing web pages to retrieve parameters that meet a certain criteria.
-
 2. **Indexing**: storing and retrieving the data gathered in the previous stage.
-
 3. **Rendering**: the process of testing the resources of the page to see if they enhance and enrich the content of the site.
-
 
 ### The Web Crawlers
 
@@ -59,19 +64,15 @@ Next the process goes to the render queue and if all the criteria is met, the da
 
 ### Crawling and Indexing
 
-1.	HTTP status code fundamentals.
+1.	HTTP status code fundamentals.   
+	1.1. Important HTTP codes: 200 (Ok), 301 e 308 (redirects permanent), 302 (redirects temporalily)
 2.	Metadata and what web crawlers look for when parsing web content.
-3.	How to communicate with Google so its search crawler knows when there is new content on your site.
-4.	How to leverage meta robot tags and canonical links to indicate to search engines your desired indexing status.
-
-
-1. Important HTTP codes: 200 (Ok), 301 e 308 (redirects permanent), 302 (redirects temporalily)
-
-2. Robots.txt File - XML Sitemaps and Meta/Link Tags
-
-These are two ways to relate to the crawlers process that may ensure a better security and reability into all the process.
-
-First, security may be a problem when sites wants to keep certain routes out of the process (like accounts, etc...), next the are the ways to help to guide the path of the crawlers so they don't miss when content is updated.
+3.	There is the option to communicate with Google so its search crawler knows when there is new content on your site.   
+	3.1. Robots.txt File - XML Sitemaps and Meta/Link Tags
+4.	Its possible to leverage meta robot tags and canonical links to indicate to search engines your desired indexing status.
+5. Also interesting to notice:       
+	5.1. These are two ways to relate to the crawlers process that may ensure a better security and reability into all the process.      
+	First, security may be a problem when sites wants to keep certain routes out of the process (like accounts, etc...), next the are the ways to help to guide the path of the crawlers so they don't miss when content is updated.
 
 
 **Nextjs.org**

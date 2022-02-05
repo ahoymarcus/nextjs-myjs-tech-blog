@@ -50,9 +50,9 @@ export default function DatabasesArticles({ allPostsData }) {
 			</Head>
 			
 			<h1 className={styles.title}>
-				React-JS and Next-JS articles
+				Relational and Non-Relational Database articles
 			</h1>
-			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
+			<h3>Technical papers and general news about the the SQL and the No-SQL Ecosystems.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {

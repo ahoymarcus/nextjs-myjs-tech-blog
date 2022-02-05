@@ -9,6 +9,19 @@ Silberschatz.'
    
 # Indexação e Hashing  
 
+1. #### Introdução
+2. #### Índices ordenados
+	2.1. Índice Denso    
+	2.2. Índice Esparso    
+	2.3. Índices Multinível   
+	2.4. Índices Secundários    
+	2.5. Índice de Árvore Binária   
+3. #### Quanto ao uso de Índices, observe ainda
+4. #### Índices de hash
+5. #### Definindo um Índice com SQL
+6. #### Referências
+
+### Introdução
 
 O autor inicia a apresentação do assunto propondo que não é eficiente para o banco de dados precisar percorrer toda uma tabela ou conjunto de tabelas para varrer em busca de um dado.
 
@@ -81,7 +94,7 @@ Contudo, veja que há diferenças entre os tipos de árvores binárias utilizada
 ![Índice arvore-binaria](/images/articles/databases/indexação-e-hashing-indice-arvore-binaria.png)
 
 
-#### Quanto ao uso de Índices, observe ainda:
+### Quanto ao uso de Índices, observe ainda
 
 - Índices sobre chaves múltiplas
 - chaves de busca não exclusivas
@@ -89,7 +102,7 @@ Contudo, veja que há diferenças entre os tipos de árvores binárias utilizada
 - ìndices secundários e relocação de registros. 
 
 
-##### Índices de hash
+### Índices de hash
 
 A utilização de Hashing está muito ligada às tentativas de se evitar certas práticas comumente relacionadas com a utilização da indexação:
 

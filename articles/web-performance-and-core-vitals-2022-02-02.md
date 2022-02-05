@@ -8,6 +8,21 @@ description: 'To treat about web performance is both a subject to a better exper
 
 # Web Performance & Core Web Vitals
 
+1. #### Introduction
+	1.1. Largest Contentful Paint (LCP)    
+	1.2. The First Input Delay (FID)    
+	1.3. Cumulative Layout Shift (CLS)     
+3. #### SEO and UX Impact
+4. #### Other Kinds of Metrics
+	4.1. User Satisfaction and Apdex       
+	4.2. Complete Page Load Time    
+	4.3. Time to first byte (TTFB)    
+	4.4. Error Rate    
+	4.5. Peak Response Time (PRT)    
+5. #### Further Reading
+6. #### References
+
+### Introduction
 
 To talk about web performance is both a subject to a better experience on the web and a prerequisite for results to be cast by search engines
 
@@ -77,25 +92,25 @@ Both of these process are directed for users experiences, meaning fast and smoot
 
 ### Other Kinds of Metrics
 
-1. User Satisfaction and Apdex:
+1. User Satisfaction and Apdex
 
 	This test involves taking real feedback from users interaction and aggregation some desired end goal.
 	The justification of this metric relies on the fact that lab tests are not always faithful to real world cases.
 	
-2. Complete Page Load Time:
+2. Complete Page Load Time
 		
 	This metric is important because it may convey important information about the use of the page across different devices and plataforms, including slower connections like 3G, etc... 
 
-3. Time to first byte (TTFB): 
+3. Time to first byte (TTFB) 
 
 	This metric reaches for measuring the initial gap a client has until it can start processing the page.
 	One clear example of this is Server Side Rendering versus Client Side Rendering, where in the first case the requisition for the page comes with a prerenditition from the server, while the second has a delay of requesting and then starting the process from the zero.
 
-4. Error Rate:
+4. Error Rate
 
 	This measure the percentage of request issues in relation to the total number of requests, and since errors can lead to countless problems to the webpage or application, it is wise to be monitoring them.
 
-5. Peak Response Time (PRT):)
+5. Peak Response Time (PRT)
 
 	This is the measure to search for the longest response times for all requests to the server and use the information to try to find parts of the application that may be underperforming.
 

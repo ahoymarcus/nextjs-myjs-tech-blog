@@ -7,7 +7,19 @@ description: 'This article walks through some issues about the improvement of We
 ---
 
 # Improving Core Web Vitals
- 
+
+1. #### Introdução
+2. #### Using the Framework Next-JS
+	2.1. Custom Components  
+	2.2. Dynamic Imports   
+	2.3. Optimizing Fonts   
+	2.4. Optimizing Third-Party Scripts
+3. #### Monitoring your Core Web Vitals
+4. #### Other Tools
+6. #### Leitura Complementar
+7. #### Referências
+
+### Introduction
 
 As it was viewed in a previous article [^1], webpage metrics are most of time involved with user experience, either when talking about performance, interactivy or visual stability.
 
@@ -22,7 +34,7 @@ According to Semrush Blog, the framework simulates many situations that may affe
 5. PWA (Progressive Web Application)
 
 
-### Nextjs
+### Using the Framework Next-JS
 
 
 Nextjs is a Server-Side Render framework for React-JS that extends some interesting functionalities related to SEO and also to performance.
