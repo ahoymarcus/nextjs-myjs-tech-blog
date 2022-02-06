@@ -9,17 +9,17 @@ Silberschatz.'
    
 # Indexação e Hashing  
 
-1. #### Introdução
-2. #### Índices ordenados
+1. ##### Introdução
+2. ##### Índices ordenados
 	2.1. Índice Denso    
 	2.2. Índice Esparso    
 	2.3. Índices Multinível   
 	2.4. Índices Secundários    
 	2.5. Índice de Árvore Binária   
-3. #### Quanto ao uso de Índices, observe ainda
-4. #### Índices de hash
-5. #### Definindo um Índice com SQL
-6. #### Referências
+3. ##### Quanto ao uso de Índices, observe ainda
+4. ##### Índices de hash
+5. ##### Definindo um Índice com SQL
+6. ##### Referências
 
 ### Introdução
 

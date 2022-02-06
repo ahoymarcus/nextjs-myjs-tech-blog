@@ -91,6 +91,12 @@
 }
 
 .articleSection h4 {
+	font-size: 1.3rem;
+	color: hsl(209deg 69% 36%);
+	margin-top: 50px;
+}
+
+.articleSection h5 {
 	font-size: 1.2rem;
 	color: hsl(209deg 69% 36%);
 }
@@ -114,6 +120,11 @@
 
 .articleSection li {
 	text-align: justify;
+}
+
+.articleSection ul, .articleSection ul p {
+	margin: 10px 0px 10px;
+	line-height: 1.8rem;
 }
 
 .articleSection pre {

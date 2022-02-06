@@ -8,16 +8,16 @@ description: 'Understanding what is a SEO process and how to improve the site ra
 
 # What is SEO
 
-1. #### Introduction     
-2. #### The Web Crawlers
-3. #### Crawling and Indexing  
-4. #### Rendering and Ranking
-5. #### AMP Vs Core Web Vitals
-6. #### URL Structure
-7. #### The Use of Head Tag and its Properties
-8. #### The Use of Semantic HTML
-9. #### Further Reading
-10. #### References
+1. ##### Introduction     
+2. ##### The Web Crawlers
+3. ##### Crawling and Indexing  
+4. ##### Rendering and Ranking
+5. ##### AMP Vs Core Web Vitals
+6. ##### URL Structure
+7. ##### The Use of Head Tag and its Properties
+8. ##### The Use of Semantic HTML
+9. ##### Further Reading
+10. ##### References
 
 ### Introduction
 

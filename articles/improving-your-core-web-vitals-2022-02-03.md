@@ -8,16 +8,16 @@ description: 'This article walks through some issues about the improvement of We
 
 # Improving Core Web Vitals
 
-1. #### Introdução
-2. #### Using the Framework Next-JS
+1. ##### Introdução
+2. ##### Using the Framework Next-JS
 	2.1. Custom Components  
 	2.2. Dynamic Imports   
 	2.3. Optimizing Fonts   
 	2.4. Optimizing Third-Party Scripts
-3. #### Monitoring your Core Web Vitals
-4. #### Other Tools
-6. #### Leitura Complementar
-7. #### Referências
+3. ##### Monitoring your Core Web Vitals
+4. ##### Other Tools
+6. ##### Leitura Complementar
+7. ##### Referências
 
 ### Introduction
 

@@ -8,10 +8,10 @@ description: 'According to the site from Reactjs.org, a high order component, or
 
 # High Order Components    
 
-1. #### Introduction
-2. #### Advantages
-3. #### An Example from Next.js
-4. #### References
+1. ##### Introduction
+2. ##### Advantages
+3. ##### An Example from Next.js
+4. ##### References
 
 ### Introduction
 

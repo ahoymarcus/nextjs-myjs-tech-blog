@@ -8,12 +8,12 @@ description: 'Melhorando a Performance dos bancos de dados NoSQL- Um Estudo de C
     
 # Banco de Dados NoSQL - Plano de Consultas   
 
-1. #### Melhorando a Performance - Um Estudo de Caso
-2. #### Índices   
-3. #### Intersecção de Índices
-4. #### Estratégias para o uso de Índices
-5. #### Leitura Complementar
-6. #### Referências
+1. ##### Melhorando a Performance - Um Estudo de Caso
+2. ##### Índices   
+3. ##### Intersecção de Índices
+4. ##### Estratégias para o uso de Índices
+5. ##### Leitura Complementar
+6. ##### Referências
 
 ### Melhorando a Performance - Um Estudo de Caso  
   

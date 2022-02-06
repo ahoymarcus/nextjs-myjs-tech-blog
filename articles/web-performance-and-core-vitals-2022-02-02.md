@@ -8,19 +8,19 @@ description: 'To treat about web performance is both a subject to a better exper
 
 # Web Performance & Core Web Vitals
 
-1. #### Introduction
+1. ##### Introduction
 	1.1. Largest Contentful Paint (LCP)    
 	1.2. The First Input Delay (FID)    
 	1.3. Cumulative Layout Shift (CLS)     
-3. #### SEO and UX Impact
-4. #### Other Kinds of Metrics
+3. ##### SEO and UX Impact
+4. ##### Other Kinds of Metrics
 	4.1. User Satisfaction and Apdex       
 	4.2. Complete Page Load Time    
 	4.3. Time to first byte (TTFB)    
 	4.4. Error Rate    
 	4.5. Peak Response Time (PRT)    
-5. #### Further Reading
-6. #### References
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
 

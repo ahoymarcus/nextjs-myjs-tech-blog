@@ -8,13 +8,13 @@ description: 'O artigo trata como novos usuários podem criar uma conta, impleme
 
 # Google Analytics
 
-1. #### Introdução
-2. #### Estrutura Básica da Aplicação
-3. #### Acesso e Autorizações
-4. #### A Interface Gráfica da Aplicação
-5. #### Campanhas de Marketing
-6. #### Leitura Complementar
-7. #### Referências
+1. ##### Introdução
+2. ##### Estrutura Básica da Aplicação
+3. ##### Acesso e Autorizações
+4. ##### A Interface Gráfica da Aplicação
+5. ##### Campanhas de Marketing
+6. ##### Leitura Complementar
+7. ##### Referências
 
 ### Introdução
 
