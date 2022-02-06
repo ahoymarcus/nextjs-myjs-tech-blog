@@ -25,7 +25,7 @@ export async function getStaticProps(context) {
 };
 
 
-export default function MarketingArticles({ allPostsData }) {
+export default function MiscArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
@@ -43,8 +43,8 @@ export default function MarketingArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>Marketing Articles - JS News Blog</title>
-				<meta name="description" content="Articles about marketing applied to web development ranging from a variaty of subjects, including Google Analitics, etc..." /> 
+				<title>Misc Articles - JS News Blog</title>
+				<meta name="description" content="Articles from a variaty of subjects that may have some correlation to wed development and programming." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

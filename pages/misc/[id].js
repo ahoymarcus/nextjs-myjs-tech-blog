@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 };
 
 
-export default function MarketingArticle({ postData }) {
+export default function MiscArticle({ postData }) {
 	const { author, title, id, date, subject, description } = postData;
 	
 	
