@@ -170,7 +170,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Noções de linguagens procedurais: tipos de dados elementares e estruturados, funções e procedimentos.
 - [ ] Representação de dados numéricos, textuais e estruturados; aritmética computacional. 
 - [ ] Estruturas de dados e algoritmos: listas, filas, pilhas, tabelas hash e árvores; métodos de acesso, busca, inserção e ordenação em estruturas de dados; complexidade de algoritmos. 
-- [ ] Engenharia de software. Ciclo de vida do software.
+- [ X ] Engenharia de software. Ciclo de vida do software.
 - [ ] Metodologias de desenvolvimento de software. 
 - [ ] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [ ] Qualidade de software e CMMI. 

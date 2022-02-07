@@ -1,9 +1,9 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Software Engineering and the Life Cycle of  the Software'
-date: '2022-02-08'
+date: '2022-02-07'
 subject: 'dev-ops-articles'
-description: '.'
+description: 'Introductory ideas about software engineering, presenting the different life cycles of software and the main methodology of development.'
 ---
 
 # Software Engineering and the Life Cycle of  the Software.
@@ -14,9 +14,6 @@ description: '.'
 4. ##### Software Versus Program
 5. ##### Software Development Life Cycle (SDLC)
 	5.1. SDLC Cycle
-6. #####
-7. #####
-8. #####
 9. ##### Further Reading
 10. ##### References
 
@@ -69,10 +66,31 @@ Lastly, the **Role/Action Mode** that works to describe the roles of the people 
 
 And besides the use of these kinds of abstract models, there are some methodologies, as well, that creates some presets and patterns to bring together all the efforts:
 
-1. The Waterfall Approach: this method implies a series of separated phases that supersede each other and can repeat  until the product is finalised.
-2. The Evolutionary Development: this is a more complex method because it interleaves a set of operations that developes together producing intermediary functional products and bound together till the end of the project when they present the final product.
-3. The Formal Transformation Method: this method utilize some kinds of mathematical props that represents the product with its functionalites and it is continually transformed untill it reaches the final desered system.
-4. The System Assembly from reusable components: this method implies the separation of the products its smaller parts that are later assembled together to create the final product, or even many instances of it.
+1. **The Waterfall Approach**: this is a linear method that implies a series of separated phases that supersede each other and can repeat  until the product is finalised.
+2. **The Rapid Application (RAD Model)**: adopts the Waterfall Approach in a sprint mode for rapid realeses.
+	2.1. Business Modeling
+	2.2. Data Modeling
+	2.3. Process Modeling
+	2.4. Application Modeling
+	2.5. Testing and Turnover
+3. **Iterative Model** or **The Evolutionary Development**: this is a more complex method because it interleaves a set of operations that developes together producing intermediary functional products and bound together till the end of the project when they present the final product.
+4. **The Formal Transformation Method**: this method utilize some kinds of mathematical props that represents the product with its functionalites and it is continually transformed untill it reaches the final desered system.
+5. **The System Assembly from reusable components**: this method implies the separation of the products its smaller parts that are later assembled together to create the final product, or even many instances of it.
+6. **Spiral Mode**: applies elements of many of the other models in a spiral technique to fast prototyping and concurrence in design.
+7. **V-Model**: this is a model that groups testing and developing in parallel.
+8. **The Incremental Model**: this model revisits the Waterfall model to plead for a series of short linear Waterfall cycles.
+9. **Agile Model**: in this model, there is also the interaction of development and testing that looks for short and small incremental builds.
+	9.1. Pleads for the difficulty to treat requirements of software in advance.
+	9.2. Design and Development go interleaved.
+	9.3. Also pleads that Analysis, Design, Development and Testing are not as predictabe as some may deem.
+10.**The Big Bang Model**: deem most of its resources into development and coding, with only the utterly necessary planning.
+	10.1. `The requirements are understood and implemented when they come.`
+	10.2. Its a more feaseble model for small projects and academic projects.
+11. **Prototype Model**: works with a iteration in a 'quick design' or prototype which servers as the visual bond between developers and client, and when the client is happy with the system, then it is converted into a software, with also quality and securities considerations.
+
+
+![sdlc-models](/images/articles/dev-ops/sdlc-models.png)
+[**JavaTPoint**](https://www.javatpoint.com/software-engineering-tutorial)
 
 
 ### Software Versus Program
@@ -107,12 +125,29 @@ And the tutorial gives a negative exemple, when there is no formal path bringing
 
 #### SDLC Cycle
 
+The Software Development Life Cycle divides the process in 07 phases:
 
+1. Requirement Analysis
+	1.1. This is a required phase and one of the most important, because it involves the senior members of the team which are going to define the general plan, the necessary quality assurance, client meetings, etc...
+	1.2. At the end of this phase a document is created and is then set to be followed through the production and for costumer reference.
 
+2. Defining
+	2.1. This phase starts after the precedent one and has that document created to be converted into another document for Software Requirement Specification (SRS) which has in it self all the requirements for the product till its accomplisment.
 
+3. Designing
+	3.1. This phase has the objective to implement a specific design for the software based in the two previous documents.
+4. Coding (Development)
+	4.1. In this phase the software begins to be implemented with the actual coding being done.
 
+5. Testing
+	5.1. Here the software is tested against the all the requirement to make sure of its compliance.
 
-https://www.javatpoint.com/software-engineering-software-development-life-cycle
+6. Deployment
+	6.1. In this phase, once the software is certified, it is deployed.
+	
+7. Maintenance
+	7.1. Here is the phase when the software is already being used by the clients and is meeting with the real concrete issues that may appear from time to time.
+
 
 
 ### References
@@ -122,5 +157,4 @@ https://www.javatpoint.com/software-engineering-software-development-life-cycle
 
 [Software Engineering Tutorial](https://www.javatpoint.com/software-engineering-tutorial)
 
-[]()
 
