@@ -12,7 +12,7 @@ description: 'The RAD model is a linear sequential development process that emph
 2. ##### RAD phases
 3. ##### When to use RAD Model?  
 4. ##### Advantages of RAD model
-5. #####Disadvantages of RAD model
+5. ##### Disadvantages of RAD model
 6. ##### Further Reading
 7. ##### References
 
