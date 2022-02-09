@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'V-Model - Software Life Cycle Models'
 date: '2022-02-08'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The V-Model of software life cycle development receives its name from the fact that the production process runs in parallel implementing both a Development Cycle and a Testing Cycle, side by side.'
 ---
 

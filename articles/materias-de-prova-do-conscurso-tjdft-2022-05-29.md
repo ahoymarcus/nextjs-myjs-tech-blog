@@ -170,7 +170,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Noções de linguagens procedurais: tipos de dados elementares e estruturados, funções e procedimentos.
 - [ ] Representação de dados numéricos, textuais e estruturados; aritmética computacional. 
 - [ ] Estruturas de dados e algoritmos: listas, filas, pilhas, tabelas hash e árvores; métodos de acesso, busca, inserção e ordenação em estruturas de dados; complexidade de algoritmos. 
-- [ X ] Engenharia de software. Ciclo de vida do software.
+- [X] Engenharia de software. Ciclo de vida do software.
 - [ ] Metodologias de desenvolvimento de software. 
 - [ ] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [ ] Qualidade de software e CMMI. 
@@ -181,15 +181,15 @@ CONHECIMENTOS BÁSICOS
 - [ ] Métricas e estimativas de software. Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
 - [ ] Métodos para avaliação de usabilidade. 
 - [ ] Padrões de front-end: SPA e PWA. 
-- [ ] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
+- [X] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
 - [ ] Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 - [ ] Controles e testes de segurança para aplicações e webservices. 
 - [ ] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
 - [ ] Principais vulnerabilidades e remediações (OWASP Top Ten). 
 - [ ] Princípios de DevOps, DevSecOps e IaC (Infrastructure as Code). 
 - [ ] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.
-- [ ] Conhecimento dos frameworks e toolkits: Angular, jQuery, Vue, React, Spring, Spring Boot, Spring Cloud, Laravel, Django, Hibernate, JPA, JBoss Seam, JUnit.
-- [ ] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
+- [X] Conhecimento dos frameworks e toolkits: Angular, jQuery, Vue, React, Spring, Spring Boot, Spring Cloud, Laravel, Django, Hibernate, JPA, JBoss Seam, JUnit.
+- [X] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
 - [ ] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
 - [ ] Tecnologias Web Services, REST e API RESTful.
 - [ ] Conhecimento da linguagem GraphQL e Swagger.
@@ -197,14 +197,16 @@ CONHECIMENTOS BÁSICOS
 - [ ] Conhecimento do toolkit jBPM e Bizagi BPMS.
 - [ ] Recomendações W3C. 
 - [ ] Modelo Nacional de Interoperabilidade (MNI).
-- [ ] Bancos de dados. Conceitos e fundamentos. 
+- [X] Bancos de dados. Conceitos e fundamentos. 
 - [ ] Modelo relacional, em rede, hierárquico, distribuído e orientado a objetos. Projeto e modelagem de banco de dados relacional. Modelo Entidade Relacionamento. Notação IDEF1X. Normalização. Álgebra relacional. 
-- [ ] Conhecimento de SGBD Oracle, PostgreSQL, SQL Server e MySQL. 
-- [ ] Conceitos de bancos de dados NoSQL (orientado a documento, chave-valor, grafo e colunar).
+- [X] Conhecimento de SGBD Oracle, PostgreSQL, SQL Server e MySQL. 
+- [X] Conceitos de bancos de dados NoSQL (orientado a documento, chave-valor, grafo e colunar).
 - [ ] Características de bancos de dados massivos (Big Data). 
-- [ ] Conceitos e propriedades das transações (ACID).
-- [ ] Linguagem SQL (Padrão ANSI) e PL/SQL: consultas e subconsultas; triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. Controle de concorrência e otimização de consultas. 
-- [ ] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
+- [X] Conceitos e propriedades das transações (ACID).
+- [X] Linguagem SQL (Padrão ANSI) e PL/SQL: consultas e subconsultas; 
+- [ ] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 
+- [ ] Controle de concorrência e otimização de consultas. 
+- [X] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
 - [ ] Conhecimento de servidores web: Nginx e Apache.
 - [ ] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
 - [ ] Conceito de servidores de armazenamento de objetos. 
@@ -231,7 +233,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Características dos algoritmos RSA, AES, SSL e SHA-256. 
 - [ ] Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture). 
 - [ ] Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001. 
-- [ ] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). 
+- [X] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). 
 - [ ] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ).     
      
     		  

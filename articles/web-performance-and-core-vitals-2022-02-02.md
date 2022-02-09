@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Web Performance & Core Web Vitals'
 date: '2022-02-02'
-subject: 'web-development-articles'
+subject: 'web-dev-articles'
 description: 'To treat about web performance is both a subject to a better experience on the web and a prerequisite for results to be cast by search engines.'
 ---
 

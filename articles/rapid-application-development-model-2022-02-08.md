@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'RAD - Rapid Application Develoment Model'
 date: '2022-02-08'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The RAD model is a linear sequential development process that emphasizes on concise cycles that was first proposed by IBM in 1980.'
 ---
 

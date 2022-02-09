@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'What is SEO'
 date: '2022-02-01'
-subject: 'web-development-articles'
+subject: 'web-dev-articles'
 description: 'Understanding what is a SEO process and how to improve the site ranking in the search engines results.'
 ---
 

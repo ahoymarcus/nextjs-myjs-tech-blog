@@ -33,8 +33,9 @@ export async function getStaticProps({ params }) {
 };
 
 
-export default function WebDevelopmentArticle({ postData }) {
+export default function SoftwareDevelopmentArticle({ postData }) {
 	const { author, title, id, date, subject, description } = postData;
+	console.log(subject);
 	
 	
 	return(

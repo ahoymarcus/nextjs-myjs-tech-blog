@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'The Spiral Life Cycle Model'
 date: '2022-02-08'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The Spiral Model is a very important life cycle model because it provides support for **Risk Handling**. This life cycle model was initially proposed by boehm as a evolutionary process that couples the iterative feature of prototyping with the more controlled and systematic approach of the linear sequential model.'
 ---
 

@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 };
 
 
-export default function NodejsArticle({ postData }) {
+export default function DevOpsArticle({ postData }) {
 	const { author, title, id, date, subject, description } = postData;
 	
 	

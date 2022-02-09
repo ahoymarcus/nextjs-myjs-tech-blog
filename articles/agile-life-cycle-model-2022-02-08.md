@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Agile Model - Software Life Cycle'
 date: '2022-02-08'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The name Agile Model is related to a swift or versatile process, and as a methodology this model is based at the iterative model of development. The iterations are of a short length, about one to four weeks, and the entire project is divided into smaller parts, what in turn minimize the risks of the project.'
 ---
 

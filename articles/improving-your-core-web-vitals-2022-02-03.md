@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Improving Core Web Vitals'
 date: '2022-02-03'
-subject: 'web-development-articles'
+subject: 'web-dev-articles'
 description: 'This article walks through some issues about the improvement of Web Vitals in a webpage or web app, and focuses specially in the framework Next-JS. With SEO, best pratices, the monitoring the Core Web Vitals and related tools, it is show a wider ranges of performance aspects.'
 ---
 

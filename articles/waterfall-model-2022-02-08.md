@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Waterfall Model'
 date: '2022-02-08'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The Waterfall Model is the classic development life cycle method, and even though it is not in many use today, it is the basis case for all the other life cycle models.'
 ---
 

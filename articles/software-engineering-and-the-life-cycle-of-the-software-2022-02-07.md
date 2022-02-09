@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Software Engineering and the Life Cycle of  the Software'
 date: '2022-02-07'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'Introductory ideas about software engineering, presenting the different life cycles of software and the main methodology of development.'
 ---
 

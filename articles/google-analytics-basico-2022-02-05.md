@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Google Analytics básico'
 date: '2022-02-05'
-subject: 'web-development-articles'
+subject: 'web-dev-articles'
 description: 'O artigo trata como novos usuários podem criar uma conta, implementar um código de acompanhamento e configurar filtros de dados. Navegar na interface e nos relatórios e configurar painéis e atalhos. O curso também ensina a analisar relatórios básicos.'
 ---
 

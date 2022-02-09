@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Iterative Model - Software Life Cycle'
 date: '2022-02-09'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: '.'
 ---
 

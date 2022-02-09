@@ -25,7 +25,7 @@ export async function getStaticProps(context) {
 };
 
 
-export default function WebDevelopmentArticles({ allPostsData }) {
+export default function DevelopmentArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
@@ -43,8 +43,8 @@ export default function WebDevelopmentArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>Web Development Articles - JS News Blog</title>
-				<meta name="description" content="Articles about web development ranging from a variaty of subjects, including HTML, CSS, JavaScript, SEO, patterns, etc..." />
+				<title>Software Development Articles - JS News Blog</title>
+				<meta name="description" content="Articles about software development ranging from a variaty of subjects, including quality of software, security, patterns, best practices etc..." />
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

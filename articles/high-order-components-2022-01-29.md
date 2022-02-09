@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'High Order Components'
 date: '2022-01-29'
-subject: 'javascript-articles'
+subject: 'web-dev-articles'
 description: 'According to the site from Reactjs.org, a high order component, or HOC, is a pattern used for reuse components logics across many ordinaire components.'
 ---
 

@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Requirement Engineering'
 date: '2022-02-07'
-subject: 'dev-ops-articles'
+subject: 'development-articles'
 description: 'The requirements engineering refers to the process of defining, documenting, and maintaining requirements for a software development project.'
 ---
 
