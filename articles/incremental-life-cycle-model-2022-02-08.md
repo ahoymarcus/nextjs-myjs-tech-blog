@@ -62,10 +62,10 @@ The Incremental Model is a method to engineer software that breaks or divide the
 
 ### Further Reading
 
-[Software Engineering | Incremental process model](https://www.geeksforgeeks.org/software-engineering-incremental-process-model/)
+[Software Engineering | Incremental process model - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-incremental-process-model/)
 
 ### References
 
-[Incremental Model](https://www.javatpoint.com/software-engineering-incremental-model)
+[Incremental Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-incremental-model)
 
 

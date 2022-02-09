@@ -13,15 +13,16 @@
 	justify-content: center;
 }
 
-.upwardLink a {
+.upwardLink h5 {
 	/*float: right;*/
 	background-color: #f3ecec7a; /*#c085852b;*/
 	padding: 8px 60px;
 	border: 1px solid black;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
-.upwardLink a:hover {
+.upwardLink h5:hover {
 	color: white;
 	background-color: #f6aeae; /*#c0858594;*/
 	border: 1px solid transparent;

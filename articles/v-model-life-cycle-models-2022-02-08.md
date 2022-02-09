@@ -30,7 +30,7 @@ And for this same reason it is also known as "Verification an Validation Model",
 1. Verification: it is the static analysis or review of the process to evaluate the product, that is without executing code.
 2. Validation: it is a dynamic analysis through the means of testing by executing code to determ that the product meets the customer expections and requirements.
 
-![software-engineering-v-model](/images/articles/dev-ops/software-engineering-v-model.png)
+![software-engineering-v-model](/images/articles/development/software-engineering-v-model.png)
 [GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
 
 ### BV-Model Verification phases
@@ -73,10 +73,10 @@ And for this same reason it is also known as "Verification an Validation Model",
 
 ### Further Reading
 
-[Software Engineering | SDLC V-Model](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
+[Software Engineering | SDLC V-Model - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
 
 ### References
 
 
-[V-Model](https://www.javatpoint.com/software-engineering-v-model)
+[V-Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-v-model)
 

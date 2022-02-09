@@ -29,7 +29,7 @@ export default function MiscArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
-	console.log('query = ', query);
+	//console.log('query = ', query);
 	// console.log(query instanceof String);
 	// console.log(typeof query);
 	
@@ -52,11 +52,11 @@ export default function MiscArticles({ allPostsData }) {
 			<h1 className={styles.title}>
 				React-JS and Next-JS articles
 			</h1>
-			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
+			<h3>Technical papers and general news about subjects that may have some correlation to wed development and programming.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {
-					console.log(query.param === article.subject);
+					//console.log(query.param === article.subject);
 					
 					counter += 1;
 					

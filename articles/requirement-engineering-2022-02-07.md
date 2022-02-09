@@ -53,13 +53,13 @@ Usualy, the software requirements are divided and categorized into two groups:
 ### Further Reading
 
 
-[Software Engineering | Requirements Engineering Process](https://www.geeksforgeeks.org/software-engineering-requirements-engineering-process/)
+[Software Engineering | Requirements Engineering Process - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-requirements-engineering-process/)
 
 
 ### References
 
 
-[Requirement Engineering](https://www.javatpoint.com/software-engineering-requirement-engineering)
+[Requirement Engineering  - JavaTPoint](https://www.javatpoint.com/software-engineering-requirement-engineering)
 
 
 

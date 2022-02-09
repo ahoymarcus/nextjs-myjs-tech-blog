@@ -65,11 +65,11 @@ Some characteristics from RAD according JavaTPoint:
 
 ### Further Reading
 
-[Software Engineering | Rapid application development model (RAD)](https://www.geeksforgeeks.org/software-engineering-rapid-application-development-model-rad/)
+[Software Engineering | Rapid application development model (RAD) - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-rapid-application-development-model-rad/)
 
 ### References
 
-[RAD (Rapid Application Development) Model](https://www.javatpoint.com/software-engineering-rapid-application-development-model)
+[RAD (Rapid Application Development) Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-rapid-application-development-model)
 
 
 

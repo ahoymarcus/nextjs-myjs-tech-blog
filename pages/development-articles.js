@@ -34,7 +34,7 @@ export default function WebDevArticles({ allPostsData }) {
 	// console.log(typeof query);
 	
 	const currentArticles = allPostsData.filter(post => post.subject === query.param);
-	console.log(currentArticles);
+	//console.log(currentArticles);
 	
 	const numberOfCurrentPosts = currentArticles.length;
 	let counter = 0;
@@ -52,11 +52,11 @@ export default function WebDevArticles({ allPostsData }) {
 			<h1 className={styles.title}>
 				React-JS and Next-JS articles
 			</h1>
-			<h3>Technical papers and general news about the React-JS Ecosystem.</h3>
+			<h3>Technical papers and general news about Web Development and the JavaScript ecosystem.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {
-					console.log(query.param === article.subject);
+					//console.log(query.param === article.subject);
 					
 					counter += 1;
 					

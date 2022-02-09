@@ -110,11 +110,11 @@ Some circumstances where the Waterfall model is more suited:
 
 ### Further Reading
 
-[Software Engineering | Classical Waterfall Model](https://www.geeksforgeeks.org/software-engineering-classical-waterfall-model/)
+[Software Engineering | Classical Waterfall Model - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-classical-waterfall-model/)
 
 ### References
 
-[Waterfall Model](https://www.javatpoint.com/software-engineering-waterfall-model)
+[Waterfall Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-waterfall-model)
 
 
 

@@ -66,12 +66,12 @@ Thus, in the Incremental Model there is no overlapping of phases, there is no de
 
 ### Further Reading
 
-[Software Engineering | Iterative Waterfall Model](https://www.geeksforgeeks.org/software-engineering-iterative-waterfall-model/)
+[Software Engineering | Iterative Waterfall Model - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-iterative-waterfall-model/)
 
 
 ### References
 
 
-[Iterative Model](https://www.javatpoint.com/software-engineering-iterative-model)
+[Iterative Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-iterative-model)
 
 

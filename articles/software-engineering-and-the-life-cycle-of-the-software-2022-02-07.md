@@ -39,7 +39,7 @@ So, in this day and age, software commonly grow in size, and also commonly has t
 
 
 
-![importance-of-software-engineering](/images/articles/dev-ops/importance-of-software-engineering.png)
+![importance-of-software-engineering](/images/articles/development/importance-of-software-engineering.png)
 [**JavaTPoint**](https://www.javatpoint.com/software-engineering-tutorial)
 
 
@@ -89,7 +89,7 @@ And besides the use of these kinds of abstract models, there are some methodolog
 11. **Prototype Model**: works with a iteration in a 'quick design' or prototype which servers as the visual bond between developers and client, and when the client is happy with the system, then it is converted into a software, with also quality and securities considerations.
 
 
-![sdlc-models](/images/articles/dev-ops/sdlc-models.png)
+![sdlc-models](/images/articles/development/software-life-cycle-models.png)
 [**JavaTPoint**](https://www.javatpoint.com/software-engineering-tutorial)
 
 
@@ -153,8 +153,8 @@ The Software Development Life Cycle divides the process in 07 phases:
 ### References
 
 
-[What is Software Engineering? Definition, Basics, Characteristics](https://www.guru99.com/what-is-software-engineering.html)
+[What is Software Engineering? Definition, Basics, Characteristics - Guru99](https://www.guru99.com/what-is-software-engineering.html)
 
-[Software Engineering Tutorial](https://www.javatpoint.com/software-engineering-tutorial)
+[Software Engineering Tutorial  - JavaTPoint](https://www.javatpoint.com/software-engineering-tutorial)
 
 

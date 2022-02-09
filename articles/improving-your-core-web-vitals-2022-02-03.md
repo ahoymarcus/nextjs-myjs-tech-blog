@@ -213,9 +213,9 @@ Monitoring a site is a process as important as it optimization, and the Nextjs f
 
 [Improving your Core Web Vitals - Nextjs.org](https://nextjs.org/learn/seo/improve)
 
-[Como Otimizar seu Site com Google Lighthouse](https://pt.semrush.com/blog/como-otimizar-seu-site-com-google-lighthouse/)
+[Como Otimizar seu Site com Google Lighthouse - Semrush.com](https://pt.semrush.com/blog/como-otimizar-seu-site-com-google-lighthouse/)
 
-[Monitoring your Core Web Vitals](https://nextjs.org/learn/seo/monitor)
+[Monitoring your Core Web Vitals - Nextjs.org](https://nextjs.org/learn/seo/monitor)
 
 
 

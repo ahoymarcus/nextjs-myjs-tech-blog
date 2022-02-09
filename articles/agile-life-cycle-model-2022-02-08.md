@@ -32,7 +32,7 @@ The iterations are of a short length, about one to four weeks, and the entire pr
 
 Also, each software cycle includes all the necessary phases: planning, requirement analysis, design, coding, testing and the implementation of a working system.
 
-![software-engineering-agile-model](/images/articles/dev-ops/software-engineering-agile-model.png)
+![software-engineering-agile-model](/images/articles/development/software-engineering-agile-model.png)
 [JavaTPoint](https://www.javatpoint.com/software-engineering-agile-model)
 
 Finally, it interesting to observe that in some terms the Agile Model evolved into a kind of develoment culture with a whole set of concepts, like Frameworks and Practices, that that part in all its environment. 
@@ -154,12 +154,12 @@ The Lean software development methodology follows the principle of "Just in Time
 
 ### Further Reading
 
-[Software Engineering | Agile Software Development](https://www.geeksforgeeks.org/software-engineering-agile-software-development/)
+[Software Engineering | Agile Software Development - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-agile-software-development/)
 
-[Software Engineering | Agile Development Models](https://www.geeksforgeeks.org/software-engineering-agile-development-models/)
+[Software Engineering | Agile Development Models - GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering-agile-development-models/)
 
 ### References
 
-[Agile Model](https://www.javatpoint.com/software-engineering-agile-model)
+[Agile Model  - JavaTPoint](https://www.javatpoint.com/software-engineering-agile-model)
 
 

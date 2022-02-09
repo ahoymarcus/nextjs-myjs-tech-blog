@@ -24,7 +24,7 @@ A very interesting feature in the model is the fact that some metadata and prope
 [GeeksforGeeks.org](https://www.geeksforgeeks.org/software-engineering-spiral-model/)
 
 
-![software-engineering-spiral-model](/images/articles/dev-ops/spiral-model.jpg)
+![software-engineering-spiral-model](/images/articles/development/spiral-model.jpg)
 
 
 ### Spiral Model phases
@@ -78,5 +78,5 @@ Also interesting in this model is the fact that it implies and uses aspects of a
 ### References
 
 
-[Spiral Model](https://www.javatpoint.com/software-engineering-spiral-model)
+[Spiral Model - JavaTPoint](https://www.javatpoint.com/software-engineering-spiral-model)
 
