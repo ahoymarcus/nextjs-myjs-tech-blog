@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Incremental Life Cycle Model'
 date: '2022-02-08'
 subject: 'development-articles'
-description: 'The Incremental Model of software life cycle is a method to engineer software that breaks or divide the requirements for a complex product into multiple modules or cycles that are progressively built adding complexit to the system until it reaches its final form..'
+description: 'The Incremental Model of software life cycle is a method to engineer software that breaks or divide the requirements for a complex product into multiple modules or cycles that are progressively built adding complexit to the system until it reaches its final form.'
 ---
 
 # Incremental Life Cycle Model

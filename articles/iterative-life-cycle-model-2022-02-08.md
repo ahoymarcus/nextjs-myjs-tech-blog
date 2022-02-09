@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Iterative Model - Software Life Cycle'
 date: '2022-02-09'
 subject: 'development-articles'
-description: '.'
+description: 'In the Iterative Model the software requirements are divided into smaller groups to be tackled in sequential cycles or iterations, where each iteration presents a version of the software until all the requirements are met and the whole system is finished.'
 ---
 
 # Iterative Model - Software Life Cycle
@@ -66,7 +66,7 @@ Thus, in the Incremental Model there is no overlapping of phases, there is no de
 
 ### Further Reading
 
-(Software Engineering | Iterative Waterfall Model)[https://www.geeksforgeeks.org/software-engineering-iterative-waterfall-model/]
+[Software Engineering | Iterative Waterfall Model](https://www.geeksforgeeks.org/software-engineering-iterative-waterfall-model/)
 
 
 ### References

@@ -49,7 +49,7 @@ export const Toolbar = () => {
 	
 	return (
 		<nav className={styles.main}>
-			<div className={styles.navHeader}>
+			<div id="toolbar" className={styles.navHeader}>
 				<div 
 					className={styles.jsIconContainer}
 				>

@@ -17,7 +17,12 @@ export default function Layout({ children }) {
 			<Toolbar />
 			<main className={styles.pageContainer}>
 				{children}
+				
+				<span className={styles.upwardLink}>
+					<a href="#toolbar" >Up &#8593;</a>
+				</span>
 			</main>
+			
 			<Footer />
 		</>
 	);

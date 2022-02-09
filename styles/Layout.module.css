@@ -2,7 +2,27 @@
 	display: flex;
 	flex-direction: column;
 	/*height: 100vh;*/
+	background-color: #f5e34736;
 }
 
+.upwardLink {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+}
 
+.upwardLink a {
+	/*float: right;*/
+	background-color: #f3ecec7a; /*#c085852b;*/
+	padding: 8px 60px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
 
+.upwardLink a:hover {
+	color: white;
+	background-color: #f6aeae; /*#c0858594;*/
+	border: 1px solid transparent;
+}
