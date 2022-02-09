@@ -54,7 +54,7 @@ The Incremental Model is a method to engineer software that breaks or divide the
 
 ### Disadvantages of Incremental Model
 
-- Requires good plnning and design.
+- Requires good planning and design.
 - Total cost is not lower in its entirety.
 - Well defined module interfaces are needed.
 
