@@ -6,7 +6,7 @@ subject: 'development-articles'
 description: 'Scrum is a lightweight framework that helps peoples, teams and organizations generate value through adaptive solutions for complex problems.'
 ---
 
-# Scrum Methodology and Practices
+# Scrum Method and Practices
 
 1. ##### Introduction  
 2. ##### The Basic Roles
@@ -17,8 +17,15 @@ description: 'Scrum is a lightweight framework that helps peoples, teams and org
 	5.1. Roles and Responsabilities of the Product Owner
 	5.2.Proxy Product Owner
 6. ##### The Development Team
-	6.1. Roles and Responsabilities of the Developer Team
-7. ##### Development Team Size
+	6.1. Roles and Responsabilities of the Developer Team      
+	6.2. Development Team Size
+7. ##### Scrum Artifacts     
+	7.1. Product Backlog     
+	7.2. Sprint Backlog       
+	7.3. Product Increments    
+8. ##### Scrum Events
+	8.1. The Sprint Planning Ceremony    
+	8.2. The Daily Standup Ceremony    
 8. ##### Further Reading
 9. ##### References
 
@@ -104,16 +111,148 @@ Finally, as a whole the developer team have to work in a self-sufficient and cro
 `Nobody tells the Development Team what and how to do things. It is the Development Team’s responsibility to pick up the items from the Product Backlog that can be delivered in the next Sprint. Once the Sprint is started, the items cannot be changed/added/removed.`
 [Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
 
-### Development Team Size
+#### Development Team Size
 
 It is a important process to decide the correct number of members at the developer team, because it should not be to big as to demand a expensive coordination among the team group, but it cannot be too small to hinder the group to possess the necessary skills required to deliver an increment.
 
 The developer team should have between 3-9 members, and unless Scrum Master and Product Owner are themselves developers that will help with de production of the software, they are not acounted as part of the developer team.
 
 
+### Scrum Artifacts
+
+Thereare 3 kinds of scrum artifacts:
+
+1. **Product Backlog**
+2. **Sprint Backlog** 
+3. **Product Increments**
+
+![Scrum-Artifacts-types](/images/articles/development/Scrum-Artifacts-types.png)
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+#### Product Backlog
+
+The produt backlog is the required items or requirements need to finish the project, and so it is the final document that the scrum team have to relate to in regard of the project.
+
+As it was said prevously, its the responsability of the Product Owner and it is also his framework for explaning the requirements to the the team.
+
+And in the article of [softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-artifacts/), it is stated that there is no fixed form about the backlog, thus there would be also no definition about the language to be used.
+
+So, it could be technical language or it could even be on layman's language, and one example of a typical product backlog could be:
+
+| Story | Estimate | Priority |        
+| ----- | -------- | -------- |        
+| I wnat to login | 4 | 1 |        
+| I want to logout | 2 | 2 |        
+| I want to change password | 1 | 3 |       
+| I want to update address | 3 | 4 |       
+| I want to add another phone | 1 | 5 |      
+
+Some ideal rules related to the Product Backlog:
+
+1. **It should be prioritized**: the items should be ordered in relation to their priority, and it could involve decisions like the benefit from the story point, the effort involved in the creation, the complexity, the risk or uncertainty, the customer priority, etc.
+2. **It should be estimated**: the stories should always be estimed as per the agreed definition, and this could be used to help in the prioritizing process.
+3. **It should be high level**: the stories should always be high level, and the creating of detailed user stories should be a task for the scrum team and not the PO.
+4. **It should be dynamic**: it is expected that the backlog should update with the progress of the sprint, not only in terms of the evolving of more clear definitions for the items, but also for the addition, removal or modification of items in the story.
+	4.1. Another natural feature to change or that could be updated is the priority of the items itself.
+
+
+#### Sprint Backlog
+
+Since the structure of the scrum involves small teams working in short iterations (2 to 4 weeks), the scrum team are responsible to identify the items in the Product Backlog to become part in the Spring Backlog.
+
+Together with the responsability to choose from the product backlog the right functionalities, it is also the team responsability to estimate them and to decide `how much they can deliver` in that current sprint. 
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+Also, it is the sole responsability of the team to update the Sprint Backlog and to create more detailed user stories:
+
+![Sprint-Backlog](/images/articles/development/Sprint-Backlog.png)
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+Some guidelines and best practices in creating a Sprint Backlog:
+
+1. **Group decision**: the developer team should decide as a whole, since it is view as a cross-functional team itself.
+2. **Don't assign tasks**: the developer team is in itself also self-sufficient, so it is also their sole responsability to pick items for themselves and decide among the group how to proceed.
+3. **A definition of done**: there should be not only an agreement, but also a clear and visible description about the "shippable product".
+4. **It should be dynamic**: just as the PO progress with the product backlog, the team should progress in relation to the items, tasks and definitions in the Sprint Backlog.
+5. **It should be extensive**: in the meaning that the Sprint Backlog should contain everything that is needed to deliver a shippable product, even if the task do not related to some coding action.
+
+#### Product Increments
+
+The Product Increments is the aggregation of all the Sprint Backlogs items completed, and the summation toward the delivering of a final product.
+
+`What this means is that whatever was the result of the sprint is an increment. Obviously, for the result to be considered an increment, it should first meet the pre-defined definition of done i.e. the end result should be a usable product which is capable of “shipping”.` 
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+
+### Scrum Events
+
+There is some different terminology used to these events, but they all should represent some event whose goal is the monitoring and accomplishing the Sprint work:
+
+- Scrum ceremonies
+- Scrum rituals
+- Scrum meetings
+
+#### Types of Scrum Events
+
+The events are __in-person__ gathering organized by the Scrum Master, and it can be dedicated to some specific groups, including events with the stakeholders, or managers and even the custumer.
+
+But each event should follow the stipulated time frame and focus at its specific objectives, and it is the responsability of the Scrum Master to state clearly all these points and to work with the event for its best results and without deviations.
+
+The **Time Boxing**, though it cannot be extended, it can be shortened if the goals of the event have already been met.
+
+Usually, the length of the event is proportional to the length of the current Sprint, except for the **Daily Standup** that has a fixed time box of 15 minutes.
+
+**note**: only in exceptional cases, where it might be aggred upon by all the participants, a event could have its timebox extended.
+
+#### The Sprint Planning Ceremonies
+
+It is the initial ceremony when starting a Sprint and it has the Product Owner as the focused point as he brings the Product Backlog for presenting the user stories to the team, and its a ceremony where no one else but the team should participate.
+
+**note**: eventhough it is the sole responsability of the PO to define the Backlog, the team is authorized to reject some user story that don't follow the necessary Acceptance Criteria defined.
+
+Is purpose is to gather the team and clarify all the necessary points, and in that regard the team is allowed to ask as many questions necessary to have the story complete and sustanable.
+
+After all the points in the story are decided, the group estimates each of the users stories and they pick up all those that should be accomplished in the Sprint according to their priorization.
+
+About the **Velocity**, it `is determined by the total number of story points completed in an average sprint. The velocity is calculated based on the historical Sprints and by averaging them out. The more sprints we complete the more stable the velocity for a team is.`
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+There are many techniques, but a common one for Story Estimation would be the **Plannig Poker Cards**, where values are assigned following the Fibonacci Series, and when some story reaches 13 it is divided to be correctly fitted in a short sprint.
+
+```
+Fibonacci Series – 1, 1, 2, 3, 5, 8, 13 and so on.
+```
+
+Eventhough the Sprint Planning goal is for deciding the Sprint Backlog and the shippiment criterea, it is possible that the team may start writing some initial tasks also.
+
+Finally, there some specific items that could also become part of the Sprint Backlog:
+
+- **Spikes**: a spike represents some research task needed in relation to the accomplishment of a user story.
+- **Technical debts**: these are necessary refactoring that have to be done on the code already developed.
+- **Bugs**: these are also issues that are relevant to be tackled by the team.
+
+
+#### The Daily Standup Ceremony
+
+
+
+
+
+
+https://www.softwaretestinghelp.com/scrum-events/
+
+
+
+
+
+
+
+
+
+
 ### Further Reading
 
-[]()
+[How to estimate product backlog effectively](https://medium.com/@concisesoftware/how-to-estimate-product-backlog-effectively-aefa4b9051aa)
 
 [ Agile Methodology: A Beginner’s Guide To Agile Method and Scrum - Softwaretestinghelp.com](https://www.softwaretestinghelp.com/agile-scrum-methodology-for-development-and-testing/)
 
