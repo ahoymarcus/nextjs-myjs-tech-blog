@@ -24,10 +24,13 @@ description: 'Scrum is a lightweight framework that helps peoples, teams and org
 	7.2. Sprint Backlog       
 	7.3. Product Increments    
 8. ##### Scrum Events
-	8.1. The Sprint Planning Ceremony    
-	8.2. The Daily Standup Ceremony    
-8. ##### Further Reading
-9. ##### References
+	8.1. The Sprint Planning Ceremony         
+	8.2. The Daily Standup Ceremony     
+	8.3. The Sprint Review Ceremony    
+	4.4. The Sprint Retrospective Ceremony  
+	4.5. Backlog Refinement Ceremony     
+9. ##### Further Reading
+10. ##### References
 
 ### Introduction
 
@@ -234,20 +237,66 @@ Finally, there some specific items that could also become part of the Sprint Bac
 
 #### The Daily Standup Ceremony
 
+The Daily Stanup ceremony is a meeting which brings the opportunity to illustrate the overall view of the Sprint's state. 
 
+It's also a moment for the team to share the current jobs and to confirn whether may be something hindering the Sprint's goals.
 
+Thus, in this event each team member is called to shares the status of his tasks and to share any hindrance and seek help in the case they are stalled in something.
 
+Three ceremonial questions:
 
+1. "What have you done since the last Daily Standup Meeting?"
+2. "What do you plan to do today?"
+3. "Is there any impediment blocking your work?"
 
-https://www.softwaretestinghelp.com/scrum-events/
+`[...]members are expected to pay attention when someone is sharing the status and offer for help if the need arises. As soon as the last team member has answered all the three questions, the meeting ends there.`
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
 
+At last, it is important to reminde the importance of the Scrum Master in leading this ceremony also:
 
+- To focus on the 15 minutes time box. So, in some cases he can step into the discussions and ask the team members to continue some specific point of discussion offline.
+- To control that only core team members are allowed to share their state, eventhough people interested on the Sprint's goal are allowed to attend the meeting.
+- The Daily Standup should hapen even if there is only a single team member present.
+- To retain the same time and location to reduce overhead of information.
+- Discourages the use of notebooks, cel-phones, etc...
+- To pass important news and updates if the time frame allows.
 
+#### The Sprint Review Ceremony (or Sprint Demo)
 
+This ceremony has the purpose to demonstrate the work done in the Sprint, and gather feedback and buy-in.
 
+Usually, each demonstrations and the responses for the queries are done by the team member responsible for that same task.
 
+Here, the Product Owner has a distinct job of evaluating the user story being demonstrated against acceptance criteria defined before hand.
 
+Thus, a accepted store is shipped to the Product Increments artifact, and the rejected can be sent either back to the Product Backlog or to go direct to the next Sprint Backlog.
 
+`Another key outcome of the Sprint Review meeting is that the team members learn a thing about estimation. The number of user stories accepted determines the number of story points achieved in a sprint. Thus gradually sprint by sprint, the team can develop the ability to estimate correctly and make an informed decision regarding the story points that are feasible to achieve.`
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+Finally, as always, the Scrum Master has the responsability to maintain the focus of the meeting at the time box and to welcome the attendees, that in this ceremony could be also stakeholders, managers, users, etc...
+
+#### The Sprint Retrospective Ceremony
+
+This ceremony is performed always at the very end of some Sprint and it gives the chance to bring reflections about the later Sprint whereabouts.
+
+`Remember the objective of the meeting to take a step ahead in the area of improvisation and not to hold the team by increasing the tension amongst the members.
+[Softwaretestinghelp.com](https://www.softwaretestinghelp.com/scrum-roles-responsibilities/)
+
+Ànd the team is expected to answer a four part question about the later Sprint:
+
+1. **What went well?**
+2. **What have you learned?**
+3. **What didin't go well?**
+4. **What could be done better?**
+
+**note**: the more fragile part of the question is the third one and come from the Scrum Master to help directing the conversatios so it might not derail, but be productive.
+
+Finally, at this last ceremony of the Sprint iteration, there is the both the case of attendees and the outcome of the ceremony itself. In the first case, hboth the Scrum Master and the Product Owner take their turns beside the core team, and it is not allowed people outside to attend to it. And the second point is that as an outcome it may be expected a list of action items from it.
+
+#### Backlog Refinement Ceremony
+
+Finally, after the Sprint iteration is finished, the team meet to refine the Product Backlog as part of the recent growth the group experienced, preparing it for the beginning of the next Sprint. 
 
 
 ### Further Reading
