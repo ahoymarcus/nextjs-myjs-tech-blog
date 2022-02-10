@@ -50,7 +50,7 @@ export default function DevOpsArticles({ allPostsData }) {
 			</Head>
 			
 			<h1 className={styles.title}>
-				Node-JS articles
+				Dev-Ops articles
 			</h1>
 			<h3>Technical papers and general news about the Dev-Ops culture.</h3>
 		

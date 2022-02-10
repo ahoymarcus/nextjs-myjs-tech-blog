@@ -44,7 +44,7 @@ export default function DevelopmentArticles({ allPostsData }) {
 		<div className={styles.main}>
       <Head>
 				<title>Software Development Articles - JS News Blog</title>
-				<meta name="description" content="Articles about software development ranging from a variaty of subjects, including quality of software, security, patterns, best practices etc..." />
+				<meta name="description" content="Articles about Web Development and the JavaScript ecosystem, ranging from a variaty of subjects, including React-JS, Next-JS, frontend, Server-Side Rendering, backend, Node-JS, APIs, REST, jwt, best practices, patterns and general news." />
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -52,7 +52,7 @@ export default function DevelopmentArticles({ allPostsData }) {
 			<h1 className={styles.title}>
 				Web Development articles
 			</h1>
-			<h3>Technical papers and general news about Web Development.</h3>
+			<h3>Technical papers and general news about Web Development and Web Technologies.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {

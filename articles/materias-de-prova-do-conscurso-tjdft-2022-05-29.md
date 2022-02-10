@@ -171,7 +171,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Representação de dados numéricos, textuais e estruturados; aritmética computacional. 
 - [ ] Estruturas de dados e algoritmos: listas, filas, pilhas, tabelas hash e árvores; métodos de acesso, busca, inserção e ordenação em estruturas de dados; complexidade de algoritmos. 
 - [X] Engenharia de software. Ciclo de vida do software.
-- [ ] Metodologias de desenvolvimento de software. 
+- [X] Metodologias de desenvolvimento de software. 
 - [ ] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [ ] Qualidade de software e CMMI. 
 - [ ] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 

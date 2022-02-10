@@ -43,14 +43,14 @@ export default function MiscArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>Misc Articles - JS News Blog</title>
+				<title>Miscellaneous Articles - JS News Blog</title>
 				<meta name="description" content="Articles from a variaty of subjects that may have some correlation to wed development and programming." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
 			<h1 className={styles.title}>
-				React-JS and Next-JS articles
+				Miscellaneous articles
 			</h1>
 			<h3>Technical papers and general news about subjects that may have some correlation to wed development and programming.</h3>
 		

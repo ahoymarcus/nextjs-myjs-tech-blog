@@ -43,16 +43,16 @@ export default function WebDevArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>React-JS Articles - JS News Blog</title>
-				<meta name="description" content="Articles about Web Development and the JavaScript ecosystem, ranging from a variaty of subjects, including React-JS, Next-JS, frontend, Server-Side Rendering, backend, Node-JS, APIs, REST, jwt, best practices, patterns and general news." /> 
+				<title>Software Development Articles - JS News Blog</title>
+				<meta name="description" content="Articles about software development ranging from a variaty of subjects, including quality of software, security, patterns, best practices etc..." /> 
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
 			<h1 className={styles.title}>
-				React-JS and Next-JS articles
+				Software Development articles
 			</h1>
-			<h3>Technical papers and general news about Web Development and the JavaScript ecosystem.</h3>
+			<h3>Technical papers and general news about Software Developement and Best Pratices.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {
