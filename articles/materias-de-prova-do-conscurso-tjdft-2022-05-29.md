@@ -173,7 +173,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Engenharia de software. Ciclo de vida do software.
 - [X] Metodologias de desenvolvimento de software. 
 - [X] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
-- [ ] Qualidade de software e CMMI. 
+- [X] Qualidade de software e CMMI. 
 - [ ] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
 - [ ] Conhecimento das ferramentas Git, Gitlab e Jira.
 - [ ] Gestão de pipelines no Gitlab CI. 
@@ -205,7 +205,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conceitos e propriedades das transações (ACID).
 - [X] Linguagem SQL (Padrão ANSI) e PL/SQL: consultas e subconsultas; 
 - [ ] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 
-- [ ] Controle de concorrência e otimização de consultas. 
+- [X] Controle de concorrência e otimização de consultas. 
 - [X] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
 - [ ] Conhecimento de servidores web: Nginx e Apache.
 - [ ] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
