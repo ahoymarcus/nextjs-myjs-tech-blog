@@ -186,7 +186,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Controles e testes de segurança para aplicações e webservices. 
 - [ ] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
 - [ ] Principais vulnerabilidades e remediações (OWASP Top Ten). 
-- [ ] Princípios de DevOps, DevSecOps e IaC (Infrastructure as Code). 
+- [X] Princípios de DevOps, DevSecOps e IaC (Infrastructure as Code). 
 - [ ] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.
 - [X] Conhecimento dos frameworks e toolkits: Angular, jQuery, Vue, React, Spring, Spring Boot, Spring Cloud, Laravel, Django, Hibernate, JPA, JBoss Seam, JUnit.
 - [X] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
@@ -201,7 +201,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Modelo relacional, em rede, hierárquico, distribuído e orientado a objetos. Projeto e modelagem de banco de dados relacional. Modelo Entidade Relacionamento. Notação IDEF1X. Normalização. Álgebra relacional. 
 - [X] Conhecimento de SGBD Oracle, PostgreSQL, SQL Server e MySQL. 
 - [X] Conceitos de bancos de dados NoSQL (orientado a documento, chave-valor, grafo e colunar).
-- [ ] Características de bancos de dados massivos (Big Data). 
+- [X] Características de bancos de dados massivos (Big Data). 
 - [X] Conceitos e propriedades das transações (ACID).
 - [X] Linguagem SQL (Padrão ANSI) e PL/SQL: consultas e subconsultas; 
 - [ ] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 

@@ -2,7 +2,7 @@
 author: 'Yoric'
 title: 'Next Attraction'
 date: '2022-01-01'
-subject: 'dev-ops-articles'
+subject: 'news-articles'
 description: 'Soon a new presentation just around the block.'
 ---
 

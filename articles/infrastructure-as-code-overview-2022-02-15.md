@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Infrastructure as Code - (IaC)'
-date: '2022-02-14'
+date: '2022-02-15'
 subject: 'development-articles'
 description: 'Infrastructure as a code (IaC) is the managing and provisioning of automated infrastructure from coding that also helps with the configuration, the documentation and the versioning all the software structure involved.'
 ---
