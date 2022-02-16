@@ -25,7 +25,7 @@ export async function getStaticProps(context) {
 };
 
 
-export default function NewsArticles({ allPostsData }) {
+export default function DevelopmentArticles({ allPostsData }) {
 	const router = useRouter();
 	
 	const query = router.query;
@@ -43,16 +43,16 @@ export default function NewsArticles({ allPostsData }) {
   return (
 		<div className={styles.main}>
       <Head>
-				<title>News Articles - JS News Blog</title>
-				<meta name="description" content="News articles about Web Development and all the JavaScript statck, like React-JS, Node-JS, including software engineering, quality of sofware,  services, best practices, patterns, etc..." /> 
+				<title>Software Development Articles - JS News Blog</title>
+				<meta name="description" content="Articles about Web Development and the JavaScript ecosystem, ranging from a variaty of subjects, including React-JS, Next-JS, frontend, Server-Side Rendering, backend, Node-JS, APIs, REST, jwt, best practices, patterns and general news." />
 				
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			
 			<h1 className={styles.title}>
-				News Feed articles
+				Web Development articles
 			</h1>
-			<h3>News Feed about Web Development and all the JavaScript Statck.</h3>
+			<h3>Technical papers and general news about Web Development and Web Technologies.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {

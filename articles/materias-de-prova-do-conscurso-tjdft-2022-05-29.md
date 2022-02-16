@@ -174,7 +174,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Metodologias de desenvolvimento de software. 
 - [X] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [X] Qualidade de software e CMMI. 
-- [ ] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
+- [X] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
 - [ ] Conhecimento das ferramentas Git, Gitlab e Jira.
 - [ ] Gestão de pipelines no Gitlab CI. 
 - [ ] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
