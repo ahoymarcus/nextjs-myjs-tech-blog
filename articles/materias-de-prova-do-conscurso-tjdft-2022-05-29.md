@@ -175,10 +175,11 @@ CONHECIMENTOS BÁSICOS
 - [X] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [X] Qualidade de software e CMMI. 
 - [X] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
-- [ ] Conhecimento das ferramentas Git, Gitlab e Jira.
+- [X] Conhecimento das ferramentas Git, Gitlab e Jira.
 - [ ] Gestão de pipelines no Gitlab CI. 
 - [ ] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
-- [ ] Métricas e estimativas de software. Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
+- [ ] Métricas e estimativas de software. 
+- [ ] Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
 - [ ] Métodos para avaliação de usabilidade. 
 - [ ] Padrões de front-end: SPA e PWA. 
 - [X] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
