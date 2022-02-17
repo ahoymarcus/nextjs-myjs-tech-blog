@@ -15,9 +15,12 @@ description: 'The need of software metrics and measurement are related to: 1. De
 	3.2. Classification of Software Metrics      
 	3.3. Scope of Software Metrics      
 	3.4. Advantages of Software Metrics      
-4. ##### Size Oriented Metrics
-	4.1. Line of Code Metrics (LOC)     
-	4.2. Halstead's Software Metrics     
+4. ##### Size Oriented Metrics   
+	4.1. Line of Code Metrics (LOC)        
+	4.2. Halstead's Software Metrics        
+	4.3. Objectivesof Functional Point Analysis (FPA)
+	4.4. Extended Function Point (EFP) Metrics    
+	4.5. Data Structure Metrics     
 5. ##### 
 6. ##### 
 7. ##### 
@@ -90,7 +93,7 @@ Some activies related to software metrics:
 3. **Data collection**: data collection can be view not only as a process of designing information on charts and graphs, but also as a essencial part of scientific investigation of relationships and trends.
 4. **Quanlity models and measures**: these are models developed for the measurement of the quality of a prodect and that is a very important part of the concept of productivity.
 5. **Reliability models**: these models are more set to tackle questions related to the validity of the systems snd to predictic when they could fail.
-6. **Performance and evaluatioin models**: these are models that also relate to quality, but that use externaly obervable propertities like timing and rates/frequency.
+6. **Performance and evaluatioin models**: these are models that also relate to quality, but that use externally obervable propertities like timing and rates/frequency.
 7. **Structural and complexity metrics**: also models that relate to quality and seems to enphasise and describe internal parts of the system.
 8. **Capability - maturity assessment**: these kinds of model are directed towards the organization and their capabilities to deliver the contracted system given some metrics likes cost, complexit, etc...
 9. **Management by metrics**: also for qualifying management are metrics important.
@@ -119,19 +122,93 @@ More than that, LOC is dependent of the kind of language involved, and a languag
 [JavaTPoint](https://www.javatpoint.com/software-engineering-size-oriented-metrics)
 
 
-Patter of productivity: KLOC / EFFORT
+Pattern of productivity: KLOC / EFFORT
 
 1. Advantages of LOC: very simple measure
-2. Disadvantages of LOC:
-	2.1. It's defined on the code. For example, it cannot measure the size of the specification.
-	2.2. It only characterize size, but does not account functionality or complexity.
-	2.3. Bad software design can cause excessive line of code.
-	2.4. It's language dependent.
-	2.5. Users cannot easily understand it.
+2. Disadvantages of LOC:       
+	2.1. It's defined on the code. For example, it cannot measure the size of the specification.    
+	2.2. It only characterize size, but does not account functionality or complexity.     
+	2.3. Bad software design can cause excessive line of code.      
+	2.4. It's language dependent.     
+	2.5. Users cannot easily understand it.      
 
 
 #### Halstead's Software Metrics
 
+In the article, (Halstead's Software Metrics)[https://www.javatpoint.com/software-engineering-halsteads-software-metrics], it is said that according to Halstead, `A computer program is an implementation of an algorithm considered to be a collection of tokens which can be classified as eitther operator or operand.`
+
+Thus, in this metrics it would be possible to set as measures:
+
+- **n1 = count of unique operators.**
+- **n2 = count of unique operands.**
+- **N1 = count of total occurrences of operators.**
+- **N2 = count of total occurrences of operands.**
+
+So, in terms of the total tokens used, the size of a program can be expresssed as **N = N1 + N2**
+
+And the Halstead metrics are:
+
+1. **Program Volume (V)**: the unit of measurement of volume is the standard unit for size 'bits'. It's the actual size of a program if a uniform binary encoding for the vocabulary is used.
+2. **Program Level (L)**: the value of 'L' ranges between _zero_ and _one_, with _L=1_ representing a program written at the highest possible level (i.e., with minumum size)
+3. **Program Difficulty**: the difficult leve or error-proneness (D) of the program is proportional to the number of the unique operator in the program.
+4. **Programmming Effort (E)**: the unit of measurement of 'E' is elementary mental discriminations.
+5. **Estimated Program Length**: according to Halstead, `The first Hypothesis of software science is that the length of a well-structure program is a function only of the number of unique operator an operands`.
+6. **Potentil Minimum Volume**: the potential minimum volume 'V*' is defined as the volume of the most short program in which a problem can be coded.
+7. **Size of Vocabulary (n)**: the size of the vocabulary of a program, which consists of the number unique tokens used to build a program, is defined as: **n = n1 + n2**
+8. **Language Level**: shows the algorithm implementation program language level. The same algorithm demands additional effort if it is written in a low-level program language. For example, it is easier to program in Pascal than in Assembler.
+
+
+![halstead-metrics-example](/images/articles/development/halstead-metrics-example.png)
+
+
+#### Functional Point (FP) Analysis
+
+Initially developed by Allan J. Albrecht in 1979 at IBM and further modified by the International Functional Point Users Group (IFPUG).
+
+It's used to make estimation of the software project, including its testing in terms of functionality or function size of the software product.
+
+**Objectivesof Functional Point Analysis (FPA)**
+
+The basic and primary purpose of the FPA is to measure and provide the sortware application functional size to the client or on his request. Further it's used to measure the software project development along with its maintainance.
+
+1. **FPs of an application**: is found by counting the number and types of functions used in the applications.
+2. **FP characterizes**: the complexity of the software system and hence can be used to depict the project time an dthe manpowaer requirement.
+3. **The Effort required to develop the project**: depends on what the software does.
+4. **FP is programming language independent**
+5. **FP method is used for**: data processing systems and business systems.
+6. **There are a set of Weights that are applied**
+
+**Note**: see some examples of the use from these metrics at [JavaTPoint](https://www.javatpoint.com/software-engineering-functional-point-fp-analysis) 
+
+
+#### Extended Function Point (EFP) Metrics
+
+The Functional Point metric was further extended to compute also:
+
+1. **Feature points**
+2. **3D function points**
+
+**Feature Points**
+
+1. **Feature point**: it is the superset of function point measure that can be applied to systems and engineering software application.
+2. **The feature points are used**: in those applications in which the algorithm complexit is high like real-time systems where time constraints are there, embedded systems, etc...
+3. **Feature points are computed**: by conting the information domain values and are weighted by only single wight.
+4. **Feature points includes**: another measurement parameter-ALGORITHM.
+5. **Funtion point and Feature point both represents**: only system functionality only.
+6. **For real-time applications that are very complex**: the feature point up to 20 and 35% higher than the basic count.
+
+**3D Function Points**
+
+The three dimensions that may be used is: data dimension, functional dimensional and control dimension.
+
+1. **The Data Dimension**: is evauated as FPs.
+2. **The Functional Dimension**: adds another feature-Transformation, that is, the sequence of steps which transforms input to output.
+3. **The Control Dimension**: adds another feature-Transition that is defined as the total number of transitions between states. A state represents some externally observable mode.
+
+**Note**: see some examples of the use from these metrics at [JavaTPoint](https://www.javatpoint.com/software-engineering-extended-function-point-efp-metrics) 
+
+
+#### Data Structure Metrics
 
 
 
@@ -144,7 +221,7 @@ Patter of productivity: KLOC / EFFORT
 
 
 
-https://www.javatpoint.com/software-engineering-halsteads-software-metrics
+https://www.javatpoint.com/software-engineering-data-structure-metrics
 
 ### Further Reading
 
