@@ -18,15 +18,14 @@ description: 'The need of software metrics and measurement are related to: 1. De
 4. ##### Size Oriented Metrics   
 	4.1. Line of Code Metrics (LOC)        
 	4.2. Halstead's Software Metrics        
-	4.3. Objectivesof Functional Point Analysis (FPA)
+	4.3. Objectivesof Functional Point Analysis (FPA)   
 	4.4. Extended Function Point (EFP) Metrics    
-	4.5. Data Structure Metrics     
-5. ##### 
-6. ##### 
-7. ##### 
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+	4.5. Data Structure Metrics         
+	4.6. Information Flow Metrics       
+	4.7. Cyclomatic Complexit       
+5. ##### Case Tools for Software Metrics
+6. ##### Further Reading
+7. ##### References
 
 ### Introduction
 
@@ -158,7 +157,9 @@ And the Halstead metrics are:
 8. **Language Level**: shows the algorithm implementation program language level. The same algorithm demands additional effort if it is written in a low-level program language. For example, it is easier to program in Pascal than in Assembler.
 
 
+
 ![halstead-metrics-example](/images/articles/development/halstead-metrics-example.png)
+[JavaTPoint](https://www.javatpoint.com/software-engineering-halsteads-software-metrics)
 
 
 #### Functional Point (FP) Analysis
@@ -210,18 +211,97 @@ The three dimensions that may be used is: data dimension, functional dimensional
 
 #### Data Structure Metrics
 
+To work with **data** is a essential part of the functionality of a sortware, and it is present either:
+
+1. As external data for input in a system.
+2. As internal data representing the states of a system.
+3. As the result of computations which lead to the output o a system.
+
+And that's why the importance of capturing the amount of data **inputed** and **processed** by the system. And the counting of this data is called Data Structure Metrics.
+
+And here a 04 kind of structures to be computed to calculate the effort and time to complet a project:
+
+1. **The Amount of Data**: 
+	1.1. Number of Variables
+	1.2. Number of Operands
+	1.3. Total number of occurence of the variable
+2. **The Usage of Data within a Module**: this measure follow the metric of the average number of live variables. And a varible is 'live' from its first to its last reference within the procedure.
+3. **Program Weakness**: program weakness depends on its Modules weakness. If Modules are weak (less Cohesive), then it increases the effort and time metrics required to complete the project.
+4. **Sharing of Data among Module**: as the data sharing between the Modules increases (higher Coupling), no parameter passing between Modules also increased. As a result, more effort and time are required to complete the project. So Sharing Data among Module is an important metrics to calculate effort and time.
 
 
+#### Information Flow Metrics
+
+These are another set of metrics that revolves around the Component and its works as the individual unit from the system:
+
+1. **Component**: any element identified by decomposing a system/software into it's constituents parts.
+2. **Cohesion**: the degree to which a component performs a single function.
+3. **Coupling**: the term used to describe the degree of linkage between one component to others in the same system.
+
+`Information flow metrics deals with this type of complexity by observing the flow of information among systems components or modules. This metrics is given by Henry and Kafura. So it is also known as Hery an Kafura's Metric`.[JavaTPoint](https://www.javatpoint.com/software-engineering-information-flow-metrics)
+
+It's two factors:
+
+1. **The complexit of the procedure code itself**: as the article states, this complexit is related with the traditional metric Line of Code (LOC).
+2. **The complexit due to procedure's connections to its environment**: for this second complexity the developers created the concepts of **FAN-IN** and **FAN-OUT**.
+
+**FAN-IN**: this is the number of local flows into that procedure plus the number of data structures from which this procedure retrieve information.
+**FAN-OUT**: this is the number of local flows from that procedure plus the number of data structures which that procedure updates.
+
+```
+Procedure Complexit = Length * (FAN-IN * FAN-OUT) ** 2 
+```
+
+#### Cyclomatic Complexit
+
+Developed by Thomas J. McCabe in 1976, the Cyclomatic Complexity interprets a computer program as a set of a strong connected directed graph where **nodes** represent parts of the source code and **archs** represent possible control flow transfers during program execution. 
+
+`In this metric, the complexit of a software can be correlated with the topological complexit of a graph and from it a developer can measure and control the number of paths through a program.`
+
+**How to Calculate Cyclomatic Complexity?**
+
+McCabe proposed the cyclomatic number, V (G) of graph theory as an indicator of software complexit. The cyclomatic number is equal to the number of linearly independent paths through a program in its representation. For a program control graph G, cyclomatic number, V (G), is given as:
+
+```
+V (G) = E - N + 2 * P
+```
+
+**Where**:
+
+- **E**: the number of edges in graph G.
+- **N**: the number of nodes in graph G.
+- **P**: the number of connected components in graph G.
+
+![software-metric-cyclomatic-complexity](/images/articles/development/software-metric-cyclomatic-complexity.png)
+[JavaTPoint](https://www.javatpoint.com/software-engineering-cyclomatic-complexity)
 
 
+**Properties of Cyclomtic Complexity**
+
+Following are the properties of Cyclomatic Complexity:
+
+1. **V (G)** is the maximum number of independent paths in the graph.
+2. **V (G)** >= 1
+3. **G** will have one path if **V** (G) = 1
+4. Minimaze complexity to 10
 
 
+### Case Tools for Software Metrics
+
+Many CASE tools (Computer Aided Software Engineering tools) exist for measuring software. They are either open source or are paid tools. 
 
 
+Here, some of them:
 
+1. **Analyst4j tool**: from the Eclipse platform for Java programs.
+2. **CCCC**: it is an open source command-line tool that analysis C++ and Java.
+3. **Chidamber & Kemerer Java Metrics**: it's an open source command-line tool for Java.
+4. **Dependency Finder**: it's an open source for Java programs.
+5. **Eclipse Metrics Plug-in 1.3.6**: it's an open source analyser for the Eclipse IDE.
+6. **Eclipse Metrics Plug-in 3.4**: it's also an open source.
+7. **OOMeter**: it's an experimental software metrics tool for Java and C#, and for UML models in XMI.
+8. **Semmle**: it's also an Eclipse plug-in.
 
-
-https://www.javatpoint.com/software-engineering-data-structure-metrics
 
 ### Further Reading
 
@@ -233,5 +313,4 @@ https://www.javatpoint.com/software-engineering-data-structure-metrics
 
 
 [Software Metrics - JavaTPoint](https://www.javatpoint.com/software-engineering-software-metrics)
-
 
