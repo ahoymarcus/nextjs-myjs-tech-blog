@@ -178,7 +178,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conhecimento das ferramentas Git, Gitlab e Jira.
 - [ ] Gestão de pipelines no Gitlab CI. 
 - [ ] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
-- [ ] Métricas e estimativas de software. 
+- [X] Métricas e estimativas de software. 
 - [ ] Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
 - [ ] Métodos para avaliação de usabilidade. 
 - [ ] Padrões de front-end: SPA e PWA. 

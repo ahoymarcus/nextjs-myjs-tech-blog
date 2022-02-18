@@ -84,8 +84,8 @@ A metric is a measurement of the level that any imput belongs to a system produc
 
 Some activies related to software metrics:
 
-1. **Cost and Effort estimation**: these models have been proposed to predict the project cost during early phases in the software life cycle.
-	1.1. Boehm's COCOMO model   
+1. **Cost and Effort estimation**: these models have been proposed to predict the project cost during early phases in the software life cycle.    
+	1.1. Boehm's COCOMO model      
 	1.2. Putnam's slim model    
 	1.3. Albrechts function point model    
 2. **Productivity measures and model**: productivity can be considered as a function of the value and the cost.
@@ -221,10 +221,10 @@ And that's why the importance of capturing the amount of data **inputed** and **
 
 And here a 04 kind of structures to be computed to calculate the effort and time to complet a project:
 
-1. **The Amount of Data**: 
-	1.1. Number of Variables
-	1.2. Number of Operands
-	1.3. Total number of occurence of the variable
+1. **The Amount of Data**:         
+	1.1. Number of Variables        
+	1.2. Number of Operands        
+	1.3. Total number of occurence of the variable    
 2. **The Usage of Data within a Module**: this measure follow the metric of the average number of live variables. And a varible is 'live' from its first to its last reference within the procedure.
 3. **Program Weakness**: program weakness depends on its Modules weakness. If Modules are weak (less Cohesive), then it increases the effort and time metrics required to complete the project.
 4. **Sharing of Data among Module**: as the data sharing between the Modules increases (higher Coupling), no parameter passing between Modules also increased. As a result, more effort and time are required to complete the project. So Sharing Data among Module is an important metrics to calculate effort and time.
@@ -245,8 +245,10 @@ It's two factors:
 1. **The complexit of the procedure code itself**: as the article states, this complexit is related with the traditional metric Line of Code (LOC).
 2. **The complexit due to procedure's connections to its environment**: for this second complexity the developers created the concepts of **FAN-IN** and **FAN-OUT**.
 
-**FAN-IN**: this is the number of local flows into that procedure plus the number of data structures from which this procedure retrieve information.
-**FAN-OUT**: this is the number of local flows from that procedure plus the number of data structures which that procedure updates.
+
+**FAN-IN**: this is the number of local flows into that procedure plus the number of data structures from which this procedure retrieve information.   
+
+**FAN-OUT**: this is the number of local flows from that procedure plus the number of data structures which that procedure updates.    
 
 ```
 Procedure Complexit = Length * (FAN-IN * FAN-OUT) ** 2 
