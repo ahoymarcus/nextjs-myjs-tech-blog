@@ -216,7 +216,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
 - [ ] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
 - [ ] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
-- [ ] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
+- [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
 - [ ] Escritório de projetos: modelos e características.
 - [ ] Conceitos de gestão de riscos. 
 - [ ] Análise SWOT e matriz RACI. 

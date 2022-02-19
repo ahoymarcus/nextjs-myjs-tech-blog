@@ -1,34 +1,22 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Software Architecture Patterns - Overview'
+title: 'Software Architecture and Design'
 date: '2022-02-19'
 subject: 'development-articles'
-description: 'A software architecture pattern captures some design structures of the system so they can be reused. From the engineers point of view, a pattern can represent efficiency and productivity, since it gives a tested solution for some commonly known problems. Besides, the use of architectural patterns can also help the software management at the early stages planning for the software and to estimate its costs.'
+description: 'Software Architecture and Software Design typically refers to bigger structures of a  software system, and how its smaller software components manage to carry out their tasks.'
 ---
 
-# Software Architecture Patterns - Overview
+# Software Architecture and Design
 
 1. ##### Introduction      
-2. ##### The Model-View-Controller Pattern      
-	2.1. Advantages of the MVC Pattern      
-	2.2. Disadvantages of the MVC Pattern      
-	2.3. Useful references for MVC       
-3. ##### Microservices Pattern
-	3.1. Advantages of the Microservices Pattern     
-	3.2. Disadvantages of the Microservices Pattern   
-	3.3. Useful references for the Microservices Pattern     
-4. ##### The Client-Server Pattern
-	4.1. Advantages of the Client-Server Pattern    
-	4.3. Disadvantages of the Client-Server Pattern   
-	4.3. Useful references for the Client-Server Pattern    
-5. ##### The Controller-Responder Patter
-	5.1. Advantages of the Controller-Responder Pattern     
-	5.2. Disadvantages of the Controller-Responder Pattern     
-	5.3. Useful references for the Controller-Responder Pattern      
-6. ##### The Layered Pattern
-	6.1. Advantages of the Layered Pattern        
-	6.2. Disadvantages of the Layered Pattern               
-	6.3. Useful references for the Layered Pattern    
+2. ##### Software Architecture  
+	2.1 Software Architecture and Software Design   
+	2.2. Software Architecture Goals     
+	2.3. Software Architecture Limitations    
+3. ##### Common Quality Attributes for Software Architecture
+4. ##### Key Principles of Software Architecture
+5. ##### 
+6. ##### 
 7. ##### 
 8. ##### 
 9. ##### Further Reading
@@ -36,173 +24,131 @@ description: 'A software architecture pattern captures some design structures of
 
 ### Introduction
 
-According to [Red Hat article](https://www.redhat.com/architect/5-essential-patterns-software-architecture) a software architecture has the goal to describe and design a collection of components that will conformed into a system to make up the building blocks of a software.
+As it is stated at the [tutorialsPoint article](https://www.tutorialspoint.com/software_architecture_design/index.htm), Software Architecture typically refers to bigger structures of a  software system, and how its smaller software components manage to carry out their tasks.
 
-And a software **architectural pattern** captures some design structures of the system so they can be reused. From the engineers point of view, a pattern can represent efficiency and productivity, since it gives a tested solution for some commonly known problems.
+Also, it is possible to divide this great concept into two parts constituents:
 
-Besides, the use of **architectural patterns** can also help the software management at the early stages planning for the software and to estimate its costs.
+1. **Software Architecture**: at this phase there should be a gathering of many specifications and items to be correlated into a systems functional requirements.  
+2. **Software Design**: at this phase the functional requirements are accomplished.   
 
-On the other hand, the choice of an inconvenint architecture for a system could not only delay the project, but could also lead to software failue.
 
+### Software Architecture and Software Design
 
-### The Model-View-Controller (MVC) Pattern
+Software Architecture ` serves as a blueprint for a system. It provides an abstraction to manage the system complexity and establish a communication and coordination mechanism among components.`
+[tutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
-The MVC pattern dividers the application into three main components:>
 
-1. A **Model**: this component deals with the dynamic data structure of the software, both its control and logic.
-2. A **View**: this component is responsible to dispay data to the user and to interact with him. It can access data from the **Model**, but it cannot understand it, that is, how to manipulate it!
-3. A **Controller**: this last component handles inputs from the user and mediates between the **Modelv and the **View**
+#### Software Architecture
 
-`These three components interact via some form of notification, such as an event or a callback. These notifications contain state information, such as state changes, which are communicated to update these components.[...] The MVC pattern therefore, decouples software components and allows the codes to be reused easily`
-[Red Hat](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
+1. It defines a structured solution to meet all the technical and operational requirements, while optimizing the common quality attributes like performance and security.
+2. Further, it involves a set of significant decisionas about the organization related software development and each of these decisions can have a considerable impact on quality, maintainability, performance, and the overall success of the final product. These decisions comprise of:
+	2.1. Selections of structural elements and their interfaces by which the system is composed.
+	2.2. Their behaviour as specified in collaborations among those elements.
+	2.3. Composition of these structural and behavioral elements into large subsystem.
+	2.4. Architectural decisions align with business objectives.
+	2.5. Architectural style guide the organization.
+	
+	
+#### Software Design
 
-#### Advantages of the MVC Pattern
+`Software design provides a design plan that describes the elements of a system, how they fit, and work together to fulfill the requirement of the system.`
+[tutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
-- Multiples engineers can work on all these component simultaneously without conflict.
-- It allows logical grouping of related outputs to generate numerous views from the model.
 
-#### Disadvantages of the MVC Pattern
+The objectives of having a design plan are:
 
-- This could become complex to navigate around the framework because it introduces many layers of abstraction.
+- To negotiate system requirements, and to se expectations with customers, marketing, and management.
+- Act as a blueprint during the development process.
+- Guide the implementation tasks, coding, integration, and testing.
 
-#### Useful references for MVC
 
-- [Understanding Model-View-Controller by Coding Horror - 2008](https://blog.codinghorror.com/understanding-model-view-controller/)
-- [MVC definition from the original XEROX PARC write up 1978-79](http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html)
-- [Codecademy introduction to MVC](https://www.codecademy.com/articles/mvc)
+In terms of the Software Life Cycle, this phase of Software Design would come just after the **domain analysis**, the **requirement analysis**, and **risk analysis**, but before the **detailed documenting** of the system, and also its **coding**, and **testing**.
 
 
-### Microservices Pattern
+#### Software Architecture Goals
 
-The Microservices pattern involves creating multiple applications/microservices, that can work interdependently:
+The **primary goal** of the architecture is to identify requirements that affect the structure of the application.
 
-`**Although each microservice can be developed and deployed independently, its functionality is interwoven with other microservices.**`
-[Red Hat](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
+Other goals:
 
+- Expose the structure of the system, but hide its implementation details.
+- Realize all the use-cases and scenarios.
+- Try to address the requirements of various stakeholders.
+- Handle both functional and quality requirements.
+- Reduce the goal of ownership and improve the organizations's market position.
+- Improve quality and functionality offered by the system.
+- Improve external confidence in either the organization or system.
 
-And according with the [Red Hat article](https://www.redhat.com/architect/5-essential-patterns-software-architecture), the Microservies Architecture can use several software design patterns, and each of them provides a different method to manipulate data to produce the services:
 
-- Aggregator Patter
-- API Gateway Design Patter
-- Chain of Responsability Patter
-- Asynchronous Messaging Design Patter
+#### Software Architecture Limitations
 
+`Software architecture is still an emerging discipline within software engineering`.
+[tutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
-#### Advantages of the Microservices Pattern
+So it has the following limitations:
 
-1. **Scalability**: because of the distributed nature of this pattern, it's possible to project a system with a streamlined delivery pipeline.
-2. **Fully Decoupled components**: each microservice can be fully decoupled and accessed through remote protocols such as REST, SOAP, or GraphQL.
-3. **Web-apps**: this architectural pattern is ideal to work with web applications and websites with small components.
-4. **Services with well-defined boundaries**: in these kinds of services it's also useful the use of the Microservices Pattern.
+- Lack of tools and standardization ways to represent architecture.
+- Lack of analysis methods to predict whether architecture will result in an implementation that meets the requirements.
+- Lack of awareness of the importance of architectural design to software development.
+- Lack of understanding of the role of software architect and poor communication among stakeholders.
+- Lack of understanding of the design process, design experience and evaluation of design.
 
-#### Disadvantages of the Microservices Pattern
 
-1. **Great Complexity**
-2. **Requires great architectural expertise**: all these decoupled services working completely independently of each other requires significant architectural expertise.
+### Common Quality Attributes for Software Architecture
 
-#### Useful references for the Microservices Pattern
+The [TutorialsPoint's article](https://www.tutorialspoint.com/software_architecture_design/introduction.htm) also presents a complete table with **Common Quality Attributes** that a **Software Architecture** should have:
 
-- [Microservices definition by Martin Fowler (2014)](https://martinfowler.com/articles/microservices.html)
-- [Patterns for distributed transactions within a microservices architecture (2018)](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
-- [Microservice tutorials, including hands-on with Kubernetes](https://developers.redhat.com/topics/microservices)
+1. **Design Qualities**:    
+	1.1. Conceptual integrity: defines the consistency and coherence of the overall design.          
+	1.2. Maintainability      
+	1.3. Reusability       
+2. **Run-time Qualities**:     
+	2.1. Interoperability: the ability of a system to successfully communiate and exchange information with external systems from other parties.     
+	2.2. Manageability: how easy it is to administrate.        
+	2.3. Realiability     
+	2.4. Scalability     
+	2.5. Security     
+	2.6. Performance     
+	2.7. Availability
+3. **System Qualities**     
+	3.1. Supportability: the ability of the system to provide information helpful for identifying and resolving issues.    
+	3.2. Testability: measure of how easy and simple it is to create test criteria for the system and its components.     
+4. **User Qualities**    
+	4.1. Usability     
+5. **Architecture Quality**     
+	5.1. Correcteness: it is the attibute of accountability for satisfying all the requirements defined for the system.       
+6. **Non-runtime Quality**:      
+	6.1. Portability       
+	6.2. Integrity: the ability to make separately developed components of the system work correctly together.       
+	6.3. Modifiability: the ease with which a software system can accomodate changes to its software.    
+7. **Business Qulity Attributes**:     
+	7.1. Cost and Schedule: the costs in respect to time to market, its lifetime and utilization legacy.         
+	7.2. Marketabiity    
 
 
-### The Client-Server Pattern
+### Key Principles of Software Architecture 
 
-In the client-server architecture patters, there are two main components, and even when this two components are located in the same system, they use differents process from the OS:
 
-1. **Client**: this is the service requester and the component which initiates the connection.
-2. **Server**: this is the service provider and it is who centralizes all the service operations. 
 
-The best example for this patter is the **World Wide Web**, but it's also used for online applications like **file sharing** and **email**.
 
-**Note**: eventhough this Client-Server Pattern is a centralized patter, it's related, or even deemed as a subcategory, to the **Peer-To-Peer Architecture** which is by itsef a decentralized pattern, where the peers components communicate directly.   
 
 
-#### Advantages of the Client-Server Pattern
 
-1. **Centralization of the operations**: while the data is usually stored in a central location of the server, also all the other network peripherals are controlled in this centralized manner.
-2. **Security**: because of the centralized control of the process, it's easier to attain more security in the processes.
 
 
-#### Disadvantages of the Client-Server Pattern
 
-1. **Low scalability**: to scale is necessary to provide power to capacity both for the new component and for the centralized server that controls all the operation.
-2. **The need for expensive machines**: this heavy duty machines are necessary to carry out the centralized work.
 
-#### Useful references for the Client-Server Pattern
 
--	[What is a client-server architecture? from W3 School](https://www.w3schools.in/what-is-client-server-architecture/)
--	[An introduction to REST architecture from Red Hat](https://www.redhat.com/en/blog/rest-architecture)
 
 
-### The Controller-Responder Patter
 
-This pattern can be named with other related names like, **master/slave**, **primary/secondary**, **primary/replica**, **parent/helper**, **master/replica**, but it is the **Controller/Responder** the terminology adopted by the IEEE (Institute of Electrical and Electronics Engineers).
 
-The Controller Component centralizes the operation, since it defines the inputs to be sent to the Responders Components, and it also control them defining the communication priorities for the responders.
 
-This kind of architectural pattern is commonly found at some distributed databases, where the dicotomy of controller-responder or primary-secondary is used to exert priority in terms of consistency of the data, since the valid data is the one present in the controller component.
 
-**Note**: although this Controller-Responder Architecture is also centralized, it is different from the Peer-To-Peer Architecture, because in this last architecture the communications are done with equals levels of share and responsabilities.
 
-#### Advantages of the Controller-Responder Pattern
 
-- **Scale**: this architecture allows the creation of distributed systems like databases and analytic frameworks, because it secures the data in the controller, while allows all the responder to work with replicated data for readings and aggregations.
-- **Partition tolerance**: eventhough the level of tolerance can be tuned, this architecture allows that replicas may be added or subtracted without affecting the main processes.
 
-#### Disadvantages of the Controller-Responder Pattern
-
-- **Risk of data loss**: this may occor in events where the partition is caused at the controller or primary component, and in the process its data cannot be replicated to any other responder.
-
-#### Useful references for the Controller-Responder Pattern
-
-- [Analysis of a master-slave architecture for distributed evolutionary computations from the IEEE (2006)](https://ieeexplore.ieee.org/document/1580635)
--	[The master-slave architecture by Packt](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781783989126/1/ch01lvl1sec10/the-master-slave-architecture)
-
-
-### The Layered Pattern
-
-`The layered architecture is the most common among developers, and it is useful for programs that comprise several groups of subtasks, each of which is at a different level of abstraction.`
-[Red Hat article](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
-
-And each of that subtasks is represented by a layer in the software, and each layer provides services to the next higher layer in a unidirectional pattern.
-
-Layered architecture patterns are commonly found in e-commerce web applications and in desktop applications. 
-
-#### Advantages of the Layered Pattern
-
-- **Simple**: its a block architecture that can be put together, and also it can be built faster since it has the components separated by eachselves.
-- **Avoids dependency**: since each component is closed in eachself, the parts could be changed and the system would be working normaly. For exemplo, a Oracle database component layered in this manner could be easily traded by another one with SQL Server.
-
-#### Disadvantages of the Layered Pattern
-
-- **Difficult to scale**: because scaling would lead to the addition of even more layers.
-- **Rigidity layers**: inside the layers itselves, it could become very hard to separate the components.
-
-#### Useful references for the Layered Pattern
-
-- [Layered Architecture from Software Architecture Patterns by Mark Richards](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html)
--	[Software Architecture Patterns — Layered Architecture by Priyal Walpita](https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013
+https://www.tutorialspoint.com/software_architecture_design/key_principles.htm
 
 Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 
