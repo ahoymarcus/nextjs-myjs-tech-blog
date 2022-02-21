@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Software Architecture and Design'
-date: '2022-02-19'
+date: '2022-02-22'
 subject: 'development-articles'
 description: 'Software Architecture and Software Design typically refers to bigger structures of a  software system, and how its smaller software components manage to carry out their tasks. They serve as a blueplrint for the system and a abstraction to deals with the systems complexities.'
 ---
@@ -28,12 +28,21 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	9.2. Object-Oriented Analysis    
 	9.3. Object-Oriented Design    
 10. ##### Data Flow Architecture
-11. ##### 
-11. ##### 
-11. ##### 
-11. ##### 
-9. ##### Further Reading
-10. ##### References
+	10.1. Batch Sequential
+	10.2. Piper and Filter or Non-sequential Pipeline
+	10.3. Process Control
+11. ##### Data-Centered Architecture
+	11.1. Types of Components - Data-Centered Architecture
+	11.2. Styles of Architecture for Data-Centered Architecture
+12. ##### Hierarchical Architecture
+	12.1. Main-subroutine Style
+	12.2. Master-slave Style
+	12.3. Virtual Machine Style
+	12.4. Layered Style
+13. ##### 
+14. ##### 
+15. ##### Further Reading
+16. ##### References
 
 ### Introduction
 
@@ -60,7 +69,6 @@ Software Architecture ` serves as a blueprint for a system. It provides an abstr
 	2.3. Composition of these structural and behavioral elements into large subsystem.     
 	2.4. Architectural decisions align with business objectives.     
 	2.5. Architectural style guide the organization.    
-	
 	
 #### The Software Design
 
@@ -114,7 +122,7 @@ The [TutorialsPoint's article](https://www.tutorialspoint.com/software_architect
 1. **Design Qualities**:    
 	1.1. Conceptual integrity: defines the consistency and coherence of the overall design.          
 	1.2. Maintainability      
-	1.3. Reusability       
+	1.3. Reusability     
 2. **Run-time Qualities**:     
 	2.1. Interoperability: the ability of a system to successfully communiate and exchange information with external systems from other parties.     
 	2.2. Manageability: how easy it is to administrate.        
@@ -137,7 +145,6 @@ The [TutorialsPoint's article](https://www.tutorialspoint.com/software_architect
 7. **Business Qulity Attributes**:     
 	7.1. Cost and Schedule: the costs in respect to time to market, its lifetime and utilization legacy.         
 	7.2. Marketabiity    
-
 
 ### Advantages of Software Architecture
 
@@ -414,6 +421,233 @@ The main aim of OO Design is to develop the structural architecture of a system:
 
 ### Data Flow Architecture
 
+In the data flow architecture, the whole software system is seem as a series of transformations in the state, where data and operations are taken as independent of each other.
+
+And the connections between the components or modules may be implemented as I/O stream, I/O buffers, piped, or along other types of connections. 
+
+As a design, the data flow can present differents topologies:
+
+- As a graph
+- Linear
+- As a tree structure
+
+`The main objective of this approach is to achieve the qualities of reuse and modifiability. It is suitable for applications that involve a well-defined series of independent data transformations or computations on orderly defined input and output such as compilers and business data processing applications.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/data_flow_architecture.htm)
+
+There are three types of execution sequences between modules:
+
+1. **Batch sequential**
+2. **Pipe and Filter or Non-sequential pipeline mode**
+3. **Process control**
+
+
+#### Batch Sequential
+
+It's a classical data processing model, in which a data transformation subsystem can only initiate its process after its previous subsystem is completly through and its characteristics are:
+
+- The flow of data carries a batch of data as a whole from one subsystem to another.
+- The communications between the modules are conducted through temporary intermediate files which can be removed by successives subsystems.
+- It's applicable for those applications where data is batched, and each subsystem reads related input files and writes output files.
+- Typical application of this architecture includes business data processing such as banking and utility biling.
+
+![batch_sequential-architecture](/images/articles/development/batch_sequential-architecture.jpg)
+
+It's **advantages**:
+
+- Provides simpler divisions on subsystems.
+- Each subsystem can be an independent program working on input data and producing output data.
+
+It's **disadvantages**:
+
+- Provides high latency and low throughout.
+- Does not provide concurrency and interactive interface.
+- External control is required for implementation.
+
+#### Piper and Filter or Non-sequential Pipeline
+
+This approach lays emphasis on the incremental transformation of data by successives components, so the concept of the system is decomposed into components data source, filters, pipers, and data sinks.
+
+**One main feature of this architecture is that the data flow can be concurrent**.
+
+The concept of a **Filter**: it's an independent data stream transformer or stream transducers, that receives some input, process it and pipe over the next filter.
+
+The **Filter** has two kinds:
+
+1. **Active Filter**:	it lets **connected pipes to pull data in and to push out** the transformed data.
+2. **Passive Filter**: it lets **connected pipes to push data in and pul data out**.
+
+It's **advantages**:
+
+- Provides concurrency and high throughout for excessive data processing.
+- Provides reusability and simplifies system maintenance.
+- Provides modifiability and low coupling between filters.
+- Provides simplicity by offering clear devisions between any two filters connected by pipe.
+- Provides flexibility by supporting both sequential and parallel execution.
+
+It's **disadvantages**:
+
+- Not suitable for dynamic interations.
+- A low common denominator is needed for transmissions of data ASCII formats.
+- Overhead of data transformation between filters.
+- Does not provide a way for filters to cooperatively interact to solve a problem.
+- Difficult to configure this architecture dynamically.
+
+The **Piper**: pipes are stateless and they carry binary or character stream which exist between two filters. It can move a data stream from one filter to another. And pipes use a little contextual information and retain no state information between instantiations.
+
+
+#### Process Control
+
+This approach uses a **processing unit** for changing the process control variables and a **controler unit** for calculating the amount of changes.
+
+A **controller unit** musta have the following elements:
+
+- **Controlled Variable**: it provides values for the underlying system and should be measured by sensors. For example, speed cruise control system.
+- **Input Varialbe**: it measures an input to the process. For example, temperature of return air in temperature control system.
+- **Manipulated Variacle**: it's value is adjusted or changed by the controller.
+- **Process Definition**: it includes mechanisms for manipulating some process variables.
+- **Sensor**: obtains values of process variables pertinent to control and ca be used as a feedback reference to recalculate desired value for a controlled variable.
+- **Set Point**: it's desired value for a controlled variable.
+- **Control Algorithm**: it's used for deciding how to manipulate process variables.
+
+Process Control is suitable in the appliction areas or domains:
+
+- Embedded system software design, where the system is manipulated by process control variable.
+- Applications which aim to maintain specified properties of the outputs of the process at given reference values.
+- Applicable for car-cruise control and building temperature control systems.
+- Real-time system software to control atutomobile anti-lock brakes, nuclear power plants, etc.
+
+
+### Data-Centered Architecture
+
+In data-centered architecture, the data is centralized and accessed frequently by other components, which modify data. The **main purpose** of this style is to achievi integrality of data.
+
+And in this kind of desing, the different components that access the shared data structure are relatively independent, in that, they interact only through the data store.
+
+Databases are the most common systems that operate with this design, but it could also be a internal store acting as a global context for variables in a system.
+
+And another example is the Web architecture which has a common data schema (i.e. the meta-structure of the Web) and follows the hypermedia protocol and model and processes communicate through the use of shared web-based data services.
+
+#### Types of Components - Data-Centered Architecture
+
+There are two basic types of components:
+
+1. **Central data**: the repository, which is responsible for providing permanent data storage. It represents the current state.
+2. **Data processor**: a collection of independent components that operate on the central data store, perform computations, and might put back the results.
+
+`Interactions or communication between the data accessors is only through the data store. The data is the only means of communication among clients.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm)
+
+
+#### Styles of Architecture for Data-Centered Architecture
+
+The flow of control differentiates the architectured into two categories:
+
+- The **Repository architecture style**
+- The **Blackboard architecture style**
+
+The **Repository architecture style**
+
+Here, the data store is passive and the clients (software components or agents) of the data store are active, which control the logic flow, and the participating components chech the data-storage for changes:
+
+- The client sends a request to the system to perform actions (e.g. insert data).
+- The computational processes are independent and triggered by incoming requests.
+- If the types of transactions in an input stream of transactions trigger selections of processes to execute, then it is traditional database or repository architecture, or passive repository.
+- This approach is widely used in DBMS (Database Manage System), library information system, the interface repository in CORBA, compilers and CASE (computer aided software engineering) environments.
+
+The advantages of a data-centered architecture:
+
+- Provides data integrity, backup and restore features.
+- Provides scalability and reusability of agents as they do not have direct communicaton with each other.
+- Reduces overhead of transient data between software components.
+
+The disadvantages of a data-centered architecture:
+
+- It's more vulnerable to failure and data replication or duplication is possible.
+- High dependency between data structure of data store and its agents.
+- Changes in data structure highly affect the clients.
+- Evolution of data is difficult and expensive.
+- Cost of moving data on network for distributed data.
+
+
+The **Blackboard Architecture Style**
+
+In this approach, the data store is active and its clients are passive, and therefore the logical flow is determined by the current data status in data store.
+
+- A number of components that act independently on the common data structure  are stored in the blackboard.
+- In this style, the components interact only through the blackboard. The data-store alerts the clients whenever there is a data-store change.
+- The current state of the solution in the blackboard and processing is triggered by the state of the blackboard.
+- The system sends notifications knlw as **trigger** and data to the clients when changes occur in the data.
+- This approach is found in certain AI applications and comples applications, such as speech recognition, image recognition, security system, and business resource management systems, etc.
+- If the current state of the central data structure is the main trigger of selecting processes to execute, the repository can be a blackboard and this shared data source is an active agent.
+ 
+`A major difference with traditional database systems is that the invocation of computational elements in a blackboard architecture is triggered by the current state of the blackboard, and not by external inputs.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/data_centered_architecture.htm)
+
+
+There are 03 major parts of a blackboard style architecture:
+
+1. **Knowledge Sources (KS)**: the knowledge sources are also know as **Listeners** of **Subscribers** are distinct and independent units. They act as intermediary to the communication process, that is guided uniquely through the blackboard.
+2. **BlackBoard Data Structure**: the is the attributes of data that can be changed when the communication is triggered.
+3. **Control**: the control manages the tasks and checks the work state.
+
+
+The advantages of a data-centered architecture:
+
+- Provides scalability which provides easy to add or update knowledge source.
+- Provides concurrency that allows all knowledge sources to work in parallel as they are independent of each other.
+- Supports experimentation for hypotheses.
+- Supports reusability of knowledge source parts.
+
+
+The disadvantages of a data-centered architecture:
+
+- The structure change of blackboard may have a significant impact on all of its agents as close dependency exists between blackboard and knowledge source.
+- It can be difficult to decide when to terminate the resoning as only approximate solution is expected.
+- Problems in synchronization of multiple agents.
+- Major challengers in designing and testing os system.
+
+
+### Hierarchical Architecture
+
+This model views the whole system as a hierarchical structure, in which the software system is decomposed into logical modules or subsystems at different levels in the hierarchy.
+
+**This approach is typically used in designing system software such as network protocols and operating systems, and some class libraries, like .NET**.
+
+`In system software hierarchy design, a low-level subsystem gives services to its adjacent upper level subsystems, which invoke the methods in the lower level. The lower layer provides more specific functionality such as I/O services, transaction, scheduling, security services, etc. The middle layer provides more domain dependent functions such as business logic and core processing services. And, the upper layer provides more abstract functionality in the form of user interface such as GUIs, shell programming facilities, etc.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm)
+
+
+The Hierarchical Architectural style can be divided in 03 different sets:
+
+1. **Main-subroutine**
+2. **Master-slave**
+3. **Virtual machine**
+
+
+#### Main-subroutine Style
+
+The aim of this style is to reuse the modules and freely develop individual modules or subroutines. And in this style, a software system is divided into subroutines by using top-down refinement according to desired fucntionality of the system.
+
+**These refinements lead vertically until the decomposed modules is simple enough to have its exclusive independent responsability. Functionality may be reused and shared by multiple callers in the upper layers.**
+
+There are two ways by which data is passed as parameters to subroutnes, namaly:
+
+1. **Pass by Value**: subroutines only use the past data, but can't modify it.
+2. **Pass by Reference**: subroutines use as well as change the value of the data referenced by the parameter.
+
+The advantages of the Main-subroutine style:
+
+- Easy to decompose the system based on hierarchy refinement.
+- Can be used in a subsystem of object oriented design.
+
+The disadvantages of the Main-subroutine style:
+
+
+- Vulnerable as it contains globally shared data.
+- Tight coupling may cause more ripple effects of change.
+
+
+#### Mater-slave Style
 
 
 
@@ -421,7 +655,19 @@ The main aim of OO Design is to develop the structural architecture of a system:
 
 
 
-https://www.tutorialspoint.com/software_architecture_design/data_flow_architecture.htm
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm
 
 Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 

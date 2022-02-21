@@ -165,18 +165,18 @@ CONHECIMENTOS BÁSICOS
      
 ### ÁREA: APOIO ESPECIALIZADO. ESPECIALIDADE: ANÁLISE DE SISTEMAS
 
-- [ ] Estrutura de dados. 
-- [ ] Linguagens de programação, compiladores e interpretadores. 
-- [ ] Noções de linguagens procedurais: tipos de dados elementares e estruturados, funções e procedimentos.
-- [ ] Representação de dados numéricos, textuais e estruturados; aritmética computacional. 
-- [ ] Estruturas de dados e algoritmos: listas, filas, pilhas, tabelas hash e árvores; métodos de acesso, busca, inserção e ordenação em estruturas de dados; complexidade de algoritmos. 
+- [O] Estrutura de dados. 
+- [O] Linguagens de programação, compiladores e interpretadores. 
+- [O] Noções de linguagens procedurais: tipos de dados elementares e estruturados, funções e procedimentos.
+- [O] Representação de dados numéricos, textuais e estruturados; aritmética computacional. 
+- [O] Estruturas de dados e algoritmos: listas, filas, pilhas, tabelas hash e árvores; métodos de acesso, busca, inserção e ordenação em estruturas de dados; complexidade de algoritmos. 
 - [X] Engenharia de software. Ciclo de vida do software.
 - [X] Metodologias de desenvolvimento de software. 
 - [X] Práticas de metodologias ágeis: Scrum, Lean e Kanban. 
 - [X] Qualidade de software e CMMI. 
 - [X] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
 - [X] Conhecimento das ferramentas Git, Gitlab e Jira.
-- [ ] Gestão de pipelines no Gitlab CI. 
+- [O] Gestão de pipelines no Gitlab CI. 
 - [ ] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
 - [X] Métricas e estimativas de software. 
 - [ ] Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
@@ -188,7 +188,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
 - [ ] Principais vulnerabilidades e remediações (OWASP Top Ten). 
 - [X] Princípios de DevOps, DevSecOps e IaC (Infrastructure as Code). 
-- [ ] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.
+- [O] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.
 - [X] Conhecimento dos frameworks e toolkits: Angular, jQuery, Vue, React, Spring, Spring Boot, Spring Cloud, Laravel, Django, Hibernate, JPA, JBoss Seam, JUnit.
 - [X] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
 - [ ] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
@@ -199,13 +199,13 @@ CONHECIMENTOS BÁSICOS
 - [ ] Recomendações W3C. 
 - [ ] Modelo Nacional de Interoperabilidade (MNI).
 - [X] Bancos de dados. Conceitos e fundamentos. 
-- [ ] Modelo relacional, em rede, hierárquico, distribuído e orientado a objetos. Projeto e modelagem de banco de dados relacional. Modelo Entidade Relacionamento. Notação IDEF1X. Normalização. Álgebra relacional. 
+- [O] Modelo relacional, em rede, hierárquico, distribuído e orientado a objetos. Projeto e modelagem de banco de dados relacional. Modelo Entidade Relacionamento. Notação IDEF1X. Normalização. Álgebra relacional. 
 - [X] Conhecimento de SGBD Oracle, PostgreSQL, SQL Server e MySQL. 
 - [X] Conceitos de bancos de dados NoSQL (orientado a documento, chave-valor, grafo e colunar).
 - [X] Características de bancos de dados massivos (Big Data). 
 - [X] Conceitos e propriedades das transações (ACID).
 - [X] Linguagem SQL (Padrão ANSI) e PL/SQL: consultas e subconsultas; 
-- [ ] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 
+- [O] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 
 - [X] Controle de concorrência e otimização de consultas. 
 - [X] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
 - [ ] Conhecimento de servidores web: Nginx e Apache.
