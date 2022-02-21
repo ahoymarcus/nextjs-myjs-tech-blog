@@ -39,7 +39,7 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	12.2. Master-slave Style
 	12.3. Virtual Machine Style
 	12.4. Layered Style
-13. ##### 
+13. ##### Interation-Oriented Architecture
 14. ##### 
 15. ##### Further Reading
 16. ##### References
@@ -181,14 +181,14 @@ The implementation of architectural structures in software development can be a 
 
 ### Common Architectural Designs or Patterns
 
-1. **Communication**:
+1. **Communication**:   
 	1.1. Message bus: defines the use of a system that can receive and send messages using on or more communication channels.        
-	1.2. Service-oriented Architecture (SOA)   
+	1.2. Service-oriented Architecture (SOA)
 2. **Deployment**    
 	2.1. Client - Server   
-	2.2. 3-tier or N-tier: separates functionalities into in tiers that are located in different computers.   
+	2.2. 3-tier or N-tier: separates functionalities into in tiers that are located in different computers.
 3. **Domain**:     
-	3.1. Domain Driven Design: that focus and describes business models within functional objects.    
+	3.1. Domain Driven Design: that focus and describes business models within functional objects.
 4. **Structure**:     
 	4.1. Composed based: breakdown the application design into reusable functional or logical components that expose well-defined communiction interfaces.    
 	4.2. Divide the concerns of the application into stacked groups (or layers).     
@@ -302,9 +302,9 @@ In term of its **History**, it could be pointed:
 	1.2. It has a **state** to keep the of its **properties** throughout the execution of the system.    
 	1.3. It has **behavior** implied by the the changes occurred at the object state in the run-time.     
 2. **Class**: it represents a scheme or model for all the objects that hold the same characteristics and behaviors.   
-	1.1. The act of creating objects from its class is called **instantiation**, and thus a class can produce multiple instances, each of the with ist own identity and state.    
-	1.2. the set of attributes that becomes properties for each object instance.    
-	1.3. a set of behaviors defined by the class inner **methods**, that are its internal functions.       
+	2.1. The act of creating objects from its class is called **instantiation**, and thus a class can produce multiple instances, each of the with ist own identity and state.    
+	2.2. the set of attributes that becomes properties for each object instance.    
+	2.3. a set of behaviors defined by the class inner **methods**, that are its internal functions.       
 3. **Encapsulation**: it is the process o binding the attributes and methods of the class, so they are only reachable and accessed through the class own interface.
 4. **Polymorphism**: this is the concept were a class can have some general behavior while it keeps the same signiture for a internal method, but **overrides** its specific behavior.
 5. **Relationships**: it is possible to assert two kinds of relationships in this paradigm:     
@@ -452,12 +452,12 @@ It's a classical data processing model, in which a data transformation subsystem
 
 ![batch_sequential-architecture](/images/articles/development/batch_sequential-architecture.jpg)
 
-It's **advantages**:
+The **advantages of Batch Sequential**:
 
 - Provides simpler divisions on subsystems.
 - Each subsystem can be an independent program working on input data and producing output data.
 
-It's **disadvantages**:
+The **disadvantages of Batch Sequential**:
 
 - Provides high latency and low throughout.
 - Does not provide concurrency and interactive interface.
@@ -471,12 +471,12 @@ This approach lays emphasis on the incremental transformation of data by success
 
 The concept of a **Filter**: it's an independent data stream transformer or stream transducers, that receives some input, process it and pipe over the next filter.
 
-The **Filter** has two kinds:
+Theres two kinds of **Filters**:
 
 1. **Active Filter**:	it lets **connected pipes to pull data in and to push out** the transformed data.
 2. **Passive Filter**: it lets **connected pipes to push data in and pul data out**.
 
-It's **advantages**:
+The **advantages of Piper and Filter**:
 
 - Provides concurrency and high throughout for excessive data processing.
 - Provides reusability and simplifies system maintenance.
@@ -484,7 +484,7 @@ It's **advantages**:
 - Provides simplicity by offering clear devisions between any two filters connected by pipe.
 - Provides flexibility by supporting both sequential and parallel execution.
 
-It's **disadvantages**:
+The **disadvantages of Piper and Filter**:
 
 - Not suitable for dynamic interations.
 - A low common denominator is needed for transmissions of data ASCII formats.
@@ -554,13 +554,13 @@ Here, the data store is passive and the clients (software components or agents) 
 - If the types of transactions in an input stream of transactions trigger selections of processes to execute, then it is traditional database or repository architecture, or passive repository.
 - This approach is widely used in DBMS (Database Manage System), library information system, the interface repository in CORBA, compilers and CASE (computer aided software engineering) environments.
 
-The advantages of a data-centered architecture:
+The **advantages of a data-centered architecture**:
 
 - Provides data integrity, backup and restore features.
 - Provides scalability and reusability of agents as they do not have direct communicaton with each other.
 - Reduces overhead of transient data between software components.
 
-The disadvantages of a data-centered architecture:
+The **disadvantages of a data-centered architecture**:
 
 - It's more vulnerable to failure and data replication or duplication is possible.
 - High dependency between data structure of data store and its agents.
@@ -591,7 +591,7 @@ There are 03 major parts of a blackboard style architecture:
 3. **Control**: the control manages the tasks and checks the work state.
 
 
-The advantages of a data-centered architecture:
+The **advantages of a data-centered architecture**:
 
 - Provides scalability which provides easy to add or update knowledge source.
 - Provides concurrency that allows all knowledge sources to work in parallel as they are independent of each other.
@@ -599,7 +599,7 @@ The advantages of a data-centered architecture:
 - Supports reusability of knowledge source parts.
 
 
-The disadvantages of a data-centered architecture:
+The **disadvantages of a data-centered architecture**:
 
 - The structure change of blackboard may have a significant impact on all of its agents as close dependency exists between blackboard and knowledge source.
 - It can be difficult to decide when to terminate the resoning as only approximate solution is expected.
@@ -622,6 +622,7 @@ The Hierarchical Architectural style can be divided in 03 different sets:
 1. **Main-subroutine**
 2. **Master-slave**
 3. **Virtual machine**
+4. **Layered Style**
 
 
 #### Main-subroutine Style
@@ -635,12 +636,12 @@ There are two ways by which data is passed as parameters to subroutnes, namaly:
 1. **Pass by Value**: subroutines only use the past data, but can't modify it.
 2. **Pass by Reference**: subroutines use as well as change the value of the data referenced by the parameter.
 
-The advantages of the Main-subroutine style:
+The **advantages of the Main-subroutine style**:
 
 - Easy to decompose the system based on hierarchy refinement.
 - Can be used in a subsystem of object oriented design.
 
-The disadvantages of the Main-subroutine style:
+The **disadvantages of the Main-subroutine style**:
 
 
 - Vulnerable as it contains globally shared data.
@@ -649,25 +650,120 @@ The disadvantages of the Main-subroutine style:
 
 #### Mater-slave Style
 
+This approach applies "divide and conquer" principle and supports fault computation and computational accurancy, and it's a modification of the main-subroutine architecture that provides reliability of system and fault tolerance.
+
+In this architecture, slaves provide duplicate services to the master, and the master chooses a particular result among slaves by a certain selection strategy. Also, the slaves may perform the same functional task by different algorithm and methods or totally different functionality, including processing tasks in parallel computing.
+
+
+Now, some stages to implementation of the Master-slave pattern:
+
+- Specify how computation of the task can be divided into a set of equal sub-tasks.
+- Specify how the final result of the whole service can be computed with the help of the results obtained from processing individual sub-tasks.
+- Define an interface for the sub-service identified in the first point, and it will be implemented by the slave and used by the master to delegate the processing of individual sub-tasks.
+
+
+Some applications that uses this Master-slave architectural style:
+
+- Suitable for applications where reliability of software is critical issue.
+- Widely applied in the areas of parallel and distributed computing.
+
+
+The **advantages of a Master-slave style**:
+
+- Faster computation and easy scalability.
+- Provides robustness as slaves can be dublicated.
+- Slave can be implemented differently to minimize semantic errors.
+
+The **disadvantages of a Master-slave style**:
+
+- Communication overhead.
+- Not all problems can be divided.
+- Hard to implement and portability issue.
+
+
+#### Virtual Machine Architecture
+
+The virtual machine architecture pretends some functionality, which is not native to the hardware or to the software on which it is implemented. 
+
+So, a `virtual machine is built upon an existing system and provides a virtual abstraction, a set of attributes, and operations. In virtual machine architecture, the master uses the ‘same’ subservice’ from the slave and performs functions such as split work, call slaves, and combine results. It allows developers to simulate and test platforms, which have not yet been built, and simulate "disaster'' modes that would be too complex, costly, or dangerous to test with the real system.`.
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm)
+
+In terms of operation, a virtual machine splits a programming languge or application environment from an execution platform. The main objective is to provide portability.
+
+![virtual-machine-style-architecture](/images/articles/development/virtual-machine-style-architecture.png)
+
+
+As it is stated at the TutorialsPoint article, the **hypervisor**, also called the virtual machine monitor, runs on the host OS and allocates matched resources to each guest OS. When the guest makes a system-call, the hypervisor intercepts and translates it into the corresponding system-call supported by the host OS. The hypervisor controls each virtual machine access to the CPU, memory, persistent storage, I/O, and the network.
+
+This virtual machine architecture style is commonly found at:
+
+- Suitable for solving a problem by simulation or translation if there is no direct solution.
+- Sample applications include interpreters of microprogrmming, XML processing, script command language execution, rule-based system execution, Smalltakl and Java interpreter typed programming laguage.
+
+And common examples of virtual machines are:
+
+- Interpreters.
+- Rule-basic systems
+- Syntatic shells
+- Command language processors
+
+The **advantages of a Master-slave style**:
+
+- Portability and machine platform independency.
+- Simplicity of software development.
+- Provides flexibility through the ability to interrupt and query the program.
+- Simulation for disaster working model.
+- Introduce modifications at runtime.
+
+The **disadvantages of a Master-slave style**:
+
+- Slow execution of the interpreter due to the interpreter nature.
+- There is a performance cost because of the additional computation involved in execution.
+
+
+#### Layered Style
+
+In this approach, the system is decomposed into a number of higher and lower layers in a hierarchy, and each layer has its own sole responsability in the system:
+
+- Each layer consists of  group of related classes that are encapsulated in a packaged, in a deployed component, or as a group of subroutines in the format of method library or header file.
+- Each layer provides service to layer above it and serves as a client to the layer below i.e. request to layer **i+1** invokes the services provided by the layer **i** via the interface of layer **i**. The response may go back to the layer **i+1** if the task is completed; otherwise layer **i** continually invokes services from layer **i-1**.
+
+Some applications that commonly uses this style:
+
+- Applications that involve distinct classes of services that can be organized hierarchically.
+- Any application that can be decomposed into application-speciffic and platform-speciffic portions.
+- Applications that have clear devisions between core services, critical services, and use interface services, etc.
+
+
+The **advantages of a Master-slave style**:
+
+- Design based on incremental levels of abstraction.
+- Provides enchancement independence as changes to the function of one layer affects at most two other layers.
+- Separation of the standard interface and its implementation.
+- Implemented by using component-based technology which makes the system much easier to allow for plug-and-play of new components.
+- Each layer cn be an abstract machine deployed independently which support portability.
+- Easy to decompose the system based on the definition of the tasks in a top-down refinement manner.
+- Different implementations (with idential interfaces) of the same layer can be used interchangeably.
+
+The **disadvantages of a Master-slave style**:
+
+- Many applications or systems are not easily structured in a layered fashion.
+- Lower runtime performance since a client's request or a response to client must go through pottentically several layers.
+- There are also performance concerns on overhead on the data marshaling and fuffering by each layer.
+- Opening of interlayer communication may cause deadlocks and "bridging" may cause tight coupling.
+- 
+Exceptions and error handling is an issue in the layered architecture, since faults in on layer must spread upwards to all calling layers.
+
+
+
+### Interation-Oriented Architecture
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm
+https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm
 
 Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 
