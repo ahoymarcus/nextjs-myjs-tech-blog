@@ -23,8 +23,11 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	8.1. UML (Unified Modeling Language)  
 	8.2. Architectural View Model (4+1 View Model)  
 	8.3. ADL (Architecture Description Language)   
-9. ##### 
-10. ##### 
+9. ##### The Object-Oriented Paradigm    
+	9.1. Basic Concepts of OO Paradigm   
+	9.2. Object-Oriented Analysis    
+	9.3. Object-Oriented Design    
+10. ##### Data Flow Architecture
 11. ##### 
 11. ##### 
 11. ##### 
@@ -234,11 +237,11 @@ they represent the dynamic aspect of a system, that is the changing/moving parts
  
  A **view** is a representation of an entire system from some perspective or from some concern. And it is used to describe the system from the viewpoint of different stakeholders such as end-users, developers, project managers, and testers.
  
-1. The **4+1 View Model**: it was designed by Philippe Kruchten to describe the architecture of a software-intensive system based on the use of multiple and concurrent views, with at least 04 essential views. So it is a **multiple view model that addresses different features and concers of the system**. It standardazes the software design documents and makes the design easy to understand by all stakeholders.
-	1.1. The Logical view or Conceptual view: it describes the obhject model of the design.
-	1.2. The Process view: it describes the activities of the system, captures the concurrency and synchronization aspects of the design.
-	1.3. The Physical view: it describes the mapping of software onto hardware and reflects its distributed aspect.
-	1.4. The Development view: it describes the static organization or structure of the software in its development of environment.
+1. The **4+1 View Model**: it was designed by Philippe Kruchten to describe the architecture of a software-intensive system based on the use of multiple and concurrent views, with at least 04 essential views. So it is a **multiple view model that addresses different features and concers of the system**. It standardazes the software design documents and makes the design easy to understand by all stakeholders.      
+	1.1. The Logical view or Conceptual view: it describes the obhject model of the design.    
+	1.2. The Process view: it describes the activities of the system, captures the concurrency and synchronization aspects of the design.        
+	1.3. The Physical view: it describes the mapping of software onto hardware and reflects its distributed aspect.      
+	1.4. The Development view: it describes the static organization or structure of the software in its development of environment.   
  
  
 The naming of this model implies that there are a fifth view, a high level requirement for the system, called **scenario view** or **use case view** that represents a user case for the project, and that brings all of them together.
@@ -249,31 +252,176 @@ The naming of this model implies that there are a fifth view, a high level requi
  
 **ADL (Architecture Description Language)**
 
-An ADL is a language that provides syntax and semantics for defining a software architecture. It is a notation specification which provides features for modeling a software system’s conceptual architecture, distinguished from the system’s implementation.
+An **ADL** is a language that provides syntax and semantics for defining a software architecture. 
 
-ADLs must support the architecture components, their connections, interfaces, and configurations which are the building block of architecture description. It is a form of expression for use in architecture descriptions and provides the ability to decompose components, combine the components, and define the interfaces of components.
+It's a notation that provides specification for the features modeled by a software's conceptual architecture, that is distinguished from the system's implementation.
 
-An architecture description language is a formal specification language, which describes the software features such as processes, threads, data, and sub-programs as well as hardware component such as processors, devices, buses, and memory.
+The **ADLs** must support the architecture components, their connections, interfaces, and configurations which are the building block of the architecture description. It's a form of expression to be used in architecture descriptions and provides the ability to decompose components, combine the components, and define the interface of the components.
 
-It is hard to classify or differentiate an ADL and a programming language or a modeling language. However, there are following requirements for a language to be classified as an ADL −
+`An architecture description language is a formal specification language, which describes the software features such as processes, threads, data, and sub-programs as well as hardware component such as processors, devices, buses, and memory.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/architecture_models.htm)
 
-    It should be appropriate for communicating the architecture to all concerned parties.
+It's somehow hard to classify or differentiate an **ADL** and a programming language or a modeling language. **However, there are the following requirements for a language to be classified as an ADL**:
 
-    It should be suitable for tasks of architecture creation, refinement, and validation.
-
-    It should provide a basis for further implementation, so it must be able to add information to the ADL specification to enable the final system specification to be derived from the ADL.
-
-    It should have the ability to represent most of the common architectural styles.
-
-    It should support analytical capabilities or provide quick generating prototype implementations.
-
+1. It should be appropriate for communicating the architecture to all concerned parties.
+2. It should be suitable for tasks of architecture creation, refinement, and validation.
+3. It should provide a basis for further implementation, so it must be able to add information to the ADL specification to enable the final system specification to be derived from the ADL.
+4. It should have the ability to represent most of the common architectural styles.
+5. It should support analytical capabilities or provide quick generation prototype implementations.
 
 
+### The Object-Oriented Paradigm
+
+The Object-Oriented paradigm was originated and took shape with the arrivel of the new object oriented programming.
+
+So, the `OO analysis and design paradigm is the logical result of the wide adoption of OO programming languages`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
+
+In term of its **History**, it could be pointed:
+
+- 1960 - the creation of **Simula** the first object-oriented language at the Norwegian Computing Center.   
+- 1970 - the creation of the language Smalltalk by the research group at Xerox PARC, as the programming language for its computer Dynabook.  
+- 1980s - the **paper titled Object Oriented Design** by Grady Booch to be applied to the object-oriented language **Ada**, and later extended as a general design method.    
+- 1990s - the incorporation of behavioral ideas to object-oriented methods.  
+
+`The other significant innovations were **Object Modeling Techniques (OMT)** by James Rum Baugh and **Object Oriented Software Engineering (OOSE)** by Ivar Jacobson`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
+
+
+#### Basic Concepts of OO Paradigm
+
+1. **Object**: a real-world element shaped in an computational environment, that may have physical or conceptual existence.
+	1.1. It has specific **identity** from all other objects in the system.    
+	1.2. It has a **state** to keep the of its **properties** throughout the execution of the system.    
+	1.3. It has **behavior** implied by the the changes occurred at the object state in the run-time.     
+2. **Class**: it represents a scheme or model for all the objects that hold the same characteristics and behaviors.   
+	1.1. The act of creating objects from its class is called **instantiation**, and thus a class can produce multiple instances, each of the with ist own identity and state.    
+	1.2. the set of attributes that becomes properties for each object instance.    
+	1.3. a set of behaviors defined by the class inner **methods**, that are its internal functions.       
+3. **Encapsulation**: it is the process o binding the attributes and methods of the class, so they are only reachable and accessed through the class own interface.
+4. **Polymorphism**: this is the concept were a class can have some general behavior while it keeps the same signiture for a internal method, but **overrides** its specific behavior.
+5. **Relationships**: it is possible to assert two kinds of relationships in this paradigm:     
+	5.1. a **dynamic** relationship exerted by the objects with other objects.    
+	5.2. a **static** relationship of classes among themselves: **Composition**, or **Aggregation**, or **Association**, or **inheritance**.    
+
+
+
+The **Association**: it is the king of relationship between two classes that can communicate with each other. This communication can be unidirectional or bidirectional, and this communication can be the type **1:1**, or **1:M**, or **M:N**.
+
+The **Aggregation**: it is a subset of association with the kind of relationship as **"Has-A"** existing between two classes where their instances can exist by itself, that is, both can be instantiated even without the other.
+
+```
+public class Employee {
+	private String name;
+	private double salary;
+	
+	public Employee() {}
+}
+
+public class Department {
+	public String name;
+	public List<Employee> employees;
+	
+	public Department() {}
+}
+``` 
+
+The **Composition**: it is a subset of association with the kind of relationship as **"Part-Of"** existing between two classes, and where there are some **dependency** among the instances so they can be instantiated. For example, when o object Laptop needs a actual instance of Processor to be instantiated.
+
+```
+public class Processor {
+	private String modelName;
+	private int frequency;
+	
+	public Processor() {}
+}
+
+publi class Laptop {
+	private Processor processor = new Processor();
+	
+	public Laptop() {}
+}
+```
+
+The **Inheritance**: it is the kind o relationship **"IS-A"** between two classes, where there are a dependency of the kind generalization-specification. For example, the classes Animal, Cat and Dog.
+
+```
+public class Animal {
+	protected weight;
+	protected color;
+	
+	public Animal() {}
+	
+	public void talk() {
+		System.out.print("It is animal");
+	}
+}
+
+public class Cat exted Animal {
+	public Cat() {}
+	
+	public void talk() {
+		System.out.print("Meow");
+	}
+}
+
+public class Dog extend Animal {
+	public Dog() {}
+	
+	public void tald() {
+		System.out.print("Bark");
+	}
+}
+```
+
+![assocition-aggregation-composition-oo-paradigm](/images/articles/development/assocition-aggregation-composition-oo-paradigm.png)
+[Visual-paradigm.com](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+
+
+#### Object-Oriented Analysis
+
+This is the phase in software development where the requirements are gathered, and the classes are identified, together with their relationships.
+
+The aim of OO Analysis it to understand the application domain, specif requirements, and the system feasibility.
+
+The **Object Modeling**: at this stage the schema for each class is modeled, with relationships, its attributes, and methods.
+
+The **Dynamic Modeling**: at this stage it is created a model for the behavior of the system, so it identifies states for each object, its actions e the events it takes part, and the chages made in the state accordingly.
+
+The **Functional Modeling**: this is the final stage of the analysis, where it is modeled the inputs, and outputs, and constraints, as a detailed data flow. 
+
+
+#### Object-Oriented Design
+
+The main aim of OO Design is to develop the structural architecture of a system:
+
+1. Defining the context of the system
+2. Designing the system architecture
+3. Identification of the objects in the system
+4. Construction of the design models
+5. Specification of object interfaces.
+
+**Desing Principles**:
+
+1. **Decoupling Principle**: it's the observation that to maintain a system that has highly interdependent classes, would obly a cascading modification in case of updating some class.
+	1.1. In an OO design, thight coupling can be eliminated by introducing new classes or inheritance.
+2. **Ensuring Cohesion**: a cohesive class performs a set of closely related functions. And the lack of cohesion means the classes performs many functions that are not meaningful to the operation of the whole system, what brings complexity to the system and makes the structure of the software hard to maintain.
+3. **Open-Closed Principle**: this principle aims scalability, where a system should not need to be restructured to receive new requirements.
+	3.1. For each concrete class, separate interface and implementions have to be maintained.
+	3.2. In a multithread environment, keep the attributes private.
+	3.3. Minimize the use of global variables and class variables.
+
+
+### Data Flow Architecture
 
 
 
 
-https://www.tutorialspoint.com/software_architecture_design/architecture_models.htm
+
+
+
+
+https://www.tutorialspoint.com/software_architecture_design/data_flow_architecture.htm
 
 Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 
