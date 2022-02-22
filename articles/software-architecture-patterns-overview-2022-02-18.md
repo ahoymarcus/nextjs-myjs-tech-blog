@@ -236,6 +236,14 @@ The MVC pattern dividers the application into three main components:>
 
 - This could become complex to navigate around the framework because it introduces many layers of abstraction.
 
+#### Some Variations for this Patter
+
+- **MVC-I**
+- **MVC-II**
+
+At this other article [^1].
+
+
 #### Useful references for MVC
 
 - [Understanding Model-View-Controller by Coding Horror - 2008](https://blog.codinghorror.com/understanding-model-view-controller/)
@@ -321,4 +329,6 @@ Also found in Workflows in Bioinformatics.
 
 [Types of Software Architecture Patterns - GeeksforGeeks](https://www.geeksforgeeks.org/types-of-software-architecture-patterns/)
 
+
+[^1]:software-architecture-and-design-2022-02-22
 

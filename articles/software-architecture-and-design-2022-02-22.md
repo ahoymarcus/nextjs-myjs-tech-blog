@@ -28,21 +28,24 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	9.2. Object-Oriented Analysis    
 	9.3. Object-Oriented Design    
 10. ##### Data Flow Architecture
-	10.1. Batch Sequential
-	10.2. Piper and Filter or Non-sequential Pipeline
-	10.3. Process Control
+	10.1. Batch Sequential    
+	10.2. Piper and Filter or Non-sequential Pipeline    
+	10.3. Process Control    
 11. ##### Data-Centered Architecture
-	11.1. Types of Components - Data-Centered Architecture
-	11.2. Styles of Architecture for Data-Centered Architecture
+	11.1. Types of Components - Data-Centered Architecture     
+	11.2. Styles of Architecture for Data-Centered Architecture     
 12. ##### Hierarchical Architecture
-	12.1. Main-subroutine Style
-	12.2. Master-slave Style
-	12.3. Virtual Machine Style
-	12.4. Layered Style
+	12.1. Main-subroutine Style     
+	12.2. Master-slave Style    
+	12.3. Virtual Machine Style    
+	12.4. Layered Style    
 13. ##### Interation-Oriented Architecture
-14. ##### 
-15. ##### Further Reading
-16. ##### References
+	13.1. Model-View-Controler (MVC) 
+	13.2. Presentation-Abstraction-Control (PAC)
+14. ##### Distributed Architecture
+15. ##### 
+16. ##### Further Reading
+17. ##### References
 
 ### Introduction
 
@@ -183,7 +186,7 @@ The implementation of architectural structures in software development can be a 
 
 1. **Communication**:   
 	1.1. Message bus: defines the use of a system that can receive and send messages using on or more communication channels.        
-	1.2. Service-oriented Architecture (SOA)
+	1.2. Service-oriented Architecture (SOA).
 2. **Deployment**    
 	2.1. Client - Server   
 	2.2. 3-tier or N-tier: separates functionalities into in tiers that are located in different computers.
@@ -193,8 +196,6 @@ The implementation of architectural structures in software development can be a 
 	4.1. Composed based: breakdown the application design into reusable functional or logical components that expose well-defined communiction interfaces.    
 	4.2. Divide the concerns of the application into stacked groups (or layers).     
 	4.3. Object oriented: based on the division of responsibilities of an application or system into objects, each containing the data and the behavior relevant to the object.    
-	
-	
 	
 ### Architectural Models for Software Architecture
 	
@@ -297,7 +298,7 @@ In term of its **History**, it could be pointed:
 
 #### Basic Concepts of OO Paradigm
 
-1. **Object**: a real-world element shaped in an computational environment, that may have physical or conceptual existence.
+1. **Object**: a real-world element shaped in an computational environment, that may have physical or conceptual existence.    
 	1.1. It has specific **identity** from all other objects in the system.    
 	1.2. It has a **state** to keep the of its **properties** throughout the execution of the system.    
 	1.3. It has **behavior** implied by the the changes occurred at the object state in the run-time.     
@@ -691,6 +692,7 @@ So, a `virtual machine is built upon an existing system and provides a virtual a
 In terms of operation, a virtual machine splits a programming languge or application environment from an execution platform. The main objective is to provide portability.
 
 ![virtual-machine-style-architecture](/images/articles/development/virtual-machine-style-architecture.png)
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm)
 
 
 As it is stated at the TutorialsPoint article, the **hypervisor**, also called the virtual machine monitor, runs on the host OS and allocates matched resources to each guest OS. When the guest makes a system-call, the hypervisor intercepts and translates it into the corresponding system-call supported by the host OS. The hypervisor controls each virtual machine access to the CPU, memory, persistent storage, I/O, and the network.
@@ -758,12 +760,130 @@ Exceptions and error handling is an issue in the layered architecture, since fau
 
 ### Interation-Oriented Architecture
 
+The primary objective of interaction-oriented architecture is to separate the interaction of the user from data abstraction and business data processing.
+
+There are 03 main modules:
+
+1. **Data module**
+2. **Control module**
+3. **View presentation module**
+
+
+And the Interation-Oriented Architecture can present itself into two major speciffic styles:
+
+- **Model-View-Controler (MVC)**: this style doesn't have a clear hierarchical structure.
+- **Presentation-Abstraction-Control (PAC)**: this is a agent-based hierarchical style.
+
+
+#### Model-View-Controler (MVC) 
+
+As it was stated above, MVC model decomposes the architecture into that 03 major modules and here this article there is an overview of the style[^1].
+
+Some additional points to be made about this style may be the atempts to simplify the style:
+
+1. **MVC-I**: it's a simpler version of the MVC architecture where the system is divided into two sub-systems:      
+	1.1. The Controller-View: the controller-view acts as input/output interface and processing is done.        
+	1.2. The Model: the model provides all the data and domain services.     
+	1.3. The connections between Controller-View and Model can be designed in a pattern of subscribe-notify whereby the controller-view subscribes to model and model notifies controller-view of any changes.
+2. **MVC-II**: this is a enhancement of the MVC-I in which the view modele and the controller are separate.   
+	2.1. The Model still plays an active role as in MVC-I by providing all the core functionality and data supported by database.  
+	2.2. The View module presents data while Controller module accepts input request, validates input data, initiates the model, the view, their connection, and also dispatches the task.
+
+
+As a whole, the MVC patterns are effective for:
+
+- Interative applications where multiple views are needed for a single data model and easy to plug-in a new or change interface view.
+- For appliations where there are clear divisions between the modules so that different professionals can be assigned to work on different aspects of such applications concurrently.
+
+
+The **advantages of the MVC style**:
+
+- There are many MVC vendor framework toolkits available.
+- Multiple views synchronized with same data model.
+- Easy to plug-in new or replace interface views.
+- Used for application developement where graphics expertise professionals, programming professionals, and database development professionals are working in a designed project team.
+
+The **disadvantages of the MVC style**:
+
+- Not suitable for agent-oriented applications such as interative mobile and robotics applications.
+- Multiple pairs of controllers and views vased on the same data model make any data model change expensive.
+- The division between the View and the Controller is not clear in some cases.
+
+
+
+#### Presentation-Abstraction-Control (PAC)
+
+In the PAC architecture style, the system is arranged into a hierarchy of many cooperation agents (the Triads). It was developed from MVC to support the application requirement of multiple agents in addition to interactive requirements.
+
+Each agent has 03 components:
+
+- **The Presentation component**: formats the visual and audio presentation of data.
+- **The Abstraction component**: retrieves and processes the data.
+- **The Control component**: handles the task such as the flow of control and communication between the other two components.
+
+`The PAC architecture is similar to MVC, in the sense that presentation module is like view module of MVC. The abstraction module looks like model module of MVC and the control module is like the controller module of MVC, but they differ in their flow of control and organization.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm)
+
+There are no direct connections between abstration component and presentation component in each agent. The control component in each agent is in charge of communications with other agents.
+
+
+The **PAC with Multiple Agents**
+
+`In PAC consisting of multiple agents, the top-level agent provides core data and business logics. The bottom level agents define detailed specific data and presentations.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm)
+
+- Each agent has its own specific assigned job.
+- For some middle level agents the interactive presentations are not required, so they do not have a presentation component.
+- The control component is required for all agents through which all the agents communicate with each other.
+
+
+![multiple-agent-in-pac-architecture](/images/articles/development/multiple-agent-in-pac-architecture.png)
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm)
+
+
+Some applications that commonly uses this architecture style:
+
+- Effective for an interative system where the system can be decomposed into many cooperating agents in a hierarchical manner.
+- Effective when the coupling among the agents is expected to be loose so that changes on an agent does not affect other.
+- Effective for distributed system where all the agents are distintly distributed and each of them has its own functionalities with data interaticve interfaces.
+- Suitable for applications with rich GUI components where each of them keeps its own current data, and interactive interface, and needs to communicate with other components.
+
+
+The **disadvantages of the PAC style**:
+
+- Support for multi-tasking and multi-viewing.
+- Support for agent reusability and extensibility.
+- Easy to plug-in new agent or change an existing one.
+- Support for concurrency where multiple agents are running in parallel in different threads or different devices or computers.
+
+The **disadvantages of the PAC style**:
+
+- Overhead due to the control bridge between presentation and abstraction and the communication of controls among agents.
+- Difficult to determine the right number of agents because of loose coupling and high independence among agents.
+- Complete separation of presentation and abstraction by control in each agent generate development complexity since communications between agents only take place between the controls of agents.
+
+
+### Distributed Architecture
 
 
 
 
 
-https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm
 
 Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 
@@ -782,3 +902,5 @@ Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, 
 
 [Software Architecture & Design Tutorial - TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
+
+[^1]:improving-your-core-web-vitals-2022-02-03
