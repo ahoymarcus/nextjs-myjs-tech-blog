@@ -112,6 +112,15 @@ The best example for this patter is the **World Wide Web**, but it's also used f
 1. **Low scalability**: to scale is necessary to provide power to capacity both for the new component and for the centralized server that controls all the operation.
 2. **The need for expensive machines**: this heavy duty machines are necessary to carry out the centralized work.
 
+
+#### Some Variations for this Patter
+
+- **Thin-Client Model**
+- **Thick/Fat-Client Model**
+
+article: Software Architecture and Design [^1].
+
+
 #### Useful references for the Client-Server Pattern
 
 -	[What is a client-server architecture? from W3 School](https://www.w3schools.in/what-is-client-server-architecture/)
@@ -218,7 +227,7 @@ Also, the most common general information systems usually have these 04 layers:
 
 ### The Model-View-Controller (MVC) Pattern
 
-The MVC pattern dividers the application into three main components:>
+The MVC pattern dividers the application into three main components:
 
 1. A **Model**: this component deals with the dynamic data structure of the software, both its control and logic.
 2. A **View**: this component is responsible to dispay data to the user and to interact with him. It can access data from the **Model**, but it cannot understand it, that is, how to manipulate it!

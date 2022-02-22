@@ -43,6 +43,11 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	13.1. Model-View-Controler (MVC)     
 	13.2. Presentation-Abstraction-Control (PAC)  
 14. ##### Distributed Architecture
+	14.1. The Middleware Infrastructure    
+	14.2. The Client-Server Architecture     
+	14.3. The Multi-Tier Architecture     
+	14.4. The Broker Architecture     
+	14.5. The Service-Oriented Architecture (SOA)     
 15. ##### 
 16. ##### Further Reading
 17. ##### References
@@ -865,16 +870,129 @@ The **disadvantages of the PAC style**:
 
 ### Distributed Architecture
 
+In distributed architectures, the components are scaled horizontaly to process multiple machines or **nodes**, and they `can cooperate with one another over a communication network in order to achieve a specific objective or goal`.
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
+
+
+The basis of a distributed architecture is availability, and some other properties found in this pattern:
+
+- A **distributed system** can be demonstrated by the client-server architecture which forms the base for multi-tier architectures; alternatives are the broker architecture such as CORBA, and the Service-Oriented Architecture (SOA).
+- There are several technology frameworks to support distributed architectures, including .NET, J2EE, CORBA, .NET Web Services, AXIS Java Web Services, and Globus Gride services.
+
+
+
+#### The Middleware Infrastructure
+
+Middleware is an infrastructure that appropriately supports the development and execution of distributed applications. It provides a buffer between the applications and the network.
+
+It sits in the middle of system and manages or supports the different compoents of a distributed system. Exemples are transactions processing monitors, data convertor and communication controllers, etc.
+
+![middleware-platform-distributed-architecture](/images/articles/development/middleware-platform-distributed-architecture.png)
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
+
+
+The **advantages of the Middleware Infrastructure style**:
+
+- **Resource sharing **: sharing hardware and software resources.
+- **Openness**: flexibility of using hardware and software of different vendors.
+- **Concurrency**: concurrent processing to enhance performance.
+- **Scalability**: increased throughput by adding new resources.
+- **Fault tolerance**: the ability to continue in operation after a fault at a number of nodes.
+
+The **disadvantages of the Middleware Infrastructure style**:
+
+- **Complexity**: they are more complex than centralized systems.
+- **Security risk**: the are more susceptible to external attack.
+- **Managebility**: more effort required for system management.
+- **Unpredictability**: unpredictable responses depending on the system organization and network load.
+
+#### Client-Server Architecture
+
+The client-server architecture is the most common distributed system architecture which decomposes the system into two major subsystems or logical processes:
+
+1. **Client**
+2. **Server**
+
+In this article there is an overview of this architectural style [^1].
+
+And below some additional points to be made about this style:
+
+The **Thin-Client Model**:
+
+In this thin-client model, all the application processing and data management is carried by the server. The client is simply responsible for running the presentational sorftware.
+
+- Used when legacy systems are migrated to client server architectures in which legacy system acts as a server in its own right with a graphical interface implemented on a client.
+- A major disadvantage is that a heavy processing load on both the server and the network.
+
+The **Thick/Fat-Client Model**:
+
+In this model, the server is only in charge for data management. The software on the client implements the application logic and the interactions with the system user.
+
+- Most appropriate for new C/S systems where the capabilities of the client system are known in advance.
+- More comples than thin-client model especially for management. New versions of the application have to be installed on all clients.
+
+The **advantages of the Client-Server style**:
+
+- Separation of responsibilities such as user interface presentation and busness logic processing.
+- Reusability of server components and potential for concurrency.
+- Siplifies the design and the development of distributed applications.
+- It makes it easy to migrate or integrate existing applications into a distributed environment.
+- It also makes effective use of reources when a large number of clients are accessing a high-performance server.
+
+The **disadvantages of the Client-Server style**:
+
+- Lack of heterogeneous infrastructure to deal with requirement changes.
+- Security complications.
+- Limited server availability and reliability.
+- Limited testability and scalability.
+- Fat clients with presentation and business logic together.
+
+
+#### The Multi-Tier Architecture
+
+The multi-tier architecture is a client-server architecture in which functions as presentation, application processing, and data management are physically separated.
+
+And by separating an application into tiers, developers get the option of changing or adding specific layer, instead of reworking the entire application. So, it `provides a model by which developers can create flexible and reusable applications[...]The most general use of multi-tier architecture is the three-tier architecture. A three-tier architecture is typically composed of a presentation tier, an application tier, and a data storage tier and may execute on a separate processor.`.
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
+
+The **Presentation Tier**
+
+The presentation layer is the topmost level of the application by which users can access directly such as webpage or Operating System GUI (Graphical User Interface). The primary function of this layer is to translate the task s and results to something that the user can understand. It communicates with other tiers so that it places the results to the browser/client tier and all other tiers in the network.
+
+The **Application Tier (Business Logic, Logic Tier, or Middle Tier)** 
+
+The application tier coordinates the application, processes the commands, makes logical decisions, evaluation, and performs calculations. It controls an application's functionality by performing detailed processing. It also moves and processes data between the two surrounding layers.
+
+The **Data Tier**
+
+In this layer, information is stored and retrieved from the database or file system. The information is then passed back for processing and then back to the user. It includes the data persistence mechanisms (database servers, file shares, etc.) and provides API (Application Programming Interface) to the application tier which provides methods of managing the stored data.
+
+
+![mult-data-tier-architecture](/images/articles/development/mult-data-tier-architecture.png)
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm)
+
+
+The **advantages of the Multi-Tier style**:
+
+- Better performance than thin-client approach and is simpler to manage than a thick-client approach.
+- Enhances the reusability and scalability - as demands increase, extra servers can be added.
+- Provides multi-threading support and also reduces network traffic.
+- Provides maintainability and flexibility.
+
+The **disadvantages of the Multi-Tier style**:
+
+- Unsatisfactory testability due to lack of testing tools.
+- More critical server reliability and availability.
+
+
+
+#### The Broker Architecture
 
 
 
 
 
-
-
-
-
-
+#### Service-Oriented Architecture (SOA)
 
 
 
