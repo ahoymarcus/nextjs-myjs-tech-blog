@@ -40,8 +40,8 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	12.3. Virtual Machine Style    
 	12.4. Layered Style    
 13. ##### Interation-Oriented Architecture
-	13.1. Model-View-Controler (MVC) 
-	13.2. Presentation-Abstraction-Control (PAC)
+	13.1. Model-View-Controler (MVC)     
+	13.2. Presentation-Abstraction-Control (PAC)  
 14. ##### Distributed Architecture
 15. ##### 
 16. ##### Further Reading
@@ -903,4 +903,4 @@ Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, 
 [Software Architecture & Design Tutorial - TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
 
-[^1]:improving-your-core-web-vitals-2022-02-03
+[^1]:software-architecture-patterns-overview-2022-02-18

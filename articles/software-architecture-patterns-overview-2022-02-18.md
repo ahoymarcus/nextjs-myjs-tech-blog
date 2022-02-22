@@ -241,7 +241,7 @@ The MVC pattern dividers the application into three main components:>
 - **MVC-I**
 - **MVC-II**
 
-At this other article [^1].
+article: Software Architecture and Design [^1].
 
 
 #### Useful references for MVC
