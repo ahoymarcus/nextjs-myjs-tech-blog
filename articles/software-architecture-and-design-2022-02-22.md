@@ -49,6 +49,11 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	14.4. The Broker Architecture     
 	14.5. The Service-Oriented Architecture (SOA)     
 15. ##### Component-Based Architecture
+	15.1. Definition, Views and Characteristics of a Component?    
+	15.2. Principles of Component-Based Design   
+	15.3. Component-Level Design Guidelines   
+	15.4. Conducting Component-Level Design   
+	15.5. Advantages of the Component-Based Architecture
 16. ##### User Interface
 17. ##### Further Reading
 18. ##### References
@@ -1056,21 +1061,94 @@ The **advantages of the Service-Oriented Architecture (SOA) style**:
 
 ### Component-Based Architecture
 
+Component-based architecture focuses on the decomposition of the design into individual function or logical components that well-defined communication interfaces methods, events, and properties. It provides a higher level of abastraction and divides the problem into sub-problems, each associated with component partions.
+
+**The primary objective of component-based architecture is to ensure component reusability. A component encapsulates functionality and behviors of a software element into a reusable and self-deployable binary unit.**
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)
 
 
+#### Definition, Views and Characteristics of a Component?
+
+A component is a modular, portable, replaceable, and reusable set of well-defined functionality that encapsulates its implementation and exporting it as a higher-level interface.
+
+`A software component can be defined as a unit of composition with a contractually specified interface and explicit context dependencies only. That is, a software component can be deployed independently and is subject to composition by third parties.`
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)
 
 
+**Views of a Component**
+
+A component can have three different views:
+
+1. **Object-Oriented view**: a component is viewd as a set of one or more cooperating classes. Each problem domain class (analysis) and infrastructure class (design) are explained to identify all attribute and operations that apply to its implementation. It also involves defining the interfaces that enable classes to communicate and cooperate.
+2. **Conventional view**: it's viewed as a functional element or a module of a program that integrates the processing logic, the internal data structures that are required to implement the processing logic and an interface that enables the component to be invoked and data to be passed to it.
+3. **Process-Related view**: in this view, instead of creating each component from scratch, the system is building from existing components maintained in a library. As the software architecture is formulated, components are selected from the library and used to populate the architecture.
 
 
-https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm
+**Characteristics of Component**
+
+- **Reusability**: they should be designed to be used in different applications.
+- **Replaceble**: they shoul be freely subtituted with other similar components.
+- **Not Context Specific**: they are designed to operate in different environments and contexts.
+- **Extensible**: it should be able to extends from existing components to provide new behavior.
+- **Encapsulated**: a component should not expose internal details, but it should depict a interface, which would allow the caller to use its functionalities.
+- **Independent**: components should have minimal dependencies on other components. 
 
 
+#### Principles of Component-Based Design
+
+These are some concepts and guidelines that help the developer to avoid the introduction of erros:
+
+- To decompose the component into some unity and encapsulate it to be reusable.
+- Define interfaces for the components that hide its detailed implementation.
+- A component should be able to extends its functions without the need to make internal code or design modifications.
+- The dependency should be on abstract components and not on concrete ones, otherwise it would increase difficulty in expendability.
+- The connections should be by connectors, which are ruled by the interfaces.
+- The interactions between components could take the form of method invocations, asynchronous invocations, broadcasting, message driven interactions, data stream communications, and other protocol specific interations.
+- For a server class, specialized interfaces should be created to serve major categories of clients. Only those operations that are relevant to a particular category of clients should be specific in the interface.
+- A component can extend to other components and still offer its own extension points. It's the concept of plug-in based architecture. This allows a plugin to offer another plugin API.
 
 
+#### Component-Level Design Guidelines   
 
+1. Create naming conventions that all from the top with the architectural model and mirror them into the component-level model.
+2. Attain the names form the business model and ensures that they have meaning to all stakeholders.
+3. Create atomic entities and avoid depencies from other entities, what would prevent its independently existence.
+4. Models any dependencies from left to right and inheritance from top (base class) to bottom (derived classes).
+5. Model any component dependencies as interfaces rather than representing them as a direct component-to-component dependency.
+
+
+#### Conducting Component-Level Design
+
+Recognizes all design classes that correspond to the problem domain as defined in the analysis model and architectural model:
+
+1. Recognizes all design classes that correspond to the infrastructure domain.
+2. Describes all design classes that are not acquired as reusable components, and specifies message details.
+3. Identifies appropriate interfaces for each component and elaborates attributes and defines data types and data structures required to implement them.
+4. Describes processing flow within each operation in detail by means of pseudo code or UML activity diagrams.
+5. Describes persistent data sources (databses and files) and identifies the classes required to manage them.
+6. Develop and elaborates behavioral representations for a class or component. This can be done by elaborating the UML  state diagrams created for the analysis model and by examining all use cases that are relevant to the design class.
+7. elaborates deplyment diagrams to provide additional implementation detail.
+8. Demonstrate the location of key packages or classes of components in a system by using class instances and designating specific hardware and operating system environment.
+9- The final decision can be made by using established design principles and guidelines. Experienced designers consider all (or most) of the alternative design solutions before setting on the final design model.
+
+#### Advantages of the Component-Based Architecture
+
+- **Ease of deployment**: new versions should be created from updating some parts of the system not affecting the other parts. 
+- **Reduced cost**: because of the reuse and the use of third-party components also.
+- **Ease of development**: components implementing well-known interfaces that provide defined functionality and do not creates co-dependencies into the parts.
+- **Reusability**
+- **Modification of technical complexity**: a component modifies the complexity through the use of a component container and its services.
+- **Reliability**
+- **System maintenace and evolution**
+- **Independency and Flexibility**: not only in terms of the component abstraction, but also during development with groups working in parallel.
 
 
 ### User Interface
+
+
+
+
+
 
 
 
