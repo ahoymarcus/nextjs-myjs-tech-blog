@@ -1158,8 +1158,8 @@ The concept of a Interfaces might imply a couple of important elements related t
 
 1. As an instrument to wrap a component or module of a system, that hides internal details and only exposes the necessary ones.
 2. As an method to avoid creating unnecessary co-dependence between components or modules.
-3. As a mean of interaction between the component or module with other elements
-	3.1. And if the interaction is directed to the final user, it would even imply a rich visual interaction.
+3. As a mean of interaction between the component or module with other elements:    
+	3.1. And if the interaction is directed to the final user, it would even imply a rich visual interaction.     
 	3.2. As an rich interaction, the interface has to accept the user's input and display the outputs.
 
 
@@ -1214,7 +1214,7 @@ Some steps in the process of the design:
 	3.2. **The semantic level**: it describes the functions performed by the system (i.e. the description of the functional requirements of the system, but does not address how the user will invoke the functions).   
 	3.3. **The syntactic level**: it describes the sequences of inputs and outputs required to invoke the functions from the requirements.  
 	3.4. **The lexical level**: it determines how the inputs and the outputs are actually formed from primitive hardware operations.
-4. **The design** of the user interface: it is an iterative process, where all the iteration explains and refines the information developed in the preceding steps:
+4. **The design** of the user interface: it is an iterative process, where all the iteration explains and refines the information developed in the preceding steps:      
 	4.1. To define user interface objects and actions (operations).  
 	4.2. To define (user actions) that will cause the state of the user interface to change.  
 	4.3. To indicate how the user interprets the state of the system from information provided through the interface.   
