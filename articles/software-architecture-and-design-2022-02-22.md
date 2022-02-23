@@ -55,6 +55,10 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	15.4. Conducting Component-Level Design   
 	15.5. Advantages of the Component-Based Architecture
 16. ##### User Interface
+	16.1. Graphical User Interface    
+	16.2. Development Process of the User Interface           
+	16.3. Design of the User Interface  
+	16.4. Design Principles for the User Interface 	
 17. ##### Further Reading
 18. ##### References
 
@@ -1069,8 +1073,12 @@ Component-based architecture focuses on the decomposition of the design into ind
 
 #### Definition, Views and Characteristics of a Component?
 
+
+**The Component**
+
 A component is a modular, portable, replaceable, and reusable set of well-defined functionality that encapsulates its implementation and exporting it as a higher-level interface.
 
+**The Software Component**
 `A software component can be defined as a unit of composition with a contractually specified interface and explicit context dependencies only. That is, a software component can be deployed independently and is subject to composition by third parties.`
 [TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)
 
@@ -1131,6 +1139,7 @@ Recognizes all design classes that correspond to the problem domain as defined i
 8. Demonstrate the location of key packages or classes of components in a system by using class instances and designating specific hardware and operating system environment.
 9- The final decision can be made by using established design principles and guidelines. Experienced designers consider all (or most) of the alternative design solutions before setting on the final design model.
 
+
 #### Advantages of the Component-Based Architecture
 
 - **Ease of deployment**: new versions should be created from updating some parts of the system not affecting the other parts. 
@@ -1145,19 +1154,88 @@ Recognizes all design classes that correspond to the problem domain as defined i
 
 ### User Interface
 
+The concept of a Interfaces might imply a couple of important elements related to software engineering:
+
+1. As an instrument to wrap a component or module of a system, that hides internal details and only exposes the necessary ones.
+2. As an method to avoid creating unnecessary co-dependence between components or modules.
+3. As a mean of interaction between the component or module with other elements
+	3.1. And if the interaction is directed to the final user, it would even imply a rich visual interaction.
+	3.2. As an rich interaction, the interface has to accept the user's input and display the outputs.
 
 
+For that matter, a the special kind of interface that's related to the user plays a crucial role in any system:
+
+1. **It will be seen first** by the users, and even before he can convey any portion of the software internal architecture.
+2. **A good interface should help the user to understand and should attract him to use the software system as well**. A bas UI may cause market failure against the competition of software system.
+3. **UI has its systax and semantics**. The syntax comprises component types that may dialog with the user (texts, icons, buttons, etc.), while usability summarizes the semantics of the UI.
+4. **There are basically two kinds of user interface**:    
+	4.1. Textual   
+	4.2. Graphical
+5. **Different domains imply different styles of interfaces**: and even subdomains, just like there is subdomains of business models for a web page. 
 
 
+#### Graphical User Interface
+
+The Graphical User Interface is the most common type of user interface because it is intended for interaction with any kind of user, regardless his technical skills.
+
+It is also known as **WIMP Interface**, because it makes use of the first letters of these components:
+
+1. **Window**: the visual screen area where the application should interact with the user.
+2. **Icon**: a picture or symbol which is use to represent a software application or hardware device.
+3. **Menus**: a list of options from which a user can choose from the requirements of the system.
+4. **Pointers**: a symbol such as an arrow which moves around the screen area and helps the selections of the user.
 
 
+#### Development Process of the User Interface
+
+There are 04 stages in the process of developing the User Interface:
+
+1. **Interface analysis**: it concentrates on the study to understand the user, the tasks, the business and the style of the visual system.
+2. **Interface design**: it defines the set of interface objects, actions, and their screen representations that enable the user to perform all the defined tasks in a manner that meets every usability objective defined for the system.
+3. **Interface construction**: it starts with the prototype that enables usage scenarios to be evaluated and continues with the development tools to complete the construction.
+4. **Interface validation**: it focuses on the ability of the interface to implement every user task correctly, accommodate all task variations, to achieve all general user requirements, and the degree to which the interface is easy to use and easy to learn.
 
 
+#### Design of the User Interface        
+
+The design of the user interface is the process to bring the user into the system, and it `starts with task analysis which understands the user's primary tasks and problem domain. It should be designed in terms of User's terminology and outset of user's job rather than programmer's`.
+[TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/user_interface.htm)
+
+Some steps in the process of the design:
+
+1. **The analysis** of the user interface: to study and understand the user.      
+	1.1. Who is this user.   
+	1.2. The tasks that the user should be performing.   
+	1.3. The content that should be displayed to that user.    
+	1.4. The work environment in which the user is going to be interatction with the system.
+2. Proper or good UI designs works from the user's capabilities and limitations not the machines.   
+3. The tasks to be performed by the user can be divided into 04 different levels:    
+	3.1. **The conceptual level**: it describes the basic entities considering the user's view of the system and the actions upon them.     
+	3.2. **The semantic level**: it describes the functions performed by the system (i.e. the description of the functional requirements of the system, but does not address how the user will invoke the functions).   
+	3.3. **The syntactic level**: it describes the sequences of inputs and outputs required to invoke the functions from the requirements.  
+	3.4. **The lexical level**: it determines how the inputs and the outputs are actually formed from primitive hardware operations.
+4. **The design** of the user interface: it is an iterative process, where all the iteration explains and refines the information developed in the preceding steps:
+	4.1. To define user interface objects and actions (operations).  
+	4.2. To define (user actions) that will cause the state of the user interface to change.  
+	4.3. To indicate how the user interprets the state of the system from information provided through the interface.   
+	4.4. To describe each interface state as it will actualy look to the end user.
 
 
-https://www.tutorialspoint.com/software_architecture_design/user_interface.htm
+#### Design Principles for the User Interface 
 
-Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
+1. **User Centered**
+2. **Simple and Intuitive**
+3. **Place User in Control**: do not force users to complete predefined sequences. Give them options (to cancel, to save, and to return to where they left of). Use appropriate user terms for the information and give back feedback from the actions.
+4. **Transparency**: the interface should aim the required actions, and not to portrai how this actions are made or are described at low level.
+5. **Consistency**: all the elements and all its work flow should be the same all around.
+6. **Integration**: the software system should integrate smoothly with other applications such as MS notepad and MS-Office. It can use Clipboard commands directly to perform data interchange.
+7. **Component Oriented**: it should be modular.
+8. **Customizable**: The architecture of whole software system incorporates plug-in modules, which allow many different people independently extend the software. It allows individual users to select from various available forms in order to suit personal preferences and needs.
+9. **Reduce Users' Memory Load**: do not force users to have to remember and repeat what the computer should be doing for them.   
+	9.1. For example, when filling in online forms, customer names, addresses, and telephone numbers should be remembered by the system once a user has entered them, or once a customer record has been opened.
+10. **Separation**: the UI must be separated from the logic of the system through its implementation for increasing reusability and maintenability.
+
+
 
 ### Further Reading
 

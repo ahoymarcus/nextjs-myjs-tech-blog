@@ -183,7 +183,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Métodos para avaliação de usabilidade. 
 - [ ] Padrões de front-end: SPA e PWA. 
 - [X] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
-- [ ] Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
+- [X] Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 - [ ] Controles e testes de segurança para aplicações e webservices. 
 - [ ] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
 - [ ] Principais vulnerabilidades e remediações (OWASP Top Ten). 
