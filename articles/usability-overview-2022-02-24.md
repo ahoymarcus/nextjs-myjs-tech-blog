@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Usability - Overview'
 date: '2022-02-24'
 subject: 'development-articles'
-description: 'Usability is a quality attribute from software engineering to assesses how easy user interfaces are to use. It could also references the methods for improving ease-of-use during the design process'
+description: 'Usability is a quality attribute from software engineering to assesses how easy user interfaces are to use. It could also references the methods for improving ease-of-use during the design process.'
 ---
 
 # Usability - Overview
