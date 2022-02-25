@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'UI and UX Desing - Usability'
+title: 'UI and UX Design'
 date: '2022-02-25'
 subject: 'development-articles'
 description: 'UI Design stands for User Interface Design and it is related to deal with brand and visual styles and assets from the product, while UX Design stands for User Experience Design, and it relates to the quality of interation between the user and the elements of the product and the services provided.'
 ---
 
-# UI and UX Desing - Usability
+# UI and UX Design
 
 1. ##### Introduction  
 2. ##### UX Designer Responsabilities
