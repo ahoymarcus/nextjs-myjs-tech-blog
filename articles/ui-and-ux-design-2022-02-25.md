@@ -10,10 +10,10 @@ description: 'UI Design stands for User Interface Design and it is related to de
 
 1. ##### Introduction  
 2. ##### UI Design
-	2.1. UI Basic Princiles
+	2.1. UI Basic Princiles    
 	2.2. UI Designer Responsabilities
 3. ##### UI Design
-	3.1. UX Basic Princiles
+	3.1. UX Basic Princiles    
 	3.2. UX Designer Responsabilities
 11. ##### Further Reading
 12. ##### References
@@ -59,9 +59,10 @@ Key differences according to the article from [Guru99.com](https://www.guru99.co
 
 ### UI Design
 
-#### UI Basic Princiles
-
 According to the article from [Mark Nunes](https://medium.com/ui-lab-school/os-princ%C3%ADpios-do-design-em-user-interface-80f300cb81e0), the craft of Design has some basic properties, and with the correct balance in the use of these properties could result in a good design.
+
+
+#### UI Basic Princiles
 
 The properties are:
 
@@ -87,13 +88,49 @@ The properties are:
 
 ### UX Design
 
+Just it was said about the user interface design, there are a set properties and practices that instruct the work with UX Design.
+
+Another point to be made is that this set of UX properties should also have it own purposes and context, as it has been seem in the introcution.
+
+And as it was stated in the Introduction, while the context of UI is focuses more at the technical aspects of the interface, in terms of Usability and Utility, it was also said that even if a project could succeed in relation to usability and utility, it could still fail if thoses properties, principles and best practices of UX were not met.
+
+Finally, it was also said in the Introduction that UX should have a broader context than UI, extending the relation of the user with the product and even the organization brand as a whole.
+ 
+
 #### UX Basic Princiles
+
+1. **The Aesthetic-Usability Effect**: that users are more tolerant of minor usability issues when they find an interface visually appealing.     
+	1.1. This effect can mask some UI problems, therefore the necessity to research and user testing.
+2. **Doherty Threshold**: the necessity to optimize the interface to improve its reponse, thus also improve the user interaction with the system.
+3. **Fitts' Law**: this principle is related with mesurements of the distances of the elements in the interface, and the impact they cause in the user ability to interact with it.
+	3.1. So, elements too small or too distant will make hard for the user to interact.
+4. **Hick-Hyman Law**: this principle is related with the complexity of the interface and how this can also affect the capacity of the user to interact with the system.     
+	4.1. Thus, in order to dimiss some of the complexity it's possible to divide the interface into steps, so the user doesn't have to deal with everything at the same time.
+5. **Jakob's Law**: a theorem from Jakob Nielsen that **the user pass more time navigating the web as a whole, than at some speciffic site, and therefore he will be more accostumed to interact interfaces that are more common in a broader sense**.     
+	5.1. So, in terms of innovation, it's important that it may not be so disrupt as to cause confusion to the user.
+6. **Prägnanz Law**: this principle asserts that people tend to interpret ambiguous or complex images as the simple form possible, because it is the interpretation that requires the least cognitive effort.     
+	6.1. Thus, also here there is the necessity to dismiss much of the complexities from the interface.
+7. **Miller's Law**: this principle also state about complexity of the interface, but this time in terms of the Users Cognitive Memory and its use to retain information, since the theorem postulates that **the average person can only keep 7 (plus or minus 2) items in their working memory**.
+	7.1. Avoid an excessive number of choises and options.   
+	7.2.  A good example, to simplify the informations at the interface is to format telephone numbers: `4008675309` Versus `(440) 867-5309`.
+8. **Occam's Razor**: this is another principle that verses about economy and simplicity, where the principle states that for any given problem it should be chosen the simplest solution.
+10. **Pareto's Principle**: this principle is also a general rule applied to the field of design, and it states that **80% of the results come as concequence of around 20% of the effort**.
+	10.1. As it can be applied to design, it's possible to assert that it could be practical reason to narrow the causally to the 20% strong variables, than to focus at the whole picture at a time.
+11. **Parkinson's Law**: 
+
+
+
+
+
+
+read more:
+
+- [Laws of UX](https://lawsofux.com/)
+- [The Aesthetic-Usability Effect](https://www.nngroup.com/articles/aesthetic-usability-effect/)
+- [Emotional Design](https://jnd.org/emotional-design-why-we-love-or-hate-everyday-things/)
 
 
 https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c
-
-
-
 
 #### UX Designer Responsabilities
 
