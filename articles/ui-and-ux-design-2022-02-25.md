@@ -10,10 +10,10 @@ description: 'UI Design stands for User Interface Design and it is related to de
 
 1. ##### Introduction  
 2. ##### UI Design
-	2.1. UI Basic Princiles    
+	2.1. UI Basic Principles    
 	2.2. UI Designer Responsabilities
 3. ##### UI Design
-	3.1. UX Basic Princiles    
+	3.1. UX Basic Principles    
 	3.2. UX Designer Responsabilities
 11. ##### Further Reading
 12. ##### References
@@ -62,10 +62,10 @@ Key differences according to the article from [Guru99.com](https://www.guru99.co
 According to the article from [Mark Nunes](https://medium.com/ui-lab-school/os-princ%C3%ADpios-do-design-em-user-interface-80f300cb81e0), the craft of Design has some basic properties, and with the correct balance in the use of these properties could result in a good design.
 
 
-#### UI Basic Princiles
+#### UI Basic Principles
+
 
 The properties are:
-
 1. **Axis**: this is a imaginary line that divides the body of the interface according to ratio, and weight, or moviment (like direction).
 2. **Symmetry**: with this property it's possible to achieve the effect of balance or inbalance on the design, beign the first one related to the balance in the use of the visual elements, and the other in the use of some form of assymetry.
 3. **Hierarchy**: this is a important property that can be used to define scope, for example, using Size and with it focal points.     
@@ -97,7 +97,7 @@ And as it was stated in the Introduction, while the context of UI is focuses mor
 Finally, it was also said in the Introduction that UX should have a broader context than UI, extending the relation of the user with the product and even the organization brand as a whole.
  
 
-#### UX Basic Princiles
+#### UX Basic Principles
 
 1. **The Aesthetic-Usability Effect**: that users are more tolerant of minor usability issues when they find an interface visually appealing.     
 	1.1. This effect can mask some UI problems, therefore the necessity to research and user testing.
@@ -142,14 +142,11 @@ Finally, it was also said in the Introduction that UX should have a broader cont
 - [Emotional Design](https://jnd.org/emotional-design-why-we-love-or-hate-everyday-things/)
 
 
-https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c
-
 #### UX Designer Responsabilities
 
 - Analyse the business needs and convert them into a captivating experience.
 - The UX designer must maps out the structure of the user journey.
 - The UX designers must deal with all the psychological means related to the product or solution to appeal to the target users.
-
 
 
 
