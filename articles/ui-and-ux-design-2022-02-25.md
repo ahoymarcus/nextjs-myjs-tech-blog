@@ -9,10 +9,12 @@ description: 'UI Design stands for User Interface Design and it is related to de
 # UI and UX Design
 
 1. ##### Introduction  
-2. ##### UI Designer Responsabilities
-3. ##### UI Basic Princiles
-4. ##### UX Designer Responsabilities
-5. ##### UX Basic Princiles
+2. ##### UI Design
+	2.1. UI Basic Princiles
+	2.2. UI Designer Responsabilities
+3. ##### UI Design
+	3.1. UX Basic Princiles
+	3.2. UX Designer Responsabilities
 11. ##### Further Reading
 12. ##### References
 
@@ -55,16 +57,9 @@ Key differences according to the article from [Guru99.com](https://www.guru99.co
 2. **UX design**: it is related and focused with everything in the product that may affect the user commitment with a product.
 
 
-### UI Designer Responsabilities
+### UI Design
 
-- The UI desiners needs to convert all the user requirements of the product into a captivating user interface.
-- The UI designer must guide and instruct the visual journey of the user into the interface.
-- The UI designer must provide all the necessary interactive elements nedd by the user.
-- The UI designers must deal with al the psychological means related to the interface so it makes the interaction of the user more appealing and intuite.
-
-
-
-### UI Basic Princiles
+#### UI Basic Princiles
 
 According to the article from [Mark Nunes](https://medium.com/ui-lab-school/os-princ%C3%ADpios-do-design-em-user-interface-80f300cb81e0), the craft of Design has some basic properties, and with the correct balance in the use of these properties could result in a good design.
 
@@ -81,17 +76,30 @@ The properties are:
 	4.2. Repetition: this attribute can define the flow of the recurring element or even some break in the flow and start of another, what could represent different contexts in the layout of the interface.
 
 
-### UX Designer Responsabilities
+#### UI Designer Responsabilities
+
+- The UI desiners needs to convert all the user requirements of the product into a captivating user interface.
+- The UI designer must guide and instruct the visual journey of the user into the interface.
+- The UI designer must provide all the necessary interactive elements nedd by the user.
+- The UI designers must deal with al the psychological means related to the interface so it makes the interaction of the user more appealing and intuite.
+
+
+
+### UX Design
+
+#### UX Basic Princiles
+
+
+https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c
+
+
+
+
+#### UX Designer Responsabilities
 
 - Analyse the business needs and convert them into a captivating experience.
 - The UX designer must maps out the structure of the user journey.
 - The UX designers must deal with all the psychological means related to the product or solution to appeal to the target users.
-
-
-### UX Basic Princiles
-
-
-https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c
 
 
 
