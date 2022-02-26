@@ -114,17 +114,29 @@ Finally, it was also said in the Introduction that UX should have a broader cont
 	7.1. Avoid an excessive number of choises and options.   
 	7.2.  A good example, to simplify the informations at the interface is to format telephone numbers: `4008675309` Versus `(440) 867-5309`.
 8. **Occam's Razor**: this is another principle that verses about economy and simplicity, where the principle states that for any given problem it should be chosen the simplest solution.
-10. **Pareto's Principle**: this principle is also a general rule applied to the field of design, and it states that **80% of the results come as concequence of around 20% of the effort**.
-	10.1. As it can be applied to design, it's possible to assert that it could be practical reason to narrow the causally to the 20% strong variables, than to focus at the whole picture at a time.
-11. **Parkinson's Law**: 
+9. **Pareto's Principle**: this principle is also a general rule applied to the field of design, and it states that **80% of the results come as concequence of around 20% of the effort**.      
+	9.1. As it can be applied to design, it's possible to assert that it could be practical reason to narrow the causally to the 20% strong variables, than to focus at the whole picture at a time.
+10. **Parkinson's Law**: this principle is related to time and the away it can confuse the perception, as it states that **Any task will inflate until all of the available time is spent**.     
+	10.1. So, it should be sensible to work with limited time frames.  
+	10.2.	To prefer shorten time frames.  
+	10.3. Also to reflect about time frames in relation to the users tasks. For example, autocompleting forms, etc.
+11. **Peak-End Rule**: this is a concept from psychology related to the formation of memory. It interprets that memories become strong channeled through peaks and near the end of some event. 
+	11.1. Here there is the idea of progression in terms of experience, instead a unlimited occurence.     
+	11.2. In terms of design, it could be tought as elements or points of focus that can relate to users at their progression on the site, just like rewards or reinforcements.   
+	11.3. On the other hande, problems with navigation, illegible texts or intrusive advertisement, could retain a strong negative impression of the whole design.   
+12. **Postel's Law**: this principle appears to come from the area of data transfering in developement, and states **Be liberal in what you accept, and conservative in what you send**.  
+	12.1. In practical terms it could mean to be open to receive any kind of input from the user, but whenever it's necessary to give a feedback it should be very precise.   
+	12.2. For example, on forms it is the responsability of the designer to simplify the inputs from the user. But on the other hand, when there is an error, the feedback should be clear and speciffic.   
+13. **Serial-Position Effect**: this is the tendency of a person to better recall the first and last items in a series, than the middle items.   
+	13.1. In terms of design, this could imply a hierarchy of contexts, for example, where the first and the last positions should be preferred in terms of importance.
+14. **Tesler's Law**: also known as the Law of Conservation of Complexity, states that for any system there is a certain amount of complexit which cannot be reduced and has to be dealt by the user or by the development..
+	14.1. In terms of design, it could mean that the task of reducing complexit from the user would send it to development, and then creating the necessity to which side it would better convey.  
+	14.2. Also, some tasks by the users or some speciffic users could be better served if they had more control over the task.
+15. **Zeigarnik Effect**: this principle states that **people remember uncompleted or interrrupted tasks better than completed tasks**.       
+	15.1. In terms of design, this effect could be used to create engagement with the user and motivate him to complete some task.   
+	15.2. For exemple, the use of design elements like progression bars the help the user to be aware of the of some state in the site.
 
-
-
-
-
-
-read more:
-
+- read more:
 - [Laws of UX](https://lawsofux.com/)
 - [The Aesthetic-Usability Effect](https://www.nngroup.com/articles/aesthetic-usability-effect/)
 - [Emotional Design](https://jnd.org/emotional-design-why-we-love-or-hate-everyday-things/)
