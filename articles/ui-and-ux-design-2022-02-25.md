@@ -9,10 +9,10 @@ description: 'UI Design stands for User Interface Design and it is related to de
 # UI and UX Design
 
 1. ##### Introduction  
-2. ##### UX Designer Responsabilities
-3. ##### UI Designer Responsabilities
-4. ##### 
-5. ##### 
+2. ##### UI Designer Responsabilities
+3. ##### UI Basic Princiles
+4. ##### UX Designer Responsabilities
+5. ##### UX Basic Princiles
 11. ##### Further Reading
 12. ##### References
 
@@ -33,7 +33,7 @@ That is, while **UI** aims to design a interfce that meets all the system requir
 In that case, **Usability** and **Utility** are 
 meant provide additional qualities to the interface, among others it could be said:
 
-- **Easy to lear**
+- **Easy to learn**
 - **Efficient to use**
 - **Pleasant**
 - **Give the correct effect**
@@ -55,12 +55,6 @@ Key differences according to the article from [Guru99.com](https://www.guru99.co
 2. **UX design**: it is related and focused with everything in the product that may affect the user commitment with a product.
 
 
-### UX Designer Responsabilities
-
-- Analyse the business needs and convert them into a captivating experience.
-- The UX designer must maps out the structure of the user journey.
-- The UX designers must deal with all the psychological means related to the product or solution to appeal to the target users.
-
 ### UI Designer Responsabilities
 
 - The UI desiners needs to convert all the user requirements of the product into a captivating user interface.
@@ -70,11 +64,47 @@ Key differences according to the article from [Guru99.com](https://www.guru99.co
 
 
 
+### UI Basic Princiles
+
+According to the article from [Mark Nunes](https://medium.com/ui-lab-school/os-princ%C3%ADpios-do-design-em-user-interface-80f300cb81e0), the craft of Design has some basic properties, and with the correct balance in the use of these properties could result in a good design.
+
+The properties are:
+
+1. **Axis**: this is a imaginary line that divides the body of the interface according to ratio, and weight, or moviment (like direction).
+2. **Symmetry**: with this property it's possible to achieve the effect of balance or inbalance on the design, beign the first one related to the balance in the use of the visual elements, and the other in the use of some form of assymetry.
+3. **Hierarchy**: this is a important property that can be used to define scope, for example, using Size and with it focal points.     
+	3.1. Size   
+	3.2. Form   
+	3.3. Position
+4. **Rhythm**: this property is related to pattern and repetition.     
+	4.1. Pattern: it can be some king of grouping of elements that goes together throughout the design, like Title, Description and some Icon, for example.     
+	4.2. Repetition: this attribute can define the flow of the recurring element or even some break in the flow and start of another, what could represent different contexts in the layout of the interface.
+
+
+### UX Designer Responsabilities
+
+- Analyse the business needs and convert them into a captivating experience.
+- The UX designer must maps out the structure of the user journey.
+- The UX designers must deal with all the psychological means related to the product or solution to appeal to the target users.
+
+
+### UX Basic Princiles
+
+
+https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c
+
+
+
+
 ### Further Reading
 
-[The Definition of User Experience (UX) - NNGroup.com](https://www.nngroup.com/articles/definition-user-experience/)
+[Os princípios do design em User Interface - Medium.com](https://medium.com/ui-lab-school/os-princ%C3%ADpios-do-design-em-user-interface-80f300cb81e0)
+
+[Leis de UX: Os Princípios Básicos de UX Design - Medium.com](https://medium.com/aela/leis-de-ux-os-princ%C3%ADpios-b%C3%A1sicos-de-ux-design-9b9bf3fdb43c)
 
 ### References
+
+[The Definition of User Experience (UX) - NNGroup.com](https://www.nngroup.com/articles/definition-user-experience/)
 
 [UI vs UX: What is the Difference Between UI and UX Design? - Guru99.com](https://www.guru99.com/ui-vs-ux.html)
 
