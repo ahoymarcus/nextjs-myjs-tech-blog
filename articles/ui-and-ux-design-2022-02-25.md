@@ -64,7 +64,6 @@ According to the article from [Mark Nunes](https://medium.com/ui-lab-school/os-p
 
 #### UI Basic Principles
 
-
 The properties are:
 1. **Axis**: this is a imaginary line that divides the body of the interface according to ratio, and weight, or moviment (like direction).
 2. **Symmetry**: with this property it's possible to achieve the effect of balance or inbalance on the design, beign the first one related to the balance in the use of the visual elements, and the other in the use of some form of assymetry.

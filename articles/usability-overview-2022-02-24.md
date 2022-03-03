@@ -23,11 +23,11 @@ description: 'Usability is a quality attribute from software engineering to asse
 
 ### Introduction
 
-According to the article from Jakob Nielsen, [Usability 101: Introduction to Usability](https://www.nngroup.com/articles/usability-101-introduction-to-usability/), **Usability** is a quality attribute from software engineering to assesses `how easy user interfaces are to use`.
+According Jakob Nielsen's article, [Usability 101: Introduction to Usability](https://www.nngroup.com/articles/usability-101-introduction-to-usability/), **Usability** is a quality attribute from software engineering to assess `how easy user interfaces are to use`.
 
-And then, it continues saying that the word **usability** can also be used to refers the methods for improving ease-of-use during the design process.
+And author goes on saying that the word **usability** can also be used to refers the methods for improving ease-of-use during the design process.
 
-So, usability has in its definition 05 quality components that are implied:
+So, usability has in its definition 05 qualities components that are implied:
 
 1. **Learnability**: focuses on the easeness for the users to accomplish basic tasks from the first time they encounter some design.
 2. **Efficiency**: it focuses on the practicability of some design, measuring the quickness for the user to perform a known task.
@@ -35,12 +35,12 @@ So, usability has in its definition 05 quality components that are implied:
 4. **Errors**: this attribute focuses on anwsering questions about the amont and the kind of users errors related with some design (i.e. How many? Are they severe? etc.).
 5. **Satifation**: this attributes focuses on measuring the state of pleasantness from the user with the desing.
 
-Besides, those 05 usabilities attribute, there is the quality attribute of **Utility**, and this is another important quality issue, because it has to work parallel to **Usability** so a product can be seem as successful.
+Besides, those 05 usabilities attributes, there is also another kind of quality attribute defined as **Utility**, and this is another important quality issue, and should work parallel to **Usability** so a product can be seem as successful.
 
-The relationship of **Usability** and **Utility** and how they are equally important in all this matter can be show by this two hypothetical arguments:
+The relationship of **Usability** to **Utility**, and how they are equally important in all this matter can be show by this two hypothetical arguments:
 
-1. A design can be hypothetically easy and pleasent to use, but it does work the desired requirement. So, it is not successful design!
-2. On the other hand, a interface can also work the desired effect wanted by the user, but in such a way that makes things hard or even impossible to the user to attain the desired result. So, also this is not a successful design!
+1. A design can be hypothetically easy and pleasent to use, but it does not work the desired requirement. So, it is not successful design!
+2. On the other hand, a interface can work the desired effect wanted by the user, but it is done in such a way that it makes things hard or even impossible to the user to attain the desired result. So, also this is not a successful design!
 
 
 `To study a design's utility, you can use the same user research methods that improve usability.`
@@ -59,14 +59,14 @@ And the same pattern repeats all around, just like in lost purchases in e-commer
 
 ### How to Improve Usability
 
-According to [Jakob Nielsen](https://www.nngroup.com/articles/usability-101-introduction-to-usability/) article, there are many methods for studing usability, but for the author, the most basic and useful would be **User Testing**, which has 3 components:
+Usually, there are many methods for studing usability, but some of the most basic and useful methods would be **User Testing**, which has 3 components:
 
 1. Gathering of representative users from some system.
 2. Testing how these users perform with the design.
 3. Observation on what the users do, their accomplishments and also their failures with the design.
 
 
-And the author also specifies some important points to be held by the user testing:
+Regarding to **User Testings** Nielsen also points to some important points to be held by the user testing:
  
 1. The representative users should work individually and solve problems on their own without any kind of interference from outside.
 2. Most of time it might be more performatic to test for the most important problems and directing small iterative tests, then to run a hard and expensive study.
@@ -74,9 +74,9 @@ And the author also specifies some important points to be held by the user testi
 
 ### When to Work on Usability
 
-Still accordig to Nielsen's article, **Usability** plays its role in every stage of the software design process.
+The role of **Usability** in the software life cycle is another point that Nielsen emphasizes, as it should play its role in every stage of the software design process.
 
-Not only this, but defering user testing till later could amount a impossible batch of problems to fix, and even causes structural problems that could demand a rearchitecting maneuver.
+Not only this, but still according the author, the simple decision to defer user testing till later in the software design could amount a impossible batch of problems to fix, and even causes structural problems that could demand a rearchitecting maneuver.
 
 And to inform this iterative approach he says that fast and cheap individual studies would brings flexibility to the project:
 
@@ -86,12 +86,12 @@ And to inform this iterative approach he says that fast and cheap individual stu
 4. **Make Paper Prototypes**: Nielsen seems to imply that smaller, simpler, and cheapers prototypes could be less time and resource consuming, and still bring all the essential data desired.
 5. **Iterate the Test Design**: starting from very low-fidelity prototypes till high-fidelity ones, it would be important to have this continous testing approach.
 6. **Established Usability Guidelines**: says Nielsen that it should be very important to inspect the design relative to the guidelines (from earlier studies to published research).
-7. **Test the Final Degign**: `Subtle usability problems always creep in during implementation`.
+7. **Test the Final Degign**: finally, even in the final stage subtle usability problems could creep in during implementation.
 
 
 ### Usability Testing or User Testing
 
-According Nielsen, the two expressions are interchangeble, except that the term User Testing could convey two distinct meaning:
+According Nielsen, the two expressions are interchangeble, except that the term User Testing could convey two distinct meanings:
 
 1. Testing with the help of the user.
 2. Testing the user himself.
@@ -110,7 +110,7 @@ In general there are 3 essential goals involved:
 2. **Uncovering opportunities to Improve**
 3. **Learning about the Target User's Behavior and Preferences**
 
-Also, important points to be noticed about the necessity of testing comes from the complexity of this task:
+Also, another important point to be noticed is the concern with the complexities from the design:
 
 - It needs to be broke up into smaller parts to be delt interatively.   
 - That the user case has to be driven by observations of real user in their own interations.
@@ -133,8 +133,7 @@ The author speaks that might be many different types of usability testing, but t
 
 ### Types of Usability Testing
 
-Nielsen says that Usability Testing could be either **Qualitative** or **Quantitative** testing:
-
+There are two kinds of measures for **Usability Testing**: **Qualitative** or **Quantitative**:    
 1. **Qualitative usability testing**: focuses on collecting insights and finding problems. And it is the more common type seem.
 2. **Quantitative usability testing**: focuses on collecting metrics to describe the user experience. 
 	2.1. Two of the most common metrics found are **Success** and **Time**.  
@@ -152,7 +151,11 @@ Remote usability tests are popular because they often are less time and money co
 
 About the costs, usually it can start as a very inexpesive alternative, where most of time there is some kind of gratification to the few participants involved.
 
-But sometimes, it can be more expensive, and related things that could amount to the cost of the tests:
+And still according to Nielsen'n [article](https://www.nngroup.com/articles/usability-101-introduction-to-usability/), the most basic and essential conditions for the testing are simple: some dispositive, like a notepad, **real users** are the only essential requirements envolved.
+
+As with the rest, in the cases where testing are vary frequently, it would be plausible to mount a laboratory, but most of other cases a conference room or a office where the the user could have privace would suffice.
+
+Eventhough, sometimes it can become more expensive says the author, and many related things could amount to the cost of the tests:
 
 - Competitive testing of multiple designs.
 - International testing in multiple countries.
@@ -162,12 +165,16 @@ But sometimes, it can be more expensive, and related things that could amount to
 - The need for a stacked testing lab or a focus group room for obeservations.
 - The need of detailed analysis and reports about the findings and observations.
 
-Nielsen is also very assertive about the simplicity of the conditions for the testing, and that real users and a notepad would be the only essential requirements envolved.
 
-As with the rest, in the cases where testing are very frequently, it would be plausible to mount a laboratory, but most of other cases a conference room or a office where the the user could have privace would suffice.
+### Differents Methods for Usability Testing
 
 
-https://www.nngroup.com/articles/usability-101-introduction-to-usability/
+
+
+
+https://www.playbookux.com/10-popular-usability-testing-methods/
+https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html
+https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/
 
 ### Further Reading
 
@@ -182,4 +189,12 @@ https://www.nngroup.com/articles/usability-101-introduction-to-usability/
 [Usability 101: Introduction to Usability - NNGroup.com](https://www.nngroup.com/articles/usability-101-introduction-to-usability/)
 
 [Usability Testing 101 - NNGroup.com](https://www.nngroup.com/articles/usability-testing-101/)
+
+[10 Popular Usability Testing Methods - Playbookux.com](https://www.playbookux.com/10-popular-usability-testing-methods/)
+
+[Usability Evaluation Methods - Usability.gov](https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html)
+
+[Top 7 Usability Testing Methods - xd.adobe.com](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/)
+
+
 
