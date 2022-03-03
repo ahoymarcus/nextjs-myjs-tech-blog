@@ -18,8 +18,9 @@ description: 'Usability is a quality attribute from software engineering to asse
 8. ##### Types of Usability Testing
 9. ##### Remote Vs In-Person Testing
 10. ##### Costs and Where to Test
-11. ##### Further Reading
-12. ##### References
+11. ##### Differents Methods for Usability Testing
+12. ##### Further Reading
+13. ##### References
 
 ### Introduction
 
@@ -166,16 +167,42 @@ Eventhough, sometimes it can become more expensive says the author, and many rel
 - The need of detailed analysis and reports about the findings and observations.
 
 
+
 ### Differents Methods for Usability Testing
 
-
-
-
-
-https://www.playbookux.com/10-popular-usability-testing-methods/
-https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html
-https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/
-
+1. **Remote Unmoderated**: this one is cheaper and can gather a lot of information, but it requires very clear set of instructions for the users.
+2. **Moderated**: it could be either presential or remote, it's guided and also allow the researcher to dig deeper into the behavior of the user and to the validation of the data being collected.    
+	2.1. It's important to point that in this guided testing, the research team can guide the users through more complicated settings. 
+3. **Guerilla Testing**: in this method participants are chosen at random from public places to perform quick and simple tests in exchange for some small incentive.
+4. **Lab Usability Testing**: this one is a more expensive kind of testing since it demands a proper laboratory to be arranged, but it also allow a more controlled environment.    
+	4.1. It could have been auxiliary researches or even stackholders participating behind a one-way mirror.   
+	4.2. The more controlled test helps to achieve the same conditions throughout the whole set of participants.
+5. **Card Sorting**: in this method the researches place cards with contents or features and allow the participants to arrange the cards into groups and categories.   
+	5.1. At any interaction the moderator can ask the participants to explain the logic or resoning for their choises.   
+	5.2. This could be an excelent method for prioritizing content and features in the user interface.
+6. **Tree Testing**: also known as **reverse card sorting** or **closed card sort**, and involves asking participants to group cards/items within a already defined set of categories.   
+	6.1. This one also allow the moderator to question about the participants choises.   
+	6.2. And this one could be very appropriated to test navigation designs and confirm its soundness.
+7. **A/B Testing**: this is a more general method of testing that put two systems version side by side. But as a kind of usability test, it plays as a experimentation to see which version is most effective to the users.    
+8. **5-Second Test**: this method is concerned with the users first impressions, and it's capable to collect a substantive amount of data.   
+	8.1. This method could be appropriated to test if the participants can correctly grasp the contexts and messages conveyed by the design.
+9. **Eye Tracking**: this method tracks the users eye focus and can effectively capture the users attention points.  
+	9.1. And it can also measure the users moviments with the cliks of mouse and also their motions to hovers the elements.   
+	9.2. It's also effective to test how the participants can interact with the design.
+10. **Screen Recording**: this method utilises software to record the actions of the participants performing the tasks.    
+	10.1. It can also be used for testing how effective is the interation of the user with the design.
+11. **Heuristic Evaluation** of **Expert Reviews**: in this method the design is evaluated against accepted usability principles and potential usability issues. And also evaluated by experts in usability.
+12. **Scenarios Testing**: this method uses scenarios to describe a set of situations related with the users or with the users' goals.     
+	12.1. The necessity to limite the number of scenarios to accomodate the time frame.  
+	12.2. The testing scenarios should never include any information about how the users should accomplish the tasks, because the users have to be tested own their own.
+ 
+- read more:    
+- [10 Popular Usability Testing Methods - Playbookux.com](https://www.playbookux.com/10-popular-usability-testing-methods/)      
+- [Usability Evaluation Methods - Usability.gov](https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html)      
+- [Top 7 Usability Testing Methods - xd.adobe.com](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/)       
+   
+   
+   
 ### Further Reading
 
 [Usability - Interaction Design Foundation](https://www.interaction-design.org/literature/topics/usability)
@@ -189,12 +216,4 @@ https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/
 [Usability 101: Introduction to Usability - NNGroup.com](https://www.nngroup.com/articles/usability-101-introduction-to-usability/)
 
 [Usability Testing 101 - NNGroup.com](https://www.nngroup.com/articles/usability-testing-101/)
-
-[10 Popular Usability Testing Methods - Playbookux.com](https://www.playbookux.com/10-popular-usability-testing-methods/)
-
-[Usability Evaluation Methods - Usability.gov](https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html)
-
-[Top 7 Usability Testing Methods - xd.adobe.com](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/)
-
-
 
