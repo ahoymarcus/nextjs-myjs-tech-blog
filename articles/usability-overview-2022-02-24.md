@@ -170,6 +170,7 @@ Eventhough, sometimes it can become more expensive says the author, and many rel
 
 ### Differents Methods for Usability Testing
 
+
 1. **Remote Unmoderated**: this one is cheaper and can gather a lot of information, but it requires very clear set of instructions for the users.
 2. **Moderated**: it could be either presential or remote, it's guided and also allow the researcher to dig deeper into the behavior of the user and to the validation of the data being collected.    
 	2.1. It's important to point that in this guided testing, the research team can guide the users through more complicated settings. 
@@ -196,7 +197,7 @@ Eventhough, sometimes it can become more expensive says the author, and many rel
 	12.1. The necessity to limite the number of scenarios to accomodate the time frame.  
 	12.2. The testing scenarios should never include any information about how the users should accomplish the tasks, because the users have to be tested own their own.
  
-- read more:    
+- more about methods of usability testing:    
 - [10 Popular Usability Testing Methods - Playbookux.com](https://www.playbookux.com/10-popular-usability-testing-methods/)      
 - [Usability Evaluation Methods - Usability.gov](https://www.usability.gov/how-to-and-tools/methods/usability-evaluation/index.html)      
 - [Top 7 Usability Testing Methods - xd.adobe.com](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/)       
