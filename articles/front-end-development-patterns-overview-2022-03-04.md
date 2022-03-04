@@ -193,5 +193,5 @@ https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
 
 []()
 
-[^1]:front-end-development-patterns-overview-2022-03-04
+[^1]:software-architecture-and-design-2022-02-22
 
