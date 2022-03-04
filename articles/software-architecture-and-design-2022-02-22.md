@@ -43,11 +43,11 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	13.1. Model-View-Controler (MVC)     
 	13.2. Presentation-Abstraction-Control (PAC)  
 14. ##### Distributed Architecture
-	14.1. The Middleware Infrastructure  
-  14.2. The Client-Server Architecture
-	14.3. The Multi-Tier Architecture 	
-	14.4. The Observable Patter
-	14.5. The Broker Architecture     
+	14.1. The Middleware Infrastructure      
+  14.2. The Client-Server Architecture      
+	14.3. The Multi-Tier Architecture      	
+	14.4. The Observable Patter      
+	14.5. The Broker Architecture        
 	14.6. The Service-Oriented Architecture (SOA)     
 15. ##### Component-Based Architecture
 	15.1. Definition, Views and Characteristics of a Component?    
@@ -71,6 +71,10 @@ Also, it is possible to divide this great concept into two parts constituents:
 
 1. **Software Architecture**: at this phase there should be a gathering of many specifications and items to be correlated into a systems functional requirements.
 2. **Software Design**: at this phase the functional requirements are accomplished.
+
+- Other articles about the Patterns:
+- Software Architecture Patterns - Overview [^1].
+- Front-end Development Patterns - Overview [^2].
 
 
 ### Software Architecture and Software Design
@@ -1265,3 +1269,5 @@ Some steps in the process of the design:
 
 
 [^1]:software-architecture-patterns-overview-2022-02-18
+
+[^2]:front-end-development-patterns-overview-2022-03-04

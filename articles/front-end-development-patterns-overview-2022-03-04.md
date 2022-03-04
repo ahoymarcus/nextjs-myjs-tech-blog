@@ -43,6 +43,12 @@ As a practice `in computer science, Separation of Concerns (SoC) is a design pri
 And, in general all patterns have their aim to make a more robust and more reliable software, improving in maintainance, in flexibility and in redability, etc, as [Luis Castillo](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3) asserts.
 
 
+
+- Other articles about the Patterns:
+- Software Architecture and Design [^1].
+- Software Architecture Patterns - Overview [^2].
+
+
 ### Different Front-End Patterns
 
 #### Buider Pattern Architecture
@@ -195,3 +201,4 @@ https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
 
 [^1]:software-architecture-and-design-2022-02-22
 
+[^2]:software-architecture-patterns-overview-2022-02-18

@@ -48,6 +48,10 @@ Besides, the use of **architectural patterns** can also help the software manage
 
 On the other hand, the choice of an inconvenint architecture for a system could not only delay the project, but could also lead to software failue.
 
+- Other articles about the Patterns:
+- Software Architecture and Design [^1].
+- Front-end Development Patterns - Overview [^2].
+
 
 ### The Blackboard Pattern
 
@@ -341,3 +345,4 @@ Also found in Workflows in Bioinformatics.
 
 [^1]:software-architecture-and-design-2022-02-22
 
+[^2]:front-end-development-patterns-overview-2022-03-04
