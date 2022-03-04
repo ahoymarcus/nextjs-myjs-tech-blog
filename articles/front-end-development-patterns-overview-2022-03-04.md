@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Front-end Development Patterns'
 date: '2022-03-04'
-subject: 'web-development-articles'
+subject: 'web-dev-articles''
 description: 'Patterns is a recent practice that is beign introduced to the Front-end development context. One of the first patterns to be appear some years ago is the MVC (Model-View-Controller), a pattern dedicated to improve the software architecture by appling Separation of Concerns (SoC) to the software system.'
 ---
 
