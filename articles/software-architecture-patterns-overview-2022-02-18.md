@@ -54,7 +54,7 @@ On the other hand, the choice of an inconvenint architecture for a system could 
 This pattern is useful for problems for which no deterministic solution strategies are known. The blackboard pattern consists of 03 main components:
 
 1. **Blackboard**: a structured global memory containing objects from the solution space.    
-2. **Knowledge Source**: spcialized modules with their own representation.    
+2. **Knowledge Source**: specialized modules with their own representation.    
 3. **Control Component**: selects, configures and executes modules.
 
 `All the components have access to the blackboard. Components may produce new data objects that are added to the blackboard. Components look for particular kinds of data on the blackboard, and may find these by pattern matching with the existing knowledge source.`
@@ -231,7 +231,7 @@ The MVC pattern dividers the application into three main components:
 
 1. A **Model**: this component deals with the dynamic data structure of the software, both its control and logic.
 2. A **View**: this component is responsible to dispay data to the user and to interact with him. It can access data from the **Model**, but it cannot understand it, that is, how to manipulate it!
-3. A **Controller**: this last component handles inputs from the user and mediates between the **Modelv and the **View**
+3. A **Controller**: this last component handles inputs from the user and mediates between the **Model** and the **View**
 
 `These three components interact via some form of notification, such as an event or a callback. These notifications contain state information, such as state changes, which are communicated to update these components.[...] The MVC pattern therefore, decouples software components and allows the codes to be reused easily`
 [Red Hat](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
