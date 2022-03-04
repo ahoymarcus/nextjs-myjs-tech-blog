@@ -10,18 +10,18 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 
 1. ##### Introduction  
 2. ##### Different Front-End Patterns
-	2.1. Buider Pattern Architecture
-	2.2. Component Architecture
-	2.3. Dumb-Smart Components Pattern Architecture
-	2.4. Micro Front-ends Architecture
-	2.5. Modular Architecture
-	2.6. Publish-Subscribe Architecture 
-	2.7 State Management Architecture
-	2.8. Strategy Pattern Architecture
+	2.1. Buider Pattern Architecture    
+	2.2. Component Architecture   
+	2.3. Dumb-Smart Components Pattern Architecture    
+	2.4. Micro Front-ends Architecture    
+	2.5. Modular Architecture     
+	2.6. Publish-Subscribe Architecture     
+	2.7 State Management Architecture    
+	2.8. Strategy Pattern Architecture    
 	2.9. Unidirectional Architecture
 3. ##### Different Front-End Architectures
-	3.1. The Flux Architecture 
-	3.2. SPA
+	3.1. The Flux Architecture    
+	3.2. SPA   
 	3.3. PWA
 4. ##### Further Reading
 5. ##### References
@@ -100,7 +100,7 @@ And, on the other side of the communication system there are the subscribers tha
 ![publisher-subscriber-front-end-patterns](/images/articles/web-development/publisher-subscriber-front-end-patterns.gif)
 [Jonathan Siahaan](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
 
-- read more about the Brooker Architecture in the article Software Architecture and Design [^1].
+- read more about the Brooker Architecture in the article `Software Architecture and Design` [^1].
 
 
 #### State Management Architecture
@@ -135,7 +135,6 @@ There are many architectures that thrives making use of this patter as to contro
 So, exemples of architectures that uses this unidirectional concept are the Publish-Subscribe (also known the Broker Architecture) and the Flux Architecture, as they use this concept to define and organize flows inside the system.
 
 The Publish-Subscribe pattern defines communication, while the Flux pattern defines not only a system of communication, but also defines a data module for state control.
-
 
 
 
@@ -194,5 +193,5 @@ https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
 
 []()
 
-[^1]:Software Architecture and Design
+[^1]:front-end-development-patterns-overview-2022-03-04
 

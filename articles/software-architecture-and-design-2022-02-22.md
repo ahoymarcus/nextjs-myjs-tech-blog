@@ -43,11 +43,12 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	13.1. Model-View-Controler (MVC)     
 	13.2. Presentation-Abstraction-Control (PAC)  
 14. ##### Distributed Architecture
-	14.1. The Middleware Infrastructure    
-	14.2. The Client-Server Architecture     
-	14.3. The Multi-Tier Architecture     
-	14.4. The Broker Architecture     
-	14.5. The Service-Oriented Architecture (SOA)     
+	14.1. The Middleware Infrastructure  
+  14.2. The Client-Server Architecture
+	14.3. The Multi-Tier Architecture 	
+	14.4. The Observable Patter
+	14.5. The Broker Architecture     
+	14.6. The Service-Oriented Architecture (SOA)     
 15. ##### Component-Based Architecture
 	15.1. Definition, Views and Characteristics of a Component?    
 	15.2. Principles of Component-Based Design   
@@ -995,12 +996,20 @@ The **disadvantages of the Multi-Tier style**:
 - More critical server reliability and availability.
 
 
+#### The Observable Pattern
+
+This is a pattern used for coordinating communication, that directly links differents objects that have some information dependency.
+
+In this pattern, the objects are paired as **Subject** and **Observers**, where a subject object maintains a list of all its dependents objects, the observers, and it is also responsible to notify them of any change. 
+
 
 #### The Broker Architecture
 
 The **Broker Architectural style is a middleware architecture** used in distributed computing to coordinate and enable the communication between registered servers and clients.
 
-Here, the communication takes place through a middleware system called an object request broker (software bus):
+It's a pattern that brings a layer of abstraction to the Observable Pattern, because the Broker Pattern also creates a coordinated communication between different sides, but in this case there is a intermediate module between the senders of information and the receivers, and this module is the Broker.
+
+Here, then, the communication takes place through a middleware system called an object request broker (software bus):
 
 - Client and the server do not interact with each other directly. Client and server have a direct connection to its proxy which communicates with the mediator-broker.
 - A server provides services by registering and publishing their interfaces with the broker and clients can request the services from the broker statically or dynamically by look-up.
@@ -1251,6 +1260,8 @@ Some steps in the process of the design:
 [Software Design - JavaTPoint](https://www.javatpoint.com/software-engineering-software-design)
 
 [Software Architecture & Design Tutorial - TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
+
+[Difference Between Pub-Sub Pattern and Observable Pattern - Medium.com](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
 
 
 [^1]:software-architecture-patterns-overview-2022-02-18

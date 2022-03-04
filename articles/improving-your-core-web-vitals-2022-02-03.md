@@ -219,7 +219,6 @@ Monitoring a site is a process as important as it optimization, and the Nextjs f
 
 
 
-
 [^1]:web-performance-and-core-vitals-2022-02-02
 
 [^2]:what-is-seo-2022-02-01
