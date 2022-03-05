@@ -19,7 +19,7 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 	2.7 State Management Architecture    
 	2.8. Strategy Pattern Architecture    
 	2.9. Unidirectional Architecture
-3. ##### JavaScript Patterns
+3. ##### JavaScript Patterns Examples
 	3.1. Brief History of the JavaScript Language  
 	3.2. The Constructor Pattern     
 	3.3. The Module Pattern     
@@ -48,13 +48,110 @@ And, in general all patterns have their aim to make a more robust and more relia
 
 
 
-- Other articles about the Patterns:
+- Other articles about Software Patterns and Architectures:
 - `Software Architecture and Design` [^1].
 - `Software Architecture Patterns - Overview` [^2].
 - `Front-end Architectures` [^3].
 
 
-### JavaScript Patterns
+
+### Different Front-End Patterns
+
+#### Builder Pattern Architecture
+
+The builder pattern is used when it's needed to create complext objects with different variations and also it's necessary to have flexibility to modify the construction process without impacting the object representation in self.
+
+One use case brought by [Luis Castillo](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3) relates to the consumption of some data API which need to be transformed in order to be understood by a third-party component.
+
+
+
+#### Component Architecture
+
+This one is another pattern directly linked  to SoC, that apply this concept in a more granular separation that MVC, for example.
+
+Here, the separation units comes into play as components tackle a separated feature and can be rearranged and reused in case that same feature is needed somewhere else.
+
+Also, this pattern aims the flexibility to scale with the simple addition of new components to tackle some new feature needed by the software.
+
+
+
+#### Dumb-Smart Components Architecture
+
+This Dumb-Smart Components pattern is a specification from the more general component based pattern.
+
+So, here in the dumb-smart components concept, the component is divided once more to bring some Separation of Concern (SoC) inside its logic, where the component structure should be divided in its function, and while a resultant component would direct its logic, therefore a smart component, while the other resulting component would be oblivious about the working logic, therefore a dumb component, and only responsible to perform some under the dependency of the smart component.
+
+A use case of this pattern can be seem in the construction of UI for web apps, where some feature is controlled by a smart component, but when it is needed to render something on the screen, a very speciallized component, the dumb component, would receive the correct data to perform specifically only this job.
+
+
+
+#### Micro Front-ends Architecture
+
+This Front-End pattern works as a extension of the Micro Services Architecture as a whole, and it aims to tackle the problem of dependencies as the app becomes bigger.
+
+So, based on micro frontends, this concept front-end app works to divide the features as small systems in different use cases 
+
+As use cases `area either have responsible front team members or in big applications separate teams handling end-to-end micro areas`.
+[Ali Zeynalli](https://azeynalli1990.medium.com/software-architecture-patterns-for-front-end-development-9e43e43cdfb3)
+
+
+
+#### Modular Architecture
+
+The Modular Pattern is one of the most common patterns in the JavaScript environment, and it aims to divide de system into different contexts and scopes called modules, to bring all those advantages of flexibility and maintainance stated above.
+
+As it can be seen, this particular architecture is distinctively present in the modular design of the **ES6 import/export syntax**.
+
+
+
+#### Publish-Subscribe Architecture
+
+The Publish-Subscribe pattern (also known as the Broker Architecture) is a concept for controlling messagery on a system, where it has a specialized module to centralized events and to define categories of communiction. 
+
+And, on the other side of the communication system there are the subscribers that enlist themselves to receive the messages that the publisher is constantly sending or updating.
+
+![publisher-subscriber-front-end-patterns](/images/articles/web-development/publisher-subscriber-front-end-patterns.gif)
+[Jonathan Siahaan](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
+
+- read more about the Brooker Architecture in the article `Software Architecture and Design` [^1].
+
+
+#### State Management Architecture
+
+This architecture appeared in the Front-end environment to deal with the problem of the pulverization of states in a application that has to deal with a complex and intricated system of communication to tranfer the necessary internal states to work the system.
+
+So, it seems that some patterns like the MVC Architecture (and its variations, like MVVM and MVP), and the Component Pattern are very effective to help to separate concerns in the applications, and to create distinct modules or components to tackle different responsabilities need by the system.
+
+But these patters alone, cannot cope with the stress of a growing app where with the increase of the number of parts and their interchanging states to be maintained and updated, and also synchronized at due time, what would usually create a chaotic communication system.
+
+Than this pattern, then, excel in its concept to create strategies to deal with the control of state for the application.
+
+
+#### Strategy Pattern Architecture
+
+The Strategy Pattern is a achitecture that aims to releave complexities from the code by reusing some same functionality that presents different behavior according to the parameters received.
+
+![strategy-patter-front-end-architecture](/images/articles/web-development/strategy-patter-front-end-architecture.jpg)
+[Luis Castillo](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3)
+
+One interesting use case brought by the same author is about the reuse of a navigation feature that may display different data depending on the nature of the authentication the user has: guest, admin, form, etc.
+
+Besides the reuse of some functionality, this patter also brings cleaness to the code, because in its design the developer can to dismiss large chunks of imperative coding, just like a lengthy repetitive if/else statement, by the use of a object literal to pass the necessary dependency.
+
+
+#### Unidirectional Architecture
+
+The Unidirectional Architecture is a pattern that stablish some order in the flow of the system, where in this case it aims to restrict the flow in an singular direction or at a unidirectional flow.
+
+There are many architectures that thrives making use of this patter as to control the flow of the system, or at least part of the flow.
+
+So, exemples of architectures that uses this unidirectional concept are the Publish-Subscribe (also known the Broker Architecture) and the Flux Architecture, as they use this concept to define and organize flows inside the system.
+
+The Publish-Subscribe pattern defines communication, while the Flux pattern defines not only a system of communication, but also defines a data module for state control.
+
+
+
+### JavaScript Patterns Examples
 
 #### Brief History of the JavaScript Language
 
@@ -378,105 +475,6 @@ But, as always the author remembers that neither solotion should be used without
 - Finally, [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns), bring a great tip for all those who need to deepen their knowledge in patters:
 1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software`   
 2. ` Addy Osmani’s Learning JavaScript Design Patterns.`
-
-
-
-
-### Different Front-End Patterns
-
-#### Builder Pattern Architecture
-
-The builder pattern is used when it's needed to create complext objects with different variations and also it's necessary to have flexibility to modify the construction process without impacting the object representation in self.
-
-One use case brought by [Luis Castillo](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3) relates to the consumption of some data API which need to be transformed in order to be understood by a third-party component.
-
-
-
-#### Component Architecture
-
-This one is another pattern directly linked  to SoC, that apply this concept in a more granular separation that MVC, for example.
-
-Here, the separation units comes into play as components tackle a separated feature and can be rearranged and reused in case that same feature is needed somewhere else.
-
-Also, this pattern aims the flexibility to scale with the simple addition of new components to tackle some new feature needed by the software.
-
-
-
-#### Dumb-Smart Components Architecture
-
-This Dumb-Smart Components pattern is a specification from the more general component based pattern.
-
-So, here in the dumb-smart components concept, the component is divided once more to bring some Separation of Concern (SoC) inside its logic, where the component structure should be divided in its function, and while a resultant component would direct its logic, therefore a smart component, while the other resulting component would be oblivious about the working logic, therefore a dumb component, and only responsible to perform some under the dependency of the smart component.
-
-A use case of this pattern can be seem in the construction of UI for web apps, where some feature is controlled by a smart component, but when it is needed to render something on the screen, a very speciallized component, the dumb component, would receive the correct data to perform specifically only this job.
-
-
-
-#### Micro Front-ends Architecture
-
-This Front-End pattern works as a extension of the Micro Services Architecture as a whole, and it aims to tackle the problem of dependencies as the app becomes bigger.
-
-So, based on micro frontends, this concept front-end app works to divide the features as small systems in different use cases 
-
-As use cases `area either have responsible front team members or in big applications separate teams handling end-to-end micro areas`.
-[Ali Zeynalli](https://azeynalli1990.medium.com/software-architecture-patterns-for-front-end-development-9e43e43cdfb3)
-
-
-
-#### Modular Architecture
-
-The Modular Pattern is one of the most common patterns in the JavaScript environment, and it aims to divide de system into different contexts and scopes called modules, to bring all those advantages of flexibility and maintainance stated above.
-
-As it can be seen, this particular architecture is distinctively present in the modular design of the **ES6 import/export syntax**.
-
-
-
-#### Publish-Subscribe Architecture
-
-The Publish-Subscribe pattern (also known as the Broker Architecture) is a concept for controlling messagery on a system, where it has a specialized module to centralized events and to define categories of communiction. 
-
-And, on the other side of the communication system there are the subscribers that enlist themselves to receive the messages that the publisher is constantly sending or updating.
-
-![publisher-subscriber-front-end-patterns](/images/articles/web-development/publisher-subscriber-front-end-patterns.gif)
-[Jonathan Siahaan](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
-
-- read more about the Brooker Architecture in the article `Software Architecture and Design` [^1].
-
-
-#### State Management Architecture
-
-This architecture appeared in the Front-end environment to deal with the problem of the pulverization of states in a application that has to deal with a complex and intricated system of communication to tranfer the necessary internal states to work the system.
-
-So, it seems that some patterns like the MVC Architecture (and its variations, like MVVM and MVP), and the Component Pattern are very effective to help to separate concerns in the applications, and to create distinct modules or components to tackle different responsabilities need by the system.
-
-But these patters alone, cannot cope with the stress of a growing app where with the increase of the number of parts and their interchanging states to be maintained and updated, and also synchronized at due time, what would usually create a chaotic communication system.
-
-Than this pattern, then, excel in its concept to create strategies to deal with the control of state for the application.
-
-
-#### Strategy Pattern Architecture
-
-The Strategy Pattern is a achitecture that aims to releave complexities from the code by reusing some same functionality that presents different behavior according to the parameters received.
-
-![strategy-patter-front-end-architecture](/images/articles/web-development/strategy-patter-front-end-architecture.jpg)
-[Luis Castillo](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3)
-
-One interesting use case brought by the same author is about the reuse of a navigation feature that may display different data depending on the nature of the authentication the user has: guest, admin, form, etc.
-
-Besides the reuse of some functionality, this patter also brings cleaness to the code, because in its design the developer can to dismiss large chunks of imperative coding, just like a lengthy repetitive if/else statement, by the use of a object literal to pass the necessary dependency.
-
-
-#### Unidirectional Architecture
-
-The Unidirectional Architecture is a pattern that stablish some order in the flow of the system, where in this case it aims to restrict the flow in an singular direction or at a unidirectional flow.
-
-There are many architectures that thrives making use of this patter as to control the flow of the system, or at least part of the flow.
-
-So, exemples of architectures that uses this unidirectional concept are the Publish-Subscribe (also known the Broker Architecture) and the Flux Architecture, as they use this concept to define and organize flows inside the system.
-
-The Publish-Subscribe pattern defines communication, while the Flux pattern defines not only a system of communication, but also defines a data module for state control.
-
-
 
 
 

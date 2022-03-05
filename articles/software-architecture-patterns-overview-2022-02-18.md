@@ -49,7 +49,7 @@ Besides, the use of **architectural patterns** can also help the software manage
 
 On the other hand, the choice of an inconvenint architecture for a system could not only delay the project, but could also lead to software failue.
 
-- Other articles about the Patterns:
+- Other articles about Software Patterns and Architectures:
 - `Software Architecture and Design` [^1].
 - `Front-end Development Patterns - Overview` [^2].
 - `Front-end Architectures` [^3].

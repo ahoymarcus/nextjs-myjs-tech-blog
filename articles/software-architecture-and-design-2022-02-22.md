@@ -74,7 +74,7 @@ Also, it is possible to divide this great concept into two parts constituents:
    
    
   
-- Other articles about the Patterns:
+- Other articles about Software Patterns and Architectures:
 - `Software Architecture Patterns - Overview` [^1].
 - `Front-end Development Patterns - Overview` [^2].
 - `Front-end Architectures` [^3].
