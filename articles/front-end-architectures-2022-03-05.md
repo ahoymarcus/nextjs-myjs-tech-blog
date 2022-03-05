@@ -9,23 +9,27 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 # Front-end Architectures
 
 1. ##### Introduction
-2. ##### The Flux Architecture    
-3. ##### SPA Architecture 
-4. ##### PWA Architecture
+2. ##### Kinds of Front-end Architectures
+	2.1. The Flux Architecture      
+	2.1. The PWA Architecture   
+	2.1. The SPA Architecture
 5. ##### Further Reading
 6. ##### References
 
 ### Introduction
 
-
-
+   
+    
 - Other articles about Software Patterns and Architectures:
 - `Software Architecture and Design` [^1].
 - `Software Architecture Patterns - Overview` [^2].
 - `Front-end Development Patterns` [^3].
 
 
-### The Flux Architecture
+
+### Kinds of Front-end Architectures
+
+#### The Flux Architecture
 
 The Flux Architecure is one example of a compounded architecture that uses concepts from both State Control and Unidirectional Architectures, aiming the very important job to give scalability to front-end applications in terms of state management.
 
@@ -41,15 +45,20 @@ So firstly the dispatcher defines **Actions** that will define the necessary com
 
 Doing so, the flux pattern also creates a revolving communication between components, dispatcher, store and the view module in a circular unidirectional mode.
 
-![flux-pattern-front-end-architecture](/images/articles/web-development/flux-pattern-front-end-architecture.png)
-
-
 `Therefore, by monitoring actions and the information it contains, data mutation of the whole app is under our control (when and how something is changed).`
 [Richard Ng](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
 
+![flux-pattern-front-end-architecture](/images/articles/web-development/flux-pattern-front-end-architecture.png)
 
 
-### SPA   
+
+#### The PWA Architecture
+
+
+
+
+
+#### The SPA Architecture  
 
 SPA relates to Single Page Application, which is a new development from the Front-end environment that grew with importance with the evolution of JavaScript and of the structure of Client-Side web development.
 
@@ -89,50 +98,72 @@ The first disadvantage relates to its client-sided nature, which restricts in a 
 Second, since most of the processing comes from the client, it consumes a lot of resources from the browser and may even imply the necessity for more powerful machines. 
 
 
+One other aspect or attribute of a SPA can be found in the first chapter of the book `SPA Design and Architecture` from [Emmit Scott](https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/2), where he states also:
 
-### PWA
+1. To bring the power of a desktop kind of application to the **cross-platform environment of a web browser**.   
+2. To deliver all that using the already present tecnologies of JavaScript, HTML and Cascading Style Sheets CSS.
+3. Decoupled presentation layer, since the client now governs the app, it can be maintained updated separatetely from the server.
+
+Still according the same author, this same goal have been present even in the eve of the Internet, when developers looked for some different ways to try extend the experience from a static web page.
+
+He cites some technologies from that early period:
+
+1. IFrame  
+2. Java Applets  
+3. Adobe Flash   
+4. Microsoft SilverLight    
+
+But in a more recently developement, he brings from the early 2000s, with the AJAX technology, that later became officially adopted as the **XMLHttpRequest (XHR) API** as a more robust moviment in the direction of that same goal.
+
+`Developers who began to merge this API with JavaScript, HTML, and CSS obtained remarkable results. The blending of these techniques became known as AJAX, or Asynchronous JavaScript and XML. AJAX's unobrusive data requests, combined with the power of JavaScrit dynamically update the Document Object Model (DOM), and the use of CSS to chabge the page's style on the fly, brought AJAX to the forefront of modern web development.`  
+[Emmit Scott](https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/)
+
+
+Passing through the AJAX's phase, the front-end development started to apply all the new found capabilities, not only to the context of the DOM, but to the whole app structure.
+
+Interesting to notice, as Emmit Scott points, a SPA full load of the app only comes at the **First Load**, where the initial HTML file functions as a entry point or shell for the application, and after that the control of the application goes to the client that dynamically and independently controls the JavaScript session and redition of the partions loads then on.
+
+`The “pages” of the application aren’t pages at all, at least not in the traditional sense. As the user navigates, the parts of the screen that appear to be pages are actually independent sections of the application’s content [...] to know that the view is a portion of the application that the end user sees and interacts with. 
+[Emmit Scott](https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-1. Why Single Page Application (SPA) architecture is so popular?
- https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204
 2. Chapter 1. What is a single-page application? ( SPA Design and Architecture)
 https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/
-https://www.bloomreach.com/en/blog/2018/what-is-a-single-page-application
+
+
 2.5. What are Single Page Applications and Why Do People Like Them so Much?
+https://www.bloomreach.com/en/blog/2018/what-is-a-single-page-application
 3. Progressive Web Apps (PWAs): The future of mobile web apps
 https://www.techaheadcorp.com/blog/progressive-web-apps/
 4. Progressive web app structure
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/App_structure
 
 ### Further Reading
-
+   
+  
 1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
 2. `Learning JavaScript Design Patterns.` (Addy Osmani)
-
-### References
-
 
 [Software Architecture Patterns for Front-End Development - Medium.com](https://azeynalli1990.medium.com/software-architecture-patterns-for-front-end-development-9e43e43cdfb3)
 
 [Most common design patterns for Front-End with JavaScript (Real-world examples) - Dev.to](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3)
 
-[Patterns For JavaScript Frontend Applications - blog.cloudboost.io](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
+
 
 [Difference Between Pub-Sub Pattern and Observable Pattern - Medium.com](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
 
 [The Comprehensive Guide to JavaScript Design Patterns - Toptal.com](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
+
+
+### References
+
+[Patterns For JavaScript Frontend Applications - blog.cloudboost.io](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
+
+[Deepak Maheshwari(https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204) - Medium.com](https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204)
+
+[Chapter 1. What is a single-page application? ( SPA Design and Architecture)](https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/)
 
 []()
 
