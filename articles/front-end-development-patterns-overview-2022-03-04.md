@@ -191,7 +191,7 @@ Still in his article, [Marko Misura](https://www.toptal.com/javascript/comprehen
 
 First, he brings two examples of creational patterns, where one is the use of a **Constructor** function to have properties initialized during an object instantiation. And the other is the use of the **Prototype Inheritance** of JavaScript as a method to incorporate methods in objects without the necessity of it being redefined each time a new instance is created:
 
-(A)
+(A) **Example from Marko Misura**
 ```
 function Person(name, age, isDeveloper) {
 	this.name = name;
@@ -203,10 +203,8 @@ function Person(name, age, isDeveloper) {
 	};
 };
 ```
- **Example from Marko Misura**
-
  
-(B)
+(B) **Example from Marko Misura**
 ```
 function Person(name, age, isDeveloper) {
 	this.name = name;
@@ -219,13 +217,13 @@ Person.prototype.writeCode = function() {
 	console.log(this.isDeveloper ? "This person does write code" : 'This person does not write code');
 };
 ```
-**Example from Marko Misura**
+
 
 
 Second, the author gives two implementations as example of the use of a Module Pattern to tackle variable context with JavaScript, since this language does not support access modifiers natively:
 
 
-(A)
+(A) **Example from Marko Misura**
 ```
 // through the use of a closure we expose an object
 // as a public API which manages the private objects array
@@ -259,13 +257,13 @@ collection.removeObject("Alice");
 // prints ["Bob", "Franck"]
 console.log(collection.getObjects());
 ```
-**Example from Marko Misura**
+
 
 
 `The most useful thing that this pattern introduces is the clear separation of private and public parts of an object, which is a concept very similar to developers coming from a classical object-oriented background. However, not everything is so perfect. When you wish to change the visibility of a member, you need to modify the code wherever you have used this member because of the different nature of accessing public and private parts. Also, methods added to the object after their creation cannot access the private members of the object.`
 [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
 
-(B)
+(B) **Example from Marko Misura**
 ```
 // we write the entire object logic as private members and
 // expose an anonymous object which maps members we wish to reveal
@@ -306,7 +304,7 @@ namesCollection.removeName("Alice");
 // prints ["Bob", "Franck"]
 console.log(namesCollection.getNames());
 ```
-**Example from Marko Misura**
+
 
 
 In this second implementation the author simplifies the metter of the access modifier based only in the form as he defines what is exposed by the objects return, thus becaming public to be accessed.
@@ -315,7 +313,7 @@ Though, as the Marko Misura](https://www.toptal.com/javascript/comprehensive-gui
 
 In a third example, the author talks about the use of a Singleton Pattern to solve problems where the application only need one instance of a object, though it can have modified properties, just as the cases where the same object can return different configurations:
 
-
+(A) **Example from Marko Misura**
 ```
 var singleton = (function() {
     // private singleton value which gets initialized only once
@@ -349,13 +347,14 @@ var configObject1 = singleton.getConfig({ "number": 8 });
 // prints number: 5, size: 8, randomNumber: same randomDecimalValue as in first config
 console.log(configObject1);
 ```
-**Example from Marko Misura**
+
 
 And still about the singleton pattern, the author says: `It is important to note that the access point for retrieving the singleton value needs to be only one and very well known. A downside to using this pattern is that it is rather difficult to test`.
 
 
 The forth exampe is about the Observer/Publisher Pattern, where two objects, a Subject or Publisher and other objects, the Subscribers can communicate without bring to much dependency to the system.
 
+(A) **Example from Marko Misura**
 ```
 var publisherSubscriber = {};
 
@@ -428,7 +427,7 @@ publisherSubscriber.unsubscribe("mouseClicked", subscriptionID3);
 publisherSubscriber.publish("mouseClicked", {"data": "data1"});
 publisherSubscriber.publish("mouseHovered", {"data": "data2"});
 ```
-**Example from Marko Misura**
+
 
 
 And still about the observer/publisher pattern, the author says: `A downside to using this pattern is difficult testing of various parts of our system. There is no elegant way for us to know whether or not the subscribing parts of the system are behaving as expected`.
@@ -445,7 +444,7 @@ Another interesting example uses the Command Pattern, which is useful to add lay
 
 If the developer choses for performance, perhaps he should avoid here this extra layer, but when it's important to improve the architecture itself of the application to `potentially save a lot of time when we need to modify objects executing the commands`.
 
-
+(A) **Example from Marko Misura**
 ```
 // the object which knows how to execute the command
 var invoker = {
@@ -474,10 +473,14 @@ console.log(manager.execute("add", 3, 5));
 // prints 2
 console.log(manager.execute("subtract", 5, 3));
 ```
-**Example from Marko Misura**
 
 
-And, in one last example,
+
+And, in one last example, Marko Misura talks about the Facade Pattern that has been used successfully is many JavaScript libraries to bring simpler interfaces for DOM manipulation functions: **JQuery**, **Dojo**, **D3**, etc.
+
+As its architecture it brings an abstraction layer between the public functions presented by the interface and the internal implementation of the library.
+
+But, as always the author remembers that neither solotion should be used without due considerance of the tradeoffs envolved in the process of creating the architecture for the app. And in this case there is a matter of confronting the necessity of Performance of the application versus Simplicity of its enhanced interface.
 
 
 Finally, [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns), bring a great tip for all those who need to deepen their knowledge in patters:
