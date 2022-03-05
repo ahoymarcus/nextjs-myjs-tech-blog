@@ -10,7 +10,7 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 
 1. ##### Introduction  
 2. ##### Different Front-End Patterns
-	2.1. Buider Pattern Architecture    
+	2.1. Builder Pattern Architecture    
 	2.2. Component Architecture   
 	2.3. Dumb-Smart Components Pattern Architecture    
 	2.4. Micro Front-ends Architecture    
@@ -23,8 +23,10 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 	3.1. The Flux Architecture    
 	3.2. SPA   
 	3.3. PWA
-4. ##### Further Reading
-5. ##### References
+4. ##### Brief History of the JavaScript Language
+	4.1. Some Interesting Examples of Patterns with JavaScript
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
 
@@ -45,13 +47,13 @@ And, in general all patterns have their aim to make a more robust and more relia
 
 
 - Other articles about the Patterns:
-- Software Architecture and Design [^1].
-- Software Architecture Patterns - Overview [^2].
+- `Software Architecture and Design` [^1].
+- `Software Architecture Patterns - Overview` [^2].
 
 
 ### Different Front-End Patterns
 
-#### Buider Pattern Architecture
+#### Builder Pattern Architecture
 
 The builder pattern is used when it's needed to create complext objects with different variations and also it's necessary to have flexibility to modify the construction process without impacting the object representation in self.
 
@@ -172,12 +174,316 @@ Doing so, the flux pattern also creates a revolving communication between compon
 
 
 
+### Brief History of the JavaScript Language
+
+Considering that JavaScript is the principal front-end language today, it'd be interesting to understand a little bit about all its own evolution together with the Internet itself.
+
+Firstly, JavaScript was created by the Netscape team to blend its own browser together with the other two languages of the Web, HTML and CSS.
+
+Later, other scripting languages were introduced to support other browsers, until in June of 1997 (Wikipedia)[https://en.wikipedia.org/wiki/ECMAScript#Versions] there was a effort to standardaze a specification to all modern browsers that became known as ECMAScript.
+
+As a brief definition, it could be said that `JavaScript is a lightweight, interpreted, object-oriented programming language with first-class functions most commonly know as a scripting language for web pages` [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns).
 
 
+#### Some Interesting Examples of Patterns with JavaScript
+Still in his article, [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns) brings very interesting examples of the use of patterns to improve to coding experience for JavaScript programming:
 
 
+First, he brings two examples of creational patterns, where one is the use of a **Constructor** function to have properties initialized during an object instantiation. And the other is the use of the **Prototype Inheritance** of JavaScript as a method to incorporate methods in objects without the necessity of it being redefined each time a new instance is created:
+
+(A)
+```
+function Person(name, age, isDeveloper) {
+	this.name = name;
+	this.age = age;
+	this.isDeveloper = isDeveloper || false;
+	
+	this.writesCode = function() {
+		console.log(this.isDeveloper ? 'This person does write code' : 'This person does not write code');
+	};
+};
+```
+ **Example from Marko Misura**
+
+ 
+(B)
+```
+function Person(name, age, isDeveloper) {
+	this.name = name;
+	this.age = age;
+	this.isDeveloper = isDeveloper || false;
+};
+
+/* Extending the Function Prototype */
+Person.prototype.writeCode = function() {
+	console.log(this.isDeveloper ? "This person does write code" : 'This person does not write code');
+};
+```
+**Example from Marko Misura**
 
 
+Second, the author gives two implementations as example of the use of a Module Pattern to tackle variable context with JavaScript, since this language does not support access modifiers natively:
+
+
+(A)
+```
+// through the use of a closure we expose an object
+// as a public API which manages the private objects array
+var collection = (function() {
+    // private members
+    var objects = [];
+
+    // public members
+    return {
+        addObject: function(object) {
+            objects.push(object);
+        },
+        removeObject: function(object) {
+            var index = objects.indexOf(object);
+            if (index >= 0) {
+                objects.splice(index, 1);
+            }
+        },
+        getObjects: function() {
+            return JSON.parse(JSON.stringify(objects));
+        }
+    };
+})();
+
+collection.addObject("Bob");
+collection.addObject("Alice");
+collection.addObject("Franck");
+// prints ["Bob", "Alice", "Franck"]
+console.log(collection.getObjects());
+collection.removeObject("Alice");
+// prints ["Bob", "Franck"]
+console.log(collection.getObjects());
+```
+**Example from Marko Misura**
+
+
+`The most useful thing that this pattern introduces is the clear separation of private and public parts of an object, which is a concept very similar to developers coming from a classical object-oriented background. However, not everything is so perfect. When you wish to change the visibility of a member, you need to modify the code wherever you have used this member because of the different nature of accessing public and private parts. Also, methods added to the object after their creation cannot access the private members of the object.`
+[Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
+
+(B)
+```
+// we write the entire object logic as private members and
+// expose an anonymous object which maps members we wish to reveal
+// to their corresponding public members
+var namesCollection = (function() {
+    // private members
+    var objects = [];
+
+    function addObject(object) {
+        objects.push(object);
+    }
+
+    function removeObject(object) {
+        var index = objects.indexOf(object);
+        if (index >= 0) {
+            objects.splice(index, 1);
+        }
+    }
+
+    function getObjects() {
+        return JSON.parse(JSON.stringify(objects));
+    }
+
+    // public members
+    return {
+        addName: addObject,
+        removeName: removeObject,
+        getNames: getObjects
+    };
+})();
+
+namesCollection.addName("Bob");
+namesCollection.addName("Alice");
+namesCollection.addName("Franck");
+// prints ["Bob", "Alice", "Franck"]
+console.log(namesCollection.getNames());
+namesCollection.removeName("Alice");
+// prints ["Bob", "Franck"]
+console.log(namesCollection.getNames());
+```
+**Example from Marko Misura**
+
+
+In this second implementation the author simplifies the metter of the access modifier based only in the form as he defines what is exposed by the objects return, thus becaming public to be accessed.
+
+Though, as the Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns) states in his article, this patterns a not a solution for everything, meaning that there is still situations where more approprieated solutions should be applied.
+
+In a third example, the author talks about the use of a Singleton Pattern to solve problems where the application only need one instance of a object, though it can have modified properties, just as the cases where the same object can return different configurations:
+
+
+```
+var singleton = (function() {
+    // private singleton value which gets initialized only once
+    var config;
+
+    function initializeConfiguration(values){
+        this.randomNumber = Math.random();
+        values = values || {};
+        this.number = values.number || 5;
+        this.size = values.size || 10;
+    }
+
+    // we export the centralized method for retrieving the singleton value
+    return {
+        getConfig: function(values) {
+            // we initialize the singleton value only once
+            if (config === undefined) {
+                config = new initializeConfiguration(values);
+            }
+
+            // and return the same config value wherever it is asked for
+            return config;
+        }
+    };
+})();
+
+var configObject = singleton.getConfig({ "size": 8 });
+// prints number: 5, size: 8, randomNumber: someRandomDecimalValue
+console.log(configObject);
+var configObject1 = singleton.getConfig({ "number": 8 });
+// prints number: 5, size: 8, randomNumber: same randomDecimalValue as in first config
+console.log(configObject1);
+```
+**Example from Marko Misura**
+
+And still about the singleton pattern, the author says: `It is important to note that the access point for retrieving the singleton value needs to be only one and very well known. A downside to using this pattern is that it is rather difficult to test`.
+
+
+The forth exampe is about the Observer/Publisher Pattern, where two objects, a Subject or Publisher and other objects, the Subscribers can communicate without bring to much dependency to the system.
+
+```
+var publisherSubscriber = {};
+
+// we send in a container object which will handle the subscriptions and publishings
+(function(container) {
+    // the id represents a unique subscription id to a topic
+    var id = 0;
+
+    // we subscribe to a specific topic by sending in
+    // a callback function to be executed on event firing
+    container.subscribe = function(topic, f) {
+        if (!(topic in container)) {
+          container[topic] = [];
+        }
+
+        container[topic].push({
+            "id": ++id,
+            "callback": f
+        });
+
+        return id;
+    }
+
+    // each subscription has its own unique ID, which we use
+    // to remove a subscriber from a certain topic
+    container.unsubscribe = function(topic, id) {
+        var subscribers = [];
+        for (var subscriber of container[topic]) {
+            if (subscriber.id !== id) {
+                subscribers.push(subscriber);
+            }
+        }
+        container[topic] = subscribers;
+    }
+
+    container.publish = function(topic, data) {
+        for (var subscriber of container[topic]) {
+            // when executing a callback, it is usually helpful to read
+            // the documentation to know which arguments will be
+            // passed to our callbacks by the object firing the event
+            subscriber.callback(data);
+        }
+    }
+
+})(publisherSubscriber);
+
+var subscriptionID1 = publisherSubscriber.subscribe("mouseClicked", function(data) {
+    console.log("I am Bob's callback function for a mouse clicked event and this is my event data: " + JSON.stringify(data));
+});
+
+var subscriptionID2 = publisherSubscriber.subscribe("mouseHovered", function(data) {
+    console.log("I am Bob's callback function for a hovered mouse event and this is my event data: " + JSON.stringify(data));
+});
+
+var subscriptionID3 = publisherSubscriber.subscribe("mouseClicked", function(data) {
+    console.log("I am Alice's callback function for a mouse clicked event and this is my event data: " + JSON.stringify(data));
+});
+
+// NOTE: after publishing an event with its data, all of the
+// subscribed callbacks will execute and will receive
+// a data object from the object firing the event
+// there are 3 console.logs executed
+publisherSubscriber.publish("mouseClicked", {"data": "data1"});
+publisherSubscriber.publish("mouseHovered", {"data": "data2"});
+
+// we unsubscribe from an event by removing the subscription ID
+publisherSubscriber.unsubscribe("mouseClicked", subscriptionID3);
+
+// there are 2 console.logs executed
+publisherSubscriber.publish("mouseClicked", {"data": "data1"});
+publisherSubscriber.publish("mouseHovered", {"data": "data2"});
+```
+**Example from Marko Misura**
+
+
+And still about the observer/publisher pattern, the author says: `A downside to using this pattern is difficult testing of various parts of our system. There is no elegant way for us to know whether or not the subscribing parts of the system are behaving as expected`.
+
+
+His fifth example is about the Mediator Pattern, which is also a pattern for communication of objects, but different from the Publisher type, because the Mediator does control directly the communication, while the Publish only fires the event, and let other modules to deal with other responsabilities for the communication.
+ 
+A interesting user case for this pattern would be to create and maintain a extense and comples on-line form, where the user can be guided through various steps of a more simplified process of interation. 
+ 
+And still about the Mediator pattern, the author says: `A downside would be that now we have introduced a single point of failure into our system, meaning if our mediator fails, the entire system could stop working`.
+
+
+Another interesting example uses the Command Pattern, which is useful to add layers when connectiong to APIs. 
+
+If the developer choses for performance, perhaps he should avoid here this extra layer, but when it's important to improve the architecture itself of the application to `potentially save a lot of time when we need to modify objects executing the commands`.
+
+
+```
+// the object which knows how to execute the command
+var invoker = {
+    add: function(x, y) {
+        return x + y;
+    },
+    subtract: function(x, y) {
+        return x - y;
+    }
+}
+
+// the object which is used as an abstraction layer when
+// executing commands; it represents an interface
+// toward the invoker object
+var manager = {
+    execute: function(name, args) {
+        if (name in invoker) {
+            return invoker[name].apply(invoker, [].slice.call(arguments, 1));
+        }
+        return false;
+    }
+}
+
+// prints 8
+console.log(manager.execute("add", 3, 5));
+// prints 2
+console.log(manager.execute("subtract", 5, 3));
+```
+**Example from Marko Misura**
+
+
+And, in one last example,
+
+
+Finally, [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns), bring a great tip for all those who need to deepen their knowledge in patters:
+
+1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software`   
+2. ` Addy Osmani’s Learning JavaScript Design Patterns.`
 
 
 https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
@@ -196,6 +502,8 @@ https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns
 [Patterns For JavaScript Frontend Applications - blog.cloudboost.io](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
 
 [Difference Between Pub-Sub Pattern and Observable Pattern - Medium.com](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
+
+[The Comprehensive Guide to JavaScript Design Patterns - Toptal.com](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
 
 []()
 

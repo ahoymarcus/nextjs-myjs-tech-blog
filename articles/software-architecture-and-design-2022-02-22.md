@@ -71,10 +71,12 @@ Also, it is possible to divide this great concept into two parts constituents:
 
 1. **Software Architecture**: at this phase there should be a gathering of many specifications and items to be correlated into a systems functional requirements.
 2. **Software Design**: at this phase the functional requirements are accomplished.
-
+   
+   
+  
 - Other articles about the Patterns:
-- Software Architecture Patterns - Overview [^1].
-- Front-end Development Patterns - Overview [^2].
+- `Software Architecture Patterns - Overview` [^1].
+- `Front-end Development Patterns - Overview` [^2].
 
 
 ### Software Architecture and Software Design
@@ -1257,6 +1259,8 @@ Some steps in the process of the design:
 [5 essential patterns of software architecture - Red Hat](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
 
 [Types of Software Architecture Patterns - GeeksforGeeks](https://www.geeksforgeeks.org/types-of-software-architecture-patterns/)
+
+[The Comprehensive Guide to JavaScript Design Patterns - Toptal.com](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
 
 ### References
 

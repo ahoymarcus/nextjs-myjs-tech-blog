@@ -8,7 +8,8 @@ description: 'A software architecture pattern captures some design structures of
 
 # Software Architecture Patterns - Overview
 
-1. ##### Introduction 
+1. ##### Introduction
+	1.1. A Brief Description of Software Patterns
 2. ##### The Blackboard Pattern
 3. ##### The Broker Pattern         
 4. ##### The Client-Server Pattern
@@ -49,8 +50,46 @@ Besides, the use of **architectural patterns** can also help the software manage
 On the other hand, the choice of an inconvenint architecture for a system could not only delay the project, but could also lead to software failue.
 
 - Other articles about the Patterns:
-- Software Architecture and Design [^1].
-- Front-end Development Patterns - Overview [^2].
+- `Software Architecture and Design` [^1].
+- `Front-end Development Patterns - Overview` [^2].
+
+
+#### A Brief Description of Software Patterns
+
+Some of the most popular ways software patterns are categorized:
+
+1. **Creational design patterns**: these patterns aims to tackle mechanisms to optimize the creation of the objects, that is the best ways to control object creation.   
+	1.1. Factory method   
+	1.2. Abstract factory 
+	1.3. Builder   
+	1.4. Prototype   
+	1.5. Singleton
+2. **Structural design patterns**: these patterns aims to tackle the objects relationsships, in a way that a change in one part of the system does not bring unwanted changes in other parts as well.   
+	2.1. Adapter   
+	2.2. Bridge   
+	2.3. Composite   
+	2.4. Decorator   
+	2.5. Facade   
+	2.6. Flyweight    
+	2.7. Proxy
+3. **Behavioral design patterns**: these patterns aims to tackle the communication between objects in a system, helping to ensure that the system may be synchronized throughout the app.   
+	3.1. Chain of responsibility   
+	3.2. Command   
+	3.3. Iterator   
+	3.4. Mediator   
+	3.5. Memento   
+	3.6. Observer   
+	3.7. State   
+	3.8. Strategy   
+	3.9. Visitor
+4. **Concurrency design patterns**: these patterns deal with multi-threaded programms paradigms.   
+	4.1. Active object   
+	4.2. Nuclear reaction   
+	4.3. Scheduler
+5. **Architectural design patterns**: patterns that are used for architectural purposes.   
+	5.1. MVC (Model-View-Controller)   
+	5.2. MVP (Model-View-Presenter)   
+	5.3. MVVM (Model-View-ViewModel)
 
 
 ### The Blackboard Pattern
@@ -332,6 +371,7 @@ Also found in Workflows in Bioinformatics.
 
 [Software Architecture & Design Tutorial - TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
 
+[The Comprehensive Guide to JavaScript Design Patterns - Toptal.com](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
 
 ### References
 
