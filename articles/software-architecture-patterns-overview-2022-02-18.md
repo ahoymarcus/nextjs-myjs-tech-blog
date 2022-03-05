@@ -52,6 +52,7 @@ On the other hand, the choice of an inconvenint architecture for a system could 
 - Other articles about the Patterns:
 - `Software Architecture and Design` [^1].
 - `Front-end Development Patterns - Overview` [^2].
+- `Front-end Architectures` [^3].
 
 
 #### A Brief Description of Software Patterns
@@ -367,6 +368,9 @@ Also found in Workflows in Bioinformatics.
 
 ### Further Reading
 
+`Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
+`Learning JavaScript Design Patterns.` (Addy Osmani)
+
 [Software Design - JavaTPoint](https://www.javatpoint.com/software-engineering-software-design)
 
 [Software Architecture & Design Tutorial - TutorialsPoint](https://www.tutorialspoint.com/software_architecture_design/index.htm)
@@ -386,3 +390,5 @@ Also found in Workflows in Bioinformatics.
 [^1]:software-architecture-and-design-2022-02-22
 
 [^2]:front-end-development-patterns-overview-2022-03-04
+
+[^3]:front-end-architectures-2022-03-05

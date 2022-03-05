@@ -77,6 +77,7 @@ Also, it is possible to divide this great concept into two parts constituents:
 - Other articles about the Patterns:
 - `Software Architecture Patterns - Overview` [^1].
 - `Front-end Development Patterns - Overview` [^2].
+- `Front-end Architectures` [^3].
 
 
 ### Software Architecture and Software Design
@@ -1254,6 +1255,9 @@ Some steps in the process of the design:
 
 ### Further Reading
 
+`Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
+`Learning JavaScript Design Patterns.` (Addy Osmani)
+
 [10 Common Software Architectural Patterns in a nutshell - Towardsdatascience.com](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
 
 [5 essential patterns of software architecture - Red Hat](https://www.redhat.com/architect/5-essential-patterns-software-architecture)
@@ -1275,3 +1279,5 @@ Some steps in the process of the design:
 [^1]:software-architecture-patterns-overview-2022-02-18
 
 [^2]:front-end-development-patterns-overview-2022-03-04
+
+[^3]:front-end-architectures-2022-03-05

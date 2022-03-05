@@ -8,25 +8,27 @@ description: 'Patterns is a recent practice that is beign introduced to the Fron
 
 # Front-end Development Patterns
 
-1. ##### Introduction
-2. ##### Brief History of the JavaScript Language
-	2.1. Some Interesting Examples of Patterns with JavaScript  
-3. ##### Different Front-End Patterns
-	3.1. Builder Pattern Architecture    
-	3.2. Component Architecture   
-	3.3. Dumb-Smart Components Pattern Architecture    
-	3.4. Micro Front-ends Architecture    
-	3.5. Modular Architecture     
-	3.6. Publish-Subscribe Architecture     
-	3.7 State Management Architecture    
-	3.8. Strategy Pattern Architecture    
-	3.9. Unidirectional Architecture
-4. ##### Different Front-End Architectures
-	4.1. The Flux Architecture    
-	4.2. SPA   
-	4.3. PWA
-5. ##### Further Reading
-6. ##### References
+1. ##### Introduction 
+2. ##### Different Front-End Patterns
+	2.1. Builder Pattern Architecture    
+	2.2. Component Architecture   
+	2.3. Dumb-Smart Components Pattern Architecture    
+	2.4. Micro Front-ends Architecture    
+	2.5. Modular Architecture     
+	2.6. Publish-Subscribe Architecture     
+	2.7 State Management Architecture    
+	2.8. Strategy Pattern Architecture    
+	2.9. Unidirectional Architecture
+3. ##### JavaScript Patterns
+	3.1. Brief History of the JavaScript Language  
+	3.2. The Constructor Pattern     
+	3.3. The Module Pattern     
+	3.4. The Singleton Pattern     
+	3.5. The Observer/Publisher Pattern    
+	3.6. The Mediator Pattern   
+	3.7. The Facade Pattern
+4. ##### Further Reading
+5. ##### References
 
 ### Introduction
 
@@ -49,9 +51,12 @@ And, in general all patterns have their aim to make a more robust and more relia
 - Other articles about the Patterns:
 - `Software Architecture and Design` [^1].
 - `Software Architecture Patterns - Overview` [^2].
+- `Front-end Architectures` [^3].
 
 
-### Brief History of the JavaScript Language
+### JavaScript Patterns
+
+#### Brief History of the JavaScript Language
 
 Considering that JavaScript is the principal front-end language today, it'd be interesting to understand a little bit about all its own evolution together with the Internet itself.
 
@@ -62,9 +67,8 @@ Later, other scripting languages were introduced to support other browsers, unti
 As a brief definition, it could be said that `JavaScript is a lightweight, interpreted, object-oriented programming language with first-class functions most commonly know as a scripting language for web pages` [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns).
 
 
-#### Some Interesting Examples of Patterns with JavaScript
-Still in his article, [Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns) brings very interesting examples of the use of patterns to improve to coding experience for JavaScript programming:
 
+#### The Constructor Pattern
 
 First, he brings two examples of creational patterns, where one is the use of a **Constructor** function to have properties initialized during an object instantiation. And the other is the use of the **Prototype Inheritance** of JavaScript as a method to incorporate methods in objects without the necessity of it being redefined each time a new instance is created:
 
@@ -96,6 +100,7 @@ Person.prototype.writeCode = function() {
 ```
 
 
+#### The Module Pattern
 
 Second, the author gives two implementations as example of the use of a Module Pattern to tackle variable context with JavaScript, since this language does not support access modifiers natively:
 
@@ -183,10 +188,13 @@ console.log(namesCollection.getNames());
 ```
 
 
-
-In this second implementation the author simplifies the metter of the access modifier based only in the form as he defines what is exposed by the objects return, thus becaming public to be accessed.
+In this second implementation the author simplifies the matter of the access modifier based only in the form as he defines what is exposed by the objects return, thus becaming public to be accessed.
 
 Though, as the Marko Misura](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns) states in his article, this patterns a not a solution for everything, meaning that there is still situations where more approprieated solutions should be applied.
+
+
+
+#### The Singleton Pattern
 
 In a third example, the author talks about the use of a Singleton Pattern to solve problems where the application only need one instance of a object, though it can have modified properties, just as the cases where the same object can return different configurations:
 
@@ -228,6 +236,9 @@ console.log(configObject1);
 
 And still about the singleton pattern, the author says: `It is important to note that the access point for retrieving the singleton value needs to be only one and very well known. A downside to using this pattern is that it is rather difficult to test`.
 
+
+
+#### The Observer/Publisher Pattern
 
 The forth exampe is about the Observer/Publisher Pattern, where two objects, a Subject or Publisher and other objects, the Subscribers can communicate without bring to much dependency to the system.
 
@@ -310,6 +321,9 @@ publisherSubscriber.publish("mouseHovered", {"data": "data2"});
 And still about the observer/publisher pattern, the author says: `A downside to using this pattern is difficult testing of various parts of our system. There is no elegant way for us to know whether or not the subscribing parts of the system are behaving as expected`.
 
 
+
+#### The Mediator Pattern
+
 His fifth example is about the Mediator Pattern, which is also a pattern for communication of objects, but different from the Publisher type, because the Mediator does control directly the communication, while the Publish only fires the event, and let other modules to deal with other responsabilities for the communication.
  
 A interesting user case for this pattern would be to create and maintain a extense and comples on-line form, where the user can be guided through various steps of a more simplified process of interation. 
@@ -352,6 +366,7 @@ console.log(manager.execute("subtract", 5, 3));
 ```
 
 
+#### The Facade Pattern
 
 And, in one last example, Marko Misura talks about the Facade Pattern that has been used successfully is many JavaScript libraries to bring simpler interfaces for DOM manipulation functions: **JQuery**, **Dojo**, **D3**, etc.
 
@@ -415,6 +430,7 @@ The Modular Pattern is one of the most common patterns in the JavaScript environ
 As it can be seen, this particular architecture is distinctively present in the modular design of the **ES6 import/export syntax**.
 
 
+
 #### Publish-Subscribe Architecture
 
 The Publish-Subscribe pattern (also known as the Broker Architecture) is a concept for controlling messagery on a system, where it has a specialized module to centralized events and to define categories of communiction. 
@@ -462,40 +478,13 @@ The Publish-Subscribe pattern defines communication, while the Flux pattern defi
 
 
 
-### Different Front-End Architectures
-
-#### The Flux Architecture
-
-The Flux Architecure is one example of a compounded architecture that uses concepts from both State Control and Unidirectional Architectures, aiming the very important job to give scalability to front-end applications in terms of state management.
-
-So, in this regard, the Flux Architecture creates a separated module to cope with global states of the app, at the same time it creates a organized system of communication with the other modules of the app to deal with the interchange of states and its updates as well.
-
-Here, in the the flux environment, this pattern helps to tackle this problem by creating **a centralized global context**, by creating a **explicitness of state mutation** and by managing the flow of the data communication in a **synchronized unidirectional data flow**.
-
-Firstly, to create a robust centralized context, the Flux Architecture creates a centralized **Store** as a data module responsible to be the centralized thruth of the states for the whole application.
-
-Then, the architecture brings explicitness to the state mutation by introducing a module **Dispatcher**, another data module to be solely responsible to define the communication of the application with the store.
-
-So firstly the dispatcher defines **Actions** that will define the necessary communication that would interwind across the components and the application, and once the dispatcher centralizes the communication with the components through the defined actions, it becomes also responsible for the application of the definitive logic to transform the old states, that then would be signalized to the store so it could mutate them into the new state of the application. 
-
-Doing so, the flux pattern also creates a revolving communication between components, dispatcher, store and the view module in a circular unidirectional mode.
-
-![flux-pattern-front-end-architecture](/images/articles/web-development/flux-pattern-front-end-architecture.png)
-
-
-`Therefore, by monitoring actions and the information it contains, data mutation of the whole app is under our control (when and how something is changed).`
-[Richard Ng](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
-
-
-
-
-
 
 
 
 ### Further Reading
 
-[]()
+1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
+2. `Learning JavaScript Design Patterns.` (Addy Osmani)
 
 ### References
 
@@ -510,8 +499,9 @@ Doing so, the flux pattern also creates a revolving communication between compon
 
 [The Comprehensive Guide to JavaScript Design Patterns - Toptal.com](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
 
-[]()
 
 [^1]:software-architecture-and-design-2022-02-22
 
 [^2]:software-architecture-patterns-overview-2022-02-18
+
+[^3]:front-end-architectures-2022-03-05
