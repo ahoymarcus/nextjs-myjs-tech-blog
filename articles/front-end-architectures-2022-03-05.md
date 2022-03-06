@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Front-end Architectures'
 date: '2022-03-05'
 subject: 'web-dev-articles'
-description: 'Traditional web development servers pages at the Server-Side, meaning that a server is responsible to receive requisitions from clients and return a web page to the client. This simple architecture of the traditional web development is effective, but it has its shorthands. Developers, then, habe been looking for some different ways to try extend the experience from a static web page into many other models like SPA, PWA, etc.'
+description: 'In traditional web development the pages are rendered at the Server-Side, meaning that a server is responsible to receive requisitions from clients and return a web page to the client. But today there more ways of rendering pages, besides the use of many new architectures that aim for extending the experience of a web page or a web app. Models like Single Page Application (SPA), Progressive Web Application (PWA), the Flux Architecture, the Streams API, etc.'
 ---
 
 # Front-end Architectures
@@ -119,7 +119,7 @@ And in terms of standartization, PWAs are measured acording some key principles 
 	8.1. Also, avoiding some intrinsic difficulties from the App Stores with a maltitude of apps, some of them that may even cause confusion with the real version of the app.
 
 
-**Avantages of the Use of PWAs**
+**Advantages of the Use of PWAs**
 
 - **A decrease in loading time and in bandwidth of the connction** after th app has been installed, thanks to caching with service workers.   
 - **The ability to update only the content that has changed when the app update is available**: in contrast, a native app implies a new download for the entire application, no matter the size of the update.  
@@ -127,9 +127,12 @@ And in terms of standartization, PWAs are measured acording some key principles 
 - **Re-engaging with users**: meaning that through the use of system notifications and push messages, there are more engagement with the users and better conversion rates.
 
 
-**MDN Instructive PWA**
-- The online version: https://mdn.github.io/pwa-examples/js13kpwa/
-- Code at Github: https://github.com/mdn/pwa-examples/tree/master/js13kpwa
+**MDN Instructive PWA Example**:
+- [The MDN online app](https://mdn.github.io/pwa-examples/js13kpwa/)  
+- [Code at Github](https://github.com/mdn/pwa-examples/tree/master/js13kpwa)
+
+![progressive-web-app-example-from-mdn](/images/articles/web-development/progressive-web-app-example-from-mdn.png)
+
 
 
 **The Architecture of a PWA**
@@ -192,15 +195,6 @@ Interesting to notice, as Emmit Scott points, a SPA full load of the app only co
 
 
 
-
-
-
-
-
-
-4. Progressive web app structure
-https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/App_structure
-
 ### Further Reading
    
   
@@ -212,7 +206,6 @@ https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/App_structure
 [Software Architecture Patterns for Front-End Development - Medium.com](https://azeynalli1990.medium.com/software-architecture-patterns-for-front-end-development-9e43e43cdfb3)
 
 [Most common design patterns for Front-End with JavaScript (Real-world examples) - Dev.to](https://dev.to/lukocastillo/most-common-design-patterns-for-front-end-with-javascript-real-world-examples-2hj3)
-
 
 
 [Difference Between Pub-Sub Pattern and Observable Pattern - Medium.com](https://medium.com/easyread/difference-between-pub-sub-pattern-and-observable-pattern-d5ae3d81e6ce)
@@ -230,7 +223,6 @@ https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/App_structure
 
 [Progressive web apps (PWAs) - Mozilla.org](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
-[]()
 
 [^1]:software-architecture-and-design-2022-02-22
 
