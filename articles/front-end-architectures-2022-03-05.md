@@ -215,7 +215,7 @@ Interesting to notice, as Emmit Scott points, a SPA full load of the app only co
 
 [Patterns For JavaScript Frontend Applications - blog.cloudboost.io](https://blog.cloudboost.io/the-state-of-web-applications-3f789a18b810)
 
-[Deepak Maheshwari(https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204) - Medium.com](https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204)
+[Why Single Page Application (SPA) architecture is so popular? - Medium.com](https://medium.com/nerd-for-tech/why-single-page-application-spa-architecture-is-so-popular-141b85400204)
 
 [Chapter 1. What is a single-page application? ( SPA Design and Architecture)](https://livebook.manning.com/book/spa-design-and-architecture/chapter-1/)
 
