@@ -127,21 +127,19 @@ And in terms of standartization, PWAs are measured acording some key principles 
 - **Re-engaging with users**: meaning that through the use of system notifications and push messages, there are more engagement with the users and better conversion rates.
 
 
+According to MDN there are two basic approaches to rendering a website and to build a PWA, each one of them with its own advantages and disadvantages. Finally, there is third approach, one that promises more performance, but that it is more complex nevertheless:  
+
+1. Server-Side rendering (SSR): quick first load, but slower nafigation.
+2. Client-Side Rendering (CSR): slower initial load, but it is fast on navigation.
+3. The Streams API: this one is a different approach, that is faster, but also more complex to achieve.
+
+
 **MDN Instructive PWA Example**:
 - [The MDN online app](https://mdn.github.io/pwa-examples/js13kpwa/)  
 - [Code at Github](https://github.com/mdn/pwa-examples/tree/master/js13kpwa)
 
 ![progressive-web-app-example-from-mdn](/images/articles/web-development/progressive-web-app-example-from-mdn.png)
 
-
-
-**The Architecture of a PWA**
-
-According to MDN there are two main approaches to rendering a website, and PWAs can be build with each of them. Also, each of them have its advantages and disadvantages. 
-
-1. Server-Side rendering (SSR): quick first load, but slower nafigation.
-2. Client-Side Rendering (CSR): slower initial load, but it is fast on navigation.
-3. The Streams API: this one is a different approach, that is faster, but also more complex to achieve.
 
 
 #### The SPA Architecture  

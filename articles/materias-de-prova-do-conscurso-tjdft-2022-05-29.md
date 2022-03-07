@@ -181,7 +181,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Métricas e estimativas de software. 
 - [X] Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
 - [X] Métodos para avaliação de usabilidade. 
-- [ ] Padrões de front-end: SPA e PWA. 
+- [X] Padrões de front-end: SPA e PWA. 
 - [X] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
 - [X] Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 - [ ] Controles e testes de segurança para aplicações e webservices. 
