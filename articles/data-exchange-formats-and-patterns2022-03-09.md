@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Data Exchange Formats and Patterns'
 date: '2022-03-09'
 subject: 'development-articles'
-description: '.'
+description: 'Network communiction has made message-based exchange between applications a routine job, allowing for a much more diverse job of exchanging data and even the possibilities of realtime scenarios. So there is the necessity to define elements of architectural patterns, data formats and communication protocols, so the procedure can be properly achieved.'
 ---
 
 # Data Exchange Formats and Patterns
@@ -18,6 +18,9 @@ description: '.'
 	3.5. Event Based/Brokered Messaging      
 	3.6. Data Streaming
 4. ##### Some Considerations in Selecting a Data Exchange Approach
+	4.1. Data Set Characteristics    
+	4.2. Data Environment Characteristics   
+	4.3. Scope Constraints
 5. ##### 
 6. ##### 
 7. #####  
@@ -29,7 +32,7 @@ description: '.'
 
 According to the [Harvard](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms) platform, traditionally the exchange of data was done transfering files.
 
-But now days, network communiction has made message-based exchange between applications a routine job, and also the web and cloud infrastructure have allowed for a muth more diverse job of exchanging data in such a capacity that data format could be even thought in terms of the context job interaction.
+But now days, network communiction has made message-based exchange between applications a routine job, and also the web and cloud infrastructure have allowed for a much more diverse job of exchanging data in such a capacity that data format could be even thought in terms of the context job interaction.
 
 And that platform even lay the ground for what would be necessary towards synchronous realtime web exchanges:
 
@@ -98,14 +101,30 @@ As states the Harvard.edu document, the reason for the exchange of data may vary
 
 Although, some characteristics would help to balance the advantages and disadvantages of a method:
 
-1. **Data Set Characteristics**:      
-	1.1. Data complexity: relates not only in terms of multitude of related data elements, but also in terms of a predefined or not set of properties.    
-		1.1.1. In the case of a more complex and a more diverse data set, a **direct database access** should be the most effective.  
-		1.1.2. In the cases of a set of a more structured set of data a **API service** could be a effective idea.
-	1.2. Frequency of data update: the frequency of data update can bring a substantial overhead, so for these cases more automated methods like APIs and Messaging could be a better choise.   
-	1.3. Data size: large data sets usually requires **file transfer** or **direct database connection**.
-2. **Data Environment Characteristics**: 
-	2.1.
+#### Data Set Characteristics
+
+1. Data complexity: relates not only in terms of multitude of related data elements, but also in terms of a predefined or not set of properties.      
+	1.1. In the case of a more complex and a more diverse data set, a **direct database access** should be the most effective.  
+	1.2. In the cases of a set of a more structured set of data a **API service** could be a effective idea.
+2. Frequency of data update: the frequency of data update can bring a substantial overhead, so for these cases more automated methods like APIs and Messaging could be a better choise.
+3. Data size: large data sets usually requires **file transfer** or **direct database connection**.
+
+#### Data Environment Characteristics
+
+1. Data flows and breadth of solution:  
+	1.1.
+
+
+#### Scope Constraints
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +132,16 @@ Although, some characteristics would help to balance the advantages and disadvan
 https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms
 
 https://renenyffenegger.ch/notes/development/Data/exchange/formats/index
+
+https://en.wikipedia.org/wiki/Aspect-oriented_programming
+
+Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
+Tecnologias Web Services, REST e API RESTful.
+Conhecimento da linguagem GraphQL e Swagger.
+Padrões Advanced message Queuing protocol AMQP e Aspect Oriented Programming?? AOP. 
+Conhecimento do toolkit jBPM e Bizagi BPMS.
+Recomendações W3C. 
+Modelo Nacional de Interoperabilidade (MNI).
 
 ### Further Reading
 
