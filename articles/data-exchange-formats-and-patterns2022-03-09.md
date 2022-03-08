@@ -103,11 +103,13 @@ As states the Harvard.edu document, the reason for the exchange of data may vary
 
 Although, some characteristics would help to balance the advantages and disadvantages of a method:
 
-- **Data Set Characteristics**  
-- **Data Environment Characteristics**  
-- **Scope Constraints**
+1. **Data Set Characteristics**  
+2. **Data Environment Characteristics**  
+3. **Scope Constraints**
+4. **Organization Considerations**
+5. **Consumer Characteristics**
 
-#### Data Set Characteristics
+#### 1. Data Set Characteristics
 
 1. **Data complexity**: relates not only in terms of multitude of related data elements, but also in terms of a predefined or not set of properties.      
 	1.1. In the case of a more complex and a more diverse data set, a **direct database access** should be the most effective.  
@@ -115,7 +117,7 @@ Although, some characteristics would help to balance the advantages and disadvan
 2. **Frequency of data update**: the frequency of data update can bring a substantial overhead, so for these cases more automated methods like APIs and Messaging could be a better choise.
 3. Data size: large data sets usually requires **file transfer** or **direct database connection**.
 
-#### Data Environment Characteristics
+#### 2. Data Environment Characteristics
 
 1. **Data flows and breadth of solution**:  
 	1.1. Message Broker: this kind of application uses a middleare architecture to mediate 1-1, 1-N, and N-M interactions, and can work effectively with large, asynchronous, and highly performant transfers.   
@@ -129,7 +131,7 @@ Although, some characteristics would help to balance the advantages and disadvan
 	6.2. And for short-lived protocols there are HTTP, among others.
 
 
-#### Scope Constraints
+#### 3. Scope Constraints
 
 Constraints are requirements present in any kind of project, so for a data exchange one things wouldn't be different.
 
@@ -148,10 +150,10 @@ Other constraints could be:
 6. Organization Culture
 
 
-#### Organization Considerations
+#### 4. Organization Considerations
 
 
-#### Consumer Characteristics 
+#### 5. Consumer Characteristics 
 
 
 
