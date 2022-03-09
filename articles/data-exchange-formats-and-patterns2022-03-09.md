@@ -21,8 +21,8 @@ description: 'Network communiction has made message-based exchange between appli
 	4.1. Data Set Characteristics    
 	4.2. Data Environment Characteristics   
 	4.3. Scope Constraints   
-	4.4. Consumer Characteristics   
-	4.5. Organization Considerations
+	4.4. Organization Considerations   
+	4.5. Consumer Characteristics  
 5. ##### 
 6. ##### 
 7. #####  
@@ -84,6 +84,50 @@ These are transfers via files exchange that can be in many text-based or binary 
 
 A computer program causes a procedure to execute in a different address space (commonly on another computer on a shared network).
 
+As the article [Remote Procedure Call (RPC)](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system) at the site Techtarget.com states:
+
+`Remote Procedure Call is a software communication protocol that one program can use to request a service from a program located in another computer on a network without having to understanding tht network's detais. RPC is used to call other processes on the remote systems like a local system. A procedure call is also sometimes known as a function call or a subroutine call`.[Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
+
+
+In terms of architecture, the system works the client-server mode, where the requesting program is the client, and the service-providing is the server, and the procedure in itself is a synchronous operation that requires the requesting program to be suspended until the remote procedure finishes.
+
+The Techtarget.com site adds that lightweight designs that processes in parallel or threads could benefit from the use of multiple RPCs to be performed concurrently.
+
+Another interesting point is that the application programming interfaces for RPCs traditionally use the **Interface Definition Language (IDL)** to describe the software components.
+
+- **Steps in the RPC process**:
+1. The client calls the **client stub**. This call is a local procedure which goes to the stack just in a ordinary way.
+2. The client stub packs the procedure parameters (that is called `marshalling`) and messages the local OS.
+3. The **local OS** messages the remote server.
+4. The **server OS** passes the incoming packets to the **server stub**.
+5. The server procedure does unpacks the parameters (called `unmarshalling`).
+6. Once finished the remote procedure, the server stub marshals the return values and messages its own OS.
+7. The remote OS messages the client OS that resends it to the client stub.
+8. The client stub unmarshalls the return parameters, and execution returns to the caller.
+
+- **note**: a `stub` is a small program routine that substitutes for a longer program, possibile to be loaded later, etc.
+
+`RPC spans the transport layer and the application layer in he Open Systems Interconnection (OSI) model of network communication. RPC makes it easier to develop an application that includes multiple programs distributed in a network.` 
+[Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
+
+**Advantages of the RPC**
+- Helps clients communicate with servers via the traditional use of procedure calls in high-level languages.   
+- Can be used in a distributed environment, as well as the local environment.  
+- Supports process-oriented and thread-oriented models.   
+- Hides the internal message-passing mechanism from the use.  
+- Requires only minimal effort to rewrite and redevelop the code.   
+- Provides abstraction, i.e., the messate-passing nature of network communication is hidden from the user.   
+- Omits many of the protoco layers to improve performance.
+
+
+**Disadvantages of the RPC**
+- The client and server use different execution environments for their respective routines, and also uses different resources, impling that the systems aren't always suited for tranfering large amounts of data.   
+- RPC is highly vulnarable to failure because it involves a more layers to the architecture: the communication system, the machines and all ist processes.  
+- There is no uniform for RPC.   
+- RPC is ony interatcion-based, and as such, it doesn't offer any flexibility when it comes to hardware architecture.
+
+
+
 #### Event Based/Brokered Messaging      
 
 An application creates a message containing data and gives it to a service to deliever.
@@ -109,7 +153,7 @@ Although, some characteristics would help to balance the advantages and disadvan
 4. **Organization Considerations**
 5. **Consumer Characteristics**
 
-#### 1. Data Set Characteristics
+#### Data Set Characteristics
 
 1. **Data complexity**: relates not only in terms of multitude of related data elements, but also in terms of a predefined or not set of properties.      
 	1.1. In the case of a more complex and a more diverse data set, a **direct database access** should be the most effective.  
@@ -117,7 +161,7 @@ Although, some characteristics would help to balance the advantages and disadvan
 2. **Frequency of data update**: the frequency of data update can bring a substantial overhead, so for these cases more automated methods like APIs and Messaging could be a better choise.
 3. Data size: large data sets usually requires **file transfer** or **direct database connection**.
 
-#### 2. Data Environment Characteristics
+#### Data Environment Characteristics
 
 1. **Data flows and breadth of solution**:  
 	1.1. Message Broker: this kind of application uses a middleare architecture to mediate 1-1, 1-N, and N-M interactions, and can work effectively with large, asynchronous, and highly performant transfers.   
@@ -131,7 +175,7 @@ Although, some characteristics would help to balance the advantages and disadvan
 	6.2. And for short-lived protocols there are HTTP, among others.
 
 
-#### 3. Scope Constraints
+#### Scope Constraints
 
 Constraints are requirements present in any kind of project, so for a data exchange one things wouldn't be different.
 
@@ -150,16 +194,41 @@ Other constraints could be:
 6. Organization Culture
 
 
-#### 4. Organization Considerations
+#### Organization Considerations
+
+In terms of the organizations involved with data exchange projects, the Harvard.edu presents a case of some of their own efforts to design a viable project.
+
+Firstly, the site presents the challenges that are involved in such speciffic cases where there are the necessitity to integrate multiple and diverse point of exchange:
+
+`integrate data within and across multiple business units[...]Unfortunately, because each of these approaches requires detailed knowledge of the operational database or application involved, they are tightly coupled and difficult to change. More importantly, as the number of individual point-to-point exchanges grow, the overall environment becomes increasingly complex and difficult to manage over time. Database links in particular are normally created and maintained by external groups. Wide use of this approach can lead to a substantial access management burden. While there are circumstances in which point-to-point custom integrations are appropriate, they should be carefully considered as they are difficult to evolve based on changing requirements.`[Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
+
+So, in this case presented by the institution, the thight coupled solutions using **file transfer**, **direct database** and **remote procedure calls** implyed a overhead of manual integrations, just as high access rates.
+
+On the other hand, the site assumes that a solution more alligned with Broke Messaging and Web Services could easily coupe with the effort to support a wider enterprise of data integration.
+
+Also, this last solution could help to bring some isolation from different contexts in terms of the use of the database support.
 
 
-#### 5. Consumer Characteristics 
+#### Consumer Characteristics 
+
+1. **Human beings and front-facing applications**: the docs observes that depending on the context of the personel related to the data exchange different solutions could be thought:  
+	1.1. Where there are basic and common tools available, **text files** like CSV could be a practical solution.   
+	1.2. For developers, **APIs** should be a upgrade, implementing besides the text based returns, but also hypermedia, etc.   
+	1.3. But systems that could be exchanging with private data, and also back-end services, demands for more security could bring the caso to applications like **Remote Procedure Call (RPC)**.
+2. **Receiving system processes**: the systems already in excution can orient the design of a solution for data exchange that it is not always the most convinient way, and to cost/benefit to bring a different solution could be impractical.
+3. **Usage by the receiving system**: in this case here, the objective is to observe the kind of use the data being exchanged plays.   
+	3.1. Data being used to support some speciffic feature or need, could use from a API service in a effective way.   
+	3.2. On the other hande, data being used to provide foundation for a platform or for a reporting system, could effectively rely on a file transfer or a database method.
+
+An interesting summary from the Harvard.edu docs:
+
+![table-with-data-exchange-information](/images/articles/development/table-with-data-exchange-information.png)
 
 
 
 
 
-https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms
+
 
 https://renenyffenegger.ch/notes/development/Data/exchange/formats/index
 
@@ -177,9 +246,11 @@ Modelo Nacional de Interoperabilidade (MNI).
 
 [Web Architecture - W3C](https://www.w3.org/standards/webarch/)
 
+[Remote Procedure Call (RPC) - Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
+
 ### References
 
-[]()
+[Remote Procedure Call (RPC) - Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
 
 []()
 
