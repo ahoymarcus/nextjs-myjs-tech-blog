@@ -38,11 +38,11 @@ description: 'Network communiction has made message-based exchange between appli
 	6.2. AFTP (Accelerated File Transfer Protocol)  
 	6.3 AMQP   
 	6.4. AS2 (Applicability Statement 2)   
-	6.5. HTTP (Hypertext Transfer Protocol)   
-	6.6. HTTPS (HTTP over SSL)    
-	6.7. File sharing protocol (CIFS/SMB and NFS)  
-	6.8. FTP (File Transfer Protocol)    
-	6.9. FTPS (FTP over SSL)    
+	6.5. File sharing protocol (CIFS/SMB and NFS)  
+	6.6. FTP (File Transfer Protocol)    
+	6.7. FTPS (FTP over SSL)  
+	6.8. HTTP (Hypertext Transfer Protocol)   
+	6.9. HTTPS (HTTP over SSL)      
 	6.10. LDAP   
 	6.11. SCP (Secure Copy)   
 	6.12. SFTP (SSH File Transfer Protocol)   
@@ -384,45 +384,145 @@ And it's a primary language with Docker.
 - **Disadvantages**   
 - It has some difficulties while working with spaces and indentations.   
 - It has a complex syntax and it's very complex to reprent configuration in the hierarchi of data.
-
+    
+    
 - read more about YAML:
 - [YAML - Tutorials
  - W3schools.io](https://www.w3schools.io/file/yaml-introduction/)
+
+
 
 ### Transfer Protocols
 
 #### APIs that are confused with protocols
 
+The Harvard.edu docs on data exchange points out that certain tools are sometime mistaken with protocols, and give the Java Database Connectivity (JDBC), the the Open Database Connectivity (ODBC), and the Amazon S3 as examples.
+
+The JDBC and the ODBC are more properly described as APIs to access database servers, where the first one is dependent on Java language, and the ODBC is language independent.
+
+The Amazon S3 is a service that offers object storage through a web sevice interface.
+
+ 
 #### AFTP (Accelerated File Transfer Protocol)
+
+The Accelerated File Transfer Protocol (AFTP) is a hybrid protocol that uses TCP and UDP to cope with great distances while maintain the exchange without degrading.
+
+This is different from what is seem with `WAN file transfers, especially those carried out over great distances, are easily affected by poor network conditions like latency and packet loss, which result in considerably degraded throughputs`. 
+[Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
+
 
 #### AMQP
 
+**The Adavanced Message Queuing Protocol (AMQP) is an open standard for passing messages between applications or organizations.**
+
+It supports queuing and rounting (including point-to-point and publish-and-subscribe) and offers authentication and encryption by way of Simple Authentication and Security Level (SASL) or Transport Layer Security (TSL), relaying on a transport protocol such as TCP.
+
+
 #### AS2 (Applicability Statement 2)
 
-#### HTTP (Hypertext Transfer Protocol)
+The Applicability Statement 2 (AS2) `is a specification about how to transport structured business-to-business data securely and reliably over the Internet. Security is achieved by using digital certificates and encryption`.
+[AS2 - Wikipedia](https://en.wikipedia.org/wiki/AS2) 
 
-#### HTTPS (HTTP over SSL)
+AS2 is built for EDI (Eletronic Data Interchange) transactions, the automated information exchanges normally seem in the manufacturing and retail industries. And EDI is now also used in healthcare, as a result of the HIPAA legislation.
+
+Although much of the protocols that relates to data exchange are capable of supporting B2B exchanges, there are few protocols that are really designed specifically for such tasks, just as AS2 is. 
+
 
 #### File sharing protocol (CIFS/SMB and NFS)
 
+The Server Message Block (SMB) protocol is a network file sharing protocol, and as implemented in Microsoft Windows is known as Microsft SMB Protocol.
+
+The Common Internet File System(CIFS) is a dialect of SMB.
+
+The Network File System (NFS) is a protocol developed by Sun Microsystems and serves essentially the same purpose as SMB, for example, to access files systems over a network as if they were local. Thus, it is incompatible with CIFS/SMB, and cannot speak directly to SMB servers.
+
+
 #### FTP (File Transfer Protocol)
+
+The File Transfer Protocol (FTP) is built for both single file and bulk file transfers. 
+
+It's a weak security model, and in particular should not be used with Health Insurance Portability Accountability (HIPAA), Payment Card Industry - Data Security Standard (PCI-DSS), Sarbanes-Oxley Act (SOx), Gramm-Leach-Billey Act (GLBA), EU data, etc.
+
 
 #### FTPS (FTP over SSL)
 
+This is the secure counterpart for file trasfer protocol, that retains all the gain of FTP plus the security features of Secure Socket Layer (SSL), including data-in-motion encryption, and client-server authentication.
+
+`Because FTPS is based on FTP, you'll still be subjected to the same firewall issues that come with FTP.`
+[Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
+
+
+#### HTTP (Hypertext Transfer Protocol)
+
+The Hyper Transfer Protocol **is the underlying protocol of the Internet. It's an application layer protocol that is sent over the TCP layer, though any reliable transport protocol could theoretically be used.** 
+
+HTTP is less prone to firewall issues than FTP, however by itself this protocol is inherently insecure and incapable of meeting regulatory compliance or securing data.
+
+
+#### HTTPS (HTTP over SSL)
+
+HTTPS is the extension of the Hypertext Transfer Protocol, and it is encrypted using a Trasport Layer Security (TSL), or, formely, its predecessor, the Secure Sockets Layer (SSL).
+
+This protocol can also be refered as HTTP over TSL or HTTP over SSL, and it's mandatory for all US Government web sites.
+
+
 #### LDAP
+
+The Lightweight Directory Access Protocol (LDAP) is a standards-based protocol used to access and manage direcory information. 
+
+It reads and edits directories over IP networks and runs directly over TCP/IP using simple string formats for data transfer.
+
+And the LDAP protocol is independent of any particular LDAP server implementation.
+
 
 #### SCP (Secure Copy)
 
+The Secure Copy (SCP) is a more primitive version of the SFTP. It also runs on SSH, so it already comes with the same security features.
+
+`The only instance you'll probably need SCP is if you'll be exchanging files with an organization that only has a legacy SSH server`
+[Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
+
+
 #### SFTP (SSH File Transfer Protocol)
+
+The SSH File Transfer Protocol (SFTP) is a protocol based on the network protocol SSH (Secure Shell), and unlike both FTP and FTPS, SFTP uses only one connection and encrypts both authentication information and data file being transfered. 
+
+**The main advantage of SFTP is that it'a more firewall-friendly.**
+
 
 #### WebSocket
 
+**This is a full-duplex communication channels over a single TCP connection, and eventhough it is a differnt protocol from HTTP, the RFC 6455 states that WebSocket is designed to work over the HTTP ports 80 and 443 as well as to support HTTP proxies and intermediaries.**
+
+WebSocket, just like HTTP, is located at the layer 7 in the OSI model, and it is dependent on the TCP from the 4 layer.
+
+The WebSockets provides a `standardized way fot the server to send content to the client without being first requested by the client and allowing messages to be passed back and forth while keeping the connection open. In this way, a two-way ongoing conversation can take place between the client and the server`.
+[Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
 
 
 
 
 
-https://renenyffenegger.ch/notes/development/Data/exchange/formats/index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 https://en.wikipedia.org/wiki/Aspect-oriented_programming
 
@@ -443,7 +543,7 @@ Modelo Nacional de Interoperabilidade (MNI).
 
 ### References
 
-[Remote Procedure Call (RPC) - Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
+[Data Exchange Mechanisms and Considerations - Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
 
 []()
 
