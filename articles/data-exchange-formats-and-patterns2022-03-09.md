@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Data Exchange Formats and Patterns'
-date: '2022-03-07'
+date: '2022-03-09'
 subject: 'development-articles'
 description: 'Network communiction has made message-based exchange between applications a routine job, allowing for a much more diverse job of exchanging data and even the possibilities of realtime scenarios. So there is the necessity to define elements of architectural patterns, data formats and communication protocols, so the procedure can be properly achieved.'
 ---
@@ -23,8 +23,30 @@ description: 'Network communiction has made message-based exchange between appli
 	4.3. Scope Constraints   
 	4.4. Organization Considerations   
 	4.5. Consumer Characteristics  
-5. ##### 
-6. ##### 
+5. ##### Data Formats
+	5.1. Binary Based Formats   
+	5.2. CORBA   
+	5.3. CSV 
+	5.4. Google Protocol Buffers, Avro, Thrift   
+	5.5. JSON   
+	5.6. Plain Text Format     
+	5.7. Text-Based Formats   
+	5.8. XML   
+	5.9. YAML
+6. ##### Transfer Protocols
+	6.1. APIs that are confused with protocols   
+	6.2. AFTP (Accelerated File Transfer Protocol)  
+	6.3 AMQP   
+	6.4. AS2 (Applicability Statement 2)   
+	6.5. HTTP (Hypertext Transfer Protocol)   
+	6.6. HTTPS (HTTP over SSL)    
+	6.7. File sharing protocol (CIFS/SMB and NFS)  
+	6.8. FTP (File Transfer Protocol)    
+	6.9. FTPS (FTP over SSL)    
+	6.10. LDAP   
+	6.11. SCP (Secure Copy)   
+	6.12. SFTP (SSH File Transfer Protocol)   
+	6.13. WebSocket
 7. #####  
 8. ##### 
 9. ##### Further Reading
@@ -74,12 +96,8 @@ This procedure is a direct connection from a application to the database, that a
 
 #### File Transfer     
 
-These are transfers via files exchange that can be in many text-based or binary formats:
-
-- Text-Based formats: these ones have the advantage of having a human redability.   
-- JSON  
-- XML   
-- CVS   
+These are transfers via files exchange that can be in many text-based or binary formats, just like JSON, XML, CSV, etc.
+ 
 
 #### Remote Procedure Call      
 
@@ -120,8 +138,9 @@ Another interesting point is that the application programming interfaces for RPC
 - Requires only minimal effort to rewrite and redevelop the code.   
 - Provides abstraction, i.e., the messate-passing nature of network communication is hidden from the user.   
 - Omits many of the protoco layers to improve performance.
-
-
+   
+   
+	  
 - **Disadvantages of the RPC**
 - The client and server use different execution environments for their respective routines, and also uses different resources, impling that the systems aren't always suited for tranfering large amounts of data.   
 - RPC is highly vulnarable to failure because it involves a more layers to the architecture: the communication system, the machines and all ist processes.  
@@ -221,10 +240,182 @@ Also, this last solution could help to bring some isolation from different conte
 	3.1. Data being used to support some speciffic feature or need, could use from a API service in a effective way.   
 	3.2. On the other hande, data being used to provide foundation for a platform or for a reporting system, could effectively rely on a file transfer or a database method.
 
-An interesting summary from the Harvard.edu docs:
+
+**An interesting summary from the Harvard.edu docs**
 
 ![table-with-data-exchange-information](/images/articles/development/table-with-data-exchange-information.png)
 
+
+### Data Formats  
+
+#### Binary Based Formats
+
+The primary advantage to binary formats is speed, because their encoding are typically 10x to 100x faster than text-coded codecs.
+
+
+#### CORBA
+
+The Common Object Request Broker Architecture or CORBA was designed to provide communication with complex data objects between different systems.
+
+It is more than just a binary format, because it includes protocol and architecture standards.
+
+- **Advantages**    
+- Language and operating system independent.   
+- Compact data representation.  
+- Built in mapping in Java covers almost all features.   
+- Open-source versions are available.
+
+
+- **Disadvantages**    
+- Complex, difficult learning curve.   
+- Not well supported by OS vendors.  
+- Difficult to use ir a server and/or client is behind a firewall or if network address translation is being used.
+
+
+#### CSV
+
+The Comma Separated Values format is a text based format that store information in rows and that uses commas to separate the values in a row.
+
+And although the **C** in CSV stands for comma, there are good reasons to use semicolons to delimit fields one from another.
+
+First, because is some countries comma is already used as a decimal separator.
+
+Also, semicolons make more sense to be used as separator because they are less likey to occur in ordinary text than commas.
+
+
+- **Advantages**    
+- This is probably the most common import and export format for databases and spreadsheets.
+
+
+- **Disadvantages**  
+- They are not self-describing, especially the data types. Thus, if CSV files are exchanged between multiple parties, the data types of each field needs to be communicated separately.   
+- This format may stumble with the use of comma separated values or with localization routines.   
+- CSV cannot be annotated with comments. 
+
+#### Google Protocol Buffers, Avro, Thrift
+
+Protocol buffers and similar products are language-neutral, platform-neutral, extensible mechanisms for serializing structured data.
+
+- **Advantages**    
+- Very compact representation, approaching theoretical maximum.  
+- Tools for many languages.   
+- Not sensitive to version changes.    
+- Include schemas and generated documentation.
+
+
+- **Disadvantages**    
+- Not readable or editable by developers.   
+- Yer another data definition syntax to learn.
+
+#### JSON
+
+JSON is a language-independent data format. It was derived from JavaScript, but many programming languages include code to generate and parse JSON-format data.
+
+- **Advantages**   
+- Readable and editable by developers, easily consumed by web browsers.  
+- Simpler than XML.  
+- Supported by highly developed browser toolkits such as JQuery. 
+
+
+- **Disadvantages**   
+- Bulky text with low playload/formating ratio, but not as bad as XML.  
+- Client CPU time required to parse.   
+- Not as flexible as XML for some data structures and binary data.
+
+
+#### Plain Text Format
+
+Some types of data are easily represented as single elements with a line structure.
+
+- **Advantages**    
+- Readable and editable by developers.   
+- Fairly compact representation for simple types.  
+
+
+- **Disadvantages**  
+- Possible confusion introduced by punctuation in values.  
+- Limited to very simple structures.   
+- Is inherently 'flat' and cannot easily represent hierarchical data.
+
+
+#### Text-Based formats
+
+These ones have the advantage of having a human redability.
+
+
+
+#### XML
+
+This is a flexible text format, that can store data in a hierarchical form and tha can be graphically presented in a tree like model. 
+
+- **Advantages**   
+- Readable and editable by developers.  
+- Error checking by schema and Document Type Definition (DTD).   
+- Can represent complex hierarchies of data.  
+- Unicode gives flexibility for international operation.   
+- Plenty of tools in all computer languages for both creation and parsing.   
+- Supoort Namespace to avoid name conflicts.
+  
+  
+- **Disadvantages**   
+- Bulky text with low payload/formating ratio.   
+- Both creation and client-side parsing are CPU intensive.   
+- Some common word processing characters are illegal.   
+- Images and other bynary data require extra encoding.
+
+#### YAML
+
+It's name stands for Yet Another Markup Language or even Ain't Markup Language.
+
+It's a text data format commonly used for configuration files, that uses indentation to define its structure.
+
+And it's a primary language with Docker.
+
+`YAML is the superset of JSON. You heard it right. Whatever valid JSON code you have, it will be parsed by YAML compiler. So choosing YAML over JSON for your project you have one advantage. You can parse both JSON and YAML code with the single parser (YAML parser).`
+[csestack.org](https://www.csestack.org/advantages-disadvantages-yaml/)
+
+
+- **Advantages** 
+- Human readable.   
+- More compact than JSON or XML.      
+- Portable between programming languages.  
+- Unicode character support.   
+ 
+- **Disadvantages**   
+- It has some difficulties while working with spaces and indentations.   
+- It has a complex syntax and it's very complex to reprent configuration in the hierarchi of data.
+
+- read more about YAML:
+- [YAML - Tutorials
+ - W3schools.io](https://www.w3schools.io/file/yaml-introduction/)
+
+### Transfer Protocols
+
+#### APIs that are confused with protocols
+
+#### AFTP (Accelerated File Transfer Protocol)
+
+#### AMQP
+
+#### AS2 (Applicability Statement 2)
+
+#### HTTP (Hypertext Transfer Protocol)
+
+#### HTTPS (HTTP over SSL)
+
+#### File sharing protocol (CIFS/SMB and NFS)
+
+#### FTP (File Transfer Protocol)
+
+#### FTPS (FTP over SSL)
+
+#### LDAP
+
+#### SCP (Secure Copy)
+
+#### SFTP (SSH File Transfer Protocol)
+
+#### WebSocket
 
 
 
@@ -245,6 +436,8 @@ Modelo Nacional de Interoperabilidade (MNI).
 ### Further Reading
 
 [Web Architecture - W3C](https://www.w3.org/standards/webarch/)
+
+[Data exchange formats - Renenyffenegger.ch](https://renenyffenegger.ch/notes/development/Data/exchange/formats/index)
 
 [Remote Procedure Call (RPC) - Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
 
