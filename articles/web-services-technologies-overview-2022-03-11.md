@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Web Services Technologies - Overview'
 date: '2022-03-11'
-subject: 'web-dev-articles''
+subject: 'web-dev-articles'
 description: '.'
 ---
 
