@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Data Exchange Formats and Patterns'
-date: '2022-03-09'
+date: '2022-03-07'
 subject: 'development-articles'
 description: 'Network communiction has made message-based exchange between applications a routine job, allowing for a much more diverse job of exchanging data and even the possibilities of realtime scenarios. So there is the necessity to define elements of architectural patterns, data formats and communication protocols, so the procedure can be properly achieved.'
 ---
