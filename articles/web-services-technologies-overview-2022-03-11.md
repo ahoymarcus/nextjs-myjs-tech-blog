@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Web Services Technologies - Overview'
-date: '2022-03-08'
+title: ''
+date: '2022-03-11'
 subject: 'web-dev-articles''
 description: '.'
 ---
@@ -50,4 +50,5 @@ Tecnologias Web Services, REST e API RESTful.
 []()
 
 []()
+
 
