@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Data Exchange Formats and Patterns'
-date: '2022-03-09'
+date: '2022-03-08'
 subject: 'development-articles'
 description: 'Network communiction has made message-based exchange between applications a routine job, allowing for a much more diverse job of exchanging data and even the possibilities of realtime scenarios. So there is the necessity to define elements of architectural patterns, data formats and communication protocols, so the procedure can be properly achieved.'
 ---
@@ -76,6 +76,7 @@ This procedure is a direct connection from a application to the database, that a
 
 These are transfers via files exchange that can be in many text-based or binary formats:
 
+- Text-Based formats: these ones have the advantage of having a human redability.   
 - JSON  
 - XML   
 - CVS   
@@ -110,7 +111,8 @@ Another interesting point is that the application programming interfaces for RPC
 `RPC spans the transport layer and the application layer in he Open Systems Interconnection (OSI) model of network communication. RPC makes it easier to develop an application that includes multiple programs distributed in a network.` 
 [Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
 
-**Advantages of the RPC**
+
+- **Advantages of the RPC**
 - Helps clients communicate with servers via the traditional use of procedure calls in high-level languages.   
 - Can be used in a distributed environment, as well as the local environment.  
 - Supports process-oriented and thread-oriented models.   
@@ -120,12 +122,11 @@ Another interesting point is that the application programming interfaces for RPC
 - Omits many of the protoco layers to improve performance.
 
 
-**Disadvantages of the RPC**
+- **Disadvantages of the RPC**
 - The client and server use different execution environments for their respective routines, and also uses different resources, impling that the systems aren't always suited for tranfering large amounts of data.   
 - RPC is highly vulnarable to failure because it involves a more layers to the architecture: the communication system, the machines and all ist processes.  
 - There is no uniform for RPC.   
 - RPC is ony interatcion-based, and as such, it doesn't offer any flexibility when it comes to hardware architecture.
-
 
 
 #### Event Based/Brokered Messaging      
@@ -234,8 +235,7 @@ https://renenyffenegger.ch/notes/development/Data/exchange/formats/index
 
 https://en.wikipedia.org/wiki/Aspect-oriented_programming
 
-Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
-Tecnologias Web Services, REST e API RESTful.
+
 Conhecimento da linguagem GraphQL e Swagger.
 Padrões Advanced message Queuing protocol AMQP e Aspect Oriented Programming?? AOP. 
 Conhecimento do toolkit jBPM e Bizagi BPMS.
