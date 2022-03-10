@@ -3,12 +3,13 @@ author: 'Marcus Vinicius Richa'
 title: 'Web Services Technologies - Overview'
 date: '2022-03-11'
 subject: 'web-dev-articles'
-description: '.'
+description: 'Web Services are software systems that follow some standards, protocols and architectural patterns for applying interoperation between machine communications over the Internet or some other network. Some common types of web services are nowdays are SOAP web services, RESTful web services, and GraphQL web services.'
 ---
 
 # Web Services Technologies - Overview
 
-1. ##### Introduction  
+1. ##### Introduction 
+2. ##### Web Services 
 2. ##### Universal Description Discovery and Integration (UDDI)
 	2.1. History of UDDI   
 	2.2. UDDI Elements   
@@ -32,7 +33,50 @@ description: '.'
 
 ### Introduction
 
+There are different perspectives on how to define the context of the Web Services, while some focuses on the type of service provided, others on the technology used, but a interesting definition can be found at [TutorialsPoint](https://www.tutorialspoint.com/webservices/what_are_web_services.htm):
 
+`A web service is a collection of open protocols and standards use for exchanging data between applications or systems. Software applications written in various programming languages and running on various platforms can use web services to exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. This interoperability (e.g. between Java and Python, or Windows and Linux applications) is due to the use of open standards`.
+
+
+This definition is wilde enough to accomodate the differents contexts, technologies and types of sevice provided by a web service. And in summation, a couple of characteristics could be appointed:
+
+- The use of a application architecture to allow communication between devices over the network.
+- The definition of standards or protocol for the exchanging of the information between the devices or applications.
+- Software systems that follow those same standards, protocols and architectural patterns for applying interoperation between machine communications. 
+
+
+
+### Web Services
+
+Some common types of web services nowdays:
+
+1. **SOAP web services**
+2. **RESTful web services**
+3. **GraphQL web services**
+
+
+- **Web Services Features**
+- **XML-Based**: the use of XML at data description and data transportation layers, because XML excludes the necessity for networking, OS, or platform biding configurations and allows interopeability.
+- **Loosely Coupled**: the connecitons between the dispostives or applications are not direct, and this layer of abstraction allows changes and innovations over time without the necessity of changes at the communication machines.
+- **Coarse-Grained**: 
+- **Supports Remote Procedure Calls (RPCs)**: the web services technologies allow consumers to invoke procedures, functions, and methods from remote systems that exposes input and output frameworks.
+- ** Supports Documents Exchange**: web services support the transparent transfer of documents to facilitate business integration.
+
+
+
+
+
+
+
+
+
+
+
+https://horizontal.blog/2020/06/09/fine-grained-vs-coarse-grained-apis/#:~:text=In%20the%20tech%20world%2C%20granularity,large%20number%20of%20smaller%20components.
+
+https://www.javatpoint.com/what-is-web-service
+
+https://www.tutorialspoint.com/webservices/why_web_services.htm
 
 ### Universal Description Discovery and Integration (UDDI)
 
@@ -194,7 +238,7 @@ The WSDL language breaks down a web service into three specif elements:
 - **Documentation**: this is a utility element.
 - **Import**: this is also a utility element.
 
-(a) Bellow there is a exemple of the main structure of a WSDL document - [TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_elements.htm)
+[TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_elements.htm) - Bellow there is a exemple of the main structure of a WSDL document  
 ![example-of-main-structure-of-wsdl-document](/images/articles/web-development/example-of-main-structure-of-wsdl-document.png)
 
 
@@ -218,11 +262,15 @@ Tecnologias Web Services, REST e API RESTful.
 
 ### Further Reading
 
-[WSDL Introduction - TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_introduction.htm)
-
 [Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
 
+[Web Services Tutorial - TutorialsPoint](https://www.tutorialspoint.com/webservices/what_are_web_services.htm)
+
 [SOAP Tutorial - TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
+
+[GraphQL Tutorial - JavaTPoint](https://www.javatpoint.com/graphql)
+
+[What is GraphQL? - Medium.com](https://medium.com/devgorilla/what-is-graphql-f0902a959e4)
 
 ### References
 
