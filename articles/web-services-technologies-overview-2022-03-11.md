@@ -18,8 +18,10 @@ description: '.'
 	2.6. UDDI with WSDL   
 	2.7. UDDI Specifications
 3. #####  Web Services Description Language (WSDL) 
-	3.1.	
-	3.2.
+	3.1. Features of WSDL   
+	3.2. WSDL Usage   
+	3.3. WSDL History   
+	3.4. WSDL Elements
 4. ##### 
 5. ##### 
 6. ##### 
@@ -136,6 +138,64 @@ The UDDI project describes a set of specifications that documents operations to 
 
 ###  Web Services Description Language (WSDL)
 
+The WSDL is a stadard format for describing web services, which was developed jointly by Microsoft and IBM.
+
+
+#### Features of WSDL
+ 
+- It's a XML-based protocol for information exchange in decentralized and distributed environments.  
+- It describes how to access a web service and what operations it will perform.  
+- It's describes interfaces with XML-based services. 
+- It's a integral part of the UDDI business registry as a description language for the web service.    
+- WSDL is pronouced as 'wiz-dull' and spelled out as 'W-S-D-L'.
+
+
+#### WSDL Usage
+
+WSDL is often used in combination with SOAP and XML Schema to provide web services over the Internet, where a client program can connect to a web service and read the WSDL to determine what functions are available.
+
+Afterwards, the client can use SOAP to actually call one of the functions listed in the WSDL.
+
+
+#### WSDL History
+
+In March 2001, WSDL 1.1 was submited as a W3C Note by Ariba, IBM and Microsoft.
+
+The WSDL 1.1 hasn't been endorsed by the World Wide Consortium (W3C) yet, however it has been upgraded for version 2.0 to be remmended by W3C in its turn.
+
+In June 2007, WSDL has finally received the W3C recommendation and received the approval as an official W3C standard.
+[Infoq.com](https://www.infoq.com/news/2007/07/wsdl-2-recommendation/)
+
+
+#### WSDL Elements
+
+The WSDL language breaks down a web service into three specif elements:
+
+1. **Types**: describes the inputs and outputs and how they are mapped into the service, but it's not required for XML Schema built-in simple types.   
+	1.1. They can also be declared in separate for reusable purposes.
+2. **Operation**: there are 4 basic patterns operations.  
+	2.1. One-way operation   
+	2.2. Request-response operation    
+	2.3. Solicit-response operation   
+	2.4. Notification operation
+3. **Binding**: this element provides specific details on how a portType operation will actually be transmitted over the wire.   
+	3.1. It allow transports including HTTP GET/POST and SOAP. 
+
+`A WSDL document has various elements, but they are contained within these three main elements, which can be developed as separate documents and then they can be combined or reused to form complete WSDL files`.
+[TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_introduction.htm)
+
+
+- Some of the other smaller elements, including 2 utilities elements:
+- **Definition**: it is the root element for all WSDL documents.
+- **Message**: it web services provides two messages, one for input and another for output.
+- **Port Type**: this element can combine multiple message elements to create a 'one-way' or 'round-trip' operation.
+- **Port**: this element defines an individual endpoint by specifying a single, and not more than one address for a biding.
+- **Service**: this element defines the ports supported by the web service. So, the service element isto become a collection of ports when there is more than one protocol available at the web service.
+- **Documentation**: this is a utility element.
+- **Import**: this is also a utility element.
+
+(a) Bellow there is a exemple of the main structure of a WSDL document - [TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_elements.htm)
+![example-of-main-structure-of-wsdl-document](/images/articles/web-development/example-of-main-structure-of-wsdl-document.png)
 
 
 
@@ -143,6 +203,15 @@ The UDDI project describes a set of specifications that documents operations to 
 
 
 
+
+
+
+
+
+
+https://www.javatpoint.com/web-services-tutorial
+
+https://www.tutorialspoint.com/soap/what_is_soap.htm
 
 Padrões XML, XSLT, Universal Description Deiscovery and Integration (UDDI), Web Services Descriptioin Language (WSDL), Simple Object Access Protocol (SOAP) e JSON.
 Tecnologias Web Services, REST e API RESTful.
