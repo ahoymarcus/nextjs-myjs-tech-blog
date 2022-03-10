@@ -10,21 +10,26 @@ description: 'Web Services are software systems that follow some standards, prot
 
 1. ##### Introduction 
 2. ##### Web Services 
-2. ##### Universal Description Discovery and Integration (UDDI)
-	2.1. History of UDDI   
-	2.2. UDDI Elements   
-	2.3. UDDI Technical Architecture   
-	2.4. UDDI XML Data Schema/Model   
-	2.5. UDDI Interfaces   
-	2.6. UDDI with WSDL   
-	2.7. UDDI Specifications
-3. #####  Web Services Description Language (WSDL) 
-	3.1. Features of WSDL   
-	3.2. WSDL Usage   
-	3.3. WSDL History   
-	3.4. WSDL Elements
-4. ##### 
-5. ##### 
+	2.1. Web Services Features   
+	2.2. Web Service Granularity   
+	2.3. Web Service Architecture   
+	2.4. SOAP Web Services   
+	2.5. RESTful Web Services   
+	2.6. SOAP vs REST Web Services
+3. ##### Universal Description Discovery and Integration (UDDI)
+	3.1. History of UDDI   
+	3.2. UDDI Elements   
+	3.3. UDDI Technical Architecture   
+	3.4. UDDI XML Data Schema/Model   
+	3.5. UDDI Interfaces   
+	3.6. UDDI with WSDL   
+	3.7. UDDI Specifications
+4. #####  Web Services Description Language (WSDL) 
+	4.1. Features of WSDL   
+	4.2. WSDL Usage   
+	4.3. WSDL History   
+	4.4. WSDL Elements 
+5. ##### SOAP Protocol
 6. ##### 
 7. ##### 
 8. ##### 
@@ -48,6 +53,18 @@ This definition is wilde enough to accomodate the differents contexts, technolog
 
 ### Web Services
 
+A web service as a system or a unit of managed code, it functions to expose fuatures (data or procedures) throgh HTTP requests so other applications can benefit from that functionality.
+
+Also, the web service works to be multi-platform and technology independent, since it works to deliever communication independently of the kind of machines or systems involved.
+
+Standatization is one of the forms that web services apply so that interoperability may be achieved.
+
+And web services also apply to open source technology to lower the costs:
+
+`Web services use SOAP over HTTP protocol, so you can use your existing low-cost internet for implementing web services. This solution is much less costly compared to proprietary solutions like EDI/B2B. Besides SOAP over HTTP, web services can also be implemented on other reliable transport mechanisms like FTP.`
+[TutorialsPoint](https://www.tutorialspoint.com/webservices/why_web_services.htm)
+
+
 Some common types of web services nowdays:
 
 1. **SOAP web services**
@@ -55,28 +72,95 @@ Some common types of web services nowdays:
 3. **GraphQL web services**
 
 
-- **Web Services Features**
+#### Web Services Features
+
 - **XML-Based**: the use of XML at data description and data transportation layers, because XML excludes the necessity for networking, OS, or platform biding configurations and allows interopeability.
 - **Loosely Coupled**: the connecitons between the dispostives or applications are not direct, and this layer of abstraction allows changes and innovations over time without the necessity of changes at the communication machines.
-- **Coarse-Grained**: 
+- **Coarse-Grained**: it's important to scale the web service architecture depending on the size of the company operation, because determining the API granularity will impact project deliverability, resource usage, deployment rollouts, application network complexity, etc. 
 - **Supports Remote Procedure Calls (RPCs)**: the web services technologies allow consumers to invoke procedures, functions, and methods from remote systems that exposes input and output frameworks.
 - ** Supports Documents Exchange**: web services support the transparent transfer of documents to facilitate business integration.
 
 
 
+#### Web Service Granularity
+
+| Property | Coarse-Grained APIs | Fine-Grained APIs |
+| -------- | ------------------- | ----------------- |
+| Reusability  | Low | High |
+| Scalability  | Low | High |
+| Security     | Scarse | Detailed |
+| Management Overhade | Low | High |
+| Performance  | Neutral | Neutral |
+| Latency | Single-point failure | Cumulative Latency |
+| Resource Usage  | Low | High |
+| Complexity   | Low  |  High |
+| Deployment   | Harder | Easier |
+| Agility  | Low | High |
+   
+   
+- read more:
+- `Fine-grained APIs vs. coarse-grained APIs` [Horizontal.blog](https://horizontal.blog/2020/06/09/fine-grained-vs-coarse-grained-apis/#:~:text=In%20the%20tech%20world%2C%20granularity,large%20number%20of%20smaller%20components)
 
 
+#### Web Service Architecture
+
+There are two important points about a web service architecture:
+
+1. **The individual roles of communication**  
+	1.1. The provider  
+	1.2. The Requestor   
+	1.3. The service registry
+2. **The service protocol stack**   
+	2.1. The service transport layer: that currently can include protocols like HTTP, SMTP, FTP, and new protocols like Blocks Extensible exchange Protocol (BEEP), and HTTP is the most popular option.      
+	2.2. The service messaging: which it is base on XML for data format and encoding, and could include applications like XML-RPC and SOAP.   
+	2.3. The service description: this layer is responsible for describing the interface and currently is handled by Web Service Description Language (WSDL).   
+	2.4. The service discovery: this layer is responsible for centralizing the services into a common registry and to provide a easy publish/find functionality, and currently this service is handled by Universal Description Discovery Integration (UDDI).
 
 
+#### SOAP Web Services
+
+SOAP stands for Simple Object Access Protocol, and it is a XML-based protocol which is support by World Wilde Consortium (W3C).
+
+- Besides, SOAP is also:
+- Platform independent
+- Software language independent.
+
+- **Adavantages of SOAP web services**
+- It defines its own security known as WS Security.  
+- Platform and language independent.
+
+- **Adavantages of SOAP web services**
+- It's slower and consumes more bandwidth, since XML is bulkier and has to be parse and validated by the many standards.   
+- It's dependent on the WSDL as a mechanism of discovery.    
+- It's dependent on the WSDL as a mechanism of discovery.    
 
 
+#### RESTful Web Services
+
+RESTful is a service that complies with the architecture style of Representational State Transfer (REST).
+
+- **Adavantages of RESTful web services**
+- It's fast, because it is free from many of the restrict specifications from SOAP, and consumes less bandwith.  
+- It's platform and language independent.  
+- It's permits a wilder possibility of data formats: Plain text, HTML, XML, JSON, etc.   
+- It can use SOAP as a web service implementation.
+- It can use SOAP as a web service implementation instead of the pure HTTP.
 
 
-https://horizontal.blog/2020/06/09/fine-grained-vs-coarse-grained-apis/#:~:text=In%20the%20tech%20world%2C%20granularity,large%20number%20of%20smaller%20components.
+#### SOAP vs REST Web Services
 
-https://www.javatpoint.com/what-is-web-service
+| SOAP | REST |
+| ---- | ---- |
+| It's a protocol | It's a architectural style |
+| can't use REST | can use any protocol, even SOAP |
+| Exposes logic throgh interfaces | exposes logic through URI |
+| has strict standards | defines less standards |
+| requires more bandwidth | requires less bandwidth |
+| defines its own security | inherits security measures from the underlying transport layer |
+| allows only XML | allows differents data formats |
+| is less prefered then REST | is more preferred than SOAP
 
-https://www.tutorialspoint.com/webservices/why_web_services.htm
+
 
 ### Universal Description Discovery and Integration (UDDI)
 
@@ -242,6 +326,7 @@ The WSDL language breaks down a web service into three specif elements:
 ![example-of-main-structure-of-wsdl-document](/images/articles/web-development/example-of-main-structure-of-wsdl-document.png)
 
 
+### SOAP Protocol
 
 
 
@@ -253,7 +338,6 @@ The WSDL language breaks down a web service into three specif elements:
 
 
 
-https://www.javatpoint.com/web-services-tutorial
 
 https://www.tutorialspoint.com/soap/what_is_soap.htm
 
@@ -261,6 +345,8 @@ Padrões XML, XSLT, Universal Description Deiscovery and Integration (UDDI), Web
 Tecnologias Web Services, REST e API RESTful.
 
 ### Further Reading
+
+[Fine-grained APIs vs. coarse-grained APIs - Horizontal.blog](https://horizontal.blog/2020/06/09/fine-grained-vs-coarse-grained-apis/#:~:text=In%20the%20tech%20world%2C%20granularity,large%20number%20of%20smaller%20components)
 
 [Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
 
