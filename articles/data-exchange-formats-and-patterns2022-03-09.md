@@ -413,7 +413,7 @@ This is different from what is seem with `WAN file transfers, especially those c
 
 #### AMQP
 
-**The Adavanced Message Queuing Protocol (AMQP) is an open standard for passing messages between applications or organizations.**
+The Adavanced Message Queuing Protocol (AMQP) is an open standard for passing messages between applications or organizations.
 
 It supports queuing and rounting (including point-to-point and publish-and-subscribe) and offers authentication and encryption by way of Simple Authentication and Security Level (SASL) or Transport Layer Security (TSL), relaying on a transport protocol such as TCP.
 
@@ -454,7 +454,7 @@ This is the secure counterpart for file trasfer protocol, that retains all the g
 
 #### HTTP (Hypertext Transfer Protocol)
 
-The Hyper Transfer Protocol **is the underlying protocol of the Internet. It's an application layer protocol that is sent over the TCP layer, though any reliable transport protocol could theoretically be used.** 
+The Hyper Transfer Protocol is the underlying protocol of the Internet. It's an application layer protocol that is sent over the TCP layer, though any reliable transport protocol could theoretically be used.
 
 HTTP is less prone to firewall issues than FTP, however by itself this protocol is inherently insecure and incapable of meeting regulatory compliance or securing data.
 
@@ -487,12 +487,12 @@ The Secure Copy (SCP) is a more primitive version of the SFTP. It also runs on S
 
 The SSH File Transfer Protocol (SFTP) is a protocol based on the network protocol SSH (Secure Shell), and unlike both FTP and FTPS, SFTP uses only one connection and encrypts both authentication information and data file being transfered. 
 
-**The main advantage of SFTP is that it'a more firewall-friendly.**
+The main advantage of SFTP is that it'a more firewall-friendly.
 
 
 #### WebSocket
 
-**This is a full-duplex communication channels over a single TCP connection, and eventhough it is a differnt protocol from HTTP, the RFC 6455 states that WebSocket is designed to work over the HTTP ports 80 and 443 as well as to support HTTP proxies and intermediaries.**
+This is a full-duplex communication channels over a single TCP connection, and eventhough it is a differnt protocol from HTTP, the RFC 6455 states that WebSocket is designed to work over the HTTP ports 80 and 443 as well as to support HTTP proxies and intermediaries.
 
 WebSocket, just like HTTP, is located at the layer 7 in the OSI model, and it is dependent on the TCP from the 4 layer.
 
