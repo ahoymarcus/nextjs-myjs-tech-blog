@@ -390,8 +390,7 @@ The XSL document is composed by different parts that will present the whole set 
 
 
 - **note**: ` online algorithm for parsing XML documents, with an API developed by the XML-DEV mailing list. SAX provides a mechanism for reading data from an XML document that is an alternative to that provided by the Document Object Model (DOM)`.
-[Simple API for XML - Wikipedia](https://en.wikipedia.org/wiki/Simple_API_for_XML#:~:text=SAX%20(Simple%20API%20for%20XML,Document%20Object%20Model%20(DOM).)
-
+[Simple API for XML - Wikipedia](https://en.wikipedia.org/wiki/Simple_API_for_XML)
 
 
 [JavaTPoint](https://www.javatpoint.com/xslt-syntax) - Bellow there is an example of a template to transform a simple XML document into a HTML table renderization:
@@ -422,7 +421,7 @@ The XML document brings employee information arranged in a XML element with 04 c
 </class>
 ```
 
-![example-of-main-structure-of-xslt-document](/images/articles/web-developement/example-of-main-structure-of-xslt-document.png)
+![example-of-main-structure-of-xslt-document](/images/articles/developement/example-of-main-structure-of-xslt-document.png)
 
 
 - **XSLT Tags**

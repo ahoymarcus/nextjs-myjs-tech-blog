@@ -358,7 +358,7 @@ The SOAP message is an ordinary XML document containing this elements:
 
 
 [TutorialsPoint](https://www.tutorialspoint.com/soap/soap_message_structure.htm) - Bellow an example of the Structure of a SOAP Message
-![example-of-main-structure-of-soap-document](/images/articles/web-developement/example-of-main-structure-of-soap-document.png)
+![example-of-main-structure-of-soap-document](/images/articles/web-development/example-of-main-structure-of-soap-document.png)
 
 
 #### SOAP Encoding
