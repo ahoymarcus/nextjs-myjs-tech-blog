@@ -397,6 +397,7 @@ The XSL document is composed by different parts that will present the whole set 
 
 The XML document brings employee information arranged in a XML element with 04 child elements each: 
 
+
 ```
 <?xml version="1.0"?>
 <class>
@@ -420,6 +421,7 @@ The XML document brings employee information arranged in a XML element with 04 c
 	</employee>
 </class>
 ```
+
 
 ![example-of-main-structure-of-xslt-document](/images/articles/developement/example-of-main-structure-of-xslt-document.png)
 
