@@ -30,6 +30,9 @@ description: 'Web Services are software systems that follow some standards, prot
 	4.3. WSDL History   
 	4.4. WSDL Elements 
 5. ##### SOAP Protocol
+	5.1. SOAP Features   
+	5.2. SOAP Message Structure   
+	5.3. SOAP Encoding
 6. ##### 
 7. ##### 
 8. ##### 
@@ -84,18 +87,18 @@ Some common types of web services nowdays:
 
 #### Web Service Granularity
 
-| Property | Coarse-Grained APIs | Fine-Grained APIs |
-| -------- | ------------------- | ----------------- |
-| Reusability  | Low | High |
-| Scalability  | Low | High |
-| Security     | Scarse | Detailed |
-| Management Overhade | Low | High |
-| Performance  | Neutral | Neutral |
-| Latency | Single-point failure | Cumulative Latency |
-| Resource Usage  | Low | High |
-| Complexity   | Low  |  High |
-| Deployment   | Harder | Easier |
-| Agility  | Low | High |
+| Property | Coarse-Grained APIs | Fine-Grained APIs |     
+| -------- | ------------------- | ----------------- |      
+| Reusability  | Low | High |     
+| Scalability  | Low | High |     
+| Security     | Scarse | Detailed |    
+| Management Overhade | Low | High |    
+| Performance  | Neutral | Neutral |     
+| Latency | Single-point failure | Cumulative Latency |    
+| Resource Usage  | Low | High |    
+| Complexity   | Low  |  High |    
+| Deployment   | Harder | Easier |    
+| Agility  | Low | High |    
    
    
 - read more:
@@ -149,16 +152,16 @@ RESTful is a service that complies with the architecture style of Representation
 
 #### SOAP vs REST Web Services
 
-| SOAP | REST |
-| ---- | ---- |
-| It's a protocol | It's a architectural style |
-| can't use REST | can use any protocol, even SOAP |
-| Exposes logic throgh interfaces | exposes logic through URI |
-| has strict standards | defines less standards |
-| requires more bandwidth | requires less bandwidth |
-| defines its own security | inherits security measures from the underlying transport layer |
-| allows only XML | allows differents data formats |
-| is less prefered then REST | is more preferred than SOAP
+| SOAP | REST |     
+| ---- | ---- |        
+| It's a protocol | It's a architectural style |    
+| can't use REST | can use any protocol, even SOAP |   
+| Exposes logic throgh interfaces | exposes logic through URI |     
+| has strict standards | defines less standards |    
+| requires more bandwidth | requires less bandwidth |    
+| defines its own security | inherits security measures from the underlying transport layer |      
+| allows only XML | allows differents data formats |     
+| is less prefered then REST | is more preferred than SOAP |    
 
 
 
@@ -328,6 +331,46 @@ The WSDL language breaks down a web service into three specif elements:
 
 ### SOAP Protocol
 
+SOAP is an acronym for Simple Object Access Protocol, which is an XML-based messaging protocol for exchanging information among dispositives and applications.
+
+
+#### SOAP Features
+
+- It provides a communication protocol for networks.
+- It can extend HTTP for XML messaging.
+- It provides data transport, and eventhough HTTP is the prefered protocol, it can work with many other protocols: SMTP, FTP, IBM's MQSeries or Microsoft Message Queuing (MSMQ).
+- It can exchange complete documents or even call remote procedures (RCP)
+- It can be used for broadcasting a message.
+- It's platform and language independent.
+
+
+`Other frameworks including CORBA, DCOM, and Java RMI provide similar functionality to SOAP, but SOAP messages are written entirely in XML and are therefore uniquely platform- and language-independent.` [TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
+
+
+#### SOAP Message Structure
+
+The SOAP message is an ordinary XML document containing this elements:
+
+- **Envelop**: its a mandatory element that start and finishes each message. And according to the site TutorialsPoint, this element applies also versioning flags. 
+- **Header**: it contains optional attributes and metadata related to the processing message. Also, it can be used to provide features like digital signature or account numbers for services like pay-per-use SOAP services.
+- **Body**: it's a mandatory element that contains the XML data comprising the message being sent.
+- **Fault**: it's an optional element attribute that provides information about errors that occurs while processing the message.
+
+
+[TutorialsPoint](https://www.tutorialspoint.com/soap/soap_message_structure.htm) - Bellow an example of the Structure of a SOAP Message
+![example-of-main-structure-of-soap-document](/images/articles/web-developement/example-of-main-structure-of-soap-document.png)
+
+
+#### SOAP Encoding
+
+The SOAP protocol includes a built-in set of rules for encoding data types, which even allow to specify typed multidimentional arrays.
+
+
+#### SOAP Transport
+
+SOAP has the HTTP protocol as the prefered transport set and as header-type configuration, it's the type **text/xml**.
+
+Also, the SOAP responses delivered via HTTP are required to follow the prescribed guidance related to the HTTP status codes.
 
 
 
@@ -339,20 +382,15 @@ The WSDL language breaks down a web service into three specif elements:
 
 
 
-https://www.tutorialspoint.com/soap/what_is_soap.htm
 
-Padrões XML, XSLT, Universal Description Deiscovery and Integration (UDDI), Web Services Descriptioin Language (WSDL), Simple Object Access Protocol (SOAP) e JSON.
+
 Tecnologias Web Services, REST e API RESTful.
+Conhecimento da linguagem GraphQL e Swagger.
+Recomendações W3C. 
 
 ### Further Reading
 
 [Fine-grained APIs vs. coarse-grained APIs - Horizontal.blog](https://horizontal.blog/2020/06/09/fine-grained-vs-coarse-grained-apis/#:~:text=In%20the%20tech%20world%2C%20granularity,large%20number%20of%20smaller%20components)
-
-[Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
-
-[Web Services Tutorial - TutorialsPoint](https://www.tutorialspoint.com/webservices/what_are_web_services.htm)
-
-[SOAP Tutorial - TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
 
 [GraphQL Tutorial - JavaTPoint](https://www.javatpoint.com/graphql)
 
@@ -360,10 +398,15 @@ Tecnologias Web Services, REST e API RESTful.
 
 ### References
 
+[Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
+
+[Web Services Tutorial - TutorialsPoint](https://www.tutorialspoint.com/webservices/what_are_web_services.htm)
 
 [UDDI - TutorialsPoint](https://www.tutorialspoint.com/uddi/uddi_overview.htm)
 
 [WSDL Tutorial - TutorialsPoint](https://www.tutorialspoint.com/wsdl/wsdl_introduction.htm)
+
+[SOAP Tutorial - TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
 
 []()
 

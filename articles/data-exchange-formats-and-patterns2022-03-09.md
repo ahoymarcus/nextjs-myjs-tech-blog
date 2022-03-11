@@ -363,6 +363,85 @@ This is a flexible text format, that can store data in a hierarchical form and t
 - Some common word processing characters are illegal.   
 - Images and other bynary data require extra encoding.
 
+
+**XML Supersets**
+
+Just like HTML works in synchrony with CSS, XML has also relates to some languages that provides some supersets elements.
+
+**XSL** is the EXtensible Stylesheet Language which is a styling languge for XML and it will specify how a browser should render an XML document.
+
+The XSL document is composed by different parts that will present the whole set of definitions to a XML stylization.
+
+- **XSLT**: this is XSL Transformation, and it is used to transform XML documents into other documents formats, just like transforming a XML documento into a HTML document.
+- **XPath**: it's the language for defining the navigation in an XML document.
+- **XQuery**: it's the language for querying in an XML document.
+- **XSL-FO**: it's the laguage for formatting an XML document.
+
+
+**Advantages of XSLT Language**
+
+- It provides an easy way to merge XML data into presentation because it applies user defined transformations to an XML document and the output can be HTML, XML, or any other structure document.
+- It provides XPath to locate elements/attributes within an XML document, as it is a more convinient way to trasverse an XML document than by the using of scripting language.
+- It's template based, so it is more resilient to changes in documents than low level DOM and SAX.
+- By using XML and XSLT, the application UI script will look clean and will be easier to maintain.
+- XSLT templates are based on XPath pattern which is very powerful in terms of performance to process the XML document.
+- It can be used as a validation language as it uses tree-pattern-matching approach.
+- The output can be changed by simply applying modification to the transformations in the XSL files.
+
+
+- **note**: ` online algorithm for parsing XML documents, with an API developed by the XML-DEV mailing list. SAX provides a mechanism for reading data from an XML document that is an alternative to that provided by the Document Object Model (DOM)`.
+[Simple API for XML - Wikipedia](https://en.wikipedia.org/wiki/Simple_API_for_XML#:~:text=SAX%20(Simple%20API%20for%20XML,Document%20Object%20Model%20(DOM).)
+
+
+
+[JavaTPoint](https://www.javatpoint.com/xslt-syntax) - Bellow there is an example of a template to transform a simple XML document into a HTML table renderization:
+
+The XML document brings employee information arranged in a XML element with 04 child elements each: 
+
+```
+<?xml version="1.0"?>
+<class>
+	<employee id="001">
+		<firstname>Aryan</firstname>
+		<lastname>Gupta</lastname>
+		<nickname>Raju</nickname>
+		<salary>30000</salary>
+	</employee>
+	<employee id="024">
+		<firstname>Sara</firstname>
+		<lastname>Khan</lastname>
+		<nickname>Zoya</nickname>
+		<salary>25000</salary>
+	</employee>
+	<employee id="056">
+		<firstname>Peter</firstname>
+		<lastname>Symon</lastname>
+		<nickname>John</nickname>
+		<salary>10000</salary>
+	</employee>
+</class>
+```
+
+![example-of-main-structure-of-xslt-document](/images/articles/web-developement/example-of-main-structure-of-xslt-document.png)
+
+
+- **XSLT Tags**
+1. **<xsl:value-of> element**: this element extracts the value of a specific XML node.   
+	1.1. In the exemple above it was use to extract the values with the employee information for 'id', 'firstname', 'lastname', 'nickname' and 'salary'.
+2. **<xsl:for-each> element**: this element is used to apply a repetition loop for some node.   
+	2.1. In the example above, this XSL element was used to loop through a `tr` and `td` HTML elements to complete the table with employee information.
+3. **<xsl:sort> element**: this element can be used to specify a sort criteria on the nodes.  
+	3.1. In the above example, it could be used to sort the HTML table output by the lastname. Something like, **<xsl:sort select="lastname" />**.
+4. **<xsl:if> element**: this element is used to specify a conditional test against the content of the XML file.   
+	4.1. In the above exemple, this element could be used to test a salary condition like **<xsl:if test='salary > 30000'>...</xsl:if>** to be rendered in the output. 
+5. **<xsl:choose> element**: this element, together with the child elements **<xsl:when test="condition"></xsl:when>** and **<xsl:otherwise></xsl:otherwise>**, states a 'if/else' contition type. 	
+6. **<xsl:key> element**: this element is used together with the key() function in XPath to access the assigned elements in a XML document.  	
+7. **<xsl:message> element**: this element fucntion like a JavaScript console.log() function used for debugging reasons.  
+	7.1. In the example above, this element could be used to create a test to validate for empty string value and then prints a message/log: **<xsl:message terminate="yes">A first name field is empty</xsl:message>**
+8. **<xsl:apply-template> element**: it is used to tell XSLT processor to find the appropriate template to apply according to the type and context of each selected node.
+9. **<xsl:import> element**: it is used to import the content of one stylesheet to another stylesheet. The importing stylesheet has higher precedence over imported stylesheet.
+
+	
 #### YAML
 
 It's name stands for Yet Another Markup Language or even Ain't Markup Language.
@@ -526,11 +605,9 @@ The WebSockets provides a `standardized way fot the server to send content to th
 
 https://en.wikipedia.org/wiki/Aspect-oriented_programming
 
-
-Conhecimento da linguagem GraphQL e Swagger.
 Padrões Advanced message Queuing protocol AMQP e Aspect Oriented Programming?? AOP. 
 Conhecimento do toolkit jBPM e Bizagi BPMS.
-Recomendações W3C. 
+
 Modelo Nacional de Interoperabilidade (MNI).
 
 ### Further Reading
@@ -540,6 +617,8 @@ Modelo Nacional de Interoperabilidade (MNI).
 [Data exchange formats - Renenyffenegger.ch](https://renenyffenegger.ch/notes/development/Data/exchange/formats/index)
 
 [Remote Procedure Call (RPC) - Techtarget.com](https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC#:~:text=Remote%20Procedure%20Call%20is%20a,systems%20like%20a%20local%20system)
+
+[XSLT Tutorial - JavaTPoint](https://www.javatpoint.com/xslt-tutorial)
 
 ### References
 

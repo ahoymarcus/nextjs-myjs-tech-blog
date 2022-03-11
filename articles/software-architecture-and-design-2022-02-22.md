@@ -1059,10 +1059,28 @@ The **Features of SOA**
 
 A service-oriented architecture provides the following features:
 
-- **Distributed Deployment**: expose enterprise data and business logic as loosely, coupled, discoverable, structured, standard-based, coarse-grained, stateless units of functionality called services.
-- **Composability**: assemble new processes from existing services that are exposed at a desired granularity through well defined, published, and standard complaint interfaces.  
-- **Interoperability**: share capabilities and reuse shared services across a network irrespective of underlying protocols or implementation technology.
-- **Reusability**: choose a service provider and access to existing resources exposed as services.
+- **Distributed Deployment**: it exposes enterprise data and business logic as loosely, coupled, discoverable, structured, standard-based, coarse-grained, stateless units of functionality called services.
+- **Composability**: it assembles new processes from existing services that are exposed at a desired granularity through well defined, published, and standard complaint interfaces.  
+- **Interoperability**: it shares capabilities and reuse shared services across a network irrespective of underlying protocols or implementation technology.
+- **Reusability**: it chooses a service provider and access to existing resources exposed as services.
+
+
+**The Functional Aspect of SOA**
+
+- **The transport layer**: it transports the service requests from the service consume to the service provider and service responses from the service provider to the service consumer.
+- **The Service Communication Protocol**: it allows the service provider and the service consumer to be able to communicate with each other.
+- **The Service Description**: it describes the service and the data required to invoke it.
+- **The Service**: the actual functionality serviced.
+- **The Business Process**: it represents the group of services called in a particular sequence associated with the particular rules to meet the business requirements.
+- **The Service Registry**: it contains the description of data which is used by service providers to publish their services.
+
+
+**The Quality Aspect of SOA**
+
+- **The Police**: it represents the set of protocols according to which a service provider make and provide the service to consumers.
+- **The Security**: it represents the set of protocols required for identification and authorization.
+- **The Transaction**: it provides the surety of consistent result. This means, if we use a group of services to complete a single business function, either all must complete or none of them should complete. 
+
 
 
 The **advantages of the Service-Oriented Architecture (SOA) style**:
@@ -1077,6 +1095,11 @@ The **advantages of the Service-Oriented Architecture (SOA) style**:
 - Efficient and effective usage of "Business Services".
 - Integration becomes much easier and improved intrinsic **interoperability**.
 - **Abstracts complexity** for developers and energize business processes to end users.
+  
+  
+- read more about SOA:
+- `Service Oriented Architecture (SOA)` [JavaTPoint](https://www.javatpoint.com/service-oriented-architecture)
+
 
 
 ### Component-Based Architecture

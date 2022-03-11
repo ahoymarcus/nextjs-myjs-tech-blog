@@ -191,7 +191,7 @@ CONHECIMENTOS BÁSICOS
 - [O] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.
 - [X] Conhecimento dos frameworks e toolkits: Angular, jQuery, Vue, React, Spring, Spring Boot, Spring Cloud, Laravel, Django, Hibernate, JPA, JBoss Seam, JUnit.
 - [X] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
-- [ ] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
+- [X] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
 - [ ] Tecnologias Web Services, REST e API RESTful.
 - [ ] Conhecimento da linguagem GraphQL e Swagger.
 - [ ] Padrões AMQP e AOP. 
