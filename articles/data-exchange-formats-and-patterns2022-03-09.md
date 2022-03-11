@@ -423,7 +423,7 @@ The XML document brings employee information arranged in a XML element with 04 c
 ```
 
 
-![example-of-main-structure-of-xslt-document](/images/articles/developement/example-of-main-structure-of-xslt-document.png)
+![example-of-main-structure-of-xslt-document](/images/articles/development/example-of-main-structure-of-xslt-document.png)
 
 
 - **XSLT Tags**
