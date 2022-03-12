@@ -221,7 +221,7 @@ It was developed with the intent to optimize RESTful API, and in general terms i
 - GraphQL rate limiting: it is difficult to make this kind of specification with GraphQL, contrasting to REST where it can be easily set up to allow  only a limited amount of requests per day.        
 	     
      	
-- read more about GraphQL:
+###### read more about GraphQL:
 - `javascript-apollo Tutorial - Introduction` [Howtographql.com](https://www.howtographql.com/graphql-js/0-introduction/)
 - `React + Apollo Tutorial - Introduction` [Howtographql.com](https://www.howtographql.com/react-apollo/0-introduction/)
 - `Introduction to GraphQL` [GraphQL Docs](https://graphql.org/learn/)

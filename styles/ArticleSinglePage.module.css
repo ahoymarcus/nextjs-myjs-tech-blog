@@ -101,6 +101,12 @@
 	color: hsl(209deg 69% 36%);
 }
 
+.articleSection h6 {
+	font-size: 1rem;
+	text-align: left;
+	margin-top: 25px;
+}
+
 .articleSection p {
 	font-size: 1.2rem;
 	margin: 50px 0px 65px;
