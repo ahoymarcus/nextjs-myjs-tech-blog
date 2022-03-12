@@ -190,35 +190,35 @@ RESTful is a service that complies with the architecture style of Representation
 
 According to the site [JavaTPoint](https://www.javatpoint.com/graphql), GraphQL is a new API standard invented and developed by Facebook. It's an open-source server-side technology, and it's also an execution engine that works as a data language and used to fetch declarative data.
 
-It was developed with the intent to optimize RESTful API, and in general terms it works providing only one endpoint to respond for the precise data that a client may ask for.
+It was developed with the intent to optimize RESTful API, and in general terms it works providing only one endpoint to respond for the precise data that a client may ask for.     
 
 
-##### History of GraphQL
+###### History of GraphQL
 
 - It has been used internaly by the Facebook since 2012, including in their native mobile apps projects.
-- Then, in 2015 it was released public, and later in 2018 the whole project was moved from Facebook to a specific foundation named GraphQL Foundation, which was hosted by the non-profit Linux Foundation.
+- Then, in 2015 it was released public, and later in 2018 the whole project was moved from Facebook to a specific foundation named GraphQL Foundation, which was hosted by the non-profit Linux Foundation.    
 
 
-##### GraphQL Features 
+###### GraphQL Features 
   
-- It's cross-platform, open-source, data query, and manipulation language for APIs, and the GraphQL servers are available for multiple languages.
+- It's cross-platform, open-source, data query, and manipulation language for APIs, and the GraphQL servers are available for multiple languages.    
   	
    
-##### Advantages of GraphQL
+###### Advantages of GraphQL
 
 - It can query for specific data to be returned from the connection.
 - It can also query for data across many resources with a single request.
 - The queries are human-readable.
 - It facilitates to work efficiently with many databases.
 - You don't face over fetching or under fetching of data when using GraphQL.
-- It has a rich devopler tools and documentation available.
+- It has a rich devopler tools and documentation available.    
 	 
 	  
-##### Disadvantages of GraphQL
+###### Disadvantages of GraphQL
 	
 - GraphQL query complexity.
 - GraphQL caching: it is more complicated to implement caching with GraphQL than with REST. Usually, it has to be done with libraries built on top of GraphQL to facilitate the process.
-- GraphQL rate limiting: it is difficult to make this kind of specification with GraphQL, contrasting to REST where it can be easily set up to allow  only a limited amount of requests per day.    
+- GraphQL rate limiting: it is difficult to make this kind of specification with GraphQL, contrasting to REST where it can be easily set up to allow  only a limited amount of requests per day.        
 	     
      	
 - read more about GraphQL:
