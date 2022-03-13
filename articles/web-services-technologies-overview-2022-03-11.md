@@ -36,6 +36,7 @@ description: 'Web Services are software systems that follow some standards, prot
 	5.2. SOAP Message Structure   
 	5.3. SOAP Encoding
 6. ##### GraphQL
+    6.1. A Schemafull & Typed System
 7. ##### 
 8. ##### 
 9. ##### Further Reading
@@ -438,6 +439,37 @@ Also, the SOAP responses delivered via HTTP are required to follow the prescribe
 
 
 ### GraphQL
+
+According to site [Howtograph.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/), GraphQL came with the intent to bring flexibility to scene of web services, especially in turns of fetching data in comparison to the REST architecure.
+
+So, in the way that a query for data works in the REST model implies fetching data in distributed URL endpoints, and bringing the whole set of data for each of these endpoint, so that later at the application level the different groups of data would filtered and composed to make the desired return for the client.
+
+On the other hand, GraphQL would receive a single JSON pattern for querying purposes and then return the exact set of data desired, also in a JSON pattern.
+
+In theirs of advantages for the GraphQL architecture is the fact that for setting the result, it is not necessary to go through those stages of filtering the data from each URL endpoint and later combining everything into the desired result.
+
+A problem that the site describes as:
+
+1. Overfetching: here the query hits a endpoint for a simple set result, but it is returned with the whole set of data present at the endpoint.
+2. Underfetching: in this case, the query hits some endpoint, but the return is not sufficient for the query, and many individual queries have to be made to different endpoints  to amount for the whole requirements of the original query.
+3. Frontend Iterations: meaning that changes at the frontend would need changes at the backend to better accomodate the queries.
+
+
+Besisdes, states [Howtograph.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/) that the architectural style of GraphQL allows for simpler insightful analytics from the backend to measure the usefulness of the the data being returned by the queries, and thus to `gain a deep understand of how the available data is being used. This can for example help in evolving an API and deprecating specific fields that are not request by any clients any more`.
+
+
+#### A Schemafull & Typed System
+
+The site also states that there are great benefits in the use of a schemas and of types in the contract between client and server in the access of data, and that this can be achieved by the use of the GraphQL Schema Definition Language (SDL).
+
+Thus, because a definitive schema for the data can be set ahead of the works, both frontend and backend teams can work in their separate ways, and also the frontend team gain the flexibility to apply testing to the data by mocking the required data structures.
+
+
+
+
+
+
+
 
 
 
