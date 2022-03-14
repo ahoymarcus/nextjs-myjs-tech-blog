@@ -36,7 +36,8 @@ description: 'Web Services are software systems that follow some standards, prot
 	5.2. SOAP Message Structure   
 	5.3. SOAP Encoding
 6. ##### GraphQL
-    6.1. A Schemafull & Typed System
+    6.1. Core Concepts
+    6.2. The Architecture
 7. ##### 
 8. ##### 
 9. ##### Further Reading
@@ -450,19 +451,116 @@ In theirs of advantages for the GraphQL architecture is the fact that for settin
 
 A problem that the site describes as:
 
-1. Overfetching: here the query hits a endpoint for a simple set result, but it is returned with the whole set of data present at the endpoint.
-2. Underfetching: in this case, the query hits some endpoint, but the return is not sufficient for the query, and many individual queries have to be made to different endpoints  to amount for the whole requirements of the original query.
-3. Frontend Iterations: meaning that changes at the frontend would need changes at the backend to better accomodate the queries.
+1. **Overfetching**: here the query hits a endpoint for a simple set result, but it is returned with the whole set of data present at the endpoint.
+2. **Underfetching**: in this case, the query hits some endpoint, but the return is not sufficient for the query, and many individual queries have to be made to different endpoints  to amount for the whole requirements of the original query.
+3. **Frontend Iterations**: meaning that changes at the frontend would need changes at the backend to better accomodate the queries.
 
 
 Besisdes, states [Howtograph.com](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/) that the architectural style of GraphQL allows for simpler insightful analytics from the backend to measure the usefulness of the the data being returned by the queries, and thus to `gain a deep understand of how the available data is being used. This can for example help in evolving an API and deprecating specific fields that are not request by any clients any more`.
 
 
-#### A Schemafull & Typed System
-
-The site also states that there are great benefits in the use of a schemas and of types in the contract between client and server in the access of data, and that this can be achieved by the use of the GraphQL Schema Definition Language (SDL).
+Finnaly, the site also states that there are great benefits in the use of a typed system where schemas and of types in GraphQL works as contract between client and server in the access of data, and that this can be achieved by the use of the GraphQL Schema Definition Language (SDL).
 
 Thus, because a definitive schema for the data can be set ahead of the works, both frontend and backend teams can work in their separate ways, and also the frontend team gain the flexibility to apply testing to the data by mocking the required data structures.
+
+#### Core Concepts
+
+
+###### The Use of Types
+
+First, the GraphQL architecture uses a type system to define some scheme for the API, and the systax for it is called Schema Definition Language (SDL). An example of a type:
+
+```
+type Post {
+    id: ID!
+    title: Sring!
+    authro: Person!
+}
+
+type Person {
+    id: ID!
+    name: String!
+    age: Int!
+    posts: [Post!]!
+}
+```
+
+So, above there are two types with a relationship of 1-N, where the type Person has a array of the Posts type, and the exclamation point means that the attribute is required:
+
+
+###### The Query System
+
+The query system of GraphQL uses one endpoint that is exposed while it deals with a flexible data structure for the query, what it is a different approach from REST where there is multiples endpoints each of them with their fixed data strutures.
+
+The query has a systax that brings the choosen method at the root field and the desired data comes as a payload, which can be conveniently nested, just as it is possible to define additional arguments to the Schema and then make use of the in the query:
+
+
+```
+{
+    allPersons(last:2) {
+        name
+        posts {
+            tilte
+        }
+    }
+}
+```
+
+
+When comes to the transformations of data (creating, updating and deleting), the syntax uses the key word **mutation**, and here the transformation is also returned in the payload, where the most important piece of infromation is the **id** attribute, since this one is a new information not already known by the frontend:
+
+```
+mutation {
+    createPerson (name: "Bob", age: 36) {
+        id
+        name
+        age
+    }
+}
+```
+
+###### Messagery
+
+The GraphQL architecture works with a message system of **Subscriptions**, that allows for the client to subscribes to events and to receive messages pushed from the server with the corresponding data from the event.
+
+And the Subscription feature works in a similar fashion from queries and mutations:
+
+```
+subscription {
+    newPerson {
+        name
+        age
+    }
+}
+```
+
+`After a client sent this subscription to a server, a connection is opened between them. Then, whenever a new mutation is performed that creates a new Person, the server sends the information about this person over to the client` [Howtograph](https://www.howtographql.com/basics/2-core-concepts/)
+
+```
+{
+  "newPerson": {
+    "name": "Jane",
+    "age": 23
+  }
+}
+```
+
+
+Bellow, there is a full example Schema from []() with the definitions for the types, for the queries. for the mutations and for the subscription:
+
+![example-of-the-graphql-schema-01](/images/articles/web-development/example-of-the-graphql-schema-01.png)
+
+
+
+#### The Architecture
+
+
+
+
+
+
+
+
 
 
 
@@ -494,6 +592,7 @@ Recomendações W3C.
 
 [What is GraphQL? - Medium.com](https://medium.com/devgorilla/what-is-graphql-f0902a959e4)
 
+
 ### References
 
 [Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
@@ -506,6 +605,10 @@ Recomendações W3C.
 
 [SOAP Tutorial - TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
 
+[Howtograph](https://www.howtographql.com/basics/0-introduction/)
+
 []()
+
+
 
 
