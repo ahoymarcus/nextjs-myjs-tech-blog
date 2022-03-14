@@ -556,15 +556,14 @@ Bellow, there is a full example Schema from [ Howtographql.com](https://www.howt
 ###### 1. Data Abstraction
 The GraphQL layer allows for the abstraction of data from the client, so the client can deal with the queries/fetch in a declarative manner, what also simplify and diminish the client need of dealing with infrastructure.
 
-As the site says, in a normal flow of development, the client should comply with 4 steps:
-
+- As the site says, in a normal flow of development, the client should comply with 4 steps:
 1. **Construct and send HTTP request**
 2. **Receive and parse server response**
 3. **Store the data locally (either simply in memory or some persistent form)**
 4. **Display the data in the UI**
 
-But, following the work flow with the GraphQL abstraction:
 
+- But, following the work flow with the GraphQL abstraction:
 1. **Describe or declare the data requirements**
 2. **Display data in the UI**
 
@@ -603,8 +602,8 @@ Here, again, the architecture of the implementation brings a GraphQL server that
 
 Once again, according to the site, the GraphQL system is indifferent to the kind of service it is dealing with the queries, and that it brings 2 major advantages:
 
-- **It unifyies and resolves complexities of dealing with many services, including legacy ones**
-- **It deals with the responsability of fetching data from the different systems and packaging it in the proper GraphQL response format**
+- It unifyies and resolves complexities of dealing with many services, including legacy ones.
+- It deals with the responsability of fetching data from the different systems and packaging it in the proper GraphQL response format.
 
 
 ###### 3.  Hybrid Approch with Connected Databases and Integration of Existing System
