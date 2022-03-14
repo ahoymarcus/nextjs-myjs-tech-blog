@@ -38,6 +38,7 @@ description: 'Web Services are software systems that follow some standards, prot
 6. ##### GraphQL
     6.1. Core Concepts
     6.2. The Architecture
+    6.3. Examples of GraphQL Architectures
 7. ##### 
 8. ##### 
 9. ##### Further Reading
@@ -466,8 +467,7 @@ Thus, because a definitive schema for the data can be set ahead of the works, bo
 #### Core Concepts
 
 
-###### The Use of Types
-
+###### 1. The Use of Types
 First, the GraphQL architecture uses a type system to define some scheme for the API, and the systax for it is called Schema Definition Language (SDL). An example of a type:
 
 ```
@@ -488,8 +488,7 @@ type Person {
 So, above there are two types with a relationship of 1-N, where the type Person has a array of the Posts type, and the exclamation point means that the attribute is required:
 
 
-###### The Query System
-
+###### 2. The Query System
 The query system of GraphQL uses one endpoint that is exposed while it deals with a flexible data structure for the query, what it is a different approach from REST where there is multiples endpoints each of them with their fixed data strutures.
 
 The query has a systax that brings the choosen method at the root field and the desired data comes as a payload, which can be conveniently nested, just as it is possible to define additional arguments to the Schema and then make use of the in the query:
@@ -519,8 +518,7 @@ mutation {
 }
 ```
 
-###### Messagery
-
+###### 3. Messagery
 The GraphQL architecture works with a message system of **Subscriptions**, that allows for the client to subscribes to events and to receive messages pushed from the server with the corresponding data from the event.
 
 And the Subscription feature works in a similar fashion from queries and mutations:
@@ -546,7 +544,7 @@ subscription {
 ```
 
 
-Bellow, there is a full example Schema from []() with the definitions for the types, for the queries. for the mutations and for the subscription:
+Bellow, there is a full example Schema from [ Howtographql.com](https://www.howtographql.com/basics/2-core-concepts/) with the definitions for the types, for the queries. for the mutations and for the subscription:
 
 ![example-of-the-graphql-schema-01](/images/articles/web-development/example-of-the-graphql-schema-01.png)
 
@@ -554,12 +552,67 @@ Bellow, there is a full example Schema from []() with the definitions for the ty
 
 #### The Architecture
 
+###### The Resolver
+This is the functionality that in the GraphQL server will be called by a query or a mutation which the sole purpose is to resolve the fetch of data for its field:
+
+`When the server receives a query, it will call all the functions for the fields that are specified in the query’s payload. It thus resolves the query and is able to retrieve the correct data for each field. Once all resolvers returned, the server will package data up in the format that was described by the query and send it back to the client.`  [ Howtographql.com](https://www.howtographql.com/basics/3-big-picture/)
+
+
+###### Data Abstraction
+The GraphQL layer allows for the abstraction of data from the client, so the client can deal with the queries/fetch in a declarative manner, what also simplify and diminish the client need of dealing with infrastructure.
+
+As the site says, in a normal flow of development, the client should comply with 4 steps:
+
+1. Construct and send HTTP request
+2. Receive and parse server response
+3. Store the data locally (either simply in memory or some persistent form)
+4. Display the data in the UI.
+
+But, following the work flow with the GraphQL abstraction:
+
+1. **Describe or declare the data requirements**
+2. **Display data in the UI**
+
+
+`This is precisely what GraphQL client libraries like Relay or Apollo will enable you to do. They provide the abstraction that you need to be able to focus on the important parts of your application rather than having to deal with the repetitive implementation of infrastructure.`[ Howtographql.com](https://www.howtographql.com/basics/3-big-picture/)
 
 
 
+#### Examples of GraphQL Architectures
+
+Still according to [ Howtographql.com](https://www.howtographql.com/basics/3-big-picture/), the GraphQL system has only been released as a specification, meaning that Graph would constitutes itself until this time as a `long document that describes in detail the behaviour of the GraphQL server`.
+
+The site continues and presents then, three cases with different kinds of architecture which includes a GraphQL server:
+
+1. **GraphQL server with a connected database**
+2. **GraphQL server that is a thin layer in front of a number of third party or legacy systems and integrates them through a single GraphQL API**
+3. **A hybrid approach of a connected database and third party or legacy systems that can all be accessed through the same GraphQL API**
 
 
+###### 1. GraphQL Server with a Conected Database
+This is a simpler architecture where there is a single (web) server that implements the GraphQL specification connecting a database.
 
+And still according to the site  Howtographql.com](https://www.howtographql.com/basics/3-big-picture/), the GraphQL system is **transport-layer agnostic**, meaning that it can work with any available transport protocol (TCP, WebSockets, etc.).
+
+
+On the other side of the picture, GraphQL would also be indifferent with the kind  of the database being used, whether a SQL database or a No-SQL one.
+
+
+###### 2. GraphQL Layer that Integrates Existing Systems
+Here, again, the architecture of the implementation brings a GraphQL server that is placed as an abastract layer between the clients and the existing systems (Legacy system, Microservice, Third-party API, etc.), and that acts controling the accesses.
+
+Once again, according to the site, the GraphQL system is indifferent to the kind of service it is dealing with the queries, and that it brings 2 major advantages:
+
+1. **It unifyies and resolves complexities of dealing with many services, including legacy ones**
+2. **It deals with the responsability of fetching data from the different systems and packaging it in the proper GraphQL response format**
+
+
+###### 3.  Hybrid Approch with Connected Databases and Integration of Existing System
+This third architectural type combine the previous two, where the GraphQL layer deal both a connection to a database, but also manages other systems connections as well:
+
+`When a query is received by the server, it will resolve it and either retrieve the required data from the connected database or some of the integrated APIs`. [Howtograph.com](https://www.howtographql.com/basics/3-big-picture/)
+
+![example-of-graphql-architecture-with-database-and-other-system](/images/articles/web-development/example-of-graphql-architecture-with-database-and-other-systems.png)
 
 
 
@@ -605,7 +658,7 @@ Recomendações W3C.
 
 [SOAP Tutorial - TutorialsPoint](https://www.tutorialspoint.com/soap/what_is_soap.htm)
 
-[Howtograph](https://www.howtographql.com/basics/0-introduction/)
+[GraphQL Fundamentals - Howtographql.com](https://www.howtographql.com/basics/0-introduction/)
 
 []()
 
