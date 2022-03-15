@@ -39,10 +39,10 @@ description: 'Web Services are software systems that follow some standards, prot
     6.1. GraphQL Core Concepts
     6.2. GraphQL  Architecture
     6.3. Examples of GraphQL Architectures
-    6.3. GraphQL Clients
-     6.4. GraphQL Server
-7. ##### 
-8. ##### 
+    6.4. GraphQL Clients
+    6.5. GraphQL Server
+7. ##### Swagger Development Tools
+8. ##### W3C Recommendations
 9. ##### Further Reading
 10. ##### References
 
@@ -648,6 +648,84 @@ This means that instead of having the whole JSON response cached as a big unit, 
 
 #### GraphQL Server
 
+As the site also explains, eventhough the GraphQL is described as a frontend-focused API, this system architecture obiviously integrates a backend data to query data, and as a development solution it enables the server developer to focus on describing the data available rather than implementing and optimizing specific endpoints.
+
+Another feature to facilitate the implementation is to bring **default resolvers**, directed for single fields where the naming convention follows the correnct pattern, thus they don't need to be specified when the parent object of the resolver has the same field and with the correct name.
+
+And the [site](https://www.howtographql.com/advanced/1-server/) also cites other strategies for optimizing queries by the GraphQL server.
+
+
+#### GraphQL Security
+
+Finally, the site [Howtograph.com](https://www.howtographql.com/advanced/4-security/) takes on the security problems, and states that very large queries can potentially bring the server down, doesn't matter they come from malicious intent or not.
+
+Some features are used to try to order this problem:
+
+###### Timeout
+
+This stablishes a maximum time allowed for a query till the server finalises it:
+1. Pros:
+    1.1. it's simple to implement
+    1.2. and that most strategies will still use timeout as a final protection.
+2. Cons:
+    2.1. damage can already be done even when the timeout kicks in.
+    2.2. Sometimes hard to implement. Cutting connections after a certain time may result in strange behaviours.
+
+
+###### Maximum Query Depth
+
+This feature is important to tackle the problem of queries which goes way out the desired schema in terms of depth, or even cyclic graphs, planning wiht a abstract syntax tree (AST).
+
+1. Pros:
+    1.1. Since the AST of the document is analyzed statically, the query does not even execute, which adds no load on your GraphQL server.
+    1.2. and that most strategies will still use timeout as a final protection.
+2. Cons:
+    2.1. Depth alone is often not enough to cover all abusive queries. For example, a query requesting an enormous amount of nodes on the root will be very expensive but unlikely to be blocked by a query depth analyzer.
+
+
+###### Query Complexity
+
+Adding singular validation to each field could help the server to locate too expensive queries.
+
+```
+query {
+  author(id: "abc") {    # complexity: 1
+    posts(first: 5) {    # complexity: 5
+      title              # complexity: 1
+    }
+  }
+}
+```
+
+1. Pros:
+    1.1. Covers more cases than a simple query depth.
+    1.2. Reject queries before executing them by statically analyzing the complexity.
+2. Cons:
+    2.1. Hard to implement perfectly.
+    2.2. If complexit is estimated by developers, how do we keep it up to date? How do we find the costs in the first place?
+    2.3. Mutations are hard to estimate. What if they have a side effect that is hard to measure, like queuing a background job.
+
+
+###### Throttling
+
+Because there are still some limitations on how to limit the operations by itselves, it would be possible to also throttle it by limiting resources for the clients.
+
+This may happen, for example, when a user does a lot of medium size queries, that may amount for a lot of server resources as a whole, but individually doesn't meet the maximum limits.
+
+In thoses cases, could be implemented limitations of server itme or of query complexity direct to the clients.
+
+1. **Throttling based on server time**: would demand from the client some elapsed time to amount the necessary server time to execute more complicated queries.
+2. **throttling based on query complexity**: the complexity is described to the individual query parts, but the limit is given to the client.
+
+`We know that this query has a cost 3 based on complexity. Just like a time throttle, we can come up with a maximum cost (Bucket Size) per time a client can use. With a maximum cost of 9, our clients could run this query only three times, before the leak rate forbids them to query more. The principles are the same as our time throttle, but now communicating these limits to clients is much nicer. Clients can even calculate the costs of their queries themselves without needing to estimate server time!` [Howtograph.com](https://www.howtographql.com/advanced/4-security/)
+
+
+
+### Swagger Development Tools
+
+
+
+### W3C Recommendations
 
 
 
@@ -659,7 +737,22 @@ This means that instead of having the whole JSON response cached as a big unit, 
 
 
 
-https://www.howtographql.com/advanced/1-server/
+
+
+
+
+
+
+
+
+
+
+
+What is Swagger? - https://swagger.io/tools/open-source/getting-started/
+
+Swagger tutorial - https://www.javatpoint.com/swagger
+
+Documentation - https://swagger.io/docs/
 
 Conhecimento da linguagem GraphQL e Swagger.
 Recomendações W3C. 
