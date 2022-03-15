@@ -36,10 +36,10 @@ description: 'Web Services are software systems that follow some standards, prot
 	5.2. SOAP Message Structure   
 	5.3. SOAP Encoding
 6. ##### GraphQL
-    6.1. GraphQL Core Concepts
-    6.2. GraphQL  Architecture
-    6.3. Examples of GraphQL Architectures
-    6.4. GraphQL Clients
+    6.1. GraphQL Core Concepts     
+    6.2. GraphQL  Architecture    
+    6.3. Examples of GraphQL Architectures     
+    6.4. GraphQL Clients     
     6.5. GraphQL Server
 7. ##### Swagger Development Tools
 8. ##### W3C Recommendations
@@ -593,7 +593,7 @@ The site continues and presents then, three cases with different kinds of archit
 ###### 1. GraphQL Server with a Conected Database
 This is a simpler architecture where there is a single (web) server that implements the GraphQL specification connecting a database.
 
-And still according to the site  Howtographql.com](https://www.howtographql.com/basics/3-big-picture/), the GraphQL system is **transport-layer agnostic**, meaning that it can work with any available transport protocol (TCP, WebSockets, etc.).
+And still according to the site  [Howtographql.com](https://www.howtographql.com/basics/3-big-picture/), the GraphQL system is **transport-layer agnostic**, meaning that it can work with any available transport protocol (TCP, WebSockets, etc.).
 
 
 On the other side of the picture, GraphQL would also be indifferent with the kind  of the database being used, whether a SQL database or a No-SQL one.
@@ -662,29 +662,26 @@ Finally, the site [Howtograph.com](https://www.howtographql.com/advanced/4-secur
 Some features are used to try to order this problem:
 
 ###### Timeout
-
 This stablishes a maximum time allowed for a query till the server finalises it:
-1. Pros:
-    1.1. it's simple to implement
+1. Pros:      
+    1.1. it's simple to implement       
     1.2. and that most strategies will still use timeout as a final protection.
-2. Cons:
-    2.1. damage can already be done even when the timeout kicks in.
+2. Cons:     
+    2.1. damage can already be done even when the timeout kicks in.     
     2.2. Sometimes hard to implement. Cutting connections after a certain time may result in strange behaviours.
 
 
 ###### Maximum Query Depth
-
 This feature is important to tackle the problem of queries which goes way out the desired schema in terms of depth, or even cyclic graphs, planning wiht a abstract syntax tree (AST).
 
-1. Pros:
-    1.1. Since the AST of the document is analyzed statically, the query does not even execute, which adds no load on your GraphQL server.
+1. Pros:      
+    1.1. Since the AST of the document is analyzed statically, the query does not even execute, which adds no load on your GraphQL server.      
     1.2. and that most strategies will still use timeout as a final protection.
-2. Cons:
+2. Cons:      
     2.1. Depth alone is often not enough to cover all abusive queries. For example, a query requesting an enormous amount of nodes on the root will be very expensive but unlikely to be blocked by a query depth analyzer.
 
 
 ###### Query Complexity
-
 Adding singular validation to each field could help the server to locate too expensive queries.
 
 ```
@@ -697,17 +694,16 @@ query {
 }
 ```
 
-1. Pros:
-    1.1. Covers more cases than a simple query depth.
+1. Pros:    
+    1.1. Covers more cases than a simple query depth.    
     1.2. Reject queries before executing them by statically analyzing the complexity.
-2. Cons:
-    2.1. Hard to implement perfectly.
-    2.2. If complexit is estimated by developers, how do we keep it up to date? How do we find the costs in the first place?
+2. Cons:     
+    2.1. Hard to implement perfectly.     
+    2.2. If complexit is estimated by developers, how do we keep it up to date? How do we find the costs in the first place?     
     2.3. Mutations are hard to estimate. What if they have a side effect that is hard to measure, like queuing a background job.
 
 
 ###### Throttling
-
 Because there are still some limitations on how to limit the operations by itselves, it would be possible to also throttle it by limiting resources for the clients.
 
 This may happen, for example, when a user does a lot of medium size queries, that may amount for a lot of server resources as a whole, but individually doesn't meet the maximum limits.
