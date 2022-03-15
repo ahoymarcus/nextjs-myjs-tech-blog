@@ -193,7 +193,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Linguagens e tecnologias de marcação e estilos: HTML, CSS e Bootstrap. 
 - [X] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
 - [X] Tecnologias Web Services, REST e API RESTful.
-- [ ] Conhecimento da linguagem GraphQL e Swagger.
+- [X] Conhecimento da linguagem GraphQL e Swagger.
 - [ ] Padrões AMQP e AOP. 
 - [ ] Conhecimento do toolkit jBPM e Bizagi BPMS.
 - [ ] Recomendações W3C. 

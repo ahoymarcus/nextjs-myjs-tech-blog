@@ -42,6 +42,9 @@ description: 'Web Services are software systems that follow some standards, prot
     6.4. GraphQL Clients     
     6.5. GraphQL Server
 7. ##### Swagger Development Tools
+    7.1. Basic Structure of the Swagger/OAS Specification    
+    7.2. Available Sets of Securities     
+    7.3. Some Examples of the Swagger / OpenAPI Specification (OAS)
 8. ##### W3C Recommendations
 9. ##### Further Reading
 10. ##### References
@@ -757,7 +760,31 @@ It contains definitions like:
 - Describe the schema of the response, so the client application can handle the response and brings it to the UI.
 
 
-###### Available Sets of Securities
+### Basic Structure of the Swagger/OAS Specification
+
+The specification files can be written using either YAML or JSON, and the metadata key words are case sensitive:
+
+1. **OpenApi Version**: this is a required metadata
+2. **Info Section**: it has 3 metadata attributes.   
+    2.1. Title   
+    2.2. Description: this one is optional. This is a multiline attribute that also accepts rich text representation with Markdown, and even limited HTML (see CommonMark - see [HTML Blocks](http://spec.commonmark.org/0.27/) in [Common 0.27 Specification](http://spec.commonmark.org/0.27/)).   
+    2.3. Version: of the API definition
+3. **Servers Section**: this is the base URL, and there can be provided multiple servers, including production, sandbox, etc.    
+    3.1. Also, all API paths are relative to the base path.
+4. **Paths Section**: this section brings the individual endpoints or paths   
+    4.1. These paths a relative to the base URL.   
+    4.2. In this section it is also used the HTTP methods/operations supported.
+5. **Parameters subsection**: some HTP methods/operations may have parameters, which can be required or optional. And parameters can be passed via:   
+    5.1. URL path: `/users/{userId}`   
+    5.2. Query string: `/users?role=admin`   
+    5.3. Headers: `x-CustomHeader: Value`   
+    5.4. Cookies: `Cookie: debug=0)
+6. **The requestBody subsection**: describes the body content of the message, and also media type, HTTP response code, etc.
+7. **The responses subsection**: schemas can be defined inline or referenced via `$ref`. 
+8. **Authentication Section**: bring the securitySchemes and security keywords to describe the authentication in the API.   
+
+    
+### Available Sets of Securities 
 APIs can be set in some of the following ways:
 
 1. **None**: it means that there is no kind of security to bar the API service from being accessed.
@@ -766,10 +793,22 @@ APIs can be set in some of the following ways:
 4. **OATH**: this is a authorization scheme.
 
 
-###### Building an OpenAPI Specification (OAS) File
+Exemple of a authentication feature being describe:
 
-In the JavatPoint [Swagger Tutorial](https://www.javatpoint.com/swagger) there is an example of how to make an OAS file:
+```
+components:
+    securitySchemes:
+        BasicAuth:
+            type: http
+            scheme: basic
+security:
+    - BasicAuth: []
+``` 
 
+
+### Some Examples of the Swagger / OpenAPI Specification (OAS)
+
+###### An interesting example of an OAS file  [JavatPoint](https://www.javatpoint.com/swagger):
 
 ```
 openapi: 3.0.0
@@ -781,7 +820,7 @@ info:
         url: http://javatpoint.com
     version: 1.0.0
 server
-    -url: http://devapi.com
+    - url: http://devapi.com
 paths:
     /student
         description: Student Resource
@@ -822,25 +861,6 @@ The [Swagger editor](https://editor.swagger.io/) is a online tool for the OpenAP
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://swagger.io/docs/specification/basic-structure/
-
-
-
 ### W3C Recommendations
 
 
@@ -851,10 +871,10 @@ https://swagger.io/docs/specification/basic-structure/
 
 
 
-Swagger tutorial - https://www.javatpoint.com/swagger
 
-Conhecimento da linguagem GraphQL e Swagger.
-Recomendações W3C. 
+
+
+
 
 ### Further Reading
 
@@ -866,7 +886,9 @@ Recomendações W3C.
 
 [Learn GraphQL - Howtographql.com](https://graphql.org/learn/)
 
-[Swagger Documentation](Documentation - https://swagger.io/docs/)
+[Swagger Documentation](https://swagger.io/docs/)
+
+[Swagger tutorial - JavaTPoint](https://www.javatpoint.com/swagger)
 
 ### References
 
@@ -882,7 +904,8 @@ Recomendações W3C.
 
 [GraphQL Fundamentals - Howtographql.com](https://www.howtographql.com/basics/0-introduction/)
 
-[]()
+[Basic Structure - Swagger](https://swagger.io/docs/specification/basic-structure/)
+
 
 
 [¹]:high-order-components-2022-01-29
