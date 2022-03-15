@@ -39,6 +39,8 @@ description: 'Web Services are software systems that follow some standards, prot
     6.1. GraphQL Core Concepts
     6.2. GraphQL  Architecture
     6.3. Examples of GraphQL Architectures
+    6.3. GraphQL Clients
+     6.4. GraphQL Server
 7. ##### 
 8. ##### 
 9. ##### Further Reading
@@ -614,6 +616,37 @@ This third architectural type combine the previous two, where the GraphQL layer 
 ![example-of-graphql-architecture-with-database-and-other-system](/images/articles/web-development/example-of-graphql-architecture-with-database-and-other-systems.png)
 
 
+#### GraphQL Clients
+
+Another interesting point that the [Howtograph.com](https://www.howtographql.com/advanced/0-clients/) site brings is the fact that there are two client solutions for the GraphQL development environment:
+
+1. **Apollo Client**: from the open-source community as a client  for all the major development platforms.
+2. **Relay**: a solution from the Facebook itself.
+
+
+###### View Layer Integrations & UI Updates
+
+Interesting to account that in this architecture, once the GraphQL server returns the response to the client there should be a update at the UI to display the new informations.
+
+And the author of the site uses a React-JS example, explaining that in this JavaScript framework a client would be using the concept of Hier-Order Components to have the data fetched `under the hood and make it available in the props` for the components of the application. [Howtograph.com](https://www.howtographql.com/advanced/0-clients/)
+
+
+- **Read more about High-Order Components in React-JS in this article:
+- `High-Order Components` [¹]
+
+
+###### Caching Query Results
+
+This should be a important strategy to have potential data requests previously fetched available from cache. And one additional strategy that the site proposes is to have the data normalized.
+
+This means that instead of having the whole JSON response cached as a big unit, it should be more beneficial according the author to decompose the data in its parts beforehand, that is flattening the JSON response, and caching the individual records to be referenced  with its globally unique ID.
+
+- Read more about this strategy at:
+- `GraphQL Concepts Visualized` [Apollo Blog](https://www.apollographql.com/blog/graphql/basics/the-concepts-of-graphql/)
+
+
+
+#### GraphQL Server
 
 
 
@@ -626,10 +659,7 @@ This third architectural type combine the previous two, where the GraphQL layer 
 
 
 
-
-
-
-https://www.howtographql.com/basics/1-graphql-is-the-better-rest/
+https://www.howtographql.com/advanced/1-server/
 
 Conhecimento da linguagem GraphQL e Swagger.
 Recomendações W3C. 
@@ -661,5 +691,6 @@ Recomendações W3C.
 []()
 
 
+[¹]:high-order-components-2022-01-29
 
 
