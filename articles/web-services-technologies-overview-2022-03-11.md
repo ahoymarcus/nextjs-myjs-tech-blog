@@ -16,7 +16,7 @@ description: 'Web Services are software systems that follow some standards, prot
 	2.4. SOAP Web Services Overview   
 	2.5. RESTful Web Services Overview   
 	2.6. SOAP vs REST Web Services   
-	2.7. Swagger    
+	2.7. Swagger  Overview  
 	2.8. GraphQL Overview
 3. ##### Universal Description Discovery and Integration (UDDI)
 	3.1. History of UDDI   
@@ -171,23 +171,47 @@ RESTful is a service that complies with the architecture style of Representation
 | is less prefered then REST | is more preferred than SOAP |    
 
 
-#### Swagger
+#### Swagger Overview
+
+Swagger is a tooling ecosystem for developing APIs and it uses the OpenAPI Specificatio (OAS), which cosists of both open-source as well as professional tools. [Swagger.io](https://swagger.io/tools/open-source/getting-started/)
+
+As a history development, this set of tools which includes from front-end user interfaces, to low-level codes labraries and commercial API management solutions was used as a ecosystem to implement APIs. Then in 2015, the [SmartBear Software](https://smartbear.com/) donated the Swagger Specification to the Linux Foundation, renaming the specification to the OpenAPI Specification.
 
 
+###### The OpenAPI Specification
+This is what was formely known as the Swagger Specification and it is an API description for REST APIs. Here, an OpenAPI file allows to describe the entire API:
+
+1. **Available Endpoints**
+2. **Available HTTP Commands** for each endpoint
+3. **Operation Parameters Input and Output** for each operation.
+3. **Authentication Methods**
+4. **Contract information, license, terms of use** and other information.
+
+And the specifications can be written either in YAML or JSON.
 
 
+###### The Swagger Set Tools
+It's a set of open-source tools built around the OpenAPI Specification that aims to help design, build, document, and consume REST APIs.
+
+The three major Swagger tools:
+
+1. **Swagger Editor**: a browser-based editor for editing OpenAPI specs.
+2. **Swagger UI**: it renders the OpenAPI specs as an interative API documentation.
+3. **Swagger Codegen**: generates server stubs and client libraries from an OpenAPI spec.
 
 
+###### Why to Use OpenAPI
+Some ways in which the tools set can help the development of REST APIs:
+
+- Auto-generating a server stub from the specs.
+- Creates client libraries for the API in over 40 languages.
+- Generate interative API documentation in which the users can try out the API calls directly in the browser.
+- Connecting API-related tools to the API implementation.
 
 
-
-
-
-
-
-
-
-
+- Read more about Swagger general concepts:
+- [ About Swagger](https://swagger.io/docs/specification/about/)
+- [Getting Started](https://swagger.io/tools/open-source/getting-started/)
 
 
 
@@ -719,6 +743,102 @@ In thoses cases, could be implemented limitations of server itme or of query com
 
 ### Swagger Development Tools
 
+Public APIs and even internal ones, need to be properly documented in terms to be used by its clients, since they have to recognize the exposed endpoints, know the parameters they should use and also to know the authentication methods being used.
+
+Remembering from previous points, a Application Programming Interface (API) is a definition or  a system to connect devices or application to trade information or data. And eventhough an API can be one of several types, the Swagger ecosystem works mainly with REST APIs.
+
+In itself, the API Definition is a file that describes all the things that a client can do with the API, and it can be written using many data formats, like YAML, JSON, XML, etc.
+
+It contains definitions like:
+
+- The available requests URL addresses.
+- The actions that are available in the service.
+- The Inputs and Outputs related with each action present to the client.
+- Describe the schema of the response, so the client application can handle the response and brings it to the UI.
+
+
+###### Available Sets of Securities
+APIs can be set in some of the following ways:
+
+1. **None**: it means that there is no kind of security to bar the API service from being accessed.
+2. **Basic Auth**: it means that there the necessity to create username and password for the requests.
+3. **API Key**: this is a token that is passed together with the client requisition as a necessary means to allow the connection to be set.
+4. **OATH**: this is a authorization scheme.
+
+
+###### Building an OpenAPI Specification (OAS) File
+
+In the JavatPoint [Swagger Tutorial](https://www.javatpoint.com/swagger) there is an example of how to make an OAS file:
+
+
+```
+openapi: 3.0.0
+info:
+    title: Student API
+    description: Student API by JavaTPoint
+    contact:
+        name: javatpoint
+        url: http://javatpoint.com
+    version: 1.0.0
+server
+    -url: http://devapi.com
+paths:
+    /student
+        description: Student Resource
+        get:
+            description: Operation to fetch the Student data
+            parameter:
+            -in: query
+             name: studentname
+             required: true
+             schema:
+             type: string
+             example: John
+        responses:
+            200:
+            description: Successful Response
+            content:
+                application/json:
+                    schema:
+                        type: array
+                        items:
+                            properties:
+                                Student ID:
+                                type: integer
+                                example: 1
+                            Student Name:
+                                type: string
+                                example: Peter
+                            Student Remarks:
+                                type:string
+                                example: High Grade Student
+```
+
+###### The Swagger Editor
+
+The [Swagger editor](https://editor.swagger.io/) is a online tool for the OpenAPI Specification files.
+
+![swagger-online-editor](/images/articles/web-development/swagger-online-editor.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://swagger.io/docs/specification/basic-structure/
+
 
 
 ### W3C Recommendations
@@ -731,24 +851,7 @@ In thoses cases, could be implemented limitations of server itme or of query com
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-What is Swagger? - https://swagger.io/tools/open-source/getting-started/
-
 Swagger tutorial - https://www.javatpoint.com/swagger
-
-Documentation - https://swagger.io/docs/
 
 Conhecimento da linguagem GraphQL e Swagger.
 Recomendações W3C. 
@@ -762,6 +865,8 @@ Recomendações W3C.
 [What is GraphQL? - Medium.com](https://medium.com/devgorilla/what-is-graphql-f0902a959e4)
 
 [Learn GraphQL - Howtographql.com](https://graphql.org/learn/)
+
+[Swagger Documentation](Documentation - https://swagger.io/docs/)
 
 ### References
 
