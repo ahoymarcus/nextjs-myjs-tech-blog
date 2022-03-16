@@ -961,7 +961,7 @@ And the general process followed to get a standard specification into first rele
 4. **W3C Recommendation**: this is the finalized standard that has been out in the field and is fully tested. This meaning that it has been through a thorough revised and it is usable in real world situations.
 5. **Revised Drafts**: this is due to the fact that the standards can be continously upgraded and be revised to produce a new version. In this case each standard must go through the same review process as the orginal draft did to be able to increment it version number reference.
 
-  
+
 #### How to Reference a Standard from W3C
 Another interesting point presented at the [Standard FAQ page](https://www.w3.org/standards/faq), it's the way W3C makes its references to the standards.
 
