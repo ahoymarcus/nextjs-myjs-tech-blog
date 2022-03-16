@@ -79,6 +79,8 @@ Also, it is possible to divide this great concept into two parts constituents:
 - `Front-end Development Patterns - Overview` [^2].
 - `Front-end Architectures` [^3].
 
+- Exemple of Protocols and Applications which uses these Patterns/Architectures:
+- `Advanced Message Queuing Protocol (AMQP)` [⁴]
 
 ### Software Architecture and Software Design
 
@@ -1304,3 +1306,5 @@ Some steps in the process of the design:
 [^2]:front-end-development-patterns-overview-2022-03-04
 
 [^3]:front-end-architectures-2022-03-05
+
+[^4]:advanced-message-queuing-protocol-2022-03-17

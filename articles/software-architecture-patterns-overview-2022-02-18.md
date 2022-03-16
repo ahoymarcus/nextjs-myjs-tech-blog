@@ -133,6 +133,10 @@ Example of Message Broker Software:
 [Towardsdatascience.com](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
 
 
+- Exemple of Protocols and Applications which uses the Broker Pattern:
+- `Advanced Message Queuing Protocol (AMQP)` [⁴]
+
+
 ### The Client-Server Pattern
 
 In the client-server architecture patters, there are two main components, and even when this two components are located in the same system, they use differents process from the OS:
@@ -392,3 +396,5 @@ Also found in Workflows in Bioinformatics.
 [^2]:front-end-development-patterns-overview-2022-03-04
 
 [^3]:front-end-architectures-2022-03-05
+
+[^4]:advanced-message-queuing-protocol-2022-03-17
