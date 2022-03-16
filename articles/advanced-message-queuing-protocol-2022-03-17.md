@@ -11,9 +11,11 @@ description: 'AMQP was standardized in 2012, and it provides a platform-agnostic
 1. ##### Introduction
 2. ##### The Broker Architecture
 3. ##### The Model in Brief
-    Exchanges and Exchanges Types
-    Queues
-4. #####
+    3.1. Exchanges and Exchanges Types   
+    3.2. Queues   
+    3.3. Bidings
+4. ##### Consumers
+5. ##### Message Acknowledgements
 2. ##### Further Reading
 3. ##### References
 
@@ -33,8 +35,8 @@ The RabbitMQ is a project from Erlang, and it is a important product in the mark
 The messaging brokers receive messages from publishers, and this this messages are either directly or through some layer routed to the consumers. Also, since this is a network protocol, publishers and consumers can all reside on different machines.    
 
 -  read more about the Broker Architecture in these articles:
-- `Software Architecture Patterns - Overview`[¹]
-- `Software Architecture and Design` [²] 
+- `Software Architecture Patterns - Overview` [^1].
+- `Software Architecture and Design` [^2]
  
 
  
@@ -49,7 +51,7 @@ There are 3 basic entities found in this model:
 
 1. **Exchanges**
 2. **Queues**
-3. **Bindings**  
+3. **Bindings**
 
 
 #### Exchanges and Exchanges Types
@@ -126,8 +128,48 @@ It is possible to bind a queue to a headers exchange using more than one header 
 
 #### Queues
  
+The queues in the AMQP protocol work in a similar fashion to the ones in other message or task related systems: they store messages that are consumed by applications. 
+
+It is interesting to notice that the queues share some properties with exchanges, eventhough they have properties of their own:
+
+1. **Name**: applications may pick names for the queues or let for the broker to generate a name for then.   
+    1.1. Names may be up to 255 bytes and UTF-8 characters.   
+    1.2. The broker can generate a unique name for the queue.   
+    1.3. Queue names starting with **amg.** are reserved for internal use by the broker and attempting to use it will generate the error 403 (ACCESS_REFUSED).
+2. **Durable**: the queue will survive the broker restart.
+3. **Exclusive**: used by only one connection and the queue will be deleted when consumer connection closes.
+4. **Auto-delete**: queue that has had at least one consumer is deleted when last consumer unsubscribes.
+5. **Arguments**: optional, which is used by plugins and broker-specific features such as message TTL, queue length limit, etc.
  
- 
+`Before a queue can be used it has to be declared. Declaring a queue will cause it to be created if it does not already exist. The declaration will have no effect if the queue does already exist and its attributes are the same as those in the declaration. When the existing queue attributes are not hte same as those in the declaration a channel-level exception with code 406 (PRECONDITION_FAILED) will be raised`.  [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+
+
+#### Bidings
+
+Bindings are rules that exchanges use (among other things) to route messages to queues, and therefore for a Exchange x to route for a Queue Y, **X has to bound to Y**.
+
+Also, bindings may have optional routing key attributes that are use by some exchange types, and they function as a filter for the messaging.
+
+
+According to the site [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html) this layer of indirection enables routing scenarios that should be impossible or very hard to be implemented using publishing directly to queues, and would also eliminates certain amount of duplicated work application developers have to do.´
+
+
+### Consumers
+
+Consumers are togther with the publishers, the other side of the dispositives that  are pairing to trade messages. And in the AMQP protocol there are 2 ways for client applications to consume messages:
+
+1. **Subscription**: this is the recommended option, where a subscription allows the client to have the message(s) delivered to them, that is pushed to them (**push API**).
+2. **Polling**: this type is considered inefficient and should be avoided, where the client reaches the queue to pull the message to it  **(pull API)**.
+
+
+- **note**: each consumer has an identifier, also called a **consumer tag**, and it can be used to unsubscribe it from messaging.
+
+
+### Message Acknowledgements
+
+
+
+
  
 
  
@@ -137,11 +179,17 @@ AMQP 0-9-1 Model Explained - RabbitMQ - https://www.rabbitmq.com/tutorials/amqp-
 
 [AMQP - amqp.org]( https://www.amqp.org/)
 
- [ISO and IEC Approve OASIS AMQP Advanced Message Queuing Protocol](https://www.oasis-open.org/news/pr/iso-and-iec-approve-oasis-amqp-advanced-message-queuing-protocol/)
+[ISO and IEC Approve OASIS AMQP Advanced Message Queuing Protocol](https://www.oasis-open.org/news/pr/iso-and-iec-approve-oasis-amqp-advanced-message-queuing-protocol/)
 
- [RabbitMQ: o que é e como utilizar - Cedro Blog](https://blog.cedrotech.com/rabbitmq-o-que-e-e-como-utilizar)
+[RabbitMQ: o que é e como utilizar - Cedro Blog](https://blog.cedrotech.com/rabbitmq-o-que-e-e-como-utilizar)
+ 
+[RabbitMQ Tutorials - RabbitMQ](https://www.rabbitmq.com/getstarted.html)
+ 
+[Part 1: RabbitMQ for beginners - What is RabbitMQ? - CloudAMQP](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
  
 ### References
+
+[AMQP 0-9-1 Model Explained - RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
 
 []()
 
