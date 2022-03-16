@@ -604,7 +604,7 @@ The WebSockets provides a `standardized way fot the server to send content to th
 
 
 
-
+  
 https://en.wikipedia.org/wiki/Aspect-oriented_programming
 
 Padrões Advanced message Queuing protocol AMQP e Aspect Oriented Programming?? AOP. 
