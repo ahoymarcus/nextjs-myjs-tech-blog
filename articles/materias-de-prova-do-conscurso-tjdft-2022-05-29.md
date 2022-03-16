@@ -197,7 +197,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Padrões AMQP e AOP. 
 - [ ] Conhecimento do toolkit jBPM e Bizagi BPMS.
 - [X] Recomendações W3C. 
-- [ ] Modelo Nacional de Interoperabilidade (MNI).
+- [X] Modelo Nacional de Interoperabilidade (MNI).
 - [X] Bancos de dados. Conceitos e fundamentos. 
 - [O] Modelo relacional, em rede, hierárquico, distribuído e orientado a objetos. Projeto e modelagem de banco de dados relacional. Modelo Entidade Relacionamento. Notação IDEF1X. Normalização. Álgebra relacional. 
 - [X] Conhecimento de SGBD Oracle, PostgreSQL, SQL Server e MySQL. 
