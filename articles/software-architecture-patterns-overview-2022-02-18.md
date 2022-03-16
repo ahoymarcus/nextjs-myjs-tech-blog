@@ -134,7 +134,7 @@ Example of Message Broker Software:
 
 
 - Exemple of Protocols and Applications which uses the Broker Pattern:
-- `Advanced Message Queuing Protocol (AMQP)` [⁴]
+- `Advanced Message Queuing Protocol (AMQP)` [^4]
 
 
 ### The Client-Server Pattern

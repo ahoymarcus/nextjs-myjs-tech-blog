@@ -11,15 +11,9 @@ description: 'AMQP was standardized in 2012, and it provides a platform-agnostic
 1. ##### Introduction
 2. ##### The Broker Architecture
 3. ##### The Model in Brief
+    Exchanges and Exchanges Types
+    Queues
 4. #####
-The Broker Architecture 
-The Model in Brief 
-Exchanges and Exchanges Types
-    Default exchange 
-    Direct Exchange
-    Fanout Exchange 
-    Topic Exchange 
-Queues
 2. ##### Further Reading
 3. ##### References
 
@@ -58,7 +52,7 @@ There are 3 basic entities found in this model:
 3. **Bindings**  
 
 
-### Exchanges and Exchanges Types
+#### Exchanges and Exchanges Types
  
  Exchanges are AMQP entities where messages are sent to, and they in turn route those messages into 0 or many queues. These exchanges entities have some attributes like:
  
@@ -68,14 +62,14 @@ There are 3 basic entities found in this model:
  4. **Arguments**: this one is optinal, and it is used by plugins for broker-specific features.
  
  
-#### Default exchange 
+###### Default exchange 
  
 This type of exchange may appear to be direct, because it has a empty string as the name property, which comes predefined by the broker. And this is a simpler disposition that may be useful to simpler applications:
 
 Every `queue that is created is automatically bound to it with a routing key which is the same as the queue name`. [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
- 
- 
-#### Direct Exchange
+
+
+###### Direct Exchange
 
 This type may be more common to unicast messages and to be use to distribute tasks to workers, and the load are balanced between consumers and not queues. Though, it still able to be used for multicasting messages.
 
@@ -85,9 +79,9 @@ And how it works:
 - When a new message with routing key R arrives at the direct exchange, the exchange routes it to the queue if K = R.
 
 ![example-of-direct-queue-in-amqp-protocol](/images/articles/development/[example-of-direct-queue-in-amqp-protocol.png)
- 
- 
-#### Fanout Exchange 
+
+
+###### Fanout Exchange 
 
 In this type the exchange routes the messages to all the queues that are bound to it, and it is the task of the queue to ignore different routing keys. And this this case the Fanout Exchange is ideal for broadcast routing messages.
  
@@ -98,9 +92,9 @@ Some kind of applications that could use this type of exchange:
 - Sports new sites to distribute score updates for clients in real-time.
 - Distributed systems to broadcast states and configuration updates.
 - Group chats to distribute messages between participants.
- 
- 
-#### Topic Exchange 
+
+
+###### Topic Exchange 
  
 This type can route message to one of many queues based on a match between a message routing key and the pattern that was used to bind a queue to an exchange.
  
@@ -117,7 +111,7 @@ Some kind of applications that could use this type of exchange:
 - Distributed architecture/OS-specific software or packaging where each builder can handle only one architecture or OS.
 
 
-#### Headers Exchange
+###### Headers Exchange
 
 This are exchanges that are designed for routing on multiple attributes that are more easily expressed as message headers than a routing key. So, here, the routing key is ignored, and the match is taken from the value of the header and the value specified upon the binding.
 
@@ -130,7 +124,7 @@ It is possible to bind a queue to a headers exchange using more than one header 
 - **note**: headers beginning with the string 'x-' will not be used to evaluate matches.
 
 
-### Queues
+#### Queues
  
  
  

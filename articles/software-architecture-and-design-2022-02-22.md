@@ -80,7 +80,7 @@ Also, it is possible to divide this great concept into two parts constituents:
 - `Front-end Architectures` [^3].
 
 - Exemple of Protocols and Applications which uses these Patterns/Architectures:
-- `Advanced Message Queuing Protocol (AMQP)` [⁴]
+- `Advanced Message Queuing Protocol (AMQP)` [^4]
 
 ### Software Architecture and Software Design
 
