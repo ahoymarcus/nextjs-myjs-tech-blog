@@ -46,10 +46,10 @@ description: 'Web Services are software systems that follow some standards, prot
     7.2. Some Examples of the Swagger/OAS Specification     
     7.3. Available Sets of Securities
 8. ##### W3C Recommendations
-    8.1. Some of the W3C/IETF standards (over Internet Protocol Suite)
-    8.2. W3C Activities
-    8.3. How to Reference a Standard from W3C
-    8.4. The Meaning of  'Conformance' Towards some Standard
+    8.1. Some of the W3C/IETF standards (over Internet Protocol Suite)   
+    8.2. W3C Activities   
+    8.3. How to Reference a Standard from W3C   
+    8.4. The Meaning of  'Conformance' Towards some Standard   
     8.5. How to Properly Cite a Work under the W3C
 9. ##### Further Reading
 10. ##### References
@@ -948,7 +948,20 @@ And there are 04 General Domains which categorizes all the activities and facili
 
 - **Note**: in addition, the Quality Assurance Activity and Patent Policy apply to all domains.
     
-    
+
+#### The Maturation Process of a Standard
+
+Creating a standard can take many years and can involve many iterations of the draft specification, and even after its acceptance, it can still be worked upon into different versions of the standard that aims to make it even better and more robust.
+
+And the general process followed to get a standard specification into first release or version 1.0: [Mays Digital](https://web.archive.org/web/20160818123647/https://www.maysdigital.co.uk/w3c/)
+
+1. **Working Draft**: the working group should produce a draft for the specification while it dicuss all the requirements necessary for a final working specification.
+2. **Cadidate Recommendation**: for the working draft,  comments and recommendations are incorporated an then a candidate draft is created. And the Candidate draft is meant to be commented and discussed by the development community in terms of it feasibility and importance as technology to be implemented.
+3. **Proposed Recommendation**: this the version created from the outcome of the first two processes, where the specialization received its working draft and then it was received as a cadidate.
+4. **W3C Recommendation**: this is the finalized standard that has been out in the field and is fully tested. This meaning that it has been through a thorough revised and it is usable in real world situations.
+5. **Revised Drafts**: this is due to the fact that the standards can be continously upgraded and be revised to produce a new version. In this case each standard must go through the same review process as the orginal draft did to be able to increment it version number reference.
+
+  
 #### How to Reference a Standard from W3C
 Another interesting point presented at the [Standard FAQ page](https://www.w3.org/standards/faq), it's the way W3C makes its references to the standards.
 
@@ -958,7 +971,7 @@ So, for each standard there is two URI:
 2. **Latest Version URI**: this brings a document series with all the progression of the standard documents until its later and more definitive form.
 
 
-`We encourage you to consider carefully which of the two identifiers to use when referring to a W3C Technical Report. If you mean to refer to a particular document or passage "forever," please use the "this version" URI. If you need to refer to "whatever is the most up-to-date version", please use the "latest version" URI.` [W3C](https://www.w3.org/standards/faq)]
+`We encourage you to consider carefully which of the two identifiers to use when referring to a W3C Technical Report. If you mean to refer to a particular document or passage "forever," please use the "this version" URI. If you need to refer to "whatever is the most up-to-date version", please use the "latest version" URI.` [W3C](https://www.w3.org/standards/faq)
 
 
 #### The Meaning of  'Conformance' Towards some Standard
@@ -970,15 +983,6 @@ There are some requirements for attribution of a W3C paper, which can be seem in
 ```
 Getting Started with the W3C |18n iste, Richard Ishida, ed. Copyright ©2009 W3C ®  (MIT, ERCIM, Keio), All Rights Reserved.
 ```
-
-
-
-
-
-
-
-
-
 
 
 ### Further Reading
