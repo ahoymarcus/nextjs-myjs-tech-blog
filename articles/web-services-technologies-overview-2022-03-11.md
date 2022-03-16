@@ -41,11 +41,16 @@ description: 'Web Services are software systems that follow some standards, prot
     6.3. Examples of GraphQL Architectures     
     6.4. GraphQL Clients     
     6.5. GraphQL Server
-7. ##### Swagger Development Tools
+7. ##### Swagger/OAS Specification and Development Tools
     7.1. Basic Structure of the Swagger/OAS Specification    
-    7.2. Available Sets of Securities     
-    7.3. Some Examples of the Swagger / OpenAPI Specification (OAS)
+    7.2. Some Examples of the Swagger/OAS Specification     
+    7.3. Available Sets of Securities
 8. ##### W3C Recommendations
+    8.1. Some of the W3C/IETF standards (over Internet Protocol Suite)
+    8.2. W3C Activities
+    8.3. How to Reference a Standard from W3C
+    8.4. The Meaning of  'Conformance' Towards some Standard
+    8.5. How to Properly Cite a Work under the W3C
 9. ##### Further Reading
 10. ##### References
 
@@ -744,7 +749,7 @@ In thoses cases, could be implemented limitations of server itme or of query com
 
 
 
-### Swagger Development Tools
+### Swagger/OAS Specification and Development Tools
 
 Public APIs and even internal ones, need to be properly documented in terms to be used by its clients, since they have to recognize the exposed endpoints, know the parameters they should use and also to know the authentication methods being used.
 
@@ -760,7 +765,7 @@ It contains definitions like:
 - Describe the schema of the response, so the client application can handle the response and brings it to the UI.
 
 
-### Basic Structure of the Swagger/OAS Specification
+#### Basic Structure of the Swagger/OAS Specification
 
 The specification files can be written using either YAML or JSON, and the metadata key words are case sensitive:
 
@@ -784,29 +789,8 @@ The specification files can be written using either YAML or JSON, and the metada
 8. **Authentication Section**: bring the securitySchemes and security keywords to describe the authentication in the API.   
 
     
-### Available Sets of Securities 
-APIs can be set in some of the following ways:
 
-1. **None**: it means that there is no kind of security to bar the API service from being accessed.
-2. **Basic Auth**: it means that there the necessity to create username and password for the requests.
-3. **API Key**: this is a token that is passed together with the client requisition as a necessary means to allow the connection to be set.
-4. **OATH**: this is a authorization scheme.
-
-
-Exemple of a authentication feature being describe:
-
-```
-components:
-    securitySchemes:
-        BasicAuth:
-            type: http
-            scheme: basic
-security:
-    - BasicAuth: []
-``` 
-
-
-### Some Examples of the Swagger / OpenAPI Specification (OAS)
+#### Some Examples of the Swagger / OpenAPI Specification (OAS)
 
 ###### An interesting example of an OAS file  [JavatPoint](https://www.javatpoint.com/swagger):
 
@@ -860,11 +844,132 @@ The [Swagger editor](https://editor.swagger.io/) is a online tool for the OpenAP
 ![swagger-online-editor](/images/articles/web-development/swagger-online-editor.png)
 
 
+#### Available Sets of Securities 
+APIs can be set in some of the following ways:
+
+1. **None**: it means that there is no kind of security to bar the API service from being accessed.
+2. **Basic Auth**: it means that there the necessity to create username and password for the requests.
+3. **API Key**: this is a token that is passed together with the client requisition as a necessary means to allow the connection to be set.
+4. **OATH**: this is a authorization scheme.
+
+
+Exemple of a authentication feature being describe:
+
+```
+components:
+    securitySchemes:
+        BasicAuth:
+            type: http
+            scheme: basic
+security:
+    - BasicAuth: []
+``` 
+
+
+
 
 ### W3C Recommendations
 
+The W3C defines what is a Recommendation like thus:
+
+`A W3C Recommendation is a specification of set of guidelines that, after extensive consensus-building, has received the endorsemt of W3C Members and the Director. W3C recommends the wide deployment of its Recommendations. Note: W3C Recommendations are similar to the standards published by other organizations.` [W3C](https://www.w3.org/2004/02/Process-20040205/tr.html)
 
 
+At its site, the [World Wilde Web Consortium (W3C)](https://www.w3.org/Consortium/) states the its institution is an international community where member organizations, the full-time staff, and also the public all work together to develop Web standards. 
+
+And in its [Standard FAQ page](https://www.w3.org/standards/faq), the W3C states that besides the standards the institution also publishes other technical reports that does not follow the formal standards process, but that are publish as a service tot the community. 
+
+
+Those are publications that eventually can become some kind of input to help the process of standadization, and they are documents like:
+
+- **W3C Member Submissions** which are a benefit of W3C Membership.
+- **W3C Community and Business Groups**
+- **Incubator Groups**
+- **W3C Team (Staff) Submissions**
+- **Workshp Reports**
+
+
+#### Some of the W3C/IETF standards (over Internet Protocol Suite)
+
+1. **CSS**
+2. **DOM**
+3. **HTML**
+4. **JSON-LD**: linked data JSON extension
+5. **SOAP**
+6. **SVG**
+7. **WebAssembly**: portable binary format and assembly language.
+8. **WSDL**
+9. **XHTML**
+10. **xml**
+11. **XML Events**
+12. **XML Schema**
+13. **XPath**
+14. **XQuery**
+15. **XSL-FO**
+16. **XSLT**
+
+
+#### W3C Activities
+
+The W3C Activities are organized into groups:
+
+- Working Groups (for technical developments)
+- Interest Groups (for more general work)
+
+
+And there are 04 General Domains which categorizes all the activities and facilitates management:
+
+1. **Architecture Domain**: this is the domain of activities  that works with the underlying technologies of the Web:  
+    1.1. The Document object Model   
+    1.2. Internationalization: to make sure that Web technology meets the needs of the global community.  
+    1.3. Jigsaw: W3C Web server platform.    
+    1.4. Uniform Resource Identifier (URI): the Web's naming and addressing technology.    
+    1.5. Web Services    
+    1.6. Extensible Markup Language: the XML language.
+2. **Interaction Domain**: this is the domain of activities that seeks to improve user interation with the Web, and to facilitate single Web authoring to benefit users and content providers alike:   
+    2.1. Amaya: W3C's own editor/browser.   
+    2.2. Device Independence   
+    2.3. Graphics   
+    2.4. Hypertext Markup Language (HTML)    
+    2.5. Math: the primary focus is the MathML language.    
+    2.6. Multimodal Interaction     
+    2.7. Style   
+    2.8. Synchronized Multimedia   
+    2.9. Voice Browser.
+3. **Technologiy and Society Domain**: this is the domain of activities that seeks to develop Web infrastructure to address social, lega, and pubic policy concerns:   
+    3.1. Privacy   
+    3.2. Semantic web   
+    3.3. XML Encryption   
+    3.4. XML Key Management  
+    3.5. XML Signature
+4. **Web Accessibility Initiative**: this is the domain that promotes a high degree of usability for people with disabilities:   
+    4.1. WAI International Program Office   
+    4.2. WAI Technical Activity
+
+- **Note**: in addition, the Quality Assurance Activity and Patent Policy apply to all domains.
+    
+    
+#### How to Reference a Standard from W3C
+Another interesting point presented at the [Standard FAQ page](https://www.w3.org/standards/faq), it's the way W3C makes its references to the standards.
+
+So, for each standard there is two URI:
+
+1. **This Version URI**: this is supposed to be the original document (which may have some later accessory correction, but nothing related to the standard itself).
+2. **Latest Version URI**: this brings a document series with all the progression of the standard documents until its later and more definitive form.
+
+
+`We encourage you to consider carefully which of the two identifiers to use when referring to a W3C Technical Report. If you mean to refer to a particular document or passage "forever," please use the "this version" URI. If you need to refer to "whatever is the most up-to-date version", please use the "latest version" URI.` [W3C](https://www.w3.org/standards/faq)]
+
+
+#### The Meaning of  'Conformance' Towards some Standard
+The site explains that in order to achieve the goal of successful interoperability of implementations, a **Conformance** is the fulfilment of the specified requirements by a product , process, or service. And these requirements are detailed in a specification as part of the document of the Standard itself.
+
+#### How to Properly Cite a Work under the W3C
+There are some requirements for attribution of a W3C paper, which can be seem in this example from the [site](https://www.w3.org/Consortium/Legal/IPR-FAQ-20000620):
+
+```
+Getting Started with the W3C |18n iste, Richard Ishida, ed. Copyright ©2009 W3C ®  (MIT, ERCIM, Keio), All Rights Reserved.
+```
 
 
 
@@ -890,6 +995,8 @@ The [Swagger editor](https://editor.swagger.io/) is a online tool for the OpenAP
 
 [Swagger tutorial - JavaTPoint](https://www.javatpoint.com/swagger)
 
+[W3C - Wikipedia](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)
+
 ### References
 
 [Web Services Tutorial - JavaTPoint](https://www.javatpoint.com/web-services-tutorial)
@@ -906,6 +1013,9 @@ The [Swagger editor](https://editor.swagger.io/) is a online tool for the OpenAP
 
 [Basic Structure - Swagger](https://swagger.io/docs/specification/basic-structure/)
 
+[The World Wide Web Consortium: Building a Better Internet - Mays Digital](https://web.archive.org/web/20160818123647/https://www.maysdigital.co.uk/w3c/)
+
+[W3C Activities - ERCIM NEWS](https://www.ercim.eu/publication/Ercim_News/enw52/w3c-activities.html)
 
 
 [¹]:high-order-components-2022-01-29
