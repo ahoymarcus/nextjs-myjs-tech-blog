@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Advanced Message Queuing Protocol (AMQP)'
-date: '2022-03-17'
+date: '2022-03-16'
 subject: 'development-articles'
 description: 'AMQP was standardized in 2012, and it provides a platform-agnostic method for ensuring information safely transported between applications, and it is used in a variaty of areas like financial front office trading, ocean observation, transportation, smart grid, computer-generated animation, online gaming, etc.'
 ---
@@ -38,13 +38,16 @@ Also, there are OSs that include AMQP implementations, and many other applicatio
 The RabbitMQ is a project from Erlang, and it is a important product in the market that uses the AMQP protocol for dealing with the tranfering of messages in a fast and reliable way. RabbitMQ is a open-source messagery server, and it states that the AMQP protocol `enables conforming client applications to communicate with corforming messaging middleware brokers`. [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
  
  
+- Read more about the RabbitMQ software in this article:
+- `RabbitMQ - Overview` [¹]
+ 
 ### The Broker Architecture 
 
 The messaging brokers receive messages from publishers, and this this messages are either directly or through some layer routed to the consumers. Also, since this is a network protocol, publishers and consumers can all reside on different machines.    
 
 -  read more about the Broker Architecture in these articles:
-- `Software Architecture Patterns - Overview` [¹]
-- `Software Architecture and Design` [²]
+- `Software Architecture Patterns - Overview` [²]
+- `Software Architecture and Design` [³]
  
 
  
@@ -317,8 +320,10 @@ But, observing that the main goal of AMQP is interoperability, `it is a good ide
 [AMQP 0-9-1 Model Explained - RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
 
 
-[¹]:software-architecture-patterns-overview-2022-02-18
+[¹]:rabbitmq-2022-03-17
 
-[²]:software-architecture-and-design-2022-02-22
+[²]:software-architecture-patterns-overview-2022-02-18
+
+[³]:software-architecture-and-design-2022-02-22
 
 
