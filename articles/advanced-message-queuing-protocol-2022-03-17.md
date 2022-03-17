@@ -294,7 +294,7 @@ Finally, this last point in this description of the AMQP protocol at the site of
 And the matter here is that clients may implement very different systems to work all these concepts, like including additional features to the protocol, dealing with synchronality or asynchronality features, etc.
 
 
-But, observing that the main goal of AMQP is interoperability, `it is a good idea for developers to understand protocol operations and not limit themselves to terminology of a particular client library. This way communication with developers using different libraries will be significantly easier`. RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+But, observing that the main goal of AMQP is interoperability, `it is a good idea for developers to understand protocol operations and not limit themselves to terminology of a particular client library. This way communication with developers using different libraries will be significantly easier`. [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
  
  
 
