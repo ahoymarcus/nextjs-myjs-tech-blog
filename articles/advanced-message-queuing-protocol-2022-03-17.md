@@ -35,8 +35,8 @@ The RabbitMQ is a project from Erlang, and it is a important product in the mark
 The messaging brokers receive messages from publishers, and this this messages are either directly or through some layer routed to the consumers. Also, since this is a network protocol, publishers and consumers can all reside on different machines.    
 
 -  read more about the Broker Architecture in these articles:
-- `Software Architecture Patterns - Overview` [^1].
-- `Software Architecture and Design` [^2]
+- `Software Architecture Patterns - Overview` [¹]
+- `Software Architecture and Design` [²]
  
 
  
@@ -55,15 +55,15 @@ There are 3 basic entities found in this model:
 
 
 #### Exchanges and Exchanges Types
- 
- Exchanges are AMQP entities where messages are sent to, and they in turn route those messages into 0 or many queues. These exchanges entities have some attributes like:
- 
- 1. **Name**
- 2. **Durability**: the exchanges survive the broker restart
- 3. **Auto-delete**: the exchange is deleted when the last queue is unbound from it.
- 4. **Arguments**: this one is optinal, and it is used by plugins for broker-specific features.
- 
- 
+
+Exchanges are AMQP entities where messages are sent to, and they in turn route those messages into 0 or many queues. These exchanges entities have some attributes like:
+
+1. **Name**
+2. **Durability**: the exchanges survive the broker restart.
+3. **Auto-delete**: the exchange is deleted when the last queue is unbound from it.
+4. **Arguments**: this one is optinal, and it is used by plugins for broker-specific features.
+
+
 ###### Default exchange 
  
 This type of exchange may appear to be direct, because it has a empty string as the name property, which comes predefined by the broker. And this is a simpler disposition that may be useful to simpler applications:
@@ -80,7 +80,7 @@ And how it works:
 - A queue binds to the exchange with a routing key K.
 - When a new message with routing key R arrives at the direct exchange, the exchange routes it to the queue if K = R.
 
-![example-of-direct-queue-in-amqp-protocol](/images/articles/development/[example-of-direct-queue-in-amqp-protocol.png)
+![example-of-direct-queue-in-amqp-protocol](/images/articles/development/example-of-direct-queue-in-amqp-protocol.png)
 
 
 ###### Fanout Exchange 
@@ -99,18 +99,18 @@ Some kind of applications that could use this type of exchange:
 ###### Topic Exchange 
  
 This type can route message to one of many queues based on a match between a message routing key and the pattern that was used to bind a queue to an exchange.
- 
+
 And the Topic Exchanges have a very broad set of use cases, because whenever `a problem involves multiple consumers/applications that selectively choose which type of messages they want to receive, the use of topic exchanges should be considered` [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
- 
- 
+
+
 Some kind of applications that could use this type of exchange:
 
-- Distributing data relevant to specific geographic location, for example, points of sale.
-- Background task processing done by multiple workers, each capable of handling specific set of tasks.
-- Stocks price updates (and updates on other kinds of financial data)
-- News updates that involve categorization of tagging (for example, ony for a particular sport or team)
-- Orchestration of services of different kinds in the cloud.
-- Distributed architecture/OS-specific software or packaging where each builder can handle only one architecture or OS.
+1. Distributing data relevant to specific geographic location, for example, points of sale.
+2. Background task processing done by multiple workers, each capable of handling specific set of tasks.
+3. Stocks price updates (and updates on other kinds of financial data)
+4. News updates that involve categorization of tagging (for example, ony for a particular sport or team)
+5. Orchestration of services of different kinds in the cloud.
+6. Distributed architecture/OS-specific software or packaging where each builder can handle only one architecture or OS.
 
 
 ###### Headers Exchange
