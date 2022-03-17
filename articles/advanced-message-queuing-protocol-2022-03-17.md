@@ -15,9 +15,17 @@ description: 'AMQP was standardized in 2012, and it provides a platform-agnostic
     3.2. Queues   
     3.3. Bidings
 4. ##### Consumers
-5. ##### Message Acknowledgements
-2. ##### Further Reading
-3. ##### References
+5. ##### Messages
+    5.1. Message Acknowledgements   
+    5.2. Prefetching Messages   
+    5.3. Message Attributes and Payload
+6. ##### Connections
+7. ##### Channels
+8. ##### Virtual Hosts
+9. ##### AMQP Extensions
+10. ##### AMQP Clients Ecosystem
+11. ##### Further Reading
+12. ##### References
 
 ### Introduction
  
@@ -165,15 +173,130 @@ Consumers are togther with the publishers, the other side of the dispositives th
 - **note**: each consumer has an identifier, also called a **consumer tag**, and it can be used to unsubscribe it from messaging.
 
 
-### Message Acknowledgements
+
+### Messages
+
+###### Message Acknowledgements
+
+The Message Acknowlegement is a feature that tries to deal with the matter of reassuriment that the message is delivered and that it may be acquired by the consumer, and this feature makes the implementations of the protocol certainly more robust.
+
+This is important not only because messages may be lost because of network issues, but there is also the possibility of problems related with the consumer that may prevent it to reach the message.
+
+But in the other hand, it also raises the problem of when the broker should remove the messages, since even the acknowlegements of the consumer can occur at different period of times, like just after the consumer receives the message, or just after it stores the message, or even only after it processes the message.
+
+Also, there is the event where the consumer for any reason just cannot give its acknowlegements and the broker may stays without answer.
+
+Anyway, there are 2 modes for the acknowlegements of the messages:
+
+1. After broker sends a message to an application using the methods **basic.deliver** or **basic.get-ok**.
+2. After the application sends back an acknowlegements using the method **basic.ack**.
 
 
+###### Acknowlegement Methods
+
+This methods from AMQP are similar to HTTP verbs or operations, but they nothing to do with methods found in OO programming.
+
+And just like HTTP operations are categorized in their hundreds, here this protocol groups them in classes:
+
+1. **Exchange class**: this methods or operations acts as requrests from the consumer and responses from the broker   
+    1.1. exchange.declare method   
+    1.2. exchange.declare-ok   
+    1.3. exchange.delete    
+    1.4. exchange.delete-ok
 
 
+- **Note**: that there are acceptions to this parallel mode of communication when methods like **basic.publish** does not have a corresponding response or the **basic.get** which may have more than one possible response.
+
+
+###### Rejecting Messages
+
+When a consumer application receives a message, processing of that message may or may not succeed. An application can indicate to the broker that message processing has failed (or cannot be accomplished at the time) by rejecting a message.
+
+When rejecting a message, an application can ask the broker to discard or requeue it. And when there is only one consumer on a queue, make sure you do not create infinite message delivery loops by rejecting and requeueing a message from the same consumer over and over again.
+
+
+###### Negative Acknowledgements
+
+Messages are rejected with the **basic.reject** method. There is one limitation that **basic.reject** has: there is no way to reject multiple messages as you can do with acknowlegements.
+
+However, if you are using RabbitMQ. then there is a solution, because RabbitMQ provides an AMQP 0-g-1 exetensioin known as negative acknowlegements or nacks.
+
+
+#### Prefetching Messages 
+
+For cases when multiple consumers share a queue, it is useful to be able to specify how many messages each consumer can be sent at once before sending the next acknowledgement.
+
+This can be used as a simple load balancing technique or to improve throughput if messages tend to be published in batches. For example, if a producing application sends messages every minute because of the nature of the work it is doing.
+
+- **Note**: that RabbitMQ only supports channel-level prefetch-count, not connections or size based prefetching.
+
+
+#### Message Attributes and Payload
+
+Attributes are a commen set on the AMQP protocol, and therefore many operations with them are facilitated by the protocol itself. And besides, some attributes are used by the brokers, but the majority of them `are open to interpretation by applications that receive them`.  [RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+
+Some examples of attributes:
+
+1. **Content type**
+2. **Content encoding**
+3. **Routing key**
+4. **Delivery mode (persistent or not)**
+5. **Message priority**
+6. **Message publishing timestamp**
+7. **Expiration period**
+8. **Publisher application id**
+
+
+One important distinction that the site of RabbitMQ seems to do about this protocol is that there is a difference when the message is deemed persistent by the broker/publisher or simply from the queue, because in the first case it is used the disk to store, and that would bring the same kind of optimization analysis that should be made by data storages in general:
+
+`Messages may be published as persistent, which makes the broker persist them to disk. If the server is restarted the system ensures that received persistent messages are not lost. Simply publishing a message to a durable exchange or the fact that the queue(s) it is routed to are durable doesn't make a message persistent: it all depends on persistence mode of the message itself. Publishing messages as persistent affects performance (just like with data stores, durability comes at a certain cost in performance)`. RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+
+
+-- Read more about this point in the [RabbitMQ Publisers Guide](https://www.rabbitmq.com/publishers.html)
  
 
  
-AMQP 0-9-1 Model Explained - RabbitMQ - https://www.rabbitmq.com/tutorials/amqp-concepts.html
+### Connections
+
+The AMQP uses TCP at the transport layer for reliable delivery, and because of that the connections are typically long-lived. Besides, the connections use authentication and can be protected using TLS.
+
+And when an application no longe needs to be connected to the server, it should gracefully close its AMQP connection, instead of abruptly closing the underlying TCP connection.
+
+
+### Channels
+ 
+Another great feature from AMQP is the use of channels as a feature to optimize the TCP connection, instead of opening multiple ones. And in doing this the protocol saves system resources and facilitates configuration with the firewall.
+
+So, in AMQP connections are multiplexed, and use channels to create these `lightweight connections that share a single TCP connetion`. RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+ 
+ 
+Also important to see that eventhough the channel exists within some connection, it has its own Id and have a separated context from all the other channels in this same connection.
+ 
+ 
+### Virtual Hosts
+
+This is another feature that allows a single broker to have many isolated 'environments', which could be group of users, or exchanges, or queues, etc.
+ 
+ 
+### AMQP Extensions
+
+- **Custom exchange types**
+- **Additional attributes for the definition of Exchanges**
+- **Broker-specific extensions**
+- **New AMQP 0-g-1 method classes**
+- **Brokers can be extended with additional plugins**
+
+
+### AMQP Clients Ecosystem
+ 
+Finally, this last point in this description of the AMQP protocol at the site of RabbitMQ is also very important, because it focuses on the point of interoperability.
+
+And the matter here is that clients may implement very different systems to work all these concepts, like including additional features to the protocol, dealing with synchronality or asynchronality features, etc.
+
+
+But, observing that the main goal of AMQP is interoperability, `it is a good idea for developers to understand protocol operations and not limit themselves to terminology of a particular client library. This way communication with developers using different libraries will be significantly easier`. RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+ 
+ 
 
 ### Further Reading
 
@@ -187,11 +310,11 @@ AMQP 0-9-1 Model Explained - RabbitMQ - https://www.rabbitmq.com/tutorials/amqp-
  
 [Part 1: RabbitMQ for beginners - What is RabbitMQ? - CloudAMQP](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
  
+[Docs - CloudAMQP](https://www.cloudamqp.com/docs/index.html)
+ 
 ### References
 
 [AMQP 0-9-1 Model Explained - RabbitMQ](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
-
-[]()
 
 
 [¹]:software-architecture-patterns-overview-2022-02-18
