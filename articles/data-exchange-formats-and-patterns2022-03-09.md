@@ -47,10 +47,8 @@ description: 'Network communiction has made message-based exchange between appli
 	6.11. SCP (Secure Copy)   
 	6.12. SFTP (SSH File Transfer Protocol)   
 	6.13. WebSocket
-7. #####  
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+7. ##### Further Reading
+8. ##### References
 
 ### Introduction
 
@@ -583,35 +581,6 @@ The WebSockets provides a `standardized way fot the server to send content to th
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-https://en.wikipedia.org/wiki/Aspect-oriented_programming
-
-Padrões Advanced message Queuing protocol AMQP e Aspect Oriented Programming?? AOP. 
-Conhecimento do toolkit jBPM e Bizagi BPMS.
-
-Modelo Nacional de Interoperabilidade (MNI).
-
 ### Further Reading
 
 [Web Architecture - W3C](https://www.w3.org/standards/webarch/)
@@ -625,6 +594,4 @@ Modelo Nacional de Interoperabilidade (MNI).
 ### References
 
 [Data Exchange Mechanisms and Considerations - Harvard.edu](https://enterprisearchitecture.harvard.edu/data-exchange-mechanisms)
-
-[]()
 
