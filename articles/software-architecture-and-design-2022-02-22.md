@@ -1280,7 +1280,7 @@ Some steps in the process of the design:
 
 ### Aspect Oriented Software Development (AOSD)
 
-About Aspect Oriented Programming (AOP), read this article: `Aspect Oriented Programming (AOP)` [⁵]
+About Aspect Oriented Programming (AOP), read this article: `Aspect Oriented Programming (AOP)` [^5]
 
 
 

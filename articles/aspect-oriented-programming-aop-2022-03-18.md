@@ -79,12 +79,12 @@ This king of cross-cutting concerns that are create may include security managem
 
 #### When to Use AOP
 
-According to [Merrit T,](https://dzone.com/articles/when-use-aspect-oriented), just like any other architectural style, the use of AOP cannot be implyed beforehand and apart from the concrete requirements and constraints of a application.
+According to [Merrit T.](https://dzone.com/articles/when-use-aspect-oriented), just like any other architectural style, the use of AOP cannot be implyed beforehand and apart from the concrete requirements and constraints of a application.
 
 Though, usually working with AOP is more related to non-functional requirementes and of quality attributes of the system, which don't deal directly with any specific functionality, but they do create the base to decouple parts of the application allowing reuse of coding.
 
 
-`Again in my experiences, aspect oriented architecture is not as effective with small or less complex systems in comparison.  There is no need to model concerns for a system that has a limited amount of them because the added overhead would not be justified for the actual benefits of creating the aspect oriented architecture model.  Furthermore, these types of projects typically have a reduced time schedule and a limited budget.  The creation of the Aspect oriented models would increase the overhead of a project and thus increase the time needed to implement the system.` [Merrit T,](https://dzone.com/articles/when-use-aspect-oriented)
+`Again in my experiences, aspect oriented architecture is not as effective with small or less complex systems in comparison.  There is no need to model concerns for a system that has a limited amount of them because the added overhead would not be justified for the actual benefits of creating the aspect oriented architecture model.  Furthermore, these types of projects typically have a reduced time schedule and a limited budget.  The creation of the Aspect oriented models would increase the overhead of a project and thus increase the time needed to implement the system.` [Merrit T.](https://dzone.com/articles/when-use-aspect-oriented)
 
 
 ### An Example of a Aspect-Oriented Module Design
@@ -130,11 +130,11 @@ And also, with those specific set of measures being cut and set in their proper 
 
 ### Popular AOP framworks
 
-- **PostSharp**
-- **Spring framework**
-- **Castle Windsor**
-- **Microsoft Unity framework**
-- **Police Injection Block**
+1. PostSharp
+2. Spring framework
+3. Castle Windsor
+4. Microsoft Unity framework
+5. Police Injection Block
 
 
 
