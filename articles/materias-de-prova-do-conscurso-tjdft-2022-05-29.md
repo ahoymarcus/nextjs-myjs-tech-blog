@@ -194,7 +194,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON.
 - [X] Tecnologias Web Services, REST e API RESTful.
 - [X] Conhecimento da linguagem GraphQL e Swagger.
-- [ ] Padrões AMQP e AOP. 
+- [X] Padrões AMQP e AOP. 
 - [ ] Conhecimento do toolkit jBPM e Bizagi BPMS.
 - [X] Recomendações W3C. 
 - [X] Modelo Nacional de Interoperabilidade (MNI).

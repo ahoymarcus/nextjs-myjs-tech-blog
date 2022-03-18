@@ -59,9 +59,10 @@ description: 'Software Architecture and Software Design typically refers to bigg
 	16.1. Graphical User Interface    
 	16.2. Development Process of the User Interface           
 	16.3. Design of the User Interface  
-	16.4. Design Principles for the User Interface 	
-17. ##### Further Reading
-18. ##### References
+	16.4. Design Principles for the User Interface
+17. ##### Aspect Oriented Software Development (AOSD)
+18. ##### Further Reading
+19. ##### References
 
 ### Introduction
 
@@ -1277,6 +1278,11 @@ Some steps in the process of the design:
 10. **Separation**: the UI must be separated from the logic of the system through its implementation for increasing reusability and maintenability.
 
 
+### Aspect Oriented Software Development (AOSD)
+
+About Aspect Oriented Programming (AOP), read this article: `Aspect Oriented Programming (AOP)` [⁵]
+
+
 
 ### Further Reading
 
@@ -1308,3 +1314,5 @@ Some steps in the process of the design:
 [^3]:front-end-architectures-2022-03-05
 
 [^4]:advanced-message-queuing-protocol-2022-03-17
+
+[^5]:aspect-oriented-programming-aop-2022-03-18
