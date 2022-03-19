@@ -56,11 +56,12 @@ Just as a powerful machine can manage a server for multiple purposes, it is also
 
 ### Web Servers
 
-A web server is a machine or application which shares its data and its methods over the Wide Wolrd Web to client machines and applications. And speaking in a more specific way, web servers are the machines responsible to store the web contents over the Internet, such as text, images, videos and application data.
+A web server is a kind of server that works as a middleman application between the actual server and the clients, pulling content from the server on each user request and returning it across the Web. And speaking in a more specific way, web servers are the machines responsible to store the web contents over the Internet, such as text, images, videos and application data.
 
-Also, as it was already stated, a server may refer to the hardware/machine, to the software application installed, or to both machine and application working together to server clients in the Web.
 
 Their most common type of clients are the web browsers, which is a client application that makes requests to the web server from links or from URL addresses in general.
+
+And one of the biggest chanllenges of a web server is to serve a great number of different web users at the same time, where each of them is requesting different resources from the web server.
 
 The communication between server and clients is done through the Hypertext Transfer Protocol (HTTP), and the majority of documents shared between the two peers are HyperText Markup Language (HTML), for static web pages, and HTML and JavaScript, for dynamic contents.
 
@@ -234,7 +235,7 @@ Another interesting point in its architecture is that Nginx while specializing i
 O que é armazenamento de objetos? - https://www.purestorage.com/br/knowledge/what-is-object-storage.html
     
     
-Conhecimento de servidores web: Nginx e Apache.
+
 Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
 Conceito de servidores de armazenamento de objetos. 
 
@@ -247,6 +248,8 @@ Conceito de servidores de armazenamento de objetos.
 []()
 
 ### References
+
+[What Is Apache? An In-Depth Overview of Apache Web Server - Hostinger](https://www.hostinger.com/tutorials/what-is-apache)
 
 [Using NGINX and NGINX Plus as a Web Server - Nginx.com](https://www.nginx.com/blog/using-nginx-plus-web-server/)
 
