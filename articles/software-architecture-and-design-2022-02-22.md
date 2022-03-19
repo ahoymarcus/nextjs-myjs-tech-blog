@@ -10,7 +10,7 @@ description: 'Software Architecture and Software Design typically refers to bigg
 
 1. ##### Introduction      
 2. ##### Software Architecture and Software Design  
-	2.1 The Software Architecture 
+	2.1 The Software Architecture   
 	2.2. The Software Design   
 	2.3. Software Architecture Goals     
 	2.4. Software Architecture Limitations    
@@ -968,6 +968,9 @@ The **disadvantages of the Client-Server style**:
 - Limited testability and scalability.
 - Fat clients with presentation and business logic together.
 
+ 
+- Read more about the practical use of servers in this article:
+- `Concepts and Types fo Servers - Overview` [⁶]
 
 #### The Multi-Tier Architecture
 
@@ -1316,3 +1319,5 @@ About Aspect Oriented Programming (AOP), read this article: `Aspect Oriented Pro
 [^4]:advanced-message-queuing-protocol-2022-03-17
 
 [^5]:aspect-oriented-programming-aop-2022-03-18
+
+[^6]:concepts-and-types-of-servers-2022-03-19

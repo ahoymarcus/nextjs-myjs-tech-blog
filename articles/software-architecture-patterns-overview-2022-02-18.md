@@ -174,6 +174,10 @@ article: Software Architecture and Design [^1].
 -	[What is a client-server architecture? from W3 School](https://www.w3schools.in/what-is-client-server-architecture/)
 -	[An introduction to REST architecture from Red Hat](https://www.redhat.com/en/blog/rest-architecture)
 
+ 
+- Read more about the practical use of servers in this article:
+- `Concepts and Types fo Servers - Overview` [⁵]
+
 
 ### The Controller-Responder Patter
 
@@ -398,3 +402,6 @@ Also found in Workflows in Bioinformatics.
 [^3]:front-end-architectures-2022-03-05
 
 [^4]:advanced-message-queuing-protocol-2022-03-17
+
+[^5]:concepts-and-types-of-servers-2022-03-19
+
