@@ -176,7 +176,7 @@ article: Software Architecture and Design [^1].
 
  
 - Read more about the practical use of servers in this article:
-- `Concepts and Types fo Servers - Overview` [⁵]
+- `Concepts and Types fo Servers - Overview` [^5]
 
 
 ### The Controller-Responder Patter

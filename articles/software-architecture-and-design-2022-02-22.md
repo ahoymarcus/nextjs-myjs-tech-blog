@@ -970,7 +970,7 @@ The **disadvantages of the Client-Server style**:
 
  
 - Read more about the practical use of servers in this article:
-- `Concepts and Types fo Servers - Overview` [⁶]
+- `Concepts and Types fo Servers - Overview` [^6]
 
 #### The Multi-Tier Architecture
 
