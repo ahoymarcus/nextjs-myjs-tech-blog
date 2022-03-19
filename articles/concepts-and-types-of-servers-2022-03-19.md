@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Concepts and Types fo Servers - Overview'
 date: '2022-03-19'
-subject: 'web-dev-articles'
+subject: 'development-articles'
 description: '.'
 ---
 
@@ -15,7 +15,7 @@ description: '.'
 	3.2. The HyperText Transfer Protocol (HTTP)   
 	3.3. Web Server Architecture   
 	3.4. Leading Web Servers Available on the Market
-4. ##### Nginx and Apache
+4. ##### The Nginx and the Apache Web Servers
 5. ##### Application Servers
 6. ##### Storage Servers
 7. ##### 
@@ -33,8 +33,8 @@ And, eventhough a server application software may be installed in most current m
 
 
 - Read about the Client-Server architecture and pattern in these articles:
-- `Software Architecture and Design` [¹]
-- `Software Architecture Patterns - Overview` [²]
+- `Software Architecture and Design` [^1]
+- `Software Architecture Patterns - Overview` [^2]
 
 
 ### Comon Types of Servers
@@ -52,7 +52,6 @@ Just as a powerful machine can manage a server for multiple purposes, it is also
     7.1. The DHCP server found in the larger networks has its counterpart in the routers that are found at small networks.
 
 
-    
 ### Web Servers
 
 A web server is a machine or application which shares its data and its methods over the Wide Wolrd Web to client machines and applications. And speaking in a more specific way, web servers are the machines responsible to store the web contents over the Internet, such as text, images, videos and application data.
@@ -81,7 +80,7 @@ As the learning platform MDN reminds, in terms of capacity a web server should h
 
 In this manner, the web server responds to a client request where both are using HTTP, and depending on the development of the communication the server can also return some desired file/document:
 
-![example-of-a-http-request-to-web-server](/images/articles/web-development/example-of-a-http-request-to-web-server.svg)
+![example-of-a-http-request-to-web-server](/images/articles/development/example-of-a-http-request-to-web-server.svg)
     
 
 The web servers can be of two kinds:
@@ -89,8 +88,8 @@ The web servers can be of two kinds:
 1. **Static Web Servers**:  they are called static when are limited in the capacity to process the arquives and documents it sends to the clients.
 2. **Dynamic Web Servers**: and they are called dynamic when they are capable of updating the arquives/documents  before returning them to the client.  
     2.1. Usualy, the dynamic web server uses a Application Server and Database to perform these dynamic tasks.
-    
-    
+
+
 Reasons to extend that storage capacity to a web server:
 
 - Its a more robust machine.
@@ -126,7 +125,7 @@ The Web Server Architecture can follow two approaches:
     1.1. Multi-process: one single thread process initiate several single-threaded child processes, and it has the responsability to manage over the child processes.    
     1.2. Multi-threaded: multiple single-threaded process  a created.   
     1.3. Hybrid method: in this method, the web server can create multiple process to responds a request each. And each of these process created can also initiate other threads to deal with taks inside its related request. 
-2. **Single-Process-Event-Driven Approach**:
+2. The **Single-Process-Event-Driven Approach**.
 
 
 #### Leading Web Servers Available on the Market
@@ -148,7 +147,7 @@ The Web Server Architecture can follow two approaches:
     5.3. It's written in Java and can run CGI scripts and PHP programs.
 
 
-### Nginx and Apache
+### The Nginx and the Apache Web Servers
 
 
 
