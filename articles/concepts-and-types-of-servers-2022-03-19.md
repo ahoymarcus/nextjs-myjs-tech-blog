@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Concepts and Types fo Servers - Overview'
 date: '2022-03-19'
 subject: 'development-articles'
-description: '.'
+description: 'A server is a computer designed to process and deliver data to others computers over a network, being web servers some of the most famous while they are responsible to process requests and deliver data across the Wide World Web. And, eventhough a server application software may be installed in most current machines, usually servers designate high end machines that are able to serve to a lot of clients. Some types of servers available are Web Servers, Application Servers and Storage Servers, etc.'
 ---
 
 # Concepts and Types fo Servers - Overview
@@ -191,7 +191,7 @@ It's a concurrent based architecture that also deals with event-driven and async
 
 Also, Nginx is easier than Apache to be configurated, and has set some changes over the traditional web server environment, where it was usual to have deployed the web server itself and the reverse-proxy load balancer (ADC) as two separate components.
 
-But, according to the same [Nginx article](https://www.nginx.com/blog/using-nginx-plus-web-server/, as one reason for the deployment of ADC was to mitigate performance problems with the web service, to combine the ADC and the web server into a single tool has brought a great hype to the application, improving performance and scalability at both of the ADC and web server layers of the whole application.
+But, according to the same [Nginx article](https://www.nginx.com/blog/using-nginx-plus-web-server/), as one reason for the deployment of ADC was to mitigate performance problems with the web service, to combine the ADC and the web server into a single tool has brought a great hype to the application, improving performance and scalability at both of the ADC and web server layers of the whole application.
 
 
 Comparing to Apache which uses threads to deal with the connections, there is a overhead of resource in this architecture, while Nginx can scale better the resources. So, not only it can handle more requests, but it can maintain a stead use of memory and other resources.
