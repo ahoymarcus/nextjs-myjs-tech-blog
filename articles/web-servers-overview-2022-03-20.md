@@ -11,11 +11,15 @@ description: 'A web server is a kind of server that works as a middleman applica
 1. ##### Introduction  
 2. ##### The Apache Web Server
     2.1. Apache Basic Structure   
-    2.2. Other Features Present in Apache
+    2.2. Other Features Present in Apache   
+    2.3. Advantages in Using the Apache Web Server    
+    2.4. Disadvantages in Using the Apache Web Server
 3. ##### The Nginx Web Server
     3.1. Nginx Basic Structure   
     3.2. Other Features Present in Nginx
-4. ##### 
+4. ##### Comparison Between Web Servers
+    4.1. Apache Vs. Nginx   
+    4.2. Apache Vs Tomcat
 5. ##### 
 6. ##### 
 7. ##### 
@@ -75,12 +79,14 @@ It's a modular, process-based web server application which creates threads for e
 
 It's interesting the already mentioned capability of the application to have its feature modules installed by demand, and in more specific terms:
 
-`All modules can be compiled as a Dynamic Shared Objects (DSO is an object file that could be shared by multiple apps while they are executing) that exists separately from the main apache file. The DSO approach is highly recommended, it makees the task of adding/removing/updatiing modules from the servers configuration very simple`  Guru99.com](https://www.guru99.com/apache.html)
+`All modules can be compiled as a Dynamic Shared Objects (DSO is an object file that could be shared by multiple apps while they are executing) that exists separately from the main apache file. The DSO approach is highly recommended, it makees the task of adding/removing/updatiing modules from the servers configuration very simple`  [Guru99.com](https://www.guru99.com/apache.html)
 
 
 #### Other Features Present in Apache
 
-The Virtual Host, for example, allows the web server to host multiple web sites on the same server, so there is no need to work with many separeted machines for the single purpose of hosting web sites.
+###### Virtual Hosts
+
+Virtual Hosts, for example, allows the web server to host multiple web sites on the same server, so there is no need to work with many separeted machines for the single purpose of hosting web sites.
 
 They are of two types:
 
@@ -88,7 +94,7 @@ They are of two types:
 2. **Address-based or IP based Virtual host**: for this type here there is the need of more than one IP address configured on the server.
 
 
-Working with security features in Apache:
+###### Working with security features in Apache:
 
 1. **Hide Apache version and OS information**: informations that may be sent to the client by the errors notifications, and that could be used by hackers to plain attacks.
 2. **Disabling the Directory Listing**: if the document root directory does not have an index file, by default Apache will show all the content on the document root directory. And this feature should be turn off.
@@ -100,7 +106,9 @@ Working with security features in Apache:
 7. **Limiting request size**: since Apache does not have any restriction on the total size of the HTTP request this could lead to a DoS attack. So, it's possible to limit the request size with the Apache directive "LimitRequestBody" and the direct tab. 
     7.1. The value could be set to anything frm 0 to 2GB as per the requirements.
 
-    
+
+###### The Logging System
+
 There is also the Apache Logging, that can provide detailed information that helps to detect common issues with the web server, and in order to create access logs, mod_log_configmodule must be enabled.
 
 Three directives available in Apache config file:
@@ -114,8 +122,27 @@ And 2 types for the Apache Log Format:
 
 1. **Common Log Format**
 2. **Combined Log Format**
- 
-    
+
+
+#### Advantages in Using the Apache Web Server  
+
+1. Open-source and free even for commercial use
+2. Reliable and Stable software
+3. Frequent Updates for Security Patches
+4. Flexible modular-based structure
+5. Easy to configure (Beginner -friendly)
+7. Optimal deliverability for static files and compatibility with any programming language.
+8. Works out of the box with **WordPress** sites.
+9. Huge community and easily available support in case of any problem.
+
+
+#### Disadvantages in Using the Apache Web Server
+
+1. Performance problems on extremely traffic-heavy websites.
+2. Too many configuration options can lead to security vulnerabilities.
+
+
+
 - Read more about the Apache web server:
 - [What Is Apache? An In-Depth Overview of Apache Web Server - Hostinger](https://www.hostinger.com/tutorials/what-is-apache)
 - [Apache.org/](https://httpd.apache.org/)
@@ -174,7 +201,33 @@ Another interesting point in its architecture is that Nginx while specializing i
 - [Nginx Tutorial - JavaTPoint](https://www.javatpoint.com/nginx-tutorial)
 
 
+### Comparison Between Web Servers
 
+#### Apache Vs. Nginx
+
+The Nginx web server is a much more recent release, making it appearence only in 2004.
+
+The Nginx was created to solve the so-called **The c10K Problem**, meaning that a web server that uses threads to handle user requests is unable to manage more than 10,000 connections  at the same  time.
+
+So, since Apache has a thread-base architecture, websites with very high traffic may encounter performance problems, and Nginx problably is the most successful web server to deal with the c10K problem.
+
+In fact, Ngix uses event-driven architecture to handle every incoming request in a single thread, which controls workers that make the job to carry the processing of the requests.
+
+
+####  Apache Vs Tomcat
+
+The Tomcat is also a popular web server developed by the Apache Software Foundation. Well, and also just like Apache, Tomcat is a HTTP web server.
+
+However, the core functionality of the Tomcat is to power Java applications instead of static websites. In this way, the Tomcat can run several different Java specifications:
+
+- **Java Servlet**
+- **JavaServer Pages**
+- **Java EL**
+
+
+So, while Apache is a general-purpose HTTP server which can use different programming languages, Tomcat is speciallized to server dynamic web content that runs on Java apps.
+
+In terms of using Tomcat for static web pages, it's performance would be effected while comparing with others web services, because Tomcat has always to pre-load the Java Virtual Machine and general Java libraries. And another point where Tomcat difers from other web servers is the fact that it is less configurable.
 
 
 

@@ -18,10 +18,6 @@ description: 'A server is a computer designed to process and deliver data to oth
 4. ##### Application Servers
 5. ##### Storage Servers
 6. ##### 
-7. ##### The Nginx Web Server
-    7.1. Nginx Basic Structure   
-    7.2. Other Features Present in Nginx
-8. ##### The Apache Web Server
 9. ##### Further Reading
 10. ##### References
 
@@ -128,7 +124,8 @@ The Web Server Architecture can follow two approaches:
     1.1. Multi-process: one single thread process initiate several single-threaded child processes, and it has the responsability to manage over the child processes.    
     1.2. Multi-threaded: multiple single-threaded process  a created.   
     1.3. Hybrid method: in this method, the web server can create multiple process to responds a request each. And each of these process created can also initiate other threads to deal with taks inside its related request. 
-2. The **Single-Process-Event-Driven Approach**.
+2. The **Single-Process-Event-Driven Approach**: this architecture has a main single thread that manage the environment using events.
+    2.1. The Nginx web server is one example of application using this pattern.
 
 
 #### Leading Web Servers Available on the Market
@@ -151,6 +148,10 @@ The Web Server Architecture can follow two approaches:
 
 
 
+- Read more about differents web servers available on the market:
+- `Web Servers - Overview` [^3]
+
+
 ### Application Servers
 
 
@@ -167,63 +168,6 @@ The Web Server Architecture can follow two approaches:
     
     
     
-    
-    
-    
-    
-
-### The Nginx Web Server
-
-`Nginx is an open source, fast, lightweight, and high-performance web server that can be used to serve static files. Nginx is considered as the popular web server behind Apache web server and Microsoft's IIS`. [JavaTPoint](https://www.javatpoint.com/nginx-tutorial)
-
-And more recently, `2019 update: NGINX has now passed Apache to become the most popular web server for the top 1,000, 10,000, 100,000, and 1 million busiest websites in the world`. [Nginx.com](https://www.nginx.com/blog/using-nginx-plus-web-server/)
-
-It's pronouced as `engine-ex`, and in its initial release Nginx functioned for HTTP web serving, but later it has been evolving as to tackle more features like:
-
-- Serves as a **reverse proxy** for HTTP, HTTPS, SMTP, IMAP, POP3 protocols.
-- As a **HTTP load balanceer**
-- As a **HTTP cache**
-- As a **email proxy** for IMAP, POP3, and SMTP.
-
-
-#### Nginx Basic Structure
-
-It's a concurrent based architecture that also deals with event-driven and asynchronous tasks, features which `makes nginx as the most reliable servers for scalability and speed`.  [JavaTPoint](https://www.javatpoint.com/nginx-tutorial)
-
-Also, Nginx is easier than Apache to be configurated, and has set some changes over the traditional web server environment, where it was usual to have deployed the web server itself and the reverse-proxy load balancer (ADC) as two separate components.
-
-But, according to the same [Nginx article](https://www.nginx.com/blog/using-nginx-plus-web-server/), as one reason for the deployment of ADC was to mitigate performance problems with the web service, to combine the ADC and the web server into a single tool has brought a great hype to the application, improving performance and scalability at both of the ADC and web server layers of the whole application.
-
-
-Comparing to Apache which uses threads to deal with the connections, there is a overhead of resource in this architecture, while Nginx can scale better the resources. So, not only it can handle more requests, but it can maintain a stead use of memory and other resources.
-
-
-Another interesting point in its architecture is that Nginx while specializing in serving static content, it can use its proxy feature to deliver the dynamic contents to the specialized dynamic web server (WebSphere, JBoss, Tomcat, Apache, etc.), thus handling a very smooth operation.
-
-
-#### Other Features Present in Nginx
-
-- **Support for multiple protocols**: HTTP, HTTPS, WebSocket, IMAP, POP3, SMTP.
-- **Caching**
-- **Compression**
-- **SSL terminal**
-- **HTTP video streaming**: MP4, FLV, HDS, and HLS.
-- **Request filtering**
-- **Header manipulation**
-- **Acrivity monitoring**
-- **Live binary upgrades**: to eliminate downtime.
-- **Graceful restart**: with non-stop request processing.
-- **Logging**
-- **Full reverse proxy and load balancing functionality**
-
-
-
-### The Apache Web Server
-
-
-
-
-
 
 
 
@@ -268,5 +212,5 @@ Conceito de servidores de armazenamento de objetos.
 
 [^2]:software-architecture-patterns-overview-2022-02-18
 
-
+[^3]:web-servers-overview-2022-03-20
 
