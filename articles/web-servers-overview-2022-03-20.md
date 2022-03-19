@@ -132,7 +132,7 @@ And 2 types for the Apache Log Format:
 4. Flexible modular-based structure
 5. Easy to configure (Beginner -friendly)
 7. Optimal deliverability for static files and compatibility with any programming language.
-8. Works out of the box with **WordPress** sites.
+8. Works out of the box with **WordPress sites**.
 9. Huge community and easily available support in case of any problem.
 
 
@@ -143,11 +143,12 @@ And 2 types for the Apache Log Format:
 
 
 
-- Read more about the Apache web server:
+######   Read more about the Apache web server:
 - [What Is Apache? An In-Depth Overview of Apache Web Server - Hostinger](https://www.hostinger.com/tutorials/what-is-apache)
 - [Apache.org/](https://httpd.apache.org/)
 - [How-To Tutorials - Apache.org](https://httpd.apache.org/docs/2.4/howto/)
 - [Apache Tutorials for Beginners - Guru99.com](https://www.guru99.com/apache.html)
+
 
 
 ### The Nginx Web Server
