@@ -145,7 +145,7 @@ And 2 types for the Apache Log Format:
 
 ######   Read more about the Apache web server:
 - [What Is Apache? An In-Depth Overview of Apache Web Server - Hostinger](https://www.hostinger.com/tutorials/what-is-apache)
-- [Apache.org/](https://httpd.apache.org/)
+- [Apache.org](https://httpd.apache.org/)
 - [How-To Tutorials - Apache.org](https://httpd.apache.org/docs/2.4/howto/)
 - [Apache Tutorials for Beginners - Guru99.com](https://www.guru99.com/apache.html)
 
@@ -196,7 +196,7 @@ Another interesting point in its architecture is that Nginx while specializing i
 - **Full reverse proxy and load balancing functionality**
 
 
-- Read more about the Nginx web server:
+###### Read more about the Nginx web server:
 - [The Complete NGINX Cookbook - Free Ebook](https://www.nginx.com/resources/library/complete-nginx-cookbook/)
 - [Installing NGINX on Debian/Ubuntu - JavaTPoint](https://www.javatpoint.com/how-to-install-nginx-on-debian-ubuntu)
 - [Nginx Tutorial - JavaTPoint](https://www.javatpoint.com/nginx-tutorial)
@@ -217,7 +217,7 @@ In fact, Ngix uses event-driven architecture to handle every incoming request in
 
 ####  Apache Vs Tomcat
 
-The Tomcat is also a popular web server developed by the Apache Software Foundation. Well, and also just like Apache, Tomcat is a HTTP web server.
+The Tomcat is also a popular web server developed by the Apache Software Foundation, while the release year of Apache was 1995, Tomcat appeared in the year 1999. Well, and also just like Apache, Tomcat is a HTTP web server.
 
 However, the core functionality of the Tomcat is to power Java applications instead of static websites. In this way, the Tomcat can run several different Java specifications:
 
@@ -230,23 +230,42 @@ So, while Apache is a general-purpose HTTP server which can use different progra
 
 In terms of using Tomcat for static web pages, it's performance would be effected while comparing with others web services, because Tomcat has always to pre-load the Java Virtual Machine and general Java libraries. And another point where Tomcat difers from other web servers is the fact that it is less configurable.
 
+The deployment of Apache is any individual file, while to Tomcat its deployment is WAR of JAR files. And in terms of default port, Apaches uses 80, and Tomcat 8080.
+
+The site [Theserverside.com](https://www.theserverside.com/video/Tomcat-vs-Apache-HTTP-Server-Whats-the-difference) also explains that in terms of deployments, the Apache has a special folder **\htdocs** to reveive the resources and make them available to client requisitions.
+
+So, `when you deploy files to the Apache HTTP Server, it's as simple as moving fies -- either by copying or using FTP -- to the **\htdocs** folder or any of its subfolders.
+
+On the other hand, applications deployed to the Tomcat server must be packaged as web application archives of as WAR files, and just as the correct types of files, the deployment also defines other descriptors that the application must contain, since all this is rigidly defined by the Servlet and JSP API.
+
+
+`Tomcat implements Java EL and the Java WebSocket API along with its spot as a reference implementation of the Servlet and JSP API.` [Theserverside.com](https://www.theserverside.com/video/Tomcat-vs-Apache-HTTP-Server-Whats-the-difference)
+
+
+###### Competitors to Apache and Tomcat Web Servers
+
+1. **Apache competitors are**:    
+    1.1. Nginx   
+    1.2. Node-JS   
+    1.3. Lightpd   
+    1.4. IIS from Microsoft
+2. **Tomcat competitors**: observe that Tomcat competitors are other middle-tier Java EE and Jakarta EE servers.    
+    2.1. Red Hat's JBoss   
+    2.2. WebSphere Liberty   
+    2.3. Jetty   
+    2.4. Payara server
 
 
 
 
 
 
-
-What Is Apache? An In-Depth Overview of Apache Web Server - https://www.hostinger.com/tutorials/what-is-apache
-
-Tomcat vs. Apache HTTP Server: What's the difference? - https://www.theserverside.com/video/Tomcat-vs-Apache-HTTP-Server-Whats-the-difference
-
-Conhecimento de servidores web: Nginx e Apache.
 
 ### Further Reading
 
 [The Complete NGINX Cookbook - Free Ebook](https://www.nginx.com/resources/library/complete-nginx-cookbook/)
 
+[Tomcat vs. Apache HTTP Server: What's the difference?](https://www.theserverside.com/video/Tomcat-vs-Apache-HTTP-Server-Whats-the-difference)
 
 ### References
 
@@ -255,6 +274,8 @@ Conhecimento de servidores web: Nginx e Apache.
 [Web Server - TutorialsPoint](https://www.tutorialspoint.com/internet_technologies/web_servers.htm)
 
 [Apache Tutorials for Beginners - Guru99.com](https://www.guru99.com/apache.html)
+
+[What Is Apache? An In-Depth Overview of Apache Web Server - Hostinger](https://www.hostinger.com/tutorials/what-is-apache)
 
 [O que é um servidor web (web server)? - MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/What_is_a_web_server)
 
