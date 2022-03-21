@@ -16,6 +16,8 @@ description: 'A server is a computer designed to process and deliver data to oth
 	3.3. Web Server Architecture   
 	3.4. Leading Web Servers Available on the Market
 4. ##### Application Servers
+    4.1. Why Do We Need Application Servers?   
+    4.2. Leading Application Servers Available on the Market
 5. ##### Storage Servers
 6. ##### 
 9. ##### Further Reading
@@ -154,6 +156,80 @@ The Web Server Architecture can follow two approaches:
 
 ### Application Servers
 
+The site from [Serverwatch.com](https://www.serverwatch.com/guides/application-server/) states that a application server is a high-powered computer that provides application resources to users and to web clients.
+
+`Application servers physically or virtually sit between datases servers storing application data and web servers communicating with clients. App servers and akin middleware are the operating systems supporting an application's development and delivery. Whether it's a destop, mobile, or web app, application servers play a critical role in connecting a world of devices`. [Serverwatch.com](https://www.serverwatch.com/guides/application-server/)
+
+
+And in its article, [JavaTPoint](https://www.javatpoint.com/server-web-vs-application), highlights these 2 attributes from a application server:
+
+1. That it is a component based product.
+2. That it has a role as a middleware service for state maintenance and security, along with persistence and data access to the web operations.
+
+
+`It is a type of server designed to install, operate and host associated services and applications for the IT services, end users and organizations`.  [JavaTPoint](https://www.javatpoint.com/server-web-vs-application)
+
+
+#### Why Do We Need Application Servers?
+
+Just like there are billions of communications on the web every day, and web servers have to handle all of them with performance and security, there is also differenct kinds of resources being requested.
+
+While the lightweight desing of web servers is enough to process high traffic of static resources there is request throughout the Internet, dynamic resources, often in the form of applications, requires additional assistance.
+
+But there is also the matter of security in the role of application servers besides the extra bost in dealing with both the HTTP request and processing the dynamic resources. 
+
+That's because the use of application servers insert another layer to the whole operation. So, not only the application servers is put in the middle of web servers and the precious database servers to help and to protect this operation, but it also is capable of providing program redundancy to the web server operation, beside the capacity to process more complicated business logic for requests, which, in terms, would make an attempt to SQL Injection much harder.
+
+`Organizations can further protect their data with a reverse proxy server positioned in front of their databases. Proxy servers and VPNs can do wonders for anonymizing and encrypting communication to protect users and company data`.  [Serverwatch.com](https://www.serverwatch.com/guides/application-server/)
+
+
+Also in the from [Serverwatch.com](https://www.serverwatch.com/guides/application-server/), it is presented some steps of a potential communication between a client and a web servers, where dynamic app resources and data storage also play a important part in the whole process:
+
+1. The client opens a browser and request access to a website.
+2. The web server receives the HTTP  request and responds with the desired webpage.
+3. The web server handles static data requests, but the client wants to use also an interactive tool.
+4. As a dynamic data request, the web server transfers the request to an application server.
+5. The application server receives the HTTP request and converts it into a servlet request.
+6. The servlet reaches the database server, and the app server receives a servlet response.
+7. The app server translates the servlet response into HTTP format for client access.
+
+
+###### Application Server Vs. Web Server
+
+| | APPLICATION SERVER | WEB SERVER |   
+| Main operation | Serve HTTP and other business logic requests | Serve HTTP requests  |     
+| Stored resources  | Business logic  | Static web content |   
+| Resource utilization | Heavy | Light |   
+| Supports | Distributed transactions and Enterprise JavaBeans (EJB) | Servlets, Java Server Pages (JSP), and JSON |   
+
+
+#### Leading Application Servers Available on the Market
+
+It's important to notice that the current struture of the market place has been seeing a continue growth in the importance of the application server role,  because not only the operations rely more on the role of applications, but also the modern infrastructure of cloud platforms and all the specialized services provided by them.
+
+1. **ColdFusion**: this is a commercial product of Adobe.
+2. **JRun**: this is another commercial product of Adobe.
+3. **Geronimo**:  this one is a free product of Apache.
+4. **Tomcat**: here is another free product of Apache.
+5. **TomEE**: once again another free product of Apache.
+6. **WebObjects**: a commercial product from Apple.
+7. **GlassFish**: a free product from Eclipse.
+8. **Jetty**: another free product from Eclipse.
+9. **WebSphere**: a commercial product from IBM.
+10. **WebSphere AppServer (AS) Community**: another commercial product from IBM.
+11. **Interstage Application Server**: a commercial product from Jujitsu.
+12. **Magic XPA Application Platform**: a commercial product from Magic.
+13. **IIS**: a commercial product from Microsoft.
+14. **Fusion Middleware**: a commercial product from Oracle.
+15. **Oracle Containers J2EE**: another commercial product from Oracle.
+16. **WebLogic**: also another commercial product from Oracle.
+
+
+
+
+
+
+
 
 
 
@@ -168,20 +244,37 @@ The Web Server Architecture can follow two approaches:
     
     
     
-
-
-
-
     
     
-[Using NGINX and NGINX Plus as a Web Server - Nginx.com](https://www.nginx.com/blog/using-nginx-plus-web-server/)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly.     
+    
+Introduction: Application servers -    https://www.ibm.com/docs/en/was/9.0.5?topic=administering-introduction-application-servers 
+
+Application Server - https://www.gartner.com/en/information-technology/glossary/application-server
+
+Conceito de servidores de armazenamento de objetos. 
+
+Armazenamento de arquivos, em blocos ou de objetos? - https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage
+    
+Oracle Cloud Infrastructure Object Storage - https://www.oracle.com/br/cloud/storage/object-storage/
     
 O que é armazenamento de objetos? - https://www.purestorage.com/br/knowledge/what-is-object-storage.html
-    
-    
 
-Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
-Conceito de servidores de armazenamento de objetos. 
+O que é armazenamento de objeto? - https://www.ibm.com/br-pt/cloud/learn/what-is-object-storage
 
 ### Further Reading
 
@@ -206,6 +299,10 @@ Conceito de servidores de armazenamento de objetos.
 [What Is a Web Server? - Nginx.com](https://www.nginx.com/resources/glossary/web-server/)
 
 [What Is a Server? - LifeWire](https://www.lifewire.com/servers-in-computer-networking-817380)
+
+[What Is an Application Server?](https://www.serverwatch.com/guides/application-server/)
+
+[Server: Web vs. Application - JavaTPoint](https://www.javatpoint.com/server-web-vs-application)
 
 
 [^1]:software-architecture-and-design-2022-02-22

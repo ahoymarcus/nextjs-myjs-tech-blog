@@ -208,7 +208,7 @@ CONHECIMENTOS BÁSICOS
 - [O] triggers, views, functions e stored procedures, packages; tratamento de erros; cursores; arrays. Conhecimento da ferramenta Flyway. 
 - [X] Controle de concorrência e otimização de consultas. 
 - [X] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
-- [ ] Conhecimento de servidores web: Nginx e Apache.
+- [X] Conhecimento de servidores web: Nginx e Apache.
 - [ ] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
 - [ ] Conceito de servidores de armazenamento de objetos. 
 - [ ] Conhecimentos das plataformas Jackrabbit (JCR), H2 DB, MinIO, Elasticsearch, Apache Kafka e RabbitMQ. 

@@ -20,12 +20,8 @@ description: 'A web server is a kind of server that works as a middleman applica
 4. ##### Comparison Between Web Servers
     4.1. Apache Vs. Nginx   
     4.2. Apache Vs Tomcat
-5. ##### 
-6. ##### 
-7. ##### 
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
 
@@ -88,7 +84,7 @@ It's interesting the already mentioned capability of the application to have its
 
 Virtual Hosts, for example, allows the web server to host multiple web sites on the same server, so there is no need to work with many separeted machines for the single purpose of hosting web sites.
 
-They are of two types:
+They are of two types of virtual hosts:
 
 1. **Name-based Virtual host**: it allows to host multiple virtual sites on a single IP address.
 2. **Address-based or IP based Virtual host**: for this type here there is the need of more than one IP address configured on the server.
@@ -111,7 +107,7 @@ They are of two types:
 
 There is also the Apache Logging, that can provide detailed information that helps to detect common issues with the web server, and in order to create access logs, mod_log_configmodule must be enabled.
 
-Three directives available in Apache config file:
+Three directives available in Apache config file about logs:
 
 1. **TransferLog**: creating a log file.
 2. **LogFormat**: Specifying a custom format.
