@@ -209,7 +209,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Controle de concorrência e otimização de consultas. 
 - [X] Conceitos de Business Intelligence, Data Warehouse, Data Mart, Data Mining, Data Lake, ETL e OLAP. Tipos de modelagem dimensional: Star Schema, Snowflake Schema e Fact Constellation. Metodologia CRISP-DM. Algoritmos para exploração de dados e machine learning. Plataformas de desenvolvimento. 
 - [X] Conhecimento de servidores web: Nginx e Apache.
-- [ ] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
+- [X] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
 - [ ] Conceito de servidores de armazenamento de objetos. 
 - [ ] Conhecimentos das plataformas Jackrabbit (JCR), H2 DB, MinIO, Elasticsearch, Apache Kafka e RabbitMQ. 
 - [ ] Gerenciamento de contêiners Docker, Kubernetes e Openshift. 

@@ -150,7 +150,7 @@ The Web Server Architecture can follow two approaches:
 
 
 
-- Read more about differents web servers available on the market:
+######  Read more about differents servers available on the market:
 - `Web Servers - Overview` [^3]
 
 
@@ -225,6 +225,10 @@ It's important to notice that the current struture of the market place has been 
 15. **Oracle Containers J2EE**: another commercial product from Oracle.
 16. **WebLogic**: also another commercial product from Oracle.
 
+
+
+######  Read more about differents servers available on the market:
+- `Application Servers - Overview` [^4]
 
 ###### Read also about Application Servers:
 - [Application Server](https://www.gartner.com/en/information-technology/glossary/application-server)
@@ -308,4 +312,7 @@ O que é armazenamento de objeto? - https://www.ibm.com/br-pt/cloud/learn/what-i
 [^2]:software-architecture-patterns-overview-2022-02-18
 
 [^3]:web-servers-overview-2022-03-20
+
+[^4]:application-servers-overview-2022-03-21
+
 
