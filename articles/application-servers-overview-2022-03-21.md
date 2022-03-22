@@ -157,7 +157,7 @@ Also, the site Stackify.com states that Red Hat is one of the most respected sof
 
 
 ###### Read more about WildFly:
-- [Mastertheboss.com](http://www.mastertheboss.com/jbossas/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as/)
+- [What is the difference between JBoss EAP, WildFly and JBoss AS ?](http://www.mastertheboss.com/jbossas/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as/)
  
  
  

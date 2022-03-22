@@ -18,7 +18,9 @@ description: 'A server is a computer designed to process and deliver data to oth
 4. ##### Application Servers
     4.1. Why Do We Need Application Servers?   
     4.2. Leading Application Servers Available on the Market
-5. ##### Storage Servers
+5. ##### Object Storage Servers
+    5.1. Kinds of Storages   
+    5.2. What is an Object Storarage Database?
 6. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -235,13 +237,77 @@ It's important to notice that the current struture of the market place has been 
 - [Introduction: Application servers](https://www.ibm.com/docs/en/was/9.0.5?topic=administering-introduction-application-servers)
 
 
-### Storage Servers
+### Object Storage Servers
+    
+Object storage is a kind of storage format together with File and Blocks, where just like the others, Object Store has its capacities and also its limitations. And in this sense:
+
+1. **File storage**: also called Level Storage, the data is organized in hierarchical structure.
+2. **Block storage**: the data is organized in volumes of space that has the same size, but the data is arranged arbitrarily.
+3. **Object storage**: the data is managed and linked with associated metadata.
+
+
+#### Kinds of Storages
+
+###### File Storage
+
+The file storage has its name because it is storage in a structure similar to an arquive, and it also known as Layered or Leveled storage because it uses a organization of hierarchical metadata to create a likage to the actual data in the system.
+
+And according to the site of [Red Hat](https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage), this is the oldest format of all, not only in terms of direct data storage, but also to network data storage.
+  
+  
+**Advantages**:
+1. It can organize data of a variaty of size and types.
+2. It is also capable of dealing with complex data.
+    
+**Disadvantages**:
+1. As the storage capacity grows it becomes difficult and time-consuming to retrieve.
+
+
+###### Block Storage 
+
+It is a storage format that improves on the complex system found in file storage, because here the data is stored at blocks of equally-sized chunks accross the medium, and each block has its unique address.
+
+To access the data the server manage its idexes files gaining efficiency while there is no need to perform the combersome navigation through directories and hierarchis to get the data.
+
+
+**Advantages**:
+1. Granular or more datailed access to the data.
+2. Consistent performance.
+    
+**Disadvantages**:
+1.  
+
+    
+###### Object Storage
+
+Also known as object-based storage according to an article at [IBM](https://www.ibm.com/cloud/learn/object-storage), it is a architecture for handling large amounts of unstructured data, which is also a reference for storage on the cloud, because `Internet communication data is largely unstructured`, perhaps even up to 80% of the data on the Web. And according to the site of [Cloudian.com](https://cloudian.com/blog/object-storage-care/), the object storage is a relatively new format of storage.
+
+It works as a flat storage system, where the data arranged as objects are in itself like simple, self-contained atomic repositoriesuses, which uses a unique identifying ID numbers to be accessed.
+
+And because of this simple structure, a storage can easily aggregate other storages into large storage pools, which in turn can be distributed across many locations.
+
+`Object storage removes the complexity and scalability challenges of a hierarchical file system with folders and directories. Objects can be stored locally, but most often reside on cloud servers, with accessibility from anywhere in the world.` [IBM](https://www.ibm.com/cloud/learn/object-storage)
+
+The object data itself can be accessed via Application Programming Interfaces (APIs), which nativaly uses the pattern of HTTP-based RESTful API. And in the same article from IBM, it is said that with the continue development of the RESTful API standards, such kinds of storage services could go even beyond the traditional storage capacity to accomodate also other features like: accounts, multi-tenancy, security, billing, etc.
+
+
+**Advantages**:
+1. It offers a level of scalability not found in other storage formats. Its capacity could surpass terabytes (TBs), petabytes (PBs), and even greater.
+2. Ideal for the use of static or fixed data (meaning, data that would not change very much).
+3. Idial for unstructured data.
+4. Easily distributed and accessed around the world.
+5. Performance while dealing with simple static data.
+6. Ideal for creating backup, even on-premises for reprication of nodes.
+7. Customizable metadata for the atomic object structure itself, which in turn can even be leveraged to perform business insights and analysis from itself.
+8. Ideal for the cloud.
+9. Multi-tenant since the storages can be safaly shared to optimizate costs.
+    
+**Disadvantages**:    
     
     
+### What is an Object Storarage Database?
     
-    
-    
-    
+ [Object Storage - IBM](https://www.ibm.com/cloud/learn/object-storage)   
     
     
     
@@ -250,23 +316,7 @@ It's important to notice that the current struture of the market place has been 
     
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-
-
+[What is Object Storage - Cloudian.com](https://cloudian.com/blog/object-storage-care/)
 
 Conceito de servidores de armazenamento de objetos. 
 
@@ -306,6 +356,7 @@ O que é armazenamento de objeto? - https://www.ibm.com/br-pt/cloud/learn/what-i
 
 [Server: Web vs. Application - JavaTPoint](https://www.javatpoint.com/server-web-vs-application)
 
+[Object Storage - IBM](https://www.ibm.com/cloud/learn/object-storage)
 
 [^1]:software-architecture-and-design-2022-02-22
 
