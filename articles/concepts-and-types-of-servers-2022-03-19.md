@@ -19,7 +19,7 @@ description: 'A server is a computer designed to process and deliver data to oth
     4.1. Why Do We Need Application Servers?   
     4.2. Leading Application Servers Available on the Market
 5. ##### Object Storage Servers
-    5.1. Kinds of Storages   
+    5.1. Different Kinds of Storages   
     5.2. What is an Object Storage Database?   
     5.3. Object Storage Servers Available on the Market   
     5.4. Containerization of Object Store Server
@@ -199,8 +199,8 @@ Also in the from [Serverwatch.com](https://www.serverwatch.com/guides/applicatio
 
 ###### Application Server Vs. Web Server
 
-| | APPLICATION SERVER | WEB SERVER |   
-| | --------------------------------- | -------------------- |    
+| FEATURES | APPLICATION SERVER | WEB SERVER |   
+| ---------------- | --------------------------------- | -------------------- |    
 | Main operation | Serve HTTP and other business logic requests | Serve HTTP requests  |     
 | Stored resources  | Business logic  | Static web content |   
 | Resource utilization | Heavy | Light |   
@@ -247,9 +247,9 @@ Object storage is a kind of storage format together with File and Blocks, where 
 3. **Object storage**: the data is managed and linked with associated metadata.
 
 
-#### Kinds of Storages
+#### Different Kinds of Storages
 
-###### File Storage
+###### File Storage Type
 
 The file storage has its name because it is storage in a structure similar to an arquive, and it also known as Layered or Leveled storage because it uses a organization of hierarchical metadata to create a likage to the actual data in the system.
 
@@ -260,10 +260,10 @@ And according to the site of [Red Hat](https://www.redhat.com/pt-br/topics/data-
 
 ###### Different ways that File Storage is Used
 
-Note that in this kind of analysis, file storages built-in systems, like hard-disks are not concerned here:
-
 1. Network Attached Storage (NAS): an autonomous storage system connected to a network and available to all participants of the network.
 2. Direct Attached Storage (DAS): a storage system directly connected to a computer in the form a external hard disk.
+
+- **Note**: see that in the above kind of analysis, built-in file storages systems like hard-disks are not object of concern here.
 
 
 ###### Different Protocols used for Communication between the File Storage and the Computer
@@ -272,23 +272,22 @@ Note that in this kind of analysis, file storages built-in systems, like hard-di
 2. Network File System (NFS): for Unix and Linux systems.
 
 
-**Advantages of the File Store System**:
+###### Advantages of the File Store System
 1. It's a simple architecture, that can even relate to procedures used to store data outside the digital world.
 2. It is easy to scale, since its only the effort to connect another file storage to the system.
 3. It's cheap.
 It can organize data of a variaty of size and types.
 2. It is also capable of dealing with complex data.
     
-**Disadvantages of the File Store System**:
+###### Disadvantages of the File Store System
 1. As the storage capacity grows it becomes difficult and time-consuming to navigate and retrieve.
 
 
 ###### Read more about File Store System:
-- 
-[File storage: An explanation of the classic file system - Ionos.com](https://www.ionos.com/digitalguide/server/know-how/what-is-file-storage/)
+- [File storage: An explanation of the classic file system - Ionos.com](https://www.ionos.com/digitalguide/server/know-how/what-is-file-storage/)
 
 
-###### Block Storage 
+###### Block Storage Type
 
 It is a storage format that improves on the complex system found in file storage, because here the data is stored at blocks of equally-sized chunks accross the medium, and each block has its unique address.
 
@@ -297,19 +296,19 @@ To access the data the server manage its idexes files gaining efficiency while t
 On the other hand, according to the site [Red Hat](https://www.redhat.com/pt-br/topics/data-storage/file-block-object-storage) site, since the data may be divided across many blocks of data, it is the software system responsability to reassemble the data that has been queried by the client. 
 
 
-**Advantages of the Block Store System**:
+###### Advantages of the Block Store System
 1. Granular or more datailed access to the data.
 2. Consistent performance.
 3. Each block exists independently and can even be partitionated to be accessed by diffent OS.
 4. Full control of the user to configure the data.
     
-**Disadvantages of the Block Store System**:
+###### Disadvantages of the Block Store System
 1. Its expensive.
 2. Limited use and processing of metadata.
 3. There will be a heigher cost to bring the processing of metada to the heigher layers of application.
 
-    
-###### Object Storage
+
+###### Object Storage Type
 
 Also known as object-based storage according to an article at [IBM](https://www.ibm.com/cloud/learn/object-storage), it is a architecture for handling large amounts of unstructured data, which is also a reference for storage on the cloud, because `Internet communication data is largely unstructured`, perhaps even up to 80% of the data on the Web. And according to the site of [Cloudian.com](https://cloudian.com/blog/object-storage-care/), the object storage is a relatively new format of storage.
 
@@ -322,7 +321,7 @@ And because of this simple structure, a storage can easily aggregate other stora
 The object data itself can be accessed via Application Programming Interfaces (APIs), which nativaly uses the pattern of HTTP-based RESTful API. And in the same article from IBM, it is said that with the continue development of the RESTful API standards, such kinds of storage services could go even beyond the traditional storage capacity to accomodate also other features like: accounts, multi-tenancy, security, billing, etc.
 
 
-**Advantages of the Object Store System**:
+###### Advantages of the Object Store System
 1. It offers a level of scalability not found in other storage formats. Its capacity could surpass terabytes (TBs), petabytes (PBs), and even greater.
 2. Ideal for the use of static or fixed data (meaning, data that would not change very much).
 3. Idial for unstructured data.
@@ -334,12 +333,12 @@ The object data itself can be accessed via Application Programming Interfaces (A
 9. Multi-tenant since the storages can be safaly shared to optimizate costs.
 10. Because of the excess of metadata, there are more possibilities to configure balancing.
 
-**Disadvantages of the Object Store System**:    
+###### Disadvantages of the Object Store System
 1. The objects as a whole are immutable (cannot be modiffyed)
 2. The process of writting objects does not fit with traditional database, because its a costly task.
 3. It's more difficult to configure applications to use the API from the object store server.
 
-    
+
 #### What is an Object Storage Database?
 
 As a Database Management System, the object storage has the responsability to keep, organize and return the objects that are stored in it and that it is searched through the API REST.

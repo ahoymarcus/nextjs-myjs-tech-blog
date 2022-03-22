@@ -167,7 +167,7 @@ Also, the site Stackify.com states that Red Hat is one of the most respected sof
 
 
 
-
+[A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
 Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly.     
 
