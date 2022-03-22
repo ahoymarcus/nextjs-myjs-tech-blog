@@ -197,6 +197,7 @@ Also in the from [Serverwatch.com](https://www.serverwatch.com/guides/applicatio
 ###### Application Server Vs. Web Server
 
 | | APPLICATION SERVER | WEB SERVER |   
+| | --------------------------------- | -------------------- |    
 | Main operation | Serve HTTP and other business logic requests | Serve HTTP requests  |     
 | Stored resources  | Business logic  | Static web content |   
 | Resource utilization | Heavy | Light |   
@@ -225,13 +226,9 @@ It's important to notice that the current struture of the market place has been 
 16. **WebLogic**: also another commercial product from Oracle.
 
 
-
-
-
-
-
-
-
+###### Read also about Application Servers:
+- [Application Server](https://www.gartner.com/en/information-technology/glossary/application-server)
+- [Introduction: Application servers](https://www.ibm.com/docs/en/was/9.0.5?topic=administering-introduction-application-servers)
 
 
 ### Storage Servers
@@ -247,24 +244,25 @@ It's important to notice that the current struture of the market place has been 
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly.     
-    
-Introduction: Application servers -    https://www.ibm.com/docs/en/was/9.0.5?topic=administering-introduction-application-servers 
 
-Application Server - https://www.gartner.com/en/information-technology/glossary/application-server
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
 
 Conceito de servidores de armazenamento de objetos. 
 

@@ -44,8 +44,9 @@ Many web servers also support server-side scripting languages to encode business
   
 A web server may also perform other web related tasks, like caching content to speed the delivery of commonly requested contented (also known as web acceleration), or like limiting the speed of response to specific clients depending on specific contexts.   
 
-- Read more about the general practice of servers in this article:
+- Read more about servers in thiese articles:
 - `Concepts and Types fo Servers - Overview` [^1]
+- `Application Servers - Overview` [^2]
 
 
 ### The Apache Web Server
@@ -252,8 +253,20 @@ On the other hand, applications deployed to the Tomcat server must be packaged a
     2.4. Payara server
 
 
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
@@ -285,4 +298,4 @@ On the other hand, applications deployed to the Tomcat server must be packaged a
 
 [^1]:concepts-and-types-of-servers-2022-03-19
 
-
+[^2]:application-servers-overview-2022-03-21
