@@ -274,7 +274,7 @@ Also, the H2 DB can be embedded in a Java application or run in the client-serve
 
 ###### Read more about the H2 DB:
 - [H2 Database - Introduction - TutorialsPoint](https://www.tutorialspoint.com/h2_database/h2_database_introduction.htm)
-- [H2 Database Engine - 2database.com]https://www.h2database.com/html/main.html)
+- [H2 Database Engine - 2database.com](https://www.h2database.com/html/main.html)
 
 
 
@@ -320,32 +320,102 @@ Elasticsearch is a distributed, open-source search and analytics engine built on
 
 ###### Primary Use Cases for Elasticsearch
 
-1. **Application search**
-2. **Website search**
-3. **Enterprise search**
-4. **Logging and Log Analytics**
-5. **Infrastruture metrics and Container monitoring**
-6. **Security analytics**
-7. **Business analytics**
+1. Application search
+2. Website search
+3. Enterprise search
+4. Logging and Log Analytics
+5. Infrastruture metrics and Container monitoring
+6. Security analytics
+7. Business analytics
 
 
 
 #### Apache Kafka
 
+According to a article at [Red Hat](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka) Apache Kafka is a distributed platform for subscription, storage and processing of data in real-time, which was initially developed by Linkedin, but that later was released as open source..
+
+It was conceived to process data from a multitude of resources and to deliver them to the clients. All of this that make Apache Kafka one alternative to the tradition enterprise messaging systems availale.
+
+
+###### Apache Kafka and the Microservice Pattern
+
+Still according to the article at Red Hat, it is stated that the Microservice architecture brought a new shift in the development of software, aggregating more agility with the reduction of excessive dependencies.
+
+
+However, there is still some kind of iIntegration in the business of data that the developers need while working with distributed systems. For this scene, there should be some options:
+
+1. **Synchronous Method**: the use of application interfaces (APIs) to connect them to the clients.
+2. **Asynchronous Method**: this method would involve the replication of the data in a intermediary layer.    
+    2.1. Apache Kafka: it is here that Kafka can be used for the transmission of data between the various working teams.
+
+
+###### Integration Requirements for  the Microservice Architecture
+    
+Here, the article at [Red Hat](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka) explain that there are speciffic requirements for developers have while working with integranting distributed systems:
+
+1. **Distributed Integrations**: lightweight integrations based in continous deployments at demand and that are not limited by a centralized point in the architecture.
+2. **APIs**: these are the traditional data services available.
+3. **Containers**: which are a method for develop, manage and scale native application in the cloud.    
+    3.1. These are individual `lean artefacts`, which are part of the DevOps process that create clusters and release high disponibility.
+
+
+So, through the use of these 3 types of requirements, [Red Hat](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka) sees a important `Agile Integration` approach that gives more opportunities and freedom to developers to work in a synchrous or asynchronous mode, being Apache Kafka one excelent option of `Asynchrous event oriented integration`. 
+
+
+###### When to Use Apache Kafka
+
+The Apache Kafka is a part of pipelines for data transmission between systems or applications that consumes data. And, besides being compatible with various uses cases, Apache Kafka brings some important differentials:
+
+1. To minimize the necessity to pear-to-pear (P2P) connections.
+2. To reduce data latency in miliseconds, which is essential in real-time operations.
+3. The capacity to operate with millions of data points per second, what makes it perfect for the Big Data scenario.
+4. To deal operations which may start conventionally low, but have subtle peaks in short span of time, like IoT nad social medias.
+
+
+###### Apache Kafka and Kubernets
+
+Just as was said in our article that talks about Object Storage Servers, there is a great fit while dealing with distributed architecture and Kubernets, since Kubernets brings the agile style of operation to the management of containers, that in turn are a optimal case for automatic deployment, configuring and management of Apache Kafka nodes.
+
+So, together with Apache Kafka and Kubernets:
+
+1. Scalability
+2. High disponibility
+3. Portability between providers and OS.
+4. Easy management
+
+
+###### Read more about Object Storage Server in this article:
+- `Concepts and Types fo Servers - Overview`[^1] 
+
+
+###### Basic Structure from Apache Kafka
+
+The Apache Kafka is a distributed system consisting of servers and clients that communicate via TCP:
+
+1. **Server**: Kafka is run as a cluster of one or more servers with fault-tolerance.
+2. **Client**: this is the consumer that can connect in parallel.   
+    2.1. Kafka has default clients included.   
+    2.2. There are clients available through the Kafka Community.   
+    2.3. Languages: they are available for Java and Scala including the higher-level Kafka Streams library, for Go, Python, C/C++, and many other programming languages as well as REST APIs.
+
+
+In this introdutory article about Kafka, the site [Apache.org](https://kafka.apache.org/intro) says that it is improtant to note from the Apach Kafka architecture that `producers and consumers are fully decoupled and agnostic of each other, which is a key design element to achieve the high scalability that Kafka is know for`. 
+    
+Another interesting point of its own architeture is that while the Apache Kafka may work in a similar disposition of some traditional messaging systems, it has also the robostiness to treat the data, or its messages, like a storage system, giving to management the decision about deleting the passed data or messages.    
+    
+
+Finally, other features from Apache Kafka is **replication** and **topic partition**, where the first one reduces loss of data, and the second operates to increase even more scalability:
+
+`Topics are partitioned, meaning a topic is spread over a number of "buckets" located on different Kafka brokers. This distributed placement of your data is very important for scalability because it allows client applications to both read and write the data from/to many brokers at the same time. When a new event is published to a topic, it is actually appended to one of the topic's partitions. Events with the same event key (e.g., a customer or vehicle ID) are written to the same partition, and Kafka guarantees that any consumer of a given topic-partition will always read that partition's events in exactly the same order as they were written.` [Apache.org](https://kafka.apache.org/intro)
+
+
+###### Read more about Apache Kafka in these articles:
+- [Apache Kafka Quickstart - Apache.org](https://kafka.apache.org/quickstart)
+- [Documentation - Apache.org](https://kafka.apache.org/documentation/)
 
 
 
 
-
-
-
-
-
-
-
-O que é Apache Kafka? Red Hat - https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
-
-Apache Kafka Introduction - Apache.org - https://kafka.apache.org/intro
 
 [A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
@@ -381,6 +451,10 @@ Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE
 [MinIO Object Storage Overview - Min.io](https://min.io/product/overview#)
 
 [Elasticsearch: What it is, How it works, and what it’s used for - Knowi.com](https://www.knowi.com/blog/what-is-elastic-search/)
+
+[O que é Apache Kafka? Red Hat](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka)
+
+[Apache Kafka Introduction - Apache.org](https://kafka.apache.org/intro)
 
 
 [^1]:concepts-and-types-of-servers-2022-03-19
