@@ -10,15 +10,19 @@ description: 'While the lightweight desing of web servers is enough to process h
 
 1. ##### Introduction
 2. ##### Leading Application Servers Available on the Market
-3. ##### Java Platform Application Server
-	3.1. General Structure of the Java Platform Environment    
-	3.2. Tomcat   
-	3.3. Jetty   
-	3.4. GlassFish   
-	3.5. WildFly
-4. ##### 
-    4.1.    
-    4.2. 
+3. ##### Diffrent Platforms for Applications Servers
+    3.1. MinIO Object Store
+4. ##### Java Platform Application Server
+	4.1. General Structure of the Java Platform Environment    
+	4.2. Tomcat   
+	4.3. Jetty   
+	4.4. GlassFish   
+	4.5. WildFly
+5. ##### Other Applications that Use the Java Platform and Ecosystem
+    5.1. Jackrabbit (JCR)   
+    5.2. H2 Database   
+    5.3. Elasticsearch    
+    5.4. Apache Kafka
 5. ##### 
 6. ##### 
 9. ##### Further Reading
@@ -65,6 +69,68 @@ It's important to notice that the current struture of the market place has been 
 14. **Fusion Middleware**: a commercial product from Oracle.
 15. **Oracle Containers J2EE**: another commercial product from Oracle.
 16. **WebLogic**: also another commercial product from Oracle.
+
+
+#### MinIO Object Store
+
+MinIO is a high performance, single layer, lightweight, and distributed object storage system. It's open source, Amazon's S3 compatible, which serves as a hybrid private/cloud store.
+
+It's written in Go and capable of defining Private Cloud infrasctructure qhie S3 storage functionality.
+
+
+###### MinIO Features
+
+It has a **erasure coding** for data protection: `MinIO protects data with per-object inline erasure coding written in assembly code to deliver the highest possible performance. MinIO uses Reed-Solomon code to stripe objects into data and parity blocks with user-configurable redundancy levels. MinIO's Erasure Coding performs healing at the object level and can heal multiple objects independently.` [Min.io](https://min.io/product/overview#)
+
+
+It has also a **Bitrot Protection** to prevent data loss: To avoid data curruption or bitrot, MinIO has a `HighwayHash` system algorithm that capture and heals corrupted objets ensuring inegrity with end to end `Hash on READ and verifying it on Write`.
+
+
+It has **Encryption** on both server-side and client-side: Because encrypted objects are tamper-proofed, for the data in flight or at rest, but without add a lot of overhead.
+
+
+There is also the **WORM** feature: This is a feature important for some regulatory requirements which makes the configured data immutable once written,  so escaping the reach of the APIs.
+
+
+Also with **Identity Management**: MinIO supports the most advanced standards in identity management, integrating with the OpenID connect compatible providers as well as key external IDP vendors. That means that access is centralized and passwords are temporary and rotated, not stored in config files and databases. Furthermore, access policies are fine grained and highly configurable, which means that supporting multi-tenant and multi-instance deployments become simple.
+
+
+Another feature is **Continuous Replication**: MinIO's continuous replication is designed for large scale, cross data center deployments. By leveraging Lambda compute notifications and object metadata it can compute the delta efficiently and quickly. Lambda notifications ensure that changes are propagated immediately as opposed to traditional batch mode.
+
+This features also helps to lower potential damages to partitions on the system, since replication is more provalent in this architecture.
+
+
+There is also a **Global Federation** feature: this allows the enterprise to has data everywhere, since MinIO can have various instances combined to form a unified global namespace.
+
+`Specifically, any number of MinIO servers can be combined into a Distributed Mode set and multiple Distributed Mode sets can be combined into a MinIO Server Federation. Each MinIO Server Federation provides a unified admin and namespace.` [Min.io](https://min.io/product/overview#)
+
+This Global Federation features gives the opportunity for the object store to massively scale for a large geographically area, `while retaining the ability to accomodate a variety of applications (Splaunk, Teradata, Spark, Hive, Presto TensorFlow, H20) from a single console.` [Min.io](https://min.io/product/overview#)
+
+
+Finnaly, the **Multi-Cloud Gateway** feature: `The implications are profound. Now organizations can truly unify their data infrastructure - from file to block, all appearing as objects accessible via the Amazon S3 API without the requirement for migration.` [Min.io](https://min.io/product/overview#)
+
+
+###### Advantages of MinIO
+
+1. S3 API compability
+2. Data redundancy
+3. High availability
+4. Horizontal and Vertical scaling
+5. Supports multiple Pluggable storage backend
+6. Data security using encryption on both server and client side
+
+
+###### Read more about the MinIO Object Store:
+- [Minio Distributed Object Storage Architecture and Performance - XenonStack](https://www.xenonstack.com/insights/minio)
+
+
+
+
+
+
+
+
+
 
 
 ### Java Platform Application Server
@@ -160,14 +226,130 @@ Also, the site Stackify.com states that Red Hat is one of the most respected sof
 - [What is the difference between JBoss EAP, WildFly and JBoss AS ?](http://www.mastertheboss.com/jbossas/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as/)
  
  
- 
+### Other Applications that Uses the Java Platform and Ecosystem
     
+#### Jackrabbit (JCR)
+
+The Apache Jackrabbit is a Java Content repository (JCR), that is a java open source content repository. [Tutorialandexemple](https://www.tutorialandexample.com/apache-jackrabbit-tutorial#), completely written in Java which started in 2004.
+
+And in speciffic terms it works as a type of oject database for customizing, storing, searching and retrieving content, and it is also full complaint with a Java speciffication for repositories: JSR-170.
+
+###### Read more about the JSR-170:
+- [JSR 170](https://jcp.org/en/jsr/detail?id=170)
+- [JSR 170: A standard content repository](https://www.infoworld.com/article/2657451/jsr-170--a-standard-content-repository.html)
+
+
+###### For more information about Object Store Server:
+- `Concepts and Types fo Servers - Overview` [^1]
+
+
+###### Apache Jackrabbit Basic Structure
+
+The general structure of the Jackrabbit is a 3 layers component system:
+
+1. **Content Application Layer**: there can be speciffic applications or very general ones.
+2. **API Layer**: it has two major sections:    
+    2.1. The Content Repository API defined by JSR-170.   
+    2.2. Several features of a content repository that has been removed from the JSR-170 speciffication.
+3. **Content Repository Implementation Layer**: these are the building blocks for the construction of a Jackrabbit content repository.
+
+
+
+#### H2 Database
+
+H2 DB  is an open-source lightweight SQL database which engine is written in Java and tha timplements the JDBC API. Also, it has included a browser-base application.
+
+Also, the H2 DB can be embedded in a Java application or run in the client-server mode,  and it can even run as inmemory database, which means that data won't persist on the disk.
+
+###### H2 DB Features
+
+- **Very fast open source JDBC API**
+- **Embedded and server modes**
+- **Transaction support, multi-version concurrency**
+- **Encrypted databases**
+- **Fulltext search**
+- **Pure Java with a small footprint**: around 2.5 MB  jar file size.
+- **ODBC driver**
+
+
+###### Read more about the H2 DB:
+- [H2 Database - Introduction - TutorialsPoint](https://www.tutorialspoint.com/h2_database/h2_database_introduction.htm)
+- [H2 Database Engine - 2database.com]https://www.h2database.com/html/main.html)
+
+
+
+#### Elasticsearch
+
+The Elasticsearch has become a multi-functionality implementation which traverse from features like 'search engine', 'analytic database', to a 'big data solution', etc.
+
+Besides the Elasticsearch implementation, there is also a ecosystem of components called 'Elastic Stack' that helps to extend even more its wild range of functionalities.
+
+
+`Elasticsearch allows you to store, search, and analyze huge volumes of data quickly and in near real-time and give back answers in milliseconds. It’s able to achieve fast search responses because instead of searching the text directly, it searches an index. It uses a structure based on documents instead of tables and schemas and comes with extensive REST APIs for storing and searching the data. At its core, you can think of Elasticsearch as a server that can process JSON requests and give you back JSON data`. [Knowi.com](https://www.knowi.com/blog/what-is-elastic-search/)
+
+
+Elasticsearch is a distributed, open-source search and analytics engine built on Apache Lucene and developed in Java.
+
+
+###### Logical Concepts Structures from Elasticsearch
+
+
+1. It's document based using JSON format.
+2. It uses a index on its collections.
+3. Inverted index: which is a process of mapping various individual terms or strings instead of the ordinary index system of mapping a attribute of the collection.
+
+
+###### Backend Components Structures from Elasticsearch
+
+1. **Cluster**: a group of one or more node instances connected, and it is one key feature of Elasticsearch since it allows it to distribute different tasks to the different nodes.
+2. **Node**: its a single server instance as part of a cluster, and that stores data. It can be configured into 3 ways:   
+    2.1. Master node
+    2.2. Data node
+    2.4. Client node: forwards cluster requests to the master node and data-related request to the data nodes.
+3. **Shards**: Elasticsearch provides the ability to subdivide the index into multiple pieces called shards, where each shard is in itself a fully-functional and independent 'index' that can be hosted on any node within a cluster.
+    3.1. `By distributing the documents in an index across multiple shards, and distributing those shards across multiple nodes, Elasticsearch can ensure redundancy, which both protects against hardware failures and increases query capacity as nodes are added to a cluster.`  [Knowi.com](https://www.knowi.com/blog/what-is-elastic-search/)
+4. **Replicas**: Elasticsearch allows to make one or more copies of the index's shards which are called 'replica shards' or just 'replicas'. Basically, a replica shard is a copy of a primary shard. Each document in an index belongs to one primary shard. Replicas provide redundant copies of your data to protect against hardware failure and increase capacity to serve read requests like searching or retrieving a document.
+
+
+###### The Elastic Stack (ELK)
+
+1. **Kibana**: its a data visialization and management tool that provides real-time histograms. It allows visualization of the data and also navigation on the Elastic Stack.
+2. **Logstash**: it is used to aggregate and process data to be send to Elasticsearch. So, its an open-source, server-side data processing pipeline that can ingest data from a multitude of sources simultaneously, transforms it, and then sends it to collect.
+3. **Beats**: its a collection of lightweight, single-purpose data shipping agents used to send data from a miriad of machines and systems to Logstash or Elasticsearch.
+
+
+###### Primary Use Cases for Elasticsearch
+
+1. **Application search**
+2. **Website search**
+3. **Enterprise search**
+4. **Logging and Log Analytics**
+5. **Infrastruture metrics and Container monitoring**
+6. **Security analytics**
+7. **Business analytics**
+
+
+
+#### Apache Kafka
 
 
 
 
+
+
+
+
+
+
+
+
+O que é Apache Kafka? Red Hat - https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
+
+Apache Kafka Introduction - Apache.org - https://kafka.apache.org/intro
 
 [A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
+
+Conhecimentos das plataformas  Apache Kafka.
 
 Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly.     
 
@@ -179,7 +361,8 @@ Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE
 
 [A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
-[]()
+[Apache Jackrabbit - Apache.org](https://jackrabbit.apache.org/jcr/first-hops.html)
+
 
 ### References
 
@@ -192,6 +375,13 @@ Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE
 [How is Java platform independent? - Geeksforgeeks.org](https://www.geeksforgeeks.org/java-platform-independent/)
 
 [Top Java Application Servers: Tomcat vs. Jetty vs. GlassFish vs. WildFly - Stackify.com](https://stackify.com/tomcat-vs-jetty-vs-glassfish-vs-wildfly/)
+
+[Apache Jackrabbit Tutorial for Beginners - Tutorialandexemple.com](https://www.tutorialandexample.com/apache-jackrabbit-tutorial)
+
+[MinIO Object Storage Overview - Min.io](https://min.io/product/overview#)
+
+[Elasticsearch: What it is, How it works, and what it’s used for - Knowi.com](https://www.knowi.com/blog/what-is-elastic-search/)
+
 
 [^1]:concepts-and-types-of-servers-2022-03-19
 
