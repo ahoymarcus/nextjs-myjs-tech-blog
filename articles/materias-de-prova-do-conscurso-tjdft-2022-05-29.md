@@ -177,7 +177,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Gestão de Configuração: Controle de versão, controle de mudança, integração e entrega contínua (CI/CD). 
 - [X] Conhecimento das ferramentas Git, Gitlab e Jira.
 - [O] Gestão de pipelines no Gitlab CI. 
-- [ ] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
+- [O] Técnicas de testes de software. Testes automatizados e testes unitários. Padrões de qualidade TDD, DDD e BDD. 
 - [X] Métricas e estimativas de software. 
 - [X] Engenharia de usabilidade. Princípios de User Experience (UX) e design de User Interface (UI). 
 - [X] Métodos para avaliação de usabilidade. 

@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 };
 
 
-export default function NewsArticle({ postData }) {
+export default function SecurityArticle({ postData }) {
 	const { author, title, id, date, subject, description } = postData;
 	
 	

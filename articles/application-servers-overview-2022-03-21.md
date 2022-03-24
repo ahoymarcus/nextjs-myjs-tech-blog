@@ -417,19 +417,17 @@ Finally, other features from Apache Kafka is **replication** and **topic partiti
 
 
 
+
+
 [A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
-Conhecimentos das plataformas  Apache Kafka.
-
-Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly.     
-
 ### Further Reading
+
+[A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
 [What Is a Server? - LifeWire](https://www.lifewire.com/servers-in-computer-networking-817380)
 
 [Tomcat vs. Apache HTTP Server: What's the difference?](https://www.theserverside.com/video/Tomcat-vs-Apache-HTTP-Server-Whats-the-difference)
-
-[A Tour of the Modern Java Platform](https://springone.io/2021/sessions/a-tour-of-the-modern-java-platform)
 
 [Apache Jackrabbit - Apache.org](https://jackrabbit.apache.org/jcr/first-hops.html)
 
