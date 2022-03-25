@@ -21,7 +21,12 @@ description: 'Containers are technologies which allow to package and isolate app
     5.2. Advantages of Docker   
     5.3. Disadvantages of Docker
 6. ##### Kubernetes
-7. #####  
+    6.1. Common Terms Used on the Kubernetes Operation   
+    6.2. Basic Kubernetes Features    
+    6.3. Basic Kubernetes Architecture    
+    6.4. Related Tools Helping with the Kubernetes Operation    
+    6.5. Kubernetes and Docker
+7. ##### OpenShift 
 8. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -178,6 +183,8 @@ Also, Docker provides a standardized environment with tooling and a platform to 
     4.2. Much like the GIT applicatioin, Docker uses `docker pull` to fetch a image and `docker push` to send an image to the remote repository.
 
 
+
+###### Docker moto:
 ###### build, ship and run anywhere...
 
 
@@ -219,11 +226,11 @@ CMD ["flask", "run"]
 
 ###### A Example Case form the Docker CLI
 
+Here, a simple example from [Docker](https://docs.docker.com/get-started/overview/), so when this command bellow is run, the following happens (assuming you are using the default registry configuration):
+
 ```
 $ docker run -i -t ubuntu /bin/bash
 ```
-
-When you run this command, the following happens (assuming you are using the default registry configuration):
 
 1. If you do not have the ubuntu image locally, Docker pulls it from your configured registry, as though you had run docker pull ubuntu manually.
 2. Docker creates a new container, as though you had run a docker container create command manually.
@@ -258,6 +265,86 @@ When you run this command, the following happens (assuming you are using the def
 
 ### Kubernetes
 
+Kubernetes, also known as 'K8s', is a open-source platform for automatizing Linux containers. It's a tool that eliminates most part of the manual processes to deploy and scalate the applications, and that is important to set up and manage clusters of containers.
+
+The technology was originally developed by Google, inspired from a container platform called Borg, and it was then released as open-source to the Cloud Native Computing Foundation in 2015. 
+
+
+The importance of Kubernetes to the container operation comes from the fact that today applications are designed across multiples containers, and need many layers, including security, all that which nedd also to be deployed and scaled.
+
+
+So, to all those complexities one could add things like balancing, also, besides the necessary integration to other services like network, storage, security, etc., making the whole set for the container structure even more complex.
+
+
+###### Note: the word 'K8s' cames from the Greek language meaning pilot or helsmen.
+
+
+#### Common Terms Used on the Kubernetes Operation
+
+- **Master**: it is the machine which manage the Kubernete operation.
+- **Node**: this are the machines involved in the operation with containers.
+- **Pod**: it's the smallest peace in the operation, and it's a group of containers that share resources like IP, IPC, etc.
+- **Replicaset** and **Replication Controller**: these features are features related to replication, but the `replicaset` has taken came to simplefy most of the concepts for the `replication controller**.
+- **Namespace**: through this feature Kubernetes manage virtual clusters, and even can create partitioin for different users to share resources.
+- **Service**: its a logical set of pods woriking together, that exists to easy the task of load balancing configuration.
+- **Kubelet**: it is a service executed at the node level which reads the manifests from the containers and validated their states.
+- **Kubectl**: it is a tool for configuring the command line.
+
+
+#### Basic Kubernetes Features    
+
+1. To orchestrate containers in multiple hosts.
+2. Tune up the hardware resource usage, and also to define maximum and minimum usage by the feature `Automatic Bin Packing`.
+3. Manage and automate the deploy and updates.
+4. To mount and to add storage for the applications and to monitoring their state.
+5. To help to scale applications.
+6. A declarative method for managing the operation.
+7. To check for integrity and to promote auto recovery for the operation promoting this self-healing feature like.
+8. Automated 'rollouts' to distribute and update applications or configurations, and also a rollback feature for immediately turn back them.
+
+
+
+#### Basic Kubernetes Architecture
+
+According to the site [JavaTPoint](https://www.javatpoint.com/kubernetes) Kubernetes works in a client-server pattern:
+
+1. Master node: its the control pane and the entrypoint for all types of administrative tasks at the cluster level. But in terms of faul tolerance, there can be more than one master node present in a cluster. It also has some important features within:   
+    1.1. API Server: it receives the REST commands from the user, validates, processes and them execute them. It also saves the resulting state of a cluster in a 'etcd' file, a distributed key-value store.    
+    1.2. Scheduler: its a process responsible for assigning pods to the available worker nodes.    
+    1.3. Controller Manager: its a deamon for the managing and execution of non-terminating control loops.   
+    1.4. ETCD: it is an open-source, simple, distributed key-value storage which is used to store the cluster data.
+2. Slave/Worker node: it is also known as 'minions', which is a phisical machine with execute the applications using the pods. And as its components:   
+    2.1. Kubelet: its an agent executed on each worker node in a cluster that it is in constant communication with the master node, and that accesses the works of the worker pods.   
+    2.2. Kube-proxy: it's a proxy service of Kubernetes executed on each worker node in the cluster. And its main responsibility is to request forwarding messages.   
+    2.3. Pod: a pod is a combination of one or more containers which logically execute together on nodes. And one worker can easily execute multiple pods.
+
+
+[JavaTPoint](https://www.javatpoint.com/kubernetes) - Kubernetes
+![basic-kubernetes-operation-scheme](/images/articles/developement/basic-kubernetes-operation-scheme.png)
+
+
+
+####  Kubernetes and Docker
+
+And so, in general term the basic operation of Kubernetes happens in a mode of client-server pattern, where using a master node to communicate with the workers nodes/machines while the pods are assigned to tasks defined.
+
+
+As to achieve all that working operation, Kubernetes is placed in a hiegher layer where it automatizes the instructions, programming a Node, while its own feature, the Kubelet insructs that Docker delivers the containers necessary and the Kubelet also collects and stores status from the containers being used. 
+
+So, the great difference in this set is that within this whole automatized operation, it is the Kubernetes, and not the administrator,  that make all the direct solicitations to Docker to deliver the necessary containers to fill all the requirements from the tasks organized.
+
+
+#### Related Tools Helping with the Kubernetes Operation
+
+- **Registry**: with the Atomic Registry or the Docker Registry.
+- **Network**: with the OpenvSwitch and the 'inteligent border router'.
+- **Telemetry**: with the Heapster, the Kibana, the Hawkular, and the Elastic.
+- **Security**: with the LDAP, the SELinux, the RBAC, and the OAUTH.
+- **Automation**: with the use of playbooks from Ansible for the installation and the management of the cluster life cycle.
+- **Service**: together with a varied catalog by popular applications.
+
+
+### OpenShift
 
 
 
@@ -274,8 +361,7 @@ When you run this command, the following happens (assuming you are using the def
 
 
 
-
-Kubernetes (K8s) - Red Hat - https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes
+What is OpenShift? - https://www.javatpoint.com/what-is-openshift
 
 Understanding The Difference Between Kubernetes Vs. Openshift - SimpliLearn - https://www.simplilearn.com/kubernetes-vs-openshift-article
 
@@ -309,6 +395,10 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 [A Brief History of Containers: From the 1970s Till Now - Aqua](https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016)
 
 [Como construir uma aplicação com Docker? - GeekHunter.com](https://blog.geekhunter.com.br/docker-na-pratica-como-construir-uma-aplicacao/)
+
+[Kubernetes (K8s) - Red Hat](https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes)
+
+[Kubernetes Tutorial JavaTPoint](https://www.javatpoint.com/kubernetes)
 
 []()
 
