@@ -17,6 +17,8 @@ description: 'Containers are technologies which allow to package and isolate app
 3. ##### Containerization and Microservices
 4. ##### Containezation and Security
 5. ##### Docker
+    5.1. Docker Objects   
+    5.2. A Simple Example Case form the Docker CLI
 6. ##### 
 7. #####  
 8. ##### 
@@ -158,17 +160,62 @@ Thus, all those points are closely followed by the groups responsible with stand
 While all this are still a work in progress, but efforts to bring the elements of security found in the Linux system to be replicated at the container level, just as to provide to Linux features themselves a more granular and refined features to deal specifically with the constraints of containers and their processes.
 
 
+### Docker
+
+Docker is a open platform for developing, shipping, and running applications, and it works provinding the ability to package and run as application in a isolated environment called container.
+
+Also, Docker provides a standardized environment with tooling and a platform to manage the lifecycle of the containers, all that inside a Client-Server architecture that can run either in the same machine or over a network, using REST API or UNIX sockets:
+
+1. **Docker Server or Daemon**: which runs with the command `dockerd` and listens for Docker API requests.   
+    1.1. The Docker server can also communicate with othes daemons to manage Docker services.
+2. **Docker Client**: which runs with the command `docker`, it is the primary way to Docker users interact with the daemon.   
+    2.1. The Docker client can communicate with more then one daemon.
+3. **Docker Desktop**: it's a easy-to-install application to run Docker in the Windows or Mac environment.   
+    3.1. The Docker Desktop comes with a list of components: the daemon, the client, Docker Compose, Docker Content Trust, Kubernetes, and Credential Helpers.
+4. **Docker Registries**: it is a registry to store Docker images.    
+    4.1. There is also the public registries, which Docker Hub is a default option where the server searchs for images.   
+    4.2. Much like the GIT applicatioin, Docker uses `docker pull` to fetch a image and `docker push` to send an image to the remote repository.
+
+
+###### Docker Underlying Technology
+
+Docker is written in the Go language and uses the Linux kernel functionality of `namespace` to provide a isolation and a wrapper to the application process as a container.
+
+`When you run a container, Docker creates a set of namespaces for that container. These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.` [Docker.com](https://docs.docker.com/get-started/overview/)
+
+
+
+#### Docker Objects
+
+The Docker objects are much like the structures or basic components which pertains to the Docker environment:
+
+1. **Image**: it's a read-only template with instructions to create a speciffic Docker container.
+2. **Containers**: this is a runnable instance of an image, which can be managed using either the Docker API or the CLI.
+    2.1. Any changes to the  container that are not stored in persistant storage will desapear when a container is deleted.
+
+
+#### A Simple Example Case form the Docker CLI
+
+```
+$ docker run -i -t ubuntu /bin/bash
+```
+
+When you run this command, the following happens (assuming you are using the default registry configuration):
+
+1. If you do not have the ubuntu image locally, Docker pulls it from your configured registry, as though you had run docker pull ubuntu manually.
+2. Docker creates a new container, as though you had run a docker container create command manually.
+3. Docker allocates a read-write filesystem to the container, as its final layer. This allows a running container to create or modify files and directories in its local filesystem.
+4. Docker creates a network interface to connect the container to the default network, since you did not specify any networking options. This includes assigning an IP address to the container. By default, containers can connect to external networks using the host machine’s network connection.
+5. Docker starts the container and executes /bin/bash. Because the container is running interactively and attached to your terminal (due to the -i and -t flags), you can provide input using your keyboard while the output is logged to your terminal.
+6. When you type exit to terminate the /bin/bash command, the container stops but is not removed. You can start it again or remove it.
+
+
+###### Note: the `/bin/bash` instruction calls an interative BaSH session, and sometimes it could also be called using `/bin/sh`
 
 
 
 
-
-
-
-
-
-
-
+Docker overview - Docker.com - https://docs.docker.com/get-started/overview/
 
 Understanding The Difference Between Kubernetes Vs. Openshift - SimpliLearn - https://www.simplilearn.com/kubernetes-vs-openshift-article
 
@@ -178,7 +225,10 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 
 [Use containers to Build, Share and Run your applications - Docker.com](https://www.docker.com/resources/what-container/#/VM)
 
-Benefits of containerization - CircleCI - https://circleci.com/blog/benefits-of-containerization/
+[Get Started with Docker - Docker.com](https://www.docker.com/get-started/)
+
+[Benefits of containerization - CircleCI](https://circleci.com/blog/benefits-of-containerization/)
+
 
 ### References
 
@@ -188,8 +238,13 @@ Benefits of containerization - CircleCI - https://circleci.com/blog/benefits-of-
 
 [How Linux containers work - Olivo K.](https://kyleolivo.com/dev/2016/08/15/containers-how-do-they-work/)
 
+[Docker overview - Docker.com](https://docs.docker.com/get-started/overview/)
+
 [A Brief History of Containers: From the 1970s Till Now - Aqua](https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016)
 
 
+
 []()
+
+
 
