@@ -212,7 +212,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conhecimento de servidores de aplicação Java Platform, Enterprise Edition (JEE): JBoss, Tomcat, Node.js e Wildfly. 
 - [X] Conceito de servidores de armazenamento de objetos. 
 - [X] Conhecimentos das plataformas Jackrabbit (JCR), H2 DB, MinIO, Elasticsearch, Apache Kafka e RabbitMQ. 
-- [ ] Gerenciamento de contêiners Docker, Kubernetes e Openshift. 
+- [X] Gerenciamento de contêiners Docker, Kubernetes e Openshift. 
 - [ ] Arquiteturas de infraestrutura em nuvem.
 - [ ] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
 - [ ] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 

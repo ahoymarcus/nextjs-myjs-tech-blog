@@ -26,10 +26,12 @@ description: 'Containers are technologies which allow to package and isolate app
     6.3. Basic Kubernetes Architecture    
     6.4. Related Tools Helping with the Kubernetes Operation    
     6.5. Kubernetes and Docker
-7. ##### OpenShift 
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+7. ##### OpenShift
+    7.1. Brief History of OpenShift   
+    7.2. Basic Features of OpenShift   
+    7.3. Basic Architecture of OpenShift
+8. ##### Further Reading
+9. ##### References
 
 ### Introduction
  
@@ -183,9 +185,7 @@ Also, Docker provides a standardized environment with tooling and a platform to 
     4.2. Much like the GIT applicatioin, Docker uses `docker pull` to fetch a image and `docker push` to send an image to the remote repository.
 
 
-
-###### Docker moto:
-###### build, ship and run anywhere...
+#### Docker moto: build, ship and run anywhere...
 
 
 ###### Docker Underlying Technology
@@ -308,19 +308,19 @@ So, to all those complexities one could add things like balancing, also, besides
 
 According to the site [JavaTPoint](https://www.javatpoint.com/kubernetes) Kubernetes works in a client-server pattern:
 
-1. Master node: its the control pane and the entrypoint for all types of administrative tasks at the cluster level. But in terms of faul tolerance, there can be more than one master node present in a cluster. It also has some important features within:   
+1. **Master node**: its the control pane and the entrypoint for all types of administrative tasks at the cluster level. But in terms of faul tolerance, there can be more than one master node present in a cluster. It also has some important features within:   
     1.1. API Server: it receives the REST commands from the user, validates, processes and them execute them. It also saves the resulting state of a cluster in a 'etcd' file, a distributed key-value store.    
     1.2. Scheduler: its a process responsible for assigning pods to the available worker nodes.    
     1.3. Controller Manager: its a deamon for the managing and execution of non-terminating control loops.   
     1.4. ETCD: it is an open-source, simple, distributed key-value storage which is used to store the cluster data.
-2. Slave/Worker node: it is also known as 'minions', which is a phisical machine with execute the applications using the pods. And as its components:   
+2. **Slave/Worker node**: it is also known as 'minions', which is a phisical machine with execute the applications using the pods. And as its components:   
     2.1. Kubelet: its an agent executed on each worker node in a cluster that it is in constant communication with the master node, and that accesses the works of the worker pods.   
     2.2. Kube-proxy: it's a proxy service of Kubernetes executed on each worker node in the cluster. And its main responsibility is to request forwarding messages.   
     2.3. Pod: a pod is a combination of one or more containers which logically execute together on nodes. And one worker can easily execute multiple pods.
 
 
 [JavaTPoint](https://www.javatpoint.com/kubernetes) - Kubernetes
-![basic-kubernetes-operation-scheme](/images/articles/developement/basic-kubernetes-operation-scheme.png)
+![basic-kubernetes-operation-scheme](/images/articles/development/basic-kubernetes-operation-scheme.png)
 
 
 
@@ -346,26 +346,73 @@ So, the great difference in this set is that within this whole automatized opera
 
 ### OpenShift
 
+According to the site [JavaTPoint](https://www.javatpoint.com/what-is-openshift), OpenShift is a cloud development Platform as a Service (PAAS) by Red Hat, which is a open-source cloud-based platform to create, test, deploy, and run applications on the cloud.
+
+
+It can manage applications in different languages, Ruby, Node.js, java, Perl, and Python, and it also can support 3 kinds of platform for developers and users:
+
+1. Infrastructure as a Service (IaaS): this service implies the provision of hardware-level virtual machines with pre-defined configuration.   
+    1.1. Disadvantages: it is the responsability of the client to make the installment of OS and server packages, also managing network, etc.
+    1.2. Some competitors from Red Hat in IaaS: Rackspace, AWS, Google Cloud, etc.
+2. Software as a Service (SaaS): in this service model there are less tasks related to infrastructure, as the service is implied to be plug and play like, where the user should sign up and start using it.   
+    2.1. Disadvantages: there are a minimal amount of customization allowed. And it is not so much userfull from the developer point of view.
+3. Platform as a Service (PaaS): this version should be considered the middle ground between the other two kinds of services, where they a designed to satisfy all the development needs, like databases or for application deployment, etc.
+
+
+#### Brief History of OpenShift
+
+- In 2010, Red Hat acquires the Makara componay which as had a proprietary PaaS solution on Linux containers.
+- In 2011 the OpenShift implementation is lauched, and in 2012 it becomes open-source. The technology used for containerization and for orchestration was custom-developed.
+- In 2013, with version 3.0 of OpenShift, the company began to support Docker and Kubernetes.
+- And in 2019 came OpenShift version 4.0 with some architectural changes.    
+
+`The v4 product has many other architectural changes, such as a prominent one being a shift to using CRI-O as the container runtime (and Podman for interacting with pods and containers), and Buildah as the container build tool, thus breaking the complete dependency on Docker.` [JavaTPoint](.https://www.javatpoint.com/what-is-openshift)
+
+
+#### Basic Features of OpenShift
+
+OpenShift works as a layered system designed to expose a underlying Docker-formatted container image and Kubernetes concepts with a focus on the easy composition of applications by developers.
+
+Not only that, but it has been evolving, from version 2.0, for example, to allow even more flexibilization for the composition of the container services. And in this sense, there is this essential layers:
+
+1. **Docker**: which provides abstraction for packaging and creating a Linux-based lightweight container image.
+2. **Kubernetes**: which provides cluster management and container orchestration on multiple hosts.
+3. **OpenShift**: the OpenShift layer offers:   
+    3.1. Source code for management, builds, and deployments.    
+    3.2. Managing and promoting images at scale as they flow through the system.    
+    3.3. Application management at scale.   
+    3.4. Team and user tracking for organizing a large developer organization.   
+    3.5. Networking infrasctructure that supports the cluster.
+
+
+[OpenShift Docs](https://docs.openshift.com/container-platform/3.11/architecture/index.html) - Red Hat
+![basic-openshift-operation-scheme](/images/articles/development/basic-openshift-operation-scheme.png)
+
+`O Kubernetes é uma tecnologia open source. Por isso, ele não conta com uma estrutura de suporte formal em que as empresas podem confiar totalmente. [...] Para isso, existe o Red Hat OpenShift. Essa é uma solução de nível corporativo que oferece o Kubernetes e muito mais. O OpenShift vem com todos os elementos extras que tornam o Kubernetes potente e viável para as empresas, incluindo componentes de registro, rede, telemetria, segurança, automação e serviços.` [Kubernetes (K8s) - Red Hat](https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes)
+
+###### My translation:
+
+The Kubernetes is a open-source technology, and for that it does not count with a formal professional support in which the companies can proper relate [...] For that exists the Red Hat OpenShif, that is a solution for corporate level which offers the Kubernetes and much more. The OpenShift comes with all the extra elements that made the Kubernetes potent and viable for the companies, including components for registry, network, telemetry, security, automation, and services.
+
+
+#### Basic Architecture of OpenShift
+
+OpenShift has a microservice-based architecture of smaller decoupled units that work together at a layer on top of Kubernetes cluster, and working with data about the Kubernetes objects stored in the `etcd` file.
+
+Its services are bronken down by function:
+
+1. **REST APIs**: which exposes each of the core objects.
+2. **Controllers**: which read those APIs, apply changes to other objects, and report status or write back to the object.
+
+
+So, the users make calls to the REST API to change the state of the system, and controllers use the REST API to read the user's desired state, and then try to bring the other parts of the system into sync.
+
+Also, the controller pattern means that much of the functionality in the OpenShift Container Platform is extensible for more client customization, tuning the 'business logic' of the system into different behaviors.
+
+`To make this possible, controllers leverage a reliable stream of changes to the system to sync their view of the system with what users are doing. This event stream pushes changes from etcd to the REST API and then to the controllers as soon as changes occur, so changes can ripple out through the system very quickly and efficiently. However, since failures can occur at any time, the controllers must also be able to get the latest state of the system at startup, and confirm that everything is in the right state. This resynchronization is important, because it means that even if something goes wrong, then the operator can restart the affected components, and the system double checks everything before continuing. The system should eventually converge to the user’s intent, since the controllers can always bring the system into sync.` [Red Hat](https://docs.openshift.com/container-platform/3.11/architecture/index.html)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-What is OpenShift? - https://www.javatpoint.com/what-is-openshift
-
-Understanding The Difference Between Kubernetes Vs. Openshift - SimpliLearn - https://www.simplilearn.com/kubernetes-vs-openshift-article
-
-Gerenciamento de contêiners Docker, Kubernetes e Openshift
 
 ### Further Reading
 
@@ -378,6 +425,10 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 [Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
 [Benefits of containerization - CircleCI](https://circleci.com/blog/benefits-of-containerization/)
+
+[Why Red Hat Chose Kubernetes for OpenShift - Red Hat](https://cloud.redhat.com/blog/red-hat-chose-kubernetes-openshift)
+
+[Understanding The Difference Between Kubernetes Vs. Openshift - SimpliLearn](https://www.simplilearn.com/kubernetes-vs-openshift-article)
 
 
 ### References
@@ -400,7 +451,9 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 
 [Kubernetes Tutorial JavaTPoint](https://www.javatpoint.com/kubernetes)
 
-[]()
+[OpenShift Docs - Red Hat](https://docs.openshift.com/container-platform/3.11/architecture/index.html)
+
+[What is OpenShift? - JavaTPoint](https://www.javatpoint.com/what-is-openshift)
 
 
 
