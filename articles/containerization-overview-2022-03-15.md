@@ -18,8 +18,9 @@ description: 'Containers are technologies which allow to package and isolate app
 4. ##### Containezation and Security
 5. ##### Docker
     5.1. Docker Objects   
-    5.2. A Simple Example Case form the Docker CLI
-6. ##### 
+    5.2. Advantages of Docker   
+    5.3. Disadvantages of Docker
+6. ##### Kubernetes
 7. #####  
 8. ##### 
 9. ##### Further Reading
@@ -177,6 +178,9 @@ Also, Docker provides a standardized environment with tooling and a platform to 
     4.2. Much like the GIT applicatioin, Docker uses `docker pull` to fetch a image and `docker push` to send an image to the remote repository.
 
 
+###### build, ship and run anywhere...
+
+
 ###### Docker Underlying Technology
 
 Docker is written in the Go language and uses the Linux kernel functionality of `namespace` to provide a isolation and a wrapper to the application process as a container.
@@ -194,7 +198,26 @@ The Docker objects are much like the structures or basic components which pertai
     2.1. Any changes to the  container that are not stored in persistant storage will desapear when a container is deleted.
 
 
-#### A Simple Example Case form the Docker CLI
+###### Exemple of a Docker Image
+
+In this example from [GeekHunter](https://blog.geekhunter.com.br/docker-na-pratica-como-construir-uma-aplicacao/) there is a `Dockerfile` that creates a image with Python and its required dependencies:
+
+```
+# syntax=docker/dockerfile:1
+FROM python:3.7-alpine
+WORKDIR /code
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+RUN apk add --no-cache gcc musl-dev linux-headers
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+EXPOSE 5000
+COPY . .
+CMD ["flask", "run"]
+```
+
+
+###### A Example Case form the Docker CLI
 
 ```
 $ docker run -i -t ubuntu /bin/bash
@@ -213,9 +236,46 @@ When you run this command, the following happens (assuming you are using the def
 ###### Note: the `/bin/bash` instruction calls an interative BaSH session, and sometimes it could also be called using `/bin/sh`
 
 
+#### Advantages of Docker
+
+1. **Docker is fast**: a container is managed much like any other system process.
+2. **Docker is multi-platform**
+3. **Easy to configurate**
+4. **Easy to reuse the containers**
+5. **Docker maintain a clean environment**: each container is isolated and can be excluded at any time.
+6. **Easy to deploy**
 
 
-Docker overview - Docker.com - https://docs.docker.com/get-started/overview/
+#### Disadvantages of Docker
+
+1. Only the core platform is open source and standardized.
+2. To deal with persistant data storage is still a matter to be apprimored.
+3. Docker does not work well with graphical applications.
+4. Except for easy delivery and an easy packaging mechanism, Docker is a better fit for distributed applications and those that have somewhat a microservice design pattern.
+5. Eventhough Docker is lightweight, it still has some overhead when compered to bare-metal speeds.
+
+
+
+### Kubernetes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kubernetes (K8s) - Red Hat - https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes
 
 Understanding The Difference Between Kubernetes Vs. Openshift - SimpliLearn - https://www.simplilearn.com/kubernetes-vs-openshift-article
 
@@ -226,6 +286,10 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 [Use containers to Build, Share and Run your applications - Docker.com](https://www.docker.com/resources/what-container/#/VM)
 
 [Get Started with Docker - Docker.com](https://www.docker.com/get-started/)
+
+[Kubernetes Training and Certification - Kubernetes.io](https://kubernetes.io/training/)
+
+[Learn Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
 [Benefits of containerization - CircleCI](https://circleci.com/blog/benefits-of-containerization/)
 
@@ -240,9 +304,11 @@ Gerenciamento de contêiners Docker, Kubernetes e Openshift
 
 [Docker overview - Docker.com](https://docs.docker.com/get-started/overview/)
 
+[Docker Downsides: Container Cons to Consider before Adopting Docker - Aqua](https://www.channelfutures.com/open-source/docker-downsides-container-cons-to-consider-before-adopting-docker)
+
 [A Brief History of Containers: From the 1970s Till Now - Aqua](https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016)
 
-
+[Como construir uma aplicação com Docker? - GeekHunter.com](https://blog.geekhunter.com.br/docker-na-pratica-como-construir-uma-aplicacao/)
 
 []()
 
