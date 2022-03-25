@@ -185,7 +185,7 @@ Also, Docker provides a standardized environment with tooling and a platform to 
     4.2. Much like the GIT applicatioin, Docker uses `docker pull` to fetch a image and `docker push` to send an image to the remote repository.
 
 
-#### Docker moto: build, ship and run anywhere...
+### Docker moto: build, ship and run anywhere...
 
 
 ###### Docker Underlying Technology
@@ -390,9 +390,7 @@ Not only that, but it has been evolving, from version 2.0, for example, to allow
 
 `O Kubernetes é uma tecnologia open source. Por isso, ele não conta com uma estrutura de suporte formal em que as empresas podem confiar totalmente. [...] Para isso, existe o Red Hat OpenShift. Essa é uma solução de nível corporativo que oferece o Kubernetes e muito mais. O OpenShift vem com todos os elementos extras que tornam o Kubernetes potente e viável para as empresas, incluindo componentes de registro, rede, telemetria, segurança, automação e serviços.` [Kubernetes (K8s) - Red Hat](https://www.redhat.com/pt-br/topics/containers/what-is-kubernetes)
 
-###### My translation:
-
-The Kubernetes is a open-source technology, and for that it does not count with a formal professional support in which the companies can proper relate [...] For that exists the Red Hat OpenShif, that is a solution for corporate level which offers the Kubernetes and much more. The OpenShift comes with all the extra elements that made the Kubernetes potent and viable for the companies, including components for registry, network, telemetry, security, automation, and services.
+###### My translation: The Kubernetes is a open-source technology, and for that it does not count with a formal professional support in which the companies can proper relate [...] For that exists the Red Hat OpenShif, that is a solution for corporate level which offers the Kubernetes and much more. The OpenShift comes with all the extra elements that made the Kubernetes potent and viable for the companies, including components for registry, network, telemetry, security, automation, and services.
 
 
 #### Basic Architecture of OpenShift
