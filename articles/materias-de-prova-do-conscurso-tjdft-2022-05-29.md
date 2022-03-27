@@ -214,8 +214,8 @@ CONHECIMENTOS BÁSICOS
 - [X] Conhecimentos das plataformas Jackrabbit (JCR), H2 DB, MinIO, Elasticsearch, Apache Kafka e RabbitMQ. 
 - [X] Gerenciamento de contêiners Docker, Kubernetes e Openshift. 
 - [X] Arquiteturas de infraestrutura em nuvem.
-- [ ] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
-- [ ] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
+- [X] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
+- [X] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
 - [ ] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 - [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
 - [ ] Escritório de projetos: modelos e características.

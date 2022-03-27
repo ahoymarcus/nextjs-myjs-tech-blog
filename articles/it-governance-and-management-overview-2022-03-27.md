@@ -206,18 +206,18 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 ### PMBOK
 
-
+**COMING SOON...**
 
 ### ITIL
  
- 
+**COMING SOON...**
  
 
 ### Indicators Methodology
  
 Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
 
-Two of these indicators are **KPI** and **OKR**, and eventhough sometimes the may overlap each other in some aspects, they should be treated as different and specific tools..
+Two of these indicators are **KPI** and **OKR**, and eventhough sometimes the may overlap each other in some aspects, they should be treated as different and specific tools. And there are also many others indicators, like **BSC**, etc.
 
 
 #### KPI Indicator
@@ -238,8 +238,7 @@ And in the article linked above, the author sees 3 specific indicators that may 
 3. They must me **Key features** or indicators from strategic level.
 
 
-Some exemples of the use KPI indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
-
+- Some exemples of the use KPI indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
 - **Retail Industry**: revenue per square foot, same-store sales, sales per employee.
 - **HR Department**: attrition rate, employee performance, average recruitment time.
 - **Sales Department**: customer lifetime value, sales revenue, calls made.
@@ -263,8 +262,7 @@ Some characteristics a OKR should have:
 4. **Ambitious**: the objectives and the results should be some what hard to reach or some distinctive in that nature.
 
 
-Some exemples of the use OKR indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
-
+- Some exemples of the use OKR indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
 1. Objective: Become the market leader in our industry.     
     1.1. Key result #1: record $100 million in revenue.   
     1.2. Key result #2: increase staff by 45 percent.   
@@ -277,26 +275,78 @@ Some exemples of the use OKR indicators [ClearPointStrategy.com](https://www.cle
     3.1. Key result #1: acquire 50 new customers.   
     3.2. Key result #2: increase marketing leads by 20 percent.   
     3.3. Key resutl #3: increase customer retention to 85 percent.
- 
+
 
 ###### Some notes on OKR Indicators: 
 1. They must have alignment with the rest of the orginization, especially beign created from top down in the company structure.
 2. These indicators are better fitted for strategic impruvements, so they are not the best fit for focusing on mainataining the pace of processes.
  
  
+#### BSC Indicator
+ 
+Balance Score Card (BSC) is a strategic planning and management system, and it is use with the aim of:
+
+- **Communicate goals to be accomplished**
+- **Align the day-to-day work with the organization strategy**
+- **Prioritizing projects, products, and services**
+- **Measure and monitor progress toward strategic targets**
+
+
+According to the [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/), the concept of the name 'Balance Scorecard' comes from the idea of a more balanced approach to strategically measuring organizations or processes besides the limited traditional financial measurements.
+
+
+`The concept of balanced scorecard has evolved beyond the simple use of perspectives and it is now a holistic system for managing strategy. A key benefit of using a disciplined framework is that it gives organizations a way to “connect the dots” between the various components of strategic planning and management, meaning that there will be a visible connection between the projects and programs that people are working on, the measurements being used to track success (KPIs), the strategic objectives the organization is trying to accomplish, and the mission, vision, and strategy of the organization.`  [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
  
  
+And according to a article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), this same concept from Kaplan & Norton with the BSC idea became a foundational principle in the evaluation of Governance, business strategy, and management performance, for short, medium, and also long term. 
+
+
+`The inference was that organizations could enhance their creation of value and enterprise performance by improving the management of their non-financial, intangible assets, through the integration of these into their existing performance management systems. As the saying goes, if you can’t measure it, you can’t improve it… so in retrospect it seemed inevitable that non-financial measures would emerge as critical to the overall performance management of the enterprise.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
  
  
+And the BSC concept also suggets that an organization should be examined from four different perspectives:
+
+1. **Financial (or Stewardship)**: measure an organization's financial performance and also its use of the resources finantially.
+2. **Customer/Stakeholder**: it focuses on performance from the point of view of customers or from the point of view of stackholders.
+3. **Internal Process**: this measure is focused on the quality and efficiency of processes and products, or other key business factor.
+4. **Organization Capacity (or Learning & Growth)**: this last area has the focus on the different kinds of capital and values from the organization:   
+    4.1. Human capital  
+    4.2. Infrastructure   
+    4.3. Technology  
+    4.4. Culture    
+    4.5. Any other capacity that may bring breakthrough performance.
+
+
+###### BSC and COBIT 5
+
+So, for [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), it became no surprise that a framework that has widen the scope of governance beyond the mere financial view, but to also include intangible assets would merge perfectly into the COBIT 5 environment.
+ 
+
+Another interesting point underlined from the above site, though, it is the fact that the BSC and COBIT 5 especially fit into a cohese system concerning the point of **The stackholders** which cascades down to the more specific areas. 
+ 
+`The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
  
  
  
 
-Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
+ 
 
-Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
+
+
+
+
 
 Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
+
+Escritório de projetos: modelos e características.
+
+Conceitos de gestão de riscos. 
+
+Análise SWOT e matriz RACI.
+
+Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
+
+Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
 
 ### Further Reading
 
@@ -319,6 +369,9 @@ Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de g
 
 [OKRs Vs. KPIs: Breaking Down The Difference - ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
 
+[Balanced Scorecard Basics - Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
+
+[COBIT 5 and The Balanced Scorecard - OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
 
 []()
 
