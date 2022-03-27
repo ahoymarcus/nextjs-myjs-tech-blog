@@ -22,7 +22,7 @@ description: 'Considering some definitions from Control Objectives for Informati
     4.3. Advantages from the COBIT Framework
 5. ##### PMBOK
 6. ##### ITIL
-7. #####  
+7. ##### Indicators Methodology 
 8. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -135,7 +135,13 @@ Some elements that should be around a IT strategic planning:
 
 ### COBIT
 
-Control Objectives for Information and Related Technology (COBIT) are a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations.
+Control Objectives for Information and Related Technology (COBIT) are a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
+
+
+`The COBIT Framework provides a tool for the business process owner that affect the discharge of business process tasks. COBIT is an IT-centric framework designed to provide users, businesses, and auditors with a standard approach for designing, implementing, and testing IT controls. This framework has been created and adopted by the Big N audit houses as a solution to some IT audit, compliance, and control problems.` [TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
+
+
+Moreover, COBIT provides maturity models, critical success factors, main objective indicators, and implementation indicators, administrative guidelines, etc.
 
 
 There is also certifications related to this framework, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring him closer to the core of the organization and its strategic plans.
@@ -148,7 +154,7 @@ There is also certifications related to this framework, which aims to showcase t
 ###### Note: the certification does not have a validation date and has a 50% correction for approvement.
 
 
-There is a set tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
+There is a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
 
 - **Information Management**
 - **IT Services Monitoring**
@@ -176,15 +182,15 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 #### Principles from COBIT 5
 
 1. **Meeting stakeholders needs**: since IT correlates to different parts of the administration, from strategic planning to the daily IT process, it should also meet the expectation of each involved part.
-2. Covering the enterprise end to end: since IT process spred acress all the department and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
-3. Applying a single integrated framework: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.
-4. Enabling a holistic approach: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
+2. **Covering the enterprise end to end**: since IT process spred acress all the department and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
+3. **Applying a single integrated framework**: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.
+4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
     4.1. Departments   
     4.2. Processes   
     4.3. Activities   
     4.4. Resources and finantial assets   
     4.5. Culture, etc.
-5. Separating governance from management: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly, from the evaluation of the quality and security of day-by-day management of processes, to the monitoring and evaluation of strategic goals and the value achieved.
+5. **Separating governance from management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly, from the evaluation of the quality and security of day-by-day management of processes, to the monitoring and evaluation of strategic goals and the value achieved.
 
 
 #### Advantages from the COBIT Framework
@@ -198,12 +204,7 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 7. Risk assessment
 
 
-
-
-
 ### PMBOK
-
-
 
 
 
@@ -211,27 +212,89 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
  
  
  
+
+### Indicators Methodology
  
- 
- 
- 
- 
- 
- 
- 
+Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
+
+Two of these indicators are **KPI** and **OKR**, and eventhough sometimes the may overlap each other in some aspects, they should be treated as different and specific tools..
 
 
+#### KPI Indicator
+
+This is the acronym for Key Performance Indicator (KPI), and it is `used to evaluate performance over time for an organization, individual, program, project, action, etc.` [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
+
+
+And in the article linked above, the author sees 3 specific indicators that may vary a little bit and be some what confused with the concepts measured by other tools, like OKR, for exemple:
+
+1. **Link to strategic objectives**
+2. **Direct where to focus resources**
+3. **Be measured against targets**
+
+
+###### Some notes on KPI Indicators: 
+1. This indicator should always be designed in a quantative nature, because as it is taught by some, it makes easier to provide context and for comparing performace.
+2. They should be specific (not vague), and should have context and meaning for each KPI.
+3. They must me **Key features** or indicators from strategic level.
+
+
+Some exemples of the use KPI indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
+
+- **Retail Industry**: revenue per square foot, same-store sales, sales per employee.
+- **HR Department**: attrition rate, employee performance, average recruitment time.
+- **Sales Department**: customer lifetime value, sales revenue, calls made.
+- **Technology Industry**: monthly recurring revenue, customer retention or churn, ticket resolution time.
+- **Healthcare Industry**: patient wait time, average treatment charge, number of educational programs.
+
+
+#### OKR Indicator
+ 
+On the other hand, OKR is the acronym for Objective and Key Results, or more specifically `an objective is tied to key results. OKR is a strategic framework, whereas KPIs are measurements that exist witin a framework`. [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
  
 
+The same article also states that OKR has a more simplistic fashion as a framework, which groups a limited number of high-level objectives to some, also a limited number of key results per objective.
 
 
-What is COBIT in information security? - TutorialsPoint - https://www.tutorialspoint.com/what-is-cobit-in-information-security
+Some characteristics a OKR should have:
 
-Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
+1. **Always quantifiable**
+2. **Able to be objectively scored on a 0-1 or 0-100 scale**
+3. **Timelined**
+4. **Ambitious**: the objectives and the results should be some what hard to reach or some distinctive in that nature.
 
-Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
+
+Some exemples of the use OKR indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
+
+1. Objective: Become the market leader in our industry.     
+    1.1. Key result #1: record $100 million in revenue.   
+    1.2. Key result #2: increase staff by 45 percent.   
+    1.3. Key result #3: increase market cap suffieciently to enter S&P 500.
+2. Objective: Develop autonomous vehicles.   
+    2.1. Key result #1: hire 10 artificial intelligence subject matter experts.   
+    2.2. Key result #2: invest an additional $500 million in research and development.   
+    2.3. Key result #3: roll out prototype by fiscal year-end.
+3. Objective: Increase revenue by 30 percent.   
+    3.1. Key result #1: acquire 50 new customers.   
+    3.2. Key result #2: increase marketing leads by 20 percent.   
+    3.3. Key resutl #3: increase customer retention to 85 percent.
+ 
+
+###### Some notes on OKR Indicators: 
+1. They must have alignment with the rest of the orginization, especially beign created from top down in the company structure.
+2. These indicators are better fitted for strategic impruvements, so they are not the best fit for focusing on mainataining the pace of processes.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
+
+Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
 
 Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 
@@ -252,6 +315,9 @@ Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de g
 
 [O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com](https://www.zendesk.com.br/blog/cobit-o-que-e/)
 
+[What is COBIT in information security? - TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
+
+[OKRs Vs. KPIs: Breaking Down The Difference - ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
 
 
 []()
