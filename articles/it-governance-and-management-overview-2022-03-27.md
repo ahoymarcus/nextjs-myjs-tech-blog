@@ -17,6 +17,9 @@ description: 'Considering some definitions from Control Objectives for Informati
     3.2. Key Elements from the IT Strategic Planning   
     3.3. Errors in Planning
 4. ##### COBIT
+    4.1. 4 Funcionalities from COBIT 5   
+    4.2. 5 Principles from COBIT 5    
+    4.3. Advantages from the COBIT Framework
 5. ##### PMBOK
 6. ##### ITIL
 7. #####  
@@ -84,13 +87,13 @@ And for that, since IT today is much more than a provider of some restrict resou
 
 Some elements that should be around a IT strategic planning:
 
-1. **To follow close the strategic business plans for the organization
-2. **To bring the IT area to correct adapt itself to the internal and external environment of the company
-3. **To correct allocate resources of infrastructure, budget, and professionals
-4. **To better understand its clients
-5. **To set directives and short, medium and long goals
-6. **To find overhead in the operation
-7. **To have a understand about the real position of the competition
+1. **To follow close the strategic business plans for the organization**
+2. **To bring the IT area to correct adapt itself to the internal and external environment of the company**
+3. **To correct allocate resources of infrastructure, budget, and professionals**
+4. **To better understand its clients**
+5. **To set directives and short, medium and long goals**
+6. **To find overhead in the operation**
+7. **To have a understand about the real position of the competition**
 
 
 #### Advantages from IT Strategic Planning
@@ -132,6 +135,68 @@ Some elements that should be around a IT strategic planning:
 
 ### COBIT
 
+Control Objectives for Information and Related Technology (COBIT) are a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations.
+
+
+There is also certifications related to this framework, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring him closer to the core of the organization and its strategic plans.
+
+1. **COBIT 5 Foundation**
+2. **COBIT 5 Implementation**
+3. **COBIT 5 Assessor**
+
+
+###### Note: the certification does not have a validation date and has a 50% correction for approvement.
+
+
+There is a set tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
+
+- **Information Management**
+- **IT Services Monitoring**
+- **The Work Force**
+- **Security**
+- **Data Administration**
+- **Crisis Contaiment**
+
+
+Another important point about COBIT is that it does not prevent its use together with other frameworks, like the Information Technology Infrastructure Library (ITIL), which is more inline with tasks management inside the IT department and its operartions..
+
+
+So, while thinking about the use of COBIT together with ITIL, there should be on the first  then the aim to optimize the process and stages related to IT Governance, and on the second the best practices to achieve value to the company while the IT services are put to use for the whole operation.
+
+
+
+#### Funcionalities from COBIT 5   
+
+1. Planning and Organizing
+2. Acquirement and Organization
+3. Deliver and Support
+4. Monitoring and Evaluation
+
+
+#### Principles from COBIT 5
+
+1. **Meeting stakeholders needs**: since IT correlates to different parts of the administration, from strategic planning to the daily IT process, it should also meet the expectation of each involved part.
+2. Covering the enterprise end to end: since IT process spred acress all the department and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
+3. Applying a single integrated framework: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.
+4. Enabling a holistic approach: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
+    4.1. Departments   
+    4.2. Processes   
+    4.3. Activities   
+    4.4. Resources and finantial assets   
+    4.5. Culture, etc.
+5. Separating governance from management: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly, from the evaluation of the quality and security of day-by-day management of processes, to the monitoring and evaluation of strategic goals and the value achieved.
+
+
+#### Advantages from the COBIT Framework
+
+1. Strategic planning and IT department alignment
+2. Transparency form plans and goals
+3. Quality of the service
+4. Improve the value of IT operation
+5. Productivity
+6. Compliance 
+7. Risk assessment
+
 
 
 
@@ -158,7 +223,7 @@ Some elements that should be around a IT strategic planning:
 
  
 
-O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com - https://www.zendesk.com.br/blog/cobit-o-que-e/
+
 
 What is COBIT in information security? - TutorialsPoint - https://www.tutorialspoint.com/what-is-cobit-in-information-security
 
@@ -172,7 +237,7 @@ Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de g
 
 ### Further Reading
 
-[]()
+[COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
 
 
 ### References
@@ -185,6 +250,13 @@ Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de g
 
 [IT Governance vs IT Management: Mastering the Differences - Bmc.com](https://www.bmc.com/blogs/governance-vs-management/)
 
+[O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com](https://www.zendesk.com.br/blog/cobit-o-que-e/)
+
+
 
 []()
+
+
+
+
 
