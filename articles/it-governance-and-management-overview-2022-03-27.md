@@ -46,7 +46,7 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 
 #### The Importance of IT Governance
 
-<!-- COMING SOON -->
+**COMING SOON...**
 
 
 #### The Importance of IT Management
@@ -59,12 +59,12 @@ Bringing the problem even more to the center of the IT Area, it could be said th
 
 So, considering that the IT resources have to available and functional at all times, there could be said that the IT Management responsabilities should include:
 
-- **Determining business requirements for IT systems**
-- **Managing IT budgets and costs**
-- **Monitoring safety and compliance**
-- **Controlling system and network security**
-- **Implementing new software, hardware and data systems**
-- **Providing technical or help desk support**
+1. **Determining business requirements for IT systems**
+2. **Managing IT budgets and costs**
+3. **Monitoring safety and compliance**
+4. **Controlling system and network security**
+5. **Implementing new software, hardware and data systems**
+6. **Providing technical or help desk support**
 
 
 Since in the contemporary society guided by an information economy, it should be the responsability of IT management to make this connection between the business of the organization and the informational tools it effectively needs to succed.
@@ -84,24 +84,24 @@ And for that, since IT today is much more than a provider of some restrict resou
 
 Some elements that should be around a IT strategic planning:
 
-- **To follow close the strategic business plans for the organization**
-- **To bring the IT area to correct adapt itself to the internal and external environment of the company**
-- **To correct allocate resources of infrastructure, budget, and professionals**.
-- **To better understand its clients**
-- **To set directives and short, medium and long goals**
-- **To find overhead in the operation**
-- **To have a understand about the real position of the competition**
+1. **To follow close the strategic business plans for the organization
+2. **To bring the IT area to correct adapt itself to the internal and external environment of the company
+3. **To correct allocate resources of infrastructure, budget, and professionals
+4. **To better understand its clients
+5. **To set directives and short, medium and long goals
+6. **To find overhead in the operation
+7. **To have a understand about the real position of the competition
 
 
 #### Advantages from IT Strategic Planning
 
-- **To help the organization reach its strategic plans**
-- **Improving the positioning of the IT area in the company operation and the optimization in the use of technological resources**
-- **Reduction of costs and risks**
-- **To improve workflow**
-- **Brings transparency to the IT operation and help to define and monitor the priorities**
-- **To improve communication with the other departments of the organization**
-- **Create means to measure and to analyse all the operation**
+1. o help the organization reach its strategic plans
+2. Improving the positioning of the IT area in the company operation and the optimization in the use of technological resources
+3. Reduction of costs and risks
+4. To improve workflow
+5. Brings transparency to the IT operation and help to define and monitor the priorities
+6. To improve communication with the other departments of the organization
+7. *Create means to measure and to analyse all the operation
 
 
 #### Key Elements from the IT Strategic Planning
