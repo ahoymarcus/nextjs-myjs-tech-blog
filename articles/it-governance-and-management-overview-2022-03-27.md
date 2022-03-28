@@ -21,6 +21,11 @@ description: 'Considering some definitions from Control Objectives for Informati
     4.2. 5 Principles from COBIT 5    
     4.3. Advantages from the COBIT Framework
 5. ##### PMBOK
+    5.1. Brief History of the PMBOK     
+    5.2. PMBOK Fifth Edition  
+    5.3. PMBOK Sixth Edition   
+    5.4. PMBOK Projects    
+    5.5. Advantages of PMBOK
 6. ##### ITIL
 7. ##### Indicators Methodology 
 8. ##### 
@@ -228,6 +233,21 @@ These are some of the wide scope/constraints that the PMBOK works:
 - **Risk**
 
 
+#### Brief History of the PMBOK
+
+Eventhough have been efforts to produce documents to support project management dating from **1981**, it was only in **1996** that in this First Edition a truly systematic document was launched.
+
+
+There were an update in **2000** with the lauching of the Second Edition, but it was with the Third Edition in **2004** that the PMI institute had to organize and inaugurate a commitee to help in cataloging all the numerous participations soliciting changes. And it was in this 3rd edition that the guide increased generalize all kinds of projects.
+
+
+The Fourth Edition in **2009** had it focus on acceessement, in a effort to make the document more consistent and accessible. And then in **2013** came the Fifth Edition, where the focus was especially in standardization of the terms, the processes, the inputs and the outputs.
+
+
+Then, in **2017** came the Sixth Edition, which added new processes, but that kept special focus on the role and the compentencies for the Project Manager.
+
+
+
 #### PMBOK Fifth Edition
 
 According to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), the 5th edition introduced 'Stakeholder Management' as another of its knowledge areas.
@@ -239,8 +259,8 @@ And at this edition, the PMBOK guide interwinds 5 'process groups' with 10 'know
 1. Initiating
 2. Planning
 3. Executing
-4. Monitoring
-5. Controlling
+4. Monitoring and Controlling
+5. Closing or finishing
 
 ###### Knowledge areas:
 1. Project Integration Management
@@ -285,6 +305,26 @@ From the original 47 processes in the 5th edition, one was removed, and the bell
 Also according to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), considering the constantly changing role of the project manager and how leadership in project management is approached, this section now addresses PMI's Talent Triangle to encompass the **strategic**, **leadership**, and **technical** project management competencies and skills that a modern project manager should have.
 
 
+#### PMBOK Projects
+
+According to the site [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/), the PMBOK lays some guaidances on the form of a project, espcially in contrast to other tasks or operations, like ordinary processes, which can also to be found at the organizations:
+
+1. **Defined timeline**: a project is a finite task that must have a start and a ending point limiting its life cycle.
+2. **Exclusive objectives**: as a entity, a project also diferentiate itself by its objectives and goals.
+3. **Limited resources**: since projects are not continous entities, but have finite time span and delimited objectives, it also must have limited resources related to it.
+
+
+#### Advantages of PMBOK
+
+Among many other benefits to the management of projects, its possible to underline:
+
+1. **Standardization of terms and processes**
+2. **Improvement in the flow of communication among the interested parties**
+3. **More emphasis of the important tasks**
+4. **Better usage of the resources**: including time.
+5. **Improvement on the monitoring of the project stages**
+6. **Better accessement of Risks**
+7. **Better rates of project success**
 
 
 
@@ -292,6 +332,9 @@ Also according to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a
 
 
 
+Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
+
+Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 
 
 
@@ -478,6 +521,8 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [COBIT 5 and The Balanced Scorecard - OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
 
 [PMBOK® - A Guide to Project Management Body of Knowledge - SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
+
+[O que é PMBOK?- ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/)
 
 
 []()
