@@ -337,7 +337,7 @@ So, alread at the beginning the article makes referece to this misconception int
 
 Then, in its development, the article starts with a brief development of the PMI and the PMBOK, where from **1966** to **1983** a group of researches would contrbute with experiences and create some reports on project managemet and standards.
 
-Then, only in **1996** a systematic document was published with as the First Edition of the Project Managment Body of Knowledge, which later would become a standard itself for good pratices in project management. Then the 2nd Edition in **2000** and the 3rd Edition in **2004*:
+Then, only in **1996** a systematic document was published with as the First Edition of the Project Managment Body of Knowledge, which later would become a standard itself for good pratices in project management. Then the 2nd Edition in **2000** and the 3rd Edition in **2004**:
 
 
 `Although the PMBOK® Guide does not dictate methodology, many software project managers nevertheless began to associate the waterfall model with the processes outlined in the PMBOK® Guide. Perhaps it was because waterfall was the prevalent methodology at the time, or perhaps it was because the waterfall model provided a framework that supported all of the PMBOK® Guide practices. Whatever the reason, it has been a hard misconception to shake, even though the third edition of the PMBOK® Guide makes it very clear that it is up to the reader to determine what processes are most appropriate to use in their situation.` [PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042)
@@ -379,17 +379,31 @@ The authors even remide that the PMBOK clearly states that projects are `underta
 ![pmbok-project-life-cycle-01](/images/articles/development/pmbok-project-life-cycle-02.jpg)
 
 
-Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
-
-Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
-
-
 ###### The Point Where there is a Clear Difference
 
 And then, only in a singular point the authors reconigze that there are a clear difference of concepts between PMBOK and Agile pratices, and that is about **the participation of the stackholders**.
 
 
 So, for the Agile model, the stackholders are called to have active involvement throughout the duration of the project, while in the `PMBOK Guide the view that stackeholder influence occurs up front and then declines throughout the rest of the project`. (PMI, 2004, p. 21)
+
+
+
+
+
+PMBOK
+Métodos, técnicas e ferramentas de gerência de projetos.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
