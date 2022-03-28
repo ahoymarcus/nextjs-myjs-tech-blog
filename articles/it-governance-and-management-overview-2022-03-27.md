@@ -22,10 +22,11 @@ description: 'Considering some definitions from Control Objectives for Informati
     4.3. Advantages from the COBIT Framework
 5. ##### PMBOK
     5.1. Brief History of the PMBOK     
-    5.2. PMBOK Fifth Edition  
+    5.2. PMBOK Fifth Edition    
     5.3. PMBOK Sixth Edition   
-    5.4. PMBOK Projects    
-    5.5. Advantages of PMBOK
+    5.4. The Concept of Project in the PMBOK    
+    5.5. Advantages of PMBOK   
+    5.6. The Agile Project Management and the PMBOK Guide
 6. ##### ITIL
 7. ##### Indicators Methodology 
 8. ##### 
@@ -305,7 +306,7 @@ From the original 47 processes in the 5th edition, one was removed, and the bell
 Also according to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), considering the constantly changing role of the project manager and how leadership in project management is approached, this section now addresses PMI's Talent Triangle to encompass the **strategic**, **leadership**, and **technical** project management competencies and skills that a modern project manager should have.
 
 
-#### PMBOK Projects
+#### The Concept of Project in the PMBOK
 
 According to the site [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/), the PMBOK lays some guaidances on the form of a project, espcially in contrast to other tasks or operations, like ordinary processes, which can also to be found at the organizations:
 
@@ -327,9 +328,55 @@ Among many other benefits to the management of projects, its possible to underli
 7. **Better rates of project success**
 
 
+#### The Agile Project Management and the PMBOK Guide
+
+This very interesting section of the PMBOK Overview brings the article [Agile project management and the PMBOK® guide](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042), from 2008, where the PMI.org to try to understand the relation between this two important concepts of modern management: PMBOK and Agile methods.
+
+So, alread at the beginning the article makes referece to this misconception into thinnking that the PMBOK 3rd Edition is more inlined with traditional software development, like the Waterfall Model, and should not be used with the Agile models.
 
 
+Then, in its development, the article starts with a brief development of the PMI and the PMBOK, where from **1966** to **1983** a group of researches would contrbute with experiences and create some reports on project managemet and standards.
 
+Then, only in **1996** a systematic document was published with as the First Edition of the Project Managment Body of Knowledge, which later would become a standard itself for good pratices in project management. Then the 2nd Edition in **2000** and the 3rd Edition in **2004*:
+
+
+`Although the PMBOK® Guide does not dictate methodology, many software project managers nevertheless began to associate the waterfall model with the processes outlined in the PMBOK® Guide. Perhaps it was because waterfall was the prevalent methodology at the time, or perhaps it was because the waterfall model provided a framework that supported all of the PMBOK® Guide practices. Whatever the reason, it has been a hard misconception to shake, even though the third edition of the PMBOK® Guide makes it very clear that it is up to the reader to determine what processes are most appropriate to use in their situation.` [PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042)
+
+
+And the authors from PMI.org really admit that in the 2000 edition, it was still difficult to see agile practices outilined in the PMBOK, but says that in the 2004 edition this points were alredy more clearly stated:
+
+1. `There is no single best way to define an ideal project life cycle` (PMI, 2004, p. 20)
+2. `the project manager, in collaboration with the project team, is always responsible for determining what processes are appropriate, and the appropriate degree of rigor for each process, for any given project`. (PMI, 2004, p.37)
+
+
+And in the [PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042) site the authors also add many more instances, like articles and magazines, where the concepts were public stated.  
+
+
+###### Project Life Cycle
+
+The PMBOK 3rd Edition calls a projet life clycle as a `collection of generally sequential project phases`, there is a logical grouping of related activities that usually culminate in a deliverable.
+
+
+![pmbok-project-life-cycle-01](/images/articles/development/pmbok-project-life-cycle-01.jpg)
+
+
+And it continues that traditionally these phases were more clear to be understood as the ones seen in the Waterfall Model, but that this concret correlation ware never mandatory.
+
+So, as the article progress, it states that the 'sequential' aspect of the timeline, specially with its required sign-offs, were seen more inlined with the Waterfall Model, but there is also a inherent sequentiality inside the Agile Model, more properly called 'Iteraction', and also the intermediary releases or deployments to the client with each iteration.
+
+
+`This is the type of phrasing that might lead readers to believe that only a waterfall methodology is appropriate when following PMBOK® Guide practices. However if we interpret “hand-off” to mean that there is a hand-off of an increment of code to the customer to use as they see fit, then agile is still in keeping with the basic tenets of the PMBOK® Guide.`  [PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042) 
+
+
+Finally, the author cleary contradict those that propose that each of the Agile iterations were a project by itself, saying that this concept, for them, really comes from those that are in fact putting the Waterfall model in the center of the argument by themselves:
+
+`Because of this regular rhythm of incremental delivery, many have proffered that each iteration of an agile project is itself a project, having a start and stop date, and delivering a product as a result. I disagree with this assessment, however, believing it to be colored by years of waterfall practice.`[PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042) 
+
+
+The authors even remide that the PMBOK clearly states that projects are `undertaken to crate a lasting outcome` (PMI, 2004, p.5), contrary to the idea that the sgin-offs should be accounted to each iteration was a project by itself, and not to the software development was a whole.
+
+
+![pmbok-project-life-cycle-01](/images/articles/development/pmbok-project-life-cycle-02.jpg)
 
 
 Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
@@ -337,9 +384,12 @@ Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/l
 Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 
 
+###### The Point Where there is a Clear Difference
+
+And then, only in a singular point the authors reconigze that there are a clear difference of concepts between PMBOK and Agile pratices, and that is about **the participation of the stackholders**.
 
 
-
+So, for the Agile model, the stackholders are called to have active involvement throughout the duration of the project, while in the `PMBOK Guide the view that stackeholder influence occurs up front and then declines throughout the rest of the project`. (PMI, 2004, p. 21)
 
 
 
@@ -523,6 +573,8 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [PMBOK® - A Guide to Project Management Body of Knowledge - SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
 
 [O que é PMBOK?- ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/)
+
+[Agile project management and the PMBOK® guide - PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042)
 
 
 []()
