@@ -206,7 +206,100 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 ### PMBOK
 
-**COMING SOON...**
+The Project Management Body of Knowledge is a guide for project management, developed by the Project Management Institute (PMI), and although the PMBOK may appear to bring a broad range of sujects , it may not be confused with a methodology, because in reality a standardizations and a best practice guide.
+
+
+The PMBOK is not a methodology, because it stays in a more generic layer, which does not touch on specific traits like the many kinds of project, wheter it is construction, software, or other kind of project there is. It was first released in 1983, and recentrly in 2017 released its 6th edition.
+
+
+And since this guide is internationally reconized (IEEE, ANSI), and PMI is largest not-for-profit organization for Project Management, PMBOK is largely used for professional software development projects.
+
+
+`The PMBOK serves to promote and establish a common vocabulary for the project management profession by suggesting tools and techniques for each process and guiding in defining inputs and outputs as well. It describes the basic concepts of Project, Project Management, the role of Project Manager in different organizational structures, Project Management Phases, and the Project Lifecycle.` [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
+
+
+These are some of the wide scope/constraints that the PMBOK works:
+
+- **Scope**
+- **Quality**
+- **Schedule**
+- **Budget**
+- **Resources**
+- **Risk**
+
+
+#### PMBOK Fifth Edition
+
+According to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), the 5th edition introduced 'Stakeholder Management' as another of its knowledge areas.
+
+
+And at this edition, the PMBOK guide interwinds 5 'process groups' with 10 'knowledge areas':
+
+###### Process groups:
+1. Initiating
+2. Planning
+3. Executing
+4. Monitoring
+5. Controlling
+
+###### Knowledge areas:
+1. Project Integration Management
+2. Project Scope Management
+3. Project Time Management
+4. Project Cost Management
+5. Project Quality Management
+6. Project Human Resource Management
+7. Project Communications Management
+8. Project Risk Management
+9. Project Procurement Management
+10. Project Stakeholder Management
+
+
+#### PMBOK Sixth Edition
+
+This newer edition included another features like **Agile (Adaptive PM)**, **3 new group processes**, **updated naming conventions**, **closing Procurement is closed**, **project Manager's role**.
+
+
+###### Agile (Apaptive PM)
+
+Still according to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), since Agile practices are a big part of nowdays projects, this same philosophy that was mentioned in the PMBOK 5th Ed, has been extensive been included in this later edition: 
+
+- **Agile**
+- **Scrum**
+- **Kanban**
+- **Lean**
+- **XP**
+
+
+###### New Group Processes
+
+From the original 47 processes in the 5th edition, one was removed, and the bellow 3 were added:
+
+- **Knowledge Management**
+- **Risk Management**
+- **Control Resources**
+
+
+###### Project Manager's Role
+
+Also according to the site [SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article), considering the constantly changing role of the project manager and how leadership in project management is approached, this section now addresses PMI's Talent Triangle to encompass the **strategic**, **leadership**, and **technical** project management competencies and skills that a modern project manager should have.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### ITIL
  
@@ -328,13 +421,22 @@ Another interesting point underlined from the above site, though, it is the fact
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  
 
 
 
+Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
 
-
+O que é PMBOK?- ProjectBuilder.com - https://www.projectbuilder.com.br/blog/o-que-e-pmbok/
 
 Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 
@@ -351,6 +453,8 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 ### Further Reading
 
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
+
+[PMP Certification? Use this List of Helpful PMBOK Guide Resources - Wrike.com](https://www.wrike.com/blog/pmp-certification-use-this-list-of-helpful-pmbok-guide-resources/)
 
 
 ### References
@@ -372,6 +476,9 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [Balanced Scorecard Basics - Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
 
 [COBIT 5 and The Balanced Scorecard - OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+
+[PMBOK® - A Guide to Project Management Body of Knowledge - SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
+
 
 []()
 
