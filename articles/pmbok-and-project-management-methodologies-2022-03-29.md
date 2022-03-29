@@ -10,6 +10,23 @@ description: 'A project management methodology is a set of principles and practi
 
 1. ##### Introduction  
 2. ##### Project Management Methodologies
+    2.1. Adaptive Project Framework Methodology   
+    2.2. Agile Methodology   
+    2.3. Critical Path Methodology    
+    2.4. Critical Chain Project Methodology    
+    2.5. eXtreme Programming Methodology  
+    2.6. Kanban Methodology   
+    2.7. Lean Methodology   
+    2.8. New Product Introduction Methodology   
+    2.9.  Outcome Mapping Methodology  
+    2.10. Package Enabled Reengineering Methodology  
+    2.11.  PMI's PMBOK Methodology  
+    2.12.  PRINCE2 Methodology    
+    2.13.  Rapid Application Development Methodology (RAD)     
+    2.14.  Scrum Methodology   
+    2.15.  Scrumban Methodology   
+    2.16. Six Sigma Methodology  
+    2.17 Waterfall Methodology
 3. ##### PMBOK
     3.1. Brief History of the PMBOK     
     3.2. PMBOK Fifth Edition    

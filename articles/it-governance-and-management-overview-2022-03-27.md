@@ -226,22 +226,29 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
  
  
  
- 
- 
- 
+IT Infrastructure Library (ITIL) - IBM - https://www.ibm.com/cloud/learn/it-infrastructure-library
+
+An Overview of ITIL Concepts and Summary Process - SimpliLearn.com - https://www.simplilearn.com/itil-key-concepts-and-summary-article 
  
  
 Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
 
 Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
 
+O que é ITIL - MundoITIL.com - https://www.mundoitil.com.br/
+ 
+ITIL 4: confira o que mudou no framework e descubra como criar valor através de serviços de TI - Euax.com - https://www.euax.com.br/2018/10/itil-o-que-e-importancia-como-implantar/
  
  
- 
- 
- 
- 
- 
+O que é ITIL? - Gsti.com - https://www.portalgsti.com.br/itil/sobre/ 
+
+ITIL Tutorial - JavaTPoint - https://www.javatpoint.com/itil
+
+
+
+
+
+
  
  
 
