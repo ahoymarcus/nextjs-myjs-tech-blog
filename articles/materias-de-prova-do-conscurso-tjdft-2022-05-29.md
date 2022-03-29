@@ -216,7 +216,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Arquiteturas de infraestrutura em nuvem.
 - [X] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI.
 - [X] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
-- [ ] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
+- [X] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 - [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
 - [ ] Escritório de projetos: modelos e características.
 - [ ] Conceitos de gestão de riscos. 

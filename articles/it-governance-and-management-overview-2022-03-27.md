@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'IT Governance and Mangement - Overview'
 date: '2022-03-27'
 subject: 'development-articles'
-description: 'Considering some definitions from Control Objectives for Information Technology (COBIT), which is a framework for governance and management specifically tailored to IT, Evaluate, Direct, and Monitor (EDM): which would cover the main governance activities, to access and evaluate the needs of the stackholders, to direct through priorization and monitoring results, and, Plan, Build, Run, and Monitor (PBRM): which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.'
+description: 'Considering some definitions from Control Objectives for Information Technology (COBIT), which is a framework for governance and management specifically tailored to IT, Evaluate, Direct, and Monitor (EDM): which would cover the main governance activities, to access and evaluate the needs of the stakeholders, to direct through priorization and monitoring results, and, Plan, Build, Run, and Monitor (PBRM): which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.'
 ---
 
 # IT Governance and Mangement - Overview
@@ -20,18 +20,19 @@ description: 'Considering some definitions from Control Objectives for Informati
     4.1. 4 Funcionalities from COBIT 5   
     4.2. 5 Principles from COBIT 5    
     4.3. Advantages from the COBIT Framework
-5. ##### PMBOK
-    5.1. Brief History of the PMBOK     
-    5.2. PMBOK Fifth Edition    
-    5.3. PMBOK Sixth Edition   
-    5.4. The Concept of Project in the PMBOK    
-    5.5. Advantages of PMBOK   
-    5.6. The Agile Project Management and the PMBOK Guide
-6. ##### ITIL
-7. ##### Indicators Methodologies
-8. ##### Project Management Methodologies
-9. ##### Further Reading
-10. ##### References
+5. ##### Project Management Methodologies
+6. ##### PMBOK
+    6.1. Brief History of the PMBOK     
+    6.2. PMBOK Fifth Edition    
+    6.3. PMBOK Sixth Edition   
+    6.4. The Concept of Project in the PMBOK    
+    6.5. Advantages of PMBOK   
+    6.6. The Agile Project Management and the PMBOK Guide
+7. ##### ITIL
+8. ##### Indicators Methodologies
+9. ##### 
+10. ##### Further Reading
+11. ##### References
 
 ### Introduction
  
@@ -45,7 +46,7 @@ And taking off from that basic division, the author then brings some clarificati
 
 So, applying some of the underling ideas from COBIT, the problem could be presented this way:
 
-1. **Evaluate, Direct, and Monitor (EDM)**: which would cover the main governance activities, to access and evaluate the needs of the stackholders, to direct through priorization and monitoring results.
+1. **Evaluate, Direct, and Monitor (EDM)**: which would cover the main governance activities, to access and evaluate the needs of the stakeholders, to direct through priorization and monitoring results.
 2. **Plan, Build, Run, and Monitor (PBRM)**: which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.
 
 
@@ -208,6 +209,403 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 5. Productivity
 6. Compliance 
 7. Risk assessment
+
+
+
+### Project Management Methodologies
+ 
+According to the site [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/) there over 8,462 project management methodologies around, but in its article it states some of the more popular ones:
+ 
+So, in general terms a project management methodology is a set of principles and practices, that is a framework, that guide the organization of projects to ensure maximum performance. 
+ 
+And some of the reazons the site gives for the great number of methodology highlight the fact that each project has its specific requirements and also its own context, and they should not be simplily handled down by a one-size-fits-all methodology.
+
+Even more, that could be times when some set of principles and practices simply don't macht some kind of methodologies, and they should never be forced to fit into such direction.
+
+
+But there should be some attributes or characteristics that could help to decide between one or another methodology:
+
+- **Cost and Budget**: here, not only the amount, but also if there is flexibility to change it during the project course.
+- **Team size**: in this case there should be analysed not only the quantity of professionals, but also characteristics about seniority level, leadership, etc.
+-  **Ability to take risks**: some methodologies are more open to risks than others.
+- **Flexibility**: in this case there is the analysis about the possibilities to changes in the direction during the project life cycle.
+- **Timeline**: in this case there should be analysed how strict is the timeline, the possibilities of its increase or decrease, etc.
+- **Cient/Stakeholder collaboration**: in this case it is view how much does the client need/wants to be involved in the process.
+
+
+###### Waterfall Methodology
+
+This one is a traditional approach to project management, with phases that are complete linear, sequentially, and unidirectional. Also, each stage must be completed in order to progress ahead. It's stages:
+
+1. **Requirements**
+2. **Analysis**
+3. **Design**
+4. **Construction**
+5. **Testing**
+6. **Deploying & Maintenance**
+
+
+Here, everything is planned and designed in the very beginning of the project, what can be somewhat very risk far ahead. And some other characteristics that would align with this methodology:
+
+1. A clearly defined and not changeble end goal.
+2. The stakeholders know exactly what want and what will get.
+3. The project is consistent and predictable.
+4. There's need of extensive documentation for a regulated industry.
+5. There might be some shift in the personel that needs to be absorved somewhat quickly.
+
+Now, impediments to absorb this methodology:
+
+1. The project is liable to change.
+2. There is not a clear picture of all the requirements need at the beginning of the project.
+3. There is a need to absorb in the project a continous testing or adaptations due feedbacks during the process. 
+
+
+###### Agile Methodology
+
+The agile project management methodology came from a need to implementing new kind of workflow to the traditional metodologies, specially in projects where the is the necessity to have adaptations to the final goal throughout the progress of the project.
+
+In this case, the length linear flow was altered to a short iterational flow, where from each iterations there is possibility to tune and revise the process as it progresses. And this methodology finally derived also into a kind of philosophy inspiring many other sub-frameworks (Scrum, Kanban, Lean, etc.).
+
+Some of its characteristics:
+
+- **It's collaborative**
+- **It's quick**
+- **It's open to data-driven change**
+- **Continous testing**
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The project is liable to change**
+2. **The requirements are not very clear from the outset**
+3. **Early deployments**
+4. **The necessity to have stakeholders/clients more involved**
+5. **There is a seasoned personal available**
+
+Now, impediments to absorb this methodology:
+
+1. **There is the need to extensive documentation, specially related to regulatory reasons**
+2. **There is a very predictable deliverable, and it should be cristal clear from the start**
+3. **There is no space for changes during its progression**
+4. **There are no seasoned personel**
+5. **There are strict deadlines or deliverables that need to be saguarded**
+
+
+###### Scrum Methodology
+
+This one is a form of agile management, and it could be thoght more as a framework than a methodology by itself, as [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/) says in their article, where some agile concepts are turn into:
+
+1. **Short sprints**
+2. **Requirements are iteratively processed into a Backlog**
+3. **Teams have more flexibility, while they are held together by a Scrum Maser**
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **There is margin for continous improvement**
+2. **There is a seasoned personel available**
+
+Now, impediments to absorb this methodology:
+
+1. **There isn't  a seasoned personel available to hire**
+
+
+###### Kanban Methodology
+
+This is another method within the agile project system, originated from the manufacturing industry, and which is also more inlined as a framework than a methodoty itself.
+
+There is here a great impulse to the use of visual tools to help to set and organize the process, and it also works with a system to refurnishes its Backlog to delegate the responsabilities.
+
+Because of the visual imperative, it helps to monitor progress, to limit tasks between participants or to avoid bottlenecks.
+
+Here, some other characteristics that would align with this methodology:
+
+1. **There is the need/possibility to use visual representation for the project's progress**
+2. **A-glance status updates method**
+3. **Facilitate to create focuses and limits to the participants**
+4. **The progress is arranged into a continous 'pull' basis.
+
+Now, impediments to absorb this methodology:
+
+1. **There are too many complexities to the process to be clearly arranged into a visual representation**
+2. **There is the need of a 'push' system, instead of the 'pull' one**
+
+
+###### Scrumban Methodology
+
+This one is another method from the agile system that has been devised by the merge of Scrum and Kanban, while being a hybrid agile project which benefits frorm:
+
+- **The Scrum method to iterate the Backlog**
+- **To make use of the iterative system of Scrum also to the planning, testing and feedbacks process**
+- **To arrange visual focus and tasks limits from the visual representation of Kanban**
+
+Here, some other characteristics that would align with this methodology:
+
+1. **It repeats some of the same constraints from the source methods**
+
+Now, impediments to absorb this methodology:
+
+1. **Here, also repeats the constraints from the 2 sources methodologies**
+
+
+###### eXtreme Programming Methodology
+
+Yet another form of agile system which emphasizes teamwork and collaboration across managers, customers, and developers, together with team's self-organizing.
+
+Here, some other characteristics that would align with this methodology:
+
+1. **A seasoned team to be self-organized**
+2. **A small team with personal with broad capacities and knowledge**
+3. **The team can be arranged localy and in time zones to work into tight shifts**
+
+Now, impediments to absorb this methodology:
+
+1. **The team have less experienced personel**
+2. **The personel lacks the broad capacities and knowledge**
+3. **The team cannot work in a tight arrangement**
+
+
+###### Adaptive Project Framework Methodology
+
+Again, another methodology that springs from the agile system, and has its moto in adapting the project management due the inevitabilities of necessity.
+
+And so, here, teams must try anticipate the risks and prepare for the unexpected in their project. They need to understand that key components are constantly in flux, and be able to constantly re-evaluate results an decisions with these moving parts in mind.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **Again, a very seasoned team at hand**
+2. **Possibility of clear and broad communication amont the team**
+3. **Also, there is a lot of space for collaborative work**
+
+Now, impediments to absorb this methodology:
+
+1. **The project needs predictability**
+2. **There is no resources to couple with the adaptability aspects of the process, including a senior personal**
+
+
+###### Lean Methodology
+
+Once again, another method from the agile system, and as Kanban, it also has it origins in manufacturing. And the concept of a lean method stands together with maximizing value and minimizing waste:
+
+
+`While this originally referred to reducing physical waste in the manufacturing process, it now refers to other wasteful practices in the project management process. These are known as the 3Ms: muda, mura, and muri.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+Here:
+
+- **Muda**: this is the wastefulness that is the use of resource which doen't increase value.
+- **Mura**: this is the unevenness that produce overproduction in one area and that finally will harm other areas, also causing waste and inefficience.
+- **Muri**: this is the overburden because the great strain on resources.
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The capacity to continously bring improvement and add value for the customer**
+2. **The necessity to decrease costs**
+
+Now, impediments to absorb this methodology:
+
+1. **There is a tight supply chain**
+2. **There is also small capacity to absorve error**
+3. **While this method aims to reduce costs, it is costly to implement**
+
+
+###### Critical Path Methodology
+
+The critical path method, also known as critical path analysis, where the core of the process is led by defining and scheduling the critical tasks, as well their dependencies. And lastly, the timeframe of the project will be determined by the longest sequence of critical tasks.
+
+That means that you need to:
+
+1. Identify all of the essential tasks you need to do to achieve your project goal
+2. Estimate how much time each of those tasks will take (bearing in mind that certain tasks will need to be completed before others can be started)
+3. Use all of that information to schedule the “critical path” you’ll need to take in order to get the project done as quickly as possible without missing any crucial steps.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The project is large-scale and complex**
+2. **The project has a lot of dependencies**
+3. **Through the definition of the critical tasks it is easier to visualize the core of the project**
+4. **Better allocating resources, cutting superfluous dependencies**
+
+Now, impediments to absorb this methodology:
+
+1. **There is no need for adding too much complexity to the project**
+2. **The deadlines, timings, and durations of the processes are not very clear**
+3. **There should be margin for changes during the project duration**
+
+
+###### Critical Chain Project Methodology
+
+This methodology, Critical Chain Project Method is a upgrade from the Critical Path Method, where the critical paht has a very tight timeframe, with no room for errors, critical chain address the timeframe for the project with a more loose time span, allowing some space to unexpected events that may delays some things.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **It brings much of the visual apparatus from the Critical Path Methodology, but with more safeguards**
+
+Now, impediments to absorb this methodology:
+
+1. **You have requirements yet not very clear, even with the use of the safeguards**
+
+
+###### New Product Introduction Methodology
+
+According to the site [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/), this is a great kind of project management methodology for introducing new products.
+
+Also known as New Product Development, the New Product Introduction follows a single product through the entire development process, and which can involve multiple phases or a stage-gate process:
+
+1. **Defining the product spec and project scope**
+2. **Evaluating the feasibility**
+3. **Developing the prototype**
+4. **Validating the prototype via testing and analysis**
+5. **Manufacturing the product on a larger scale**
+6. **Evaluating the product's success in the market after launch**
+
+
+`As the requirements for a successful new product introduction span a number of departments across an organization, from leadership to product managers to marketing and more, it requires a lot of cross-functional collaboration and communication.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **There is the need to bring a new or improved product to the market**
+2. **There is the necessity to focus on a single product**
+3. **There is the opportunity to bring key stakeholder and cross-functional alignment right from beginning**
+
+Now, impediments to absorb this methodology:
+
+1. **There is no need to allocate all the refered resources for the project that is devised ahead**
+2. **There is the need for a more agile approach to the product development**
+
+
+###### Package Enabled Reengineering Methodology
+
+The Package Enabled Reengineering (PER) is a project management methodology that aims to help organizations to redisign products or processes with fresh eyes.
+
+
+`It focuses on facilitating business transformations quickly and strategically, whether through redesign of processes or realignment of people.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **There is a need to overhaul the organization**
+2. **There is the need to try fresh perspective on the products or processes**
+
+Now, impediments to absorb this methodology:
+
+1. **There is no need bring change or imrovement to the existing system**
+
+
+###### Outcome Mapping Methodology
+
+This is a project progress measurement system designed by the International Development Research centre (IDRC), which differs from the other projects because it does not focus on measurable deliverables, but on creating lating behavioural change. 
+
+And the Outcome Mapping method consists of a length design phase followed by a record-keeping phase to track the results.
+
+
+`It’s a common project management methodology used in charitable projects in developing countries. As a project management methodology, it’s less about the project itself than the long-term impact of the project and its ability to effect change in the community. As a result, it measures influence rather than other (perhaps more “typical”) measures of project progress.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The aim of the project is to cause behaviour changes, rather than the deliverables themselves**
+2. **The project is related to change and social transformation**: e.g. in the fields of international development, charity, communications, research, etc.
+
+Now, impediments to absorb this methodology:
+
+1. **The project does not have the behavioural outcomes this method propel**
+
+
+###### Six Sigma Methodology
+
+`The Six Sigma is a method for improving processes with an emphasis on ensuring consistency in output and impeccable quality.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+It also can adpt to incorporate some influences from other methodologies, like, 'Lean Six Sigma' and 'Agile Six Sigma', though it keeps its aim as a business methodology to eliminate defects and reduce variation in the deliveries.
+
+
+This methodology can also be used for optimizing and improving existing processes or to create new ones, and as the above site also states, that the Six Sigma set of principles and techniques could sometimes even be aknowledged as a philosophy rather than a management methodology itself.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The aim is a set of principles and philosophies that could accompany almost any kind of project in the organization**
+
+Now, impediments to absorb this methodology:
+
+1. **There is not a lot of budget to invest in training and certifications**
+2. **There is more need to define processes for particular projects rather than to set general guiding rules**
+
+
+###### PMI's PMBOK Methodology
+
+This one, as it has been seen before, it's not a project management methodology in itself, but rather a set of best practices, guide lines and standardizations, that can be used to ensure that projects across multiple types of teams and departments meet the PMI's high statndards and comply with best practices.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **There is a Project Manager Professional (PMP) in the organization, or it wants to have one**
+2. **There is the need to be up-to-date with industry standards and best practices**
+3. **The organization is setteld where PMP is the standard project management qualification**
+
+Now, impediments to absorb this methodology:
+
+1. **There is the need t oa solid project management methodoloty to map the projects, rather than general (albeit helpful) project management knowledge**
+
+
+###### PRINCE2 Methodology
+
+PRINCE2 (PRojects IN Controlled environments) is a project management methodology and certification that aims to equip project managers with knowledge of best practices and processes. [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+And since it doesn't require as much prereqisites as the PMP certification, the PRINCE2 version should be a good choice for project managers looking to get both a methodological grounding and a qualification.
+
+
+Also, unlike the PMP, the PRINCE2 is a methodology in itself. It's guided by 7 principles, which in turn dictate the seven processes a project anager needs to use in each project when using PRINCE2.
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The professional is looking for a certification that can deliever an edge**
+2. **The organization is setteld where PRINCE2 is the standard project management qualification**
+
+Now, impediments to absorb this methodology:
+
+1. **There is no need to the professional to commit to a full certification*
+2. **The seven-step process doesn't map to the company's projects**
+
+
+###### Rapid Application Development Methodology
+
+The Rapid Application Development (RAD) is a type of agile project management methodology that aims to facilitate faster software development.
+
+
+`It uses rapid prototype releases and iterations to gather feedbacks in a short period of time, and values that user feedback over strict planning and requirements recording.` [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
+
+
+Here, some other characteristics that would align with this methodology:
+
+1. **The need of early deployments**
+2. **The need to work close with stakeholders through prototypes**
+3. **Speed is the essence**
+4. **There's the possibility or the need to code reuse**
+
+Now, impediments to absorb this methodology:
+
+1. **There is no seasoned team available**
+2. **There is no possibility of many interactions between clients or stakeholders as to create a viable commitiment to the project**
+3. **The team is too big**
+4. **There is the need of detailed spec to outlines all the functional and non-functional requirements**
+
+
+###### Read more about software methodologies in these articles:
+-  `Agile Model - Software Life Cycle` [^1]
+- `Kanban Method and Practices` [^2]
+- `Lean Software Development (LSD)` [^3] 
+- `RAD - Rapid Application Develoment Model` [^4]
+- `Scrum Method and Practices` [^5] 
+- `Waterfall Model` [^6] 
+
+
 
 
 ### PMBOK
@@ -381,10 +779,10 @@ The authors even remide that the PMBOK clearly states that projects are `underta
 
 ###### The Point Where there is a Clear Difference
 
-And then, only in a singular point the authors reconigze that there are a clear difference of concepts between PMBOK and Agile pratices, and that is about **the participation of the stackholders**.
+And then, only in a singular point the authors reconigze that there are a clear difference of concepts between PMBOK and Agile pratices, and that is about **the participation of the stakeholders**.
 
 
-So, for the Agile model, the stackholders are called to have active involvement throughout the duration of the project, while in the `PMBOK Guide the view that stackeholder influence occurs up front and then declines throughout the rest of the project`. (PMI, 2004, p. 21)
+So, for the Agile model, the stakeholders are called to have active involvement throughout the duration of the project, while in the `PMBOK Guide the view that stackeholder influence occurs up front and then declines throughout the rest of the project`. (PMI, 2004, p. 21)
 
 
 #### Tools and Techniques from PMBOK 6th Edition
@@ -587,7 +985,7 @@ And according to a article from [OrbusSoftware](https://www.orbussoftware.com/re
 And the BSC concept also suggets that an organization should be examined from four different perspectives:
 
 1. **Financial (or Stewardship)**: measure an organization's financial performance and also its use of the resources finantially.
-2. **Customer/Stakeholder**: it focuses on performance from the point of view of customers or from the point of view of stackholders.
+2. **Customer/Stakeholder**: it focuses on performance from the point of view of customers or from the point of view of stakeholders.
 3. **Internal Process**: this measure is focused on the quality and efficiency of processes and products, or other key business factor.
 4. **Organization Capacity (or Learning & Growth)**: this last area has the focus on the different kinds of capital and values from the organization:   
     4.1. Human capital  
@@ -602,34 +1000,16 @@ And the BSC concept also suggets that an organization should be examined from fo
 So, for [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), it became no surprise that a framework that has widen the scope of governance beyond the mere financial view, but to also include intangible assets would merge perfectly into the COBIT 5 environment.
  
 
-Another interesting point underlined from the above site, though, it is the fact that the BSC and COBIT 5 especially fit into a cohese system concerning the point of **The stackholders** which cascades down to the more specific areas. 
+Another interesting point underlined from the above site, though, it is the fact that the BSC and COBIT 5 especially fit into a cohese system concerning the point of **The stakeholders** which cascades down to the more specific areas. 
  
 `The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
 
 
 
-### Project Management Methodologies
- 
-According to the site [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/) there over 8,462 project management methodologies around, but in its article it states some of the more popular ones:
- 
-So, in general terms a project management methodology is a set of principles and practices, that is a framework, that guide the organization of projects to ensure maximum performance. 
- 
-And some of the reazons the site gives for the great number of methodology highlight the fact that each project has its specific requirements and also its own context, and they should not be simplily handled down by a one-size-fits-all methodology.
-
-Even more, that could be times when some set of principles and practices simply don't macht some kind of methodologies, and they should never be forced to fit into such direction.
 
 
-But there should be some attributes or characteristics that could help to decide between one or another methodology:
-
-- **Cost and Budget**: here, not only the amount, but also if there is flexibility to change it during the project course.
-- **Team size**: in this case there should be analysed not only the quantity of professionals, but also characteristics about seniority level, leadership, etc.
--  **Ability to take risks**: some methodologies are more open to risks than others.
-- **Flexibility**: in this case there is the analysis about the possibilities to changes in the direction during the project life cycle.
-- **Timeline**: in this case there should be analysed how strict is the timeline, the possibilities of its increase or decrease, etc.
-- **Cient/Stackholder collaboration**: in this case it is view how much does the client need/wants to be involved in the process.
 
 
-###### Waterfall Methodology
 
 
 
@@ -704,9 +1084,17 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [Which project management methodologies should you use? - Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
 
 
-[]()
+[^1]:agile-life-cycle-model-2022-02-08
 
+[^2]:kanban-method-and-practices-2022-02-11
 
+[^3]:lean-method-and-practices-2022-02-10
+
+[^4]:rapid-application-development-model-2022-02-08
+
+[^5]:scrum-method-and-practices-2022-02-10
+
+[^6]:waterfall-model-2022-02-08
 
 
 
