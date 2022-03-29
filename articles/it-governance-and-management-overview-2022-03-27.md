@@ -42,6 +42,9 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 2. **Plan, Build, Run, and Monitor (PBRM)**: which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.
 
 
+###### Read about PMBOK and others Project Management Methodologies in thìs article:
+- `PMBOK and others Project Management Methodologies` [^1]
+
 
 ### IT Government and IT Management
 
@@ -228,7 +231,10 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
  
  
  
- 
+Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
+
+Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
+
  
  
  
@@ -361,19 +367,6 @@ Another interesting point underlined from the above site, though, it is the fact
 
 
 
-
-
-
-
-
-
-
- 
-
- 
-
-Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
-
 Escritório de projetos: modelos e características.
 
 Conceitos de gestão de riscos. 
@@ -387,10 +380,6 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 ### Further Reading
 
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
-
-[PMP Certification? Use this List of Helpful PMBOK Guide Resources - Wrike.com](https://www.wrike.com/blog/pmp-certification-use-this-list-of-helpful-pmbok-guide-resources/)
-
-[Part 1: Data Gathering – PMP Exam Tools and Techniques You Need to Study - PM Exam SmartNotes](https://www.pmexamsmartnotes.com/pmp-exam-tools-and-techniques-part1/)
 
 
 ### References
@@ -413,17 +402,7 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 
 [COBIT 5 and The Balanced Scorecard - OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
 
-[PMBOK® - A Guide to Project Management Body of Knowledge - SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
 
-[O que é PMBOK?- ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/)
-
-[Agile project management and the PMBOK® guide - PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042)
-
-[Tools Techniques Group PMBOK 6th Edition - Milestonetask.com](https://milestonetask.com/tools-techniques/#.YkI7KDzQ-BI)
-
-[Which project management methodologies should you use? - Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
-
-
-
+[^1]:pmbok-and-project-management-methodologies-2022-03-29
 
 

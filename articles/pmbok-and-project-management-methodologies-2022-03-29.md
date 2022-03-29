@@ -41,7 +41,7 @@ But there should be some attributes or characteristics that could help to decide
 - **Cient/Stakeholder collaboration**: in this case it is view how much does the client need/wants to be involved in the process.
 
 
-#### Read about IT Governance and Management in thìs article:
+###### Read about IT Governance and IT Management practices in thìs article:
 - `IT Governance and Mangement - Overview` [^1]
 
 
@@ -411,7 +411,7 @@ Now, impediments to absorb this methodology:
 4. **There is the need of detailed spec to outlines all the functional and non-functional requirements**
 
 
-#### Read more about software methodologies in these articles:
+###### Read more about software methodologies in these articles:
 -  `Agile Model - Software Life Cycle` [^2]
 - `Kanban Method and Practices` [^3]
 - `Lean Software Development (LSD)` [^4] 
@@ -675,9 +675,9 @@ The PMBOK 6th Edition has 132 project management tools and techniques distribute
 
 
 
- 
- 
- 
+
+
+
 
 
 
