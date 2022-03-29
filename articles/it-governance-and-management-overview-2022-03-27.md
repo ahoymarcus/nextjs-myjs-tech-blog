@@ -28,8 +28,8 @@ description: 'Considering some definitions from Control Objectives for Informati
     5.5. Advantages of PMBOK   
     5.6. The Agile Project Management and the PMBOK Guide
 6. ##### ITIL
-7. ##### Indicators Methodology 
-8. ##### 
+7. ##### Indicators Methodologies
+8. ##### Project Management Methodologies
 9. ##### Further Reading
 10. ##### References
 
@@ -387,24 +387,78 @@ And then, only in a singular point the authors reconigze that there are a clear 
 So, for the Agile model, the stackholders are called to have active involvement throughout the duration of the project, while in the `PMBOK Guide the view that stackeholder influence occurs up front and then declines throughout the rest of the project`. (PMI, 2004, p. 21)
 
 
+#### Tools and Techniques from PMBOK 6th Edition
 
+The PMBOK 6th Edition has 132 project management tools and techniques distributed amont 7 groups/categories [Tools Techniques Group PMBOK 6th Edition - Milestonetask.com](https://milestonetask.com/tools-techniques/#.YkI7KDzQ-BI):
 
-
-PMBOK
-Métodos, técnicas e ferramentas de gerência de projetos.
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. **Data Gathering Tools**: 09 tools used to collect data and information form variety of sources   
+    1.1. Benchmarking   
+    1.2. Brainstorming   
+    1.3. Check sheets    
+    1.4. Checklists    
+    1.5. Focus groups   
+    1.6. Interviews   
+    1.7. Market research   
+    1.8. Questions and Surveys   
+    1.9. Statistical sampling
+2. **Data Analysis Techniques**: 27 tools used to organize, assesses and evaluate data and information    
+    2.1. Cost of Quality   
+    2.2. Cost-Benefit Analysis   
+    2.3. Decision Tree Analysis   
+    2.4. Earned Value Analysis   
+    2.5. Make-or-Buy Analysis   
+    2.6. Process Analysis   
+    2.7. Regression Analysis   
+    2.8. Risk Probability and Impact Assessment   
+    2.9. Root Cause Analysis   
+    2.10, SWOT Analysis  
+    2.11. Trend Analysis   
+    2.12. Variance Analysis   
+    2.13. What-if Scenario Analysis
+3. **Data Representation Tools and Techniques**: 15 tools used to represent the data and information in visual format   
+    3.1. affinity Diagrams   
+    3.2. Cause-and-Effect Diagrams   
+    3.3. Control charts   
+    3.4. Flow charts   
+    3.5. Histograms   
+    3.6. Mind Mapping   
+    3.7. Probability and Impact Matrix   
+    3.8. Scatter Diagrams   
+    3.9. Stakeholder engagement Assessment Matrix   
+    3.10. Stakeholder mapping/representation
+4. **Decision Making Techniques**: 02 tools used to select a course of action from diffrent alternatives.   
+    4.1. Multi criteria decision analysis   
+    4.2. Voting
+5. **Communication skills**: 02 tools used to transfer information among different project stakeholders.   
+    5.1. Feedback   
+    5.2. Presentations
+6. **Interpersonal and Team Skills**: 17 tools used to lead project teams.    
+    6.1. Active Listening   
+    6.2. Conflict Management   
+    6.3. Cultural awareness   
+    6.4. Decision Making   
+    6.5. Emotional Intelligence   
+    6.6. Facilitation   
+    6.7. Influencing   
+    6.8. Leadership   
+    6.9. Motivation   
+    6.10. Negotiation   
+    6.11. Nominal Group Technique   
+    6.12. Political awareness
+7. **Ungrouped Tools and Techniques**: 60 tools. Bellow there are some of the most important tools/techniques for this category.    
+    7.1. Critical Path Method   
+    7.2. Decomposition   
+    7.3. Knowledge Management   
+    7.4. Leads and Lags   
+    7.5. Organization Theory   
+    7.6. Precedence Diagramming Method   
+    7.7. Resource Optimization   
+    7.8. Risk Categorization    
+    7.9. Rolling Wave Planning    
+    7.10. Schedule Compression   
+    7.11. Schedule Network Analysis   
+    7.12. Three Point Estimating   
+    7.13. To-Complete Performance Index
 
 
 
@@ -412,8 +466,34 @@ Métodos, técnicas e ferramentas de gerência de projetos.
  
 **COMING SOON...**
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
-### Indicators Methodology
+### Indicators Methodologies
  
 Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
 
@@ -525,21 +605,48 @@ So, for [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cob
 Another interesting point underlined from the above site, though, it is the fact that the BSC and COBIT 5 especially fit into a cohese system concerning the point of **The stackholders** which cascades down to the more specific areas. 
  
 `The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+
+
+
+### Project Management Methodologies
  
+According to the site [Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/) there over 8,462 project management methodologies around, but in its article it states some of the more popular ones:
  
+So, in general terms a project management methodology is a set of principles and practices, that is a framework, that guide the organization of projects to ensure maximum performance. 
  
- 
- 
- 
- 
- 
- 
- 
- 
+And some of the reazons the site gives for the great number of methodology highlight the fact that each project has its specific requirements and also its own context, and they should not be simplily handled down by a one-size-fits-all methodology.
+
+Even more, that could be times when some set of principles and practices simply don't macht some kind of methodologies, and they should never be forced to fit into such direction.
+
+
+But there should be some attributes or characteristics that could help to decide between one or another methodology:
+
+- **Cost and Budget**: here, not only the amount, but also if there is flexibility to change it during the project course.
+- **Team size**: in this case there should be analysed not only the quantity of professionals, but also characteristics about seniority level, leadership, etc.
+-  **Ability to take risks**: some methodologies are more open to risks than others.
+- **Flexibility**: in this case there is the analysis about the possibilities to changes in the direction during the project life cycle.
+- **Timeline**: in this case there should be analysed how strict is the timeline, the possibilities of its increase or decrease, etc.
+- **Cient/Stackholder collaboration**: in this case it is view how much does the client need/wants to be involved in the process.
+
+
+###### Waterfall Methodology
+
+
+
+
+
+
+
+
+
 
  
 
+ 
+Which project management methodologies should you use? - Teamwork.com - https://www.teamwork.com/project-management-guide/project-management-methodologies/
 
+PMBOK
+Métodos, técnicas e ferramentas de gerência de projetos.
 
 Agile project management and the PMBOK® guide - PMI.org - https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042
 
@@ -562,6 +669,8 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
 
 [PMP Certification? Use this List of Helpful PMBOK Guide Resources - Wrike.com](https://www.wrike.com/blog/pmp-certification-use-this-list-of-helpful-pmbok-guide-resources/)
+
+[Part 1: Data Gathering – PMP Exam Tools and Techniques You Need to Study - PM Exam SmartNotes](https://www.pmexamsmartnotes.com/pmp-exam-tools-and-techniques-part1/)
 
 
 ### References
@@ -589,6 +698,10 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [O que é PMBOK?- ProjectBuilder.com](https://www.projectbuilder.com.br/blog/o-que-e-pmbok/)
 
 [Agile project management and the PMBOK® guide - PMI.org](https://www.pmi.org/learning/library/agile-project-management-pmbok-waterfall-7042)
+
+[Tools Techniques Group PMBOK 6th Edition - Milestonetask.com](https://milestonetask.com/tools-techniques/#.YkI7KDzQ-BI)
+
+[Which project management methodologies should you use? - Teamwork.com](https://www.teamwork.com/project-management-guide/project-management-methodologies/)
 
 
 []()
