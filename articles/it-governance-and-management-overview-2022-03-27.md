@@ -23,7 +23,9 @@ description: 'Considering some definitions from Control Objectives for Informati
 5. ##### ITIL
     5.1. Brief History of ITIL Framework   
     5.2. Basic Concepts of the ITIL Framework   
-    5.3. Basic Structure of the ITIL Framework
+    5.3. Basic Structure of the ITIL Framework   
+    5.4. ITIL Incident and Problem Management System   
+    5.5. Certification Levels for ITIL
 6. ##### Indicators Methodologies
 7. ##### 
 8. ##### Further Reading
@@ -212,12 +214,15 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 ### ITIL
 
-ITIL stands for Information Technology Infrastructure LIbrary, and it is a set of best practices for delivering IT services, to maximaze efficiency and bring predictability to the services provided.
+ITIL stands for Information Technology Infrastructure LIbrary, and it is a set of best practices for delivering IT services, to maximaze efficiency and bring predictability to the services provided, all in accord with the organization strategic plans.
 
 According to the site [SimpliLearn](https://www.simplilearn.com/itil-key-concepts-and-summary-article), the ITIL has become the de facto standard in IT service management. So, ITIL works around any kind of organization to help them accomplish their services in a quality-driven and economical way.
  
 
 As a framework, is discussion first came into light during the 1980s when the British government realised that they need to improve the quality of their IT services, and sent this demand to the Central Computer and Telecommunications Agency (CCTA), now Office of Government Commerce (OGC) to elelaborate some system. [ItilTraining.com](https://www.itiltraining.com/usa/blog/itil-history)
+
+
+`One of the most essential parts of ITIL is the configuration management database (CMDB), which provides the central authority for all components—including services, software, IT components, documents, users, and hardware—that must be managed to deliver an IT service. The CMDB tracks the location of, and changes to, all of these assets and processes, along with their attributes and relationships to each other. Adhering to ITIL principles helps ensure you can get to the root cause of problems in your environment as quickly as possible and that you have the right visibility into the systems and people to prevent future problems.` [IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
 
 
 #### Brief History of ITIL Framework
@@ -317,12 +322,42 @@ As it was said above about the revision made to V3 in **2011**, the ITIL catalog
     5.6. Presenting and using the information drawn from the data   
     5.7. Using the information to improve
 
+
+#### ITIL Incident and Problem Management System
+
+The ITIL framework makes distinction between **Incident Management** and **Problem Management**, where the first one is related to some kind of disrupting event with the client's service and the efforts to reestablish it. The second one is related with prevention error effort for the service.
+
+
+###### Incident Management
+
+This is an unplanned event that cause disruption to the client's service, and the incident management comes to reinstate the service to it original state as quick as possible.
+
+And also, to determine the root cause for the event, and even if the particular event is possibly connected to other occurrencies:
+
+`Implementing ITIL Incident Management will help you improve service levels, and meet service level availability requirements or a specified service level agreement (SLA).` [IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
+
+
+###### Problem Management
+
+As steps to manage problems:
+
+1. Raise a problem management case.
+2. Categorize and prioritize issues.
+3. Systematically investigate (root cause analysis)
+4. Identify changes needed to resolve and work with Change Management.
+5. Verify the problem resolution.
+6. Close out the problem.
+
+
+#### Certification Levels for ITIL
     
-    
-    
-    
-    
-    
+The certifications last for 3 years and must be renewed, and there are 5 levels of tranning and certification for ITIL V3:
+
+1. **ITIL Foundation**: covers basic concepts, elements, and terminology.
+2. **ITIL Practitioner**: covers the Continual Service Improvement approach and organizational change management, communication, and measurement and metrics.
+3. **ITIL Intermediate**: consists of two parts. The Service Lifecycle track focuses on the basics of the core ITIL phases, and the Service Strategy track concentrates on the management of the Service Strategy phase of the Service Lifecycle, with a focus on ITSM.
+4. **ITIL Exepert**: requires full understanding and demonstration of the entire ITIL scheme. Passing this level includes completion of the ITIL Managing Across the Lifecycle Capstone Course (MALC).
+5. **ITIL Master**: requires five years of leadership in IT service management and a demonstrated ability to apply the principles, methods, and techniques from ITIL in the workplace.
     
     
     
@@ -333,28 +368,35 @@ As it was said above about the revision made to V3 in **2011**, the ITIL catalog
 
  
  
-IT Infrastructure Library (ITIL) - IBM - https://www.ibm.com/cloud/learn/it-infrastructure-library
 
-An Overview of ITIL Concepts and Summary Process - SimpliLearn.com - https://www.simplilearn.com/itil-key-concepts-and-summary-article 
  
  
-Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
-
-Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 O que é ITIL - MundoITIL.com - https://www.mundoitil.com.br/
  
-ITIL 4: confira o que mudou no framework e descubra como criar valor através de serviços de TI - Euax.com - https://www.euax.com.br/2018/10/itil-o-que-e-importancia-como-implantar/
- 
- 
-O que é ITIL? - Gsti.com - https://www.portalgsti.com.br/itil/sobre/ 
+Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
 
 ITIL Tutorial - JavaTPoint - https://www.javatpoint.com/itil
 
+Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
 
 
+ 
 
-
+ 
 
  
  
@@ -481,19 +523,18 @@ Another interesting point underlined from the above site, though, it is the fact
 
 
 
+
 Escritório de projetos: modelos e características.
 
 Conceitos de gestão de riscos. 
 
 Análise SWOT e matriz RACI.
 
-Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
-
-Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialspoint.com/itil/itil_information_security_management.htm
-
 ### Further Reading
 
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
+
+[ITIL 4: confira o que mudou no framework e descubra como criar valor através de serviços de TI - Euax.com](https://www.euax.com.br/2018/10/itil-o-que-e-importancia-como-implantar/)
 
 
 ### References
@@ -520,6 +561,7 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 
 [An Overview of ITIL Concepts and Summary Process - SimpliLearn](https://www.simplilearn.com/itil-key-concepts-and-summary-article)
 
+[IT Infrastructure Library (ITIL) - IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
 
 
 [^1]:pmbok-and-project-management-methodologies-2022-03-29
