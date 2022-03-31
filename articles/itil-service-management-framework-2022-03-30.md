@@ -208,6 +208,27 @@ According to the same site [Mundoitil.com.br](https://www.mundoitil.com.br/), th
 
 ###### The Four Dimentional Model
 
+This core component has the incumbence to extend the management of the service in a holistic way, since the Four Dimentional model has to imply the whole context of the organization.
+
+And as the site [Bmc.com](https://www.bmc.com/blogs/itil-four-dimensions-service-management/) states, `insufficent focus on any single dimension will limit the value delivered by the organization to its stakeholders`.
+
+
+Another interesting point to make is that the lack of focus on some dimention not only cause the organization to miss a important segment of the service, but also creates an impediment on the analysis concerning that same missing context.
+
+
+So, as the site [Bmc.com](https://www.bmc.com/blogs/itil-four-dimensions-service-management/) brings, there are many factors that can positively or negatively affect any or several of the dimentions, and that have to be accouted for.
+
+
+For example, in the PESTLE analysis, where each letter relates to a important environment factor:
+
+1. **Political**: these can be changes in the ledership of the organization, or on other companies,  and even at the public sector.
+2. **Economical**: prices of commodities
+3. **Social**: changes in culture
+4. **Technological**: changes in technology and practices.
+5. **Legal**: the data protection laws world wide could be an example.
+6. **Environmental**: again, factors related to regulatory rules.
+
+
 
 ###### The Service Value System (SVS)
 
@@ -319,6 +340,8 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [IT Infrastructure Library (ITIL) - IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
 
 [O que é ITIL - MundoITIL.com](https://www.mundoitil.com.br/)
+
+[Four Dimensions of Service Management in ITIL 4 - Bmc.com](https://www.bmc.com/blogs/itil-four-dimensions-service-management/)
 
 [The ITIL 4 Service Value System (SVS) - Bmc.com](https://www.bmc.com/blogs/itil-service-value-system/)
 
