@@ -20,10 +20,13 @@ description: 'Considering some definitions from Control Objectives for Informati
     4.1. 4 Funcionalities from COBIT 5   
     4.2. 5 Principles from COBIT 5    
     4.3. Advantages from the COBIT Framework
-5. ##### Types of Indicators Methodologies
-6. ##### 
-7. ##### Further Reading
-8. ##### References
+5. ##### Kinds of Methodology Indicators
+6. ##### Kinds of Management Tools
+    6.1. SWOT Analysis   
+    6.2. RACI Matrix
+7. ##### Project Management Office
+8. ##### Further Reading
+9. ##### References Further Reading
 
 ### Introduction
  
@@ -207,7 +210,7 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 
 
-### Types of Indicators Methodologies
+### Kinds of Methodology Indicators 
  
 Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
 
@@ -322,6 +325,110 @@ Another interesting point underlined from the above site, though, it is the fact
 
 
 
+### Kinds of Management Tools
+
+#### SWOT Analysis   
+
+The acronym SWOT stads for Strenghs, Weakeness, Opportunities, and Threats, which are all attributes for analysis and are divided into 2 categories:
+
+1. **Internal factors**:  
+    1.1. Strenghts: they can be any kind of resource, either tangible or intangible, that the organization have.   
+    1.2. Weakeness
+2. **External factors**:   
+    2.1. Opportunities   
+    2.2. Threats
+
+
+According to the site [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm), the SWOT Analysis is the most renowned tool for audit and analysis, where in its use for analysis it becomes a key element for governance to identify and define strategies for the business model.
+    
+
+So, in its form, the tool aims to help evaluating the internal potentials ans limitations of a organization, service or process, and also to find and measure opportunities and threats externally.
+    
+
+###### Advantages of SWOT Analysis
+
+It is a simple methodology that can be use in vasts areas and operations, but its also a subjective tool, and that is why the [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm) states that, this tool is `best when used as a guide, and not as a prescription`:
+
+1. It's a source of information for strategic planning.
+2. Builds organization's strengths.
+3. Reverse its weakneness.
+4. Maximaze its response to opportunities.
+5. Overcome organizations's threats.
+6. It helps in identifying core competencies of the firm.
+7. I helps in setting of objectives for strategic planning.
+
+
+###### Limitations of SWOT Analysis
+
+There are 2 basic limitations for this tool:
+
+1. **Subjectivity**: as it was said, there is a great part of subjective as to define all these categories within the tool.
+2. **Lack of depth**: its simplistic elements to create definition and categorization may cause inconsistances while defining strategic plans.
+
+
+
+#### RACI Matrix
+
+According to the site [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/), the RACI Matrix, also called RACI Chart or RACI Model, is a diagram that identifies the key roles and responsabilities of users against major tasks within a project, while it also servers as visual representation of the functional role played by each person on a project team.
+
+
+The acronym stands for **Responsible**, **Accountable**, **Consulted**, and **Informed**, all of which defines attributes for the roles and levels of involvement of each professional within a project.
+
+More over, the site also gives a `PRO TIP`, explaining that within this tool, responsabilities should better be definied in individual terms `as to avoid confusion and slow decision-making`. [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
+
+
+And the site also clearly states this about the importance of clarity among roles and responsabilities for projects:
+
+`Having managed and rescued dozens of projects, and helped others do so, I’ve noted that there is always one critical success factor (CSF) that has either been effectively addressed or missed/messed up: clarity around the roles and responsibilities for each project participant and key stakeholder. No matter how detailed and complete a project plan may be for any project, confusion or omission of participant roles and responsibilities will cause major problems.` [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
+
+
+
+1. **Responsible**: this attribute refers to a person directly related to work in a task/process at hand.  
+    1.1. But this attribute does not imply the possibility that other persons may be also responsible for that same task/process to be made.
+2. **Accountable**: this is a exclusive attribute which imparts ownership over the task/processe to one the one person which will attain the sole voice to give account about it.
+3. **Consulted**: these are people or stakeholders who need to give their input before any work can be done or sign-off.
+4. **Informed**: again, these are people or stakeholder who need to be kept informed about any progress in relation to the task/process.   
+    4.1. Although they do not contribute directly to the task/process.
+
+
+The site also cite a quotation from Gartner where it states the importance of clearly defining all the related authority and responsabilities for each endeavour that aims to be successful. 
+
+
+And the that site makes another interesting distinction when it adverts that the RACI Chart diagram does not replace any methodology for planning and managing, but it gives important help to all that same management processes in setting responsabilities visually and in simple terms.
+
+
+###### Steps to Create a RACI Matrix
+
+The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html) also gives a interesting example on how to build a RACI diagram:
+
+1. Indentify all taks involved in delivering the project and list them along the left site of the chart.
+2. Identify all the project stakeholders and list then along the top of the chart.
+3. Complete the cells of the model identifying that 4 fold responsabilities already mentioned.
+4. Ensure that every taks has to have one stakeholder to account for it.
+5. Complete the aggrement among all parts in relation to what has been defined and documented in the tool's diagram.
+
+
+[Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html) - RACI diagram
+![raci-matrix-example-01](/images/article/development/raci-matrix-example-01.webp)
+
+
+###### RACI Matrix Best Practices
+
+1. **Don't get too granular**: the RACI matrix is not the project plan, it is solely a visual tool to give agility into responsabilities.
+2. **Too much reusability of the diagram**: though a good diagram can be reused eventually, but considering the specific context of each task/project, this should be done with care and understanding.
+3. **Lack of consistency**: the roles defined on the diagram must reflect the real representation of the the work to be done in a task/project. There can be no arbitrary replaciments involved.
+4. **Adding too many columns**: the diagram should be clear and simple, adding only key tasks.   
+    4.1. So, do not add administrative tasks, like team meetings, for example.
+5. **Mixing up who is responsible for who is accountable**: the person designated as 'responsible' for some task should not also be 'accountable' for the same task.   
+    5.1. Besides, this add a layer of compliance to the tool. 
+6. **Too many assignments given to one stakeholder**: this can lead to performance issues.
+7. **There can be no empty cells left behind**: since the tool aims to birng key tasks, there should not be important element unsigned in terms of responsabilities in the task/project document.
+8. **Clear aggrements**: there should be clear aggrement about the responsabilities taken in the document.
+
+
+
+### Project Management Office
+
 
 
 
@@ -334,11 +441,12 @@ Escritório de projetos: modelos e características.
 
 Conceitos de gestão de riscos. 
 
-Análise SWOT e matriz RACI.
 
 ### Further Reading
 
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
+
+[How to Make a RACI Chart for a Project (with Example) - ProjectManager.com](https://www.projectmanager.com/blog/how-to-make-a-raci-chart-for-a-project-with-example)
 
 
 ### References
@@ -360,6 +468,12 @@ Análise SWOT e matriz RACI.
 [Balanced Scorecard Basics - Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
 
 [COBIT 5 and The Balanced Scorecard - OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+
+[SWOT Analysis - Definition, Advantages and Limitations - Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm)
+
+[What Is a RACI Chart? Here’s Everything You Need To Know - SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
+
+[The RACI matrix: Your blueprint for project success - Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
 
 
 [^1]:pmbok-and-project-management-methodologies-2022-03-29

@@ -345,7 +345,6 @@ The certifications last for 3 years and must be renewed, and there are 5 levels 
 4. **ITIL Exepert**: requires full understanding and demonstration of the entire ITIL scheme. Passing this level includes completion of the ITIL Managing Across the Lifecycle Capstone Course (MALC).
 5. **ITIL Master**: requires five years of leadership in IT service management and a demonstrated ability to apply the principles, methods, and techniques from ITIL in the workplace.
 
- 
 
 
 

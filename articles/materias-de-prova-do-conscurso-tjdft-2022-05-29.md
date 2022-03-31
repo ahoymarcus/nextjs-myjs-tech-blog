@@ -220,8 +220,8 @@ CONHECIMENTOS BÁSICOS
 - [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
 - [ ] Escritório de projetos: modelos e características.
 - [ ] Conceitos de gestão de riscos. 
-- [ ] Análise SWOT e matriz RACI. 
-- [ ] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
+- [X] Análise SWOT e matriz RACI. 
+- [X] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
 - [ ] Conceitos básicos de contratações de TI. 
 - [ ] Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e Comunicação). 
 - [ ] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
