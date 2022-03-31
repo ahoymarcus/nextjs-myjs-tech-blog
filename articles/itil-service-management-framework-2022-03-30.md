@@ -8,16 +8,28 @@ description: 'ITIL stands for Information Technology Infrastructure LIbrary, and
 
 # ITIL - Service Management Framework
 
-1. ##### Introduction  
+1. ##### Introduction   
+2. ##### ITIL
     1.1. Brief History of ITIL Framework   
     1.2. Basic Concepts of the ITIL Framework   
     1.3. Basic Structure of the ITIL Framework   
     1.4. ITIL Incident and Problem Management System   
     1.5. Certification Levels for ITIL
-2. ##### Further Reading
-3. ##### References
+2. ##### ITIL version 4
+    2.1. Main Components from the ITIL version 4    
+    2.2. ITIL V4 versus ITIL V3
+3. ##### Further Reading
+4. ##### References
 
 ### Introduction
+
+
+###### Article about IT Governance and IT Management:
+- `IT Governance and Mangement - Overview` [^1]
+
+
+
+### ITIL
 
 ITIL stands for Information Technology Infrastructure LIbrary, and it is a set of best practices for delivering IT services, to maximaze efficiency and bring predictability to the services provided, all in accord with the organization strategic plans.
 
@@ -29,9 +41,6 @@ As a framework, is discussion first came into light during the 1980s when the Br
 
 `One of the most essential parts of ITIL is the configuration management database (CMDB), which provides the central authority for all components—including services, software, IT components, documents, users, and hardware—that must be managed to deliver an IT service. The CMDB tracks the location of, and changes to, all of these assets and processes, along with their attributes and relationships to each other. Adhering to ITIL principles helps ensure you can get to the root cause of problems in your environment as quickly as possible and that you have the right visibility into the systems and people to prevent future problems.` [IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
 
-
-###### Read more about IT Governance and IT Management in this article:
-- `IT Governance and Mangement - Overview` [^1]
 
 
 #### Brief History of ITIL Framework
@@ -158,7 +167,7 @@ As steps to manage problems:
 6. Close out the problem.
 
 
-#### Certifications Levels for ITIL
+#### Certification Levels for ITIL
     
 The certifications last for 3 years and must be renewed, and there are 5 levels of tranning and certification for ITIL V3:
 
@@ -167,13 +176,118 @@ The certifications last for 3 years and must be renewed, and there are 5 levels 
 3. **ITIL Intermediate**: consists of two parts. The Service Lifecycle track focuses on the basics of the core ITIL phases, and the Service Strategy track concentrates on the management of the Service Strategy phase of the Service Lifecycle, with a focus on ITSM.
 4. **ITIL Exepert**: requires full understanding and demonstration of the entire ITIL scheme. Passing this level includes completion of the ITIL Managing Across the Lifecycle Capstone Course (MALC).
 5. **ITIL Master**: requires five years of leadership in IT service management and a demonstrated ability to apply the principles, methods, and techniques from ITIL in the workplace.
-    
-    
-    
-    
 
 
 
+### ITIL version 4
+    
+The ITIL V4 came about in **2019**, and among its updates there was the focus to many new practices that gained importance while working with IT governance and management.
+
+So, besides the Agile practices, which has already been mentioned before, the site [Mundoitil.com.br](https://www.mundoitil.com.br/) cites others practices and methodologies worth of mention:
+
+1. VeriSM™
+2. SIAM®
+3. FitSM
+4. DevOps
+5. Lean
+
+
+#### Main Components from the ITIL version 4
+
+According to the same site [Mundoitil.com.br](https://www.mundoitil.com.br/), the ITIL 4 has two main components:
+
+1. **The Four Dimentional Model**:   
+    1.1. Organizations and People   
+    1.2. Information and Technology   
+    1.3. Value streams and Processes   
+    1.4. Partners and Suppliers
+2. **The Service Value System (SVS)**:     
+    2.1. Inputs: opportunities and demand   
+    2.2. Outputs: value
+
+
+###### The Four Dimentional Model
+
+
+###### The Service Value System (SVS)
+
+The site  [Bmc.com](https://www.bmc.com/blogs/itil-service-value-system/) explains that the Service Value System (SVS) is the way that ITIL V4 has to measure and qualify the values related to a service from the organizaion. And the SVS also comes to describe how all the components and activities of the organization have work together and as a system, as to have that values inquired actualy being created by the service.
+
+
+So, when ITIL V4 talks about the value system of a service, it reasons that a service to be supplied to the market, it has to be proven feasible, meaning that the professional group responsible for planning the service should have to bring 2 basic inputs showing the possibility of producing value is really present within that service being effored.
+
+
+The first **input** that it is necessary to show is the **opportinities** that the organization has sum up to justify its efforts towards some goal, just as the second **input** necessary should show that there is exits a plausible/perceived **demand** coming from the market that also can justify the use of all the resources necessary to supply the related service.
+
+
+On the other side of the equation, as a **output**, it is also necessary to show a concrete **value** being created by the service in question.
+
+
+###### Management Practices of ITIL V4
+
+The ITIL V4 also asserts Management Practices as a core component for the framework, where a management practice is a `set of organizational resources designed for performing work or accomplishing an objective`. [Bmc.com](https://www.bmc.com/blogs/itil-management-practices/)
+
+
+Sill according to the same site, [Bmc.com](https://www.bmc.com/blogs/itil-management-practices/), it says that previous versions of ITIL had its focus on processes, but that shifting the focus to practices would give the organization more flexibility, specially in 2 situations:
+
+1. That the organization could implement some specific processes that are closed aligned to the specific needs of its customers. 
+2. And that the organization could inovate with processes capable of embracing modern ways of working, such as DevOps.
+
+
+There are 34 management practices divided into 3 categories:
+
+1. General Management Practices:   
+    1.1. Architecture Management   
+    1.2. Continual Improvement   
+    1.3. Information Security Management   
+    1.4. Knowledge Management   
+    1.5. Measurement & Reporting   
+    1.6. Organization Change Management   
+    1.7. Portfolio Management   
+    1.8. Project Management   
+    1.9. Relationship Management   
+    1.10. Rish Management   
+    1.11. Service Financial Management   
+    1.12. Strategy Management  
+    1.13. Supplier Management   
+    1.14. Workforce & Talent Management
+2. Service Management Practices:   
+    2.1. Availability Management   
+    2.2. Business & Analysis   
+    2.3. Capacity & Performance Management  
+    2.4. Change Enablement: this practice is related with versioning and all the processes necessary that IT changes are succeesful, and that risks have been properly assessed.   
+    2.5. Incident Management   
+    2.6. IT Asset Management: to plan and manage the full life cycle of the service.   
+    2.8. Problem Management   
+    2.9. Release Management   
+    2.10. Service Catalogue Management   
+    2.11. Service Configuration Management   
+    2.12. Service Continuity Management   
+    2.13. Service Design    
+    2.14. Service Desk    
+    2.15. Service Level management   
+    2.16. Service Request Management   
+    2.17. Service Validation & Testing
+3. Technical Management Practices:   
+    3.1. Deployment Management   
+    3.2. Infrasctructure & Platform Management   
+    3.3. Software Development & Management: to ensure that applications meet internal and external stakeholder needs, in terms of functionality, reliability, maintainnability, compliance, and auditability.
+
+
+#### ITIL V4 versus ITIL V3
+
+As it can seem in this article, there was a shif in the structure of the ITIL framework. So, in the first part of this article, specially about the revisioned ITIL V3 from **2011**, the ITIL framework was structured by 26 detailed processess divided by 5 categories representing the life cycle of the service.
+
+But then, the uptade that came with ITIL 4 in **2019** that removed the 5 stage life cycle of the service, and also changed the structure from the detailed processes to the practices, which are more generic and allows the insertion of custom made processes for 2 reasons:
+
+1. To cover a specific need for the organization
+2. To allow the organization insert specific methodologies like DevOps, for example.
+
+
+But, as the site [Mundoitil.com.br](https://www.mundoitil.com.br/) asserts, eventhough there was some changes in the structure of the ITIL framework, there is no incongruance between the two versions, neither is ITIL V4 a new way of thinking services management while ITIL V3 is completely outdated.
+
+
+The change though gives the management more flexibility, and also make more visible the agnostic aspect of the framework, while it can be applyed generically to any methodology, include the newer ones like Agile and DevOps.
 
 
 
@@ -181,7 +295,7 @@ The certifications last for 3 years and must be renewed, and there are 5 levels 
 
  
  
-O que é ITIL - MundoITIL.com - https://www.mundoitil.com.br/
+
  
 Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços.
 
@@ -203,6 +317,13 @@ Information Security Management (ITIL) - TutorialsPoint - https://www.tutorialsp
 [An Overview of ITIL Concepts and Summary Process - SimpliLearn](https://www.simplilearn.com/itil-key-concepts-and-summary-article)
 
 [IT Infrastructure Library (ITIL) - IBM](https://www.ibm.com/cloud/learn/it-infrastructure-library)
+
+[O que é ITIL - MundoITIL.com](https://www.mundoitil.com.br/)
+
+[The ITIL 4 Service Value System (SVS) - Bmc.com](https://www.bmc.com/blogs/itil-service-value-system/)
+
+[ITIL 4 Management Practices - Bmc.com](https://www.bmc.com/blogs/itil-management-practices/)
+
 
 []()
 
