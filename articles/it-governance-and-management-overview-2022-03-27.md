@@ -409,7 +409,7 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 
 
 [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html) - RACI diagram
-![raci-matrix-example-01](/images/article/development/raci-matrix-example-01.webp)
+![raci-matrix-example-01](/images/article/development/raci-matrix-example-01.png)
 
 
 ###### RACI Matrix Best Practices
