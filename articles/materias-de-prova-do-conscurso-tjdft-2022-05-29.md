@@ -218,7 +218,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. 
 - [X] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 - [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
-- [ ] Escritório de projetos: modelos e características.
+- [X] Escritório de projetos: modelos e características.
 - [ ] Conceitos de gestão de riscos. 
 - [X] Análise SWOT e matriz RACI. 
 - [X] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
