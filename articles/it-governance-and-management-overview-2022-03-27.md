@@ -24,9 +24,9 @@ description: 'Considering some definitions from Control Objectives for Informati
     5.1. SWOT Analysis   
     5.2. RACI Matrix
 6. ##### Project Management Office (PMO)
+    6.1. Primary Functions from a PMO    
+    6.2. The 3 Basic Types of a PMO
 7. ##### Concepts of Risk Management
-    7.1. Primary Functions from a PMO    
-    7.2. The 3 Basic Types of a PMO
 8. ##### COBIT
     8.1. 4 Funcionalities from COBIT 5   
     8.2. 5 Principles from COBIT 5    
@@ -374,8 +374,8 @@ As the site [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/) 
 
 Some of the results from this change is that the working teams are less focused on the top-down hierarchy of the compony and more aligned with its own responsabilities:
 
-1. Focus on the aspect of the product they're working on 
-2. Continously development of the services and products: making decisions and increasing the whole experience.
+1. **Focus on the aspect of the product they're working on**
+2. **Continously development of the services and products: making decisions and increasing the whole experience.**
 
 
 The problem with this new set is that it can result in some form of gap between the production from services/products and the business strategy:
@@ -386,8 +386,8 @@ The problem with this new set is that it can result in some form of gap between 
 
 So, it is in this sense that a PMO team or deparment can be valuable for uniting both the efforts from production and from management, where the PMO can make this two set of works:
 
-1. To represent stakeholders and keep the effectiveness of the business model and its strategies.
-2. Help the effort of productions teams to complete projects and also to monitor the effectiveness of the projects procedures that were outlined.
+1. **To represent stakeholders and keep the effectiveness of the business model and its strategies.**
+2. **Help the effort of productions teams to complete projects and also to monitor the effectiveness of the projects procedures that were outlined.**
 
 
 The site [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) brings another important tasks that the PMO can use to improve management:
