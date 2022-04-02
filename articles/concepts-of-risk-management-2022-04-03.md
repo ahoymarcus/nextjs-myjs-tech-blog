@@ -15,8 +15,12 @@ description: 'Risk management is an effort to minimize or mitigate risks, as it 
     2.3. Benefits of Risk Management   
     2.4. Risk Management Life Cycle    
     2.5. Risk Management Priorities Assessment
-3. ##### Risk Management Process
-    3.1. The NIST Risk Management Framework (RMF)
+3. ##### Risk Management Standards and Frameworks
+    3.1. COSO ERM framework     
+    3.2. ISO 31000    
+    3.3. British Standard (BS) 31100   
+    3.4. The NIST Risk Management Framework (RMF)    
+    3.5. The Risk and Insurance Management Society's Risk Maturity Model (RMM)
 4. ##### Further Reading
 5. ##### References
 
@@ -32,8 +36,8 @@ For that reason, it is important that organizations may bring effort to understa
 
 Also, as uncertainties go, the risks can affect in two ways:
 
-**Negative**
-**Positive**
+- **Risks Negative effects**
+- **Risks Positive effects**
 
 
 And though even positive risks may be felt as a welcome element to the company, one would say that things should not be left for chance, or at least to say that the organization should make a proper assess into that change event.
@@ -44,9 +48,9 @@ So, while talking about risk management two important points should be made:
 1. Even If the event or risk is positive, it should be assessed by the organization in order to be better understood and also booted.
 2. If the effect is negative, there should also be two possibilities:   
     2.1. To try to manage preventive measures.   
-    2.2, To try to manage mitigation measures.
+    2.2. To try to manage mitigation measures.
 
- 
+
 ###### Other articles from the Governance and Management series:
 - `IT Governance and Mangement - Overview` [^1]
 - `PMBOK and others Project Management Methodologies` [^2]
@@ -75,6 +79,9 @@ And just as the risks can derive from a variaty of places, they also can be eval
 2. The amount of impact or damage it can cause.
 
 
+`A successful risk assessment program must meet legal, contractual, internal, social and ethical goals, as well as monitor new technology-related regulations. By focusing attention on risk and committing the necessary resources to control and mitigate risk, a business will protect itself from uncertainty, reduce costs and increase the likelihood of business continuity and success.` [IBM](https://www.ibm.com/topics/risk-management)
+
+
 This subject is so important to enterprises that many standards and frameworks define Risk Management in their processes:
 
 ###### ISO 31000
@@ -95,7 +102,7 @@ Another interesting point on the introduction from [Management Study Guide](http
 - **ISO standards**
 
 1. **Organizational Context**: this principle states that each organization has its own specifiies in their context that have to be accounted for risk management.   
-    1. Exemples of context: the organization internal arrangement, local environment, organization culture, technological capacity, legal, etc.
+    1.1. Exemples of context: the organization internal arrangement, local environment, organization culture, technological capacity, legal, etc.
 2. **Involvement of Stakeholders**: they should be involved in the decision making, be aware of changes of policies, and even play some role when it could make sense for the operation.     
 3. **Organizational Objectives**: while dealing with risks and uncertainty, the organization should always have the strategic objectives in mind and keep the big picture.
 4. **Reporting**: that communication is a key factor in risk management, and a related consequence from this is the necessity to have also a process of authenticity of the information.    
@@ -124,7 +131,7 @@ Though a risk management process is not a matter of completely avoiding negative
 
 #### Risk Management Life Cycle
 
-So, summing up all that information, in term to optimize its own performance, the risk management process not only applies a life cycle to the process, as to have a continous assessment of the problem, but it also classify the possible actions depending on the significance of its impacts.
+So, summing up all that information, in term to optimize its own performance, the risk management process not only implies a life cycle to the entire process, but it also maintain a continous assessment of the risk problem. Finally, it also classify the possible actions depending on the significance of its impacts.
 
 - Though the terminology may vary a little bit, here is some way to refer to **Risk Management Life Cycle**
 1. **Assess**: identify potential risks.   
@@ -149,8 +156,23 @@ While dealing with risk management, it is important to assess first the understa
 4. **Risk likelihood**: to assess the probability of something happening, and document it as Low, Medium or High pattern.
 
 
-| IMPACT     | ACTIONS                                                                                                                                                           |   
-| ---------------| ---------------------------------------------------------------------------------------------------------------------------------------------- |     
+And once the kinds of risks are assessed, it is important to define actions to be addressed in each of the cases:
+
+1. **Risk avoidance**: it can be any action to be taken in order to avoid some risk occurence.   
+    1.1. For example, to stop some investiment, change some development feature, close some product line, etc.
+2. **Risk reduction**: it means acceptance of some of the risk involved, but taking actions to try to minimize evetual loss and preventing it to spread in the operation.   
+    2.1. For example, implementing Health Insurance in the company.
+3. **Risk sharing**: this kind of action use some process to share the effect of potential loss.   
+    3.1. For example, to create a corporation to receive a pool of investors, in a way that in case of loss it is share with the whole group.   
+    3.2. Another example could be to create a alternative line of product in face of some reduction in the demand.
+4. **Transfering risk**: again, this is a kind of action that serves to mitigate a loss by transferering it or part of it to another part or section.   
+    4.1. One common example could be to contract some kind of insurance.
+5. **Risk acceptance and retention**: these are the accepted risks with which a organization has to live up to.
+
+
+
+| IMPACT     | ACTIONS                                                                                                     |   
+| -------------- | --------------------------------------------------------------------------------------------- |     
 | significant  | Considerable management required | Must manage and monitor risks | Extensive management is essential |    
 | moderate   | Risk are berable to certain extant      | Management effort worthwhile | Management effort required               |   
 | minor         | Accept risks                                       | Accept but monitor Risks | Manage and monitor risks                           |     
@@ -175,22 +197,67 @@ But, on the other hand, the benefits derived from implanting a risk management, 
 
 
 
-### Risk Management Process
+### Risk Management Standards and Frameworks
 
-And then, before talking about risk management process, it should be interesting to reassess some elements already mentioned:
+As it has been seem about risks, the process to engage in a risk management program is steep:
 
 - **Risk is a uncertainty event**
 - **Some risks are avoided, other controled, and some may be just wanted**
 - **That risk management is a multifaced process, depending both internally and externally from the organization**
 
 
-After stating some basic elements pertaining Risk Management, there is a specific framework that treats this issue, the NIST risk management framework ([RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)):
+So, not only industries, but also agencies and the government apply compliance rules and standards to help in creating a basic consensus about the problems and some possible steps to make.
 
-`The NIST risk management framework (RMF) provides a comprehensive, flexible, risk-based process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle through 7 steps`  [Bmc.com](https://www.bmc.com/blogs/risk-management/)
+And sometime methodologies and even complete frameworks are devised to give orientation to those participating in the risk management operations. And there are quite a lot of them:
+
+1. **COSO ERM framework**: 
+2. **ISO 31000*:
+3. **British Standard (BS) 31100**:
+4. **Risk and Insurance Management Society's Risk Maturity Model (RMM)**: 
+5. **The NIST risk management framework**: ([RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)):
+
+
+#### COSO ERM framework
+
+Lauched in 2004, the COSO framework was updated in 2017 to address increasing complexity of Enterprise Risk Management (ERM). So, i defines:
+
+1. **key concepts and principles of ERM**
+2. **A common ERM language**
+3. **A Risk Management Guide**
+
+
+There are also a set of 20 principles organized into five interrelated components:
+
+1. **Governance and Culture**
+2. **Strategy and Objective-setting**
+3. **Performance**
+4. **Review and Revision**
+5. **Information, Communication and Reporting**
+
+
+
+#### ISO 31000
+
+Released in 2009 and revised in 2018, the ISO standard includes:
+
+1. **A list of ERM principles**
+2. **A Framework for risk management**
+
+
+According Cobb new version is `shorter, clearer and more concise document that is easier to read`, and it also includes more strategic guidance on ERM that the previous and the necessity of covering the whole organization.
+
+
+
+#### British Standard (BS) 31100
+
+The current version of this risk management code of practice was issued in 2011, and it provides a process for implementing concepts described in ISO 31000.
 
 
 
 #### The NIST Risk Management Framework (RMF)
+
+`The NIST risk management framework (RMF) provides a comprehensive, flexible, risk-based process that integrates security, privacy, and cyber supply chain risk management activities into the system development life cycle through 7 steps`  [Bmc.com](https://www.bmc.com/blogs/risk-management/)
+
 
 The NIST risk management life cycle:
 
@@ -213,25 +280,12 @@ And some of the roles existent:
 
 
 
+#### The Risk and Insurance Management Society's Risk Maturity Model
+
+The RMM framework is currently undergoing an update, but it readily available in the original 2006 version. It lists seven attributes of a risk management program and helps organizations assess each one on a scale from nonexistent to leadership level.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-What is risk management and why is it important? - TechTarget.com - https://searchcompliance.techtarget.com/definition/risk-management
-
-What is risk management? - IBM - https://www.ibm.com/topics/risk-management
 
 ### Further Reading
 
@@ -241,8 +295,6 @@ What is risk management? - IBM - https://www.ibm.com/topics/risk-management
 
 [NIST Risk Management Framework - RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)
 
-[]()
-
 
 ### References
 
@@ -250,8 +302,9 @@ What is risk management? - IBM - https://www.ibm.com/topics/risk-management
 
 [Risk Management: A Complete Introduction To Managing Enterprise Risk - Bmc.com](https://www.bmc.com/blogs/risk-management/)
 
+[What is risk management? - IBM](https://www.ibm.com/topics/risk-management)
 
-[]()
+[What is risk management and why is it important? - TechTarget.com](https://searchcompliance.techtarget.com/definition/risk-management)
 
 
 [^1]:it-governance-and-management-overview-2022-03-27

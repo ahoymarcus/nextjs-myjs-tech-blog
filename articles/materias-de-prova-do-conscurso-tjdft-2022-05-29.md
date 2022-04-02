@@ -219,7 +219,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conceitos de gestão de projetos (PMBOK). Métodos, técnicas e ferramentas de gerência de projetos.
 - [X] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. 
 - [X] Escritório de projetos: modelos e características.
-- [ ] Conceitos de gestão de riscos. 
+- [X] Conceitos de gestão de riscos. 
 - [X] Análise SWOT e matriz RACI. 
 - [X] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
 - [ ] Conceitos básicos de contratações de TI. 
