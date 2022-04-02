@@ -26,11 +26,10 @@ description: 'Considering some definitions from Control Objectives for Informati
 6. ##### Project Management Office (PMO)
     6.1. Primary Functions from a PMO    
     6.2. The 3 Basic Types of a PMO
-7. ##### Concepts of Risk Management
-8. ##### COBIT
-    8.1. 4 Funcionalities from COBIT 5   
-    8.2. 5 Principles from COBIT 5    
-    8.3. Advantages from the COBIT Framework
+7. ##### COBIT
+    7.1. 4 Funcionalities from COBIT 5   
+    7.2. 5 Principles from COBIT 5    
+    7.3. Advantages from the COBIT Framework
 8. ##### Further Reading
 9. ##### References Further Reading
 
@@ -53,6 +52,7 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 ###### Read about about specific management frameworks in these articles:
 - `PMBOK and others Project Management Methodologies` [^1]
 - `ITIL - Service Management Framework` [^2]
+- `Concepts of Risk Management` [^3]
 
 
 ### IT Government and IT Management
@@ -434,26 +434,6 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 
 
-### Concepts of Risk Management
-
-**Coming Soon...**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### COBIT
 
 Control Objectives for Information and Related Technology (COBIT) are a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
@@ -527,8 +507,6 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 
 
-Conceitos de gestão de riscos. 
-
 ### Further Reading
 
 [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
@@ -573,4 +551,5 @@ Conceitos de gestão de riscos.
 
 [^2]:itil-service-management-framework-2022-03-30
 
+[^3]:concepts-of-risk-management-2022-04-02
 
