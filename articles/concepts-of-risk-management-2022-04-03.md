@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Concepts of Risk Management'
-date: '2022-03-31'
+date: '2022-04-03'
 subject: 'development-articles'
 description: 'Risk management is an effort to minimize or mitigate risks, as it starts with the identification and evaluation of risk followed by optiaml use of resources to monitor and minimize the same. And now, as an general rule risk comes from uncertainty, and when he risk is assessed in the organizations the uncertainty is linked to its participation on the market place.'
 ---
@@ -11,23 +11,15 @@ description: 'Risk management is an effort to minimize or mitigate risks, as it 
 1. ##### Introduction  
 2. ##### Risk Management
     2.1. Risk Management Life Cycle     
-    2.2. Risk Management Assessment    
-    2.3.    
-    2.4.     
+    2.2. Risk Management Priorities Assessment    
+    2.3. Benefits of Risk Management   
+    2.4. Principles of Risk Management    
     2.5.    
     2.6. 
 4. ##### Further Reading
 5. ##### References
 
 ### Introduction
- 
-
- 
-
-
-
-
- 
  
  
  
@@ -58,7 +50,7 @@ And just as the risks can derive from a variaty of places, they also can be eval
 2. The amount of impact or damage it can cause.
 
 
-#### Risk Management Life Cycle Risk Management Assessment
+#### Risk Management Life Cycle
 
 So, summing up all that information, in term to optimize its own performance, the risk management process not only applies a life cycle to the process, as to have a continous assessment of the problem, but it also classify the possible actions depending on the significance of its impacts.
 
@@ -73,7 +65,7 @@ So, summing up all that information, in term to optimize its own performance, th
 4. **Measure**: evaluate the results and restart the a new cycle.
 
 
-#### Risk Management Assessment
+#### Risk Management Priorities Assessment    
 
 | IMPACT     | ACTIONS                                                                                                                                                           |   
 | ---------------| ---------------------------------------------------------------------------------------------------------------------------------------------- |     
@@ -83,6 +75,30 @@ So, summing up all that information, in term to optimize its own performance, th
 | probability  | Low                                                   | Medium                             | High                                                            |  
 
 
+#### Benefits of Risk Management
+
+The site [Management Study Guide](https://www.managementstudyguide.com/risk-management.htm) says that creating risk management in a organization is a very costly endevour, because it implies the recruitment of many skilled professionals to really ensure that the risks inherent in the business are mitigated.
+
+But, on the other hand, the benefits derived from implanting a risk management, specially in larger companies, far outweighs the costs:
+
+1. **Forecasts probable issues**: a risk management effort in the organization helps to make the operation more robust, preparing itself to most of the know risks, and even to be more ready to responds to other eventual or accidental risks.   
+    1.1. Helps to avoid or at least deal better with disruptions.    
+    1.2. Usually risk management brings a proactive culture of to the company.
+2. **Avoiding the catastrophic events**: this one is a very important matter because eventhough risk managements helps to deal with a variaty of dangerous events in a good manner, there are these catastrophic events that should be known or at least have some turn around mechanism, since these kinds of risk can bring the company bankrupt.
+3. **Enables growth**: while the main efforts in risk management comes to avoid bad occurences, in the process companies are forced to study their operation in detail, to assess the risks and to improve the whole process, what could certainly make the company fit to take new deals.
+4. **Helps to stay competitive**: since the company would reduce critical losses and be more ready to tackle new endeavous.    
+    1.1. And even in an event of crises the company would stay afloat and have a better disposition to act in the market during this time of crises.
+5. **Enables better budgeting**: since the problem of resources are a major factor in risk management, at least in the operational field there should be a great effort to improve the budgeting.    
+    5.1. And since operations could show a better and more transparent monetary picture, it should really help the central budget process to be more keen.
+
+
+
+#### Principles of Risk Management
+    
+    
+    
+    
+    
 
 
 
@@ -95,12 +111,7 @@ So, summing up all that information, in term to optimize its own performance, th
 
 
 
-
-
-
-
-
-
+Benefits of Risk Management - Management Study Guide - https://www.managementstudyguide.com/benefits-of-risk-management.htm
 
 Risk Management: A Complete Introduction To Managing Enterprise Risk - Bmc.com - https://www.bmc.com/blogs/risk-management/
 
