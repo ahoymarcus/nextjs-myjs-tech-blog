@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'Concepts of Risk Management'
-date: '2022-04-02'
+date: '2022-04-01'
 subject: 'development-articles'
 description: 'Risk management is an effort to minimize or mitigate risks, as it starts with the identification and evaluation of risk followed by optiaml use of resources to monitor and minimize the same. And now, as an general rule risk comes from uncertainty, and when he risk is assessed in the organizations the uncertainty is linked to the company's participation on the market place.'
 ---
@@ -102,8 +102,6 @@ So, summing up all that information, in term to optimize its own performance, th
 
 
 Risk Management: A Complete Introduction To Managing Enterprise Risk - Bmc.com - https://www.bmc.com/blogs/risk-management/
-
-Risk Management - A Basic Understanding - Management Study Guide - https://www.managementstudyguide.com/risk-management.htm
 
 What is risk management and why is it important? - TechTarget.com - https://searchcompliance.techtarget.com/definition/risk-management
 
