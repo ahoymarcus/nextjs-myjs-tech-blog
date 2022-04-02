@@ -36,8 +36,8 @@ For that reason, it is important that organizations may bring effort to understa
 
 Also, as uncertainties go, the risks can affect in two ways:
 
-- **Risks Negative effects**
-- **Risks Positive effects**
+1. **Negative risks effects**
+2. **Positive risks effects**
 
 
 And though even positive risks may be felt as a welcome element to the company, one would say that things should not be left for chance, or at least to say that the organization should make a proper assess into that change event.
@@ -45,8 +45,8 @@ And though even positive risks may be felt as a welcome element to the company, 
 
 So, while talking about risk management two important points should be made:
 
-1. Even If the event or risk is positive, it should be assessed by the organization in order to be better understood and also booted.
-2. If the effect is negative, there should also be two possibilities:   
+1. **Even If the event or risk is positive, it should be assessed by the organization in order to be better understood and also booted.**
+2. **If the effect is negative, there should also be two possibilities**:   
     2.1. To try to manage preventive measures.   
     2.2. To try to manage mitigation measures.
 
@@ -75,8 +75,8 @@ And now, as an general rule risk comes from uncertainty, and when he risk is ass
 
 And just as the risks can derive from a variaty of places, they also can be evaluated in two different ways:
 
-1. The probability of occurence for certain risk scenario.
-2. The amount of impact or damage it can cause.
+1. **The probability of occurence for certain risk scenario.**
+2. **The amount of impact or damage it can cause.**
 
 
 `A successful risk assessment program must meet legal, contractual, internal, social and ethical goals, as well as monitor new technology-related regulations. By focusing attention on risk and committing the necessary resources to control and mitigate risk, a business will protect itself from uncertainty, reduce costs and increase the likelihood of business continuity and success.` [IBM](https://www.ibm.com/topics/risk-management)
@@ -172,7 +172,7 @@ And once the kinds of risks are assessed, it is important to define actions to b
 
 
 | IMPACT     | ACTIONS                                                                                                     |   
-| -------------- | --------------------------------------------------------------------------------------------- |     
+| -------------- | ------------------------------------------------------------------------------- |     
 | significant  | Considerable management required | Must manage and monitor risks | Extensive management is essential |    
 | moderate   | Risk are berable to certain extant      | Management effort worthwhile | Management effort required               |   
 | minor         | Accept risks                                       | Accept but monitor Risks | Manage and monitor risks                           |     
@@ -201,20 +201,20 @@ But, on the other hand, the benefits derived from implanting a risk management, 
 
 As it has been seem about risks, the process to engage in a risk management program is steep:
 
-- **Risk is a uncertainty event**
-- **Some risks are avoided, other controled, and some may be just wanted**
-- **That risk management is a multifaced process, depending both internally and externally from the organization**
+1. **Risk is a uncertainty event**
+2. **Some risks are avoided, other controled, and some may be just wanted**
+3. **That risk management is a multifaced process, depending both internally and externally from the organization**
 
 
 So, not only industries, but also agencies and the government apply compliance rules and standards to help in creating a basic consensus about the problems and some possible steps to make.
 
 And sometime methodologies and even complete frameworks are devised to give orientation to those participating in the risk management operations. And there are quite a lot of them:
 
-1. **COSO ERM framework**: 
-2. **ISO 31000*:
-3. **British Standard (BS) 31100**:
-4. **Risk and Insurance Management Society's Risk Maturity Model (RMM)**: 
-5. **The NIST risk management framework**: ([RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)):
+1. **COSO ERM framework** 
+2. **ISO 31000**
+3. **British Standard (BS) 31100**
+4. **Risk and Insurance Management Society's Risk Maturity Model (RMM)**
+5. **The NIST risk management framework** [RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)
 
 
 #### COSO ERM framework
