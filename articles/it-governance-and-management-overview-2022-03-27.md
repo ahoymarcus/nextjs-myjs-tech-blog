@@ -551,5 +551,5 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 [^2]:itil-service-management-framework-2022-03-30
 
-[^3]:risk-management-overview-2022-04-03-2022-04-03
+[^3]:risk-management-overview-2022-04-03
 
