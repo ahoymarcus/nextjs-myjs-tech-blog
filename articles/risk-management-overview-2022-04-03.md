@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Concepts of Risk Management'
+title: 'Risk Management - Overview'
 date: '2022-04-03'
 subject: 'development-articles'
 description: 'Risk management is an effort to minimize or mitigate risks, as it starts with the identification and evaluation of risk followed by optiaml use of resources to monitor and minimize the same. And now, as an general rule risk comes from uncertainty, and when he risk is assessed in the organizations the uncertainty is linked to its participation on the market place.'
 ---
 
-# Concepts of Risk Management
+# Risk Management - Overview
 
 1. ##### Introduction  
 2. ##### Risk Management

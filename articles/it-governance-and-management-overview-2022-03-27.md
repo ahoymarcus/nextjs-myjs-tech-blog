@@ -52,7 +52,7 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 ###### Read about about specific management frameworks in these articles:
 - `PMBOK and others Project Management Methodologies` [^1]
 - `ITIL - Service Management Framework` [^2]
-- `Concepts of Risk Management` [^3]
+- `Risk Management - Overview` [^3]
 
 
 ### IT Government and IT Management
@@ -551,5 +551,5 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 
 [^2]:itil-service-management-framework-2022-03-30
 
-[^3]:concepts-of-risk-management-2022-04-03
+[^3]:risk-management-overview-2022-04-03-2022-04-03
 
