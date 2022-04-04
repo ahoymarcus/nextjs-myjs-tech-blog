@@ -10,7 +10,7 @@ description: '.'
 
 1. ##### Introduction  
 2. ##### Information Security Concepts
-	2.1.Basic Elements of Security Information   
+	2.1. Basic Elements of Security Information   
 	2.2. Security Police
 4. ##### 
 5. ##### 
@@ -32,8 +32,8 @@ And with the worlwide presence of Internet, also comes the easy access to the in
 - `IT Governance and Mangement - Overview` [^1]
 - `PMBOK and others Project Management Methodologies` [^2]
 - `ITIL - Service Management Framework` [^3]
- 
- 
+
+
 ### Information Security Concepts
 
 
@@ -87,9 +87,9 @@ One example of service where availability can be highlighted with particular imp
  
 Also, observe that this controls implies some secondary taits that are necessary to system be properly used by its legitimate clients:
 
-- **Response time**
-- **Guaranteed bandwidth** 
-- **Recovery procedure**
+1. Response time
+2. Guaranteed bandwidth
+3. Recovery procedure
  
 
 ###### Authentication
@@ -136,8 +136,8 @@ Another important point within the **Security Police** document is the fact, eve
 
 
 
- 
- 
+
+
 MANAGEMENT CONTROLS-CHOOSING THE MEANS TO SECURE INFORMATION AND OPERATIONS
 National Academies of Sciences, Engineering, and Medicine. 1991. Computers at Risk: Safe Computing in the Information Age. Washington, DC: The National Academies Press. https://doi.org/10.17226/1581.
  
