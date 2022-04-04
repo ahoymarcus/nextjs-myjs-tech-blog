@@ -55,7 +55,7 @@ So, while talking about risk management two important points should be made:
 - `IT Governance and Mangement - Overview` [^1]
 - `PMBOK and others Project Management Methodologies` [^2]
 - `ITIL - Service Management Framework` [^3]
-
+- `Information Security - Overview` [^4]
 
 
 ### Risk Management
@@ -312,5 +312,7 @@ The RMM framework is currently undergoing an update, but it readily available in
 [^2]:pmbok-and-project-management-methodologies-2022-03-29
 
 [^3]:itil-service-management-framework-2022-03-30
+
+[^4]:information-security-overview-2022-04-05
 
 

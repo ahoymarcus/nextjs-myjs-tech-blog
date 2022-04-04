@@ -9,10 +9,9 @@ description: '.'
 # Information Security - Overview
 
 1. ##### Introduction  
-2. ##### Basic Information Security Concepts
-3. #####  
-	3.1.	
-	3.2.
+2. ##### Information Security Concepts
+	2.1.Basic Elements of Security Information   
+	2.2. Security Police
 4. ##### 
 5. ##### 
 6. ##### 
@@ -27,12 +26,20 @@ The Internet today is really a world wide entity that as the site [SecureReading
 
 
 And with the worlwide presence of Internet, also comes the easy access to the information, which is more vulnerable than the ones tightly locked at headquarters, and also can be reached from any country in the world.
- 
- 
- 
-### Basic Information Security Concepts
 
-The basic structure of information security has two primary focus:
+
+###### Other articles from the Governance and Management series:
+- `IT Governance and Mangement - Overview` [^1]
+- `PMBOK and others Project Management Methodologies` [^2]
+- `ITIL - Service Management Framework` [^3]
+ 
+ 
+### Information Security Concepts
+
+
+#### Basic Elements of Security Information
+
+The basic structure of information security has two primary focus or requirements, where the first one is related to the information itself and its contents, while the second refers to the persons who may use the information:
 
 1. **The Information**: the security of the related information, works focusing in a triad  concept known as CIA Triad (Confidentiality, Integrity, and Availability)   
     1.1. Confidentiality: In brief it limits the access of information.   
@@ -44,9 +51,16 @@ The basic structure of information security has two primary focus:
     2.3. Non-Repudiation
 
 
-
 ###### Note: another alternative model to the CIA Triad is the Parkerian hexad (Confidentiality, Possession or Control, Integrity, Authenticity, Availability and Utility).
-    
+
+
+
+`[...] requirements may be emphasized differently in various applications. For a national defense system, the chief concern may be ensuring the confidentiality of classified information, whereas a funds transfer system may require strong integrity controls. The requirements for applications that are connected to external systems will differ from those for applications without such interconnection. Thus the specific requirements and controls for information security can vary. National Academies of Sciences, Engineering, and Medicine. 1991. Computers at Risk: Safe Computing in the Information Age. Washington, DC: The National ` [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
+
+
+The document from [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) also states ahead that the correct use of the controls should depend much more on the use of the system that on its own kind of system. 
+
+And the document even gives a example where a same kind of publishing system while being used to publish corporate proprietary material, it should have conidentiality as the primary control, but if the same system was publishing laws, then integrity should be the priority. And finally, if it was to publish publih daily information, then availability should be the priority.
     
 
 ###### Confidentiality
@@ -60,6 +74,10 @@ The information that is distributed digitally cannot have its contents changed d
 
 The site [SecureReading.com](https://securereading.com/infobasics-basic-concept-information-security/) says that in some areas like financial data, air traffic control, and financial accounting, this concept strikes to be particularly important.
 
+One interesting example of a specific control for maintaining the integrity of the information is cited by [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) where it is showed a task of dividing a task in order to prevent fraud.
+
+So, in that case, a purchasing system could be divided into 3 parts which have to be assigned to 3 different persons, and have each speciffic signature in order to have a sound process for in each section: ordering, receiving, and payment.
+ 
  
 ###### Availability
  
@@ -67,6 +85,11 @@ Also, the digital information has to be available by the rightful clients, meani
  
 One example of service where availability can be highlighted with particular importance is in service-oriented businesses, where the core of the business depends on the correct distribution of information to clients.
  
+Also, observe that this controls implies some secondary taits that are necessary to system be properly used by its legitimate clients:
+
+- **Response time**
+- **Guaranteed bandwidth** 
+- **Recovery procedure**
  
 
 ###### Authentication
@@ -85,17 +108,38 @@ Finally, another crucial process in other to guarantee a strong security to the 
  
  
  
+#### The Security Police
+ 
+This is a document by those responsible for a system (e.g. senior management), which brings concise description about the information values, the protection responsabilities, and the organization commitment.
+ 
+
+Together with that prior information, the security police needs to describe the basic elements from the information system, and also to explain the range of the circunstances embraced in the processes and their priorities. And finally the residual risks.
+
+
+And this second part is so relevant that the [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) states that the absence of this later part would make the security police so general that it would become quite useless.
  
  
+`In any particular circumstance, some threats are more probable than others, and a prudent policy setter must assess the threats, assign a level of concern to each, and state a policy in terms of which threats are to be resisted. For example, until recently most policies for security did not require that security needs be met in the face of a virus attack, because that form of attack was uncommon and not widely understood. As viruses have escalated from a hypothetical to a commonplace threat, it has become necessary to rethink such policies in regard to methods of distribution and acquisition of software. Implicit in this process is management's choice of a level of residual risk that it will live with, a level that varies among organizations.`  [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
+
+
+
+Another important point within the **Security Police** document is the fact, eventhough many of its controls are related to protecting the information or the information systems, there are many other important topics that needs to be addressed:
+
+1. **The information and its values.**
+2. **The controls in the information systems.**
+3. **Phisical security.**
+4. **Classification of information.**
+5. **Recovery procedures**
+6. **Personel training, awareness, and acceptance**
+7. **Residual risks**
+8. **Auditing, backup**
+
+
+
  
  
- 
- 
- 
- 
- 
- 
- 
+MANAGEMENT CONTROLS-CHOOSING THE MEANS TO SECURE INFORMATION AND OPERATIONS
+National Academies of Sciences, Engineering, and Medicine. 1991. Computers at Risk: Safe Computing in the Information Age. Washington, DC: The National Academies Press. https://doi.org/10.17226/1581.
  
  
  
@@ -123,4 +167,13 @@ identificação, autorização e autenticação.
 
 
 []()
+
+
+[^1]:it-governance-and-management-overview-2022-03-27
+
+[^2]:pmbok-and-project-management-methodologies-2022-03-29
+
+[^3]:itil-service-management-framework-2022-03-30
+
+
 
