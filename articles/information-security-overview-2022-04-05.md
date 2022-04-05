@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Information Security - Overview'
 date: '2022-04-05'
 subject: 'security-articles'
-description: '.'
+description: 'The basic structure of information security has two primary focus or requirements, where the first one is related to the information itself and its contents, while the second refers to the persons who may use the information: the information and the user. And around these key factors arises a certain number of controls like: confidentiality, integrity, availability, authentication, authorization, nonrepudiation, etc.'
 ---
 
 # Information Security - Overview
@@ -21,7 +21,9 @@ description: '.'
     5.2. Recovery Control
 6. ##### Developing Polices and Appropriate Controls
 7. ##### Risks and Vulnerability 
-8. ##### 
+8. ##### Privacy
+    8.1. Protection of Information about Individuals    
+    8.2. Employee Privacy in the Workplace
 9. ##### Further Reading
 10. ##### References
 
@@ -153,7 +155,7 @@ The document from [National Research Concil](https://nap.nationalacademies.org/r
 3. **Separation of duty**: this concept says that important operations cannot be performed by a single person.
     3.1. The separation of duty not only strenghten the security, but can also reduce errors by providing for independent checks.
 
- 
+
 ### Responding to Beaches of Security
 
 One important process to deal with breaches of security is **Recovery Control**, which exists not to prevent, but to bring some responses to breaches events.
@@ -171,20 +173,28 @@ And it is interesting as the site [National Research Concil](https://nap.nationa
 
 The site [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) also gives a step-by-step guide for developing polices:
 
-1. **Evaluation of the assets being protected**
-2. **Cataloging vulnerabilities and evaluating their potential costs**
-3. **Cataloging potential threats, their probability and potential costs**
-4. **Cataloging risks and points of failure in the operation**
-5. **Define the organization's degree of risk aversion**
-6. **Definition of available countermeasures (controls and securities services)**
-7. **The effectiveness of controls and securities services**
-8. **The costs and the opportunities to install all these controls and securities services** 
+1. Evaluation of the assets being protected
+2. Cataloging vulnerabilities and evaluating their potential costs
+3. Cataloging potential threats, their probability and potential costs
+4. Cataloging risks and points of failure in the operation
+5. Define the organization's degree of risk aversion
+6. Definition of available countermeasures (controls and securities services)
+7. The effectiveness of controls and securities services
+8. The costs and the opportunities to install all these controls and securities services
 
 
 And one interesting point that brought by the same site is the fact that most of the times organizations have to deal with the problem of controls and security services considering what is available on the market than everything that should be needed, because most of the time purchasers of compute systems cannot afford to have a system designed from scratch to their needs.
 
 
 `However, for many of the management controls discussed above, there is not a clear, widely accepted articulation of how computer systems should be designed to support these controls, what sort of robustness is required in the mechanisms, and so on. As a result, customers for computer security are faced with a "take-it-or-leave-it" marketplace. For instance, customers appear to demand password-based authentication because it is available, not because analysis has shown that this relatively weak mechanism provides enough protection. This effect works in both directions: a service is not demanded if it is not available, but once it becomes available somewhere, it soon becomes wanted everywhere.`  [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) 
+
+
+
+At the end of the Chapter 4, the [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) document also brings another 2 important points that should be at mind while defining polices and controls:
+
+1.**Awareness from personel to the security controls**: as it was already stated before, personal trainning, awareness, and acceptance are key factors here, because as the site says, technology anlone cannot provide security, if there is no commitment from users.
+2. **While securiting the whole system, it is better to work from a collection of components distrustiful from one another**: meaning that while there is a holistic view in information security, because security is a weak-link, **a security program must be multidimensional**.   
+    2.1. So, eventhough the system is formed by a independent collection of components, which have all of its resources kept restrict from the outside, they can still operate as a whole in terms of interoperability.
 
 
 
@@ -200,27 +210,37 @@ Here, there is a small list of security problems or abuse reported:
 6. **Using a computer system as an indirect aid in committing a criminal act**: as in auto-dialing telephone numbers in search of answering modems, cracking another system's encrypted password files, or running an illicit business. (For example, drug operations are becoming increasingly computerized.)
 
 
+### Privacy
+
+Still according to the document from [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51), the concern for privacy should arise in computer systems is two disparate ways:
+
+1. **The need to protect personal information kept in the system**
+2. **The need to ensure that employees of an organization are complying with the organization's polices and procedures.
+
+
+#### Protection of Information about Individuals
+
+Some basic principles from major regulations in US and Europe:
+
+1. There must be no secrety storage system for personal data record which existence is secret.
+2. There must be a way for individuals to find out what information about is n a record and how it is used*.
+3. There must be a way for individuals to prevent information obtained about them for one purpose from being used or made available for other purposes without their consent.
+4. There must be a way for individuals to correct or amend a record of identifiable information about them.
+5. Any organization creating, maintaining, using, or disseminating records of identifiable personal data must assure that data are used as intended and must take precautions to prevent misuse of the data.
+
+
+#### Employee Privacy in the Workplace
+
+There is a dificul line to be drawn here, because from one side it is imperative that management could monitor employees activities to guarantee compliance with polices and procidures, but on the other side it is necessary not to trespass the employees pravacy also.
+
+
+`Random spot checks of user files by information security analysts may be conducted to ensure that personal business items, games, and so on, are not put on company computing resources. Disciplinary action may result when violations of policy are discovered. The above situation does not, in itself, relate to security. However, one method proposed to increase the level of system security involves monitoring workers' actions to detect, for example, patterns of activity that suggest that a worker's password has been stolen. This level of monitoring provides increased opportunity to observe all aspects of worker activity, not just security-related activity, and to significantly reduce a worker's expectation for privacy at work.`   [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
 
 
 
+Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação.
 
-
-
-
-
-
-
-
-
-
-
-
-
-[Computers at Risk: Safe Computing in the Information Age (1991) - Chapter 04 - National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
-
-Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; 
-
-identificação, autorização e autenticação.
+Planos de continuidade de negócio e serviços essenciais. 
 
 ### Further Reading
 
