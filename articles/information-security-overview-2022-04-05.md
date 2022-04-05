@@ -238,9 +238,6 @@ There is a dificul line to be drawn here, because from one side it is imperative
 
 
 
-Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação.
-
-Planos de continuidade de negócio e serviços essenciais. 
 
 ### Further Reading
 

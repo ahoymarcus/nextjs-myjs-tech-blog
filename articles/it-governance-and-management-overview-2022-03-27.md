@@ -49,7 +49,7 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 2. **Plan, Build, Run, and Monitor (PBRM)**: which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.
 
 
-###### Read about about specific management frameworks in these articles:
+###### Other articles from the Governance and Management series:
 - `PMBOK and others Project Management Methodologies` [^1]
 - `ITIL - Service Management Framework` [^2]
 - `Risk Management - Overview` [^3]
