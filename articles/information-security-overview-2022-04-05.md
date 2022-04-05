@@ -192,7 +192,7 @@ And one interesting point that brought by the same site is the fact that most of
 
 At the end of the Chapter 4, the [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) document also brings another 2 important points that should be at mind while defining polices and controls:
 
-1.**Awareness from personel to the security controls**: as it was already stated before, personal trainning, awareness, and acceptance are key factors here, because as the site says, technology anlone cannot provide security, if there is no commitment from users.
+1. **Awareness from personel to the security controls**: as it was already stated before, personal trainning, awareness, and acceptance are key factors here, because as the site says, technology anlone cannot provide security, if there is no commitment from users.
 2. **While securiting the whole system, it is better to work from a collection of components distrustiful from one another**: meaning that while there is a holistic view in information security, because security is a weak-link, **a security program must be multidimensional**.   
     2.1. So, eventhough the system is formed by a independent collection of components, which have all of its resources kept restrict from the outside, they can still operate as a whole in terms of interoperability.
 
@@ -214,8 +214,8 @@ Here, there is a small list of security problems or abuse reported:
 
 Still according to the document from [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51), the concern for privacy should arise in computer systems is two disparate ways:
 
-1. **The need to protect personal information kept in the system**
-2. **The need to ensure that employees of an organization are complying with the organization's polices and procedures.
+1. **Personal information**: the need to protect personal information kept in the system.
+2. **Employees compliance**: the need to ensure that employees of an organization are complying with the organization's polices and procedures.
 
 
 #### Protection of Information about Individuals
