@@ -12,10 +12,15 @@ description: '.'
 2. ##### Information Security Concepts
 	2.1. Basic Elements of Security Information   
 	2.2. Security Police
-4. ##### 
-5. ##### 
-6. ##### 
-7. #####  
+4. ##### Basic Principles of Preventing Breaches of Security
+    2.1. Individual Accountability   
+    2.2. Audit   
+    2.3. Separation of Duty
+5. ##### Responding to Beaches of Security
+    5.1. Detection Control   
+    5.2. Recovery Control
+6. ##### Developing Polices and Appropriate Controls
+7. ##### Risks and Vulnerability 
 8. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -31,7 +36,8 @@ And with the worlwide presence of Internet, also comes the easy access to the in
 ###### Other articles from the Governance and Management series:
 - `IT Governance and Mangement - Overview` [^1]
 - `PMBOK and others Project Management Methodologies` [^2]
-- `ITIL - Service Management Framework` [^3]
+- `Risk Management - Overview` [^3]
+- `ITIL - Service Management Framework` [^4]
 
 
 ### Information Security Concepts
@@ -136,13 +142,77 @@ Another important point within the **Security Police** document is the fact, eve
 
 
 
+### Basic Principles of Preventing Breaches of Security
+
+The document from [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) presents 3 key principles for management controls related to security and risk management:
+
+1. **Individual accountability**: this on is the sole person responsible for some property or some action, and also this is the person responsible to monitor, to analyse the goals, etc.   
+    1.1. So, together with the concept of a singular and individual accountability to respond for some resource or action is the necessity for assurance of identity, besides authentication, and nonrepudiation controls.
+2. **Audit**: the audit processes are important not only to make the nonrepudiation controls more robust, but also to create analitical data for monitoring accesses to the system, whether authorized or not.   
+    2.1. The document from [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) says that one main drawback from the  auditing process is the overhead created by interpreting and auditing the data.
+3. **Separation of duty**: this concept says that important operations cannot be performed by a single person.
+    3.1. The separation of duty not only strenghten the security, but can also reduce errors by providing for independent checks.
+
+ 
+### Responding to Beaches of Security
+
+One important process to deal with breaches of security is **Recovery Control**, which exists not to prevent, but to bring some responses to breaches events.
 
 
-MANAGEMENT CONTROLS-CHOOSING THE MEANS TO SECURE INFORMATION AND OPERATIONS
-National Academies of Sciences, Engineering, and Medicine. 1991. Computers at Risk: Safe Computing in the Information Age. Washington, DC: The National Academies Press. https://doi.org/10.17226/1581.
- 
- 
- 
+And it is interesting as the site [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) states that the presence of **detection and recovery** does not indicate a adimition of shortcomings in the security operation, but that it is by itself a important part of the whole process. The site even says that in some cases the **detection and recovery controls** can be even more cost-effective that attempts at a total prevention.
+´
+
+
+`Recovery from a security breach may involve taking disciplinary or legal action, notifying incidentally compromised parties, or changing policies, for example. From a technical standpoint, a security breach has much in common with a failure that results from faulty equipment, software, or operations. Usually some work will have to be discarded, and some or all of the system will have to be rolled back to a clean state.` [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
+
+
+
+### Developing Polices and Appropriate Controls
+
+The site [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) also gives a step-by-step guide for developing polices:
+
+1. **Evaluation of the assets being protected**
+2. **Cataloging vulnerabilities and evaluating their potential costs**
+3. **Cataloging potential threats, their probability and potential costs**
+4. **Cataloging risks and points of failure in the operation**
+5. **Define the organization's degree of risk aversion**
+6. **Definition of available countermeasures (controls and securities services)**
+7. **The effectiveness of controls and securities services**
+8. **The costs and the opportunities to install all these controls and securities services** 
+
+
+And one interesting point that brought by the same site is the fact that most of the times organizations have to deal with the problem of controls and security services considering what is available on the market than everything that should be needed, because most of the time purchasers of compute systems cannot afford to have a system designed from scratch to their needs.
+
+
+`However, for many of the management controls discussed above, there is not a clear, widely accepted articulation of how computer systems should be designed to support these controls, what sort of robustness is required in the mechanisms, and so on. As a result, customers for computer security are faced with a "take-it-or-leave-it" marketplace. For instance, customers appear to demand password-based authentication because it is available, not because analysis has shown that this relatively weak mechanism provides enough protection. This effect works in both directions: a service is not demanded if it is not available, but once it becomes available somewhere, it soon becomes wanted everywhere.`  [National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51) 
+
+
+
+### Risks and Vulnerability 
+
+Here, there is a small list of security problems or abuse reported:
+
+1. **Misusing authority**: improper accesses or surreptitious misuses.
+2. **Masquerading**: as in one user impersonating another
+3. **Bypassing controls**: these are attacks that typically exploit system flaws or hidden circumventive 'features'.
+4. **General attcks to the system**: trojan horses, viruses, etc.
+5. **Carrying out hardware and media abuses**: these a mischievous activities aimed direct against equipaments or even scavenging information frm discarded media.
+6. **Using a computer system as an indirect aid in committing a criminal act**: as in auto-dialing telephone numbers in search of answering modems, cracking another system's encrypted password files, or running an illicit business. (For example, drug operations are becoming increasingly computerized.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,7 +233,10 @@ identificação, autorização e autenticação.
 
 ### References
 
+[Computers at Risk: Safe Computing in the Information Age (1991) - Chapter 04 - National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
+
 [INFOBASICS-Basic Concept of Information Security - SecureReading.com](https://securereading.com/infobasics-basic-concept-information-security/)
+
 
 
 []()
@@ -173,7 +246,9 @@ identificação, autorização e autenticação.
 
 [^2]:pmbok-and-project-management-methodologies-2022-03-29
 
-[^3]:itil-service-management-framework-2022-03-30
+[^3]:risk-management-overview-2022-04-03
+
+[^4]:itil-service-management-framework-2022-03-30
 
 
 

@@ -25,8 +25,12 @@ description: 'ITIL stands for Information Technology Infrastructure LIbrary, and
 ### Introduction
 
 
-###### Article about IT Governance and IT Management:
+
+###### Other articles from the Governance and Management series:
 - `IT Governance and Mangement - Overview` [^1]
+- `PMBOK and others Project Management Methodologies` [^2]
+- `ITIL - Service Management Framework` [^3]
+- `Information Security - Overview` [^4]
 
 
 
@@ -375,5 +379,11 @@ The certifications last for 3 years and must be renewed, and there are 5 levels 
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
+
+[^2]:pmbok-and-project-management-methodologies-2022-03-29
+
+[^3]:itil-service-management-framework-2022-03-30
+
+[^4]:information-security-overview-2022-04-05
 
 

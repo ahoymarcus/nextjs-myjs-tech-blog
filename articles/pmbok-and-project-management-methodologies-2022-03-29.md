@@ -58,8 +58,13 @@ But there should be some attributes or characteristics that could help to decide
 - **Cient/Stakeholder collaboration**: in this case it is view how much does the client need/wants to be involved in the process.
 
 
-###### Read about IT Governance and IT Management practices in thìs article:
+
+###### Other articles from the Governance and Management series:
 - `IT Governance and Mangement - Overview` [^1]
+- `PMBOK and others Project Management Methodologies` [^2]
+- `ITIL - Service Management Framework` [^3]
+- `Information Security - Overview` [^4]
+
 
 
 ### Project Management Methodologies
@@ -429,12 +434,12 @@ Now, impediments to absorb this methodology:
 
 
 ###### Read more about software methodologies in these articles:
--  `Agile Model - Software Life Cycle` [^2]
-- `Kanban Method and Practices` [^3]
-- `Lean Software Development (LSD)` [^4] 
-- `RAD - Rapid Application Develoment Model` [^5]
-- `Scrum Method and Practices` [^6] 
-- `Waterfall Model` [^7] 
+-  `Agile Model - Software Life Cycle` [^5]
+- `Kanban Method and Practices` [^6]
+- `Lean Software Development (LSD)` [^7] 
+- `RAD - Rapid Application Develoment Model` [^8]
+- `Scrum Method and Practices` [^9] 
+- `Waterfall Model` [^10] 
 
 
 
@@ -720,16 +725,22 @@ The PMBOK 6th Edition has 132 project management tools and techniques distribute
 
 [^1]:it-governance-and-management-overview-2022-03-27
 
-[^2]:agile-life-cycle-model-2022-02-08
+[^2]:pmbok-and-project-management-methodologies-2022-03-29
 
-[^3]:kanban-method-and-practices-2022-02-11
+[^3]:itil-service-management-framework-2022-03-30
 
-[^4]:lean-method-and-practices-2022-02-10
+[^4]:information-security-overview-2022-04-05
 
-[^5]:rapid-application-development-model-2022-02-08
+[^5]:agile-life-cycle-model-2022-02-08
 
-[^6]:scrum-method-and-practices-2022-02-10
+[^6]:kanban-method-and-practices-2022-02-11
 
-[^7]:waterfall-model-2022-02-08
+[^7]:lean-method-and-practices-2022-02-10
+
+[^8]:rapid-application-development-model-2022-02-08
+
+[^9]:scrum-method-and-practices-2022-02-10
+
+[^10]:waterfall-model-2022-02-08
 
 
