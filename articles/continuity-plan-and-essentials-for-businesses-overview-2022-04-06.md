@@ -14,10 +14,8 @@ description: 'The concept behind a continuity business plan is the fact that unf
     2.2. Disadvantages of BCM   
     2.3. The Difference Between BCM Planning and BCM Frameworks
 3. ##### Implementing BCM Framework 
-	3.1.	
-	3.2.
-4. ##### 
-5. ##### 
+    3.1. Types of Business Continuity Management (BCM)
+5. ##### Essentials for Businesses
 6. ##### 
 7. #####  
 8. ##### 
@@ -95,8 +93,43 @@ This one is a very important distinction, because eventhugh a BCM planning aims 
 
 ### Implementing BCM Framework 
 
-https://www.bmc.com/blogs/business-contunity-management-bcm/
-https://www.javatpoint.com/what-is-bcm
+This article here frames some steps necessaries to effectively implementing a BCM framework:
+
+1. **Strategy and Policies**: the process of continuity management is just a random response to some kind of event, whether natural, or economic, or political, etc. There is the need to have a clear and concise assessment of the organization, starting from its strategies.   
+    1.1. Business strategy   
+    1.2. Key stakeholders   
+    1.3. Organization culture    
+    1.4. Regulatory rules   
+    1.5. Risk Police: risks catalogue and its levels of severity   
+2. **Impact Analysis**: after having a clear picture of the organization and from some of the potential risks, it is necessary to make the analysis to understand how each part of the organization can cope with resources, risks, and recovery  of the operations.   
+    2.1. Determine what kind of risks and the damage each part of the operation are more likely to suffer.   
+    2.2. Resources necessary for each of them deal with the disruption.   
+    2.3. The timeline for recovering the systems at each case.
+3. **Budget**: for each of the highlighted areas in the planification and according to their own priority, it's necessary to spare the necessary funds for their recovery and continuity.
+4. **Recovery**: this is the actual set of recovery plans with tasks and processes that are put in order to deal with everything that was previously assessed.   
+    4.1. One important point present in most articles about this theme is the importance to have the a clear and direct planification, and not any set of generic  points or polices at this point.   
+    4.2. Check lists: the use of check lists could be a interesting tool that could bring some visual elements to the plans and to highlight the nature of urgency for the tasks and processes.
+5. **Tranning and Monitoring**
+6. **Perform Drills**: this is imprtant to test in action some of the results from the plans adopted.
+7. **Metrics related to the Continuity Plan**: it's also necessary to measure and compare the risks before and after the arrangements.    
+    7.1. So, testing and validating make the necessary adjustments to use resources where they are really needed.
+8. **Continous Improvement**: it's necessary to have a real picture from all the framework, to change where it is need, to update to new contexts and also to improve what as already working.
+    
+    
+#### Types of Business Continuity Management (BCM)
+
+From the Business Continuity Management (BCM) point of view, it is possible to have implemented specialized frameworks to work in certain specific circunstances:
+
+1. **Crisis Management Plan**: this version stablishes a plan for critical communications networks, like for workplace security, data, etc.
+2. **Disaster Recovery Plan**: this version aims for the recovery of crucial business processes, like information technology.
+3. **Business Resumption Plan**: theses are the kind of plans which aims individual features of the company to be recovered and put back in action.
+
+
+
+### Essentials for Businesses
+
+
+
 
 
 
@@ -116,9 +149,6 @@ https://www.javatpoint.com/what-is-bcm
 
 10 Cybersecurity Essentials for Businesses - Rutter.com - https://www.rutter-net.com/blog/10-cybersecurity-essentials-for-businesses
 
-
-ISO 22301 - Wikipedia - https://en.wikipedia.org/wiki/ISO_22301
-
 Planos de continuidade de negócio e serviços essenciais. 
 
 ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online - https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/
@@ -129,7 +159,10 @@ Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
 ### Further Reading
 
+[ISO 22301 - Wikipedia](https://en.wikipedia.org/wiki/ISO_22301)
+
 []()
+
 
 ### References
 
