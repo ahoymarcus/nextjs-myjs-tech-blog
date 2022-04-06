@@ -114,8 +114,8 @@ This article here frames some steps necessaries to effectively implementing a BC
 7. **Metrics related to the Continuity Plan**: it's also necessary to measure and compare the risks before and after the arrangements.    
     7.1. So, testing and validating make the necessary adjustments to use resources where they are really needed.
 8. **Continous Improvement**: it's necessary to have a real picture from all the framework, to change where it is need, to update to new contexts and also to improve what as already working.
-    
-    
+
+
 #### Types of Business Continuity Management (BCM)
 
 From the Business Continuity Management (BCM) point of view, it is possible to have implemented specialized frameworks to work in certain specific circunstances:
@@ -128,6 +128,25 @@ From the Business Continuity Management (BCM) point of view, it is possible to h
 
 ### Essentials for Businesses
 
+Just as it is impossible to eleminate 100% from risks the organizations are susceptible, during an event of disruption it should be nearly impossible to give all the resources need to all of the companies areas and markets.
+
+
+Because of this concrete need to concentrate the focus and the resources available, it should easier to priviledge some specific points or areas from the organization and try to maintain their operations, increasing the processes chances of success. 
+
+
+So, while facing this dilema, instead of choosing tasks randomly, it should be better to specify **essential services** from the organization, that is all those services that:
+
+1. **Have impact on the health and safety of individuals**
+2. **Services that are related to the company's business strategy plans**
+3. **Regulatory services**
+4. **And other services that are responsible for maintaining and repairing equipaments and systems**
+
+
+And then make a proper catalogue of these services:
+
+- **Priority A**: essentials services or functions.
+- **Priority B**: services that can be suspended for a short period of time.
+- **Priority C**: services that can be suspended for an extended period of time.
 
 
 
@@ -138,16 +157,9 @@ From the Business Continuity Management (BCM) point of view, it is possible to h
 
 
 
+MAINTENANCE OF
+ESSENTIAL SERVICES - Paho.org - https://www.paho.org/disasters/dmdocuments/RespToolKit_24_Tool%2016_MaintenanceofEssentialServices.pdf
 
-
-
-
-
-
-
-10 Security Essentials Every CIO Needs to Know - Security.Intelligence - https://securityintelligence.com/10-security-essentials-every-cio-needs-to-know/
-
-10 Cybersecurity Essentials for Businesses - Rutter.com - https://www.rutter-net.com/blog/10-cybersecurity-essentials-for-businesses
 
 Planos de continuidade de negócio e serviços essenciais. 
 
@@ -169,6 +181,8 @@ Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 [What is BCM? - JavaTPoint](https://www.javatpoint.com/what-is-bcm)
 
 [The Basics of Business Continuity Management (BCM) - Bcm.com](https://www.bmc.com/blogs/business-contunity-management-bcm/)
+
+[Business Continuity Checklist: 8 Boxes to Check During COVID-19 - Lightedge.com](https://www.lightedge.com/blog/business-continuity-checklist-8-boxes-to-check-during-covid-19/)
 
 
 []()
