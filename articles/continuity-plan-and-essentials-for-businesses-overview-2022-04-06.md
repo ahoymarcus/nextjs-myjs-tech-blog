@@ -157,17 +157,15 @@ And then make a proper catalogue of these services:
 
 
 
-MAINTENANCE OF
-ESSENTIAL SERVICES - Paho.org - https://www.paho.org/disasters/dmdocuments/RespToolKit_24_Tool%2016_MaintenanceofEssentialServices.pdf
 
 
-Planos de continuidade de negócio e serviços essenciais. 
+
+Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes).
+
 
 ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online - https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/
 
 Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
-
-
 
 ### Further Reading
 

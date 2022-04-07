@@ -227,7 +227,7 @@ CONHECIMENTOS BÁSICOS
 - [ ] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
 - [ ] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
 - [X] Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação. 
-- [ ] Planos de continuidade de negócio e serviços essenciais. 
+- [X] Planos de continuidade de negócio e serviços essenciais. 
 - [ ] Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes). 
 - [ ] Protocolos de autenticação OpenID Connect (OIDC), SSO, OAuth2 e SAML. 
 - [ ] Conhecimento da plataforma Keycloak. 
