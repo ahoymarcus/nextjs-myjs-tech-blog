@@ -2,7 +2,7 @@
 author: 'Yoric'
 title: 'Next Attraction'
 date: '2022-01-01'
-subject: 'security-articles'
+subject: 'something-articles'
 description: 'Soon a new presentation just around the block.'
 ---
 
