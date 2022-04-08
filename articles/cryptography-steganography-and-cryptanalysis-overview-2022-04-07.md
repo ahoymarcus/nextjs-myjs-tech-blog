@@ -12,7 +12,14 @@ description: 'Cryptography is the study and practice of techniques for secure co
 2. ##### Cryptography
     2.1. Cryptography Terminology    
     2.2. Cryptography Evolution Table
-3. ##### Cryptosystem
+3. ##### Traditional Cipher Systems
+    3.1. Ceasar Cipher    
+    3.2. Simple Substitution Cipher   
+    3.3. Playfair Cipher   
+    3.4. Venegere Cipher    
+    3.5. Transition Cipher
+4. ##### Modern Cipher System
+4. ##### Cryptosystem
     3.1. Examples of Symmetric Key Encryption Methods   
     3.2. Examples of Asymmetric Key Encryption Methods   
     3.3. Kerckhoff's Principle for Cryptosystem    
@@ -94,7 +101,10 @@ So, as it is explained in the table above, the early crytosystems were based on 
 Also, before the digital systems emerge, the cryptosystem worked direct at the message/text layer, meaning that the message and the so called ciphertext were one and the same.
 
 
-###### Ceasar Cipher
+
+### Traditional Cipher Systems
+
+#### Ceasar Cipher
 
 Also known as Shift Cipher, it is one historic example of a cryptosystem where to produce the cipher, the message was rearenged by shifitng the alphabetic occurrences a fixed number.
 
@@ -109,14 +119,14 @@ WXWRULDO
 ```
 
 
-###### Simple Substitution Cipher
+#### Simple Substitution Cipher
 
 In order to bring more security to the traditional Ceasar Cipher which has a limited possibilit of 26 alphabetic keys to change, the simple substitution cipher uses of permutation to allow permutqation of the letters in the alphabet.
 
 The gain here is that the permutaions possible are 26! (Factorial of 26) what would give a range of `4X10 ** 26`.
 
 
-###### Playfair Cipher
+#### Playfair Cipher
 
 This is a method that uses a table as a visual apparatus which makes the processes of encrypting and decrypting easier. In this case both parties communicating have the same alphabetic table schema that it is going to be used to create the cipher and to reverse to the plaintext.
 
@@ -124,7 +134,7 @@ This is a method that uses a table as a visual apparatus which makes the process
 It is also a method more secure than the classic cipher because it works with a 25x25 table which has a range of 625 possibilities.
 
 
-###### Vigenere Cipher
+#### Vigenere Cipher
 
 According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm), the Vigenere Cipher was designed by tweaking the standard Caesar Cipher to reduce the effectiveness of cryptanalysis on the ciphertext and make the cryptosystem more robust: `It is significantly more secure than a regular Caesar Cipher`.
 
@@ -141,7 +151,7 @@ There is also two variations to the basic Vigenere Cipher:
 `Let us say, we encrypt the name “point” with a one-time pad. It is a 5 letter text. To break the ciphertext by brute force, you need to try all possibilities of keys and conduct computation for (26 x 26 x 26 x 26 x 26) = 265 = 11881376 times. That’s for a message with 5 alphabets. Thus, for a longer message, the computation grows exponentially with every additional alphabet. This makes it computationally impossible to break the ciphertext by brute force.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm)
 
 
-###### Transition Cipher
+#### Transition Cipher
 
 This is another case of cryptosystem that uses a table as a visual auxiliary tool, where the secret key is a number which defines the number of columns in the table. 
 
