@@ -17,7 +17,7 @@ description: 'Cryptography is the study and practice of techniques for secure co
     3.2. Examples of Asymmetric Key Encryption Methods   
     3.3. Kerckhoff's Principle for Cryptosystem    
     3.4. Types of Attacks
-5. ##### Assumptions About the Security Environment
+5. ##### Assumptions About the Crytosystem Security Environment
     5.1. Details of the Encrypted Scheme    
     5.2. Availability of Plaintext and Ciphertext
 6. ##### Diffent Kinds of Cryptographic Attacks
@@ -86,7 +86,73 @@ Finally, **Steganography** is a similar method, except here there is not only th
 | CLASSIC CRYPTOGRAPHY | MODERN CRYPTOGRAPHY |    
 | --------------------------------------- | --------------------------------------- |    
 | It uses direct manipulation over the message, exchanging parts of it | It operates on binary bit sequences |   
-| It used some particular operation only known by the participants | I uses and relies on public known mathematical algorithms together with secret keys |   
+| It used some particular operation only known by the participants | It uses and relies on public known mathematical algorithms together with secret keys |   
+
+
+So, as it is explained in the table above, the early crytosystems were based on symmetric key encryption scheme, that is when both of the parties have knowledge of the same secret key. 
+
+Also, before the digital systems emerge, the cryptosystem worked direct at the message/text layer, meaning that the message and the so called ciphertext were one and the same.
+
+
+###### Ceasar Cipher
+
+Also known as Shift Cipher, it is one historic example of a cryptosystem where to produce the cipher, the message was rearenged by shifitng the alphabetic occurrences a fixed number.
+
+So, with the word 'tutorial' was to be ciphered by this process, using the number 3 which makes for the classic Ceasar Cipher:
+
+
+![ceasar-cipher-example-01](/images/articles/security/ceasar-cipher-example-01.png)
+
+
+```
+WXWRULDO
+```
+
+
+###### Simple Substitution Cipher
+
+In order to bring more security to the traditional Ceasar Cipher which has a limited possibilit of 26 alphabetic keys to change, the simple substitution cipher uses of permutation to allow permutqation of the letters in the alphabet.
+
+The gain here is that the permutaions possible are 26! (Factorial of 26) what would give a range of `4X10 ** 26`.
+
+
+###### Playfair Cipher
+
+This is a method that uses a table as a visual apparatus which makes the processes of encrypting and decrypting easier. In this case both parties communicating have the same alphabetic table schema that it is going to be used to create the cipher and to reverse to the plaintext.
+
+
+It is also a method more secure than the classic cipher because it works with a 25x25 table which has a range of 625 possibilities.
+
+
+###### Vigenere Cipher
+
+According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm), the Vigenere Cipher was designed by tweaking the standard Caesar Cipher to reduce the effectiveness of cryptanalysis on the ciphertext and make the cryptosystem more robust: `It is significantly more secure than a regular Caesar Cipher`.
+
+
+The site also states that historically this cipher was used to protect sensitive political and military information, and that it was refered as the `unbreakable cipher` due to the difficulty it posed to the cryptoanalysis.
+
+
+There is also two variations to the basic Vigenere Cipher:
+
+1. **Vernam Cipher**
+2. **One-time pad**
+
+
+`Let us say, we encrypt the name “point” with a one-time pad. It is a 5 letter text. To break the ciphertext by brute force, you need to try all possibilities of keys and conduct computation for (26 x 26 x 26 x 26 x 26) = 265 = 11881376 times. That’s for a message with 5 alphabets. Thus, for a longer message, the computation grows exponentially with every additional alphabet. This makes it computationally impossible to break the ciphertext by brute force.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm)
+
+
+###### Transition Cipher
+
+This is another case of cryptosystem that uses a table as a visual auxiliary tool, where the secret key is a number which defines the number of columns in the table. 
+
+
+The plaintext is then written horizontally and produces the necessary number of rows to extinguish the plaintext. Then the ciphertext is created by concatenating the information from each column starting from the left.
+
+
+Finallt, the receiver of the ciphertext who already knows the number of columns, will define the number of rows by diving the total number ciphertext alphabets by the key secret number.
+
+
+Then, once the receiver prepared the table, he will lay the chipertext in the columns, top to bottom, starting from the left.
 
 
 
@@ -194,9 +260,34 @@ Here, it is known that the plaintext is encrypted into the ciphertext, and that 
 11. **Fault Analysis Attacks**: in these attacks errors are introduced in the cryptosystem so the attacker can study them to get useful information about the system.
 
 
-### Traditional Ciphers
+### Modern Symmetric Key Encryption
 
-https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm
+https://www.tutorialspoint.com/cryptography/modern_symmetric_key_encryption.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
