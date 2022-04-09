@@ -127,7 +127,7 @@ WXWRULDO
 
 In order to bring more security to the traditional Ceasar Cipher which has a limited possibilit of 26 alphabetic keys to change, the simple substitution cipher uses of permutation to allow permutqation of the letters in the alphabet.
 
-The gain here is that the permutaions possible are 26! (Factorial of 26) what would give a range of `4X10 ** 26`.
+The gain here is that the permutaions possible are 26! (Factorial of 26) what would give a range of `4 x 10 ** 26`.
 
 
 #### Playfair Cipher
@@ -547,7 +547,7 @@ Atacks can be of two forms depending on the action performed by the perpetrator:
 3. **Chosen Plaintext Attack (CPA)**: In this method, the attacker has the text of his choice encrypted. So he has the ciphertext-plaintext pair of his choice. This simplifies his task of determining the encryption key. An example of this attack is differential cryptanalysis applied against block ciphers as well as hash functions. A popular public key cryptosystem, RSA is also vulnerable to chosen-plaintext attacks.
 4. **Dictionary Attack**: this kind of attack can have many variants, but they all imply the use of a kind of dictionary that correlates plaintexts and its correlated ciphertexts.
 5. **Brute Force Attack (BFA)**: in this attack the perpetrator tries to fill all the possible outcomes to determine the secret key.   
-    5.1. For example, a 8 bits long key would give a number of `2 ** 8 = 256`possibilities.   
+    5.1. For example, a 8 bits long key would give a number of `2 ** 8 = 256` possibilities.   
     5.2. Since the attacker knows ciphertext and the algorithm, he would try each of the 256 possibilities to break the encryption.
 6. **Birthday Attack**: this attack is similar to the brute force attack, except it is used against the cryptographic hash function.    
     6.1. Because the hash function also produces values in a range of possibilities, the attack test them all to break the cryptosystem.   
