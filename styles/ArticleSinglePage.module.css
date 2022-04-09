@@ -86,14 +86,14 @@
 }
 
 .articleSection h3 {
-	margin: 105px 0px 0px;
-	font-size: 1.8rem;
+	margin: 110px 0px 0px;
+	font-size: 2rem;
 }
 
 .articleSection h4 {
 	font-size: 1.4rem;
 	color: hsl(209deg 69% 36%);
-	margin-top: 130px;
+	margin-top: 165px;
 }
 
 .articleSection h5 {
@@ -104,7 +104,7 @@
 .articleSection h6 {
 	font-size: 1.1rem;
 	text-align: left;
-	margin-top: 155px;
+	margin-top: 180px;
 }
 
 .articleSection p {
