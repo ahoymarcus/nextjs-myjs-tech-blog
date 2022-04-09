@@ -20,15 +20,17 @@ description: 'Cryptography is the study and practice of techniques for secure co
     3.5. Transition Cipher
 4. ##### Kerckhoff's Principles for a Cryptosystem
 5. ##### Modern Cipher Systems
-    5.1. Symmetric Key Encryption Methods   
-    5.2. Asymmetric Key Encryption Methods
+    5.1. Block Cipher Modes of Operation   
+    5.2. Symmetric Key Encryption Methods   
+    5.3. Asymmetric Key Encryption Methods
 6. ##### Assumptions About the Crytosystem Security Environment
     6.1. Details of the Encrypted Scheme    
-    6.2. Availability of Plaintext and Ciphertext
+    6.2. Availability of Plaintext and Ciphertext   
+    6.3. Cryptography Hash Functions
 7. ##### Cryptographic Attacks
     7.1. Modes of Attacks    
     7.2. Diffent Kinds of Cryptographic Attacks
-8. ##### 
+8. #####
 9. ##### Further Reading
 10. ##### References
 
@@ -205,6 +207,17 @@ In modern ciphersystems data is represented digitally by strings of binary digit
 
 
 
+#### Block Cipher Modes of Operation
+
+This is a very technical subject about the operation of a block cipher. And as it is stated at the cryptosystem tutorial from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/block_cipher_modes_of_operation.htm), these are procedural rules for designing generic block cipher, which in term provides different modes of results for the encryption process, including security.
+
+
+###### More about Block Cipher Modes of Operation
+- [Block Cipher Modes of Operation - TutorialsPoint](https://www.tutorialspoint.com/cryptography/block_cipher_modes_of_operation.htm)
+[Block Cipher modes of Operation - GeekforGeeks](https://www.geeksforgeeks.org/block-cipher-modes-of-operation/)
+
+
+
 #### Symmetric Key Encryption Methods
 
 ###### Block Cipher Schemes
@@ -378,21 +391,6 @@ The elliptic curve cryptography (ECC) is a term used to describe cryptographic t
 
 
 
-### Data Integrity in Cryptography
-
-https://www.tutorialspoint.com/cryptography/data_integrity_in_cryptography.htm
-
-
-
-
-
-
-
-
-
-
-
-
 ### Assumptions About the Security Environment
 
 #### Details of the Encrypted Scheme
@@ -415,6 +413,96 @@ Here, it is known that the plaintext is encrypted into the ciphertext, and that 
 1. The attacker influences the sender to convert plaintext of his choise and obtains the ciphertext.
 2. The raceiver may divulge the plaintext to the attacker inadvertenly. The attacker has access to corresponding ciphertext gathered from open channel.
 3. In a public-key cryptosystem, the encryption key is in open domain and is known to any potential attacker. Using this key, he can generate pairs of corresponding plaintexts and ciphertexts.
+
+
+
+#### Cryptography Hash Functions
+
+Hash functions, also known as compression functions, are a very common practice among information security applications, which are mathmatical functions that converts a numerical input value into another compressed numerical value.
+
+
+In a hash function the inputs are of an arbitrary length, but the output is always of fixed length. Also, these values returned by the hash function are called a **message digest** or simply **hash values**.
+
+
+###### Features of Hash Functions
+1. **Fixed Length Output (Hash Value)**:   
+    1.1. This process of converts data of arbitrary length into fixed length is called hashing the data.   
+    1.2. In general, the hash is much smaller that the input data, hence hash fucntions are sometimes called **compression functions**.   
+    1.3. And since a hash is a smaller representation of  larger data, it is also refered as digest.   
+    1.4. Hash function with n bit output is referred to as an n-bit hash function. Popular hash functions generate values between 160 and 512 bits.
+2. **Efficiency of Operation**:   
+    2.1. Generally for any hash function h with input x, computation of h(x) is a fast operation.   
+    2.2. Computationally hash functions are much faster than a symmetric encryption.
+
+
+###### Properties of Hash Functions
+
+In order to be an effective cryptographic tool, the hash function should have these properties:
+
+1. **Pre-Image Resistance**:  
+    1.2. This property means that is should be computationally hard to reverse a hash function.   
+    1.2. In other words, if a hash function 'h' produced a hash value 'z', then it should be a difficult process to find any input value 'x' that hashes to 'z'.   
+    1.3. This property protects against an attacker who only has a hash value and is trying to find the input.
+2. **Second Pre-Image Resistance**:  
+    2.1. This property means that a given input and its hash value, it should be hard to find a different input with the same hash.    
+    2.2. In other words, if a hash function 'h' for an input 'x' produces hash value h(x), then it should be difficult to find any other input value 'y' such that `h(y) = h(x)`.   
+    2.3. This property of hash function protects against an attacker who has an input value and its hash, and wants to substitute different value as legitimate value in place of the original input value.
+3. **Collision Resistance**:   
+    3.1. This property means it should be hard to find two different inputs of any length that result in the same hash. This property is also referred to as collision free hash function.   
+    3.2. In other words, for a hash function 'h', it is hard to find any two different inputs 'x' and 'y' such that `h(x) = h(y)`.   
+    3.3. Since, hash function is compressing function with fixed hash length, it is impossible for a hash function not to have collisions. This property of collision free only confirms that these collisions should be hard to find.   
+    3.4. This property makes it very dificult for an attacker to find two input vlaues with the same hash.   
+    3.5. Also, if a hash function is collision-resistant them it is second pre-image resistant.
+
+
+###### Understanding the Design of Hashing Algorithms
+
+By general design, the hashing algorithm operates on `two fixed-size blocks of data` in a sequential way until the data is extinguished and the hash code then is returned. See also that in these sequential process the 'hash furnction' result of one step will be the the input for the next step.
+
+
+The site also says that the typical size for the data block should be from 126 bits to 512 bits, and that through the entire process, the data being digested will change significantly:
+
+`Since, the hash value of first message block becomes an input to the second hash operation, output of which alters the result of the third operation, and so on. This effect, known as an avalanche effect of hashing.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptography_hash_functions.htm)
+
+
+###### Popular Hash Functions
+
+1. **Message Digest (MD)**: this was a very popular and widely used hash function for quite a lot of years.   
+    1.1. It's a 128 bits hash function, which was adoted as a Internet Standard RFC1321.    
+    1.2.  The MD family comprises of hash functions: MD2, MD4, MD5, and MD6.   
+    1.3. MD5, for example, has been widely used in software to provide assurance about integrity of transferred file. Thus, the servers can provide a pre-computed MD5 checksum for the files, so that the user can compare the checksum of the downloaded file to it.    
+    1.4. In 2004, using a computer cluster an analytical attack was reported to be successful in only an hour. Then, this hash function is no longer recommended for use.
+2. **Secure Hash Function (SHA)**: the family of SHA comprise of 4 algorithms: SHA-0, SHA-1, SHA-2, and SHA-3.   
+    2.1. Ther original version is SHA-0, a 160 bits hash function, published by the National Institute of Standards and Technology (NIST) in 1993. It had some weakness and didn' become popular.    
+    2.2. The SHA-1 is the most widely used of the SHA family. It is employed in several widely used applications and protocols including Secure Socket Layer (SSL).    
+    2.3. In 2005, a method was found for uncovering collisions for SHA-1 within a practical timeframe, making it also another doubtful hash function.   
+    2.4. The SHA-2 has 4 specimen (SHA-224, SHA-256, SHA-384, and SHA-512), which vary according the number of bits in their hash value. And there has necer been reported an successful attack on a SHA-2 function.   
+    2.5. In 2012 the National Institute of Standards and Technology chose the **Keccak algorithm**  to be its new SHA-3 standard.
+3. **RIPEMD**: the name is a acronym for RACE Integrity Primitives Evaluation Message Digest. It was developed by the open research community, and it is generally known as a family of European hash functions.     
+    3.1. The set includes, beside the RIPEMD, also the RIPEMD-128, and RIPEMD-160. There are also 256 bits and 320 bits version of the algorithm.   
+    3.2. The original RIPEMD is based upon MD$, but was found to provide questionable security. Then the RIPEMD-128 came as a quick fix for the vulnerabilities.    
+    3.3. The RIPEMD-160 is an improved version and the most widely used version in the family. Finally, the 256 bits and 320 bits versions, though they reduce the chance of accidental collision, they do not provide higher levels of security when compared with the versions RIPEMD-128 and RIPEMD-160.
+4. **Whirlpool**: this is a 512 bits hash function.   
+    4.1. It is derived from the modified version of the Advanced Encryption Standard (AES). And one of its designers, Vicent Rijmen, was also a co-creator of the AES.   
+    4.2. Three versions of the Whirlpool have been released: WHIRLPOOL-0, WHIRLPOOL- T, and WHIRLPOOL.
+
+
+
+###### Applications of Hash Functions
+
+There a 2 direct applications for hash functions based on its cryptographic properties:
+
+1. **Password Storage**: here the organization responsible for the password stores it as a hash value.   
+    1.1. An intruder can only see the hashes of passwords, and he can neither logon using hash nor can he derive the password from hash value since hash functions possesses the property of per-image resistance.
+2. **Data Integrity Check**: the hash function generates checksums on data files, providing assurance about the correctness of the data.   
+    2.1. Beware: eventhough the 'integrity check' is capable of providing assessment on changes made to the original file, it is cannot provide assurance about the data originality.   
+    2.2. That means an attacker could simply change the entire original file data and compute a new hash to be sent over to the receirve, instead of changing the original data.   
+    2.3. Thus, this chechsum validation is only useful to be used when the user is sure about the originality of the data file in store.
+
+
+
+
+
 
 
 ### Cryptographic Attacks
