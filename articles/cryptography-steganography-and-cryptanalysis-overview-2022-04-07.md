@@ -18,16 +18,16 @@ description: 'Cryptography is the study and practice of techniques for secure co
     3.3. Playfair Cipher   
     3.4. Venegere Cipher    
     3.5. Transition Cipher
-4. ##### Modern Cipher System
-4. ##### Cryptosystem
-    3.1. Examples of Symmetric Key Encryption Methods   
-    3.2. Examples of Asymmetric Key Encryption Methods   
-    3.3. Kerckhoff's Principle for Cryptosystem    
-    3.4. Types of Attacks
+4. ##### Modern Cipher Systems
+    4.1. Symmetric Key Encryption Methods   
+    4.2. Asymmetric Key Encryption Methods   
+    4.3. Kerckhoff's Principles for Cryptosystem    
 5. ##### Assumptions About the Crytosystem Security Environment
     5.1. Details of the Encrypted Scheme    
     5.2. Availability of Plaintext and Ciphertext
-6. ##### Diffent Kinds of Cryptographic Attacks
+6. ##### Cryptographic Attacks
+        6.1. Modes of Attacks   
+        6.2. Diffent Kinds of Cryptographic Attacks
 7. #####  
 8. ##### 
 9. ##### Further Reading
@@ -104,6 +104,9 @@ Also, before the digital systems emerge, the cryptosystem worked direct at the m
 
 ### Traditional Cipher Systems
 
+A cryptosystem, also called a 'cipher system', is a implementation for a system which uses cryptographic techniques to secure it features.
+
+
 #### Ceasar Cipher
 
 Also known as Shift Cipher, it is one historic example of a cryptosystem where to produce the cipher, the message was rearenged by shifitng the alphabetic occurrences a fixed number.
@@ -166,21 +169,51 @@ Then, once the receiver prepared the table, he will lay the chipertext in the co
 
 
 
-### Cryptosystem
+### Modern Cipher System
 
-A cryptosystem, also called a 'cipher system', is a implementation for a system which uses cryptographic techniques to secure it features.
+In modern ciphersystems data is represented digitally by strings of binary digits (bits), instead of the direct manipulation over the message. And the ciphersystem can be divided into 2 groups depending on the type of process used to process the strings by the information system:
 
-
-#### Examples of Symmetric Key Encryption Methods
-
-1. **Digital Encryption Standard (DES)**
-2. **Triple-DES (3DES)**
-3. **IDEA**
-4. **BLOWFISH**
+1. **Block Ciphers**: in this scheme the plain binary text is processed in blocks of bits, in a series of operations until there is no more binary text to be divided into blocks.    
+    1.1. The number of bits in the blocks are fixed.   
+    1.2. DES method, for example, uses blocks of 64 bits, while AES method uses blocks of 128 bits.
+2. **Stream Ciphers**: this process uses works direct with the bits that are disposed in a stream of information.    
+    2.1. As the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm) states a bit stream could be thought as  one bit block size.
 
 
+`A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of same size. The size of block is fixed in the given scheme. The choice of block size does not directly affect to the strength of encryption scheme. The strength of cipher depends up on the key length.`  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/traditional_ciphers.htm)
 
-#### Examples of Asymmetric Key Encryption Methods
+
+
+#### Symmetric Key Encryption Methods
+
+
+###### Block Cipher Schemes
+
+Bellow, some examples of symmetric key encryption methods:
+
+1. **Digital Encryption Standard (DES)**: from the 1990s, it is now considered 'broken' as a block cipher, due primarily to its small size key.
+2. **Triple-DES (3DES)**: it is a variation from the DES scheme, which is still in use, but that has considerable disadvantages of performance compared to others block ciphers available.
+3. **IDEA**: it a sufficiently strong block cipher with blocks of 64 bits size and a key of 128 bits. But this scheme has restricted use due to patent issues.
+4. **BLOWFISH**: it has a block of 64 bits.
+5. **TWOFISH**: it is a scheme based on the Blowfish block sceme, but using blocks of 128 bits and a key of variable length.   
+    5.1. It is a AES finalist.
+6. **SERPENT**: it is a block cipher with a block of 128 bits size and a key whose length may vary from 128, 192, 256 bits.
+    6.1. It is also a AES finalist.
+
+
+###### DES Analysis
+
+According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the DES scheme satisfies both the desired properties of block cipher, which in turn makes the cipher very strong:
+
+1. **Avalnache effect**: a small change in plaintext results in a extensive change in the ciphertext.
+2. **Completeness**: each bit of ciphertext depends on many bits of plaintext.
+
+
+`During the last few years, cryptanalysis have found some weaknesses in DES when key selected are weak keys. These keys shall be avoided. DES has proved to be a very well designed block cipher. There have been no significant cryptanalytic attacks on DES other than exhaustive key search.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm)
+
+
+
+#### Asymmetric Key Encryption Methods
 
 **Coming Soon...***
 
@@ -190,7 +223,7 @@ A cryptosystem, also called a 'cipher system', is a implementation for a system 
 
 
 
-#### Kerckhoff's Principle for Cryptosystem
+#### Kerckhoff's Principles for Cryptosystem
 
 In the turial about Cryptography from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the site brings a example from an important development to the theory and study of cryptography by a 19th century Dutch cryptographer by the name A. Kerckhoff.
 
@@ -211,18 +244,6 @@ There are 6 principles by Kerckhoff:
 `The second rule is currently known as Kerckhoff principle. It is applied in virtually all the contemporary encryption algorithms such as DES, AES, etc. These public algorithms are considered to be thoroughly secure. The security of the encrypted message depends solely on the security of the secret encryption key. Keeping the algorithms secret may act as a significant barrier to cryptanalysis. However, keeping the algorithms secret is possible only when they are used in a strictly limited circle.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm)
 
 
-
-#### Types of Attacks
-
-Atacks can be of two forms depending on the action performed by the perpetrator:
-
-1. **Passive Attacks**: the aims of this action is to gain unauthorized access to information, so they don't aim to taint the information or to disrupt the communication channel.   
-    1.1. For example, eavesdropping.
-2. **Active Attacks**: this action aims to apply some distupt process to the system.   
-    2.1. Change the information.   
-    2.2. Public disclosure the information.    
-    2.3. Delete the information.   
-    2.4. Denial of access to information for the legitimate users (denial of service).
 
 
 ### Assumptions About the Security Environment
@@ -247,6 +268,21 @@ Here, it is known that the plaintext is encrypted into the ciphertext, and that 
 1. The attacker influences the sender to convert plaintext of his choise and obtains the ciphertext.
 2. The raceiver may divulge the plaintext to the attacker inadvertenly. The attacker has access to corresponding ciphertext gathered from open channel.
 3. In a public-key cryptosystem, the encryption key is in open domain and is known to any potential attacker. Using this key, he can generate pairs of corresponding plaintexts and ciphertexts.
+
+
+### Cryptographic Attacks
+
+#### Modes of Attacks
+
+Atacks can be of two forms depending on the action performed by the perpetrator:
+
+1. **Passive Attacks**: the aims of this action is to gain unauthorized access to information, so they don't aim to taint the information or to disrupt the communication channel.   
+    1.1. For example, eavesdropping.
+2. **Active Attacks**: this action aims to apply some distupt process to the system.   
+    2.1. Change the information.   
+    2.2. Public disclosure the information.    
+    2.3. Delete the information.   
+    2.4. Denial of access to information for the legitimate users (denial of service).
 
 
 ### Diffent Kinds of Cryptographic Attacks
