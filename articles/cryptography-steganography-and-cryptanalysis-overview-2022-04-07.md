@@ -20,15 +20,14 @@ description: 'Cryptography is the study and practice of techniques for secure co
     3.5. Transition Cipher
 4. ##### Modern Cipher Systems
     4.1. Symmetric Key Encryption Methods   
-    4.2. Asymmetric Key Encryption Methods   
-    4.3. Kerckhoff's Principles for Cryptosystem    
-5. ##### Assumptions About the Crytosystem Security Environment
-    5.1. Details of the Encrypted Scheme    
-    5.2. Availability of Plaintext and Ciphertext
-6. ##### Cryptographic Attacks
-        6.1. Modes of Attacks   
-        6.2. Diffent Kinds of Cryptographic Attacks
-7. #####  
+    4.2. Asymmetric Key Encryption Methods
+5. ##### Kerckhoff's Principles for a Cryptosystem
+6. ##### Assumptions About the Crytosystem Security Environment
+    6.1. Details of the Encrypted Scheme    
+    6.2. Availability of Plaintext and Ciphertext
+7. ##### Cryptographic Attacks
+    7.1. Modes of Attacks    
+    7.2. Diffent Kinds of Cryptographic Attacks
 8. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -111,7 +110,7 @@ A cryptosystem, also called a 'cipher system', is a implementation for a system 
 
 Also known as Shift Cipher, it is one historic example of a cryptosystem where to produce the cipher, the message was rearenged by shifitng the alphabetic occurrences a fixed number.
 
-So, with the word 'tutorial' was to be ciphered by this process, using the number 3 which makes for the classic Ceasar Cipher:
+So, with the word 'tutorial' to be ciphered by this process and using the number 3 as key, which makes it for the classic Ceasar Cipher:
 
 
 ![ceasar-cipher-example-01](/images/articles/security/ceasar-cipher-example-01.png)
@@ -187,6 +186,20 @@ In modern ciphersystems data is represented digitally by strings of binary digit
 #### Symmetric Key Encryption Methods
 
 
+###### The Feistel Block Cipher
+
+The Feistel Cipher is not a specifif scheme of block cipher, but it is a design model which servers as model for the implementation of many block ciphers, including the traditions DES block scheme.
+
+In the Feistel cipher design the same algorithm works both the encrypting and the decrypting, where the task is based on multiple rounds of processing of the plaintext, where in each round there is two steps:
+
+1. **Substitution step**
+2. **Permutation step**
+
+
+Observe that the number of rounds affects both security and performance, therefore it should be thought in terms of implementation as a `efficiency-security tradeoff.
+
+
+
 ###### Block Cipher Schemes
 
 Bellow, some examples of symmetric key encryption methods:
@@ -213,17 +226,93 @@ According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptograp
 
 
 
+###### Triple DES
+
+According to  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), despite being a important cryptographic scheme, DES started to raise some disconfort among users, specially the `speed of exhaustive key searchs`. 
+
+
+But for economic and compatibility reasons, the decision was to change some aspect of its use, than to complete abandon the DES scheme. And it was creates two variants:
+
+1. **3-key Triple DES (#TDES)**
+2. **2-key Triple DES (2TDES)**
+
+
+The TDES has a design of a Triple DES keys architecture, which is encrypt-decypt-encrypt process, and eventhough it is a more secure system than the simple DES, it is also much a much slower process.
+
+
+Another interesting note is that because of the Triple DES scheme, the TDES can provide backward compatibility with DES by simply repeating all the triple key scheme architecture with the same value.
+
+
+Finally, the 2-key TDES is a variation that instead of adding formally a third key, it simply repeates the same first key at the end of the process.
+
+
+###### The Advanced Encryption Standard (AES)
+
+The most popular symmetric implementaion og scheme today is the adavanced encryption standard (AES), which is at least 6 times faster then DES.
+
+Because of the small size key and with the increasing raise of the computational power, DES began to be considered vulnerable. At first, the Tripe DES was made to overcome this problem, and eventhough it brought more security to the DES scheme, it was also much slower.
+
+
+The features of AES are as follows:
+
+1. **Symmetric key symmetric block cipher**
+2. **128-bit data, 128/192/256-bit keys**
+3. **Strong and faster than Tripe-DES**
+4. **Provide full specification and design details**
+
+
+According to the tutorial in the [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the AES scheme doesn't use the Feistel cipher architecture.
+
+Instead, it is a iterative algorithm, based on 'substitution-permutation network', which is comprised of a series of linked operations, `some of which involve replacing inputs by specifc outputs (substitutions) and other involve shuffling bits around (permutations)`.
+
+
+Though it is singned as a 128 bits process, its computations uses bytes instead, and the 128 bits block is treated as 16 bytes, which are arranged in 4 columns and 4 rows for processing the data as a matrix.
+
+
+Another difference is in the number of rounds for AES that depends on the size of the key:
+
+1. **128 bit keys**: 10 rounds
+2. **192 bit keys**: 12 rounds
+3. **256 bit keys**: 14 rounds
+
+
+Another resulting characteristic of the AES algorithm is the necessity to have different algorithms for encryption and decryption, different from what happens with the Feistel Cipher.
+
+
+Finally, till this date there was no practical cryptography attack against AES that has been discovered.
+
+
 #### Asymmetric Key Encryption Methods
 
 **Coming Soon...***
 
+Public Key Encryption
+https://www.tutorialspoint.com/cryptography/public_key_encryption.htm
 
 
 
 
 
 
-#### Kerckhoff's Principles for Cryptosystem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Kerckhoff's Principles for Cryptosystem
 
 In the turial about Cryptography from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the site brings a example from an important development to the theory and study of cryptography by a 19th century Dutch cryptographer by the name A. Kerckhoff.
 
@@ -242,7 +331,6 @@ There are 6 principles by Kerckhoff:
 
 
 `The second rule is currently known as Kerckhoff principle. It is applied in virtually all the contemporary encryption algorithms such as DES, AES, etc. These public algorithms are considered to be thoroughly secure. The security of the encrypted message depends solely on the security of the secret encryption key. Keeping the algorithms secret may act as a significant barrier to cryptanalysis. However, keeping the algorithms secret is possible only when they are used in a strictly limited circle.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm)
-
 
 
 
@@ -306,26 +394,6 @@ Atacks can be of two forms depending on the action performed by the perpetrator:
 11. **Fault Analysis Attacks**: in these attacks errors are introduced in the cryptosystem so the attacker can study them to get useful information about the system.
 
 
-### Modern Symmetric Key Encryption
-
-https://www.tutorialspoint.com/cryptography/modern_symmetric_key_encryption.htm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -347,6 +415,10 @@ https://www.tutorialspoint.com/cryptography/modern_symmetric_key_encryption.htm
 Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes).
 
 ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online - https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/
+
+Características dos algoritmos RSA, AES, SSL e SHA-256. 
+
+Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture).
 
 Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
