@@ -12,16 +12,16 @@ description: 'Cryptography is the study and practice of techniques for secure co
 2. ##### Cryptography
     2.1. Cryptography Terminology    
     2.2. Cryptography Evolution Table
-3. ##### Traditional Cipher Systems
+3. ##### Historical Cipher Systems
     3.1. Ceasar Cipher    
     3.2. Simple Substitution Cipher   
     3.3. Playfair Cipher   
     3.4. Venegere Cipher    
     3.5. Transition Cipher
-4. ##### Modern Cipher Systems
-    4.1. Symmetric Key Encryption Methods   
-    4.2. Asymmetric Key Encryption Methods
-5. ##### Kerckhoff's Principles for a Cryptosystem
+4. ##### Kerckhoff's Principles for a Cryptosystem
+5. ##### Modern Cipher Systems
+    5.1. Symmetric Key Encryption Methods   
+    5.2. Asymmetric Key Encryption Methods
 6. ##### Assumptions About the Crytosystem Security Environment
     6.1. Details of the Encrypted Scheme    
     6.2. Availability of Plaintext and Ciphertext
@@ -101,7 +101,7 @@ Also, before the digital systems emerge, the cryptosystem worked direct at the m
 
 
 
-### Traditional Cipher Systems
+### Historical Cipher Systems
 
 A cryptosystem, also called a 'cipher system', is a implementation for a system which uses cryptographic techniques to secure it features.
 
@@ -168,6 +168,28 @@ Then, once the receiver prepared the table, he will lay the chipertext in the co
 
 
 
+### Kerckhoff's Principles for Cryptosystem
+
+In the turial about Cryptography from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the site brings a example from an important development to the theory and study of cryptography by a 19th century Dutch cryptographer by the name A. Kerckhoff.
+
+
+And in his assessment for a secure cryptography system, he says that as long as the 'secret key' was kept safe, the system should be completely secure, even when everything else from it was public known.
+
+
+There are 6 principles by Kerckhoff:
+
+1. The cryptosystem should be unbreakale practically, if not mathematically.
+2. Falling of the cryptosystem in the hands of an intruder should not lead to any compromise of the system.
+3. The key should be easily communicable, memorable, and changeble.
+4. The ciphertext should be transmissible by telegraph, that is, any such unsecure channel.
+5. The encryption apparatus and documents should be portable and operable by a single person.
+7. Finally, it is necessary that the system be easy to use, requiring neither mental strain nor the knowledge of a long series of rules to observe.´
+
+
+`The second rule is currently known as Kerckhoff principle. It is applied in virtually all the contemporary encryption algorithms such as DES, AES, etc. These public algorithms are considered to be thoroughly secure. The security of the encrypted message depends solely on the security of the secret encryption key. Keeping the algorithms secret may act as a significant barrier to cryptanalysis. However, keeping the algorithms secret is possible only when they are used in a strictly limited circle.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm)
+
+
+
 ### Modern Cipher System
 
 In modern ciphersystems data is represented digitally by strings of binary digits (bits), instead of the direct manipulation over the message. And the ciphersystem can be divided into 2 groups depending on the type of process used to process the strings by the information system:
@@ -185,21 +207,6 @@ In modern ciphersystems data is represented digitally by strings of binary digit
 
 #### Symmetric Key Encryption Methods
 
-
-###### The Feistel Block Cipher
-
-The Feistel Cipher is not a specifif scheme of block cipher, but it is a design model which servers as model for the implementation of many block ciphers, including the traditions DES block scheme.
-
-In the Feistel cipher design the same algorithm works both the encrypting and the decrypting, where the task is based on multiple rounds of processing of the plaintext, where in each round there is two steps:
-
-1. **Substitution step**
-2. **Permutation step**
-
-
-Observe that the number of rounds affects both security and performance, therefore it should be thought in terms of implementation as a `efficiency-security tradeoff.
-
-
-
 ###### Block Cipher Schemes
 
 Bellow, some examples of symmetric key encryption methods:
@@ -214,7 +221,20 @@ Bellow, some examples of symmetric key encryption methods:
     6.1. It is also a AES finalist.
 
 
-###### DES Scheme Block
+###### The Feistel Block Cipher
+
+The Feistel Cipher is not a specifif scheme of block cipher, but it is a design model which servers as model for the implementation of many block ciphers, including the traditions DES block scheme.
+
+In the Feistel cipher design the same algorithm works both the encrypting and the decrypting, where the task is based on multiple rounds of processing of the plaintext, where in each round there is two steps:
+
+1. **Substitution step**
+2. **Permutation step**
+
+
+Observe that the number of rounds affects both security and performance, therefore it should be thought in terms of implementation as a `efficiency-security tradeoff.
+
+
+###### The DES Scheme Block
 
 According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the DES scheme satisfies both the desired properties of block cipher, which in turn makes the cipher very strong:
 
@@ -226,7 +246,7 @@ According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptograp
 
 
 
-###### Triple DES Scheme Block
+###### The Triple DES Scheme Block
 
 According to  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), despite being a important cryptographic scheme, DES started to raise some disconfort among users, specially the `speed of exhaustive key searchs`. 
 
@@ -282,29 +302,85 @@ Another resulting characteristic of the AES algorithm is the necessity to have d
 Finally, till this date there was no practical cryptography attack against AES that has been discovered.
 
 
+
 #### Asymmetric Key Encryption Methods
 
-**Coming Soon...***
-
-Public Key Encryption
-https://www.tutorialspoint.com/cryptography/public_key_encryption.htm
+Also known as the Public Key Cryptography, this is a relatively new concept, thus there isn't any known historical use of a public-key cryptography. And to it work, the two parties willing to engage in communication have to generate the pairs of keys.
 
 
+And as the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_encryption.htm) says, the method of symmetric cryptography is very well suited for using inside organizations, like financial institutions, or agencies, like the military, but it is not suited fot the use in a open environment like the Internet.
 
 
+It's not a practical solution for management of the secret key, and as its more important features there are:
 
-
-
-
-
-
-
-
-
-
+1. **Different Keys are used for Encryption and Decreption**
+2. **Each receiver has its own unique decryption key, generally refered as Private Key**
+3. **The parties involved in the communication have to publish their encription key, refered as Public Key**
+4. **For preventing spoofing by adversaries trying to pass as the receiver, there has to be some assurance of the authenticity of the Public Key**.   
+    4.1. Generally, this type of cryptosystem involves trusted third party which certifies that a particular public key belongs to a specific person or entity only.
+5. **The encryption algorithm is complex enough to prohibit attacker from deducing the plaintext from the ciphertext and the encryption (public) key**
+6. **Though Private and Public Keys are related mathematically, it is not feasible to calculate the private key from the public key.**   
+    6.1. In fact, a important part of the asymmetric ecossystem is the design of the relationship between the two keys.
 
 
 
+###### The RSA Cryptosystem
+
+The RSA cryptosystem is one of the earliest implementations and remains as the most employed cryptosystem today. It's name comes from the first letter of its developers: **R**ivest, **S**hamir, and **A**dleman.
+
+
+According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_encryption.htm),One interesting characteristic from the RSA algorithm is that it does not work with strings, like the symmetric cryptosystem does, but it operates on numbers, and the plaintext has to be represented as a series of numbers less than n.
+    
+
+- **RSA Features**:
+1. **Security**: Its security depends on the strenghs of the two separate functions.
+2. **Its Strengh**: the RSA cryptosystem is dependent on the practical difficulty of factoring very large numbers.   
+    2.1. If the numbers 'p' and 'q' are not large primes, and/or chosen key 'e' is a small number, its strengh reduces drastically.
+    2.1. It is the most popular public-key cryptosystem of this kind.
+3. **Encryption function**: it is a one-way function for converting plaintext into ciphertext and can only be reversed with the knowledge of the private key.
+4. **The Key Generation**: the difficulty of determining a private key from an RSA public key is equivalent to factoring the modulus n. An attacker thus cannot use knowledge of an RSA public key to determine an RSA private key, unless he can factor n.    
+    4.1. It is also a one way function.  
+    4.2. Going from p & q values to modulus n is easy, but the reverse is impossible.
+5. **One way function**: if either of the two functions are proved to be non one-way, the RSA will be broken.   
+    5.1. In fact, if a technique for factoring efficiently is developed then RSA will no longer be safe.
+
+
+###### The ElGamal Cryptosystem
+
+There are others public-key cryptosystems like the RSA, and many of the are different versions of the Discrete Logarithm Problem.
+    
+So, the ElGamal cryptosystem, called Elliptic Curve Variant, is also based on the Discrete Logarithm Problem, and it is based on the assumption  that the discrete logarithms cannot be found in practical time frame for a given number, while the inverse operation of the power can be computed efficently,
+
+
+- **ElGamal Features**
+1. **Its Strenth**: it is based on the difficulty of discrete logarithm problem.
+2. **The Key**: the secure size is generally greater than 1024, but today even 2048 bits long key are used.
+3. **Uses**: the ElGamal is quite slow on the speed front, being used mainly for key authentication protocols.   
+    3.1. But due higher processing efficiency, the Elliptic Curve variants of ElGamal are becoming increasinly popular.
+
+
+###### The Elliptic Curve Cryptography (ECC)
+
+The elliptic curve cryptography (ECC) is a term used to describe cryptographic tools and protocols whose security is based on special cases of the discrete logarithm problem.
+
+
+`ECC includes a variants of many cryptographic schemes that were initially designed for modular numbers such as ElGamal encryption and Digital Signature Algorithm.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_encryption.htm)
+
+
+
+###### Comparison of RSA and ElGamal Schemes
+
+| RSA | ELGAMAL |    
+| ------ | -------------- |    
+| More efficient for encryption | More efficient for decryption |    
+| It needs lengthy keys for enhanced security | At the same level of security from RSA, it needs shorter keys |    
+| It's widely accepted and used | It's new and not very popular in the market |   
+
+
+
+### Data Integrity in Cryptography
+
+https://www.tutorialspoint.com/cryptography/data_integrity_in_cryptography.htm
 
 
 
@@ -312,25 +388,8 @@ https://www.tutorialspoint.com/cryptography/public_key_encryption.htm
 
 
 
-### Kerckhoff's Principles for Cryptosystem
-
-In the turial about Cryptography from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the site brings a example from an important development to the theory and study of cryptography by a 19th century Dutch cryptographer by the name A. Kerckhoff.
 
 
-And in his assessment for a secure cryptography system, he says that as long as the 'secret key' was kept safe, the system should be completely secure, even when everything else from it was public known.
-
-
-There are 6 principles by Kerckhoff:
-
-1. The cryptosystem should be unbreakale practically, if not mathematically.
-2. Falling of the cryptosystem in the hands of an intruder should not lead to any compromise of the system.
-3. The key should be easily communicable, memorable, and changeble.
-4. The ciphertext should be transmissible by telegraph, that is, any such unsecure channel.
-5. The encryption apparatus and documents should be portable and operable by a single person.
-7. Finally, it is necessary that the system be easy to use, requiring neither mental strain nor the knowledge of a long series of rules to observe.´
-
-
-`The second rule is currently known as Kerckhoff principle. It is applied in virtually all the contemporary encryption algorithms such as DES, AES, etc. These public algorithms are considered to be thoroughly secure. The security of the encrypted message depends solely on the security of the secret encryption key. Keeping the algorithms secret may act as a significant barrier to cryptanalysis. However, keeping the algorithms secret is possible only when they are used in a strictly limited circle.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm)
 
 
 
@@ -410,11 +469,9 @@ Atacks can be of two forms depending on the action performed by the perpetrator:
 
 
 
-[Cryptography Tutorial - TutorialsPoint](https://www.tutorialspoint.com/cryptography/origin_of_cryptography.htm)
+
 
 Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes).
-
-ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online - https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/
 
 Características dos algoritmos RSA, AES, SSL e SHA-256. 
 
