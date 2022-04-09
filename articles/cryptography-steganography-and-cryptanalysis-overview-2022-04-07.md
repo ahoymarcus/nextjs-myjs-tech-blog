@@ -214,7 +214,7 @@ Bellow, some examples of symmetric key encryption methods:
     6.1. It is also a AES finalist.
 
 
-###### DES Analysis
+###### DES Scheme Block
 
 According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), the DES scheme satisfies both the desired properties of block cipher, which in turn makes the cipher very strong:
 
@@ -226,7 +226,7 @@ According to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptograp
 
 
 
-###### Triple DES
+###### Triple DES Scheme Block
 
 According to  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptosystems.htm), despite being a important cryptographic scheme, DES started to raise some disconfort among users, specially the `speed of exhaustive key searchs`. 
 
