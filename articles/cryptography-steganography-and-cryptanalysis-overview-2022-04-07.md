@@ -500,6 +500,25 @@ There a 2 direct applications for hash functions based on its cryptographic prop
     2.3. Thus, this chechsum validation is only useful to be used when the user is sure about the originality of the data file in store.
 
 
+### Message Authentication
+
+https://www.tutorialspoint.com/cryptography/message_authentication.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -559,9 +578,8 @@ Atacks can be of two forms depending on the action performed by the perpetrator:
 
 
 
-Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes).
 
-Características dos algoritmos RSA, AES, SSL e SHA-256. 
+
 
 Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture).
 
