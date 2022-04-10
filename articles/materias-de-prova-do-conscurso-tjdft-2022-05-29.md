@@ -237,5 +237,57 @@ CONHECIMENTOS BÁSICOS
 - [ ] Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001. 
 - [X] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). 
 - [ ] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ).     
-     
-    		  
+
+
+### ÁREA: APOIO ESPECIALIZADO. ESPECIALIDADE: SEGURANÇA DA INFORMAÇÃO
+
+- [ ] Redes de computadores. Modelo de referência OSI. Arquitetura TCP/IP. Topologias de redes de computadores. Meios de transmissão e tipos de cabeamentos. Fibras ópticas multimodo e monomodo.
+- [ ] Tecnologias de redes locais e de longa distância (LAN, MAN e WAN). Ativos de rede: gateways, hubs, repetidores, bridges, switches e roteadores.
+- [ ] Características dos principais protocolos de rede TCP/IP: TCP, IP, UDP, ICMP, HTTP, HTTPS, SMTP, IMAP, DNS, DHCP, FTP, NTP, SSH, LDAP e RDP. 
+- [ ] Endereçamento IP: IPv4. IPv6. 
+- [ ] CIDR. Mecanismo de NAT e PAT. Gerações de Wi-Fi. Padrões e protocolos da família 802.1x. EAP, WEP, WPA e WPA2. 
+- [ ] Características da Internet das Coisas (IoT). Gerenciamento de redes: conceitos, fundamentos, protocolos e implantação. SNMP, MIBs, NMSs e agentes. 
+- [ ] Gestão de riscos cibernéticos. Conceito de risco cibernético. Sistemas de gestão de risco. Etapas da gestão de risco: análise e avaliação, tratamento do risco, aceitação do risco e comunicação do risco. Métodos quantitativos e qualitativos de estimativa de riscos.
+- [ ] Auditoria e controle de segurança da informação. Diretrizes da norma ISO/IEC 27007. 
+- [ ] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ). 
+- [ ] Continuidade de negócios. Conceitos e princípios de resiliência organizacional e continuidade de negócios e serviços.
+- [ ] Elaboração de Análise de Impacto de Negócio (BIA – Business Impact Analysis). Planos de continuidade de negócio: tratamento de incidentes, gestão de crises, continuidade operacional e recuperação de desastres.
+- [ ] Estratégias de contingência. Políticas, tipos e tecnologias de backup. Tipos de site backup: cold, hot e warm.
+- [ ] Requisitos da norma ISO/IEC 22301. Análise de vulnerabilidades. Categorias, técnicas e ferramentas de ataque cibernético: engenharia social, negação de serviço, flooding, scanning, sniffing, pharming, brute force, spoofing, man-in-the-middle, rootkits, backdoors, session hijacking, XSS e SQL injection. Ataques e vulnerabilidades dia-zero (zero day). Classificação STRIDE. 
+- [ ] Tipos e características de malwares. 
+- [ ] Ameaças persistentes avançadas (APT). Fundação OWASP e as principais vulnerabilidades e remediações mapeadas.
+- [ ] Análise de vulnerabilidades e pentest. Conceito de Ethical Hacking. Tipos de pentest: blind, white/gray/black box, tandem e reversal. Metodologias de pentest: OSSTMM e PTES. Monitoramento e resposta a incidentes.
+- [ ] Centros de estudos, resposta e tratamento de incidentes (CERT). 
+- [ ] Sistemas de prevenção e de detecção de intrusão. Honeypots e honeynets. Organização e operação de ambientes de NOC e SOC. 
+- [ ] Gerenciamento de eventos de segurança da informação (SIEM). Metodologias de resposta a incidentes. 
+- [ ] Comitê de Segurança Cibernética do Poder Judiciário. Protocolos de prevenção, gerenciamento e investigação de incidentes cibernéticos do Poder Judiciário (Portaria CNJ nº 162/2021 e anexos). Composição e atribuições do Comitê de Crises Cibernéticas. Equipe de Tratamento e Resposta de Incidentes de Segurança Cibernética (ETIR). 
+- [ ] Forense computacional em ambientes Windows, Linux, Android e iOS. 21 Registros de auditoria. 
+- [ ] Protocolo Syslog e Microsoft Event Viewer. 
+- [ ] Proteção de perímetro e sistemas. 
+- [ ] Arquiteturas de firewalls e DMZ. 
+- [ ] Ativos de segurança de redes: firewall, firewall Proxy, NGFW, WAF, IDS/IPS, DLP e gateway VPN. Network Access Control (NAC) e Network Access Protection (NAP). 
+- [ ] Sistemas antispam e antimalware. 
+- [ ] Cofres de senhas e gerenciadores de acessos privilegiados (PAM). 
+- [ ] Sistemas antispam e antimalware. 
+- [ ] Aspectos da segurança em ambientes de Nuvem. Boas práticas de segurança em redes sem fio. 
+- [ ] Hardening de sistemas Windows e Linux. Hardening de serviços HTTP e de gerenciadores de banco de dados. 
+- [ ] Proteção de dados pessoais. Conceito e tipos de dados pessoais. Agentes de tratamento. Papel do Controlador, Operador e Encarregado de Dados (DPO – Data Protection Officer). 
+- [ ] Tipos de tratamento de dados pessoais. Registros das atividades de tratamento. Elaboração de inventário de dados pessoais (Data Mapping). Relatório de impacto à proteção de dados pessoais (RIPD). 
+- [ ] Direitos do titular de dados pessoais. Hipóteses legais de tratamento e exceções. Condições para transferência internacional de dados. Violações e notificações. Responsabilização e possíveis sanções. 
+- [ ] Atribuições e composição da Autoridade Nacional de Proteção de Dados – ANPD. Atualizações da Lei 13.709/18. 
+- [ ] Guias operacionais para adequação à LGPD da Secretaria de Governo Digital. 
+- [ ] Diretrizes da norma ISO/IEC 27701.
+- [ ] Governança e gestão de TI. Conceito de governança e gestão de TI. Planejamento estratégico de TI. 
+- [ ] Framework COBIT. Metodologias de indicadores OKR, PKI e BSC. Conceitos de gestão de projetos (PMBOK). Métodos,
+técnicas e ferramentas de gerência de projetos. 
+- [ ] Processos Ágeis. Metodologia Scrum. Sistema de gestão Kanban. Escritório de projetos: modelos e características. 
+- [ ] Conceitos de gestão de riscos. 
+- [ ] Análise SWOT e matriz RACI. 
+- [ ] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
+- [ ] Conceitos básicos de contratações de TI. Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e
+Comunicação). 
+- [ ] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação
+do Poder Judiciário - ENTIC-JUD). 
+- [ ] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
+
+
