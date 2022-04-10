@@ -30,9 +30,11 @@ description: 'Cryptography is the study and practice of techniques for secure co
 7. ##### Cryptographic Attacks
     7.1. Modes of Attacks    
     7.2. Diffent Kinds of Cryptographic Attacks
-8. #####
-9. ##### Further Reading
-10. ##### References
+8. ##### Message Authentication Code (MAC)
+    8.1. Limitations of MAC
+9. ##### Cryptography Digital Signatures
+10. ##### Further Reading
+11. ##### References
 
 ### Introduction
 
@@ -500,29 +502,6 @@ There a 2 direct applications for hash functions based on its cryptographic prop
     2.3. Thus, this chechsum validation is only useful to be used when the user is sure about the originality of the data file in store.
 
 
-### Message Authentication
-
-https://www.tutorialspoint.com/cryptography/message_authentication.htm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Cryptographic Attacks
 
@@ -561,11 +540,58 @@ Atacks can be of two forms depending on the action performed by the perpetrator:
 
 
 
+### Message Authentication Code (MAC)
+
+Message authentication code (MAC) is the second most obvious use of hash techniques for securing the integrity of the data in communication, and the MAC algorithm is a symmetric key cryptographic technique that provides this service of message authentication.
+
+
+Here, the sender and the receiver share a symmetric key 'k', which is used to create a checksum together with the message data itself. Bellow, in the diagram from [TutorialsPoint](https://www.tutorialspoint.com/cryptography/message_authentication.htm) it is possible to see a simple example of this process of authentication:
+
+
+![example-of-mac-authentication-01](/images/articles/security/example-of-mac-authentication-01.png)
+
+
+1. **Sender produces the MAC Value**: the sender uses a public known MAC algorithm to input the message data and the secret k and produce the MAC value.
+2. **Digest the Value**: the arbitrary input length is compressed into a fixed length output.   
+    2.1. `The major difference between hash and MAC is that MAC uses secret key during the compression` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/message_authentication.htm)
+3. **Receiver produces the MAC Value**: now it is the turn of the receiver to input the message and the known key into the MAC algorithm to return its MAC Value.
+4. **Checking the MAC Value**: finally, the receiver compares the the two MAC values to determ if the the message was sent by the intended sender.    
+    4.1. In the case of a negative result, the receiver will know that the message is not genuine, but the receirver won't know if it is because of authered data or a anauthorized sender.
 
 
 
+#### Limitations of MAC
+
+Still according to the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/message_authentication.htm) there are two major limitations of MAC, and both due to the symmetric nature of the operation:
+
+1. **Pre-established Secret Key**:   
+    1.1. Though this process can determ the legitimacy of the sender, it requires that the secret key have been shared prior to the use of MAC.
+2. **Inability to Provide Non-Repudiation**:   
+    2.1. If the sender and receiver get involved in a dispute over the message origination, MACs cannot provide a proof that the message was indeed sent by the sender.    
+    2.2. The reason here is that eventhogh no third part could have computed the MAC, there is no way to validate which of the two parties of the communication really produced the message.
 
 
+
+### Cryptography Digital Signatures
+
+Digital Signature are is a service that comes to enhance the feature of message authentication code (MAC) providing nonrepudiation to the crypto technique, since disputes over the exchange of data is something quite prevalent.
+
+
+So, the digital signature binds the person/entity to the digital data of the communication, and it can be independently verified either by the receiver or by any third party as well.
+
+`Digital signature is a cryptographic value that is calculated from the data and a secret key known only by the signer.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptography_digital_signatures.htm)
+
+
+
+Again, in this diagram from the site [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptography_digital_signatures.htm) which represents a exchange using digital signature, it is possible to see both validations, for the data, and for the sender public key as well:
+
+
+![example-of-digital-signature-authentication-01](/images/articles/security/example-of-digital-signature-authentication-01.png)
+
+
+1. **The Asymmetric Method**: here, in this exchange both of the parties involved need to have a public-private key pair.    
+    1.1. In these feature, the senders private key is also known as 'signature key' and the and the senders public key is also known as 'verification key'.
+2. **The Keys**: 
 
 
 
