@@ -33,8 +33,11 @@ description: 'Cryptography is the study and practice of techniques for secure co
 8. ##### Message Authentication Code (MAC)
     8.1. Limitations of MAC
 9. ##### Cryptography Digital Signatures
-10. ##### Further Reading
-11. ##### References
+    9.1. Importance of the Digital Signature Process    
+    9.2. Encrypted Message with the Digital Signature
+10. ##### Public Key Infrastructure
+11. ##### Further Reading
+12. ##### References
 
 ### Introduction
 
@@ -591,19 +594,67 @@ Again, in this diagram from the site [TutorialsPoint](https://www.tutorialspoint
 
 1. **The Asymmetric Method**: here, in this exchange both of the parties involved need to have a public-private key pair.    
     1.1. In these feature, the senders private key is also known as 'signature key' and the and the senders public key is also known as 'verification key'.
-2. **The Keys**: 
+2. **Hash Value**: at the start of the communication, the sender feeds data to the hash function to produce a hash for the data.
+3. **The Digital Signature**: then, the sender inputs the hash data and the signature/public key in the signature algorithm to produce the digital signature.   
+    3.1. So, the digital signature is appended to the message data.
+4. **Validating the Digital Signature**: the receiver then feeds the signature/public key and the verification/private key in the signature algorithm, and the result is a value output.
+5. **Validating the Message Data**: the receiver also tests the message data with the hash function to generate a hash value.
+6. **Attesting the Both Values**: finally, the receiver will compare the values from the hash value from the message data and the value from the verification algorithm to decide whether the digital signature is valid.
+7. **The Nonreputiation Factor**: since the digital signature is created by a 'private' key of the signer and no one else can have this key, the signer cannot repudiate the data/action transmited.
 
 
 
+Observe from that scheme that  for performance reasons the digital signature is produced by the use of the signature key and the hash data, which has a small input:
+
+
+`Signing large data through modular exponentiation is computationally expensive and time consuming. The hash of the data is a relatively small digest of the data, hence signing a hash is more efficient than signing the entire data.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/cryptography_digital_signatures.htm) 
+
+
+#### Importance of the Digital Signature Process
+
+Accompaning the the last exemple with the digital signed communication, it was possible to see that with this method all the securities requirements are achieved:
+
+1. **Privacy**: by the use of encrypted messages.
+2. **Authentication**: by the use of valid keys it is possible to know that the communication is taking placing by authentic actors.
+3. **Data Integrity**: since the digital signature is feed also with the hash data, in case of some modification in the message data the output by the receivers verification algorithm would fail.
+4. **Nonrepudiation**: since that the key used by the sender to authenticate is a personal private key that only him possess, the verification algorithm can produce independently proof that the message/action came from the sender without dispute.
 
 
 
+#### Encrypted Message with the Digital Signature
+
+Here, it is mentioned the possibility of another layer of security to the communications, that is the to have the data to be send encrypted with the own receiver public key to avoid attack of spoofing.
+
+
+The spoof acttack could be made in this kind of Public Key Cryptography (PKC) scheme, while a third party could have access the sender public key and forge a encrypted message communication.
+
+
+Now, by encrypting the message with the receivers public key, the receiver could validate the message data with his own private key. And this process could be achieved by two distint process:
+
+1. **Sing-then-encrypt**: this one remains with the problem related with spoofing, since the senders identity could still be forged by replacing his public key in the communication.
+2. **Encrypt-then-sing**: this process is the more reliable one, where the receiver after receiving the encryted data and signature on it, makes two verifications:   
+    2.1. Fist the receiver verifies the signature using the sender's public key, just like any ordinary digital signature validation.   
+    2.2. Second, the receives decrypt the message data using his own private key for this later task.
 
 
 
+### Public Key Infrastructure    
+  
+https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm  
+  
+  
 
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
 
 
 

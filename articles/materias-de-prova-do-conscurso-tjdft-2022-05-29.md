@@ -231,7 +231,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes). 
 - [ ] Protocolos de autenticação OpenID Connect (OIDC), SSO, OAuth2 e SAML. 
 - [ ] Conhecimento da plataforma Keycloak. 
-- [ ] Mecanismos de assinatura digital e certificação digital. 
+- [X] Mecanismos de assinatura digital e certificação digital. 
 - [X] Características dos algoritmos RSA, AES, SSL e SHA-256. 
 - [ ] Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture). 
 - [ ] Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001. 
