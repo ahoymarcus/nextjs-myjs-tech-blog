@@ -712,8 +712,9 @@ As it can be seem in the diagram by [TutorialsPoint](https://www.tutorialspoint.
 
 1. The person creates his pairs of keys, and while securing the private one, contacts the Certification Authority sending the public key and other registration information.
 2. The CA analysis the information to verify the clients identity, and then issues the digital certificate to the client.
-  
-    
+
+
+
 #### The Certifying Authority (CA)
     
 The CA carries two basic functions:
@@ -738,7 +739,7 @@ Finally, the CA has to manage all the revoked certificates, keeping available  i
     
 
 
-### The Registration Authority (RA)
+#### The Registration Authority (RA)
  
 The CA can use a third party Registration Authority (RA) for the management checks of the clients and their identities. Thoug, in relation to the digital certificate it is the CA that actually signs it.
     
