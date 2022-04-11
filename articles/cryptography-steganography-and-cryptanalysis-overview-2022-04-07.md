@@ -11,7 +11,9 @@ description: 'Cryptography is the study and practice of techniques for secure co
 1. ##### Introduction  
 2. ##### Cryptography
     2.1. Cryptography Terminology    
-    2.2. Cryptography Evolution Table
+    2.2. Cryptography Evolution Table    
+    2.3. Cryptography Benefits   
+    2.4. Cryptographty Drawbacks
 3. ##### Historical Cipher Systems
     3.1. Ceasar Cipher    
     3.2. Simple Substitution Cipher   
@@ -57,7 +59,7 @@ On the other side of cryptography there is the action of Crytanalysis, which is 
 1. **Confidentiality**
 2. **Integrity**
 3. **Authentication**
-5. **Nonrepudiation**
+4. **Nonrepudiation**
 
 
 ###### See the definitions for these key structures and the basic concepts from information security in this article:
@@ -70,6 +72,7 @@ The second party, after receiving the ciphertext, uses the same algorithm with t
 
 
 Finally, **Steganography** is a similar method, except here there is not only the interest to protect the content of the information from message, but also to conceal the whole message from any anauthorized party.
+
 
 
 
@@ -114,6 +117,31 @@ Finally, **Steganography** is a similar method, except here there is not only th
 So, as it is explained in the table above, the early crytosystems were based on symmetric key encryption scheme, that is when both of the parties have knowledge of the same secret key. 
 
 Also, before the digital systems emerge, the cryptosystem worked direct at the message/text layer, meaning that the message and the so called ciphertext were one and the same.
+
+
+
+#### Cryptography Benefits   
+    
+Cryptography is a basic tool for information security, and it provides that 4 essential services mentioned in the Introduction:
+    
+1. **Confidentiality**
+2. **Integrity**
+3. **Authentication**
+4. **Nonrepudiation**
+
+
+Secondarily, modern cryptography has also provided a mean for communicating in open environments line the Internet, where exchanges happens incessantly, specially between parties that don't know each other, but still have to be accounted for.
+
+
+#### Cryptographty Drawbacks
+
+1. A strong encrypted system can bring some difficulty to access and to manage, even for a legitimate party.
+2. Besides the access, there are costs  involved with the use of cryptography:  
+    2.1. There can be some overhead to the system.   
+    2.2. There is the necessity for managing the cryptographic keys. And, specially in the case of the Public Key management, it will be necessary to have a speciallized management and fees for the Public Key Infrastructure (PKI).
+3. Cryptography does not address aspects of 'High Availability' which is another essential service for information security. Thus this task will have to depend upon other methods.
+4. Another important service that cannot be performed by cryptography is 'selective access control', which also has to be exercised by administrative controls.
+5. Since cryptography is based on techniques related to computational difficulties, every time there is a break through in solving some of these difficulties, or there is some significative enhancement in the computational systems, the cryptographic techniques may be handled vulnerable.
 
 
 
@@ -799,31 +827,12 @@ There are 4 classes of certificate:
 
 
 
-### Cryptography Benefits & Drawbacks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
 ### Further Reading
 
 [Unit: Cryptography - Khanacademy.org](https://www.khanacademy.org/computing/computer-science/cryptography)
 
 [ISO 22301 - Wikipedia](https://en.wikipedia.org/wiki/ISO_22301)
-
-[]()
 
 
 ### References
@@ -832,8 +841,6 @@ Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
 [Cryptography Tutorial - TutorialsPoint](https://www.tutorialspoint.com/cryptography/origin_of_cryptography.htm)
 
-
-[]()
 
 
 [^1]:pmbok-and-project-management-methodologies-2022-03-29

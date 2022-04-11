@@ -40,6 +40,7 @@ And with the worlwide presence of Internet, also comes the easy access to the in
 - `PMBOK and others Project Management Methodologies` [^2]
 - `Risk Management - Overview` [^3]
 - `ITIL - Service Management Framework` [^4]
+- `Cryptography, Steganography and Criptanalysis - Overview` [^5]
 
 
 ### Information Security Concepts
@@ -267,5 +268,6 @@ There is a dificul line to be drawn here, because from one side it is imperative
 
 [^4]:itil-service-management-framework-2022-03-30
 
+[^5]:cryptography-steganography-and-cryptanalysis-overview-2022-04-07
 
 
