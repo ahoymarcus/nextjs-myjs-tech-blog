@@ -36,8 +36,17 @@ description: 'Cryptography is the study and practice of techniques for secure co
     9.1. Importance of the Digital Signature Process    
     9.2. Encrypted Message with the Digital Signature
 10. ##### Public Key Infrastructure
-11. ##### Further Reading
-12. ##### References
+    10.1. Key Management   
+    10.2. Public Key Infrastructure (PKI)    
+    10.3. The Certifying Authority (CA)    
+    10.4. The Registration Authority (RA)    
+    10.5. Certificate Management System (CMS)   
+    10.6. Private Key Tokes   
+    10.7. Hierarchy of CA   
+    10.8. Classes of Certificates
+11. ##### Cryptography Benefits & Drawbacks
+12. ##### Further Reading
+13. ##### References
 
 ### Introduction
 
@@ -271,7 +280,7 @@ According to  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/crypt
 
 But for economic and compatibility reasons, the decision was to change some aspect of its use, than to complete abandon the DES scheme. And it was creates two variants:
 
-1. **3-key Triple DES (#TDES)**
+1. **3-key Triple DES (3TDES)**
 2. **2-key Triple DES (2TDES)**
 
 
@@ -600,7 +609,7 @@ Again, in this diagram from the site [TutorialsPoint](https://www.tutorialspoint
 4. **Validating the Digital Signature**: the receiver then feeds the signature/public key and the verification/private key in the signature algorithm, and the result is a value output.
 5. **Validating the Message Data**: the receiver also tests the message data with the hash function to generate a hash value.
 6. **Attesting the Both Values**: finally, the receiver will compare the values from the hash value from the message data and the value from the verification algorithm to decide whether the digital signature is valid.
-7. **The Nonreputiation Factor**: since the digital signature is created by a 'private' key of the signer and no one else can have this key, the signer cannot repudiate the data/action transmited.
+7. **The Nonrepudiation Factor**: since the digital signature is created by a 'private' key of the signer and no one else can have this key, the signer cannot repudiate the data/action transmited.
 
 
 
@@ -640,25 +649,170 @@ Now, by encrypting the message with the receivers public key, the receiver could
 
 ### Public Key Infrastructure    
   
-https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm  
-  
-  
+The method of using a pair of asymmtric key to enhance the cryptographic system process allows to achieve two goals, but it also creates one problem that have to be managed:
 
+1. **Avoiding the distribution and management of multiple individual keys to have communication**
+2. **To achieve Nonrepudiation attribute to the process**
+3. **The Public keys in the open can be abused by spoofing**
+
+So, by this method it is create a pair of keys for each person, one that is public and open so that anyone who wants to send a communication can use. And a private key, known only by the owner of the pair that allows him not only to securely decrypt his communications, but also allows him to create a digital signature which can be independently attested by any party what so ever.
   
   
+Finally, as it was said, because the public key has to be in the open, available to the parties which want to communicate, that must also have some kind of infrastructure to manage and secure then against spoof attack, which is the malicious act of forging the public key so the perpetrator can falsely pass another sender.
   
   
+#### Key Management
+
+The importance of stablishing key management comes from the fact that most of the time cryptographic systems are compromiso not by their inhenrent weakness, but by poor handling of the keys.
   
   
+- **Some Features from the Cryptosystem Keys**  
+1. **The keys are basically pieces of data**: they are created as some unique id or mark.
+2. **The key management implies all of its life cycle**:   
+    2.1. Key Generation   
+    2.2. Key Establishment   
+    2.3. Key Storage   
+    2.4. Key Usage   
+    2.5. Key Archival   
+    2.6. Key Destruction
+3. **There are two specific requirements for key management**:   
+    3.1. Secrecy of private keys: this is the key that allows the owner to decrypt and access all communications. So, it has be very well concealed.   
+    3.2. Assurance of public keys: since the public keys are in the open, there is no defaut assurance the are the correct and real public keys that belong to some party. So assurance has to be made available by some other infrasctructure.
+
+
+#### Public Key Infrastructure (PKI)
+  
+The public key infrastructure provides assurance for the public key, while it provides identification and manage their distribution. So, a PKI should have these features:
+
+1. **Public Key Certificate**: commonly referred as 'digital signature'.
+2. **Private Key tokens**
+3. **Certification Authority**
+4. **Registration Authority**
+5. **Certification Management System**
+
+
+###### The Digital Certificate
+
+Digital Certificates are IDs that are issued to any entity in the digital world as to proof of identity:
+
+1. **They are based on the ITU standard X.509**: this defines a standard format for the certificate for public keys, and also for their validation.   
+    1.1. For that a digital certificate can also be referred as X.509 certificates.  
+    1.2. The public key is stored in the digital certificate by the Certification Authrority (CA), together with many other relevant information: clients information, expiration date, usage, issuer, etc.
+2. **The Certification Authority (CA) Signature**: the CA signs the whole package of data from the client attesting that they are legitimate.
+3. **Assurance comes from Signature Validation of the CA's Public Key**: any person seeking assurance about some public key, and also for the associated information, only has to carry out the signature validation of the CA's  public key.
+
+
+In the site of [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm) there is basic diagram of the process to obtain a X.509 Certificate by some client:
+
+
+![example-of-creating-a-digital-certificate-01](/images/articles/security/example-of-creating-a-digital-certificate-01.png)
   
   
+As it can be seem in the diagram by [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm):
+
+1. The person creates his pairs of keys, and while securing the private one, contacts the Certification Authority sending the public key and other registration information.
+2. The CA analysis the information to verify the clients identity, and then issues the digital certificate to the client.
   
     
+#### The Certifying Authority (CA)
+    
+The CA carries two basic functions:
+
+1. Managing the clients public key and their related information.
+2. To take responsability for correctly identifying the client.
+
+
+In his job the CA can generate its keys pair indenpendently or jointly with the client, but what ever method, there is the signature from his public key to the digital certificate.
+
+
+This certificate has to be published, in other for them to be found. And this can be done in two ways:
+
+1. Publishing the certificates in specific directory address.
+2. To send the certificate direct to the party willing to reach his client.
+
+
+There is also the necessity of managing the certifications by the CA, which can revoke them due to some particular reason, like the compromise of some key by the client, or simply by some distrust placed upon the client himself.
+
+
+Finally, the CA has to manage all the revoked certificates, keeping available  in his environment a list with all the revoked certificates to be accessed by the interested parties.
     
 
 
+### The Registration Authority (RA)
+ 
+The CA can use a third party Registration Authority (RA) for the management checks of the clients and their identities. Thoug, in relation to the digital certificate it is the CA that actually signs it.
+    
 
-Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture).
+#### Certificate Management System (CMS)   
+
+This is the system through which certificates are published, temporalily or permanently suspended, renewed, or revoked. But, they usually a not deleted for legal reasons.
+
+
+`A CA along with associated RA runs certificate management systems to be able to track their responsibilities and liabilities.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm)
+
+
+#### Private Key Tokes   
+    
+Usually the private key is not stored within the owner's computer for security reasons, since the once the computer is compromised the key would be also accessible.
+
+So, the private key is better managed on removable storage tokes protected by password.
+
+    
+`Different vendors often use different and sometimes proprietary storage formats for storing keys. For example, Entrust uses the proprietary .epf format, while Verisign, GlobalSign, and Baltimore use the standard .p12 format.` [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm)
+    
+
+    
+#### Hierarchy of CA
+
+For management reasons and for security reasons, there is a bigger structure of CAs then only one to handle communication worldwide and that could eventually be compromised.
+
+
+And since this system allows more than one CA, there is also the possibility of communications between parties that are certifyed by different CAs. For that, then, the model stablished is a hierarchical one for managing the certifications:
+
+1. The **root CA** is at the to of the CA hierarchy: it has a self-signed certificate.
+2. The **Higher-level CAs** directly subordinated to the root CA: these have their certificates signed by the root CA.
+3. The **Lower-level CAs** are subordinated to the first level CAs: so, the secod level CAs have their certificates signed by higher-level CAs.
+
+
+`Certificate authority (CA) hierarchies are reflected in certificate chains. A certificate chain traces a path of certificates from a branch in the hierarchy to the root of the hierarchy.`  [TutorialsPoint](https://www.tutorialspoint.com/cryptography/public_key_infrastructure.htm)
+
+
+
+Verifying a certificate chain is the process of ensuring that a specific certificate chain is valid, correctly signed, and trustworthy:
+
+1. The client supplies its certificate to the other party.
+2. The interested party validates the certification by using the clients public key. And also in the client certificate is the issuer's public key.
+3. Now if the higher CA who has signed the issuer’s certificate, is trusted by the verifier, verification is successful and stops here.
+4. If the party is not yet satisfyed, he can also validate the certificate from the CA until the root CA.
+
+
+
+#### Classes of Certificates
+
+There are 4 classes of certificate:
+
+1. **Class 1**: these certifications can be easily acquired by supplying an email address.
+2. **Class 2**: these certificates require additional personal information to be supplied.
+3. **Class 3**: These certificates can only be purchased after checks have been make about the requestor's indetity.
+4. **Class 4**: these special certifications are used to issued high level of trust to special organizations: governments, financial, etc.
+
+
+
+### Cryptography Benefits & Drawbacks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
