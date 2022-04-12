@@ -10,12 +10,12 @@ description: 'User Authorization and User Authentication are some of the biggest
 
 1. ##### Introduction  
 2. ##### Different Protocols on the Market Place
-    2.1. Kerberos
-    2.2. Lightweidh Directory Access Protocol (LDAP)
-    2.3. OAuth2
-    2.4. OpenID Connect (OIDC)
-    2.5. RADIUS
-    2.6. SAML
+    2.1. Kerberos    
+    2.2. Lightweidh Directory Access Protocol (LDAP)    
+    2.3. OAuth2    
+    2.4. OpenID Connect (OIDC)    
+    2.5. RADIUS    
+    2.6. SAML   
     2.7. SSO
 9. ##### Further Reading
 10. ##### References
@@ -140,8 +140,6 @@ OpenID Connect also defines mechanisms for discovery and session management beyo
 - It is an open and trusted authentication protocol, that can abstract this task separating end-user and provider.
 - It augments OAuth2 framework capabilities.
 
-- **Some Disadvantages **
-
 
 
 #### RADIUS
@@ -185,6 +183,11 @@ The IdP pass what is known as SAML assertion to the SP when the user tries to ac
 2. Export metadata from the IdP and import them.
 3. Give metadata back to the service of SSO.
 4. It's suggested that users only make logins with its SSO credentials.
+
+
+
+Finalmente, a SAML assertion is a XML document that the IdP send to the SP having the authorization status from the user, and there can be 3 types os SAML assertions: **Assertion of Authentication**, **Attributed Assertion**, and **Assertion of Authorization**.
+
 
 
 - **Some Advantages of SAML**
