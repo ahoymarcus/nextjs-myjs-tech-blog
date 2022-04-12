@@ -230,7 +230,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Planos de continuidade de negócio e serviços essenciais. 
 - [X] Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes). 
 - [X] Protocolos de autenticação OpenID Connect (OIDC), SSO, OAuth2 e SAML. 
-- [ ] Conhecimento da plataforma Keycloak. 
+- [X] Conhecimento da plataforma Keycloak. 
 - [X] Mecanismos de assinatura digital e certificação digital. 
 - [X] Características dos algoritmos RSA, AES, SSL e SHA-256. 
 - [X] Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture). 
