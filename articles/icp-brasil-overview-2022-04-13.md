@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'ICP-Brasil - Overview'
 date: '2022-04-13'
 subject: 'security-articles'
-description: '.'
+description: 'Infraestrutura de Chaves Públicas Brasileira ou ICP-Brasil é a hierarquia de confiança que viabiliza a emissão de certificados digitais para a identificação virtual do cidadão e de empresas, autoridade instituída pela Medida Provisória nº 2.000-2, de 24 de agosto de 2001. O modelo brasileiro de emissão de certificados digitais é o modelo de 'raíz única', em que a **AC-Raiz** é a primeira autoridade da cadeia de certificação, cujo papel é representado pelo Instituto Nacional de Tecnologia da Informação (ITI).'
 ---
 
 # ICP-Brasil - Overview
@@ -15,26 +15,26 @@ description: '.'
     2.3. Prestador de Serviço Biométrico (PSBio)   
     2.4. Prestador de Serviço de Suporte (PSS)   
     2.5. Comitê Gestor da ICP-Brasil
-3. ##### 
-	3.1.	
-	3.2.
-4. ##### 
-5. ##### 
-6. ##### 
-7. #####  
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+3. ##### Vantagens na Operação de Certificados Digitais
+4. ##### Tipos de Certificados Digitais
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
  
-Infraestrutura de Chaves Públicas Brasileira ou ICP-Brasil é a hierarquia de confiança que viabiliza a emissão de certificados digitais para a identificação virtual do cidadão e de empresas. 
+Infraestrutura de Chaves Públicas Brasileira ou ICP-Brasil é a hierarquia de confiança que viabiliza a emissão de certificados digitais para a identificação virtual do cidadão e de empresas, autoridade instituída pela Medida Provisória nº 2.000-2, de 24 de agosto de 2001. 
 
 
 O modelo brasileiro de emissão de certificados digitais é o modelo de 'raíz única', em que a **AC-Raiz** é a primeira autoridade da cadeia de certificação, cujo papel é representado pelo Instituto Nacional de Tecnologia da Informação (ITI).
 
 
 `O ITI, além de desempenhar o papel de Autoridade Certificadora Raiz – AC-Raiz, credencia e descredencia os demais participantes da cadeia, supervisiona e audita os processos.` [ICP-Brasil - Gov.br](https://www.gov.br/iti/pt-br/acesso-a-informacao/perguntas-frequentes/icp-brasil)
+
+
+E segundo o site [Tecnospeed.com](https://blog.tecnospeed.com.br/icp-brasil/), o ano de 2021 teria visto a emissão de 590 mill certificados no padrão ICP-Brasil, 41,9% maior do que o emitido no ano anterior.
+
+
+Já o site [Ergonrh.com](https://blog.ergonrh.com.br/icp-brasil/) vê nesse novo desenvolvimento tecnológico nacional uma transformação digital para o cenário burocrático e de demandas cartoriais no Brasil, em que aumenta a qualidade e flexibilidade do serviço de emissão de documentos, haja vista o fato dos documentos assinados digitalmente dento da estrutura do ICP-Brasil estarem diretamente respaldados e reconhecidos pela lei brasileira.
 
 
 
@@ -63,6 +63,12 @@ As Autoridades Certificadoras (ACs) são entidades públicas ou pessoas jurídic
 
 
 `ACs emitem, expedem, distribuem, revogam e gerenciam os certificados, disponibilizando aos usuários lista de certificados revogados e outras informações necessárias, e mantendo o registro de suas operações.` (art. 6º da MP 2.200/01)
+
+
+Finalmente, é preciso notar que existem dois níveis para as ACs:
+
+1. **Autoridades Certificadoras de 1º Nível**: estão diretamente abaixo da AC-Raíz, e recebem diretamente desta estrutura raíz seu certificado digital para operar.
+2. **Autoridades Certificadoras de 2º Nível: estas ACs estão imediatamente abaixo daquelas ACs de 1º nível, e portanto, delas recebem certificado digital que operacionaliza os seus próprios trabalhos.
 
 
 #### Autoridade Certificadora do Tempo (ACT)
@@ -100,33 +106,49 @@ O Comitê Gestor da ICP-Brasil exerce a função de autoridade gestora de polít
 
 
 
+### Vantagens na Operação de Certificados Digitais
+
+São muitas as vantagens e garantias oferecidas ao se trabalhar com certificações digitais:
+
+1. **Assinatura e averbação de documentos digitais**
+2. **Autenticação de operações eletrônicas com sigilo e segurança necessários**
+3. **Emissão de documentos fiscais**
+4. **Acesso a diversos serviços públicos como e-Social**
+5. **Desburocratização de processos e de procedimentos**
+6. **Flexibilização da estrutura pública ligada a emissão de documentos no Brasil**
+
+
+`Dentro das classificações, eles se diferenciam por sua finalidade (assinatura, carimbo de tempo e sigilo), armazenamento e validade (A1 e A3, por exemplo) e tipos específicos, conectados ao documento ou uso que representam virtualmente (e-CPF, e-CNPJ, e-Jurídico e , por exemplo).` [Tecnospeed.com](https://blog.tecnospeed.com.br/icp-brasil/)
+
+
+Contudo, é preciso ter em mente o cuidado para o fato de que nada impede a existência de outras organizações que prestam serviços de certificação digital. O modelo e estrutura da ICP-Brasil, entretanto, é o único no território nacional cuja produção de documentos digitais tem a autenticidade garantida juridicamente. Ou seja, funcionando como documentos legais, enquanto que certificações digitais fora da estrutura da ICP-Brasil servem apenas como testemunha ou prova de algum fato.
 
 
 
+### Tipos de Certificados Digitais
+
+1. **Certificado Tipo A**: `Assinatura Digital`  
+    1.1. Comprovação de autenticidade, autoria e integridade de documentos eletrônicos.
+2. **Certificado Tipo T**: `Tempo (Time stamping)`  
+    2.1. Este certificado garante a temporalidade de documentos importantes, ou entidades digitais, na medida em que ele atesta sua existência no timestamp referido no documento assinado.
+3. **Certificado Tipo S**: `Sigilo ou Confidencalidade`   
+    3.1. utilizat tecnologia de criptografia para garantir o sigilo de dados. além da própria autoria e integridade do documento.
 
 
 
-
-
-
-
-ICP-Brasil: Entenda o seu funcionamento! - Ergonrh.com - https://blog.ergonrh.com.br/icp-brasil/
-
-[ICP-Brasil: tudo sobre essa organização-chave do mercado de certificados - Tecnospeed.com](https://blog.tecnospeed.com.br/icp-brasil/)
 
 Organização da ICP-Brasil. Norma de segurança ISO/IEC 27001.
 
 ### Further Reading
 
-[ICP-Brasil - Gov.br](https://www.gov.br/iti/pt-br/acesso-a-informacao/perguntas-frequentes/icp-brasil)~
+[ICP-Brasil - Gov.br](https://www.gov.br/iti/pt-br/acesso-a-informacao/perguntas-frequentes/icp-brasil)
 
-[]()
 
 ### References
 
+[ICP-Brasil: tudo sobre essa organização-chave do mercado de certificados - Tecnospeed.com](https://blog.tecnospeed.com.br/icp-brasil/)
 
-
-[]()
+[ICP-Brasil: Entenda o seu funcionamento! - Ergonrh.com](https://blog.ergonrh.com.br/icp-brasil/)
 
 
 [^1]:cryptography-steganography-and-cryptanalysis-overview-2022-04-07
