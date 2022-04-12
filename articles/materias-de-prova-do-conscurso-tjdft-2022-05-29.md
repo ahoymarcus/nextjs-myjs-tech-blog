@@ -229,7 +229,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação. 
 - [X] Planos de continuidade de negócio e serviços essenciais. 
 - [X] Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes). 
-- [ ] Protocolos de autenticação OpenID Connect (OIDC), SSO, OAuth2 e SAML. 
+- [X] Protocolos de autenticação OpenID Connect (OIDC), SSO, OAuth2 e SAML. 
 - [ ] Conhecimento da plataforma Keycloak. 
 - [X] Mecanismos de assinatura digital e certificação digital. 
 - [X] Características dos algoritmos RSA, AES, SSL e SHA-256. 
