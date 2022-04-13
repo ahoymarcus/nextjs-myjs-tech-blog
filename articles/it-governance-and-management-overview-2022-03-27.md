@@ -31,7 +31,7 @@ description: 'Considering some definitions from Control Objectives for Informati
     7.2. 5 Principles from COBIT 5    
     7.3. Advantages from the COBIT Framework
 8. ##### Further Reading
-9. ##### References Further Reading
+9. ##### References
 
 ### Introduction
  
