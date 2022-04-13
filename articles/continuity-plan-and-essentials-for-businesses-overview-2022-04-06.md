@@ -16,11 +16,12 @@ description: 'The concept behind a continuity business plan is the fact that unf
 3. ##### Implementing BCM Framework 
     3.1. Types of Business Continuity Management (BCM)
 5. ##### Essentials for Businesses
-6. ##### 
-7. #####  
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+6. ##### Information Security Management in ISO/IEC 27001
+    6.1. The ISO/IEC 27001 Family   
+    6.2. Basic Structure of ISO/IEC 27001   
+    6.3. The Main Controls from the ISO/IEC 27001 Standard
+7. ##### Further Reading
+8. ##### References
 
 ### Introduction
 
@@ -150,27 +151,69 @@ And then make a proper catalogue of these services:
 
 
 
+### Information Security Management in ISO/IEC 27001
+
+The ISO/IEC 27001 standard for `Information Security Management` was published in 2005 by the International Standard Organization and also by the International Electrotechnical Commission, and had as influence the british standard BS7799.
+
+
+This standard is a reference for quality in governance and management, just like other standards like the ISO 9001, which has its focus on the stakeholders. So, for the ISO 27001 in terms of quality, its own focus on information security managment demands the following tasks:
+
+
+#### The ISO/IEC 27001 Family
+
+1. **ISO/IEC 27000**: it defines all the nomenclature for the following family standards.
+2. **ISO/IEC 27002**: principles and guidelines for implementing information security management.
+2. **ISO/IEC 270013**: implementation guide for ISO 27001.
+3. **ISO/IEC 27004**: monitoring, measurement, analysis and evaluation.
+4. **ISO/IEC 27005**: risk management in information security.
+5. **ISO/IEC 27006**: presents requirements for audit enterprises.
+
+
+
+#### Basic Structure of ISO/IEC 27001
+
+It aims to grasp a holistic picture of the organization, starting from its own context, and pass for 5 great stages:
+
+1. Organization: to understand its own context, stakeholders, strenghs, weakness, and strategic goals.
+2. Risk assessment: to identify and to classify potential risks.
+3. Controls: to create processes to deal or to mitigate the risks which were catalogued.
+4. Measurements: in this stage is important to measure and analyse the results. To determ if the risks were treated accordingly and aiming the damage measured. Also to evaluate the effectiveness and the necessity to change or to incorporate things that were not properly assessed, but that here showed its potential risks.
+5. Continous improvement: it means to restart the cycle aiming to keep improving the managment of information security.
+
+
+#### The Main Controls from the ISO/IEC 27001 Standard
+
+1. **Internal Organization**
+2. **Mobile Devices and Remote Tasks**
+3. **HR Security**
+4. **Asset Management**
+5. **Medias**: 
+6. **Access Control**: physical and systems.
+7. **Cryptography**
+8. **Physical Security**
+9. **Equipaments**
+10. **Operations Security**
+11. **Protection againts Malware**
+12. **Backups**
+13. **OS control**
+14. **Vulnerability management** 
+15. **Data security**
+16. **Data transfer**
+17. **Development and Support Security**
+18. **Supplychain Security**
+19. **Incidents Management**
+20. **Regulatory laws**
 
 
 
 
 
-
-
-
-
-
-
-
-ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online - https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/
-
-Norma de segurança ISO/IEC 27001.
 
 ### Further Reading
 
-[ISO 22301 - Wikipedia](https://en.wikipedia.org/wiki/ISO_22301)
+[ISO 27001 – Annex A.17: Information Security Aspects of Business Continuity Management - Isms.online](https://www.isms.online/iso-27001/annex-a-17-information-security-aspects-of-business-continuity-management/)
 
-[]()
+[ISO 22301 - Wikipedia](https://en.wikipedia.org/wiki/ISO_22301)
 
 
 ### References
@@ -181,8 +224,9 @@ Norma de segurança ISO/IEC 27001.
 
 [Business Continuity Checklist: 8 Boxes to Check During COVID-19 - Lightedge.com](https://www.lightedge.com/blog/business-continuity-checklist-8-boxes-to-check-during-covid-19/)
 
+[ISO 27001 – O que é e como implementar? Tudo que você precisa saber - Certificacaoiso.com.br](https://certificacaoiso.com.br/iso-27001/)
 
-[]()
+[ISO 27001: entenda a principal norma de segurança da informação - Idwall.co](https://blog.idwall.co/iso-27001/)
 
 
 [^1]:pmbok-and-project-management-methodologies-2022-03-29

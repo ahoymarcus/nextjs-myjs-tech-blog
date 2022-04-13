@@ -127,11 +127,11 @@ Contudo, é preciso ter em mente o cuidado para o fato de que nada impede a exis
 
 ### Tipos de Certificados Digitais
 
-1. **Certificado Tipo A**: `Assinatura Digital`  
+1. **Certificado tipo A**: `Assinatura Digital`  
     1.1. Comprovação de autenticidade, autoria e integridade de documentos eletrônicos.
-2. **Certificado Tipo T**: `Tempo (Time stamping)`  
+2. **Certificado tipo T**: `Tempo (Time stamping)`  
     2.1. Este certificado garante a temporalidade de documentos importantes, ou entidades digitais, na medida em que ele atesta sua existência no timestamp referido no documento assinado.
-3. **Certificado Tipo S**: `Sigilo ou Confidencalidade`   
+3. **Certificado tipo S**: `Sigilo ou Confidencalidade`   
     3.1. utilizat tecnologia de criptografia para garantir o sigilo de dados. além da própria autoria e integridade do documento.
 
 

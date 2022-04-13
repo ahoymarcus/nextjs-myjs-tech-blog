@@ -41,6 +41,7 @@ And with the worlwide presence of Internet, also comes the easy access to the in
 - `Risk Management - Overview` [^3]
 - `ITIL - Service Management Framework` [^4]
 - `Cryptography, Steganography and Criptanalysis - Overview` [^5]
+- `Continuity Plan and Essentials for Businesses - Overview` [^6]
 
 
 ### Information Security Concepts
@@ -270,4 +271,5 @@ There is a dificul line to be drawn here, because from one side it is imperative
 
 [^5]:cryptography-steganography-and-cryptanalysis-overview-2022-04-07
 
+[^6]:continuity-plan-and-essentials-for-businesses-overview-2022-04-06
 

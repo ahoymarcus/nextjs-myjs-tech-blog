@@ -54,6 +54,8 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 - `ITIL - Service Management Framework` [^2]
 - `Risk Management - Overview` [^3]
 - `Information Security - Overview` [^4]
+- `Cryptography, Steganography and Criptanalysis - Overview` [^5]
+- `Continuity Plan and Essentials for Businesses - Overview` [^6]
 
 
 ### IT Government and IT Management
@@ -555,5 +557,9 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 [^3]:risk-management-overview-2022-04-03
 
 [^4]:information-security-overview-2022-04-05
+
+[^5]:cryptography-steganography-and-cryptanalysis-overview-2022-04-07
+
+[^6]:continuity-plan-and-essentials-for-businesses-overview-2022-04-06
 
 

@@ -235,7 +235,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Características dos algoritmos RSA, AES, SSL e SHA-256. 
 - [X] Infraestruturas de chaves públicas (PKI - Public Key Infrastrutucture). 
 - [X] Organização da ICP-Brasil.
-- [ ] Norma de segurança ISO/IEC 27001. 
+- [X] Norma de segurança ISO/IEC 27001. 
 - [X] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). 
 - [ ] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ).     
 
