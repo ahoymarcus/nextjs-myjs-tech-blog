@@ -222,8 +222,8 @@ CONHECIMENTOS BÁSICOS
 - [X] Conceitos de gestão de riscos. 
 - [X] Análise SWOT e matriz RACI. 
 - [X] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
-- [ ] Conceitos básicos de contratações de TI. 
-- [ ] Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e Comunicação). 
+- [X] Conceitos básicos de contratações de TI. 
+- [X] Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e Comunicação). 
 - [ ] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
 - [ ] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
 - [X] Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação. 
