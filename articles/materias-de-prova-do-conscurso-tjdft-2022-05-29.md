@@ -224,7 +224,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Biblioteca ITIL® versão 4: suporte a serviços e entrega de serviços. 
 - [X] Conceitos básicos de contratações de TI. 
 - [X] Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e Comunicação). 
-- [ ] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
+- [X] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
 - [ ] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
 - [X] Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação. 
 - [X] Planos de continuidade de negócio e serviços essenciais. 
@@ -237,7 +237,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Organização da ICP-Brasil.
 - [X] Norma de segurança ISO/IEC 27001. 
 - [X] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). 
-- [ ] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ).     
+- [X] Resolução CNJ nº 396/2021 (Estratégia Nacional de Segurança Cibernética do Poder Judiciário - ENSEC-PJ).     
 
 
 ### ÁREA: APOIO ESPECIALIZADO. ESPECIALIDADE: SEGURANÇA DA INFORMAÇÃO
