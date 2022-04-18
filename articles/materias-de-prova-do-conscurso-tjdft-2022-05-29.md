@@ -225,7 +225,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Conceitos básicos de contratações de TI. 
 - [X] Resolução CNJ nº 182/2013 (Diretrizes para as contratações de Solução de Tecnologia da Informação e Comunicação). 
 - [X] Resolução CNJ nº 370/2021 (Estratégia Nacional de Tecnologia da Informação e Comunicação do Poder Judiciário - ENTIC-JUD). 
-- [ ] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
+- [X] Resolução CNJ nº 335/2020 (Plataforma Digital do Poder Judiciário Brasileiro - PDPJ-Br). 
 - [X] Segurança da informação. Conceitos de segurança da informação: classificação de informações, confidencialidade, integridade, disponibilidade, não repúdio, privacidade, controle de acesso, segurança física e lógica; identificação, autorização e autenticação. 
 - [X] Planos de continuidade de negócio e serviços essenciais. 
 - [X] Conceitos de criptografia, esteganografia e criptoanálise. Sistemas criptográficos simétricos e de chave pública. Modos de operação de cifradores. Funções digestoras (hashes). 
