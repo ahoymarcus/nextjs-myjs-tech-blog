@@ -11,15 +11,8 @@ description: 'The Open Web Application Security Project (OWASP) is a nonprofit f
 1. ##### Introduction  
 2. ##### Some Projects Based at OWASP
 3. ##### OWASP Top 10
-	3.1.	
-	3.2.
-4. ##### 
-5. ##### 
-6. ##### 
-7. #####  
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+4. ##### Further Reading
+5. ##### References
 
 ### Introduction
 
@@ -39,6 +32,7 @@ The Open Web Application Security Project (OWASP) is a nonprofit foundation that
 - `Information Security - Overview` [^5]
 - `Cryptography, Steganography and Criptanalysis - Overview` [^6]
 - `Continuity Plan and Essentials for Businesses - Overview` [^7]       
+
 
 
 ### Some Projects Based at OWASP
@@ -97,9 +91,12 @@ The web Security Testing Guide (WSTG) Project produces the premier cybersecurity
 
 The OWASP Top 10 is a book/referential document outlining the 10 most critical security concerns for web application security. The report is put together by a team of security experts from all over the world and the data comes from a number of organizations and is then analysed.
 
+
 As it can be seem in the graph, there are three new categories, four categories with naming and scoping changes, and some consolidation in the Top 10 for 2021.
 
+
 The changes of name were made to shift the focus from generic symptoms from the problems to its root cause:
+
 
 ![owasp-top-10-2021](/images/articles/web-development/owasp-top-10-2021.png)
 
@@ -116,6 +113,7 @@ The changes of name were made to shift the focus from generic symptoms from the 
 10. **A10:2021 - Server-Side Requrest Forgery**: it is added from the Top 10 community survey (#1). The data shows a relatively low incidence rate with above average testing coverage, along with above-average ratings for Exploit and Impact potential. This category represents the scenario where the security community members are telling us this is important, even though it's not illustrated in the data at this time.
 
 
+###### Note: Common Weakness Enumeration (CWE)
 
 
 
@@ -126,7 +124,30 @@ The changes of name were made to shift the focus from generic symptoms from the 
 
 
 
-Principais vulnerabilidades e remediações (OWASP Top Ten).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is application security? - Vmware.com - https://www.vmware.com/topics/glossary/content/application-security.html
+
+Melhores Práticas de Segurança em Aplicações Web - Gocache.com.br - https://www.gocache.com.br/seguranca/seguranca-em-aplicacoes-web/
+
+Web Application Security Testing Guide - SoftwareTestingHelp.com - https://www.softwaretestinghelp.com/security-testing-of-web-applications/
+
+Controles e testes de segurança para aplicações e webservices. 
+
+Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 
 ### Further Reading
 
@@ -150,8 +171,6 @@ Principais vulnerabilidades e remediações (OWASP Top Ten).
 [Welcome to the OWASP Top 10 - 2021 - Owasp.org](https://owasp.org/Top10/)
 
 [OWASP platform](https://owasp.org/)
-
-[]()
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
