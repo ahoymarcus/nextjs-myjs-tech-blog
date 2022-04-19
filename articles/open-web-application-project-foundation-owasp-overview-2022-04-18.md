@@ -18,6 +18,9 @@ description: 'The Open Web Application Security Project (OWASP) is a nonprofit f
 4. ##### Web Application Security Testing Guide
     4.1. Methods for Web Security Testing
 5. ##### Static Code Analysis
+    5.1. Techniques for Static Code Analysis     
+    5.2. Advantages and Disadvantages from Static Code Analysis   
+    5.3. Tool Example List
 6. ##### SonarQube
 7. ##### Further Reading
 8. ##### References
@@ -201,11 +204,101 @@ A web application security testing could be applied to check, for example, thing
 
 ### Static Code Analysis
 
+The Static Code Analysis, also known as Source Code Analysis, is a task permormed usually as a part of code review that is carried out the the implementation phase of a Security Development Lifecycle (SDL).
+
+
+In this method analytic tools are used to check and highlight possible vulnerabilities direct at the source code written for the application, and for that reason it is named 'static', because it analysis the static code written and not the running application.
+
+
+It is also common now days that the Integrated Development Environments (IDEs) provind such types of checking also, and usually they detect:
+
+- **Security vulnerabilities**
+- **Performance issues**
+- **Non-compliance with standards**
+- **Use of out of date programming constructs**
 
 
 
+#### Techniques for Static Code Analysis
+
+1. **Data Flow Analysis**: this kind of technique collects run-time (or dynamic) information about the software while it is still in the static state, and there are 3 common terms used for the data flow analysis:   
+    1.1. Basic Block (the code)   
+    1.2. Control Flow Analysis (the flow of data)   
+    1.3. Control Flow Path (the path the data takes)
+ 
+
+This kind of analysis is restricted to a basic block of code only and its internal operations, like analysis the flow of a loop block or a if/else statement to determ if they fullfill its internal premises.
 
 
+For example, a loop may enter a infinite loop, and a if/else statement can have a clause that is never reached because a wrong set of conditions.
+
+
+`Regular Expression matching on text is very flexible, easy to write rules to match, but can often lead to a lot of false positives and the matching rules are ignorant of the surrounding code context. AST matching treats the source code as program code, and not just files filled with text, this allows for more specific, contextual matching and can reduce the number of false positives reported against the code.` [SecureCodeWarion.com](https://www.securecodewarrior.com/blog/what-is-static-analysis)
+
+
+###### Control Flow Graj́ (CFG)
+
+`An abstract graph representation of software by use of nodes that represent basic blocks. A node in a graph represents a block; directed edges are used to represent jumps (paths) from one block to another. If a node only has an exit edge, this is known as an ‘entry’ block, if a node only has a entry edge, this is know as an ‘exit’ block. ` (Wögerer, 2005)
+
+In this example below Control Flow Graph; ‘node 1’ represents the entry block and ‘node 6’ represents the exit block.
+
+![control_flow_graph](/images/articles/web-development/control_flow_graph.png)
+
+
+###### Taint Analysis
+
+In this method, the taint analysis uses variables that are temperd to trace vulnerability in the functions that receive them, which are known as 'sink'. Thus, if that tainted variable is passad to the 'sink' without first being sanitized, this brings a flag for vulnerability by the security tool.
+
+
+`Some programming languages such as Perl and Ruby have Taint Checking built into them and enabled in certain situations such as accepting data via CGI.` [OWASP.org](https://owasp.org/www-community/controls/Static_Code_Analysis)
+
+
+###### Lexical Analysis
+
+And according to the article at [OWASP.org](https://owasp.org/www-community/controls/Static_Code_Analysis), in this method the tool using lexical analysis would convert the source code syntas into 'tokens' of information to abstract the source code and make it easy to be manipulated.
+
+
+So, the pre-tokenised PHP source code could be:
+
+```
+<?php $name = "Ryan"; ?>
+```
+
+And the post tokenised PHP source code would be then:
+
+```
+T_OPEN_TAG
+T_VARIABLE
+=
+T_CONSTANT_ENCAPSED_STRING
+;
+T_CLOSE_TAG
+```
+
+
+#### Advantages and Disadvantages from Static Code Analysis
+
+1. **Advantages**:   
+    1.1. Scales well and can be repeatd easy.    
+    1.2. For things that can be autmatically found with high confidence.
+2. **Disadvantages**:   
+    2.1. The current state of the art restricts this tools to deals with simpler issues which can be more easily automated, and eventhough many tools are getting better, now days more serious vulnerabilities are not covered by these tools.   
+    2.2. High number of false positives.   
+    2.3. Frequently can't find configuration issues, because they are not represented in the code.   
+    2.4. Difficult to 'prove' that an identified security issue is an actual vulnerability.   
+    2.5. Many of these tools have difficulty analysing code that can't be compiled. Analysts frequently can't compile code because they don't have the right libraries, all the compilation instructions, all the code, etc.
+
+
+#### Tool Example List
+
+1. [OWASP - Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)
+2. [NIST - Source Code Security Analysers](https://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html)
+3. [Wikipedia - List of tools for static code analysis](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis)
+4. **The inbuilt IntelliJ Inspections**: common coding patterns
+5. **SpotBugs**: common errors
+6. **SonarLint**: common usage patterns
+7. **CheckStyle**: common style patterns
+8. **Sensei from Secure Code Warrior**: custom rule creation
 
 
 
@@ -230,7 +323,7 @@ A web application security testing could be applied to check, for example, thing
 
 
 
-Static Code Analysis - OWASP.org - https://owasp.org/www-community/controls/Static_Code_Analysis
+
 
 [SonarQube Documentation - SonarQube.org](https://docs.sonarqube.org/latest/)
 
@@ -264,6 +357,10 @@ Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 [Melhores Práticas de Segurança em Aplicações Web - Gocache.com.br](https://www.gocache.com.br/seguranca/seguranca-em-aplicacoes-web/)
 
 [Web Application Security Testing Guide - SoftwareTestingHelp.com](https://www.softwaretestinghelp.com/security-testing-of-web-applications/)
+
+[Static Code Analysis - OWASP.org](https://owasp.org/www-community/controls/Static_Code_Analysis)
+
+[What is static analysis? - SecureCodeWarion.com](https://www.securecodewarrior.com/blog/what-is-static-analysis)
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
