@@ -9,10 +9,15 @@ description: 'The Open Web Application Security Project (OWASP) is a nonprofit f
 # Open Web Application Project Foundation (OWASP) - Overview
 
 1. ##### Introduction  
-2. ##### Some Projects Based at OWASP
-3. ##### OWASP Top 10
-4. ##### Further Reading
-5. ##### References
+2. ##### The Open Web Application Security Project (OWASP)
+    2.1. Some Projects Based at OWASP   
+    2.2. OWASP Top 10
+3. ##### Application Security
+    3.1. Types of Application Security    
+    3.2. Best Practices in Application Security
+4. ##### Web Application Security Testing Guide
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
 
@@ -35,7 +40,9 @@ The Open Web Application Security Project (OWASP) is a nonprofit foundation that
 
 
 
-### Some Projects Based at OWASP
+### The Open Web Application Security Project (OWASP)
+
+#### Some Projects Based at OWASP
 
 
 At the [OWASP platform](https://owasp.org/) it is possible to find many projects that brings to the Internet Community access to security information. Among some of its projects it's possible to find:
@@ -87,7 +94,7 @@ The web Security Testing Guide (WSTG) Project produces the premier cybersecurity
 
 
 
-### OWASP Top 10
+#### OWASP Top 10
 
 The OWASP Top 10 is a book/referential document outlining the 10 most critical security concerns for web application security. The report is put together by a team of security experts from all over the world and the data comes from a number of organizations and is then analysed.
 
@@ -117,6 +124,61 @@ The changes of name were made to shift the focus from generic symptoms from the 
 
 
 
+### Application Security
+
+Application security is the security measures that are described at application development level and that have the aim to enforce the Information Security, like the primary requirements of information security like confidentiality, integrity, availability, authentication, authorization, nonrepudiation, etc.
+
+
+Another important point is the fact that application level also reaches the whole cycle of software development, including testing or even deployment and the layers that may be involved in those tasks. Just like the use of different hardware, like routers, proxy servers, or any other mean that may add security for the application operation.
+
+
+And the site of [Vmware.com](https://www.vmware.com/topics/glossary/content/application-security.html) brings a very good statement about the importance of application security:
+
+`Application security is important because today’s applications are often available over various networks and connected to the cloud, increasing vulnerabilities to security threats and breaches. There is increasing pressure and incentive to not only ensure security at the network level but also within applications themselves. One reason for this is because hackers are going after apps with their attacks more today than in the past. Application security testing can reveal weaknesses at the application level, helping to prevent these attacks. `
+
+
+#### Types of Application Security
+
+As it was stated, application security applies to all of the application life cycle:
+
+1. **Developement cycle**:   
+    1.1. Authentication   
+    1.2. Authorization  
+    1.3. Nonrepudiation   
+    1.4. Encryption  
+    1.5. Logging   
+    1.6. Application security controls: these are techniques at coding level that enhance security.
+2. **Testing cycle**: it makes sure that the application is in compliance with a specific set of security criteria.
+3. **Deployment cycle**:
+    3.1. Cloud-based application   
+    3.2. Mobile application   
+    3.3. Web-based application/services: this kind of deployment implies accesses through a browser interface.
+
+
+#### Best Practices in Application Security
+
+Some important pratices to be applyed to any application projetct:
+
+1. **Planning**:   
+    1.1. Strategic goals   
+    1.2. Define management: funds, const, responsabilities, etc.   
+    1.3. Cataloging application requirements   
+    1.4. Cataloging risks   
+    1.5. Risk assessment 
+2. **Project management**:   
+    2.1. Cataloging applications: to map and details all the applications running, which in turn helps to find redundant applications, 'rogue applications', and even unnecessary applications inside the system.   
+    2.2. Defining application Prioraty Levels: it is essential to focus resourse at the most important parts of the operation. **Critic** assets are those related to the strategic goals, that are more exposed, that deals with confidential or private data, and so these are the assets which should receive the most focus, like from extensive testing, for example.    
+    2.3. Logging
+3. **Documenting**
+
+4. **Deployment**:   
+    3.1. Definition of privileges: here is important to use the rule of the least privileges for authentication and authorization, for example.
+
+
+
+### Web Application Security Testing Guide
+
+https://www.softwaretestinghelp.com/security-testing-of-web-applications/
 
 
 
@@ -138,10 +200,14 @@ The changes of name were made to shift the focus from generic symptoms from the 
 
 
 
-
-What is application security? - Vmware.com - https://www.vmware.com/topics/glossary/content/application-security.html
-
-Melhores Práticas de Segurança em Aplicações Web - Gocache.com.br - https://www.gocache.com.br/seguranca/seguranca-em-aplicacoes-web/
+    
+    
+    
+    
+    
+    
+    
+    
 
 Web Application Security Testing Guide - SoftwareTestingHelp.com - https://www.softwaretestinghelp.com/security-testing-of-web-applications/
 
@@ -171,6 +237,11 @@ Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 [Welcome to the OWASP Top 10 - 2021 - Owasp.org](https://owasp.org/Top10/)
 
 [OWASP platform](https://owasp.org/)
+
+[What is application security? - Vmware.com](https://www.vmware.com/topics/glossary/content/application-security.html)
+
+[Melhores Práticas de Segurança em Aplicações Web - Gocache.com.br](https://www.gocache.com.br/seguranca/seguranca-em-aplicacoes-web/)
+
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
