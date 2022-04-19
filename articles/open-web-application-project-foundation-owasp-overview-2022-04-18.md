@@ -16,8 +16,11 @@ description: 'The Open Web Application Security Project (OWASP) is a nonprofit f
     3.1. Types of Application Security    
     3.2. Best Practices in Application Security
 4. ##### Web Application Security Testing Guide
-5. ##### Further Reading
-6. ##### References
+    4.1. Methods for Web Security Testing
+5. ##### Static Code Analysis
+6. ##### SonarQube
+7. ##### Further Reading
+8. ##### References
 
 ### Introduction
 
@@ -170,7 +173,6 @@ Some important pratices to be applyed to any application projetct:
     2.2. Defining application Prioraty Levels: it is essential to focus resourse at the most important parts of the operation. **Critic** assets are those related to the strategic goals, that are more exposed, that deals with confidential or private data, and so these are the assets which should receive the most focus, like from extensive testing, for example.    
     2.3. Logging
 3. **Documenting**
-
 4. **Deployment**:   
     3.1. Definition of privileges: here is important to use the rule of the least privileges for authentication and authorization, for example.
 
@@ -178,7 +180,36 @@ Some important pratices to be applyed to any application projetct:
 
 ### Web Application Security Testing Guide
 
-https://www.softwaretestinghelp.com/security-testing-of-web-applications/
+A web application security testing could be applied to check, for example, things related to authentication and authorization in the system to avoid restricted information being seem by strange persons or even some kind of functionality being unauthorized to the wrong kind of user.
+
+
+#### Methods for Web Security Testing
+
+1. **Password Cracking**: which can be done by varous methods like brute force or by social engineering.   
+    1.1. Strong passwords    
+    1.2. Cryptography    
+    1.3. Not using cookies to store sensitive information.
+2. **URL Manipulation through HTTP GET methods**: to test if the application is passing sensitive information in the query string.   
+    2.1. This happens when the application uses the HTTP GET  method to pass information between the client and the server.   
+    2.2. This could be used to try other values while trying to access restrict information or even altering data.
+3. **SQL Injection**: this is a serious threat because it could lend direct access to the database scripting language.
+4. **Cross-Site Scriptiong (XSS)**: meaning that any scripting language should be accepted by the application.   
+    4.1. This time not only the database could be affected, but even the server itself could be completely compromised.
+
+
+
+
+### Static Code Analysis
+
+
+
+
+
+
+
+
+
+### SonarQube
 
 
 
@@ -199,19 +230,9 @@ https://www.softwaretestinghelp.com/security-testing-of-web-applications/
 
 
 
+Static Code Analysis - OWASP.org - https://owasp.org/www-community/controls/Static_Code_Analysis
 
-    
-    
-    
-    
-    
-    
-    
-    
-
-Web Application Security Testing Guide - SoftwareTestingHelp.com - https://www.softwaretestinghelp.com/security-testing-of-web-applications/
-
-Controles e testes de segurança para aplicações e webservices. 
+[SonarQube Documentation - SonarQube.org](https://docs.sonarqube.org/latest/)
 
 Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 
@@ -242,6 +263,7 @@ Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 
 [Melhores Práticas de Segurança em Aplicações Web - Gocache.com.br](https://www.gocache.com.br/seguranca/seguranca-em-aplicacoes-web/)
 
+[Web Application Security Testing Guide - SoftwareTestingHelp.com](https://www.softwaretestinghelp.com/security-testing-of-web-applications/)
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
