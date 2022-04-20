@@ -185,7 +185,7 @@ CONHECIMENTOS BÁSICOS
 - [X] Orientação a objetos: classes e objetos; relacionamentos; herança e polimorfismo; encapsulamento.
 - [X] Padrões de arquitetura de software: MVC, orientado a eventos, microsserviços, SOA/Web Services, cliente-servidor, pipes-and-filters e P2P. 
 - [X] Controles e testes de segurança para aplicações e webservices. 
-- [ ] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
+- [X] Análise estática de código fonte. Conhecimento da ferramenta SonarQube. 
 - [X] Principais vulnerabilidades e remediações (OWASP Top Ten). 
 - [X] Princípios de DevOps, DevSecOps e IaC (Infrastructure as Code). 
 - [O] Linguagens de programação. Conhecimento das linguagens: JavaScript, TypeScript, Java, PHP e Python.

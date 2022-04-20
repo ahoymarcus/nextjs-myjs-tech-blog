@@ -20,7 +20,7 @@ description: 'The Open Web Application Security Project (OWASP) is a nonprofit f
 5. ##### Static Code Analysis
     5.1. Techniques for Static Code Analysis     
     5.2. Advantages and Disadvantages from Static Code Analysis   
-    5.3. Tool Example List
+    5.3. Static Code Analysis Tools List
 6. ##### SonarQube
 7. ##### Further Reading
 8. ##### References
@@ -236,7 +236,7 @@ For example, a loop may enter a infinite loop, and a if/else statement can have 
 `Regular Expression matching on text is very flexible, easy to write rules to match, but can often lead to a lot of false positives and the matching rules are ignorant of the surrounding code context. AST matching treats the source code as program code, and not just files filled with text, this allows for more specific, contextual matching and can reduce the number of false positives reported against the code.` [SecureCodeWarion.com](https://www.securecodewarrior.com/blog/what-is-static-analysis)
 
 
-###### Control Flow Graj́ (CFG)
+###### Control Flow Graph (CFG)
 
 `An abstract graph representation of software by use of nodes that represent basic blocks. A node in a graph represents a block; directed edges are used to represent jumps (paths) from one block to another. If a node only has an exit edge, this is known as an ‘entry’ block, if a node only has a entry edge, this is know as an ‘exit’ block. ` (Wögerer, 2005)
 
@@ -289,7 +289,7 @@ T_CLOSE_TAG
     2.5. Many of these tools have difficulty analysing code that can't be compiled. Analysts frequently can't compile code because they don't have the right libraries, all the compilation instructions, all the code, etc.
 
 
-#### Tool Example List
+#### Static Code Analysis Tools List
 
 1. [OWASP - Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)
 2. [NIST - Source Code Security Analysers](https://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html)
@@ -304,30 +304,33 @@ T_CLOSE_TAG
 
 ### SonarQube
 
+According to the [SonarQube Docs](https://docs.sonarqube.org/latest/), the SonarQube® is an automatic code review tool to detect bugs, vulnerabilities, and code smells which can be integrated with the existing workflow to enable continous code inspection across the project branches and pull requests.
+
+
+![sonarqube-development-cycle](/images/articles/web-development/sonarqube-development-cycle.png)
+
+
+So, in a typical development process:
+
+1. Developers develop and merge code in an IDE (preferably using SonarLint to receive immediate feedback in the editor) and check-in their code to their DevOps Platform.
+2. An organization’s continuous integration (CI) tool checks out, builds, and runs unit tests, and an integrated SonarQube scanner analyzes the results.
+3. The scanner posts the results to the SonarQube server which provides feedback to developers through the SonarQube interface, email, in-IDE notifications (through SonarLint), and decoration on pull or merge requests (when using Developer Edition and above).
+
+
+The SonarQube tool can work at the branches level and at the pull requests made, and the toolset have the following tools:
+
+1. **SonarLint**: it is a tool for the text editor which gives immediate feedbacks.
+2. **Quality Gate**: it allows the developer to know if the project is ready for deployment.
+3. **Clean as You Code**: this is an approach to code quality that maintain its focus on high standards.
+4. **Issues**: the issues are raised whenever a piece of your code breaks a coding rule.   
+    4.1. Whether it's an error that will break your code (bug),   
+    4.2. A point in your code open to attack (vulnerability),    
+    4.3. Or a maintainability issue (code smell).
+5. **Security Hotspots**: it highlights security-sensitive pieces of code that need to be reviewed.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[SonarQube Documentation - SonarQube.org](https://docs.sonarqube.org/latest/)
-
-Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 
 ### Further Reading
 
@@ -361,6 +364,8 @@ Análise estática de código fonte. Conhecimento da ferramenta SonarQube.
 [Static Code Analysis - OWASP.org](https://owasp.org/www-community/controls/Static_Code_Analysis)
 
 [What is static analysis? - SecureCodeWarion.com](https://www.securecodewarrior.com/blog/what-is-static-analysis)
+
+[SonarQube Documentation - SonarQube.org](https://docs.sonarqube.org/latest/)
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
