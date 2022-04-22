@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Concepts and Types fo Servers - Overview'
+title: 'Concepts and Types of Servers - Overview'
 date: '2022-03-19'
 subject: 'development-articles'
 description: 'A server is a computer designed to process and deliver data to others computers over a network, being web servers some of the most famous while they are responsible to process requests and deliver data across the Wide World Web. And, eventhough a server application software may be installed in most current machines, usually servers designate high end machines that are able to serve to a lot of clients. Some types of servers available are Web Servers, Application Servers and Storage Servers, etc.'
 ---
 
-# Concepts and Types fo Servers - Overview
+# Concepts and Types of Servers - Overview
 
 1. ##### Introduction
 2. ##### Comon Types of Servers

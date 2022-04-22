@@ -262,6 +262,10 @@ $ docker run -i -t ubuntu /bin/bash
 5. Eventhough Docker is lightweight, it still has some overhead when compered to bare-metal speeds.
 
 
+###### Using Docker with specific languages:
+- [Language-specific guides](https://docs.docker.com/language/)
+
+
 
 ### Kubernetes
 
