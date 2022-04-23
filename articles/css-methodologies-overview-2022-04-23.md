@@ -16,11 +16,6 @@ description: 'CSS is a simple language for styling web pages, but it can quickly
 	3.3. ITCSS (Inverted Triangle CSS)   
 	3.4. OOCSS (Object-Oriented CSS)    
 	3.5. SMACSS (Scalable and Modular Architecture for CSS)
-4. ##### 
-5. ##### 
-6. ##### 
-7. #####  
-8. ##### 
 9. ##### Further Reading
 10. ##### References
 
@@ -112,7 +107,7 @@ And yet according to the site [Creativebloq.com](https://www.creativebloq.com/fe
     2.1. So, as the site states, its is common to use the Atomic CSS principle to create helper classes that define consistent, reusable decalration blocks.
 
 
-	
+
 #### BEM Methodology (Block, Element, Modifier)
 
 The aim of the BEM (Block, Element, Modifier) methodology is a component-based approach for design which tries to clarify the intention and the relationship between a component (the Block) and its elements and modifiers.
@@ -226,8 +221,7 @@ Examples of class naming used with OOCSS:
 ```
 
 
-Still according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), the OOCSS has its disadvantage:
-
+- Still according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), the OOCSS has its disadvantage:
 - **The lack of rules leads to variations in interpratation that can result in inconsistences**.
 
 
