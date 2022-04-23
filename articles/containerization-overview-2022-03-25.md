@@ -264,7 +264,9 @@ $ docker run -i -t ubuntu /bin/bash
 
 ###### Using Docker with specific languages:
 - [Language-specific guides](https://docs.docker.com/language/)
-
+- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- [Official Node.js Docker Image](https://hub.docker.com/_/node/)
+- [Node.js Docker Best Practices Guide](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
 
 ### Kubernetes
