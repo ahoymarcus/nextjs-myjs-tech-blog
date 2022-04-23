@@ -90,6 +90,28 @@ According to the site [Valoremreply.com](https://www.valoremreply.com/post/5_css
 
 `The advantage to this methodology is that it has a lower barrier to entry and is more easily understood by those who are not well-versed in CSS. This approach can handle longhand or shorthand class names (longhand would be more readable whereas shorthand favors brevity).` [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
 	
+
+According to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), while it aims to create a specific class selector for each repeating CSS decalaration, it welcomes the definition of property values in class names (different from what OOCSS expects):
+
+```
+.mb-sm { margin-bottom: 16px; }
+.mb-lg { margin-bottom: 32px; }
+.color-blue { color: #1e90ff; }
+
+<div class="mb-lg">
+    <p class="mb-lg color-blue">Blue text</p>
+    <img class="mb-sm" />
+</div>
+```
+
+And yet according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), it can be said about the Atomic CSS that:
+
+
+1. **Advantages**: there is the easy of maintaining a consistent code and not having to invent classes for components requiring a single CSS rule.
+2. **Disadvantages**: that when it is used on its own it leads to an unmanageble number of classes and bloated HTML files.   
+    2.1. So, as the site states, its is common to use the Atomic CSS principle to create helper classes that define consistent, reusable decalration blocks.
+
+
 	
 #### BEM Methodology (Block, Element, Modifier)
 
@@ -117,14 +139,45 @@ The BEM methodology divides the interface into various independent blocks/compon
 .block__element--modifier {}
 ```
     
-    
-    
+
+Finally, about BEM can be said that:
+
+1. **Advantages**: that it is a highly effective naming convention that creates predictably behaving CSS that is easy to manage, maintain and scale.
+2. **Disadvantages**: 
+    2.1. The difficulty in inventing class names for deeply nested objects, besides the long class names and bloated HTML that may sometimes result.   
+    2.2. The lack of of consistency that is caused by the inability to share CSS between objects.
+
+
+
+Interesting to notice from [Medium.com](https://medium.com/@uidev3594/css-methodologies-d31903bafab3), the BEM methodology has a have strict way to structure the CSS into files, where it suggests `that every single block, element, and modifier should have its own CSS file`.
+
+So, a possible scenario to a project could be just like this:
+
+``` 
+blocks/
+    input/
+        _type/
+            input_type_search.css
+        __box/
+            input__box.css
+        input.css
+        input.js
+    button/
+        button.css
+        button.js
+        button.png
+``` 
+
+`The above structure is very organized, but to create a new file for every new class basically is a little extreme for us. This is one reason BEM is difficult to fully implement in the recommended manner.`  [Medium.com](https://medium.com/@uidev3594/css-methodologies-d31903bafab3)
+
+
+
 #### ITCSS (Inverted Triangle CSS)
 	
 The ITCSS (Inverted Triangle CSS) methodology aims to organize the CSS files to improve the use of the namespace and selectors specificity:
 
 
-`ITCSS separates your global CSS codebase into several sections to form an inverted triangle structure. This method provides a solid level of encapsulation so that it can prevent non-shared CSS-rules from interfering with each another. Unlike other methodologies ITCSS is very flexible as it does not force one to use any naming convention.`  [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
+`ITCSS separates your global CSS codebase into several sections to form an inverted triangle structure. This method provides a solid level of encapsulation so that it can prevent non-shared CSS-rules from interfering with each another. Unlike other methodologies ITCSS is very flexible as it does not force one to use any naming convention. [...] So, The best way to maintain our CSS is, to take the core concepts of BEM and SMACSS and combined them in a way that made sense to modularize our CSS.`  [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
 
 
 The main design pattern followed by this methodology should be the arrangement of the code is a specificity descending way, that is, the least specific and mostly generic selectors appear at the start/top of the file, while the specificity steadly increases downwards.
@@ -140,16 +193,42 @@ So, the CSS files arranged as a ITCSS layer can be ordered this way:
 7. **Utilities layer**: this most specific layer can override anything that goes before in the triangle.
 
 
+Here we have a very descriptive illustration from [prtksxna.com](https://prtksxna.com/bookmark-itcss/):
+
 ![itcss-css-methodology-medium](/images/articles/web-development/itcss-css-methodology-medium.png)
 
 
 	
 #### OOCSS (Object-Oriented CSS)
 
-The OOCSS (Object-Oriented CSS) methodology treats the design elements as objects, and aim heavy reuse of CSS codes. And there are 2 basic rules:
+The OOCSS (Object-Oriented CSS) methodology treats the design elements as objects, and it aims heavy reuse of CSS codes. And there are 2 basic rules:
 
 1. **Separation of structure from skin**: it defines the repeating visual features which should be written separately.
 2. **Separation of containers and content**: it defines rarely use location-dependent styles. That is an object should look the same wherever you put it and child-selectors should be used less.
+
+
+So, as a guideline, the OOCSS identifies visual elements as objects and separates their struture into a declaration block, so it can be maintainend in a single place, besides being reused. 
+
+
+`Declaration blocks are applied to elements using single-class selectors to avoid specificity issues. This technique also separates content from container, so objects look the same wherever they appear. Classes also decouple mark-up from CSS. Using .title instead of h2 for heading <h2 class="title"> allows it to be changed to <h3 class="title"> without changing the CSS. To further separate HTML and CSS, class names should not include property values. A class 'blue' would require renaming in HTML and CSS if the colour changed.` [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies)
+
+
+Examples of class naming used with OOCSS:
+
+```
+.button { padding: 10px 16px; }
+.primary-skin { color: blue; }
+.secondary-skin { color: green; }
+
+<button class="button primary-skin">primary skin button</button>
+<button class="button secondary-skin">secondary skin button</button>
+<div class="primary-skin">primary skin div</div>
+```
+
+
+Still according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), the OOCSS has its disadvantage:
+
+- **The lack of rules leads to variations in interpratation that can result in inconsistences**.
 
 
 
@@ -160,38 +239,44 @@ The SMACSS (Scalable and Modular Architecture for CSS) allows to the creation of
 1. **Base**: these should be the default values used across the entire site for all elements.
 2. **Layout**: it divides the pages into major sections with the responsabilidty to properly position the elements on the page.
 3. **Module**: these contains the core reusable blocks, and should represent the independent page fragments/components that has specific functionalities.
-4. **State**: it denotes the variations for each element, as it auguments other styles under given conditions.
+4. **State**: it denotes the variations for each element, as it auguments other styles under given conditions.   
+    4.1. Like states of 'active', or 'disabled', or 'is-visible'.
 5. **Theme**: it should be akin to the 'state' category, but it applies to modules and layouts.   
     5.1. Mostly these are elements that repeat across the whole project like the rules of the primary colors, shapes, borders, shadows, and such.
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 
-CSS Methodologies - Medium.com - https://medium.com/@uidev3594/css-methodologies-d31903bafab3
+According to the site [Medium.com](https://medium.com/@uidev3594/css-methodologies-d31903bafab3), the SMACSS does not place to much emphasis on how to structure CSS into files:
 
-A web designer's guide to CSS methodologies - Creativebloq.com - https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies
+```
+base/
+
+layouts/
+
+modules/
+
+states/
+
+app.scss
+``` 
+
+
+
 
 ### Further Reading
 
 [BEM em 5min - Medium.com](https://medium.com/trainingcenter/bem-em-5min-f5c80fd23439)
 
-[]()
 
 ### References
 
 [CSS Architecture: First steps - Cheesecakelabs.com](https://cheesecakelabs.com/blog/css-architecture-first-steps/)
 
 [5 Methodologies for Architecting CSS - Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
+
+[A web designer's guide to CSS methodologies - Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies)
+
+[CSS Methodologies - Medium.com](https://medium.com/@uidev3594/css-methodologies-d31903bafab3)
+
 
 []()
 
