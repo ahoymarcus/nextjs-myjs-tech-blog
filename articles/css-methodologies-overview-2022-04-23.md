@@ -221,8 +221,8 @@ Examples of class naming used with OOCSS:
 ```
 
 
-- Still according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), the OOCSS has its disadvantage:
-- **The lack of rules leads to variations in interpratation that can result in inconsistences**.
+- **Still according to the site [Creativebloq.com](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies), the OOCSS has its disadvantage**:
+- The lack of rules leads to variations in interpratation that can result in inconsistences.
 
 
 
