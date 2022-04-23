@@ -81,11 +81,17 @@ And as a mean to achieve that goal, some processes are applied to the developmen
 
 
 #### Atomic CSS    
-	
-	
+
+The Atomic CSS simply defines a set of classes representing single-purpose styling units, and this methodology aims to provide highly granular and reusable styles, instead of rules for every component.
 	
 
-### BEM Methodology (Block, Element, Modifier)
+According to the site [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/), this methodology solves some of the traditional CSS issues using classes that are considered single-purpose styling units. And thus this can reduce the specificity conflicts and tries to make the styling more variable in a predictable manner. And still according to the site, this method helps in reduction in redundancy of code and the confusion of overriding CSS styles.
+	
+
+`The advantage to this methodology is that it has a lower barrier to entry and is more easily understood by those who are not well-versed in CSS. This approach can handle longhand or shorthand class names (longhand would be more readable whereas shorthand favors brevity).` [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
+	
+	
+#### BEM Methodology (Block, Element, Modifier)
 
 The aim of the BEM (Block, Element, Modifier) methodology is a component-based approach for design which tries to clarify the intention and the relationship between a component (the Block) and its elements and modifiers.
 
@@ -115,8 +121,28 @@ The BEM methodology divides the interface into various independent blocks/compon
     
 #### ITCSS (Inverted Triangle CSS)
 	
-	
-	
+The ITCSS (Inverted Triangle CSS) methodology aims to organize the CSS files to improve the use of the namespace and selectors specificity:
+
+
+`ITCSS separates your global CSS codebase into several sections to form an inverted triangle structure. This method provides a solid level of encapsulation so that it can prevent non-shared CSS-rules from interfering with each another. Unlike other methodologies ITCSS is very flexible as it does not force one to use any naming convention.`  [Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
+
+
+The main design pattern followed by this methodology should be the arrangement of the code is a specificity descending way, that is, the least specific and mostly generic selectors appear at the start/top of the file, while the specificity steadly increases downwards.
+
+So, the CSS files arranged as a ITCSS layer can be ordered this way:
+
+1. **Settings layer**: this broader layer can define all variables.
+2. **Tools layer**: this layer can be used to declaring mixins and other functions that are globally required.
+3. **Generic layer**: this layer can contain all the normalized, high-level, far-reaching styels.
+4. **Elements layer**: this layer can hold the styles for bare HTML elements and can redefine the default styles for those elements in this layer.
+5. **Object layer**: this layer has the styles for the first elements that have classes (like containers, wrappers, rows, etc.).
+6. **Components layer**: this layer can house most of the UI element styles.
+7. **Utilities layer**: this most specific layer can override anything that goes before in the triangle.
+
+
+![itcss-css-methodology-medium](/images/articles/web-development/itcss-css-methodology-medium.png)
+
+
 	
 #### OOCSS (Object-Oriented CSS)
 
@@ -129,7 +155,14 @@ The OOCSS (Object-Oriented CSS) methodology treats the design elements as object
 
 #### SMACSS (Scalable and Modular Architecture for CSS)
     
-The SMACSS (Scalable and Modular Architecture for CSS) allows to the creation of a modular design in larger projects, using 5 categories for the CSS to have its files arranged in a clear and redable structure.
+The SMACSS (Scalable and Modular Architecture for CSS) allows to the creation of a modular design in larger projects, using 5 categories for the CSS to have its files arranged in a clear and redable structure:
+
+1. **Base**: these should be the default values used across the entire site for all elements.
+2. **Layout**: it divides the pages into major sections with the responsabilidty to properly position the elements on the page.
+3. **Module**: these contains the core reusable blocks, and should represent the independent page fragments/components that has specific functionalities.
+4. **State**: it denotes the variations for each element, as it auguments other styles under given conditions.
+5. **Theme**: it should be akin to the 'state' category, but it applies to modules and layouts.   
+    5.1. Mostly these are elements that repeat across the whole project like the rules of the primary colors, shapes, borders, shadows, and such.
     
     
     
@@ -148,13 +181,9 @@ CSS Methodologies - Medium.com - https://medium.com/@uidev3594/css-methodologies
 
 A web designer's guide to CSS methodologies - Creativebloq.com - https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies
 
-5 Methodologies for Architecting CSS - Valoremreply.com - https://www.valoremreply.com/post/5_css_methodologies/
-
-BEM em 5min - Medium.com - https://medium.com/trainingcenter/bem-em-5min-f5c80fd23439
-
 ### Further Reading
 
-
+[BEM em 5min - Medium.com](https://medium.com/trainingcenter/bem-em-5min-f5c80fd23439)
 
 []()
 
@@ -162,6 +191,7 @@ BEM em 5min - Medium.com - https://medium.com/trainingcenter/bem-em-5min-f5c80fd
 
 [CSS Architecture: First steps - Cheesecakelabs.com](https://cheesecakelabs.com/blog/css-architecture-first-steps/)
 
+[5 Methodologies for Architecting CSS - Valoremreply.com](https://www.valoremreply.com/post/5_css_methodologies/)
 
 []()
 
