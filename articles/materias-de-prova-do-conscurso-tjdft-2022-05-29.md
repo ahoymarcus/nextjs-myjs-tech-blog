@@ -112,27 +112,27 @@ CONHECIMENTOS BÁSICOS
    
 #### LÍNGUA INGLESA (SOMENTE PARA AS ESPECIALIDADES DE ANÁLISE DE SISTEMAS, SUPORTE EM TECNOLOGIA DA INFORMAÇÃO, ANÁLISE DE DADOS E SEGURANÇA DA INFORMAÇÃO)
 
-- [ ] Estratégias de leitura em língua inglesa: compreensão geral de texto; reconhecimento de informações específicas; capacidade de análise e síntese; inferência e predição; reconhecimento de organização semântica e discursiva; uso de palavras mais frequentes, sinonímia e antonímia; funções retóricas; percepção de metáfora e metonímia.
-- [ ] Aspectos sintático-gramaticais relevantes à compreensão de texto: artigos definidos e indefinidos; tempos e modos verbais; uso de preposições, conjunções, pronomes e modais; concordância nominal e verbal; formação e classe de palavras; expressões idiomáticas; relações de subordinação e coordenação; voz passiva, discurso direto e indireto.   
+- [X] Estratégias de leitura em língua inglesa: compreensão geral de texto; reconhecimento de informações específicas; capacidade de análise e síntese; inferência e predição; reconhecimento de organização semântica e discursiva; uso de palavras mais frequentes, sinonímia e antonímia; funções retóricas; percepção de metáfora e metonímia.
+- [X] Aspectos sintático-gramaticais relevantes à compreensão de texto: artigos definidos e indefinidos; tempos e modos verbais; uso de preposições, conjunções, pronomes e modais; concordância nominal e verbal; formação e classe de palavras; expressões idiomáticas; relações de subordinação e coordenação; voz passiva, discurso direto e indireto.   
    
          
 #### Ética no serviço público
 
-- [ ] Ética e moral. Ética, princípios e valores. Ética e democracia: exercício da cidadania. Ética e função pública.
-- [ ] Ética no setor público.
-- [ ] Regime Jurídico dos Servidores Públicos Civis da União (Lei nº 8.112/1990): regime disciplinar, deveres e proibições, acumulação, responsabilidade e penalidades.
-- [ ] Lei nº 8.429/1992 e alterações: disposições gerais; atos de improbidade administrativa.
-- [ ] Código de Ética dos Servidores do TJDFT (Resolução TJDFT nº 9/2019 e Portaria Conjunta nº 76/2020).
+- [X] Ética e moral. Ética, princípios e valores. Ética e democracia: exercício da cidadania. Ética e função pública.
+- [X] Ética no setor público.
+- [X] Regime Jurídico dos Servidores Públicos Civis da União (Lei nº 8.112/1990): regime disciplinar, deveres e proibições, acumulação, responsabilidade e penalidades.
+- [X] Lei nº 8.429/1992 e alterações: disposições gerais; atos de improbidade administrativa.
+- [X] Código de Ética dos Servidores do TJDFT (Resolução TJDFT nº 9/2019 e Portaria Conjunta nº 76/2020).
      
        
 #### Regimento interno DO TRIBUNAL DE JUSTIÇA DO DISTRITO FEDERAL E DOS TERRITÓRIOS
 
-- [ ] Portaria GPR 354 de 16 de março de 2016 (republicado no DJe no dia 30/03/2016 - Edição nº 57, fls. 05-54. Data de Publicação: 31/03/2016), com redação alterada pelas Emendas Regimentais subsequentes.
+- [X] Portaria GPR 354 de 16 de março de 2016 (republicado no DJe no dia 30/03/2016 - Edição nº 57, fls. 05-54. Data de Publicação: 31/03/2016), com redação alterada pelas Emendas Regimentais subsequentes.
        
         
 #### Lei da organização judiciária do distrito federal e dos territórios
 
-- [ ] Lei nº 11.697/2008 e alterações (Organização Judiciária do Distrito Federal e dos Territórios).
+- [X] Lei nº 11.697/2008 e alterações (Organização Judiciária do Distrito Federal e dos Territórios).
     
      
 #### Noções de direito constitucional (exceto para cargos da área judiciária: sem especialidade e Da especialidade oficial de justiça avaliador federal)
