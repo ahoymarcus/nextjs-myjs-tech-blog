@@ -10,6 +10,7 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 
 1. ##### Introduction  
 2. ##### Working with Images
+    2.1. Base-Images, Repositories and Registries
 3. #####  
 	3.1.	
 	3.2.
@@ -116,18 +117,61 @@ At this point the author give 2 last best practices:
     2.1. In the example above, the application `supervisord` is being used to monitor the node application inside the container.
 
 
+#### Base-Images, Repositories and Registries
+
+Base-images are the lowest level of which other images can be made from, and they usually bring only the basic installation for some application, file or feature. So, a good example of this would be the basic installation of the prefered Linux distro: Ubuntu, Fedora or CentOS, etc.
+
+
+Once the images are ready, the normal operation would be to put the images created at some kind of remote repository where the images could be accessed from any point or host. So, there can be either public repositories or private ones.
+
+
+The [Docker Hub](hub.docker.com) is one example of remote repository create by the Docker enterprise to be shared by the Docker community. Other public repositories:
+
+1. [Docker Hub](https://hub.docker.com)
+2. [Quay.io](https://quay.io)
+
+
+And some players for private repositories:
+
+1. [GitHub](http://github.com/docker/docker-registry)
+2. [CoreOS Enterprise Registry](https://www.redhat.com/en/technologies/cloud-computing/quay)
+3. [Docker Hub Enterprise](https://www.docker.com/pricing/)
+
+
+#### Logging at Docker GitHub
+
+By defaul Docker uses as remote repository the Docker Hub and it can be logged on by 'username' and 'password':
+
+```
+$ docker login
+``` 
+
+
+But it is interesting to access Docker Hub with tokes for 2 reasons:
+
+1. **To investigate the last usage of the access token and disable or delete it if you find any suspicious activity.**
+2. **When using an access token, it's not allowed to perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.**
 
 
 
+- To create your access token:
+1. Log in to hub.docker.com.
+2. Click on your username in the top right corner and select Account Settings.
+3. Select Security > New Access Token.    
+    3.1.  Add a description for your token. Use something that indicates where the token will be used, or set a purpose for the token. You can view the following access permissions from the drop-down.   
+    3.2. Copy the token that appears on the screen and save it. You will not be able to retrieve the token once you close this prompt.
+4. Use `docker logout` to avoid problems with cached login credentials.
+5. Proceed to login with `docker login --username <username>`
+    4.1. Enter the token and asked for the password
 
 
+![docker-hub-access-token](/images/articles/development/docker-hub-access-token.png)
+    
 
+###### Notes: 
 
-
-
-
-
-
+- Treat access tokens like your password and keep them secret. Store your tokens securely (for example, in a credential manager).
+- **Access tokens** are valuable for building integrations, as you can issue multiple tokens – one for each integration – and revoke them at any time.
 
 
 
@@ -136,10 +180,18 @@ At this point the author give 2 last best practices:
 
 ### Further Reading
 
+[Docker Hub - Docker](hub.docker.com)
+
+[Quay.io - Red Hat](https://quay.io)
+
 [Language-specific guides - Docker.com](https://docs.docker.com/language/)
+
 [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
+
 [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+
 [Node.js Docker Best Practices Guide]- github.com(https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+
 
 []()
 
