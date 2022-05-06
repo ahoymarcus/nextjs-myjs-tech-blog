@@ -11,11 +11,10 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 1. ##### Introduction  
 2. ##### Working with Images
     2.1. Base-Images, Repositories and Registries
-3. #####  
-	3.1.	
-	3.2.
-4. ##### 
-5. ##### 
+3. ##### Working with the Containers
+	3.1.	Using Arguments from the Terminal
+4. ##### Storage Volumes
+5. ##### Containers Resources
 6. ##### 
 7. #####  
 8. ##### 
@@ -125,20 +124,22 @@ Base-images are the lowest level of which other images can be made from, and the
 Once the images are ready, the normal operation would be to put the images created at some kind of remote repository where the images could be accessed from any point or host. So, there can be either public repositories or private ones.
 
 
-The [Docker Hub](hub.docker.com) is one example of remote repository create by the Docker enterprise to be shared by the Docker community. Other public repositories:
+The [Docker Hub](hub.docker.com) is one example of remote repository create by the Docker enterprise to be shared by the Docker community. 
 
+
+- Other public repositories:
 1. [Docker Hub](https://hub.docker.com)
 2. [Quay.io](https://quay.io)
 
 
-And some players for private repositories:
 
+- And some players for private repositories:
 1. [GitHub](http://github.com/docker/docker-registry)
 2. [CoreOS Enterprise Registry](https://www.redhat.com/en/technologies/cloud-computing/quay)
 3. [Docker Hub Enterprise](https://www.docker.com/pricing/)
 
 
-#### Logging at Docker GitHub
+#### Logging at Docker Hub
 
 By defaul Docker uses as remote repository the Docker Hub and it can be logged on by 'username' and 'password':
 
@@ -147,14 +148,17 @@ $ docker login
 ``` 
 
 
-But it is interesting to access Docker Hub with tokes for 2 reasons:
+###### It is interesting to access Docker Hub with tokes for 2 reasons:
 
-1. **To investigate the last usage of the access token and disable or delete it if you find any suspicious activity.**
-2. **When using an access token, it's not allowed to perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.**
+- **To investigate the last usage of the access token and disable or delete it if you find any suspicious activity.**
+- **When using an access token, it's not allowed to perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.**
 
 
+[Docker Docs](https://docs.docker.com/docker-hub/access-tokens/):
+![docker-hub-access-token](/images/articles/development/docker-hub-access-token.png)
 
-- To create your access token:
+
+- To create your access token at Docker Hub:
 1. Log in to hub.docker.com.
 2. Click on your username in the top right corner and select Account Settings.
 3. Select Security > New Access Token.    
@@ -165,13 +169,156 @@ But it is interesting to access Docker Hub with tokes for 2 reasons:
     4.1. Enter the token and asked for the password
 
 
-![docker-hub-access-token](/images/articles/development/docker-hub-access-token.png)
-    
+- **Security notes**
+1. Treat access tokens like your password and keep them secret. Store your tokens securely (for example, in a credential manager).
+2. Access tokens are valuable for building integrations, as you can issue multiple tokens, one for each integration, and revoke them at any time.
 
-###### Notes: 
 
-- Treat access tokens like your password and keep them secret. Store your tokens securely (for example, in a credential manager).
-- **Access tokens** are valuable for building integrations, as you can issue multiple tokens – one for each integration – and revoke them at any time.
+### Working with the Containers
+
+One basic command to use with containers is `docker run`, which deals in fact with 2 different processes, one to create the container and the other to start it. Thus, it could also be substited by a sequence of commands, a `docker create` and a `docker start`.
+
+
+Another import command is `docker ps` which allows to search and filter for running containers. And it also brings some information about the containers like:
+
+1. **Container ID**
+2. **Image**
+3. **Command**
+4. **Names**
+
+
+And to search for some speciffic container metadata there is the `docker inspect` which returns a JSON with the 'labels' information as one of its properties:
+
+``` 
+$ docker inspect 83453834348ba4
+``` 
+
+
+#### Using Arguments from the Terminal
+
+###### --dns --dns-search
+
+
+```
+$ docker run --rm -ti --dns=8.8.8.8 --dns=8.8.4.4 \ 
+    --dns-search=example1.com --dns-search=example2.com \
+    ubuntu:latest /bin/bash
+``` 
+
+
+###### --hostname
+
+The default hostname for a container is tis ID, but using the `--hostname` argument it is possible to fully qualify the container. But it is important to notice that this is only a internal qualification for the container hostname, since externally it does not change the DNS outside of Docker, nor the networking isolation, meaning that others container cannot connect to it with this qualified hostname:
+
+```
+$ docker run --rm -ti --hostname="mycontainer.example.com" \ 
+    ubuntu:latest /bin/bash 
+``` 
+
+###### -l (labels)
+
+As it was seem before, with creating the Dockerfile, it is possible to use the **LABEL** instruction to set this labels there, but it's also possible to create these metadata from the command line:
+
+```
+$ docker run -d --name labels-example -l deployer=Duck l- tester=Daft \
+    ubuntu:latest sleep 1000
+``` 
+
+###### --mac-address
+
+
+``` 
+$ docker run --rm -ti --mac-address="a2:11:aa:22:bb:33" \
+    ubuntu:latest /bin/bash
+``` 
+
+
+###### --name
+
+The `--name` argument allows the user to give a specific name for the container, otherwise it would receive a random name from the Docker application, and it's important to notice that there can be only one container with such a name at the Docker host.:
+
+```
+$ docker create --name="awesome-service" ubuntu:latest
+``` 
+`
+
+###### --rm
+
+This argument allows to run a container even if it's image is already up by removing the preexistent:
+
+```
+$ docker run --rm -ti ubuntu:latest /bin/bash
+``` 
+
+
+### Storage Volumes
+
+Working with volumes for storage implies some pattern decisions, for example, deploying a storage backend solution from the Docker host, which would create dependencies for the created container.
+
+
+The same is true creating internal storage in the container, though, it is possible to mount a internal filesystem in the container with `-v` argument:
+
+```
+$ docker run -rm -ti -v /mnt/session_data:/data ubuntu:latest /bin/bash
+``` 
+
+And for operational purposes there can be used a `--read-only` flag, so the container may not be overload with unexpected informations like log data:
+
+```
+$ docker run --rm -ti --read-only=true -v /mnt/session_data:/data \
+    ubuntu:latest /bin/bash
+``` 
+
+And, according to the Matthias .K and Kane S. in their book, in that last example, the root folder is read-only, while the `/session_data` folder mounted is writable and ready for storage operations.
+
+
+### Containers Resources
+
+Another important point made by the authors Matthias .K and Kane S in their book is the term 'noisy neighbor', which in IT usually means processes or applications draining resources from the others in the environment.
+
+So, according to them this problem is easier to tackle while using virtual machines, while in Docker it requires more operations like:
+
+1. **cgroup**: to inspect the resources being used by the kernel processes.
+2. **Defining speciffic arguments with docker create**   
+    2.1. The argument `-c` from Docker which provides CPU allocation for the container (and this is a relative value, meaning that it is only effective if there is more them one process available).    
+    2.2. The argument `--cpuset` where the user defines a speciffic CPU for the container to work in.   
+    2.3. The argument `-m`: `-m 512m` (but in this case, this is an absolute value, meaning that even if there was more memory available, it would stick to the value set. And if more memory is set that there is in the system, Linux would use swap memory).   
+    2.4. The argument `--memory-swap`: this works with the `-m` argument, where the swap value would be the remainder of a subtration with the memory value (`-m 512m --memory-swap=768m`)   
+    2.5. The argument `--ulimit`: using the flag `ulimit -a` it is possible to list all the settings for the argument. Another interesting point is the possibility to have default values together with the values for speciffic containers using `--deault-ulimit`.
+
+
+```
+$ docker run --rm -ti -c 512 --cpuset=0 progrium/stress \
+    --cpu 2 --io 1 --vm 2 --vm-bytes 128M --timeout 120s
+``` 
+
+```
+$ sudo docker -d --default-ulimit nofile=50:150 --default-ulimit nproc=10:20
+``` 
+
+``` 
+$ docker run -d --ulimit nproc=100:200 nginx
+``` 
+
+
+- **Note from the example**:
+- See that in the example above, only the arguments befero the image of the container are for Docker.
+- The arguments after the image are for the `stress` command.
+
+
+One point to be aware here is the fact that for Docker have access to some features like swap memory, for example, it is necessary that these feature are present at the kernel first during its initialization. So, there is the `docker info` command from terminal to get information about some features:
+
+```
+$ docker info
+``` 
+
+
+
+
+
+
+
+
 
 
 

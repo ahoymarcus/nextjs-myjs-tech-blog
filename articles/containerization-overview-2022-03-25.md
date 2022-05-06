@@ -42,6 +42,10 @@ And to [Red Hat](https://www.redhat.com/pt-br/topics/containers) Linux Container
 And the great benefits that Containers brought to make than `the de facto units of modern cloud-native applications` are its more portable, more resource-efficient in nature, more secure and easily to deploy.
 
 
+###### Other articles about containerization:
+- `Docker - Overview` [^1]
+
+
 
 ### Linux Containers
 
@@ -459,5 +463,7 @@ Also, the controller pattern means that much of the functionality in the OpenShi
 
 [What is OpenShift? - JavaTPoint](https://www.javatpoint.com/what-is-openshift)
 
+
+[^1]:docker-overview-2022-05-06
 
 
