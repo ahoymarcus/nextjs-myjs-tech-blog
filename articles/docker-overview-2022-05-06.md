@@ -10,13 +10,16 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 
 1. ##### Introduction  
 2. ##### Working with Images
-    2.1. Base-Images, Repositories and Registries
-3. ##### Working with the Containers
-	3.1.	Using Arguments from the Terminal
-4. ##### Storage Volumes
-5. ##### Containers Resources
+    2.1. Base-Images, Repositories and Registries   
+    2.2. Logging at Docker Hub
+3. ##### Basic Operations with the Containers
+	3.1. Using Arguments from the Terminal   
+	3.2. Storage Volumes
+	3.3. Containers Resources
+4. ##### Exploring the Docker Application
+5. ##### 
 6. ##### 
-7. #####  
+7. ##### 
 8. ##### 
 9. ##### Further Reading
 10. ##### References
@@ -45,7 +48,7 @@ Docker is a open platform for developing, shipping, and running applications, an
 - [Language-specific guides - Docker.com](https://docs.docker.com/language/)
 - [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
 - [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [Node.js Docker Best Practices Guide]- github.com(https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+- [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
 
 ### Working with Images
@@ -150,8 +153,8 @@ $ docker login
 
 ###### It is interesting to access Docker Hub with tokes for 2 reasons:
 
-- **To investigate the last usage of the access token and disable or delete it if you find any suspicious activity.**
-- **When using an access token, it's not allowed to perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.**
+1. To investigate the last usage of the access token and disable or delete it if you find any suspicious activity.
+2. When using an access token, it's not allowed to perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.
 
 
 [Docker Docs](https://docs.docker.com/docker-hub/access-tokens/):
@@ -170,21 +173,24 @@ $ docker login
 
 
 - **Security notes**
-1. Treat access tokens like your password and keep them secret. Store your tokens securely (for example, in a credential manager).
-2. Access tokens are valuable for building integrations, as you can issue multiple tokens, one for each integration, and revoke them at any time.
+1. **Treat access tokens like your password and keep them secret. Store your tokens securely (for example, in a credential manager).**
+2. **Access tokens are valuable for building integrations, as you can issue multiple tokens, one for each integration, and revoke them at any time.**
 
 
-### Working with the Containers
+### Basic Operations with the Containers
 
-One basic command to use with containers is `docker run`, which deals in fact with 2 different processes, one to create the container and the other to start it. Thus, it could also be substited by a sequence of commands, a `docker create` and a `docker start`.
+One basic command to use with containers is `docker run`, which deals in fact with 2 different processes, one to create the container and the other to start it. Thus, it could also be substited by a sequence of commands, a `docker create` and a `docker start`. Other related commands would be `docker stop` and `docker kill`, `docker pause`, `docker unpause`.
 
 
-Another import command is `docker ps` which allows to search and filter for running containers. And it also brings some information about the containers like:
+Another import command is `docker ps` which allows to search and filter for running containers. For all the containers, even those not in execution, `docker ps -a`. And it also brings some information about the containers like:
 
 1. **Container ID**
 2. **Image**
 3. **Command**
-4. **Names**
+4. **Created**
+5. **Status**
+6. **Ports**
+7. **Names**
 
 
 And to search for some speciffic container metadata there is the `docker inspect` which returns a JSON with the 'labels' information as one of its properties:
@@ -192,6 +198,25 @@ And to search for some speciffic container metadata there is the `docker inspect
 ``` 
 $ docker inspect 83453834348ba4
 ``` 
+
+Finally, to erese a container from the host there is the `docker rm`:
+
+```
+$ docker rm 873c28292d23
+``` 
+
+And, eventhough there isn't a general commando to erase all the containers from the system, the authors point to a costum solution:
+
+```
+$ docker rm $(docker ps -a -q)
+``` 
+
+And all the images:
+
+```
+$ docker rmi $(docker images -q -)
+``` 
+
 
 
 #### Using Arguments from the Terminal
@@ -240,7 +265,21 @@ The `--name` argument allows the user to give a specific name for the container,
 ```
 $ docker create --name="awesome-service" ubuntu:latest
 ``` 
-`
+
+
+###### --restart
+
+The `restart` argument can accept one of 3 different values:
+
+1. **no**: it never restart after a shutdown.
+2. **always**: it always restart after a shutdown, even if it was a normal endding for the app.
+3. **on-failure**: it will always try to restart a certain amount of times if the container stop running with a code differente from **0**.
+
+```
+$ docker run -ti --restart=on-falure:3 -m 200m --memory-swap=300m \
+    progrium/stress --cpu 2 --io 1 --vm 2 --vm-bytes 128M --timeout 120s
+```
+
 
 ###### --rm
 
@@ -251,7 +290,7 @@ $ docker run --rm -ti ubuntu:latest /bin/bash
 ``` 
 
 
-### Storage Volumes
+#### Storage Volumes
 
 Working with volumes for storage implies some pattern decisions, for example, deploying a storage backend solution from the Docker host, which would create dependencies for the created container.
 
@@ -272,7 +311,7 @@ $ docker run --rm -ti --read-only=true -v /mnt/session_data:/data \
 And, according to the Matthias .K and Kane S. in their book, in that last example, the root folder is read-only, while the `/session_data` folder mounted is writable and ready for storage operations.
 
 
-### Containers Resources
+#### Containers Resources
 
 Another important point made by the authors Matthias .K and Kane S in their book is the term 'noisy neighbor', which in IT usually means processes or applications draining resources from the others in the environment.
 
@@ -301,8 +340,8 @@ $ docker run -d --ulimit nproc=100:200 nginx
 ``` 
 
 
-- **Note from the example**:
-- See that in the example above, only the arguments befero the image of the container are for Docker.
+- **Notes from the examples**:
+- See that in the first example above, only the arguments before the image of the container are for the Docker application.
 - The arguments after the image are for the `stress` command.
 
 
@@ -311,6 +350,36 @@ One point to be aware here is the fact that for Docker have access to some featu
 ```
 $ docker info
 ``` 
+
+
+### Exploring the Docker Application
+
+The Docker application makes available a set of some important commands for the user:
+
+1. **Print the Docker version**: _docker version_ 
+    1.1. One interesting point returned from the terminal is the fact that the Docker application have many components where each of them guard their own speciffic versions.
+2. **Print Server information**: _docker info_   
+    2.1. The command brings many informations from the Docker Client, Docker Server, Linux kernel, etc.   
+    2.2. And among of the Server information: number of containers and their states, number of images, Server version, Storage device, Plugins, Docker Root Dir, etc.
+3. **Download of Images Upgrades**: _docker pull <image>:latest_
+4. **Containers inspection**: _docker inspect <containerID>_  
+    4.1. It returns a JSON with fields like: id, created, Args, state, name, Networks, Config.Env, Config.Labels, Config.Hostname, etc.   
+    4.2. The _nsenter_ is a package from **linux-utils** which allow operations related with the Linux namespaces. Thus, this means that this command does not need the Docker Server interation to function, just like when it is not responding.   
+    4.3. Another difference from using _nsenter_ is that instead of the ContainerID it is necessary to have the process PID (Process ID).
+5. **Access a running container**: _docker exec <containerID>_
+6. **Return results**
+7. **Visualize logs** 
+8. **Monitor statistics**
+
+
+- **Bellow we have the command to access a running container and inside it printing the container's processes with 'ps' Linux utility to log**:
+![docker-exec-01](/images/articles/development/docker-exec-01.png)
+
+
+
+
+p. 121
+
 
 
 

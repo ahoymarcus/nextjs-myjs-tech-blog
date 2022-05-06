@@ -270,7 +270,7 @@ $ docker run -i -t ubuntu /bin/bash
 - [Language-specific guides - Docker.com](https://docs.docker.com/language/)
 - [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
 - [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [Node.js Docker Best Practices Guide]- github.com(https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+- [Node.js Docker Best Practices Guide- github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
 
 ### Kubernetes
