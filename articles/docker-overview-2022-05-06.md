@@ -17,6 +17,7 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 	3.2. Storage Volumes
 	3.3. Containers Resources
 4. ##### Exploring the Docker Application
+    4.1. Logs and Statistics from Docker
 5. ##### 
 6. ##### 
 7. ##### 
@@ -356,7 +357,7 @@ $ docker info
 
 The Docker application makes available a set of some important commands for the user:
 
-1. **Print the Docker version**: _docker version_ 
+1. **Print the Docker version**: _docker version_   
     1.1. One interesting point returned from the terminal is the fact that the Docker application have many components where each of them guard their own speciffic versions.
 2. **Print Server information**: _docker info_   
     2.1. The command brings many informations from the Docker Client, Docker Server, Linux kernel, etc.   
@@ -364,7 +365,7 @@ The Docker application makes available a set of some important commands for the 
 3. **Download of Images Upgrades**: _docker pull <image>:latest_
 4. **Containers inspection**: _docker inspect <containerID>_  
     4.1. It returns a JSON with fields like: id, created, Args, state, name, Networks, Config.Env, Config.Labels, Config.Hostname, etc.   
-    4.2. The _nsenter_ is a package from **linux-utils** which allow operations related with the Linux namespaces. Thus, this means that this command does not need the Docker Server interation to function, just like when it is not responding.   
+    4.2. The _nsenter_ is a package from **linux-utils** which allow operations related with the Linux namespaces (thus, this means that this command does not need the Docker Server interation to function, just like when it is not responding).   
     4.3. Another difference from using _nsenter_ is that instead of the ContainerID it is necessary to have the process PID (Process ID).
 5. **Access a running container**: _docker exec <containerID>_
 6. **Return results**
@@ -372,18 +373,58 @@ The Docker application makes available a set of some important commands for the 
 8. **Monitor statistics**
 
 
-- **Bellow we have the command to access a running container and inside it printing the container's processes with 'ps' Linux utility to log**:
+###### Bellow we have the command to access a running container and inside it the return from printing to the log the container's processes with the 'ps' Linux utility:
 ![docker-exec-01](/images/articles/development/docker-exec-01.png)
 
 
 
+#### Logs and Statistics from Docker
 
-p. 121
-
-
-
+According to the authors, Matthias .K and Kane S., in their book they explain that logs in Docker works by catching **stdout** and **sdterr**, and sending everything to a backend by the daemon stored in a JSON file for each container.
 
 
+Bellow, we can return the logs from a container:
+
+```
+$ docker logs <containerID>
+``` 
+
+
+In terms of monitoring Docker has 2 commands that brings some statistics back:
+
+1. **docker stats**:   
+    1.1. ContainerID   
+    1.2. Name   
+    1.3. CPU usage  
+    1.4. Memory usage (together with memory limit)   
+    1.5. Menory percentage   
+    1.6. Network I/O   
+    1.7. Block I/O    
+    1.8. PIDs
+2. **docker events**: this command accepts 2 arguments to deal with timestamp in a ISO format:   
+    2.1. The argument **--since**  
+    2.2. The argument **--until**
+
+
+``` 
+$ docker stats <containerID>
+``` 
+
+The **docker stats**  command brings a summation with that 8 stats pointed above, more could be returned through a API call in the form of a JSON file. And there is also that second command **docker events** which creates a steam with events bring information from the containers life cycle.
+
+
+``` 
+$ docker events
+``` 
+
+
+![docker-events-01](/images/articles/development/docker-events-01.png)
+
+
+Finally, there is a open source solution from Google, the cAdvisor which brings graphs, besides implementations to connect the Docker Server and its API to retrieve a prettier formmated JSON log.
+
+
+![cadvisor-docker-monitoring-tool](/images/articles/development/cadvisor-docker-monitoring-tool.png)
 
 
 
