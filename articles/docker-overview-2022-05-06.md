@@ -18,7 +18,8 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 	3.3. Containers Resources
 4. ##### Exploring the Docker Application
     4.1. Logs and Statistics from Docker   
-    4.2. Application Deployments with Docker
+    4.2. Application Deployments with Docker   
+    4.3. Debugging the Containers
 5. ##### 
 6. ##### 
 7. ##### 
@@ -40,17 +41,6 @@ Docker is a open platform for developing, shipping, and running applications, an
 - `Cryptography, Steganography and Criptanalysis - Overview` [^6]
 - `Continuity Plan and Essentials for Businesses - Overview` [^7]     
 - `Open Web Application Project Foundation (OWASP) - Overview` [^8]
-
-
-###### Articles about Containers and Containerization:
-- Containerization - Overview [^9]
-
-
-###### Using Docker with specific languages:
-- [Language-specific guides - Docker.com](https://docs.docker.com/language/)
-- [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
-- [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
 
 ### Working with Images
@@ -220,6 +210,16 @@ $ docker rmi $(docker images -q -)
 ``` 
 
 
+###### Other articles about Containers and Containerization:
+- Containerization - Overview [^9]
+
+
+###### Using Docker with specific languages:
+- [Language-specific guides - Docker.com](https://docs.docker.com/language/)
+- [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
+- [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+
 
 #### Using Arguments from the Terminal
 
@@ -369,14 +369,14 @@ The Docker application makes available a set of some important commands for the 
     4.2. The _nsenter_ is a package from **linux-utils** which allow operations related with the Linux namespaces (thus, this means that this command does not need the Docker Server interation to function, just like when it is not responding).   
     4.3. Another difference from using _nsenter_ is that instead of the ContainerID it is necessary to have the process PID (Process ID).
 5. **Access a running container**: _docker exec <containerID>_
-6. **Return results**
-7. **Visualize logs** 
-8. **Monitor statistics**
+6. **Visualize logs**: **docker log <containerID>** 
+7. **Monitor statistics**: **docker stats <containerID>**
+
 
 
 ###### Bellow we have the command to access a running container and inside it the return from printing to the log the container's processes with the 'ps' Linux utility:
 ![docker-exec-01](/images/articles/development/docker-exec-01.png)
-
+   
 
 
 #### Logs and Statistics from Docker
@@ -468,6 +468,68 @@ It is at this point that come in hand the tools for containers orchestration, li
 12. **GKE**
 13. **AKS**
 14. **AWS EKS**
+
+
+
+#### Debugging the Containers
+
+For general debugging reasons there is the command **docker top** that can easily bring process running inside containers:
+
+```
+$ docker top <containerID>
+```
+
+###### Notes: but the authors Matthias .K and Kane alert that while using the 'docker top' command it is necessary to distinguish process that are running inside the containers and those from the host:
+
+1. **ps axlfww** command from Linux terminal.
+2. **ps -ejH** command from Linux terminal.
+3. **pstree 'pidof docker'**` command from Linux terminal. 
+4. **ps 'pidof docker'**` command from Linux terminal. 
+5. **strace -p PID**
+6. **lsof -p PID**
+
+
+
+###### Debugging the Network 
+
+Also according to the authors Matthias .K and Kane, the operation to debug the net system should be a little more complicated, because when the Docker containers are not running in the 'host net option', they will have their own IPs, and they will not appear in the **netstat** command. Another command could be the **tcpdump**.
+
+
+``` 
+$ netstat -an
+``` 
+
+#### Debugging the Image History 
+
+The history of the image can be traced with the 'docker history' command:
+
+``` 
+$ docker history <nome-da-imagem>
+``` 
+
+#### Debugging the Containers Filesystem
+
+The filesystem inspection is another important debugging operation because it is by the containers filesystem that its layers are build and so it is possible to search for any unusual change.
+
+Here a the command is **docker diff**. It is interesting to notice that printed at the terminal, the first column with the values 'C' or 'A', means 'Added' and 'Changed':
+
+```
+docker diff <containerID>
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
