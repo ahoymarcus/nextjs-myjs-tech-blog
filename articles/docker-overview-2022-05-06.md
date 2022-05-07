@@ -17,7 +17,8 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 	3.2. Storage Volumes
 	3.3. Containers Resources
 4. ##### Exploring the Docker Application
-    4.1. Logs and Statistics from Docker
+    4.1. Logs and Statistics from Docker   
+    4.2. Application Deployments with Docker
 5. ##### 
 6. ##### 
 7. ##### 
@@ -427,8 +428,46 @@ Finally, there is a open source solution from Google, the cAdvisor which brings 
 ![cadvisor-docker-monitoring-tool](/images/articles/development/cadvisor-docker-monitoring-tool.png)
 
 
+#### Application Deployments with Docker
+
+Also according to the authors, Matthias .K and Kane S., in their book they say that the deploying phase of software life cycle used to be the most complicated one, but that containerization came to help to simplify the process and also to achieve a reliable model of delivering.
 
 
+As a comparing image, the traditional process of shipping applications can be safely coined from the navy task of bringing goods to a ship and trying to deal with all the complexities of storaging all kinds of commodities with shapes, forms, consistance all together.
+
+But with containers, there is a unified model, where all the commodities are stored with the same pattern with well known features to be handled in a more reliable manner.
+
+So, as a workflow for deployment the authors suggest:
+
+1. **To build and test a Docker/Container image locally**
+2. **To build the official image for test and deploying**
+3. **Depoying the image to the server**
+
+
+At its base, the basic deploy operation would imply a **docker pull** to the server and a **docker run** to atcivate the image into a running container, But, as the authors point out, this manual operation is prone to erros, because of the mechanical repetition and specially the lack of configuration consistance.
+
+So, a consistant automatic process should deal with both the problems:
+
+1. **Provide a repeatable process**: at each invoking the same process should be called.
+2. **Provide the set of configurations**: to garantee that the same defined configurations will be deployed in each instance.
+
+
+It is at this point that come in hand the tools for containers orchestration, like Docker Swarm or Kubernets, that not only deals with the Docker Client limitation to be connected to a single server, but they also provide a handful of features that are related to the whole process. Others orchestration tools:
+
+1. **Kubernets**
+2. **OpenShift**
+3. **Nomad**
+4. **Docker Swarm**
+5. **Docker Compose**
+6. **MiniKube**
+7. **Marathon**
+8. **Cloudify**
+9. **Rancher**
+10. **Containership**
+11. **AZK**
+12. **GKE**
+13. **AKS**
+14. **AWS EKS**
 
 
 
