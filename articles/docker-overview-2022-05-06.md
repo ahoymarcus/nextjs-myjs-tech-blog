@@ -23,11 +23,8 @@ description: 'Docker is a open platform for developing, shipping, and running ap
 5. ##### Advanced Topics
     5.1. Backend Modes   
     5.2. Extended Security with SELinux and AppArmor
-6. ##### 
-7. ##### 
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+6. ##### Further Reading
+7. ##### References
 
 ### Introduction
  
@@ -221,6 +218,12 @@ $ docker rmi $(docker images -q -)
 - [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
 - [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 - [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+- [Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL) - Dev.to](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
+- [Learn Docker - DevOps with Node.js & Express - FreeCodeCamp](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
+- [Build an IoT application with Node.js and Docker - FreeCodeCamp](https://www.youtube.com/watch?v=mtDJfSHQfAM)
+- [Docker and Kubernetes - Full Course for Beginners - FreeCodeCamp](https://www.youtube.com/watch?v=Wf2eSG3owoA)
+- [Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!) - FreeCodeCamp](https://www.youtube.com/watch?v=d6WC5n9G_sM)
+
 
 
 #### Using Arguments from the Terminal
@@ -594,15 +597,19 @@ So to extend the capacity of applying restrictions. Then, for exemple, if in pla
 
 [Node.js Docker Best Practices Guide]- github.com(https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
+[Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL) - Dev.to](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
 
-[]()
+[Learn Docker - DevOps with Node.js & Express - FreeCodeCamp](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
+
+[Build an IoT application with Node.js and Docker - FreeCodeCamp](https://www.youtube.com/watch?v=mtDJfSHQfAM)
+
+[Docker and Kubernetes - Full Course for Beginners - FreeCodeCamp](https://www.youtube.com/watch?v=Wf2eSG3owoA)
+
+[Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!) - FreeCodeCamp](https://www.youtube.com/watch?v=d6WC5n9G_sM)
 
 ### References
 
 Matthias .K and Kane S. Primeiros Passos com Docker: usando contêineres em produção. Novatec, 2016.
-
-
-[]()
 
 
 [^1]:it-governance-and-management-overview-2022-03-27
