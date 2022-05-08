@@ -20,7 +20,9 @@ description: 'Docker is a open platform for developing, shipping, and running ap
     4.1. Logs and Statistics from Docker   
     4.2. Application Deployments with Docker   
     4.3. Debugging the Containers
-5. ##### 
+5. ##### Advanced Topics
+    5.1. Backend Modes   
+    5.2. Extended Security with SELinux and AppArmor
 6. ##### 
 7. ##### 
 8. ##### 
@@ -479,12 +481,12 @@ For general debugging reasons there is the command **docker top** that can easil
 $ docker top <containerID>
 ```
 
-###### Notes: but the authors Matthias .K and Kane alert that while using the 'docker top' command it is necessary to distinguish process that are running inside the containers and those from the host:
+###### Notes: but the authors Matthias .K and Kane alert that while using the 'docker top' command it is necessary to distinguish process that are running inside the containers and those from the host, using the commands from Linux terminal.:
 
-1. **ps axlfww** command from Linux terminal.
-2. **ps -ejH** command from Linux terminal.
-3. **pstree 'pidof docker'**` command from Linux terminal. 
-4. **ps 'pidof docker'**` command from Linux terminal. 
+1. **ps axlfww** 
+2. **ps -ejH** 
+3. **pstree 'pidof docker'**
+4. **ps 'pidof docker'**` 
 5. **strace -p PID**
 6. **lsof -p PID**
 
@@ -492,7 +494,7 @@ $ docker top <containerID>
 
 ###### Debugging the Network 
 
-Also according to the authors Matthias .K and Kane, the operation to debug the net system should be a little more complicated, because when the Docker containers are not running in the 'host net option', they will have their own IPs, and they will not appear in the **netstat** command. Another command could be the **tcpdump**.
+Also according to Matthias .K and Kane, the authors say that the operation to debug the net system should be a little more complicated, because when the Docker containers are not running in the 'host net option', they will have their own IPs, and they will not appear in the **netstat** command. Another command could be the **tcpdump**.
 
 
 ``` 
@@ -504,7 +506,7 @@ $ netstat -an
 The history of the image can be traced with the 'docker history' command:
 
 ``` 
-$ docker history <nome-da-imagem>
+$ docker history <images-name>
 ``` 
 
 #### Debugging the Containers Filesystem
@@ -518,19 +520,61 @@ docker diff <containerID>
 ``` 
 
 
+### Advanced Topics
+
+
+#### Backend Modes
+
+According to Matthias .K and Kane, the authors say that as a application, Docker is not featured to connect direct to the Linux kernel, and that it only appears that way because of the easy of the operations.
+
+
+On the contrary, they focus on the driver that is set at compile time, but that could be altered at running time. So, before Docker 0.9 there was 2 basic drivers, and their containers are not compatible one with another:
+
+1. **LXC**
+2. **Native-driver**
+
+
+But form Docker 0.9 ahead the LXC version was substituted by another library, the **libcontainer**, which is written in Go, and that it is now responsible to deal with containers, namespaces, groups, and the default backend from Docker.
+
+
+###### Storage Types
+
+1. **AUFS**: this used to be the original storage drvier, but it started to lose compatibility with many distros, like RedHat, Fedora, CentOS and Ubuntu, etc.
+2. **devicemapper**: this is another implementation that can support such features like LVM, disc encrypting, RAID, etc.
+3. **BTRFS**: this backend brings the feature 'copy-on-write' which is the same feature used by docker to layer the images model.
+4. **vfs**: this one is the simpler kind from the batch, but it is reliable for development enviroment.  
+    4.1. Then, it is a slower solution, that it is not compatible with the feature 'copy-on-write'.
+5. **overlayfs**: this is the default driver union filesystem for the Linux kernel.   
+    5.1. It is quite similar to AUFS, but it is a simpler implementation.
 
 
 
+#### Extended Security with SELinux and AppArmor
+
+Eventhough the implementation of Linux kernel provides isolation from the processes being manipulated by Docker in the form of containers, in many cases using features like:
+
+1. **cgroups**
+2. **namespaces**
 
 
+The process as a whole are still flowing through the Linux kernel, what in practical terms make them more exposed than a virtual machine that runs with a complete separed OS from the host machine.
+
+And it for that reason 2 security features are presented to help to implement a more throughfully isolation for the containers:
+
+1. **SELinux**
+2. **AppArmor**
 
 
+They are both features from Linux, where AppArmor comes from a Immunix Linux distribution from 1988 and the SELinux came as a featured developed by the NSA (National Security Agency), where both try to provide what is known as Mandatory Access Control.
 
 
+The Mandatory Access Control is a important security feature, because it brings more refinement while delegating authorization in the Linux kernel environment. Thus, working with 2 general attributes:
+
+1. **Initiatiors**
+2. **Target**
 
 
-
-
+So to extend the capacity of applying restrictions. Then, for exemple, if in plain terms a root user would have complete access to the whole system, having a target flag to it, defining its current job, the root user would then be limited by the current end that some application could have by itself.
 
 
 
