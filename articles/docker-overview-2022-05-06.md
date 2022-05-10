@@ -214,15 +214,15 @@ $ docker rmi $(docker images -q -)
 
 
 ###### Using Docker with specific languages:
-- [Language-specific guides - Docker.com](https://docs.docker.com/language/)
-- [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
-- [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-- [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
-- [Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL) - Dev.to](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
-- [Learn Docker - DevOps with Node.js & Express - FreeCodeCamp](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
-- [Build an IoT application with Node.js and Docker - FreeCodeCamp](https://www.youtube.com/watch?v=mtDJfSHQfAM)
-- [Docker and Kubernetes - Full Course for Beginners - FreeCodeCamp](https://www.youtube.com/watch?v=Wf2eSG3owoA)
-- [Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!) - FreeCodeCamp](https://www.youtube.com/watch?v=d6WC5n9G_sM)
+1. [Language-specific guides - Docker.com](https://docs.docker.com/language/)
+2. [Official Node.js Docker Image - Docker.com](https://hub.docker.com/_/node/)
+3. [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+4. [Node.js Docker Best Practices Guide - github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+5. [Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL) - Dev.to](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
+6. [Learn Docker - DevOps with Node.js & Express - FreeCodeCamp](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
+7. [Build an IoT application with Node.js and Docker - FreeCodeCamp](https://www.youtube.com/watch?v=mtDJfSHQfAM)
+8. [Docker and Kubernetes - Full Course for Beginners - FreeCodeCamp](https://www.youtube.com/watch?v=Wf2eSG3owoA)
+9. [Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!) - FreeCodeCamp](https://www.youtube.com/watch?v=d6WC5n9G_sM)
 
 
 
@@ -595,7 +595,7 @@ So to extend the capacity of applying restrictions. Then, for exemple, if in pla
 
 [Dockerizing a Node.js web app - nodejs.org](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
 
-[Node.js Docker Best Practices Guide]- github.com(https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+[Node.js Docker Best Practices Guide- github.com](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
 
 [Introduction to Docker for Javascript Developers (feat Node.js and PostgreSQL) - Dev.to](https://dev.to/alexeagleson/docker-for-javascript-developers-41me)
 
@@ -606,6 +606,7 @@ So to extend the capacity of applying restrictions. Then, for exemple, if in pla
 [Docker and Kubernetes - Full Course for Beginners - FreeCodeCamp](https://www.youtube.com/watch?v=Wf2eSG3owoA)
 
 [Kubernetes Course - Full Beginners Tutorial (Containerize Your Apps!) - FreeCodeCamp](https://www.youtube.com/watch?v=d6WC5n9G_sM)
+
 
 ### References
 

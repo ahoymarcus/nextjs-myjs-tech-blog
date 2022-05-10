@@ -98,8 +98,8 @@ CONHECIMENTOS BÁSICOS
 
 #### LÍNGUA PORTUGUESA
 
-- [ ] Elementos de construção do texto e seu sentido: gênero do texto (literário e não literário, narrativo, descritivo e argumentativo); interpretação e organização interna.    
-- [ ] Semântica: sentido e emprego dos vocábulos; campos semânticos; emprego de tempos e modos dos verbos em português.    
+- [X] Elementos de construção do texto e seu sentido: gênero do texto (literário e não literário, narrativo, descritivo e argumentativo); interpretação e organização interna.    
+- [X] Semântica: sentido e emprego dos vocábulos; campos semânticos; emprego de tempos e modos dos verbos em português.    
 - [ ] Morfologia: reconhecimento, emprego e sentido das classes gramaticais; processos de formação de palavras; mecanismos de flexão dos nomes e verbos.   
 - [ ] Sintaxe: frase, oração e período; termos da oração; processos de coordenação e subordinação; concordância nominal e verbal; transitividade e regência de nomes e verbos; padrões gerais de colocação pronominal no português; mecanismos de coesão textual.   
 - [ ] Ortografia.     
