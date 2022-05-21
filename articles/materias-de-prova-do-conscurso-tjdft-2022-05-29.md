@@ -32,6 +32,11 @@ A Prova Escrita Objetiva de múltipla escolha e a Prova Escrita Discursiva, amba
 
 Os locais para realização da Prova Escrita Objetiva e da Prova Escrita Discursiva serão divulgados no endereço eletrônico https://conhecimento.fgv.br/concursos/tjdft22.
 
+###### Mais informações em:
+
+1. **Telefone**: 0800 2834628
+2. **E-mail**: concursotjdft22@fgv.br
+
 ### 9.5 DA PROVA ESCRITA OBJETIVA
 
 Para os cargos de Nível Médio e para os cargos de Nível Superior, a Prova Escrita Objetiva será composta por 60 (sessenta) questões de múltipla escolha, numeradas sequencialmente, com 05 (cinco) alternativas e apenas uma resposta correta.
@@ -100,10 +105,10 @@ CONHECIMENTOS BÁSICOS
 
 - [X] Elementos de construção do texto e seu sentido: gênero do texto (literário e não literário, narrativo, descritivo e argumentativo); interpretação e organização interna.    
 - [X] Semântica: sentido e emprego dos vocábulos; campos semânticos; emprego de tempos e modos dos verbos em português.    
-- [ ] Morfologia: reconhecimento, emprego e sentido das classes gramaticais; processos de formação de palavras; mecanismos de flexão dos nomes e verbos.   
-- [ ] Sintaxe: frase, oração e período; termos da oração; processos de coordenação e subordinação; concordância nominal e verbal; transitividade e regência de nomes e verbos; padrões gerais de colocação pronominal no português; mecanismos de coesão textual.   
-- [ ] Ortografia.     
-- [ ] Acentuação gráfica. Emprego do sinal indicativo de crase.    
+- [X] Morfologia: reconhecimento, emprego e sentido das classes gramaticais; processos de formação de palavras; mecanismos de flexão dos nomes e verbos.   
+- [X] Sintaxe: frase, oração e período; termos da oração; processos de coordenação e subordinação; concordância nominal e verbal; transitividade e regência de nomes e verbos; padrões gerais de colocação pronominal no português; mecanismos de coesão textual.   
+- [X] Ortografia.     
+- [X] Acentuação gráfica. Emprego do sinal indicativo de crase.    
 - [ ] Pontuação.    
 - [ ] Reescrita de frases: substituição, deslocamento, paralelismo; variação linguística: norma culta.    
  
