@@ -3,7 +3,7 @@ author: 'Marcus Vinicius Richa'
 title: 'Thinking Like a Programmer and Problem Soving - Overview'
 date: '2022-05-17'
 subject: 'development-articles'
-description: '.'
+description: 'According to many authors, to think like a programmer should be the same as to be thinking about the process of problem solving, or in other words, to think programmatically while follow the steps to solve problems in a more effective way.'
 ---
 
 # Thinking Like a Programmer and Problem Soving - Overview
