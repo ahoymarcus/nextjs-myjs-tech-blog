@@ -13,6 +13,8 @@ description: 'The importance of developing software while maintain a production 
 3. ##### Commenting the Code
 4. ##### CodeAsDocumentation
 5. ##### Self Documenting Code
+    5.1. Machine Language Versus High Level Languages
+    5.2. Some Limitations About Generating Automatic Patterns
 6. ##### Beautiful JavaScript: Chainable/Cascading Methods
 7. #####  
 8. ##### 
@@ -153,7 +155,7 @@ But again, even that pattern to make the program more readable for humans cannot
 According to the author Martin Fowler in his article, [CodeAsDocumentation](https://www.martinfowler.com/bliki/CodeAsDocumentation.html), where following the discipline of the Agile methodology, with the due raise in the importance of the programming in the software development, a new away to view the programming code not only as a resource in need of documentation, but as a 'primary documentation of a software system', though, of course, there should be other supplementare documentation apart.
 
 
-`The rationale for the code being the primary source of documentation is that it is the only one that is sufficiently detailed and precise to act in that role - a point made so eloquently by Jack Reeves's famous essay ""[What is Software Design?](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)" This principle comes with a important consequence - that it's important that programmers put in the effort to make sure that this code is clear and readable. Saying that code is documentation isn't saying that a particular code base is good documentation. Like any documentation, code can be clear or it can be gibberish. Code is no more inherently clear than any other form of documentation. (And other forms of documentation can be hopelessly unclear too - I've seen plenty of gibberish UML diagrams, to flog a popular horse.)`
+`The rationale for the code being the primary source of documentation is that it is the only one that is sufficiently detailed and precise to act in that role - a point made so eloquently by Jack Reeves's famous essay "[What is Software Design?](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)" This principle comes with a important consequence - that it's important that programmers put in the effort to make sure that this code is clear and readable. Saying that code is documentation isn't saying that a particular code base is good documentation. Like any documentation, code can be clear or it can be gibberish. Code is no more inherently clear than any other form of documentation. (And other forms of documentation can be hopelessly unclear too - I've seen plenty of gibberish UML diagrams, to flog a popular horse.)`
 
 
 And so, Martin Fowler believes that much of the fact that code is often hard to read is because people don't have that notion to write to others, and as a documentation as well, and since there is no will, then the author deduce that there will be little change for bringing clarity to the work:
@@ -163,6 +165,38 @@ And so, Martin Fowler believes that much of the fact that code is often hard to 
 
 
 ### Self Documenting Code
+
+The article [Self Documenting Code](https://wiki.c2.com/?SelfDocumentingCode) from the site dedicated to software development and patterns, [wiki.c2.com](https://wiki.c2.com/), describes the idea of a self documenting code as the one that `allegedly explains itself without the need of extraneous documentation, like flowcharts, UML  diagrams, process-flow statediagrams, etc.`
+
+- Other issues that goes along this same documentation debate are:
+1. There will be always the problem to maintain the program in two different sets of form.
+2. The sheer waste of energy and resorces when the documentation is applied in the wrong direction.
+3. Resistance to change implementation for the fear of amounting extra paper work.
+
+
+`Code is indeed code and documents are documents. I couldn't agree more. Mixing code and documentation in the same file, distracts me too much from the original purpose of that file: being a container for the source code. I don't like it when I have to hunt for a method between huge blocks of javadoc-like documentation. Neither do I appreciate the valuable screen real estate consumed by those documentation blocks while I'm editing code. I can see the advantage to make it easy for the developer to find the piece of documentation relating to the code he's writing, but surely that can be done in other ways than putting the two together in the same file? Not to mention the issue of documentation changes triggering unnecessary recompilation because they changed the source files... And to add insult to injury, javadoc-like systems are often used as a poor substitute for _real_ documentation. A simple list of classes and a description of their methods is not a good way to explain the structure of a system.` (IvesAerts)
+
+
+
+#### Machine Language Versus High Level Languages
+
+Another interesting point from the article is the historical fact about the development of the programming languages, all the way from machine language which should be by itself a true language focused primarily at computers.
+
+On ther other hand, the high level languages `designed for humans as their interface to the machine`should extendend, according the authors, to motivate further development in the way of a coding system as readable as possible to humans, just as any other language:
+
+`Actually, even the computer would be 'unhappy' with machine language if it was trying to talk to other computers - even a society of robots would build communications standards, semantic compression, and higher-level languages as they attempt to optimize their communications (so they only need to say something OnceAndOnlyOnce, don't need to carry around a billion many-to-many library of encodecs and decodecs and compilers and disassemblers, etc.).`
+
+
+#### Some Limitations About Generating Automatic Patterns
+
+But the article also advert that a high level language is much more dependent of tools to generate the actual code, and in this mode they would need to also translate the necessary patterns to the final code.
+
+- **And perhaps, it should also be inquired if there was any limitation in the code system to accomodate 2 diverse sets of patterns**:
+1. One directed for the human conversation.
+2. The other directed to the computer implementation.
+
+`I think that a lot of the discussion here is based upon mistaken assumptions that modern programming languages make; there's no way to capture a lot of important information in the source code. The most important omitted thing that comes to mind is a listing of dependencies between modules, or a "build process" for static programs, but there are lots of high-level pieces of information that modern programming languages don't address. Another pretty major one is requirement dependencies; when a customer changes a requirement, why can't the compiler tell us what code probably needs to change? It sucks to require an expert programmer who is familiar with the whole codebase to decide how massive a particular requirement change would need to be -- that web ought to be part of the code. Currently we can only encapsulate it (poorly) as comments. (Note that both things I mentioned could be rather simply represented using a graph. Still, nobody does it.)`
+
 
 
 
