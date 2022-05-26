@@ -13,8 +13,9 @@ description: 'The importance of developing software while maintain a production 
 3. ##### Commenting the Code
 4. ##### CodeAsDocumentation
 5. ##### Self Documenting Code
-    5.1. Machine Language Versus High Level Languages
-    5.2. Some Limitations About Generating Automatic Patterns
+    5.1. Machine Language Versus High Level Languages     
+    5.2. Some Limitations About Automatic Generating Patterns/Designs from Tools   
+    5.3. A Case for CodingSelfLimitAwareness
 6. ##### Beautiful JavaScript: Chainable/Cascading Methods
 7. #####  
 8. ##### 
@@ -187,7 +188,7 @@ On ther other hand, the high level languages `designed for humans as their inter
 `Actually, even the computer would be 'unhappy' with machine language if it was trying to talk to other computers - even a society of robots would build communications standards, semantic compression, and higher-level languages as they attempt to optimize their communications (so they only need to say something OnceAndOnlyOnce, don't need to carry around a billion many-to-many library of encodecs and decodecs and compilers and disassemblers, etc.).`
 
 
-#### Some Limitations About Generating Automatic Patterns
+#### Some Limitations About Automatic Generating Patterns/Designs from Tools
 
 But the article also advert that a high level language is much more dependent of tools to generate the actual code, and in this mode they would need to also translate the necessary patterns to the final code.
 
@@ -198,29 +199,11 @@ But the article also advert that a high level language is much more dependent of
 `I think that a lot of the discussion here is based upon mistaken assumptions that modern programming languages make; there's no way to capture a lot of important information in the source code. The most important omitted thing that comes to mind is a listing of dependencies between modules, or a "build process" for static programs, but there are lots of high-level pieces of information that modern programming languages don't address. Another pretty major one is requirement dependencies; when a customer changes a requirement, why can't the compiler tell us what code probably needs to change? It sucks to require an expert programmer who is familiar with the whole codebase to decide how massive a particular requirement change would need to be -- that web ought to be part of the code. Currently we can only encapsulate it (poorly) as comments. (Note that both things I mentioned could be rather simply represented using a graph. Still, nobody does it.)`
 
 
+#### A Case for CodingSelfLimitAwareness
 
+In another share to this article, [Self Documenting Code](https://wiki.c2.com/?SelfDocumentingCode), a developer pleads for a case of lowering the bar of the conversation stating that when the matter is related to the code representation and to its understanding, there is a much broader limit to the problem of documentation. 
 
-
-
-Self Documenting Code - Wiki.c2.com - https://wiki.c2.com/?SelfDocumentingCode
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`"You do not need to 'understand' code and usually cannot." This is a rather shocking thought, but once you accept it, most of the justification for documentation fades away. Software of a size requiring multiple programmers or an extended development period is simply too complex to be understood by an individual. Understanding is limited to very small pieces (a whole method at best) and then for only a short period of time. SelfDocumentingCode supports this definition by concentrating on understanding at the method level. A method can be understood if it is made short enough and written in a clear language. Give up on understanding the code as a whole. It simply cannot be done and you will merely get caught in the trap of "improving" the documentation it you try. Keep your methods short and clear and they will be understood as needed. Isn't this what modular design and encapsulation is for? You encapsulate complexity in modules so that you can shorthand its function in a larger module.` (PeteHardie)
 
 
 ### Beautiful JavaScript: Chainable/Cascading Methods
@@ -241,6 +224,11 @@ str.replace("k", "r").toUpperCase().substr(0, 4);
 
 ### Airbnb Javascript Style Guide - Github
 
+
+
+
+
+
 Airbnb JavaScript Style Guide() { - Github.com -  https://github.com/airbnb/javascript
 
 
@@ -248,17 +236,15 @@ Airbnb JavaScript Style Guide() { - Github.com -  https://github.com/airbnb/java
 
 
 
-Self Documenting Code - Wiki.c2.com - https://wiki.c2.com/?SelfDocumentingCode
 
-CodeAsDocumentation - MartinFowler.com - https://www.martinfowler.com/bliki/CodeAsDocumentation.html
+
+
+
 
 
 ### Further Reading
 
 [Airbnb JavaScript Style Guide() { - Github.com](https://github.com/airbnb/javascript)
-
-
-[]()
 
 ### References
 
@@ -267,6 +253,10 @@ CodeAsDocumentation - MartinFowler.com - https://www.martinfowler.com/bliki/Code
 [Coding Without Comments - CodingHorror.com](https://blog.codinghorror.com/coding-without-comments/)
 
 [Code Tells You How, Comments Tell You Why - CodingHorror.com](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
+
+[CodeAsDocumentation - MartinFowler.com](https://www.martinfowler.com/bliki/CodeAsDocumentation.html)
+
+[Self Documenting Code - Wiki.c2.com](https://wiki.c2.com/?SelfDocumentingCode)
 
 [Beautiful JavaScript: Easily Create Chainable (Cascading) Methods for Expressiveness - Web.archive.org](https://web.archive.org/web/20190211152543/https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/)
 
