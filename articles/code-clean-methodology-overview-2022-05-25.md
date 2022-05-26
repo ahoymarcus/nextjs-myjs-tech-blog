@@ -12,8 +12,8 @@ description: 'The importance of developing software while maintain a production 
 2. ##### 10 Principles for Keeping Your Programming Code Clean
 3. ##### Commenting the Code
 4. ##### CodeAsDocumentation
-5. ##### 
-6. ##### 
+5. ##### Self Documenting Code
+6. ##### Beautiful JavaScript: Chainable/Cascading Methods
 7. #####  
 8. ##### 
 9. ##### Further Reading
@@ -123,13 +123,13 @@ Finally, the author rewrites the code block a third time, now using patterns lik
 Another point from the same author, Jeff Atwood, can be made even more cleary in his other article about the same topic on comments: [Code Tells You How, Comments Tell You Why](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
 
 
-So, in this other article it becomes even more clear that the work of a developer should be much more than instructing machines, but to present written features to people. The author also cites two other authors:
+So, in this other article it becomes even more clear that the work of a developer should be much more than instructing machines, but to present written features to people. The author also cites 2 other authors:
 
-- `Structure and Interpretation of Computer Programs` (SUSSUMAN and ABELSON)
+1. `Structure and Interpretation of Computer Programs` (SUSSUMAN and ABELSON):
 
 `Programs must be written for people to read, and only incidentally for machines to execute.`
 
-- `Literate Programming` (Knuth )
+2. `Literate Programming` (Knuth ):
 
 `Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.` 
 
@@ -139,7 +139,12 @@ But again, even that pattern to make the program more readable for humans cannot
 `Code can't explain why the program is being written, and the rationale for choosing this or that method. Code cannot discuss the reasons certain alternative approaches were taken. For example:` 
 
 ```
-/* A binary search turned out to be slower than the Boyer-Moore algorithm for the data sets of interest, thus we have used the more complex, but faster method even though this problem does not at first seem amenable to a string search technique. */
+/* 
+    A binary search turned out to be slower than the Boyer-Moore algorithm 
+    for the data sets of interest, thus we have used the more complex, but faster
+    method even though this problem does not at first seem amenable to a string
+    search technique. 
+*/
 ``` 
 
 
@@ -148,7 +153,7 @@ But again, even that pattern to make the program more readable for humans cannot
 According to the author Martin Fowler in his article, [CodeAsDocumentation](https://www.martinfowler.com/bliki/CodeAsDocumentation.html), where following the discipline of the Agile methodology, with the due raise in the importance of the programming in the software development, a new away to view the programming code not only as a resource in need of documentation, but as a 'primary documentation of a software system', though, of course, there should be other supplementare documentation apart.
 
 
-`The rationale for the code being the primary source of documentation is that it is the only one that is sufficiently detailed and precise to act in that role - a point made so eloquently by Jack Reeves's famous essay []"What is Software Design?"](https://www.developerdotstar.com/mag/articles/reeves_design_main.html) This principle comes with a important consequence - that it's important that programmers put in the effort to make sure that this code is clear and readable. Saying that code is documentation isn't saying that a particular code base is good documentation. Like any documentation, code can be clear or it can be gibberish. Code is no more inherently clear than any other form of documentation. (And other forms of documentation can be hopelessly unclear too - I've seen plenty of gibberish UML diagrams, to flog a popular horse.)`
+`The rationale for the code being the primary source of documentation is that it is the only one that is sufficiently detailed and precise to act in that role - a point made so eloquently by Jack Reeves's famous essay ""[What is Software Design?](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)" This principle comes with a important consequence - that it's important that programmers put in the effort to make sure that this code is clear and readable. Saying that code is documentation isn't saying that a particular code base is good documentation. Like any documentation, code can be clear or it can be gibberish. Code is no more inherently clear than any other form of documentation. (And other forms of documentation can be hopelessly unclear too - I've seen plenty of gibberish UML diagrams, to flog a popular horse.)`
 
 
 And so, Martin Fowler believes that much of the fact that code is often hard to read is because people don't have that notion to write to others, and as a documentation as well, and since there is no will, then the author deduce that there will be little change for bringing clarity to the work:
@@ -157,9 +162,50 @@ And so, Martin Fowler believes that much of the fact that code is often hard to 
 
 
 
+### Self Documenting Code
 
 
-### Airbnb Javascript Style Guide
+
+
+
+Self Documenting Code - Wiki.c2.com - https://wiki.c2.com/?SelfDocumentingCode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Beautiful JavaScript: Chainable/Cascading Methods
+
+`Chaining methods, also known as Cascading, refers to repeatedly calling one method after another on an object, in one continous line of code[...] is not just pleasurable and convenient but also succinct and intelligible. It allows us to read code like a sentence, flowing gracefully across the page. It also frees us from the monotonous, blocky structures we usually construct.` (Richard Bovell)
+
+```
+str.replace("k", "r").toUpperCase().substr(0, 4);
+``` 
+
+- **Advantages in using a Cascading Patterna according to the author:**
+1. There is no need to create temporary variables to save each step of the process.
+2. Now, every line of code clearly and succinctly expresses what it is doing, particularly when the name of each method is defined using verbs. 
+3. The code gets more maintainable because there is a simpler, lean, specialized use of the methods.
+4. Overall, one can easily read the 'chainable' code, effortessly type it, and confortably understand it.
+
+
+
+### Airbnb Javascript Style Guide - Github
 
 Airbnb JavaScript Style Guide() { - Github.com -  https://github.com/airbnb/javascript
 
@@ -167,9 +213,6 @@ Airbnb JavaScript Style Guide() { - Github.com -  https://github.com/airbnb/java
 
 
 
-
-
-Beautiful JavaScript: Easily Create Chainable (Cascading) Methods for Expressiveness - Web.archive.org - https://web.archive.org/web/20190211152543/https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/
 
 Self Documenting Code - Wiki.c2.com - https://wiki.c2.com/?SelfDocumentingCode
 
@@ -190,6 +233,8 @@ CodeAsDocumentation - MartinFowler.com - https://www.martinfowler.com/bliki/Code
 [Coding Without Comments - CodingHorror.com](https://blog.codinghorror.com/coding-without-comments/)
 
 [Code Tells You How, Comments Tell You Why - CodingHorror.com](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
+
+[Beautiful JavaScript: Easily Create Chainable (Cascading) Methods for Expressiveness - Web.archive.org](https://web.archive.org/web/20190211152543/https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/)
 
 
 []()
