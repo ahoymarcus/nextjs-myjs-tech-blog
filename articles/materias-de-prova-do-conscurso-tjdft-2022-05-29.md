@@ -109,8 +109,8 @@ CONHECIMENTOS BÁSICOS
 - [X] Sintaxe: frase, oração e período; termos da oração; processos de coordenação e subordinação; concordância nominal e verbal; transitividade e regência de nomes e verbos; padrões gerais de colocação pronominal no português; mecanismos de coesão textual.   
 - [X] Ortografia.     
 - [X] Acentuação gráfica. Emprego do sinal indicativo de crase.    
-- [ ] Pontuação.    
-- [ ] Reescrita de frases: substituição, deslocamento, paralelismo; variação linguística: norma culta.    
+- [X] Pontuação.    
+- [X] Reescrita de frases: substituição, deslocamento, paralelismo; variação linguística: norma culta.    
  
     
 **Observação:** os itens deste programa serão considerados sob o ponto de vista textual, ou seja, deverão ser estudados sob o foco de sua participação na estruturação significativa dos textos.     

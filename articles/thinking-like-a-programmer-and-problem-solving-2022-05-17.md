@@ -12,7 +12,7 @@ description: 'According to many authors, to think like a programmer should be th
 2. ##### Thinking Like a Programmer
     2.1. Understand the Problem to be Solved   
     2.2. Planning the Steps   
-    2.3. Divide and Conquer
+    2.3. Divide and Conquer    
     2.4. Being Stuck
 3. #####  
 	3.1.	
@@ -20,10 +20,8 @@ description: 'According to many authors, to think like a programmer should be th
 4. ##### 
 5. ##### 
 6. ##### 
-7. #####  
-8. ##### 
-9. ##### Further Reading
-10. ##### References
+7. ##### Further Reading
+8. ##### References
 
 ### Introduction
  
