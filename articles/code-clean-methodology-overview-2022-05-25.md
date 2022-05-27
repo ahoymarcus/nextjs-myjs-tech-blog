@@ -71,6 +71,11 @@ Then we here bellow 4 points which can serve as a essential pattern for start cl
 
 
 
+###### Airbnb Javascript Style Guide - Github
+- A very good example JavaScript guide from Airbnb: [Airbnb JavaScript Style Guide() { - Github.com](https://github.com/airbnb/javascript)
+    
+
+
 ###### Other articles from the Governance and Management series:
 - `IT Governance and Mangement - Overview` [^1]
 - `PMBOK and others Project Management Methodologies` [^2]
@@ -80,6 +85,7 @@ Then we here bellow 4 points which can serve as a essential pattern for start cl
 - `Cryptography, Steganography and Criptanalysis - Overview` [^6]
 - `Continuity Plan and Essentials for Businesses - Overview` [^7]     
 - `Open Web Application Project Foundation (OWASP) - Overview` [^8]
+
 
 
 ### 10 Principles for Keeping Your Programming Code Clean
@@ -219,19 +225,6 @@ str.replace("k", "r").toUpperCase().substr(0, 4);
 2. Now, every line of code clearly and succinctly expresses what it is doing, particularly when the name of each method is defined using verbs. 
 3. The code gets more maintainable because there is a simpler, lean, specialized use of the methods.
 4. Overall, one can easily read the 'chainable' code, effortessly type it, and confortably understand it.
-
-
-
-### Airbnb Javascript Style Guide - Github
-
-
-
-
-
-
-Airbnb JavaScript Style Guide() { - Github.com -  https://github.com/airbnb/javascript
-
-
 
 
 
