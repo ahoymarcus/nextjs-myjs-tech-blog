@@ -393,7 +393,7 @@ frankie.introduceSelf();
 
 #### The Risks of the Eval() Function
 
-![eval-function-and-its-risks](/public/images/articles/web-development/eval-function-and-its-risks.png)
+![eval-function-and-its-risks](/images/articles/web-development/eval-function-and-its-risks.png)
 
 
 - **ATENTION**: as the [MDN plataform](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) adverts, the eval() function receives a string as argument, making it very risk to be used in development.
