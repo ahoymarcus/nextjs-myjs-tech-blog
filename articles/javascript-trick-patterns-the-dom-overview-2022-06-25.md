@@ -568,7 +568,7 @@ Then, after the trace of nodes is captured in the event, they start to bubble be
 This bubbing effect can be even more clear when there is some nesting configuration where elements are wrapped by its parent:
 
 
-![understanding-propagation-bubbling-html-01](public/images/articles/web-development/understanding-propagation-bubbling-html-01.png)
+![understanding-propagation-bubbling-html-01](/public/images/articles/web-development/understanding-propagation-bubbling-html-01.png)
 
 ```
 <div class="one">
@@ -827,7 +827,7 @@ button {
 }
 ``` 
 
-![mdn-example-of-styling-hard-html-form-controls](public/images/articles/web-development/mdn-example-of-styling-hard-html-form-controls.png)
+![mdn-example-of-styling-hard-html-form-controls](/public/images/articles/web-development/mdn-example-of-styling-hard-html-form-controls.png)
 
 
 The reach the goal above, the most problematic HTML element was the **select** element, because:
