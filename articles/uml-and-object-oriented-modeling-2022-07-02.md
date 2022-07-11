@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'UML e a Modelagem a Orientada a Objetos'
+title: 'UML e a Modelagem Orientada a Objetos'
 date: '2022-07-02'
 subject: 'development-articles'
 description: 'A UML, que em português se traduz, Linguagem de Modelagem Unificada, é uma família de notações gráficas, apoiada por um metamodelo único, que tem como objetivo fazer a descrição e ajudar o projeto de sistemas de software. Ademais, enquanto linguagem a UML pode ser usada para a Especificação, Construção, Visualização, e Documentação de modelos para um sistema de software.'
 ---
 
-# UML e a Modelagem a Orientada a Objetos
+# UML e a Modelagem Orientada a Objetos
 
 1. ##### Introduction  
 2. ##### A Unified Modeling Language - UML
@@ -54,7 +54,7 @@ description: 'A UML, que em português se traduz, Linguagem de Modelagem Unifica
 
 
 ###### Other articles related to Software Modeling:
-- `UML e a Modelagem a Orientada a Objetos` [^9]
+- `UML e a Modelagem Orientada a Objetos` [^9]
 
 
 
@@ -69,7 +69,7 @@ E de acordo com Reis e Videira (2003), a UML enquanto linguagem pode ser usada p
 - **1997**: adoção da UML pelo Objetct Management Group  ou OMG como linguagem de modelagem padrão.
 
 
-![timeline-da-evolução-e-versões-da-linguagem-uml](/images/timeline-da-evolução-e-versões-da-linguagem-uml.png)
+![timeline-da-evolução-e-versões-da-linguagem-uml](/images/articles/development/timeline-da-evolução-e-versões-da-linguagem-uml.png)
 
 
 Em termos de objetivos, segundo a OMG a UML buscaria:
@@ -108,7 +108,7 @@ Todo esse trabalho de unificações de todas essas linguagens e ferramentas foi 
 
 
 - **Esquema Representando diversos tipos de diagramas presentes na linguagem UML**
-![esquema-rep-diversos-tipos-de-diagramas-uml](/images/esquema-rep-diversos-tipos-de-diagramas-uml.png)
+![esquema-rep-diversos-tipos-de-diagramas-uml](/images/articles/esquema-rep-diversos-tipos-de-diagramas-uml.png)
 
 
 E, dividindo os diagramas UML em categorias, temos:
@@ -131,7 +131,7 @@ E, dividindo os diagramas UML em categorias, temos:
 
 
 - **Já abaixo temos um esquema representando quais os diagramas UML são mais utilizados**
-![esquema-rep-diagramas-uml-mais-utilizados](/images/development/esquema-rep-diagramas-uml-mais-utilizados.png)
+![esquema-rep-diagramas-uml-mais-utilizados](/images/articles/development/esquema-rep-diagramas-uml-mais-utilizados.png)
 
 
 ```
@@ -206,7 +206,7 @@ Finalmente, é possível também se tratar de um tipo ainda mais geral de relaci
 - Em termos do estudo das formas de ligação entre as classes, podemos muito bem comparar como os tipos de vínculos entre as classes gera diferentes tipos de complexidades para o sistema. Assim, sendo a **Dependência**, o tipo que tem o vínculo mais fraco dentre todos, especialmente quando comparado, por exemplo, com a **Herança**, esta que pode se tornar extremamente complexa como pode ser visto na imagem abaixo com as heranças múltiplas:
 
 
-![a-questão-da-herança-multipla-em-oo](/images/development/a-questão-da-herança-multipla-em-oo.png)
+![a-questão-da-herança-multipla-em-oo](/images/articles/development/a-questão-da-herança-multipla-em-oo.png)
 
 
 
@@ -223,7 +223,7 @@ Este diagrama busca fazer a representação do fluxo de uma operação do sistem
 Ademais, um diagrama de atividade apresenta um ponto entrada/início e outro de finalização. Possue destacadamente retângulos contendo as atividades e elementos para definir o fluxo e o controle. Ele pode inclusive inserir o uso de **partição** que permite colocar em legenda os atores participando daqueles fluxos. 
 
 
-![diagrama-de-atividades-com-raia-uml](/images/development/diagrama-de-atividades-com-raia-uml.png)
+![diagrama-de-atividades-com-raia-uml](/images/articles/development/diagrama-de-atividades-com-raia-uml.png)
 
 
 #### O Diagrama de Máquina de Estado
@@ -233,7 +233,7 @@ Este diagrama busca **retratar o comportamento dinâmico de uma entidade com bas
 
 Assim, este diagrama mostra as transições de estado possíveis entre vários objetos, e de forma também relacionada, este diagrama de máquina de estado permite fazer referência às combinações das diferentes informações que um objeto pode conter.
 
-![exemplo-de-um-diagrama-de-maquina-de-estado](/images/development/exemplo-de-um-diagrama-de-maquina-de-estado-uml)
+![exemplo-de-um-diagrama-de-maquina-de-estado](/images/articles/development/exemplo-de-um-diagrama-de-maquina-de-estado-uml)
 
 
 Logo, como foi visto, estes diagramas são aplicados em casos como:
@@ -255,7 +255,7 @@ Segundo Bell (2004), o diagrama de sequência é usado principalmente para mostr
 Desse modo, pode-se dizer que os diagramas de sequência podem servir ainda para definir sequência de eventos que resultem em algum resultado desejado, sendo o foco mais na ordem do que no próprio conteúdo dessas mensagens.
 
 
-![exemplo-de-um-diagrama-de-sequencia-uml](/images/development/exemplo-de-um-diagrama-de-sequencia-uml.png)
+![exemplo-de-um-diagrama-de-sequencia-uml](/images/articles/development/exemplo-de-um-diagrama-de-sequencia-uml.png)
 
 
 #### O Diagrama de Comunicação
@@ -264,7 +264,7 @@ O diagrama de comunicação, que até a versão 1.5 da UML era conhecido como **
 
 
 - **No exemplo da imagem abaixo 4 objetos possuem 7 tipos de mensagens sendo catalogadas ou representadas no sistema**:
-![exemplo-de-um-diagrama-de-comunicacao](/images/development/exemplo-de-um-diagrama-de-comunicacao.png)
+![exemplo-de-um-diagrama-de-comunicacao](/images/articles/development/exemplo-de-um-diagrama-de-comunicacao.png)
 
 
 De forma geral, este diagrama de comunicação é muito usado para:
@@ -278,7 +278,7 @@ Segundo o site [Monitoriadeengenhariadesoftware](https://monitoriadeengenhariade
 `As informações mostradas no diagrama de comunicação são, com frequência, praticamente as mesmas apresentadas no diagrama de sequência, porém com um enfoque diferente, visto que esse diagrama não se preocupa com a temporalidade do processo, concentrando-se em como os elementos do diagrama estão vinculados e quais mensagens trocam entre si durante o processo.` [Monitoriadeengenhariadesoftware](https://monitoriadeengenhariadesoftware.wordpress.com/2016/03/20/diagrama-de-comunicacao/)
 
 
-![esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao](/images/development/esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao.png)
+![esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao](/images/articles/development/esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao.png)
 
 
 #### Principais Ferrramentas  para UML
@@ -351,7 +351,7 @@ O autor Wagner (2016) lembra que os modelos feitos durante a análise de domíni
 E, embora estes documentos estejam longe de se preocuparem com escolhas de design específicas de tecnologia, o texto base do curso observa **a possibilidade do uso de um documento assemelhado ao diagrama de classes tradicional da UML**, ainda que se utilizando de informações e de descrições conceituais e de alto-nível, além de uma linguagem, como diz o mesmo texto base do curso, que tem o seu foco `na perspectiva e na linguagem dos especialistas do domínio, portanto, clientes, consultores, usuários e outros.` (apostlila 3)
 
 
-![exemplo-de-uma-modelagem-de-diagrama-conceitual](/images/development/exemplo-de-uma-modelagem-de-diagrama-conceitual.png)
+![exemplo-de-uma-modelagem-de-diagrama-conceitual](/images/articles/development/exemplo-de-uma-modelagem-de-diagrama-conceitual.png)
 
 
 E o texto do curso traz ainda a questão de sua própria natureza conceitual, esta documentação que se cria nessa etapa não deve fazer referência para questões de tecnologia ou de TI, mas apenas uma ampla descrição do negócio, que posteriormente permitirá que os desenvolvedores possam retirar as suas estruturas, que no caso do OO seriam os **objetos**.
@@ -408,11 +408,11 @@ Nesses termos, o **caso de uso descritivo seria usado como uma sequência de eta
 
 
 - **Exemplo de um caso de uso descritivo Basal, isto é, da forma mais simples possível**:
-![exemplo-de-caso-de-uso-descritivo-basal](/images/development/exemplo-de-caso-de-uso-descritivo-basal.png)
+![exemplo-de-caso-de-uso-descritivo-basal](/images/articles/development/exemplo-de-caso-de-uso-descritivo-basal.png)
 
 
 - **Exemplo de um caso de uso descritivo Detalhado. Ou seja, que traz consigo fluxos alternativos, todos os requisitos funcionais, situações de contorno, etc.**:
-![exemplo-de-caso-de-uso-descritivo-detalhado](/images/development/exemplo-de-caso-de-uso-descritivo-detalhado.png)
+![exemplo-de-caso-de-uso-descritivo-detalhado](/images/articles/development/exemplo-de-caso-de-uso-descritivo-detalhado.png)
 
 
 #### O Diagrama de Sequência
@@ -498,7 +498,7 @@ Em termos de workflow os autores propõem:
 
 
 - **Exemplo de PEIXTO (2008)
-![workflow-para-modelagem-de-negocio-delmir-peixoto-2008](/images/development/workflow-para-modelagem-de-negocio-delmir-peixoto-2008)
+![workflow-para-modelagem-de-negocio-delmir-peixoto-2008](/images/articles/development/workflow-para-modelagem-de-negocio-delmir-peixoto-2008)
 
 
 Finalmente, os autores oferecem as suas considerações finais nas quais fazem um breve resumo dos rumos escolhidos por eles neste artigo:
@@ -556,7 +556,7 @@ Do outro lado, o diagrma de caso de uso seria um diagrama utilizado para **descr
 
 
 - **Exemplo do uso do diagrama de caso de uso para uma análise conceitual do sistema de empréstimos de veículos**:
-![analise-conceitual-feita-com-diagrama-de-caso-de-uso](/images/development/analise-conceitual-feita-com-diagrama-de-caso-de-uso.png)
+![analise-conceitual-feita-com-diagrama-de-caso-de-uso](/images/articles/development/analise-conceitual-feita-com-diagrama-de-caso-de-uso.png)
 
 
 ###### Artigo de referência: `Aplicação da modelagem uml na fase de análise de um projeto de software para agendamento de uso de veículos internos de uma empresa DE ALMEIDA, A.A.L. Aplicação da modelagem uml na fase de análise de um projeto de software para agendamento de uso de veículos internos de uma empresa. 2013.`
