@@ -11,7 +11,7 @@ description: 'The need of software metrics and measurement are related to: 1. De
 1. ##### Introduction  
 2. ##### Types of Software Measurement
 3. ##### The Metrics    
-	3.1. Characteristics of Software Metrics      	
+	3.1. Characteristics of Software Metrics   
 	3.2. Classification of Software Metrics      
 	3.3. Scope of Software Metrics      
 	3.4. Advantages of Software Metrics      
