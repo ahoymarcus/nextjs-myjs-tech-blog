@@ -108,7 +108,7 @@ Todo esse trabalho de unificações de todas essas linguagens e ferramentas foi 
 
 
 - **Esquema Representando diversos tipos de diagramas presentes na linguagem UML**
-![esquema-rep-diversos-tipos-de-diagramas-uml](/images/articles/esquema-rep-diversos-tipos-de-diagramas-uml.png)
+![esquema-rep-diversos-tipos-de-diagramas-uml](/images/articles/development/esquema-rep-diversos-tipos-de-diagramas-uml.png)
 
 
 E, dividindo os diagramas UML em categorias, temos:
@@ -233,7 +233,7 @@ Este diagrama busca **retratar o comportamento dinâmico de uma entidade com bas
 
 Assim, este diagrama mostra as transições de estado possíveis entre vários objetos, e de forma também relacionada, este diagrama de máquina de estado permite fazer referência às combinações das diferentes informações que um objeto pode conter.
 
-![exemplo-de-um-diagrama-de-maquina-de-estado](/images/articles/development/exemplo-de-um-diagrama-de-maquina-de-estado-uml)
+![exemplo-de-um-diagrama-de-maquina-de-estado](/images/articles/development/exemplo-de-um-diagrama-de-maquina-de-estado-uml.png)
 
 
 Logo, como foi visto, estes diagramas são aplicados em casos como:
@@ -497,8 +497,8 @@ Em termos de workflow os autores propõem:
 5. **Definir Papéis e Responsabilidades**: aqui, segundo explicam os autores, cada processo de negócio deve ter um responsável; mas que também seria importante apresentar em modelo todos os atores, isto é, aqueles com responsabilidades definida, e  que devem participar do fluxo de eventos de cada um daqueles processos de negócios.
 
 
-- **Exemplo de PEIXTO (2008)
-![workflow-para-modelagem-de-negocio-delmir-peixoto-2008](/images/articles/development/workflow-para-modelagem-de-negocio-delmir-peixoto-2008)
+- **Exemplo de PEIXTO (2008)**:
+![workflow-para-modelagem-de-negocio-delmir-peixoto-2008](/images/articles/development/workflow-para-modelagem-de-negocio-delmir-peixoto-2008.png)
 
 
 Finalmente, os autores oferecem as suas considerações finais nas quais fazem um breve resumo dos rumos escolhidos por eles neste artigo:
@@ -683,7 +683,7 @@ Assim, **desse uso da linguagem descritiva da UML, juntamente com a aplicação 
      Produto resultante: **diagramas de modelos de recursos, informações e organização**.
 4. **Comportamento do negócio (business behavior)**: modela o comportamento e a interação entre recursos e entre processos.   
      4.1. Esta visão também serve para trazer maior entendimento ao processo de negócio ao longo de transformações dos seus estados.   
-     4.2. Esta visão pode fazer uso de um **diagrama de estados de recurso** para oferecer subsídio ao seu trabalho.   . 
+     4.2. Esta visão pode fazer uso de um **diagrama de estados de recurso** para oferecer subsídio ao seu trabalho.   
      4.3. Produto resultante: **diagrama de estado de recurso** e **diagrama de interação de recursos e de estados**.
 
 
@@ -736,7 +736,7 @@ E, seguindo na modelagem como um todo, inserindo o componente **iterativo** dess
 
 
 - **Abaixo, um quadro comparativo do autor AZEVEDO (2003) entre a proposta básica de Eriksson e Penker (2000) e o resultado obtido com a revisão proposta pelos autores em um sistema de controle de expedição de uma empresa**:
-![quadro-comparativo-final-apresentando-adições-feitas-ao-modelo-eriksson-de-modelagem](/imagens/development/quadro-comparativo-final-apresentando-adições-feitas-ao-modelo-eriksson-de-modelagem.png)
+![quadro-comparativo-final-apresentando-adições-feitas-ao-modelo-eriksson-de-modelagem](/images/development/quadro-comparativo-final-apresentando-adições-feitas-ao-modelo-eriksson-de-modelagem.png)
 
 
 `[...] que o UP não define adequadamente atividades para a modelagem de negócio. Nele, as atividades começam a partir do levantamento de requisitos e a modelagem de negócio é apenas citada como um possível facilitador para a identificação de possíveis atores do sistema. O RUP apresenta uma proposta de modelagem de negócio através de casos de uso de negócio. Esta proposta, no entanto, apresenta limitações quanto à modelagem de fluxos entre os processos de negócio e quanto ao alinhamento dos casos de uso identificados aos reais objetivos do negócio. No domínio da modelagem de negócio, a técnica de construção de arquiteturas de negócio proposta por Eriksson e Penker (2000) é, dentre as propostas de modelagem de negócio com UML pesquisadas, a única que aborda de forma sistemática a passagem da arquitetura de negócio para uma arquitetura de software que dê suporte à primeira. Eriksson e Penker, porém, não exploram a sistematização desta passagem no contexto de um processo ou metodologia de desenvolvimento de sistemas.` (seção: Considerações Finais)
