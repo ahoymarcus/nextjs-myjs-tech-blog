@@ -15,8 +15,7 @@ description: 'A UML, que em português se traduz, Linguagem de Modelagem Unifica
 	2.3. O Diagrama de Atividade    
 	2.4. O Diagrama de Máquina de Estado    
 	2.5. O Diagrama de Sequência   
-	2.6. O Diagrama de Comunicação  
-	2.7. Principais Ferrramentas  para UML
+	2.6. O Diagrama de Comunicação
 3. ##### O Processo de Modelagem de Software com OO
     3.1. A Análise de Domínio   
     3.2. O Diagrama de Classes Conceitual   
@@ -31,7 +30,9 @@ description: 'A UML, que em português se traduz, Linguagem de Modelagem Unifica
 6. ##### Artigo: Aplicação de uma Arquitetura de Modelagem de Processos de Negócios no Desenvolvimento de Software
     6.1. Apresentação Geral das Técnicas de Modelagem   
     6.2. Modelando Processos de Negócios com a UML
-7. #####    
+7. ##### Principais Ferrramentas  para UML
+    7.1. FerramentasComerciais e as 'Free Editions'    
+    7.2. Ferramentas livres BSD e GLP
 8. #####    
 9. #####    
 10. #####    
@@ -279,27 +280,6 @@ Segundo o site [Monitoriadeengenhariadesoftware](https://monitoriadeengenhariade
 
 
 ![esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao](/images/articles/development/esquema-rep-as-diferenças-entre-diagramas-de-sequencia-e-comunicacao.png)
-
-
-#### Principais Ferrramentas  para UML
-
-- **FerramentasComerciais e as 'Free Editions'**:
-1. MagicDraw
-2. Together
-3. Poseidon
-4. Enterprise Architect
-5. Ratinal Rose
-6. Jude
-7. Omondo Eclipse UML
-8. Visio
-
-- **Ferramentas livres BSD e GLP**:
-1. Umbrello
-2. ArgoUML
-3. Dia
-4. BOUML
-5. Fajuba
-6. StarUML
 
 
 
@@ -748,7 +728,27 @@ Assim, concluem os autores, resumindo que a UP é usada sem um forma sistematiza
 ###### Artigo de referência: `Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software DE AZEVEDO JÚNIOR, D.P. Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software 2003`
 
 
+### Principais Ferrramentas  para UML
 
+#### FerramentasComerciais e as 'Free Editions' 
+
+1. MagicDraw
+2. Together
+3. Poseidon
+4. Enterprise Architect
+5. Ratinal Rose
+6. Jude
+7. Omondo Eclipse UML
+8. Visio
+
+
+#### Ferramentas livres BSD e GLP
+1. Umbrello
+2. ArgoUML
+3. Dia
+4. BOUML
+5. Fajuba
+6. StarUML
 
 
 
