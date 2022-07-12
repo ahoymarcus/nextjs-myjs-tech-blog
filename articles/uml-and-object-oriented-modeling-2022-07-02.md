@@ -30,7 +30,7 @@ description: 'A UML, que em português se traduz, Linguagem de Modelagem Unifica
 6. ##### Artigo: Aplicação de uma Arquitetura de Modelagem de Processos de Negócios no Desenvolvimento de Software
     6.1. Apresentação Geral das Técnicas de Modelagem   
     6.2. Modelando Processos de Negócios com a UML
-7. ##### Principais Ferrramentas  para UML
+7. ##### Principais Ferramentas  para UML
     7.1. FerramentasComerciais e as 'Free Editions'    
     7.2. Ferramentas livres BSD e GLP
 8. #####    
@@ -728,27 +728,27 @@ Assim, concluem os autores, resumindo que a UP é usada sem um forma sistematiza
 ###### Artigo de referência: `Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software DE AZEVEDO JÚNIOR, D.P. Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software 2003`
 
 
-### Principais Ferrramentas  para UML
+### Principais Ferramentas  para UML
 
 #### FerramentasComerciais e as 'Free Editions' 
 
-1. MagicDraw
-2. Together
-3. Poseidon
-4. Enterprise Architect
-5. Ratinal Rose
-6. Jude
-7. Omondo Eclipse UML
+1. Enterprise Architect
+2. Jude
+3. MagicDraw
+4. Omondo Eclipse UML
+5. Poseidon
+6. Ratinal Rose
+7. Together
 8. Visio
 
 
 #### Ferramentas livres BSD e GLP
-1. Umbrello
-2. ArgoUML
+1. ArgoUML
+2. BOUML
 3. Dia
-4. BOUML
-5. Fajuba
-6. StarUML
+4. Fajuba
+5. StarUML
+6. Umbrello
 
 
 
