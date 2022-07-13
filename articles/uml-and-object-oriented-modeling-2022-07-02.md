@@ -728,10 +728,11 @@ Assim, concluem os autores, resumindo que a UP é usada sem um forma sistematiza
 ###### Artigo de referência: `Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software DE AZEVEDO JÚNIOR, D.P. Aplicação da técnica de modelagem de negócio com uml a processos Iterativos de desenvolvimento de software 2003`
 
 
-### Principais Ferramentas  para UML
+### Principais Ferrramentas  para UML
 
-#### FerramentasComerciais e as 'Free Editions' 
+#### FerramentasComerciais e as 'Free Editions'
 
+[Altova UModel](https://www.altova.com/umodel)
 1. Enterprise Architect
 2. Jude
 3. MagicDraw
@@ -743,12 +744,19 @@ Assim, concluem os autores, resumindo que a UP é usada sem um forma sistematiza
 
 
 #### Ferramentas livres BSD e GLP
+
+
 1. ArgoUML
-2. BOUML
-3. Dia
+2. [BOUML](https://www.bouml.fr/)
+3. [Dia](http://dia-installer.de/)
 4. Fajuba
-5. StarUML
-6. Umbrello
+5. [StarUML](https://staruml.io/)
+6. [Umbrello](https://umbrello.kde.org/)
+7. [UMLDesigner](https://www.umldesigner.org/)
+8. [Umple](https://cruise.umple.org/umple/)
+
+###### Resources about the UML Editors:
+- [25 BEST UML Tools | FREE UML Diagram Software in 2022 - Guru99](https://www.guru99.com/best-uml-tools.html)
 
 
 
