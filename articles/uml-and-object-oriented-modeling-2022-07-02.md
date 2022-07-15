@@ -753,7 +753,9 @@ Assim, concluem os autores, resumindo que a UP é usada sem um forma sistematiza
 5. [StarUML](https://staruml.io/)
 6. [Umbrello](https://umbrello.kde.org/)
 7. [UMLDesigner](https://www.umldesigner.org/)
-8. [Umple](https://cruise.umple.org/umple/)
+8. [Umple](https://cruise.umple.org/umple/)   
+    8.1. [umpleonline](https://cruise.umple.org/umpleonline/)
+
 
 ###### Resources about the UML Editors:
 - [25 BEST UML Tools | FREE UML Diagram Software in 2022 - Guru99](https://www.guru99.com/best-uml-tools.html)
