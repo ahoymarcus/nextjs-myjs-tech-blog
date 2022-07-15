@@ -13,7 +13,7 @@ description: 'This article focuses specially at some trick features that are mor
 3. ##### Object Oriented Programming - OOP
     3.1. JavaScript Objects    
 	3.2. JavaScript Objects are Mutable
-	3.3. Prototype Versus Classes
+	3.3. Inheritance and the Prototype Chain
 4. ##### The 'This' Word
 	4.1. The Global Context   
 	4.2. The Function Scope   
@@ -298,6 +298,40 @@ alert(obj.__proto__); // [object Object] - the value is an object, didn't work a
 `As we see from the code, the assignment to a primitive 5 is ignored. We’ll cover the special nature of __proto__ in subsequent chapters, and suggest the ways to fix such behavior.` [JavaScript.info](https://javascript.info/object)
 
 
+
+###### Using the Constructor Function
+
+According to [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics), the use of **object's constructors** are importnat when it's necessary to automate the creating of many alike object and also to update them.
+
+`Using object literals is fine when you only need to create one object, but if you have to create more than one, as in the previous section, they're seriously inadequate. We have to write out the same code for every object we create, and if we want to change some properties of the object - like adding a height property - then we have to remember to update every object.` [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+
+
+And the use of the **new** keyword when calling a constructor will:
+
+1. **create a new object**
+2. **bind this to the new object, so you can refer to this in your constructor code**
+3. **run the code in the constructor**
+4. **return the new object.**
+
+```
+// The Constructor
+function Person(name) {
+  this.name = name;
+  this.introduceSelf = function() {
+    console.log(`Hi! I'm ${this.name}.`);
+  }
+}
+
+const salva = new Person('Salva');
+salva.name;
+salva.introduceSelf();
+
+const frankie = new Person('Frankie');
+frankie.name;
+frankie.introduceSelf();
+``` 
+
+
 ###### Testing Property Existence and the 'in' Opertator
 
 According to [JavaScript.info](https://javascript.info/object), a notable feature of objects in JavaScript, when compared to many ogher languages, is the fact that here it is possible to access any property, and even when the property does not exist there will be no error!
@@ -393,78 +427,266 @@ x.age = 10; // now, the change will be refered equally by both x.age and person.
 
 
 
-#### Prototype Versus Classes
+#### Inheritance and the Prototype Chain
 
-**COMING SOON**
-
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
-
-
+As a article from MDN Docs, [Inheritance and the prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain), says JavaScript creates some confusion for developers experienced with class-based languages like Java or C++, because of its peculiar structure:
+1. **dynamic**
+2. **Absense of static types**
+3. **Prototypical inheritance**
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-According to [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics), the use of **object's constructors** are importnat when it's necessary to automate the creating of many alike object and also to update them.
-
-`Using object literals is fine when you only need to create one object, but if you have to create more than one, as in the previous section, they're seriously inadequate. We have to write out the same code for every object we create, and if we want to change some properties of the object - like adding a height property - then we have to remember to update every object.` [MDN docs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-
-
-And the use of the **new** keyword when calling a constructor will:
-
-1. **create a new object**
-2. **bind this to the new object, so you can refer to this in your constructor code**
-3. **run the code in the constructor**
-4. **return the new object.**
+As the MDN article states, **when it comes to inheritance**, JavaScript has only one and the same construct, the objects itself. And **these objects have a private property which holds a link to another object called its prototype**. So, this creates a chain with each object and its prototype reference, until a object with a null as its prototype. And since by definition **null has no prototype**, it acts like a final link in the prototype chain - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain):
 
 ```
-// The Constructor
-function Person(name) {
-  this.name = name;
-  this.introduceSelf = function() {
-    console.log(`Hi! I'm ${this.name}.`);
-  }
+When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
+```
+
+And another interesting point highlighted by the MDN's article is the fact besides the confusion caused by this distinction of the JavaScript language, there a general misconception that this JavaScript structure would be a kind of weakness by itself.
+
+But, in fact, the article witness that the prototypical inheritance model, by itself, is more powerful than the classic model, among others reasons, because it can easily builtd a classic model of inheritance on top of the prototypical model, just as it was really implemented by JavaScript -[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain):
+
+
+`While this confusion is often considered to be one of JavaScript's weaknesses, the prototypical inheritance model itself is, in fact, more powerful than the classic model. It is, for example, fairly trivial to build a classic model on top of a prototypical model — which is how classes are implemented.`
+
+
+- **Note**:   
+- There is also a difference caused by the use of **prototypes**, that is the fact they can be mutated at any member of the prototypical chain or **even swap out the prototype at runtime**, so prevent the concept of **static dispatiching** in the JavaScript language.
+- [Static dispatch - Wikipedia](https://en.wikipedia.org/wiki/Static_dispatch)
+- [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+
+###### Working the Inheritance with the Prototype Chain
+
+But as the MDN's article also states, eventhough the class structure is now a widely adopted new paradigm in JavaScript, its is not a new inheritance pattern for the language, since the class system from JavaScript only abstracts most of the prototypical mechanism away, having the same traditional concept working 'under the hood'!
+
+
+So, in a nut shell, as it is explained by the article, when a property from a object is reffered to:
+1. JavaScript objects are **like dynamic "bags" (referred to as own properties)**.
+2. JavaScript objects also have a link to a prototype object.
+3. In a access to a property of the object, the property will be sought both on the object itself and on the prototype of the object, in that chain, until a match is found or a null point is reached in the prototype chain.
+
+
+- **Note**:   
+- There is a importante note about how the **prototype of someObject** is to be accessed, because traditionally it would be by a **__proto__** structure, which is a non-standard de-fact implemented by many JavaScript engines.   
+- And with the ECMAScript 2015 the access was made as a standard using the **accessors methods**: Object.getPrototypeOf() and Object.setPrototypeOf().
+- There is also a syntax of **{ __proto__: ... }** that according to the article is not deprecated.
+- [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+
+Revisiting the traditional syntax with the **__proto__** structure, there could be a literal object like:
+
+```
+const obj = { 
+    a: 1, 
+    b: 2,
+    __proto__: {
+        b: 3,
+        c: 4,
+    },
+}; 
+```
+
+
+In the above example, the object **obj** has **a** and **b** as its own properties, the prototype with the prototypical properties: `since [[Prototype]] is just an "internal property" of the object` [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
+
+
+So, while trying to access a property, as it was said earlier the engine looks for it in the object own properties first, and if it does not found the property in there, then it heads to the prototype itself, until it reaches a null:
+
+
+```
+// find the property in the own object
+console.log(o.a); // 1
+console.log(o.b); // 2
+
+// searching the prototype of the object
+console.log(o.c); // 4
+console.log(o.d); // undefined
+```
+
+As the **o.d** was not found in the own object, it was searched at the o.[[Prototype]] as well but not found. Then, it is also searched in the o.[[Prototype]][[Prototype]], but found only the root inheritance from **Object.prototype**, which by default its not existant or null, and the search is finalised.
+
+
+Also, in the above example, it can be seen that while searching for the propterty **o.b**, the engine only found the own property with the value of **2**, as the o[[Prototype]].b, though it is there, it is never visited. And this concept is called **Property Shadowing**.
+
+
+See also, that as the prototype itself was said to be just a object itself, the example could be extended with the nesting of many prototype objects: 
+
+```
+const o = {
+    a: 1,
+    b: 2,
+    __proto__: {
+        b: 3,
+        c: 4,
+        __proto__: {
+            d: 5,
+        },
+    },
+};
+
+// { a: 1, b: 2 } ---> { b: 3, c: 4 } ---> { d: 5 } ---> Object.prototype ---> null
+console.log(o.d); // 5
+``` 
+
+
+###### Inheriting "Methods" in JavaScript
+
+As JavaScript does not have the classical structure of classes, there is also no "methods" in JavaScript according to the classical definition of them. Here, in JavaScript, a **function** can be added to objects in the form of properties, and be inherited just as any other property through the prototype chain, including the same concept of **property shadowing** seen above, what in this case could be thought as a kind of "method overriding".
+
+
+And things get interesting with the use of the **this** word, because as it can be seen in latter in this article, in the section **As an Object Method** relating to the context of a object, the **this** word is tied to the object that makes the call:
+
+```
+const parent = {
+    value: 2,
+    method: function() {
+        return this.value + 1;
+    }
+};
+
+console.log(parent.method()); // 3
+
+
+// child object is inheriting the parent object
+const child = {
+    __proto__: parent,
+};
+
+console.log(child.methdo()); // 3
+
+// But, when the child object has its value, that property shadowing kicks in
+child.value = 4;
+
+console.log(child.method()); // 5
+```
+
+
+###### Using Constructors in JavaScript
+
+Since JavaScript has its own prototype structure, and also has set the classic class system, the constructor can be written in 2 different syntax, but as a whole **the use of constructors allow the reuse of a set of properties that should be present along every instance of a object**.
+
+
+So, instead of writting any of these repetitive codes:
+
+```
+const boxes = [
+    { value: 1, getValue() { return this.value; } },
+    { value: 2, getValue() { return this.value; } },
+    { value: 3, getValue() { return this.value; } },
+];
+
+
+// Or
+const boxPrototype = {
+    getValue() { return this.value; },
+};
+
+const boxes2 = [
+    { value: 1, __proto__: boxPrototype },
+    { value: 2, __proto__: boxPrototype },
+    { value: 3, __proto__: boxPrototype },
+];
+```
+
+There could be used a **constructor function**, which would automatically sets the [[Prototype]] for every new object manufactured:
+
+```
+function Box(value) {
+    this.value = value;
 }
 
-const salva = new Person('Salva');
-salva.name;
-salva.introduceSelf();
+Box.prototype.getValue = function() {
+    return this.value;
+};
 
-const frankie = new Person('Frankie');
-frankie.name;
-frankie.introduceSelf();
-``` 
+
+// Use the word 'new'
+const boxes = [
+    new Box(1),
+    new Box(2),
+    new Box(3),
+];
+```
+
+`We say that new Box(1) is an instance created from the Box constructor function. Box.prototype is not much different from the boxPrototype object we created previously — it's just a plain object. Every instance created from a constructor function will automatically have the constructor's prototype property as its [[Prototype]] — that is, Object.getPrototypeOf(new Box()) === Box.prototype. Constructor.prototype by default has one own property: constructor, which references the constructor function itself — that is, Box.prototype.constructor === Box. This allows one to access the original constructor from any instance.` [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+
+Finally, there is also the class syntatic sugar:
+
+```
+class Box {
+    constructor(value) {
+        this.value = value;
+    }
+    
+    // Methods are created on Box.prototype
+    getVaue() {
+        return this.value;
+    }
+}
+```
+
+- **Note from the MDN article**: It is bad practice to re-assign ther **Constructor.prototype** like (Constructor.prototype = ...) for 2 reasons -  [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain):   
+- The [[Prototype]] of instances created before the reassignment is now referencing a different object from the [[Prototype]] of instances created after the reassignment — mutating one's [[Prototype]] no longer mutates the other.   
+- Unless you manually re-set the constructor property, the constructor function can no longer be traced from instance.constructor, which may break user expectation. Some built-in operations will read the constructor property as well, and if it is not set, they may not work as expected.  
+- Constructor.prototype is only useful when constructing instances. It has nothing to do with Constructor.[[Prototype]], which is the constructor function's own prototype, which is Function.prototype — that is, Object.getPrototypeOf(Constructor) === Function.prototype.
+
+
+
+- **Implicit constructors of Literals**:
+
+As it has been seeing above, the presence of the [[Prototype]] is a natural concept of the JavaScript language, so even in literal syntax where the prototype is not explicity shown, still there will be found the a implicit [[Prototype]].
+
+
+Interesting, that since **arrays** and **regex** are objects in JavaScript (everything except primitives are objects), these 2 also have their Array.prototype or RegExp.prototype.
+
+
+
+
+
+
+Building longer inheritance chains
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#building_longer_inheritance_chains
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -542,7 +764,7 @@ _ **Note from the MDN site**: If this arg is passed to call, bind, or apply on i
 Again, according to the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this), the bevavior of **this** in classes are similar to what happens with funcions, as **classes are functions under the hood**. Though, there are still some differences and caveats.
 
 
-So, **within the Class Constructor**: here, **this** a regular object. And all non-static methods within the class are added to the prototype of **this**. On the other hand, the **static methods** are not property of **this**, but they are properties of the class itself.
+So, **within the Class Constructor**: here, **this** is a regular object. And all non-static methods within the class are added to the prototype of **this**. On the other hand, the **static methods** are not property of **this**, but they are properties of the class itself.
 
 ```
 class Example {
