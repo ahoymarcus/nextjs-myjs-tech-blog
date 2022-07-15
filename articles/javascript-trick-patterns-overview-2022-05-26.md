@@ -12,8 +12,9 @@ description: 'This article focuses specially at some trick features that are mor
 2. ##### Organizing the JavaScript Code
 3. ##### Object Oriented Programming - OOP
     3.1. JavaScript Objects    
-	3.2. JavaScript Objects are Mutable
-	3.3. Inheritance and the Prototype Chain
+	3.2. JavaScript Objects are Mutable   
+	3.3. Inheritance and the Prototype Chain   
+	3.4. Performance Issues with the Prototype Chain
 4. ##### The 'This' Word
 	4.1. The Global Context   
 	4.2. The Function Scope   
@@ -641,18 +642,115 @@ As it has been seeing above, the presence of the [[Prototype]] is a natural conc
 Interesting, that since **arrays** and **regex** are objects in JavaScript (everything except primitives are objects), these 2 also have their Array.prototype or RegExp.prototype.
 
 
+- **Another point into the use of JavaScript Constructors**:
+
+Interesting to notice that on using the **constructor function**, the **Constructor.prototype** will become the [[Prototype]] for the new instances, just as including it in the new instance prototype object.
+
+
+And also says the MDN article that by default the **Constructor.prototype** is a plain object, that is:
+
+```
+Object.getPrototypeOf(Constructor.prototype) === Object.prototype
+```
+
+And it finishes the chain with the root Object that in itself. But that using the method **Object.setPrototypeOf()** there can be created another link in the inheritance chain:
+
+```
+function Base() {} 
+// obj ---> Base.prototype ---> Object.prototype ---> null
+
+
+// create a Devrived class
+function Derived() {}
+
+
+// create a link in the inheritance chain
+Object.setPrototyOf(
+    Derived.prototype,
+    Base.prototype,
+);
+
+const obj = new Derived(); 
+// obj ---> Derived.prototype ---> Base.prototype ---> Object.prototype ---> null
+```
+
+And in the class systax, it would be equivalent to using the **extends** word:
+
+```
+class Base {}
+class Derived extends Base {}
+
+const obj = new Derived();
+// obj ---> Derive.prototype ---> Base.prototype ---> Object.prototype ---> null
+``` 
+
+-- **Important note**:  
+- Do not use **Object.create** to create a inheritance link, because the method re-assigns the prototype property what is a **bad practice**.
+
+
+###### Exercise on Function's Prototype
+
+Try this exercise on the browser console, and see how adding a property to some func.prototype passes this same property through the inheritance chain:
+
+```
+function doSomething() {}
+
+// add to the function prototype
+doSomething.prototype.foo = 'bar';
+
+
+// instanciate a new objet and add a own property to it
+const doSomeInstancing = new doSomething();
+doSomeInstancing.prop = 'some value';
+
+console.log(doSomeInstancing);
+
+// Output
+{
+  prop: "some value",
+  [[Prototype]]: {
+    foo: "bar",
+    constructor: ƒ doSomething(),
+    [[Prototype]]: {
+      constructor: ƒ Object(),
+      hasOwnProperty: ƒ hasOwnProperty(),
+      isPrototypeOf: ƒ isPrototypeOf(),
+      propertyIsEnumerable: ƒ propertyIsEnumerable(),
+      toLocaleString: ƒ toLocaleString(),
+      toString: ƒ toString(),
+      valueOf: ƒ valueOf()
+    }
+  }
+}
+```
+
+But, going a little deeper with the exercise above, a peculiar result is cought, because if the function **doSomething.foo** is searched, it results undefined. But it was saw before with plain objects that after searching the objects own properties, the JavaScript engine would pass to its [[Prototype]] in the prototype chain:
+
+```
+doSomeInstancing.prop:                                 some value
+doSomeInstancing.foo:                                   bar
+doSomething.prop:                                          undefined
+doSomething.foo:                                            undefined
+doSomething.prototype.prop:                         undefined
+doSomething.prototype.foo:                           bar
+``` 
+
+
+###### Resume: see a resume of each of the methods to create and mutating the prototype chains in the end of the MDN Docs: [Different ways of creating and mutating prototype chains](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#different_ways_of_creating_and_mutating_prototype_chains).
 
 
 
+#### Performance Issues with the Prototype Chain
 
-Building longer inheritance chains
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#building_longer_inheritance_chains
-
-
+See that there is a overhead caused by the lookup for the properties across the prototype chain, and that **the access of nonexistent properties will always have to traverse the full prototype chain**.
 
 
+Another potential complication is the fact that while iterating over an object properties, **every enumerable property that is on the prototype chain will be enumerated**, so to check for properties that are defined on the object itself (that is, not through inheritance), use the methods:
+1. **hasOwnProperty**
+2. **Object.hasOwn**
 
 
+`All objects, except those with null as [[Prototype]], inherit hasOwnProperty from Object.prototype — unless it has been shadowed further down the prototype chain. [...] It is essential to understand the prototypal inheritance model before writing complex code that makes use of it. Also, be aware of the length of the prototype chains in your code and break them up if necessary to avoid possible performance problems. Further, the native prototypes should never be extended unless it is for the sake of compatibility with newer JavaScript features.` [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 
 
