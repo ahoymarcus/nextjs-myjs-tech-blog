@@ -21,9 +21,9 @@ description: 'This article focuses specially at some trick features that are mor
 	4.1. The Global Context   
 	4.2. The Function Scope   
 	4.3. Class Context    
-	4.4. As an Object Method
-	4.5. This on the Objects Prototype Chain or at a Getter or Setter
-	4.6. As a Constructor
+	4.4. As an Object Method    
+	4.5. This on the Objects Prototype Chain or at a Getter or Setter    
+	4.6. As a Constructor    
 	4.7. The bind() Method
 5. ##### JavaScript Function Parameters
     5.1. Undefined Missing Arguments   
@@ -540,10 +540,52 @@ But, in fact, the article witness that the prototypical inheritance model, by it
 `While this confusion is often considered to be one of JavaScript's weaknesses, the prototypical inheritance model itself is, in fact, more powerful than the classic model. It is, for example, fairly trivial to build a classic model on top of a prototypical model — which is how classes are implemented.`
 
 
-- **Note**:   
-- There is also a difference caused by the use of **prototypes**, that is the fact they can be mutated at any member of the prototypical chain or **even swap out the prototype at runtime**, so prevent the concept of **static dispatiching** in the JavaScript language.
+
+- **A Note from the MDN Article**:   
+- There is also a difference caused by the use of **prototypes**, that is the fact they can be mutated at any member of the prototypical chain or **even swap out the prototype at runtime**, so all tihis prevents the concept of **static dispatiching** in the JavaScript language, but that is present in some languages.
 - [Static dispatch - Wikipedia](https://en.wikipedia.org/wiki/Static_dispatch)
 - [Inheritance and the prototype chain - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+
+
+###### More into the Prototype Property
+
+As it was said, by defaut this prototype property is empty, but even when it has properties and methods attached to it, this structure is not enumerable, according to [JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/), but many browsers implement a 'pseudo' property that allows the access to the object's prototype property: **_proto_**
+
+
+**And the prototype property is used primarily for inheritance; so it is possible to add methods and properties to it and make them available to instances of the object/function**. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+
+
+A socond important feature related to the Prototype concept of JavaScript is that the prototype itself would serve as a attribute to link a object to its **'parent'** or the object it descends from and that have inherited from.
+
+**So, the prototype attribute that links a object to its parent would be Object.prototype**, which is just the prototype attribute of its parent:
+
+
+`The second concept with prototype in JavaScript is the prototype attribute. Think of the prototype attribute as a characteristic of the object; this characteristic tells us the object’s “parent”. In simple terms: An object’s prototype attribute points to the object’s “parent”—the object it inherited its properties from. The prototype attribute is normally referred to as the prototype object, and it is set automatically when you create a new object.To expound on this: Every object inherits properties from some other object, and it is this other object that is the object’s prototype attribute or “parent.” (You can think of the prototype attribute as the lineage or the parent).` [JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+
+
+
+###### And Also Presenting the Constructor Property
+
+Well, the **constructor** is a function used for initializing objects through the use of the **new** word. Also, by standard it is defined that a constructor function should be name with a capital letter, to distinguishes it from ordinary functions.
+
+
+And, what is also important here is the fact that each object created inherit a constructor property, which simply **points to the constructor of the object which created and passed properties/methods through inheritance**.
+
+
+As the article from JavaScript Is Sexy shows in this simple execise is that using the objects constructor property, the object can find its parent, which in this case is the root **Object**:
+
+```
+const myObj = new Object();
+
+console.log(myObj.constructor); // object()
+```
+
+
+Finally, not only the constructor property points to the object's parent, but it also servers a important feature, that is **to pass all the properties/methods present at it to the instances that it created by the use of the 'new' word, making these properties/methods the content of the object child prototype property**
+
+
+- **Note from the article**:  
+- The [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/) article says that ECAMScript 5 brought a method, **Object.craete()**, that allows to set a new prototype property to an object.
 
 
 ###### Working the Inheritance with the Prototype Chain
@@ -555,6 +597,21 @@ So, in a nut shell, as it is explained by the article, when a property from a ob
 1. JavaScript objects are **like dynamic "bags" (referred to as own properties)**.
 2. JavaScript objects also have a link to a prototype object.
 3. In a access to a property of the object, the property will be sought both on the object itself and on the prototype of the object, in that chain, until a match is found or a null point is reached in the prototype chain.
+
+
+`This prototype chain mechanism is essentially the same concept we have discussed above with the prototype-based inheritance, except we are now focusing specifically on how JavaScript accesses object properties and methods via the prototype object.` [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+
+
+Notice also, that in terms of a prototypical chain, the root Object it is always first object from it all other objects descend upon and that from it is inherited by default properties/methods from its Object.prototype like:
+
+1. **constructor**
+2. **hasOwnproperty()**
+3. **isPrototypeOf()**
+4. **propertyIsEnumerable()**
+5. **toLocaleString()**
+6. **toString()**
+7. **valueOf()**
+
 
 
 - **Note**:   
@@ -1415,6 +1472,9 @@ For example, even in a simple game, where the developer has to check a dozen res
 [How to Redirect Website from HTTP to HTTPS? - GeekFlare](https://geekflare.com/http-to-https-redirection/)
 
 [You Don't Know JS (YDKJS) - Github Book](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed#titles)
+
+[JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+
 
 []()
 
