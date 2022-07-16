@@ -10,11 +10,13 @@ description: 'This article focuses specially at some trick features that are mor
 
 1. ##### Introduction
 2. ##### Organizing the JavaScript Code
+    2.1. Plain Old JavaScript Objects and Object Constructor
 3. ##### Object Oriented Programming - OOP
     3.1. JavaScript Objects    
 	3.2. JavaScript Objects are Mutable   
 	3.3. Inheritance and the Prototype Chain   
-	3.4. Performance Issues with the Prototype Chain
+	3.4. The Object.create Method    
+	3.5. Performance Issues with the Prototype Chain
 4. ##### The 'This' Word
 	4.1. The Global Context   
 	4.2. The Function Scope   
@@ -73,7 +75,9 @@ Said that, The Odin plataform presents 4 patterns to be studied in their series:
 4. **ES6 Modules**
 
 
-###### Plain Old JavaScript Objects and Object Constructor
+#### Plain Old JavaScript Objects and Object Constructor
+
+###### Basic JavaScript Objects Overview
 
 At this section it will only be talked about the basics about Object Oriented Programming with JavaScript, but there is a whole section dedicated for this subject later on this article.
 
@@ -141,9 +145,95 @@ person[myDataName] = myDataValue;
 ```
 
 
-- **Note**: look for more about JavaScript objects in this articles proper section.
+###### Using Objects as a Pattern for Organizing the JavaScript Code
+
+With objects it is possible to group related variabels, what not only helps to better organize the code, but also allow flexibility, since the objects can be accessed using its own notation, and specially for the case of bracket notation where the flexibility at runtime is even greater.
 
 
+Below there is 2 different aproaches to structure data for a game of **tic tac toe**:
+
+```
+// First structure
+const playerOneName = 'tim';
+const playerTwoName = 'jenn';
+const playerOneMarker = 'X';
+const playerTwoMarker = 'O';
+
+// Second structure
+const playerOne = {
+    name: 'tim',
+    marker: 'X',
+};
+
+const playerTwo = {
+    name: 'jenn',
+    marker: 'O',
+};
+``` 
+
+And the difference starts to become even more visible as the code grows and the number of data structures increase. Also, using objects, have the flexibility to group the same properties, what allows then to manage its accesses dynamically.
+
+So, again, below this code doesn't even know which of the 2 objects can be called as winner at the end of a game:
+
+```
+function gameOver(winningPlayer) {
+    console.log("Congratulations!");
+    console.log(winningPlayer.name + ' is the winner!");"
+}
+```
+
+
+But objects go even beyond, because using special functions called **constructor**, it is possible to duplicate or multiply objects with a very simple and clean syntax. And there is even another important enhancement from this automated task, that is avoiding coding errors. 
+
+
+So, here instead of creating two separated objects for those players, they can be multiplyed, and passing arguments during the construction of each player with the **new** word, each of them will hold its own data accordingly:
+
+```
+function Player(name, marker) {
+    this.name = name;
+    this.marker = marker;
+    
+    this.sayName = function() {
+        console.log(name);
+    }
+}
+
+
+// construct each player
+const player1 = new Player('tim', 'X');
+const player2 = new Player('jenn', 'O');
+
+player1.sayName(): // 'tim'
+player2.sayName(); // 'jenn'
+```
+
+
+- **Enhancing the Performance Even More with the Prototype**:
+
+The **prototype** as it is called, is another object that is inherited by the original object to manage concept of **Inheritance** in JavaScript:
+
+`Stated simply, the prototype is another object that the original object inherits from, which is to say, the original object has access to all of its prototype’s methods and properties.` _The Odin Project_
+
+
+And this concept has a important role in the management of JavaScript objects, and therefore can help the developer to boost performance. So, in that particular example before, the constructor of the object passed also a method to the new instances of players.
+
+The problem with that is the fact that, contrary to the personal data that each player object has to distinguish itself from all the other players object, the method it is not its personal data, but still each copy of the object created will have its own method.
+
+
+A better pattern then, it would be to give the method not to the object, but to the **prototype**, resulting that only one function of **sayName()** would be created and share by all the players that may be created:
+
+```
+Player.prototype.sayName = function() {
+    console.log(this.name);
+}
+```
+
+
+###### Other resources about the JavaScript Prototype and the This Word:
+
+1. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+2. [Prototypal inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
+3. [Gentle Explanation of "this" in JavaScript - Dmitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
 
 
 
@@ -685,7 +775,7 @@ const obj = new Derived();
 ``` 
 
 -- **Important note**:  
-- Do not use **Object.create** to create a inheritance link, because the method re-assigns the prototype property what is a **bad practice**.
+- Be careful while using **Object.create** to create a inheritance link, because the method re-assigns the prototype property; what is a **bad practice**.
 
 
 ###### Exercise on Function's Prototype
@@ -740,6 +830,66 @@ doSomething.prototype.foo:                           bar
 
 
 
+###### Other resources about the JavaScript Prototype and the This Word:
+
+1. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+2. [Prototypal inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
+3. [Gentle Explanation of "this" in JavaScript - Dmitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+
+
+
+#### The Object.create Method
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Performance Issues with the Prototype Chain
 
 See that there is a overhead caused by the lookup for the properties across the prototype chain, and that **the access of nonexistent properties will always have to traverse the full prototype chain**.
@@ -751,39 +901,6 @@ Another potential complication is the fact that while iterating over an object p
 
 
 `All objects, except those with null as [[Prototype]], inherit hasOwnProperty from Object.prototype — unless it has been shadowed further down the prototype chain. [...] It is essential to understand the prototypal inheritance model before writing complex code that makes use of it. Also, be aware of the length of the prototype chains in your code and break them up if necessary to avoid possible performance problems. Further, the native prototypes should never be extended unless it is for the sake of compatibility with newer JavaScript features.` [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
