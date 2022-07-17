@@ -232,7 +232,7 @@ Player.prototype.sayName = function() {
 ###### Other resources about the JavaScript Prototype and the This Word:
 
 1. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
-2. [Prototypal inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
+2. [Prototype inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
 3. [Gentle Explanation of "this" in JavaScript - Dmitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
 
 
@@ -425,7 +425,7 @@ frankie.introduceSelf();
 
 ###### Testing Property Existence and the 'in' Opertator
 
-According to [JavaScript.info](https://javascript.info/object), a notable feature of objects in JavaScript, when compared to many ogher languages, is the fact that here it is possible to access any property, and even when the property does not exist there will be no error!
+According to [JavaScript.info](https://javascript.info/object), a notable feature of objects in JavaScript, when compared to many other languages, is the fact that here it is possible to access any property, and even when the property does not exist there will be no error!
 
 So, since reading a  non-existing property returns undefined, a test can be easily set here:
 
@@ -461,6 +461,7 @@ alert( "test" in obj ); // true, the property does exist!
 `Situations like this happen very rarely, because undefined should not be explicitly assigned. We mostly use null for “unknown” or “empty” values. So the in operator is an exotic guest in the code.`  [JavaScript.info](https://javascript.info/object)
 
 
+
 ###### The 'for ... in' Loop
 
 It iterates the object returning its properties,  but it can also be used to return its values also:
@@ -480,6 +481,68 @@ for (let key in user) {
     console.log(user[key]); // John, 30, true
 }
 ``` 
+
+
+But there is a important distinction to be made while looping with For...in, that is the fact that it also iterates over the inherited properties of the object, and to distinguish one from the other there is the method **obj.hasOwnProperty(Key)**:
+
+```
+const animal = {
+    name: 'animal',
+    eats: true,
+};
+
+const rabbit = {
+    name: 'rabbit',
+    jumps: true,
+    __proto__: animal,
+};
+
+const counters = {
+    own: 0,
+    inherited: 0,
+};
+
+
+for (let prop in rabbit) {
+    let isOwnProperties = rabbit.hasOwnProperty(prop);
+    
+    if (isOwnProperties) {
+        if (counters.own === 0) {
+            console.log(`${rabbit.name} own propertie:`);
+        }
+        
+        counters.own++;
+        
+        console.log(`${counters.own}. ${prop}`);
+    } else {
+        if (counters.inherited === 0) {
+            console.log(`${rabbit.name} inherited propertie:`);
+        }
+        
+        counters.inherited++;
+    
+        console.log(`${counters.inherited}. ${prop}`);
+    }
+}
+
+// Output
+// rabbit own property:
+// 1. name
+// 2. jumps
+// rabbit inherited property:
+// 1. eats
+```
+
+Finally, there is a important point to be made here in this exercise related to the prototype chain: **Why the inherited properties/methods from Object, like the hasOwnProperty were not listed in the output?**
+
+
+The answer, according to [Prototype inheritance - Javascript.info](https://javascript.info/prototype-inheritance), is because they are flaged as **enumerabe: false** at the root Object:
+
+`The answer is simple: it’s not enumerable. Just like all other properties of Object.prototype, it has enumerable:false flag. And for..in only lists enumerable properties. That’s why it and the rest of the Object.prototype properties are not listed.`
+
+
+- **Note**:    
+- There is a speciffic section later in this article about Obejct Oritented JavaScript that describes all this process of inheritance and prototype chain.
 
 
 #### JavaScript Objects are Mutable
@@ -549,13 +612,30 @@ But, in fact, the article witness that the prototypical inheritance model, by it
 
 ###### More into the Prototype Property
 
-As it was said, by defaut this prototype property is empty, but even when it has properties and methods attached to it, this structure is not enumerable, according to [JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/), but many browsers implement a 'pseudo' property that allows the access to the object's prototype property: **_proto_**
+The site Javascript.info says in its article, [Prototypal inheritance](https://javascript.info/prototype-inheritance) that every object in JavaScript has this hidden property called **[[Prototype]]**, and that this property is either _null_ or it _references another object_. And also according the site this object is **'a prototype'**. 
+
+
+Though [[Prototype]] is a hidden property, it can be reached and accessed by a pseudo property that is largely implemented, called **_proto__**, and the site also points 2 limitations:
+1. **The references cannot go in circles**: JavaScript will throw an error if we try to assign `_proto_` in a circle.
+2. The value of `_proto_` can be either an object or _null_. Other types are ignored.
+
+
+And, here, the fact that a circular path of assignments is forbidden is important, because in JavaScript the inheritance is in some way linear, having the root **Object** as the creator of all other objects and the one responsible by everything that is inherited by default.
+
+
+And, below there are some very important notes brought from the article [Prototype inheritance - Javascript.info](https://javascript.info/prototype-inheritance):
+1. `__proto__` is a historical getter/setter for [[Prototype]]    
+    1.1. It’s a common mistake of novice developers not to know the difference between these two.   
+    1.2. Please note that __proto__ is not the same as the internal [[Prototype]] property. It’s a getter/setter for [[Prototype]]. Later we’ll see situations where it matters, for now let’s just keep it in mind, as we build our understanding of JavaScript language.
+2. The `__proto__` property is a bit outdated. It exists for historical reasons, modern JavaScript suggests that we should use Object.getPrototypeOf/Object.setPrototypeOf functions instead that get/set the prototype. We’ll also cover these functions later.
+3. By the specification, __proto__ must only be supported by browsers. In fact though, all environments including server-side support __proto__, so we’re quite safe using it.
+
 
 
 **And the prototype property is used primarily for inheritance; so it is possible to add methods and properties to it and make them available to instances of the object/function**. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
 
 
-A socond important feature related to the Prototype concept of JavaScript is that the prototype itself would serve as a attribute to link a object to its **'parent'** or the object it descends from and that have inherited from.
+And a article from the site JavaScript Is Sexy, [JavaScript Prototype in Plain Language](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/), goes on in a very similar way highlighting that this feature related to the Prototype concept of JavaScript is that the prototype itself would serve as a attribute to link a object to its **'parent'** or the object it descends from and that have inherited from.
 
 **So, the prototype attribute that links a object to its parent would be Object.prototype**, which is just the prototype attribute of its parent:
 
@@ -586,6 +666,20 @@ Finally, not only the constructor property points to the object's parent, but it
 
 - **Note from the article**:  
 - The [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/) article says that ECAMScript 5 brought a method, **Object.craete()**, that allows to set a new prototype property to an object.
+
+
+
+###### The 'This' Word is Another Very Important Part in These Discussions
+
+Together with the prototype, the **this** word works to bring flexibility to the objected oriented programming, but since it brings a complex concept, there is a whole chapter dedicated to describe  how it works, but here is interesting to mention advance just some simple points from the article [Prototype inheritance - Javascript.info](https://javascript.info/prototype-inheritance):
+
+`The answer is simple: this is not affected by prototypes at all. No matter where the method is found: in an object or its prototype. In a method call, this is always the object before the dot. [...] As a result, methods are shared, but the object state is not.`
+
+
+1. The **'this'** word is not affected by the prototype, as it works in the object from which instance the call is made.  
+    1.1. And in here, as the quotation says, the object responsible by the call is **always the object before the dot** notation.
+2. **'As a result methods are shared, but the object state is not'**, but each object retains its own data!!!
+
 
 
 ###### Working the Inheritance with the Prototype Chain
@@ -890,40 +984,16 @@ doSomething.prototype.foo:                           bar
 ###### Other resources about the JavaScript Prototype and the This Word:
 
 1. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
-2. [Prototypal inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
+2. [Prototype inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
 3. [Gentle Explanation of "this" in JavaScript - Dmitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
-
 
 
 
 #### The Object.create Method
 
+/* COMING SOON */
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -964,7 +1034,7 @@ Another potential complication is the fact that while iterating over an object p
 
 ### The This Word
 
-The **this** keyword from the JavaScript environment is representative of some code being processed at runtime, and in fact, according to the [this - MDN Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this), the **this** word from JavaScript would behave a little bit different from its counterparts in some other programming languages.
+The **this** keyword from the JavaScript environment is representative of some code being processed at runtime, and in fact, according to the article [this](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/this) from the MDN Docs, the **this** word in JavaScript behaves a little bit different from its counterparts in some other programming languages.
 
 
 And the MDN article also points that even within the JavaScript environment there will be differences in its use wheter the code would be running at **strict mode** or not.
@@ -1009,7 +1079,7 @@ f1() === window; // true
 `Since the following code is not in strict mode, and because the value of this is not set by the call, this will default to the global object, which is window in a browser.`  [this - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 
-Within the **strict mode**, the value of **this** attain itself to what it was defined; and if it was not defined it will remain **undefined**.
+Within the **strict mode**, the value of **this** attain itself to what it was defined; and since there was no definition made, it will remian not defined **undefined**.
 
 ```
 function f2() {
@@ -1020,7 +1090,62 @@ function f2() {
 f2() === undefined // true
 ```
 
+And, here, an interesting point about the 'strict mode': better security and stronger error checking
+
+`The strict mode is available starting ECMAScript 5.1, which is a restricted variant of JavaScript. It provides better security and stronger error checking.` 
+ [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+
 _ **Note from the MDN site**: some browsers may had have implemented this second example in a different way from the convention, resulting in a incorrect reference to the window object. this - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+
+- **A important note from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)**:
+
+According to the site, there is a common trap or pitfall related to the use of functions inside other's contexts, for example, some function invocation placed inside a method invocation (perhaps even a class). Becase here someone could be mislead to think that they coincide; but in fact they don't!
+
+
+In these cases, to have the desired value, it's important to manually modify the inner function's context or to use a arrow function:
+1. **Indirect invocation**:   
+    1.1. Using call()   
+    1.2. Using apply()
+2. **Creating a bound function**:   
+    2.1. Using bind()
+3. **Arrow function**
+
+```
+const numbers = {
+    numberA: 5,
+    numberB: 10,
+    sum: function() {
+        // testing the context here from numbers object
+        console.log(this ===numbers); // true
+        
+        function calculate() {
+            // testing the context here from calculate function
+            console.log(this === numbers); // false
+            
+            return this.numberA + this.numberB;
+        }
+        
+        return calculate();
+    },
+};
+
+numbers.sum(); // NaN or throws TypeError in strict mode
+```
+
+So, one way to fix the issue, as stated, would be to change the context of the call like this: **return calculate.call(this);**
+
+Or to rewrite the inner function as a arrow function:
+
+```
+const calculate = () => {
+    // testing the context here from the arrow function
+    console.log(this === numbers); // true
+    
+    return this.numberA + this.numberB;
+}
+```
 
 
 ###### Arrow Functions
@@ -1093,6 +1218,52 @@ console.log(o.f()); // 37
 `This demonstrates that it matters only that the function was invoked from the f member of o.` [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 
+- **Another important note from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)**:
+
+It's important to distinguishes 2 different kinds of invocation for calliing a function or calling method (function inside a object):
+1. **Function invocation**: it is called direct in the global context, remembering that functions operate from **Hoisting**.
+2. **Method invocation**: it requires the property accessor from the object itself, for example, **myObj.someMethod()**
+
+
+But there is also a common trap or pitfall here, because in some situations, which are not a real method invocation, but can mislead the developer into thinking that is the case:
+- **When the object and its method are passed as a parameter**: here occors a separation from one and another, then the engine calls the old method as a plain function direct from the global context:
+
+
+```
+// here a constructor function
+function Pet(type, legs) {
+    this.type = type;
+    this.legs = legs;
+    
+    this.logInfo = function() {
+        // testing the context
+        console.log(this === myCat); // false
+        console.log(`The ${this.type} has ${this.legs} legs`);
+    }
+}
+
+const myCat = new Pet('Cat', 4);
+
+/*
+* See here that there isn't a real method call, but it is just passing a parameter
+*/
+setTimeout(myCat.logInfo, 1000); // logs "The undefined has undefined legs" or throws a TypeError in strict mode
+``` 
+
+Again, an alternative solutioin would be to reriwrite logInfo() as a arrow function, or it could also be done using a function bounds to solve the issue:
+
+```
+// Create a bound function
+const boundLogInfo = myCat.logInfo.bind(myCat);
+
+setTimeout(boundLogInfo, 1000); // correctly logs "The Cat has 4 legs"
+```
+
+
+`When the separated logInfo is invoked as a function, this is global object or undefined in strict mode (but not myCat object). So the object information does not log correctly. [...] myCat.logInfo.bind(myCat) returns a new function that executes exactly like logInfo, but has this as myCat, even in a function invocation.` [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+
+
 #### This on the Objects Prototype Chain or at a Getter or Setter
 
 Still according to the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this), the **this** used in the objects prototype chain or together with getters and setters, it follows the lead of the object:
@@ -1124,6 +1295,56 @@ console.log((o.a); // 38)
 
 
 `In the last example (C2), because an object was returned during construction, the new object that this was bound to gets discarded. (This essentially makes the statement "this.a = 37;" dead code. It's not exactly dead because it gets executed, but it can be eliminated with no outside effects.)`
+
+
+
+- **Another important note from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)**:
+
+Once again, there is also here a common trap or pitfall related to the use of Constructor functions and the **new** word, because according to the articles' author: 
+
+`Some JavaScript functions create instances not only when invoked as constructors, but also when invoked as functions**, for example, the RegExp.
+
+
+The whole problem is the fact that what differentiates a ordinary function from a constructor to the JavaScript engine is not the initial capital letter of the functions name, but the **new** word.
+
+So, when a constructor function is called without the **new** word and the constructor itself was not properly created to deal with this possible issue, the constructor function will in reality works setting properties directly on the global context, that in the browser is the window object:
+
+```
+function Vehicle(type, wheelsCount) {
+  this.type = type;
+  this.wheelsCount = wheelsCount;
+  return this;
+}
+// Function invocation
+const car = Vehicle('Car', 4);
+car.type; // => 'Car'
+car.wheelsCount // => 4
+car === window // => true
+```
+
+So, to have a more robust constructor, the article, [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), brings this alternative logic:
+
+
+```
+function Vehicle(type, wheelsCount) {
+    if (!(this instanceof Vehicle)) {
+        throw Error('Error: Incorrect invocation');
+    }
+    
+    this.type = type;
+    this.wheelsCount = wheelsCount;
+    return this;
+}
+
+// Constructor invocation
+const car = new Vehicle('Car', 4);
+car.type; // Car
+car.wheelsCount // 4
+car instanceof Vehicle // true
+
+const brokenCar = Vehicle('Broken Car', 3); // throws an error
+```
+
 
 
 #### The bind() Method
@@ -1473,8 +1694,6 @@ For example, even in a simple game, where the developer has to check a dozen res
 
 [You Don't Know JS (YDKJS) - Github Book](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed#titles)
 
-[JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
-
 
 []()
 
@@ -1493,6 +1712,11 @@ For example, even in a simple game, where the developer has to check a dozen res
 
 [JavaScript Function Parameters - W3schools.com](https://www.w3schools.com/js/js_function_parameters.asp)
 
+[JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+
+[Prototype inheritance - Javascript.info](https://javascript.info/prototype-inheritance)
+
+[Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
 []()
 
 
