@@ -24,7 +24,8 @@ description: 'This article focuses specially at some trick features that are mor
 	4.4. As an Object Method    
 	4.5. This on the Objects Prototype Chain or at a Getter or Setter    
 	4.6. As a Constructor    
-	4.7. The bind() Method
+	4.7. The call() and the apply() Methods (Indirect Invocation)
+	4.8. The bind() Method
 5. ##### JavaScript Function Parameters
     5.1. Undefined Missing Arguments   
     5.2. The Arguments Object   
@@ -1150,9 +1151,44 @@ const calculate = () => {
 
 ###### Arrow Functions
 
-Inside the arrow functions, **this** retains the value of the enclosing lexical context's **this**, whether the context is Global or some other function, the value of **this** will remain the same it was defined.
+According to [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), **arrow functions are desingned to declare the function in a shorter form and lexycally bind the context**.
 
-_ **Note from the MDN site**: If this arg is passed to call, bind, or apply on invocation of an arrow function it will be ignored. You can still prepend arguments to the call, but the first argument (thisArg) should be set to null. [this - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+Inside the arrow functions, **this** retains the value of the **enclosing lexical context's this**, whether the context is Global or some other function, the value of **this** will remain the same it was defined.
+
+
+Still according to [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), an arrow function is anonymous, but its name could be inferred, and does not provide that default **arguments** object perculiar from regular functions (but the site says that the missing **arguments** is fixed using ES2015 **rest parameters**).
+
+
+- **Example from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)**:
+
+```
+const sumArguments = (...args) => {
+    console.log(typeof arguments); // undefined
+    
+    return args.reduce((result, item) => result + item);
+};
+
+sumArguments.name; // ""
+sumArguments(5, 5, 6); // 16
+``` 
+
+
+Another important point brought by the article, [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), is the fact that when a arrow function is defined in the topmost scope (i.e. outside any function), the context is always the global object (window in a browser).
+
+
+**The fact above brings that since the arrow function retain the context from where it was defined, it could not be used to define methods to an object, because it would preemptively bound the context whenever the method was called.**
+
+
+
+_ **Note from the MDN site**: since the arrow functions features a lexycally bound context, If the **this** arg is passed to call(), bind(), or apply() on invocation of an arrow function, this new context will be ignored. But, still according to the MDN article, it still possible to prepend arguments to the call, but the first argument (thisArg) should be set to null. [this - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+
+Finally, according to [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), a **arrow function cannot be used as a constructor**. And that invoking it as a constructor, for example, in the form of **new arrowFunc()** throws an error: **TypeError: arrowFunc is not a constructor**.
+
+Arrow Functions could also be useful for tasks like:
+1. Recursion
+2. Detaching event handlers
 
 
 
@@ -1346,10 +1382,74 @@ const brokenCar = Vehicle('Broken Car', 3); // throws an error
 ```
 
 
+#### The call() and the apply() Methods (Indirect Invocation)
+
+An **indirect invocation** takes place when a function is called using **myFunc.call()** or **myFunc.applay()** methods. And it is also noticible that these characteristic from JavaScript Functions:
+1. **They are first-class objects**
+2. **So, function are a kind of object**
+3. **The type of for the function object is Function**
+
+
+Said that, as objects, functions inherit a couple of properties/methods, being **call()** and **apply()** two methods which **are used to invoke the function with a configurable context**.
+
+So, in **myFunc.call(thisArg, arg1, arg2, ...)**:
+1. **The first argument**: refers to the context being used while configuring the indirect invocation.
+2. **A List of arguments**: the list of arguments that are passed as arguments to the called function.
+
+
+And, on the other hand, **myFunc.apply(thisArg, [arg1, arg2, ...])**:
+1. **The first argument**: it is also a reference to the context to be used while configuring the indirect invocation.
+2. **An Array of arguments**: the array of arguments that are passed as arguments to the called function.
+
+
+```
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+sum.call(undefined, 10, 2); //12
+sum.apply(undefined, [10, 2]); //12
+``` 
+
+And according to the article, [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/), the indirect invocation can be very useful for tacke some tasks:
+1. **when a function should be executed with a especiffic context**:   
+    1.1. For example, to solve context problems with function invocation, where **this** is always **window** or **undefined**.   
+    1.2. It can be used to simulate a method call on an object.
+2. **To create hierarchies of classes in ES5 to call the parent constructor**
+
+
+- **Example from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/):
+
+```
+function Runner(name) {
+    console.log(this instanceof Rabbit); // true
+    this.name = name;
+}
+
+function Rabbit(name, countLegs) {
+    console.log(this instanceof Rabbit); // true
+    
+    // Indirect invocation. Call to parent constructor
+    Runner.call(this, name);
+    this.countLegs = countLegs;
+}
+
+const myRabbit = new Rabbit('White Rabbit', 4);
+myRabbit; // {name: 'White Rabbit', countLegs: 4}
+``` 
+
+`Runner.call(this, name) inside Rabbit makes an indirect call of the parent function to initialize the object.` [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+
 
 #### The bind() Method
 
-ECMAScript 5 introduced the **Function.prototype.bind()**, and so calling **func.bind(someObject)** creates a new function with the same body and scope as **func**, but where **this** occurs in the original function, in the nw function it is permanently bound to the first argument of bind, regardless of how the function is being used:
+ECMAScript 5 introduced the **Function.prototype.bind()**, and so calling **func.bind(someObject)** creates a new function with the same body and scope as **func**, but where **this** occurs in the original function, in the new function it is permanently bound to the first argument of bind, regardless of how the function is being used:
+
+
+Here, once again, **myFunc.bind(thisArg, arg1, arg2, ...)**:
+1. **First argument**: the context to be used to bound the returned function.
+2. **A list of arguments**: the list of arguments that are passed as arguments to the called function.
 
 
 ```
@@ -1368,6 +1468,29 @@ console.log(o.a, o.f(), o.g(), o.h()); // 37, 37, azerty, azerty
 ```
 
 
+`.bind() makes a permanent context link and will always keep it. A bound function cannot change its linked context when using .call() or .apply() with a different context or even a rebound doesn't have any effect. Only the constructor invocation of a bound function can change an already bound context, but this is not something you would normally do (constructor invocation must use regular, non-bound functions).`  [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+
+- **Example from [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)**:
+```
+function getThis() {
+    'use strict';
+    return this;
+}
+
+const one = getThis.bind(1);
+
+one(); // 1
+
+one.call(2); // 1
+one.apply(2); // 1
+one.bind(2)(); // 1
+
+new one(); // Object
+``` 
+
+
+
 ###### Binding the Class Method with This
 
 As it was say, with class in general, **static** methods belong to the class, while the others belong to the object bind when it is present at the constructor. And this next example from [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) makes an interesting from all of that together with the binding method:
@@ -1379,7 +1502,7 @@ Bellow, we have a class with 2 methods, but one of then used the bind method, so
 class Car {
     constructor() {
         // bind sayBye but not sayHi to show the different behavior
-        
+        this.sayBye = this.sayBye.bind(this);
     }
     
     sayHi() {
@@ -1402,6 +1525,9 @@ class Bird {
 }
 
 
+const car = new Car();
+const bird = new Bird();
+
 // the value of 'this' with sayHi will depend on the caller
 car.sayHi(); // Hello from Ferrari
 
@@ -1410,7 +1536,7 @@ bird.sayHi(); // Hello from Tweety
 
 // For the bouded method sayBye, 'this' doesn't depend on the caller
 bird.sayBye = car.sayBye;
-bird.sayBye();
+bird.sayBye(); // Bye from Ferrari
 ``` 
 
 
