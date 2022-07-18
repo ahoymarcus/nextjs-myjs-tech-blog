@@ -16,7 +16,8 @@ description: 'This article focuses specially at some trick features that are mor
 	3.2. JavaScript Objects are Mutable   
 	3.3. Inheritance and the Prototype Chain   
 	3.4. The Object.create Method    
-	3.5. Performance Issues with the Prototype Chain
+	3.5. Performance Issues with the Prototype Chain   
+	3.6. JavaScript Class Implementation
 4. ##### The 'This' Word
 	4.1. The Global Context   
 	4.2. The Function Scope   
@@ -992,9 +993,163 @@ doSomething.prototype.foo:                           bar
 
 #### The Object.create Method
 
-/* COMING SOON */
+The Object.craete is method root Object that is inherited and has the task of implementing inheritance in JavaScript without the need to access directly either the **prototype** property or the **__proto__** pseud property.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+
+It receives a especified prototype and return a new object. It has the syntax: **Object.create(prototypeObject[, propertyObject]);**
+
+```
+const myObj = Object.create(Object.prototype);
+
+console.dir(myObj);
+```
+
+
+And one interesting JavaScript’s point to make is about the implicit creating of the prototype while creating objects with object literals.
+
+Here, also the engine uses Object.create and pass the inheritance from Object.prototype nevertheless.
+
+```
+const myObjLiteral = {};
+
+console.log(myObjLiteral);
+```
+
+Finally, with Object.create it is possible to set a empty prototype like this:
+
+```
+const myObjWithNoProt = Object.create(null);
+
+console.log(myObjWithNoProt);
+```
+
+
+In terms of practical functions, Object.crate can also be used to:
+1. **Create a new object**: but differently from a regular constructor function it will not set the initial properties for the new object.
+2. **Basic inheritance extending objects constructor**: like a proto class operating syntax extending the basic properties from a base object to another object.   
+	2.1. But, according to the TechSith class on Youtube, in the case of Object.create against the class extended feature, there is only a point reference to the original prototype, and not a real copy of properties and methods ().
+
+
+
+- **Exceptions for the Object.create method**:
+1. If the optinal propertiesObject parameter that should be created along the inheritance is not null, the method will throw a TypeError Exception.
+2. It will also throws a TypeError exception if the propertiesObject parameter is a non primitive object.
+
+
+```
+function Fruit(name) {
+	this.name = `${this.name} - fruit`;
+	this.season = 'summer season good';
+}
+
+function Apple(name) {
+	this.name = name;
+	Fruit.call(this, this.name);
+}
+
+Apple.prototype = Object.create(Fruit.prototype);
+
+const apple = new Apple('apple');
+console.log(apple.name);
+console.log(apple.season);
+
+const redApple = new Apple('Red Apple');
+console.log(redApple.name);
+console.log(redApple.season); 
+
+// test inheritance
+console.log(redApple instanceof Apple);
+console.log(apple instanceof Apple);
+
+console.log(apple instanceof Fruit);
+console.log(redApple instanceof Object);
+```
+
+
+Another method to reach a objects inheritance is:
+
+```
+console.log(Apple.prototype.isPrototypeOf(apple));
+console.log(Fruit.prototype.isPrototypeOf(apple));
+console.dir(Object.prototype.isPrototypeOf(apple));
+```
+
+Just a little bit of javaScript sorcery with FunFunFunction from Youtube:
+
+Here, the online teacher tries to recreate just the primary function of **Object.create()** with the custom function **objectCreate()**:
+
+```
+// Re-write Object.create()
+function objectCreate(proto) {
+	const obj = {};
+	Object.setPrototypeOf(obj, proto);
+	
+	return obj;
+}
+
+function Fruit(name) {
+	this.name = `${this.name} - fruit`;
+	this.season = 'summer season good';
+}
+
+function Apple(name) {
+	this.name = name;
+	Fruit.call(this, this.name);
+}
+
+Apple.prototype = objectCreate(Fruit.prototype);
+
+const apple = new Apple('apple');
+console.log(apple.name);
+console.log(apple.season);
+
+const redApple = new Apple('Red Apple');
+console.log(redApple.name);
+console.log(redApple.season); 
+
+// test inheritance
+console.log(redApple instanceof Apple);
+console.log(apple instanceof Apple);
+
+console.log(apple instanceof Fruit);
+console.log(redApple instanceof Object);
+```
+
+And running the same old code, now using objectCreate, it is possible to see that it recreates the basic inheritance feature!
+
+
+There is also a case to be made here that the use of **setPrototypeOf()** should not be set directly in real applications because it disrupts the performance of the app by messing with the performance tunings done by the engine (see just below some resources refereces for this section, specially about **Douglas Crockford** works).
+
+
+```
+const Fruit = {
+	init: function(name) {
+		this.name = name;
+		this.season = 'summer season good';
+		
+		return this;
+	},
+	info: function() {
+		console.log(`${this.name} - fruit - Just a nice ${this.season}`);
+	},
+};
+
+const apple = 
+	Object.create(Fruit).init('apple');
+apple.info();
+
+const orange = 
+	Object.create(Fruit).init('orange');
+orange.info();
+```
+
+
+- **Other resources about Object.create**:
+- [Object.create Method ( Object Oriented Programming in JavaScript Series - Part 3)](https://www.youtube.com/watch?v=MACDGu96wrA)
+- [Object.create - Object Creation in JavaScript P6 - FunFunFunction #57](https://www.youtube.com/watch?v=CDFN1VatiJA)
+- [How JavaScript Works - Douglas Crockford](https://www.crockford.com/books.html)
+- [JavaScript: The Good Parts: The Good Parts - Douglas Crockford](https://www.crockford.com/books.html)
+- [Even Faster Web Sites: Performance Best Practices for Web Developers - Douglas Crockford](https://www.crockford.com/books.html)
 
 
 
@@ -1030,6 +1185,51 @@ Another potential complication is the fact that while iterating over an object p
 
 `All objects, except those with null as [[Prototype]], inherit hasOwnProperty from Object.prototype — unless it has been shadowed further down the prototype chain. [...] It is essential to understand the prototypal inheritance model before writing complex code that makes use of it. Also, be aware of the length of the prototype chains in your code and break them up if necessary to avoid possible performance problems. Further, the native prototypes should never be extended unless it is for the sake of compatibility with newer JavaScript features.` [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
+
+
+#### JavaScript Class Implementation
+
+The class syntax is a **syntactical sugar** from JavaScript ES6 for constructor functions, which try to bring here that same fell of class modeling from the more tradition OOP languages.
+
+
+So, it workd using the **class** key word, that has a constructor property that initializes the new object with all the default necessary for each speciffic new instance, which in reality will distinguish the unique data structure for each of these instances.
+
+On the other hand, everything writen in the body of the class function will be added to the prototype. Meaning that the properties/methods here will only be a general point memo reference for all the instances of the class to be shared just in the same way.
+
+
+Another feature of the class syntax is the word **extend** that deals and insert the prototypical chain from JavaScript in this new syntax.
+
+
+Finally, there is the **super()** function that is used to allow the instance access the parent class' constructor to pass the unique property value for this instance itself.
+
+
+- **Example from [JavaScript Visualized: Prototypal Inheritance - Lydia Hallie](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)**:
+
+```
+class Dog {
+	constructor(name) {
+		this.name = name;
+	}
+	
+	bark() {
+		return 'Woof!';
+	}
+}
+
+
+class Chihuahua extends Dog {
+	constructor(name) {
+		super(name);
+	}
+	
+	smallBark() {
+		return 'Small woof!';
+	}
+}
+
+const myPet = new Chihuahua('Max');
+myPet.smallBark();
+```
 
 
 
@@ -1819,6 +2019,12 @@ For example, even in a simple game, where the developer has to check a dozen res
 [How to Redirect Website from HTTP to HTTPS? - GeekFlare](https://geekflare.com/http-to-https-redirection/)
 
 [You Don't Know JS (YDKJS) - Github Book](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed#titles)
+
+[How JavaScript Works - Douglas Crockford](https://www.crockford.com/books.html)
+
+[JavaScript: The Good Parts: The Good Parts - Douglas Crockford](https://www.crockford.com/books.html)
+
+[Even Faster Web Sites: Performance Best Practices for Web Developers - Douglas Crockford](https://www.crockford.com/books.html)
 
 
 []()
