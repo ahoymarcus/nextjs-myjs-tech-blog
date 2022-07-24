@@ -42,6 +42,15 @@ description: 'This article brings an overview of some trick features related to 
 - `Open Web Application Project Foundation (OWASP) - Overview` [^8]
 
 
+###### Other articles about JavaScript and of Patterns:
+- `JavaScript Trick Patterns - Overview`[^9]   
+- `Javascript Object Oriented Programming (OOP) Pattern` [^10]   
+- `Front-end Development Patterns` [^11]   
+- `Front-end Architectures` [^12]   
+- `Software Architecture Patterns - Overview` [^13]   
+- `Software Architecture and Design` [^14]
+
+
 
 
 ### The DOM
@@ -1484,5 +1493,21 @@ One other feature to help with usability would be to give the user the chance to
 [^7]:continuity-plan-and-essentials-for-businesses-overview-2022-04-06
 
 [^8]:open-web-application-project-foundation-owasp-overview-2022-04-18
+
+
+[^9]:javascript-trick-patterns-overview-2022-05-26
+
+[^10]:javascript-object-oriented-programming-pattern-2022-07-24
+
+[^11]:front-end-development-patterns-overview-2022-03-04
+
+[^12]:front-end-architectures-2022-03-05
+
+[^13]:software-architecture-patterns-overview-2022-02-18
+
+[^14]:software-architecture-and-design-2022-02-22
+
+
+
 
 
