@@ -16,7 +16,7 @@ description: 'This article focuses at Object Oritented Programming (OOP), specia
 	2.4. The Object.create Method    
 	2.5. Performance Issues with the Prototype Chain   
 	2.6. JavaScript Class Implementation
-3. ##### 
+3. ##### Examining the JavaScript Factory Functions Pattern
 4. #####
 5. #####
 6. #####
@@ -988,7 +988,7 @@ myPet.smallBark();
 ```
 
 
-
+### Examining the JavaScript Factory Functions Pattern
 
 
 

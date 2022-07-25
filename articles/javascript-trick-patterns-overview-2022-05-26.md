@@ -11,7 +11,9 @@ description: 'This article focuses specially at some trick features that are mor
 1. ##### Introduction
 2. ##### Organizing the JavaScript Code
     2.1. Plain Old JavaScript Objects and Object Constructor   
-    2.2. Factory Functions and the Module Pattern
+    2.2. Factory Functions and the Module Pattern    
+    2.3. Classes    
+    2.4. ES6 Modules
 3. ##### The 'This' Word
 	3.1. The Global Context   
 	3.2. The Function Scope   
@@ -431,9 +433,14 @@ Finally, Tarek Sherif concludes in the way of keeping inline with Javascript own
 2. Constructors are at best **mislead**, and at worst, they actively interfere with the ability to engage with the core structure of the language.
 
 
+The author Joost Diepenmaat, in Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html), also brings some other explanation for this **constructor pattern** mismatch in Javascript, when he says that:
 
+1. **In Class-based object system**: typically classes inherit from each other, and objects are only instances of the classes themselves.   
+    1.1. The class possess **methods** and **properties** which are shsred between all instances of the class.   
+    1.2. Each object instance has its own **properties** (and also methods, in some programming languages) that should not be shared.
+2. **JavaScript constructors**: it does nothing like what is seem in class-based languages, because:   
+    2.1. Constructors have their own **{Prototype}** completely separated from the **{Prototype}** chain they initialize!
 
-https://www.theodinproject.com/lessons/node-path-javascript-factory-functions-and-the-module-pattern
 
 
 ###### Other resources about these patterns:
@@ -442,6 +449,10 @@ https://www.theodinproject.com/lessons/node-path-javascript-factory-functions-an
 
 
 
+#### Classes
+
+
+/* COMING SOON */
 
 
 
@@ -452,7 +463,11 @@ https://www.theodinproject.com/lessons/node-path-javascript-factory-functions-an
 
 
 
+#### ES6 Modules
 
+
+
+/* COMING SOON */
 
 
 
