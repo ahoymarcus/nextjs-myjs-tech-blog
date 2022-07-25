@@ -990,7 +990,7 @@ myPet.smallBark();
 
 ### Examining the JavaScript Factory Functions Pattern
 
-
+The **factory pattern** works in JavaScript to set up and return a new object, in a similar way a constructor would do using the **new**.
 
 
 

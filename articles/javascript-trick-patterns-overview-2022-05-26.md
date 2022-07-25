@@ -28,7 +28,7 @@ description: 'This article focuses specially at some trick features that are mor
     4.2. The Arguments Object   
     4.3. Arguments are Passed by Value   
     4.4. Objects are Passed by Reference
-5. ##### Scope & Hoisting
+5. ##### Scope - Closure & Hoisting
 6. ##### The Eval() Function
     6.1. The Risks of the Eval() Function    
     6.2. Never Use Eval()!   
@@ -1086,7 +1086,106 @@ On the other hand, object themselves in JavaScript are treated by reference, and
 
 
 
-### Scope & Hoisting 
+### Scope - Closure & Hoisting
+
+To start this new point, it's important to understand the basics of some concepts:
+
+1. **Scope**: it refers to the context in which **variables** and **functions** can be reached and therefore used.   
+    1.1. And can be globally or locally defined.   
+    1.2. **Namespace** can be thoght to be somewhat a synonym for **scope**, though namespace strictly speaking would refer some level of a highest level scope. For exemple, the namespace defined and used for reaching libraries: JQuery, etc.
+2. **Closure**: also called **static scope** or **lexical scope**, and it refer to the fact that the inner scope has access to its surrounding outer scope, that is .   **the scope chain**.   
+    2.1. For example, a inner function has access to the scope of the outer function which surrounds it.   
+    2.2. Atention: the **chain scope** always runs in only one direction; the inner scope direction outwards, meaning that from inside to outside the engine searchs for the variable reference, but never the other way around, that is from the parent scope inwards.   
+    2.3. But JavaScript allows that some scope may be called from within: sayHello('Bobby')();
+3. **hoisting**
+
+
+
+- **An example of dealing with scope**:
+```
+const sayHello = function(name) {
+    let text = 'Hello, ' + name;
+    
+    return function() {
+      console.log(text);  
+    };
+};
+
+sayHello('Todd'); // nothing happens
+
+const helloTodd = sayHello('Todd');
+helloTodd(); // will call the closure and log 'Hello, Todd' 
+
+sayHello('Bob')(); // this syntax will also be able to call the scope (even withou the assingment)
+``` 
+
+- **And below, the site from Learn JavaScript The Right Way shows a trick to store or cache some scope with the pattern word 'that'**:
+```
+const nav = document.querySelector('.nav');
+
+const toggleNav = () {
+    const that = this;
+    
+    console.log(that); // <nav> element
+    
+    // Settimeout with a regular function as callback would have the global scope only
+    setTimeout(fucntion() {
+        console.log(this); // [object Window]
+        console.log(that); // <nav> element
+    }, 1000);
+};
+
+nav.addEventListener('click', toggleNav, false);
+``` 
+
+As it is pointed above, the **setTimeout()** function has the global scope by default, but using that trick, or even using an arrow function as callback would also do the trick as well.
+
+Others ways to lock some speciffic scope:
+
+1. **call()**
+2. **apply()**
+3. **bind()**
+4. **Arrow functions**
+5. **Caching the scope**: const that = this;
+
+- **Another example, this time using a for loop**:
+
+```
+const links = document.querySelectorAll('nav li');
+
+for (let i = 0; i < links.length; i++) {
+    console.log(this); // [object Window]
+}
+``` 
+
+But, using the **call()** function:
+
+```
+const links = document.querySelectorAll('nav li');
+
+for (let i = 0; i < links.length; i++) {
+    (function() {
+        console.log(this);
+    }).call(links[i]);
+}
+``` 
+
+`You can see I’m passing in the current element in the Array iteration, links[i], which changes the scope of the function so that the this value becomes that iterated element. We can then use the this binding if we wanted. We can use either .call() or .apply() to change the scope, but any further arguments are where the two differ: .call(scope, arg1, arg2, arg3) takes individual arguments, comma separated, whereas .apply(scope, [arg1, arg2]) takes an Array of arguments.` [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope) 
+
+
+###### Private and Public Scope in JavaScript
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 **COMING SOON**
@@ -1094,7 +1193,9 @@ On the other hand, object themselves in JavaScript are treated by reference, and
 JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
 
 
-
+###### Other resources about Scope - Closure and Hoisting:
+- [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)   
+- [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 
 
