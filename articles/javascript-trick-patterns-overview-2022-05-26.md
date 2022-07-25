@@ -250,28 +250,195 @@ While the Constructor Pattern is a widely used and vality pattern for organizing
 So, in that regard, one of the biggest issues related with the constructors is that, **though they look just like any other regular function, they do not behave like the regular functions at all**. Also, if they are accidentely used without the **new** word, they will not work as intended to, and will produce errors messages difficult to be traced.
 
 
+As Tarek Sherif says in his article, ['Constructors Are Bad For JavaScript'](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/), diffrently from many of the traditional languages, JavaScript in its core it evolved from a **simple, flexible object model that allows code reuse through direct object-to-object prototypal inheritance, and a powerful execution modl based on functions that are simply executable objects**.
 
 
-https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/
+On the other hand, the author says that all these different concepts, perhaps even obscure ones, many times lead the JavaScript development to mimic other traditional programming concepts, that many times may not in line with JavaScript basic and core concepts.
+
+`It is well-known that JavaScript originally wanted to look like other popular languages built on fundamentally different philosophies, and this trend in its history has lead to constructs in the language that actively work against its natural flow.`  [Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
+
+
+To show the extent of this evolution of JavaScript, the author says that before ECMAScript 5, there were no direct way to defined create an object whose prototype was derived from other object. 
+
+So, in this exemple from the article, it shows how it was done:
+
+```
+const proto = { protoprop: 'protoprop' };
+
+function C() {} // Dummy throway constructor
+
+C.prototype = proto;
+const newObj = new C();
+
+proto.isPrototypeOf(newObj); // true
+``` 
+
+And below, how it can be done now with **Object.create()**:
+
+```
+const proto = { protoprop: 'protoprop' };
+
+const newObj = Object.create(proto);
+
+proto.isPrototypeOf(newObj); // true
+```
+
+
+###### The Constructor Issue Can Go Even Further
+
+But, continuing with in article, Tarek Sherif says that the dangers of using constructors could go beyond the dangers of calling a constructor function without the **new** word:
+
+```
+function C() {
+    this.instance_member = 'whoops!';
+}
+
+const c = C(); // Forgot 'new'
+
+c; // undefined
+
+// Property added to the Global Namespace
+window.instance_member; // 'whoops!'
+``` 
+
+And he also says that even using a safeguard, like the one proposed by Stoyan Stepanov in Javascript Patterns, still let the code and its execution **unclear**:
+
+```
+function C() {
+    if (! (this instanceof C)) {
+        return new C();
+    }
+    
+    this.instance_member = 'This is ok.';
+}
+
+const c = C();
+c; // { instance_member: 'This is ok.' };
+
+// Here, no global namespace pollution
+window.instance_member; // undefined
+``` 
+
+And here Tarek Sherif shows the proof of how the use of the **constructor patter** has the code execution in peril:
+
+```
+function C() {}
+
+const c = new C();
+
+c instanceof C; // true
+c.constructor === C; // true
+
+// But, changing the prototype property
+C.prototype = { prototype_prop: 'proto' };
+
+c.constructor === C; // true
+c instanceof C; // false
+```
+
+Above, in Tarek Sherif example, it is possible to see how the execution of the Javascript engine was fractured because of the use of this 2 way system of operation with these 2 properties:
+
+1. **prototype**
+2. **constructor**
+
+```
+// Create two constructors with the 
+// same prototype.
+const proto = { protoprop: 'protoprop' };
+
+function C() { this.cprop = 'cprop' };
+C.prototype = proto;
+
+function F() { this.fprop = 'fprop' };
+F.prototype = proto;
+
+const f = new F();
+
+// It has prototype properties
+console.log(f.protoprop); // 'protoprop'
+
+// It has F properties
+console.log(f.fprop); // 'fprop'
+
+// It does not have C properties (AS EXPECTED)
+console.log(f.cprop); // undefined
+
+// BUT IT BECAME A INSTANCE OF 'C' AS WELL?!!!!!!!!!!!
+console.log(f instanceof C); // true
+
+const c = new C();
+console.log(c instanceof F); // true
+``` 
+
+This is how Tarek Sherif explains this JavaScript phenomeon:
+
+`but essentially, the constructor property of an object is set by the engine exactly once. When a function is defined, its prototype property is initialized to an object with a constructor property pointing back to the function itself. If you set the function’s prototype property to some other object, without explicitly setting that new object’s constructor property, all objects created by the function will have their constructor properties set to Object (which is the default).`
+
+
+###### Factory Functions: Improving the Pattern of Reuse by Constructors
+
+According to Tarek Sherif there are 2 important advantages in the use of the **factory functions pattern**:
+
+1. **There is no risk of using it in the "wrong" way**, since it does not require the **new** word of a constructor.   
+    1.1. Nor is it a constructor itself that forces some proper invocation, **which may hide errors!**.   
+    1.2. **The factory function is meant to be used in exactly one way: as a regular function**.
+2. **There is no pretense od creating a "class" of objects by captalizing the name.  
+    2.1. The **prototype isn't used, so there will be no instanceof link between the function and the objects it creates**: its simply a function that happens to create objects.
+
+
+```
+function myObject(data) {
+    const obj = Object.create(myObject.proto);
+    obj.data = data;
+    
+    return obj;
+}
+
+myObject.proto = {
+    getData: function() {
+        return this.data;
+    }
+};
+
+const o = myObject('data 1');
+
+console.log(o); // { data:'data 1' }
+``` 
+
+Tarek Sherif goes even further saying that following this pattern it could be constructed a generic factory function to do away with the **new** word all together, though he sees that the code implementation itself is not the cleares:
+
+```
+function genericFactory(Crt) {
+    const obj = Object.create(Crt.prototype);
+    
+    const args = Array.prototype.slice.call(arguments, 1);
+    
+    Ctr.applay(obj, args);
+    
+    return obj;
+}
+
+const o = genericFactory(MyObject, 'data);
+``` 
+
+
+`Whether this makes the code clearer or not might be debatable, but one definite advantage is that this construct allows us to invoke constructors dynamically, something not possible with invocations that use new. This example also shows more generally that constructor invocation can be done away with quite easily with the tools now afforded us in ECMAScript 5.` [Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
+
+
+Finally, Tarek Sherif concludes in the way of keeping inline with Javascript own core and avoid all the contrivances of foreign languages, like class-based ones:
+
+1. **'Constructors run contrary to the prototypal, functional, object-based natures form which JavaScript draws its strength'**
+2. Constructors are at best **mislead**, and at worst, they actively interfere with the ability to engage with the core structure of the language.
+
+
+
+
 https://www.theodinproject.com/lessons/node-path-javascript-factory-functions-and-the-module-pattern
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ###### Other resources about these patterns:
 - [Constructors Are Bad For JavaScript - Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
-
+- [Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html)
 
 
 

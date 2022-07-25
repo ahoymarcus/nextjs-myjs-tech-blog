@@ -66,6 +66,29 @@ description: 'This article brings an overview of some trick features related to 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### DOM Functions and Helpers
 
 Some of the wildely used functions and helpers in Vanilla JS:
