@@ -443,9 +443,37 @@ The author Joost Diepenmaat, in Constructors Considered Mildly Confusing - Zeeka
 
 
 
+In this next example, it was used both **factory** and **module**  patterns to create instances of counters which have a private auxiliare property and a public method:
+
+```
+// define a module
+const  Module = (function() {
+    const privateMethod = function() {
+        return "I'm privateMethod!";
+    };
+    
+    return {
+        myMethod: function() {
+            console.log(`myMethod has been called and it used a private method to bring this -->: ${privateMethod()}.`);
+        },
+        someOtherMethod: function() {
+            console.log('someOtherMethod has been called.');
+        }
+    };
+})();
+
+
+// call module + methods
+Module.myMethod();
+Module.someOtherMethod();
+``` 
+
+
+
 ###### Other resources about these patterns:
 - [Constructors Are Bad For JavaScript - Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
 - [Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html)
+- [Object.assign() - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
 
 
@@ -1096,7 +1124,8 @@ To start this new point, it's important to understand the basics of some concept
 2. **Closure**: also called **static scope** or **lexical scope**, and it refer to the fact that the inner scope has access to its surrounding outer scope, that is .   **the scope chain**.   
     2.1. For example, a inner function has access to the scope of the outer function which surrounds it.   
     2.2. Atention: the **chain scope** always runs in only one direction; the inner scope direction outwards, meaning that from inside to outside the engine searchs for the variable reference, but never the other way around, that is from the parent scope inwards.   
-    2.3. But JavaScript allows that some scope may be called from within: sayHello('Bobby')();
+    2.3. But JavaScript syntax allows that some scope may be called from within: sayHello('Bobby')();    
+    2.4. The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope, since in JavaScript functions are indeed high order objects.
 3. **hoisting**
 
 
@@ -1175,6 +1204,84 @@ for (let i = 0; i < links.length; i++) {
 
 ###### Private and Public Scope in JavaScript
 
+A very common and useful pattern in programming is the distinctions about, and eventhough this pattern is not present in JavaScript, it can be emulated notheless:
+
+1. **Public scope**
+2. **Private scope**:
+
+
+So, one way to have this concept also in JavaScript, a design pattern such as the **Module pattern** to emulate creating of the **public scope**, while the the **private** scope, for example, could be easily created by wrapping functions inside another function:
+
+```
+(function() {
+    // Private scope inside here!
+})();
+``` 
+
+As for the **public scope**, the function that returns some data is given to a object, which can act as **namespace** for the information made public:
+
+```
+// define a module
+const  Module = (function() {
+    const _privateMethod = function() {
+        return "I'm privateMethod!";
+    };
+    
+    return {
+        myMethod: function() {
+            console.log(`myMethod has been called and it used a private method to bring this -->: ${_privateMethod()}.`);
+        },
+        someOtherMethod: function() {
+            console.log('someOtherMethod has been called.');
+        }
+    };
+})();
+
+
+// call module + methods
+Module.myMethod();
+Module.someOtherMethod();
+``` 
+
+`he return statement here is what returns our public methods, which are accessible in the global scope - but are namespaced. This means our Module takes care of our namespace, and can contain as many methods as we want. We can extend the Module as we wish` [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope) 
+
+
+- **Importante Note concerning the article [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope) **:
+- That Before the **ES6** it was correct to say that "All scopes are created with Funcion Scope onlly, they aren't created by for or while loops or expressions statements like if or swith.[...]"   
+- Fot that matter, let's remember the new words **let** and **const** from ES6, which allows to create **block scope**, besides the **function scope**.   
+- A **block scope** is anything enclosed between curly brackets...  [How let and const are scoped in JavaScript - Wesbos.com](https://wesbos.com/javascript-scoping)
+
+
+In this next example, it was used both **factory** and **module**  patterns to create instances of counters which have a private auxiliare property and a public method:
+
+```
+const counterCreator = (counterName) => {
+    // private property
+    let count = 0;
+    
+    return () => {
+        console.log(`Counting with ${counterName}: ${count}`);
+        
+        // public function
+        count++;
+    };
+};
+
+const counter1 = counterCreator('counter1');
+const counter2 = counterCreator('counter2');
+
+counter1();
+counter2();
+counter1();
+counter1();
+counter2();
+``` 
+
+`The concept of private functions is very useful and should be used as often as is possible! For every bit of functionality that you need for your program, there are likely to be several supporting functions that do NOT need to be used in your program as a whole. Tucking these away and making them inaccessible makes your code easier to refactor, easier to test, and easier to reason about for you and anyone else that wants to use your objects.` The Odin Project (Factory Functions and the Module Pattern)
+
+
+
+
 
 
 
@@ -1195,9 +1302,8 @@ JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygoo
 
 ###### Other resources about Scope - Closure and Hoisting:
 - [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)   
+- [How let and const are scoped in JavaScript - Wesbos.com](https://wesbos.com/javascript-scoping)
 - [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
-
-
 
 
 

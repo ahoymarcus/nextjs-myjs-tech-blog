@@ -16,7 +16,7 @@ description: 'This article focuses at Object Oritented Programming (OOP), specia
 	2.4. The Object.create Method    
 	2.5. Performance Issues with the Prototype Chain   
 	2.6. JavaScript Class Implementation
-3. ##### Examining the JavaScript Factory Functions Pattern
+3. ##### Different Kinds of Prototypal Inheritance
 4. #####
 5. #####
 6. #####
@@ -988,13 +988,30 @@ myPet.smallBark();
 ```
 
 
-### Examining the JavaScript Factory Functions Pattern
-
-The **factory pattern** works in JavaScript to set up and return a new object, in a similar way a constructor would do using the **new**.
+### Different Kinds of Prototypal Inheritance
 
 
 
 
+
+https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### Other resources about Prototype and OOP in JavaScript:
+- [3 Different Kinds of Prototypal Inheritance: ES6+ Edition - Medium.com](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
 
 
 
