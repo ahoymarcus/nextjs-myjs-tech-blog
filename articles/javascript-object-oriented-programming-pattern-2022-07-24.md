@@ -990,31 +990,157 @@ myPet.smallBark();
 
 ### Different Kinds of Prototypal Inheritance
 
+As Eric Elliot says in his article, [3 Different Kinds of Prototypal Inheritance: ES6+ Edition](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9), prototypes are a core aspect of JavsScript inheritance system and it is also essential to be understood.
+
+
+The author goes even further while considers that **the classical class inheritance may be obsolete**:
+
+`JavaScript is one of the most expressive programming languages ever created. One of its best features is the ability to create and inherit from objects without classes and class inheritance. Its combination of delegate prototypes, runtime object extension, and closures allow you to express three distinct kinds of prototypes in JavaScript, which provide significant advantages over class inheritance.` [Eric Elliot](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
+
+
+Also, in a short version of a conference video, [Classical Inheritance is Obsolete: How to Think in Prototypal OO - Eric Elliot](https://www.oreilly.com/library/view/fluent-conference-2013/9781449371579/oreillyvideos1691466.html), Eric Elliot points out 2 important things:
+
+1. **Prototype inheritance** gives more freedom to design than the classical class-based system.
+2. **That it is easy to mimic classes desing in JavaScript**: but that `no class imitation has ever become a defacto standard.`
+
+
+###### 1. Delegation or Differential Inheritance
+
+The first kind of prototypical inheritance design would be the delegation / defferential inheritance, where a **delegate prototype of a object servers as the base for inheritance to another object**.
+
+
+Here, when the delegate prototype is inherited, the new object gets a reference to the intended base prototype. And this is the more traditionally know way of the **prototypical chain**:
+
+1. First the engene looks up for the object own properties/methods.
+2. Then, if it was not found there, the engene checks the `[[Prototype]]`. 
+3. And, the engine goes up checking the prototypical chanin until finding it or until reaching the Object.prototype, root for the chain itself.
+
+
+This method is important because:
+
+1. It preserves memory resources because there only need one copy of each method to be shared by all instances.
+
+```
+const proto = {
+    hello() {
+        return `Hello, my name is ${ this.name }`;
+    }
+};
+
+const greeter = (name) => Object.assign(Object.create(proto), {
+    name
+});
+
+const george = greeter('george');
+
+const msg = george.hello();
+console.log(msg); // Hello, my name is george
+```
+
+The author says that one drawback for this design is that it would not be very good for storing state:
+
+`One major drawback to delegation is that it’s not very good for storing state. If you try to store state as objects or arrays, mutating any member of the object or array will mutate the member for every instance that shares the prototype. In order to preserve instance safety, you need to make a copy of the state for each object.` [Eric Elliot](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
 
 
 
+###### 2. Concatenative Inheritance / Cloning / Mixins
 
-https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9
-
-
-
+According to Eric Elliot, the concatenative inheritance is **the process of copying the properties from one object to another, without retaining a reference between the two objects**, and that it would relie on the JavsScript dynamic object extension feature.
 
 
+So, to the author, **cloning** is a great way to store default state for objects, and that it could be achieved:
+
+1. **Object.assign()**: after ES6
+2. **General methods like .extend() from Lodash**: or other libraries like Underscore and jQuery.
+
+
+```
+const proto = {
+    hello: function hello() {
+        return `Hello, my name is ${ this.name }`;
+    }
+};
+
+const george = Object.assign({}, proto, { name: 'George' });
+
+const msg = george.hello();
+console.log(msg); // Hello, my name is george
+``` 
+
+
+`We can use this to create a Backbone-style event emitting model [...] Concatenative inheritance is very powerful, but it gets even better when you combine it with closures.` [Eric Elliot](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
 
 
 
+###### 3. Functional Inheritance
+
+Eric Elliot says that this term was coined by Douglas Crockford in "JavaScript: The Good Parts", and that it shoul not be confused with `functional programming`.
+
+
+So, according to Elliot, the **functional inheritance** would make use of factory functions, and then tacks on new properties using concatenative inheritance. And a general name definition for functions used for the purpose of extending existing objects is **functional mixins**.
+
+
+And, according to the author the **primary advantage** of using function for extension would be because of the **closure** feature which allows for the encapsulation of data in terms of **private scope**.
 
 
 
+###### Composition Over Class Inheritance
+
+`Favor object composition over class inheritance.` (The Gang of Four - Design Patterns: Elements of Reusable Object Oriented Software)
+
+
+The summary of the argument would be that in class inheritance there is a **is-a** relationship between the objects which would result in a **restrict taxonomy** coupling and restraining the object for the purpose of reuse in new use-cases. And since there are other kinds of object relationships, like: **has-a**, **use-a**, or **can-do**, etc.
+
+
+So, the author asserts that **class-inheritance** should never be used, and that **composition-inheritance** is always:
+
+1. Simpler
+2. More expressive
+3. More flexible
+
+
+And in relation to the **class** feature added in JavaScript, the author claims it was a way to have the JavaScript a little bit more familiar to the general public and also to define a standard class design (since there were multiple kinds of desing implementations around):
+
+
+`Inheritance in JavaScript is so easy, it confuses people who expect it to take effort. To make it harder, we added 'class'. [...] Adding an official `class` keyword provided a single canonical way to emulate class inheritance in JavaScript — but in my opinion, you should avoid it altogether. ` [Eric Elliot](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
+
+
+In a video from the **Fun Fun Functions channel** the tutor brings a interesting design clue about the distinction in **Composition** and **Inheritance**: that inheritance would be a style of object design in which objects are created in terms of **what they are supposed to be** in a long line hierarchy of objects, while composition would be a simpler design to create objects in terms of **what they are supposed to do**.
+
+
+And to present that problem of restrain in flexibility from **inheritance** the tutor devises a design problem where a new object would need distinct methods commonly present in 3 distinctly separated objects that would be difficult to achieve without simply copying and repeating methods.
+
+
+So, in a **murderRobotDog** type, the object would need to bark() as a aninal, but it would not need other functions of real animals. And it would also need to have others methods like driver() and killer() from others kinds of objects like different kinds of robots, but once again it would do things that ordinary robots wouldn't do, like barking:
+
+
+```
+const murderRobotDog = (name) => {
+    let state = {
+        name.
+        speed: 100,
+        position: 0
+    },
+    
+    return Object.assign(
+        {},
+        barker(state),
+        driver(state),
+        killer(state)
+    )
+};
+
+murderRobotDog('sniffles').bark();
+``` 
 
 
 
 
 ###### Other resources about Prototype and OOP in JavaScript:
 - [3 Different Kinds of Prototypal Inheritance: ES6+ Edition - Medium.com](https://medium.com/javascript-scene/3-different-kinds-of-prototypal-inheritance-es6-edition-32d777fa16c9)
-
-
-
+- [Classical Inheritance is Obsolete: How to Think in Prototypal OO - Eric Elliot](https://www.oreilly.com/library/view/fluent-conference-2013/9781449371579/oreillyvideos1691466.html)
+- `Programming JavaScript Applications - Eric Elliot - O'Reilly`
+- [Composition over Inheritance - Fun Fun Function](https://www.youtube.com/watch?v=wfMtDGfHWpA&t=20s)
 
 
 

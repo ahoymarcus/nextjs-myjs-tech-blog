@@ -1126,7 +1126,7 @@ To start this new point, it's important to understand the basics of some concept
     2.2. Atention: the **chain scope** always runs in only one direction; the inner scope direction outwards, meaning that from inside to outside the engine searchs for the variable reference, but never the other way around, that is from the parent scope inwards.   
     2.3. But JavaScript syntax allows that some scope may be called from within: sayHello('Bobby')();    
     2.4. The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope, since in JavaScript functions are indeed high order objects.
-3. **hoisting**
+3. **hoisting**: a feature from JavaScript where variables and functions declarations are moved to the top of their scope before code execution ([Understanding Hoisting in JavaScript - Digitalocean.com](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)). 
 
 
 
@@ -1281,30 +1281,83 @@ counter2();
 
 
 
+###### Hoilsting
+
+As it was said above, **hoilsting is the mechanism where variables and functions declarations are moved to the top of their scope before code execution**, and it can bring unexpected results if the developer is not aware of it.
 
 
+An article, [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html), presents 2 examples of this:
+
+- **First example**: What would be logged by bar() function
+
+```
+var foo = 1;
+
+function bar() {
+    if (!foo) {
+        var foo = 10;
+    }
+    
+    alert(foo);
+}
+
+bar(); // 10
+``` 
+
+- **Second example**: What would be given by alert(a)
+
+```
+var a = 1;
+
+function b() {
+    a = 10;
+    return;
+    
+    function a() {}
+}
+
+b();
+
+alert(a); // 1
+``` 
+
+So, in both examles, the results were very unusual, because in the first you think that there is a `var foo = 1` already available, and in the second example, that the function past the return statement would never be reached!
 
 
+And one feature important to remember here is about **scope**, because JavaScript has its differences from traditional languages that hevebasically **block-level scope**:
+
+1. Prior to ES6 JavaScript was only **functional-level scope**.
+2. After ES6, JavaScript also implemented **block-level scope** with the words: **let** and **const**
 
 
+###### Declarations, Names, and Hoisting
 
-
-
-
-
-
-
+JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
 
 **COMING SOON**
 
-JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ###### Other resources about Scope - Closure and Hoisting:
 - [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope)   
 - [How let and const are scoped in JavaScript - Wesbos.com](https://wesbos.com/javascript-scoping)
 - [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
-
+- [Understanding Hoisting in JavaScript - Digitalocean.com](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)
 
 
 
