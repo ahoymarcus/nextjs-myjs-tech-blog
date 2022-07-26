@@ -29,19 +29,20 @@ description: 'This article focuses specially at some trick features that are mor
     4.3. Arguments are Passed by Value   
     4.4. Objects are Passed by Reference
 5. ##### Scope - Closure & Hoisting
+    5.1. Scope and Closure   
+    5.2. Private and Public Scope in JavaScript    
+    5.3. Hoilsting
 6. ##### The Eval() Function
     6.1. The Risks of the Eval() Function    
     6.2. Never Use Eval()!   
     6.3. Are eval() and new Function() the same thing?   
     6.4. When Eval() Is Not Evil
-7. ##### Test Driven Development
-    7.1. JavaScript and TDD
+7. ##### Immediately Invoked Function Expressions - IIFE
 8. ##### 
-9. #####
-10. #####
-11. #####
-12. ##### Further Reading
-13. ##### References
+9. #####Test Driven Development
+    9.1. JavaScript and TDD
+10. ##### Further Reading
+11. ##### References
 
 ### Introduction
  
@@ -244,7 +245,10 @@ Player.prototype.sayName = function() {
 
 
 
-#### Factory Functions and the Module Pattern
+#### Factory Functions and the Module Pattern 
+
+
+###### The Factory Function Pattern
 
 While the Constructor Pattern is a widely used and vality pattern for organizing the code, yet they are not the best one to use, since its use can leade to some general problems and more easily introduce bugs into the code. So, eventhough its not wrong their use, they are not the only way or even the best way available to deal with this matters.
 
@@ -469,11 +473,37 @@ Module.someOtherMethod();
 ``` 
 
 
+###### The Module Pattern 
+
+The **module pattern** has some similitudes to the **factory pattern** since both of them utilizes functions to wrap some code to allow their management, where the factory pattern aim to define variables and functions to be passed to newer objects, the module pattern aim to operates scope for variables and functions.
+
+
+And pehaps one other distinction that may happen is the fact that the **module pattern** employ Immediately Involked Function Expressions (IIFE) for the task.
+
+
+
+
+
+
+
+- [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
+- [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
+
+
+
+
+
+
+
+
 
 ###### Other resources about these patterns:
 - [Constructors Are Bad For JavaScript - Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
 - [Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html)
 - [Object.assign() - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+- [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
+- [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
+- [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
 
 
 
@@ -491,11 +521,28 @@ Module.someOtherMethod();
 
 
 
+
+
+
+
+
+
+
+
 #### ES6 Modules
 
 
 
 /* COMING SOON */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1130,6 +1177,8 @@ To start this new point, it's important to understand the basics of some concept
 
 
 
+#### Scope and Closure
+
 - **An example of dealing with scope**:
 ```
 const sayHello = function(name) {
@@ -1202,7 +1251,7 @@ for (let i = 0; i < links.length; i++) {
 `You can see I’m passing in the current element in the Array iteration, links[i], which changes the scope of the function so that the this value becomes that iterated element. We can then use the this binding if we wanted. We can use either .call() or .apply() to change the scope, but any further arguments are where the two differ: .call(scope, arg1, arg2, arg3) takes individual arguments, comma separated, whereas .apply(scope, [arg1, arg2]) takes an Array of arguments.` [Everything you wanted to know about JavaScript scope Ultimatecoursers.com](https://ultimatecourses.com/blog/everything-you-wanted-to-know-about-javascript-scope) 
 
 
-###### Private and Public Scope in JavaScript
+#### Private and Public Scope in JavaScript
 
 A very common and useful pattern in programming is the distinctions about, and eventhough this pattern is not present in JavaScript, it can be emulated notheless:
 
@@ -1281,12 +1330,12 @@ counter2();
 
 
 
-###### Hoilsting
+#### Hoilsting
 
 As it was said above, **hoilsting is the mechanism where variables and functions declarations are moved to the top of their scope before code execution**, and it can bring unexpected results if the developer is not aware of it.
 
 
-An article, [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html), presents 2 examples of this:
+In an article, [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html), Ben Cherry presents 2 examples of this:
 
 - **First example**: What would be logged by bar() function
 
@@ -1332,24 +1381,70 @@ And one feature important to remember here is about **scope**, because JavaScrip
 
 ###### Declarations, Names, and Hoisting
 
-JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
+Still according to the author Ben Cherry, in JavaScript a **name** enters the scope in one of four basic ways:
 
-**COMING SOON**
-
-
-
-
-
+1. **Language-defined**: he says that by defaut, all scopes are given the names **this** and **arguments**.
+2. **Formal parameters**: he also says that functions can have named formal parameters, which are scoped to the body of that function.
+3. **Functions declarations**: these are functions of the form **foo() {}**.
+4. **Variable declarations: these are variables to the form **var foo;**
 
 
+- **Note**: and after ES6, a **name** can also enter the scope with the use of the words **let** and **const**.
 
 
+###### Functions and Hoilsting
+
+One important point to make is that eventhough function are always moved/hoilsted up to the top of the containing scope by the engine, it's important to notice that there are 2 ways to declare functions, and that only the **function declaration** kind has all its body hoilted.
 
 
+So, in the next example by the same author, from the 2 inner functions, only the one with the function declaration syntax will be moved up to the top of the **function test()** scope:
+
+``` 
+function test() {
+    foo(); // TypeError "foo is not a function"
+    bar(); // this one will run
+    
+    var foo = function() { //function expression assigned to a local variable 'foo'
+        alert('This won't run!');
+    }
+    
+    function bar() { // function declaration, given the name 'bar'
+        alert('This will run!');
+    }
+}
+
+test();
+```
+
+`In this case, only the function declaration has its body hoisted to the top. The name ‘foo’ is hoisted, but the body is left behind, to be assigned during execution.` [Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 
 
+And here, one more practical example from Ben Cherry showing the application of Hoilsting in functions defined in 2 different ways: **function declaration** and **function expression**.
 
+```
+foo(); // TypeError "foo is not a function"
+bar(); // valid
+baz(); // TypeError "baz is not a function"
+spam(); // ReferenceError "spam is not defined"
 
+var foo = function() {}; // anonymous function expression (only the word 'foo' gets hoisted)
+
+function bar() {} // function declaration ('bar' and the function body get hoilsted) 
+
+bar baz = function spam() {}; // Named function expression (only 'baz' gets hoisted)
+
+foo(); // valid
+bar(); // valid
+baz(); // valid
+spam(); // ReferenceError "spam is no defined"
+``` 
+
+Above we see that:
+
+1. Only functions declarations have both the **name** and the **body** hoilsted.
+2. In anonymous function expressions only have the **name** hoilsted.   
+    2.1. As a result in the example, the name of the function expression **foo()** is reached, but it is not reconized as the type function.
+3. In named function expressions only the name of the variable assigned to is hoilsted, as it was seem, and the name of the function passed remain in the local scope and it is not reached: and so the reference error above.
 
 
 
@@ -1358,33 +1453,6 @@ JavaScript Scoping and Hoisting - Adequatelygood.com - https://www.adequatelygoo
 - [How let and const are scoped in JavaScript - Wesbos.com](https://wesbos.com/javascript-scoping)
 - [JavaScript Scoping and Hoisting - Adequatelygood.com](https://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 - [Understanding Hoisting in JavaScript - Digitalocean.com](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1457,6 +1525,81 @@ function test1() {
 - [eval() - MDN plataform](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)    
 - [Are eval() and new Function() the same thing? - StackOverflow](https://stackoverflow.com/questions/4599857/are-eval-and-new-function-the-same-thing)
 - [Is JavaScript’s eval() evil? - GeeksForGeeks.org](https://www.geeksforgeeks.org/is-javascripts-eval-evil/)
+
+
+
+
+
+### Immediately Invoked Function Expressions - IIFE
+
+Immediately invoked function expressions or IIFEs (pronouced "iffy") are JavaScript function of the following pattern:
+
+```
+(function() {
+    // internal logic
+})();
+``` 
+
+It's interesting to remember that in JavaScript there are 2 way to declare a function:
+
+1. **Function declaration**: that is the traditional syntax
+2. **Funcions expression**: which can be a named or a anonymous expression. 
+    2.1. But that in either case implies the return of the value of the function itself either to the correspondent variable or immediately (that is without assgining to a variable).
+
+
+The only other distinction to be done here is the fact the article [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html) highlights the fact thtt the **function expressions** can have the function value to return to a variable or to be immediately applyed:
+
+```
+// Assingment of a function expression to a variable
+const myFunction = function() { /* logic here */ };
+
+// Assignment of a function expression to a object property
+const myObj = {
+    myFunction: function() { /* logic here */ }
+};
+
+// Anything within the parentheses is part of an expression
+(function() { /* logic here */ });
+
+// Anything after the not operator is part of an expression
+!function() { /* logic here */ };
+``` 
+
+
+- **Reasons to Use IIFEs**:
+1. **The IIFE does not pullute the global namespace**:     
+    1.1. So, different from using the internal scope of a regular function declaration that hoilsts to its upper scope, the IIFE as a function expression does not.
+2. **The code of IIFEs are self-documenting**:  
+    2.1. Because a function declaration is not self-documenting it might accidentally be invoked more than once.
+
+
+Finnaly, the article points out that IIFEs can have arguments passed to:
+    
+```
+let foo = foo;
+
+(function(innerFoo) {
+    console.log(innerFoo); // Outputs: 'foo'
+})(foo);
+``` 
+
+
+###### Other resources about IIFEs:
+- [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
