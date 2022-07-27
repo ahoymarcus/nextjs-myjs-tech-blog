@@ -478,22 +478,78 @@ Module.someOtherMethod();
 The **module pattern** has some similitudes to the **factory pattern** since both of them utilizes functions to wrap some code to allow their management, where the factory pattern aim to define variables and functions to be passed to newer objects, the module pattern aim to operates scope for variables and functions.
 
 
-And pehaps one other distinction that may happen is the fact that the **module pattern** employ Immediately Involked Function Expressions (IIFE) for the task.
+And perhaps one other distinction that may happen is the fact that the **module pattern** employ Immediately Involked Function Expressions (IIFE) for the task.
 
 
+Also, according to the article [JavaScript Module Pattern Basics](https://coryrylan.com/blog/javascript-module-pattern-basics) from Cory Rylan, the module pattern is one of the most common design patterns used in JavaScript:
+
+1. For encapsulation
+2. For services
+3. For TDD, etc.
 
 
+Another important point brought by Cory Rylan is to use **'strict mode'** as good practice, to avoid `more dangerous parts in JavaScript`. And as a procedure the author set some steps into building the **module**:
+
+1. **Use IIFEs**: not only IIFEs provide a particular scope to be managed, but it also avoid polluting the **namespace** like function declarations does.
+2. **Use 'strict mode'**
+3. **Export public properties/functions**: with the use of **return** statment to expose the data from outside.
+4. **Make use of private properties whenever necessary**: since only that which is exposed at the return statement can be reached, the module can safely make use of all the necessary data.
+    4.1. Since JavaScript does not have **private** keyword like other languages, it is customary to use a sign of underscore to visualy prefix and points out about the private structures.
 
 
+```
+const myModule = (function() {
+    'use strict';
+        
+        const _privateProperty = 'Hello World!';
+        const publicProperty = 'I am a public property';
+        
+        function _privateMethod() {
+            console.log(_privateProperty);
+        }
+        
+        function publicMethod() {
+            _privateMethod();
+        }
+        
+    return {
+        publicMethod,
+        publicProperty
+    };
+})();
 
-- [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
-- [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
+myModule.publicMethod(); // 'Hello World!'
+console.log(myModule.publicProperty); // 'I am a public property'
+console.log(myModule._privateProperty); // undefined
+myModule._privateMethod(); // TypeError: myModule._privateMethod is not a function
+```
+
+`The benefit to the Revealing Module Pattern is that we can look at the bottom of our modules and quickly see what is publicly available for use. The Module Pattern is not a silver bullet for adding code re-usability to your JavaScript. Using the Module Pattern with Prototypal Inheritance or ES6 Classes can give you a wide range of design patterns with varying pros and cons.` [Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)]
 
 
+Below, another interesting example from the article [Module pattern in JavaScript](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm) from Tomek Buszewski:
+
+``` 
+const Formatter = (function() {
+    const log = (message) => console.log(`[${Date.now()}] Logger: [${message}]`);
+    
+    const makeUpperCase = (text) => {
+        return text.toUpperCase();
+    };
+    
+    return {
+        log,
+        makeUpperCase,
+    };
+})();
+
+console.log(`${Formatter.log('Hello')} ${Formatter.makeUpperCase('John')}`); // [1658881465387] Logger: [Hello] index.html:27:50 JOHN
+```
 
 
+But, Tomek Buszewski also points out some drawbacks from the module pattern:
 
-
+`This shows that everything publicly exposed can be changed from the outside. This is one of the biggest module pattern drawbacks.` [Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)]
 
 
 
@@ -504,6 +560,8 @@ And pehaps one other distinction that may happen is the fact that the **module p
 - [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
 - [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
 - [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
+- [Modular Javascript - LearnCode.academy](https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f)
+- `Addy Osmani. Learning JavaScript Design Patterns.`
 
 
 
@@ -1654,6 +1712,8 @@ For example, even in a simple game, where the developer has to check a dozen res
 
 
 ### Further Reading
+
+`Addy Osmani. Learning JavaScript Design Patterns.`
 
 [MDN plataform](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 
 
