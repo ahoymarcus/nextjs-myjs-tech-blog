@@ -561,17 +561,201 @@ But, Tomek Buszewski also points out some drawbacks from the module pattern:
 - [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
 - [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
 - [Modular Javascript - LearnCode.academy](https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f)
-- `Addy Osmani. Learning JavaScript Design Patterns.`
+- [Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
 
 
 
 #### Classes
 
-
-/* COMING SOON */
-
+Classes are not a natural feature from JavaScript object oriented programming, and it was introduced with the ES6 to introduce the known familiar syntax from traditional OOP languages. But, there is controversy about its use because this new class syntax.
 
 
+So, the criticism are over the fact that this syntax just lays over the basic prototype-based constructors that are natural from the JavaScript language, and can even be dangerous **because its obscure and mislead what's really going on with the objects underneath**.
+
+
+More speciffically, according to the article  [Class basic syntax - JavaScript.info](https://javascript.info/class), a class is a **template code (or extensible program) which serves the purpose of provide initial values for the state and also some implementation bevavior**, and just like the **construct** feature from JavaScript, the class aims to help in the creating of multiple objects of the same kind.
+
+
+And about the syntax itself, it's important to pay attention to the fact that **there is no commas separating the class method inside the class construct**:
+
+```
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+    
+    sayHi() {
+        console.log(this.name);
+    }
+}
+
+let user = new User('John');
+user.sayHi(); // 'John'
+
+// teste User type
+console.log(typeof User); // function
+console.log(User === User.prototype.constructor); // true
+console.log(User.prototype.sayHi) // presents the code of the sayHi method
+console.log(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
+
+// It can't be called without the new word
+User(); // TypeError: class constructors must be invoked with 'new'
+``` 
+
+The article [Class basic syntax - JavaScript.info](https://javascript.info/class) also describes what happens under the hood with this class syntax in JavaScript:
+
+1. The class declaration creates a functiono of the same name.
+2. The new function code is taken from the constructor method and from the class methods present.
+
+
+But, in opposition to what many authors claim, this article says that the class syntax has a little bit more than a mere **syntatic sugar** code appearence:
+
+```
+function User(name) {
+    this.name = name; // the function prototype already have a 'constructor' property by default
+}
+
+User.prototype.sayHi = function() {
+    console.log(this.name);
+};
+
+let user = new User('John');
+user.sayHi(); // 'John'
+``` 
+
+
+1. There is a special internal property **[[IsClassConstructor]]: true** which, for exemple, can prevent the class to be called without the **new**.
+2. The class function sets its class methods to non-enumerable, since while using a **for..in** method people usually don't want to see its class methods.
+3. Classes always **'use strict'** code by default.
+
+
+Another point where classes equal functions in JavaScript is with the possibility to have a class defined inside another expression and be passed around, there is, just like a named function expression. And with classes also the class name is only visible inside the class:
+
+```
+let User = class MyClass {
+    sayHi() {
+        console.log(MyClass);
+    }
+}
+
+new User().sayHi(); // works and shows MyClass definition
+
+console.log(MyClass); // ReferenceError: MyClass is not defined
+```
+
+
+And also like literal objects, classes may include getters/setters, computed properties, etc.
+
+```
+ class User {
+    constructor(name) {
+        // invoke the setter
+        this.name = name;
+    }
+    
+    get name() {
+        return this._name;
+    }
+    
+    set name(value) {
+        if (value.length < 4) {
+            console.log('Name is too short.');
+            
+            return;
+        }
+        
+        this._name = value;
+    }
+}
+
+let user = new User('John');
+console.log(user.name); // 'John'
+
+user = new User(''); // 'Name is too short.'
+```
+
+
+Also interesting the fact that just like object literal, classes accepts **Computed names**: **[ ... ]**
+
+```
+class User {
+    [ 'say' + 'Hi' ]() {
+        console.log('Hello');
+    }
+}
+
+new User().sayHi();
+``` 
+
+###### Class Fields
+
+This is a more recent addintion that in many browsers would demand to use polyfill. And this syntax novelty allows to direct add properties to the class, thus it is important to notice that, according to  [Class basic syntax - JavaScript.info](https://javascript.info/class), this fields are set on individual objects, not on the class prototype:
+
+```
+ class User {
+    name = 'John';
+    
+    sayHi() {
+        console.log(`Hello, ${this.name}!`);
+    }
+}
+
+new User().sayHi(); // 'Hello, John!'
+
+// test the User.prototype.name
+console.log(User.prototype.name); // undefined
+``` 
+
+
+###### Bound Methods in Classes
+
+Just like in functions, there is the necessity to bind the context of the class each time it is passed arond and the 'this' context change dynamically in JavaScript. This problem is often called **'losing this'**:
+
+```
+class Button {
+    constructor(value) {
+        this.value = value;
+    }
+    
+    click() {
+        console.log(this.value);
+    }
+}
+
+
+let button = new Button('Hello');
+
+setTimeout(button.click, 1000); // undefined
+```
+
+And just like with functions, there is 2 approaches to fixing it:
+1. **Pass a wrapper-function**: like a arrow function callback
+2. **Bind the method to object**: for example, in the constructor
+
+
+```
+class Button2 {
+    constructor(value) {
+        this.value = value;
+    }
+    
+    click = () => {
+        console.log(this.value);
+    }
+}
+
+let button2 = new Button2('Hello');
+
+setTimeout(button2.click, 1000); // Hello
+```
+
+
+
+
+- [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+
+- [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
 
 
 
@@ -581,6 +765,17 @@ But, Tomek Buszewski also points out some drawbacks from the module pattern:
 
 
 
+
+
+
+
+
+
+###### Other resources about classes online:
+- [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Class basic syntax - JavaScript.info](https://javascript.info/class)
+- [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
+- [JavaScript Classes - Stephen Mayeux](https://www.youtube.com/playlist?list=PLtwj5TTsiP7uTKfTQbcmb59mWXosLP_7S)
 
 
 
@@ -1713,7 +1908,7 @@ For example, even in a simple game, where the developer has to check a dozen res
 
 ### Further Reading
 
-`Addy Osmani. Learning JavaScript Design Patterns.`
+[Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
 
 [MDN plataform](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 
 

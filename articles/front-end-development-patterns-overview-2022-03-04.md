@@ -482,7 +482,7 @@ But, as always the author remembers that neither solotion should be used without
 ### Further Reading
 
 1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
-2. `Learning JavaScript Design Patterns.` (Addy Osmani)
+2. [Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
 
 ### References
 

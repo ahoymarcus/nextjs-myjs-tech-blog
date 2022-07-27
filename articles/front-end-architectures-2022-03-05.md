@@ -197,7 +197,7 @@ Interesting to notice, as Emmit Scott points, a SPA full load of the app only co
    
   
 1. `Gang of Four book Design Patterns: Elements of Reusable Object-Oriented Software` (Gamma, Helm, Johnson, Vlissides)   
-2. `Learning JavaScript Design Patterns.` (Addy Osmani)
+2. [Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
 
 [What are Single Page Applications and Why Do People Like Them so Much?](https://www.bloomreach.com/en/blog/2018/what-is-a-single-page-application)
 

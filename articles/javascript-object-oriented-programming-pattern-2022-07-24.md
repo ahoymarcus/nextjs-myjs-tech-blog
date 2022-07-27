@@ -1159,6 +1159,8 @@ murderRobotDog('sniffles').bark();
 
 ### Further Reading
 
+[Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
+
 [MDN plataform](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) 
 
 [The Modern JavaScript Tutorial - Javascript.info](https://javascript.info/object)
