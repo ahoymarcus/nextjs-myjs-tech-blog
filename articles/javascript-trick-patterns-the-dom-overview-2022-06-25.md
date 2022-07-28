@@ -55,38 +55,6 @@ description: 'This article brings an overview of some trick features related to 
 
 ### The DOM
 
-**COMING SOON**
-
-[JavaScript DOM Crash Course - Traversy Media](https://www.youtube.com/watch?v=0ik6X4DJKCc&list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
-
-[DOM Enlightenment - Cody Lindley](http://domenlightenment.com/)
-
-[Understanding the DOM (Document Object Model) - DigitalOcean.com](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #### DOM Functions and Helpers
@@ -1455,6 +1423,21 @@ One other feature to help with usability would be to give the user the chance to
     <!-- Dynamically change this text with JavaScript -->
 </span>
 ```
+
+
+
+### The DOM (general parts)
+
+**COMING SOON**
+
+[JavaScript DOM Crash Course - Traversy Media](https://www.youtube.com/watch?v=0ik6X4DJKCc&list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
+
+[DOM Enlightenment - Cody Lindley](http://domenlightenment.com/)
+
+[Understanding the DOM (Document Object Model) - DigitalOcean.com](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
+
+
+
 
 
 

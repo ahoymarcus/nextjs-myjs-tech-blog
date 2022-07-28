@@ -39,7 +39,7 @@ description: 'This article focuses specially at some trick features that are mor
     6.4. When Eval() Is Not Evil
 7. ##### Immediately Invoked Function Expressions - IIFE
 8. ##### 
-9. #####Test Driven Development
+9. ##### Test Driven Development
     9.1. JavaScript and TDD
 10. ##### Further Reading
 11. ##### References
@@ -926,13 +926,153 @@ And also the arguments **against it**:
 
 #### ES6 Modules
 
-
-
-/* COMING SOON */
-
+Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is 
 
 
 
+###### Brief History of JavaScript Developement in the Frontend
+
+Peter Jang wrote this article with a brief history of the development of the frontend tasks of delivering working sites to the Web. And, at the beginning the works around were plain and simple, since all that was need was:
+
+1. HTML
+2. CSS
+3. JavaScript
+
+And they were all assembled manually at the HTML file by linking the files wheter in the Header element, in the case of the CSS and sometimes the JavaScript also.
+
+
+But, as Peter Jang points out, this type of manual working brings a great deal of maintaining, since every file, library and scripts in general are bloating the HTML file and also demand the annoying task individually going after each of the scripts to check for new versions and do the related updates.
+
+
+So, mainly around 2010, started to appear a series of competing JavaScript package managers aiming to automate all this process of downloading and upgrading libraries from a central repository.
+
+
+At first, then, **Bower** became very popular, but eventually it was overtaken by **npm** (Node Package Manager) around 2015. Later came also **yarn** that also begun to gain traction, eventhough yarn still has the same engine from the npm packages under the hood, but with a alternative interface.
+
+
+Well, to start this new procedure of development, then, its import to have the Node.js runtime engine, which has by default the npm as its package manager:
+
+1. **npm init**: to start a new project in the filesystem.
+2. **Generate the package.json file**: which has the configuration for this new project and that also saves its related information.
+3. **Scripts/libraries can be installed as dependencies**: and they are managed by npm in a automatic created folder in the project root folder, called **node_modules**.
+4. **Link the scripts direct from the node_modules folder**:   
+    4.1. And it could be something like: `<script src="node_modules/moment/min/moment.min.js"></script>`
+5. **Have the script/library loaded in the HTML**: so everything that came along is set globaly in a variable.   
+    5.1. A problem here is the fact that regardles of whether or not they are needed, they are all currently present and bloating the application and its scope.
+
+
+- **Note**: another very interesting point of this system is the fact that keeping all the configuration and information of the current project in package.json, transfering it can be pretty simple and very light, where at the other end of the process there is only the need to use the npm engine to extract all the informations and to configure a new project set, including the whole section of the **node_modules** which can became seriouly big at times.
+
+
+At this point, the process has already been improved quite a lot, since now all the scripts/libraries dependencies are centralized in just one place and can be thoroughfully managed and updated automatically by the npm engine.
+
+
+But there were still some complexities remaining, like the necessitty to manually go through the node_module folder, retrive the scripts/library and setting everything in the HTML base file.
+
+
+Another restriction related to JavaScript and the browsers in general, was the fact that initially they were not intended to deal with the filesystem (for security reasons), and they also had to keep everything that was brought along shared in the global scope of the application:
+
+`Most programming languages provide a way to import code from one file into another. JavaScript wasn’t originally designed with this feature, because JavaScript was designed to only run in the browser, with no access to the file system of the client’s computer (for security reasons). So for the longest time, organizing JavaScript code in multiple files required you to load each file with variables shared globally.` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+
+
+So, in **2009** came about a project named CommonJS that had as one of its main goals to specify an ecosystem for JavaScript outside of the browser, and then allow it to deal with importation and exportation of code across the JavaScript files and resorting to speciffic scopes, called **modules**, instead of bloating the global scope of the HTML file.
+
+
+Another interesting fact is that from the same group CommonJS came the well known implementation of the Node.js, the runtime engine for JavaScript outside of the browsers environment.
+
+
+So, now, returning to the previous task of preparing the frontend developement to receice all the necessary scripts and libraries, instead of dealing with the JS part directly in the HTML file, now the works can be done throgh the JS ecosystem itself, where they are linked across the JS files themselves using the **require** feature:
+
+
+**index.js**
+```
+var moment = requie('moment');
+
+console.log('Hello from JavaScript!');
+console.log(moment().startOf('day').fromNow());
+``` 
+
+
+Again, just like **npm** do its works managing the packages modules, the Node.js engine also has its capacity to deal with the computer's filesystem in his own and manage as well all the integration of the JS modules among themselves.
+
+
+In that way, as Peter Jang points out, there is no need for a complex requirement system pointing each requisition to its place in the JS ecosystem, including the node_modules. So, instead of this complex require shown below, the developer only needed to make the requisition through the variable name just like it was done in the example above:
+
+```
+var moment = require('./node_modules/moment/min/moment.min.js');
+```
+
+
+Well, but there was a problem yet! That this work around a JavaScript ecosystem could not be done in the frontend with the browser, because the browser itself was incapable of making the dynamic requisitions going through the new JS  ecosystem with all its speciffic modules:
+
+
+`This is all great for node.js, but if you tried to use the above code in the browser, you’d get an error saying require is not defined. The browser doesn’t have access to the file system, which means loading modules in this way is very tricky — loading files has to be done dynamically, either synchronously (which slows down execution) or asynchronously (which can have timing issues).` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+
+
+To work around this this task came then the **module blunder**, which is a tool that gets around the problem with a build step (which has access to the file system) to create a final output that is browser compatible. 
+
+
+So, what is happening here is the task of the module blunder going through all the existing modules and changing the requirements made and replacing with the actual code/script that is required, creating one final single **bundled JavaScript file** to be properly used by the browser.
+
+
+Initially, the most popular bundler was **Browserify**, which was released in 2011 and used a Node.js style of require statements on the frontend, but aroung 2015 another tool called **Webpack** eventually became more widely used, specially because of its large usage by the popular frontend library React.js.
+
+
+And in terms of the use of Webpack, there is the need to install it, but this time not as a proper dependency, because this tool is not part of the final project, bu to have it installed as a development enviroment dependency:
+
+```
+$ npm install webpack webpack-cli --save-dev
+``` 
+
+
+And, so, at the statement above its installed both Webpack and its Cli for console managing purposes, also with the flag to copy the configuration to the development dependencies of the package.json file.
+
+
+To use the tool, it could be either brought directly from the node_modules, or through a script present in the package.json. Below, the first way:
+
+```
+$ ./node_module/.bin/webpack index.js --mode=development
+``` 
+
+So, in the statment above webpack is retrived from where it was installed and it goes through the JS files, starting in the index.js. At the end it will produce a single output file to be use, which by default is **dist/main.js**.
+
+The flag for mode development tells webpack to keep the final bundle human redable, differently from the **--mode=production** flag for the final product which comes minified for performance reasons.
+
+
+At the end, its this single file that is linked at the HTML file using a general name, which allows for the bundler be rerun each time it's necessary without any need to change its link in the HTML file:
+
+```
+<script src="./dist/main.js"></script>
+```
+
+
+But, to simplify the work around Webpack, specially while using its more advanced features, there is the possibility to use the configuration file, where the whole process of the Webpack call is descriminated, and the developer only needs to call for the tool itself:
+
+```
+$ ./node_module/.bin/webpack
+``` 
+
+While the configuration file should be: **webpack.config.js**
+
+```
+module.exports = {
+    mode: 'developement',
+    entry: './index.js',
+    output: {
+        filename: 'main.js',
+        publicPath: 'dist'
+    }
+};
+```
+
+
+`Overall, this may not seem like much, but there are some huge advantages to this workflow. We are no longer loading external scripts via global variables. Any new JavaScript libraries will be added using require statements in the JavaScript, as opposed to adding new <script> tags in the HTML. Having a single JavaScript bundle file is often better for performance. And now that we added a build step, there are some other powerful features we can add to our development workflow!` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+
+
+
+
+
+Transpiling code for new language features (babel)
 
 
 
@@ -948,6 +1088,23 @@ And also the arguments **against it**:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### Other resources about classes online:
+- [Modern JavaScript Explained For Dinosaurs - Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
 
 
@@ -2097,6 +2254,10 @@ For example, even in a simple game, where the developer has to check a dozen res
 [Prototype inheritance - Javascript.info](https://javascript.info/prototype-inheritance)
 
 [Gentle Explanation of "this" in JavaScript - Dimitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
+
+- [Modern JavaScript Explained For Dinosaurs - Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+
+
 []()
 
 
