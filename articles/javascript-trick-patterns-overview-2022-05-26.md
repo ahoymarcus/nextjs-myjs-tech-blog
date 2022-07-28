@@ -623,7 +623,7 @@ let user = new User('John');
 user.sayHi(); // 'John'
 ``` 
 
-
+[Class basic syntax - JavaScript.info](https://javascript.info/class)
 1. There is a special internal property **[[IsClassConstructor]]: true** which, for exemple, can prevent the class to be called without the **new**.
 2. The class function sets its class methods to non-enumerable, since while using a **for..in** method people usually don't want to see its class methods.
 3. Classes always **'use strict'** code by default.
@@ -689,7 +689,7 @@ new User().sayHi();
 
 ###### Class Fields
 
-This is a more recent addintion that in many browsers would demand to use polyfill. And this syntax novelty allows to direct add properties to the class, thus it is important to notice that, according to  [Class basic syntax - JavaScript.info](https://javascript.info/class), this fields are set on individual objects, not on the class prototype:
+This is a more recent addintion that in many browsers would demand to use polyfill. And this syntax novelty allows to direct add properties to the class, thus it is important to notice that, according to [Class basic syntax - JavaScript.info](https://javascript.info/class), this fields are set on individual objects, not on the class prototype:
 
 ```
  class User {
@@ -750,24 +750,169 @@ setTimeout(button2.click, 1000); // Hello
 ```
 
 
+###### Examining JavaScript Classes a Little Closer
+
+So, recapitulating all that was said, as the [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) article says:
+
+1. Classes are template codes for objects.
+2. It's built on prototypes.
+3. As a kind of object, classes are `special functions` ([MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes))
+4. Just like function they have 2 forms of definitions:   
+    4.1. Class declarations   
+    4.2. Class expressions: both named and unnamed.   
+    4.3. In terms of named classes, it is important to see that its name is local to the class's body, but it can be accessed via the **name** property: **console.log(MyClass.name);**
 
 
-- [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+On the other hand, there are speciffic differences in classes when compared with general functions:
+    
+1. That eventhough the class is **hoisted** its values are not.   
+    1.1. Because of this trying to instanciate a new object will result in a **ReferenceError**.
+2. The class body is always execute in **'strict mode'**.
+3. Also, as was seem above, classes have the property **[[IsClassConstructor]]: true**:   
+    3.1. And they cannot be called without the **new** word ([Class basic syntax - JavaScript.info](https://javascript.info/class)).
 
 
-- [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
+The JavaScript classes also have a **constructor**, a special method, and there can be only one to avoid a **SyntaxError**. Also, another feature from classes are the **static initialization blocks**:
+
+`Class static initialization blocks allow flexible initialization of class static properties including the evaluation of statements during initialization, and granting access to private scope. Multiple static blocks can be declared, and these can be interleaved with the declaration of static properties and methods (all static items are evaluated in declaration order).` [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+
+The MDN Docs also explains that the **static methods/properties** belong to the class and cannot be through a class instance:
+
+1. The are called without instanciating their classes and cannot.
+2. The static methods are often used to create utility functions for an applicaton.
+3. The static properties are useful for caches, fixed-configuration, or any other data that doesn't need to be replicated across instances.
+
+```
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    
+    static displayName = 'Point';
+    
+    static distance(a, b) {
+        const dx = a.x - b.x;
+        const dy = a.y - b.y;
+        
+        return Math.hypot(dx, dy);
+    }
+}
+
+const p1 = new Point(5,5);
+const p2 = new Point(10, 10);
+p1.displayName; // undefined
+p1.distance; // undefined
+p2.displayName; // undefined
+p2.distance; // undefined
+
+console.log(Point.displayName); // 'Point'
+console.log(Point.distance(p1, p2)); // 7.0710678118654755
+``` 
+
+
+Another specific feature from classes is the syntax of **field declarations** which have already been mentioned, which can also be declared as private with the use of a **hastag**:
+
+```
+class Rectangle {
+    height = 0;
+    width;
+    
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+```
+
+- **Note**: though private fields can only be declared in the body of the class and for that reason fields cannot be declared later through assigning to classes.
+
+
+The class syntax also allows the use of **extends** word to create sub-classes or child classes. And there are 3 important points to be made here:
+
+1. Subclasses can use **extends** not only from class themselves, but they can also use the word to extend a traditional function-based "class".  
+    1.1. Atention: but the classes cannot extend from regular (non-constructible) objects: for this task there has be used the method Object.setPropertyOf()
+2. There's the necessity to use the **super()** method to call for the super class to initialize properties defined there.
+3. It's also possible to use a **super** keyword for a child makes a direct call from its method for the parents corresponding method.
+
+```
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+
+class Cat extends Animal {
+    constructor(name) {
+        super(name);
+    }
+    
+    speak() {
+        console.log(`${this.name} makes a noise.`);
+    }
+}
+
+class Lion extends Cat {
+    speak() {
+        super.speak(); // making a call to parents corresponding method
+        console.log(`${this.name} roars.`);
+    }
+}
+
+const lion = new Lion('Fuzzy');
+lion.speak();
+
+// Outpu:
+// Fuzzy makes a noise
+// Fuzzy roars
+```
+
+
+Finally, there is the fact that a subclass can only have one superclass, **so multiple inheritance from tooling classes, for exemple, is not possible**, and the needed functionalities, them, have to be all provided by the superclass directly.
+
+
+` Abstract subclasses or mix-ins are templates for classes. An ECMAScript class can only have a single superclass, so multiple inheritance from tooling classes, for example, is not possible. The functionality must be provided by the superclass. A function with a superclass as input and a subclass extending that superclass as output can be used to implement mix-ins in ECMAScript:`
+
+
+```
+const calculatorMixin = (Base) => class extends Base {
+  calc() { }
+};
+
+const randomizerMixin = (Base) => class extends Base {
+  randomize() { }
+};
+
+class Foo { }
+class Bar extends calculatorMixin(randomizerMixin(Foo)) { }
+```
+
+- **Mix-ins for classes example above from the MDN Docs**: [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 
 
+###### Discussion: Is "Class" in ES6 The New "Bad" Part for JavaScript?
+
+This is a discussion taken from the article [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65), in which is examined whether the use of classes in JavaScript is mere a "syntatic sugar" and perhaps even dangerous for the code maintanability?
 
 
+So, the arguments assembled by the author **in favor** of the JavaScript class system:
+
+1. It has a familiar look to the traditional syntax present in traditional OO languages.
+2. It does not restrain the developer to use or to migle it with the core prototypical system in any capacity.
+
+`Also, most JS folks just want to do basic OO stuff and move on. But the current syntax throw them off.` [Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
 
 
+And also the arguments **against it**:
+
+1. The prototypical system is more flexible, since objects can spring without the need of a previous restrictive blueprint.
+2. Also, the prototypical is more inlined with the principals of OO to "Favor Composition over Inheritance", while class based syntax goes in the opposite direction, since "Class" notation favors "Inheritance over Composition".
 
 
-
-
-
+`Bad For Functional Programming: In JS functions are first-class citizens. Functional programming is all about using functions to their fullest extent. There is a notion called: “Favor Composition over Inheritance” and here we are going in the opposite direction because “Class” notation favors “Inheritance over Composition”.` [Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
 
 
 
@@ -776,9 +921,6 @@ setTimeout(button2.click, 1000); // Hello
 - [Class basic syntax - JavaScript.info](https://javascript.info/class)
 - [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
 - [JavaScript Classes - Stephen Mayeux](https://www.youtube.com/playlist?list=PLtwj5TTsiP7uTKfTQbcmb59mWXosLP_7S)
-
-
-
 
 
 
