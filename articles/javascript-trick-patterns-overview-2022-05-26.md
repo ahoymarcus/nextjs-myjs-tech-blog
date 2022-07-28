@@ -1055,6 +1055,7 @@ $ ./node_module/.bin/webpack
 While the configuration file should be: **webpack.config.js**
 
 ```
+// webpack.config.js
 module.exports = {
     mode: 'developement',
     entry: './index.js',
@@ -1069,21 +1070,113 @@ module.exports = {
 `Overall, this may not seem like much, but there are some huge advantages to this workflow. We are no longer loading external scripts via global variables. Any new JavaScript libraries will be added using require statements in the JavaScript, as opposed to adding new <script> tags in the HTML. Having a single JavaScript bundle file is often better for performance. And now that we added a build step, there are some other powerful features we can add to our development workflow!` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
 
+Next, another development in the the Frontend workflow there is something related with the task of **transpiling code**, meaning converting the code written in one language into another similar language.
 
 
-
-Transpiling code for new language features (babel)
-
+For example, CSS has many auxiliare languages like **Sass**, **Less**, and **Stylus**, while for JavaScript some important examples would be **Coffescript**, for around 2010, and nowdays **Babel** or **Typescript**.
 
 
+So, keeping up with the idea of the project already initiated, a good example on how one of these languages could be benefial to a JavaScript task where the **babel** transpiler is capable of reaching all the code produced and transforming all the JavaScript into a ES5 version, which is much more friendly for browsers, specially older ones:
+
+```
+$ npm install @babel/core @babel/preset-env babel-loader --save-dev
+```
+
+Here, again, different packages are being installed as development dependencies, where the besides the core features of babel there the version chosen for transpiling and also a loader that enable babel working with webpack.
 
 
+As configuration, it could be something like this:
+
+``` 
+// webpack.config.js
+modelu.exports = {
+    mode: 'development',
+    entry: './index.js',
+    output: {
+        filename: 'main.js',
+        publicPath: 'dist'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }
+        ]
+    }
+};
 
 
+So, there the configuration telling the webpack to search for JavaScript files, excluding the node_modules folder, and to apply the preset using the babel-loader.
+
+After adding this next step to the frontend project, then, its necessary to call webpack again as to bring about all the new transformations into the new resulting JavaScript arquive.
+
+```
+$ ./node_modules/.bin/webpack
+```
 
 
+Finally, one last important development to polish this frontend workflow, that already have many steps, would be to also look for convinient tools to help to make all the workload flow better.
 
 
+For example, in the frontend scenery, at one time a such like feature was **Grunt** a **task runner** that would help to run all these different chores like: minifying code, optimizing images, running tests, etc.
+
+
+Nowdays, according to Perter Jang one of the most popular choice is to use the **npm** itself with its scripting abilities, and that can be configured direct into the **package.json**:
+
+``` 
+// package.json
+{
+    "name": "modern-javascript-example",
+    "version": ...,
+    ...,
+    "scripts": {
+        "build": "webpack --progress --mode=production",
+        "watch": "webpack --progress --watch",
+        "serve": "webpack-dev-server --open"
+    },
+    ...,
+    ...
+}
+``` 
+
+Above there are 3 scripts set, where one for the production build, another that calls for a watcher feature which automatically rerun webpack each time that the JavaScript files defined in the webpack configuration are changed. And they are both flaged with the progress option to log the percentage for the running task.
+
+
+So, one is run in the console:
+
+``` 
+$ npm run build
+```
+
+And the other, also from console:
+
+```
+$ npm run watch
+```
+
+And the third script calls for a simple web server for live reloading of the HTML file at the screen; but this last script task still needs to be installed as a development dependency in packge.json:
+
+```
+$ npm install webpack-dev-server --save-dev
+```
+
+
+`Note that the scripts in package.json can run webpack without having to specify the full path ./node_modules/.bin/webpack, since node.js knows the location of each npm module path. This is pretty sweet! We can make things even sweeter by installing webpack-dev-server, a separate tool which provides a simple web server with live reloading. To install it as a development dependency, enter the command [...] This will automatically open the index.html website in your browser with an address of localhost:8080 (by default). Any time you change your JavaScript in index.js, webpack-dev-server will rebuild its own bundled JavaScript and refresh the browser automatically. This is a surprisingly useful time saver, as it allows you to keep your focus on the code instead of having to continually switch contexts between the code and the browser to see new changes.` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
+
+
+So, as a summary:
+
+1. The addition of a **package manager** to automate the management of package dependencies.
+2. The addition of a **module blunder** to manage a ecosystem of scripts files next to the filesystem and bring about one resulting file to be linked in the HTML file.
+3. Also, to add a **transpiler** for dealing many kind of tasks, but mainly to convert all the JavaScript code into a more friendly ES5 version that can more easily be coped by all browsers.
+4. Then, finally, a task runner that can automate different parts of the building process.
 
 
 
