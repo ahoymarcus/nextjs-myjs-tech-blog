@@ -1,48 +1,43 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'JavaScript Trick Patterns - Overview'
+title: 'JavaScript Trick Patterns - Part II'
 date: '2022-05-26'
 subject: 'web-dev-articles'
 description: 'This article focuses specially at some trick features that are more commonly found in the JavaScript language like prototype, hoisting, etc. And this article also focus on more general tasks, but here seem from the perspective of the JavaScript language and its core tasks.'
 ---
 
-# JavaScript Trick Patterns - Overview
+# JavaScript Trick Patterns - Part II
 
 1. ##### Introduction
-2. ##### Organizing the JavaScript Code
-    2.1. Plain Old JavaScript Objects and Object Constructor   
-    2.2. Factory Functions and the Module Pattern    
-    2.3. Classes    
-    2.4. ES6 Modules
-3. ##### The 'This' Word
-	3.1. The Global Context   
-	3.2. The Function Scope   
-	3.3. Class Context    
-	3.4. As an Object Method    
-	3.5. This on the Objects Prototype Chain or at a Getter or Setter    
-	3.6. As a Constructor    
-	3.7. The call() and the apply() Methods (Indirect Invocation)
-	3.8. The bind() Method
-4. ##### JavaScript Function Parameters
-    4.1. Undefined Missing Arguments   
-    4.2. The Arguments Object   
-    4.3. Arguments are Passed by Value   
-    4.4. Objects are Passed by Reference
-5. ##### Scope - Closure & Hoisting
-    5.1. Scope and Closure   
-    5.2. Private and Public Scope in JavaScript    
-    5.3. Hoilsting
+2. ##### The 'This' Word
+	2.1. The Global Context   
+	2.2. The Function Scope   
+	2.3. Class Context    
+	2.4. As an Object Method    
+	2.5. This on the Objects Prototype Chain or at a Getter or Setter    
+	2.6. As a Constructor    
+	2.7. The call() and the apply() Methods (Indirect Invocation)
+	2.8. The bind() Method
+3. ##### JavaScript Function Parameters
+    3.1. Undefined Missing Arguments   
+    3.2. The Arguments Object   
+    3.3. Arguments are Passed by Value   
+    3.4. Objects are Passed by Reference
+4. ##### Scope - Closure & Hoisting
+    4.1. Scope and Closure   
+    4.2. Private and Public Scope in JavaScript    
+    4.3. Hoilsting
+5. ##### Immediately Invoked Function Expressions - IIFE
 6. ##### The Eval() Function
     6.1. The Risks of the Eval() Function    
     6.2. Never Use Eval()!   
     6.3. Are eval() and new Function() the same thing?   
     6.4. When Eval() Is Not Evil
-7. ##### Immediately Invoked Function Expressions - IIFE
-8. ##### 
-9. ##### Test Driven Development
-    9.1. JavaScript and TDD
-10. ##### Further Reading
-11. ##### References
+7. ##### 
+8. ##### Test Driven Development
+    8.1. JavaScript and TDD
+9. ##### Further Reading
+10. ##### References
 
 ### Introduction
  
@@ -61,876 +56,17 @@ description: 'This article focuses specially at some trick features that are mor
 
 
 ###### Other articles about JavaScript and of Patterns:
-- `JavaScript Trick Patterns for the DOM - Overview`[^9]   
-- `Javascript Object Oriented Programming (OOP) Pattern` [^10]   
-- `Front-end Development Patterns` [^11]   
-- `Front-end Architectures` [^12]   
-- `Software Architecture Patterns - Overview` [^13]   
-- `Software Architecture and Design` [^14]
+- `JavaScript Trick Patterns - Part I` [^ 9]
+- `JavaScript Trick Patterns for the DOM - Overview`[^10]   
+- `Javascript Object Oriented Programming (OOP) Pattern` [^11]   
+- `Front-end Development Patterns` [^12]   
+- `Front-end Architectures` [^13]   
+- `Software Architecture Patterns - Overview` [^14]   
+- `Software Architecture and Design` [^15]
 
 
 
-
-### Organizing the JavaScript Code
-
-As it is thought in The Odin Project studies, working around the JavaScript file system organization can be a serious and difficult matter, not as much because JavaScript may detach itself as a more complex language, but because JavaScript let all of these decision in the hands of the developers, while many other languages already have a predefined file structure to be followed by.
-
-
-Said that, The Odin plataform presents 4 patterns to be studied in their series:
-1. **Plain Old JavaScript Objects and Objects Constructors**
-2. **Factory Functions and the Module Pattern**
-3. **Classes**
-4. **ES6 Modules**
-
-
-#### Plain Old JavaScript Objects and Object Constructor
-
-###### Basic JavaScript Objects Overview
-
-At this section it will only be talked about the basics about Object Oriented Programming with JavaScript, but there is a whole section dedicated for this subject later on this article.
-
-
-So, to construct objects in JavaScript, the most common way is to use Object Literal:
-
-```
-const myObject = {
-    myProperty: 'Value!',
-    otherProperty: 77,
-    "obnoxious property": function() {
-        // do some stuff!!!
-    }
-};
-```
-
-And, on the other side, there are 2 basic structures to acess the object and its properties:
-1. **Dot notation**: it's the simpler and the cleaner one, but it is also more restricted in its use.
-2. **Bracket notation**: it's a more cumbersome syntax to use, but it is the only way to access the objet's properties in some scenarios:   
-    2.1. To be used refering to variables.   
-    2.2. To be used with a string parameter.  
-    2.3. Object properties defined at runtime.
-
-
-```
-const variable = "myProperty";
-
-
-// dot notation
-myObject.myProperty // returns 'Value!'
-myObject.variable // returns undefined, because it looks for a property named variable!
-
-
-// bracket notation
-myObject['obnoxious property'] // returns '[Function]'
-myObject[variable] // functions ok, and it works the same as myObject['myProperty']
-
-
-// work with dynamic properties
-const person = {
-    name: ['Bob', 'Smith'],
-    age: 32,
-    bio: function() {
-        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
-    },
-    introduceSelf: function() {
-        console.log(`Hi! I'm ${this.name[0]}.`);
-    }
-};
-
-const input = prompt(`Retrieve data from the app: insert 'name' or 'date' in the space provided bellow`);
-console.log(person[input])
-```
-
-
-Another very interesting possibility with the **bracket notation** is to allow the users to define not only the value of the object's property, but also the property name itself:
-
-```
-person = {};
-
-const myDataName = 'height';
-const myDataValue = '1.75m'';
-
-person[myDataName] = myDataValue;
-```
-
-
-###### Using Objects as a Pattern for Organizing the JavaScript Code
-
-With objects it is possible to group related variabels, what not only helps to better organize the code, but also allow flexibility, since the objects can be accessed using its own notation, and specially for the case of bracket notation where the flexibility at runtime is even greater.
-
-
-Below there is 2 different aproaches to structure data for a game of **tic tac toe**:
-
-```
-// First structure
-const playerOneName = 'tim';
-const playerTwoName = 'jenn';
-const playerOneMarker = 'X';
-const playerTwoMarker = 'O';
-
-// Second structure
-const playerOne = {
-    name: 'tim',
-    marker: 'X',
-};
-
-const playerTwo = {
-    name: 'jenn',
-    marker: 'O',
-};
-``` 
-
-And the difference starts to become even more visible as the code grows and the number of data structures increase. Also, using objects, have the flexibility to group the same properties, what allows then to manage its accesses dynamically.
-
-So, again, below this code doesn't even know which of the 2 objects can be called as winner at the end of a game:
-
-```
-function gameOver(winningPlayer) {
-    console.log("Congratulations!");
-    console.log(winningPlayer.name + ' is the winner!");"
-}
-```
-
-
-But objects go even beyond, because using special functions called **constructor**, it is possible to duplicate or multiply objects with a very simple and clean syntax. And there is even another important enhancement from this automated task, that is avoiding coding errors. 
-
-
-So, here instead of creating two separated objects for those players, they can be multiplyed, and passing arguments during the construction of each player with the **new** word, each of them will hold its own data accordingly:
-
-```
-function Player(name, marker) {
-    this.name = name;
-    this.marker = marker;
-    
-    this.sayName = function() {
-        console.log(name);
-    }
-}
-
-
-// construct each player
-const player1 = new Player('tim', 'X');
-const player2 = new Player('jenn', 'O');
-
-player1.sayName(): // 'tim'
-player2.sayName(); // 'jenn'
-```
-
-
-- **Enhancing the Performance Even More with the Prototype**:
-
-The **prototype** as it is called, is another object that is inherited by the original object to manage concept of **Inheritance** in JavaScript:
-
-`Stated simply, the prototype is another object that the original object inherits from, which is to say, the original object has access to all of its prototype’s methods and properties.` _The Odin Project_
-
-
-And this concept has a important role in the management of JavaScript objects, and therefore can help the developer to boost performance. So, in that particular example before, the constructor of the object passed also a method to the new instances of players.
-
-The problem with that is the fact that, contrary to the personal data that each player object has to distinguish itself from all the other players object, the method it is not its personal data, but still each copy of the object created will have its own method.
-
-
-A better pattern then, it would be to give the method not to the object, but to the **prototype**, resulting that only one function of **sayName()** would be created and share by all the players that may be created:
-
-```
-Player.prototype.sayName = function() {
-    console.log(this.name);
-}
-```
-
-
-###### Other resources about the JavaScript Prototype and the This Word:
-
-1. [JavaScript Prototype in Plain Language - JavaScript Is Sexy](https://web.archive.org/web/20200513181548/https://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
-2. [Prototype inheritance - JavaScript.info](https://javascript.info/prototype-inheritance)
-3. [Gentle Explanation of "this" in JavaScript - Dmitripavlutin.com](https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/)
-
-
-
-#### Factory Functions and the Module Pattern 
-
-
-###### The Factory Function Pattern
-
-While the Constructor Pattern is a widely used and vality pattern for organizing the code, yet they are not the best one to use, since its use can leade to some general problems and more easily introduce bugs into the code. So, eventhough its not wrong their use, they are not the only way or even the best way available to deal with this matters.
-
-
-So, in that regard, one of the biggest issues related with the constructors is that, **though they look just like any other regular function, they do not behave like the regular functions at all**. Also, if they are accidentely used without the **new** word, they will not work as intended to, and will produce errors messages difficult to be traced.
-
-
-As Tarek Sherif says in his article, ['Constructors Are Bad For JavaScript'](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/), diffrently from many of the traditional languages, JavaScript in its core it evolved from a **simple, flexible object model that allows code reuse through direct object-to-object prototypal inheritance, and a powerful execution modl based on functions that are simply executable objects**.
-
-
-On the other hand, the author says that all these different concepts, perhaps even obscure ones, many times lead the JavaScript development to mimic other traditional programming concepts, that many times may not in line with JavaScript basic and core concepts.
-
-`It is well-known that JavaScript originally wanted to look like other popular languages built on fundamentally different philosophies, and this trend in its history has lead to constructs in the language that actively work against its natural flow.`  [Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
-
-
-To show the extent of this evolution of JavaScript, the author says that before ECMAScript 5, there were no direct way to defined create an object whose prototype was derived from other object. 
-
-So, in this exemple from the article, it shows how it was done:
-
-```
-const proto = { protoprop: 'protoprop' };
-
-function C() {} // Dummy throway constructor
-
-C.prototype = proto;
-const newObj = new C();
-
-proto.isPrototypeOf(newObj); // true
-``` 
-
-And below, how it can be done now with **Object.create()**:
-
-```
-const proto = { protoprop: 'protoprop' };
-
-const newObj = Object.create(proto);
-
-proto.isPrototypeOf(newObj); // true
-```
-
-
-###### The Constructor Issue Can Go Even Further
-
-But, continuing with in article, Tarek Sherif says that the dangers of using constructors could go beyond the dangers of calling a constructor function without the **new** word:
-
-```
-function C() {
-    this.instance_member = 'whoops!';
-}
-
-const c = C(); // Forgot 'new'
-
-c; // undefined
-
-// Property added to the Global Namespace
-window.instance_member; // 'whoops!'
-``` 
-
-And he also says that even using a safeguard, like the one proposed by Stoyan Stepanov in Javascript Patterns, still let the code and its execution **unclear**:
-
-```
-function C() {
-    if (! (this instanceof C)) {
-        return new C();
-    }
-    
-    this.instance_member = 'This is ok.';
-}
-
-const c = C();
-c; // { instance_member: 'This is ok.' };
-
-// Here, no global namespace pollution
-window.instance_member; // undefined
-``` 
-
-And here Tarek Sherif shows the proof of how the use of the **constructor patter** has the code execution in peril:
-
-```
-function C() {}
-
-const c = new C();
-
-c instanceof C; // true
-c.constructor === C; // true
-
-// But, changing the prototype property
-C.prototype = { prototype_prop: 'proto' };
-
-c.constructor === C; // true
-c instanceof C; // false
-```
-
-Above, in Tarek Sherif example, it is possible to see how the execution of the Javascript engine was fractured because of the use of this 2 way system of operation with these 2 properties:
-
-1. **prototype**
-2. **constructor**
-
-```
-// Create two constructors with the 
-// same prototype.
-const proto = { protoprop: 'protoprop' };
-
-function C() { this.cprop = 'cprop' };
-C.prototype = proto;
-
-function F() { this.fprop = 'fprop' };
-F.prototype = proto;
-
-const f = new F();
-
-// It has prototype properties
-console.log(f.protoprop); // 'protoprop'
-
-// It has F properties
-console.log(f.fprop); // 'fprop'
-
-// It does not have C properties (AS EXPECTED)
-console.log(f.cprop); // undefined
-
-// BUT IT BECAME A INSTANCE OF 'C' AS WELL?!!!!!!!!!!!
-console.log(f instanceof C); // true
-
-const c = new C();
-console.log(c instanceof F); // true
-``` 
-
-This is how Tarek Sherif explains this JavaScript phenomeon:
-
-`but essentially, the constructor property of an object is set by the engine exactly once. When a function is defined, its prototype property is initialized to an object with a constructor property pointing back to the function itself. If you set the function’s prototype property to some other object, without explicitly setting that new object’s constructor property, all objects created by the function will have their constructor properties set to Object (which is the default).`
-
-
-###### Factory Functions: Improving the Pattern of Reuse by Constructors
-
-According to Tarek Sherif there are 2 important advantages in the use of the **factory functions pattern**:
-
-1. **There is no risk of using it in the "wrong" way**, since it does not require the **new** word of a constructor.   
-    1.1. Nor is it a constructor itself that forces some proper invocation, **which may hide errors!**.   
-    1.2. **The factory function is meant to be used in exactly one way: as a regular function**.
-2. **There is no pretense od creating a "class" of objects by captalizing the name.  
-    2.1. The **prototype isn't used, so there will be no instanceof link between the function and the objects it creates**: its simply a function that happens to create objects.
-
-
-```
-function myObject(data) {
-    const obj = Object.create(myObject.proto);
-    obj.data = data;
-    
-    return obj;
-}
-
-myObject.proto = {
-    getData: function() {
-        return this.data;
-    }
-};
-
-const o = myObject('data 1');
-
-console.log(o); // { data:'data 1' }
-``` 
-
-Tarek Sherif goes even further saying that following this pattern it could be constructed a generic factory function to do away with the **new** word all together, though he sees that the code implementation itself is not the cleares:
-
-```
-function genericFactory(Crt) {
-    const obj = Object.create(Crt.prototype);
-    
-    const args = Array.prototype.slice.call(arguments, 1);
-    
-    Ctr.applay(obj, args);
-    
-    return obj;
-}
-
-const o = genericFactory(MyObject, 'data);
-``` 
-
-
-`Whether this makes the code clearer or not might be debatable, but one definite advantage is that this construct allows us to invoke constructors dynamically, something not possible with invocations that use new. This example also shows more generally that constructor invocation can be done away with quite easily with the tools now afforded us in ECMAScript 5.` [Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
-
-
-Finally, Tarek Sherif concludes in the way of keeping inline with Javascript own core and avoid all the contrivances of foreign languages, like class-based ones:
-
-1. **'Constructors run contrary to the prototypal, functional, object-based natures form which JavaScript draws its strength'**
-2. Constructors are at best **mislead**, and at worst, they actively interfere with the ability to engage with the core structure of the language.
-
-
-The author Joost Diepenmaat, in Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html), also brings some other explanation for this **constructor pattern** mismatch in Javascript, when he says that:
-
-1. **In Class-based object system**: typically classes inherit from each other, and objects are only instances of the classes themselves.   
-    1.1. The class possess **methods** and **properties** which are shsred between all instances of the class.   
-    1.2. Each object instance has its own **properties** (and also methods, in some programming languages) that should not be shared.
-2. **JavaScript constructors**: it does nothing like what is seem in class-based languages, because:   
-    2.1. Constructors have their own **{Prototype}** completely separated from the **{Prototype}** chain they initialize!
-
-
-
-In this next example, it was used both **factory** and **module**  patterns to create instances of counters which have a private auxiliare property and a public method:
-
-```
-// define a module
-const  Module = (function() {
-    const privateMethod = function() {
-        return "I'm privateMethod!";
-    };
-    
-    return {
-        myMethod: function() {
-            console.log(`myMethod has been called and it used a private method to bring this -->: ${privateMethod()}.`);
-        },
-        someOtherMethod: function() {
-            console.log('someOtherMethod has been called.');
-        }
-    };
-})();
-
-
-// call module + methods
-Module.myMethod();
-Module.someOtherMethod();
-``` 
-
-
-###### The Module Pattern 
-
-The **module pattern** has some similitudes to the **factory pattern** since both of them utilizes functions to wrap some code to allow their management, where the factory pattern aim to define variables and functions to be passed to newer objects, the module pattern aim to operates scope for variables and functions.
-
-
-And perhaps one other distinction that may happen is the fact that the **module pattern** employ Immediately Involked Function Expressions (IIFE) for the task.
-
-
-Also, according to the article [JavaScript Module Pattern Basics](https://coryrylan.com/blog/javascript-module-pattern-basics) from Cory Rylan, the module pattern is one of the most common design patterns used in JavaScript:
-
-1. For encapsulation
-2. For services
-3. For TDD, etc.
-
-
-Another important point brought by Cory Rylan is to use **'strict mode'** as good practice, to avoid `more dangerous parts in JavaScript`. And as a procedure the author set some steps into building the **module**:
-
-1. **Use IIFEs**: not only IIFEs provide a particular scope to be managed, but it also avoid polluting the **namespace** like function declarations does.
-2. **Use 'strict mode'**
-3. **Export public properties/functions**: with the use of **return** statment to expose the data from outside.
-4. **Make use of private properties whenever necessary**: since only that which is exposed at the return statement can be reached, the module can safely make use of all the necessary data.
-    4.1. Since JavaScript does not have **private** keyword like other languages, it is customary to use a sign of underscore to visualy prefix and points out about the private structures.
-
-
-```
-const myModule = (function() {
-    'use strict';
-        
-        const _privateProperty = 'Hello World!';
-        const publicProperty = 'I am a public property';
-        
-        function _privateMethod() {
-            console.log(_privateProperty);
-        }
-        
-        function publicMethod() {
-            _privateMethod();
-        }
-        
-    return {
-        publicMethod,
-        publicProperty
-    };
-})();
-
-myModule.publicMethod(); // 'Hello World!'
-console.log(myModule.publicProperty); // 'I am a public property'
-console.log(myModule._privateProperty); // undefined
-myModule._privateMethod(); // TypeError: myModule._privateMethod is not a function
-```
-
-`The benefit to the Revealing Module Pattern is that we can look at the bottom of our modules and quickly see what is publicly available for use. The Module Pattern is not a silver bullet for adding code re-usability to your JavaScript. Using the Module Pattern with Prototypal Inheritance or ES6 Classes can give you a wide range of design patterns with varying pros and cons.` [Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)]
-
-
-Below, another interesting example from the article [Module pattern in JavaScript](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm) from Tomek Buszewski:
-
-``` 
-const Formatter = (function() {
-    const log = (message) => console.log(`[${Date.now()}] Logger: [${message}]`);
-    
-    const makeUpperCase = (text) => {
-        return text.toUpperCase();
-    };
-    
-    return {
-        log,
-        makeUpperCase,
-    };
-})();
-
-console.log(`${Formatter.log('Hello')} ${Formatter.makeUpperCase('John')}`); // [1658881465387] Logger: [Hello] index.html:27:50 JOHN
-```
-
-
-But, Tomek Buszewski also points out some drawbacks from the module pattern:
-
-`This shows that everything publicly exposed can be changed from the outside. This is one of the biggest module pattern drawbacks.` [Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)]
-
-
-
-###### Other resources about these patterns:
-- [Constructors Are Bad For JavaScript - Tarek Sherif](https://tsherif.wordpress.com/2013/08/04/constructors-are-bad-for-javascript/)
-- [Constructors Considered Mildly Confusing - Zeekat.nl](https://zeekat.nl/articles/constructors-considered-mildly-confusing.html)
-- [Object.assign() - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-- [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
-- [JavaScript Module Pattern Basics - Coryrylan.com](https://coryrylan.com/blog/javascript-module-pattern-basics)
-- [Module pattern in JavaScript - Tomek Buszewski](https://dev.to/tomekbuszewski/module-pattern-in-javascript-56jm)
-- [Modular Javascript - LearnCode.academy](https://www.youtube.com/playlist?list=PLoYCgNOIyGABs-wDaaxChu82q_xQgUb4f)
-- [Learning JavaScript Design Patterns - Addy Osmani](https://www.patterns.dev/posts/classic-design-patterns/)
-
-
-
-#### Classes
-
-Classes are not a natural feature from JavaScript object oriented programming, and it was introduced with the ES6 to introduce the known familiar syntax from traditional OOP languages. But, there is controversy about its use because this new class syntax.
-
-
-So, the criticism are over the fact that this syntax just lays over the basic prototype-based constructors that are natural from the JavaScript language, and can even be dangerous **because its obscure and mislead what's really going on with the objects underneath**.
-
-
-More speciffically, according to the article  [Class basic syntax - JavaScript.info](https://javascript.info/class), a class is a **template code (or extensible program) which serves the purpose of provide initial values for the state and also some implementation bevavior**, and just like the **construct** feature from JavaScript, the class aims to help in the creating of multiple objects of the same kind.
-
-
-And about the syntax itself, it's important to pay attention to the fact that **there is no commas separating the class method inside the class construct**:
-
-```
-class User {
-    constructor(name) {
-        this.name = name;
-    }
-    
-    sayHi() {
-        console.log(this.name);
-    }
-}
-
-let user = new User('John');
-user.sayHi(); // 'John'
-
-// teste User type
-console.log(typeof User); // function
-console.log(User === User.prototype.constructor); // true
-console.log(User.prototype.sayHi) // presents the code of the sayHi method
-console.log(Object.getOwnPropertyNames(User.prototype)); // constructor, sayHi
-
-// It can't be called without the new word
-User(); // TypeError: class constructors must be invoked with 'new'
-``` 
-
-The article [Class basic syntax - JavaScript.info](https://javascript.info/class) also describes what happens under the hood with this class syntax in JavaScript:
-
-1. The class declaration creates a functiono of the same name.
-2. The new function code is taken from the constructor method and from the class methods present.
-
-
-But, in opposition to what many authors claim, this article says that the class syntax has a little bit more than a mere **syntatic sugar** code appearence:
-
-```
-function User(name) {
-    this.name = name; // the function prototype already have a 'constructor' property by default
-}
-
-User.prototype.sayHi = function() {
-    console.log(this.name);
-};
-
-let user = new User('John');
-user.sayHi(); // 'John'
-``` 
-
-[Class basic syntax - JavaScript.info](https://javascript.info/class)
-1. There is a special internal property **[[IsClassConstructor]]: true** which, for exemple, can prevent the class to be called without the **new**.
-2. The class function sets its class methods to non-enumerable, since while using a **for..in** method people usually don't want to see its class methods.
-3. Classes always **'use strict'** code by default.
-
-
-Another point where classes equal functions in JavaScript is with the possibility to have a class defined inside another expression and be passed around, there is, just like a named function expression. And with classes also the class name is only visible inside the class:
-
-```
-let User = class MyClass {
-    sayHi() {
-        console.log(MyClass);
-    }
-}
-
-new User().sayHi(); // works and shows MyClass definition
-
-console.log(MyClass); // ReferenceError: MyClass is not defined
-```
-
-
-And also like literal objects, classes may include getters/setters, computed properties, etc.
-
-```
- class User {
-    constructor(name) {
-        // invoke the setter
-        this.name = name;
-    }
-    
-    get name() {
-        return this._name;
-    }
-    
-    set name(value) {
-        if (value.length < 4) {
-            console.log('Name is too short.');
-            
-            return;
-        }
-        
-        this._name = value;
-    }
-}
-
-let user = new User('John');
-console.log(user.name); // 'John'
-
-user = new User(''); // 'Name is too short.'
-```
-
-
-Also interesting the fact that just like object literal, classes accepts **Computed names**: **[ ... ]**
-
-```
-class User {
-    [ 'say' + 'Hi' ]() {
-        console.log('Hello');
-    }
-}
-
-new User().sayHi();
-``` 
-
-###### Class Fields
-
-This is a more recent addintion that in many browsers would demand to use polyfill. And this syntax novelty allows to direct add properties to the class, thus it is important to notice that, according to [Class basic syntax - JavaScript.info](https://javascript.info/class), this fields are set on individual objects, not on the class prototype:
-
-```
- class User {
-    name = 'John';
-    
-    sayHi() {
-        console.log(`Hello, ${this.name}!`);
-    }
-}
-
-new User().sayHi(); // 'Hello, John!'
-
-// test the User.prototype.name
-console.log(User.prototype.name); // undefined
-``` 
-
-
-###### Bound Methods in Classes
-
-Just like in functions, there is the necessity to bind the context of the class each time it is passed arond and the 'this' context change dynamically in JavaScript. This problem is often called **'losing this'**:
-
-```
-class Button {
-    constructor(value) {
-        this.value = value;
-    }
-    
-    click() {
-        console.log(this.value);
-    }
-}
-
-
-let button = new Button('Hello');
-
-setTimeout(button.click, 1000); // undefined
-```
-
-And just like with functions, there is 2 approaches to fixing it:
-1. **Pass a wrapper-function**: like a arrow function callback
-2. **Bind the method to object**: for example, in the constructor
-
-
-```
-class Button2 {
-    constructor(value) {
-        this.value = value;
-    }
-    
-    click = () => {
-        console.log(this.value);
-    }
-}
-
-let button2 = new Button2('Hello');
-
-setTimeout(button2.click, 1000); // Hello
-```
-
-
-###### Examining JavaScript Classes a Little Closer
-
-So, recapitulating all that was said, as the [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) article says:
-
-1. Classes are template codes for objects.
-2. It's built on prototypes.
-3. As a kind of object, classes are `special functions` ([MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes))
-4. Just like function they have 2 forms of definitions:   
-    4.1. Class declarations   
-    4.2. Class expressions: both named and unnamed.   
-    4.3. In terms of named classes, it is important to see that its name is local to the class's body, but it can be accessed via the **name** property: **console.log(MyClass.name);**
-
-
-On the other hand, there are speciffic differences in classes when compared with general functions:
-    
-1. That eventhough the class is **hoisted** its values are not.   
-    1.1. Because of this trying to instanciate a new object will result in a **ReferenceError**.
-2. The class body is always execute in **'strict mode'**.
-3. Also, as was seem above, classes have the property **[[IsClassConstructor]]: true**:   
-    3.1. And they cannot be called without the **new** word ([Class basic syntax - JavaScript.info](https://javascript.info/class)).
-
-
-The JavaScript classes also have a **constructor**, a special method, and there can be only one to avoid a **SyntaxError**. Also, another feature from classes are the **static initialization blocks**:
-
-`Class static initialization blocks allow flexible initialization of class static properties including the evaluation of statements during initialization, and granting access to private scope. Multiple static blocks can be declared, and these can be interleaved with the declaration of static properties and methods (all static items are evaluated in declaration order).` [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-
-
-The MDN Docs also explains that the **static methods/properties** belong to the class and cannot be through a class instance:
-
-1. The are called without instanciating their classes and cannot.
-2. The static methods are often used to create utility functions for an applicaton.
-3. The static properties are useful for caches, fixed-configuration, or any other data that doesn't need to be replicated across instances.
-
-```
-class Point {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    
-    static displayName = 'Point';
-    
-    static distance(a, b) {
-        const dx = a.x - b.x;
-        const dy = a.y - b.y;
-        
-        return Math.hypot(dx, dy);
-    }
-}
-
-const p1 = new Point(5,5);
-const p2 = new Point(10, 10);
-p1.displayName; // undefined
-p1.distance; // undefined
-p2.displayName; // undefined
-p2.distance; // undefined
-
-console.log(Point.displayName); // 'Point'
-console.log(Point.distance(p1, p2)); // 7.0710678118654755
-``` 
-
-
-Another specific feature from classes is the syntax of **field declarations** which have already been mentioned, which can also be declared as private with the use of a **hastag**:
-
-```
-class Rectangle {
-    height = 0;
-    width;
-    
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
-}
-```
-
-- **Note**: though private fields can only be declared in the body of the class and for that reason fields cannot be declared later through assigning to classes.
-
-
-The class syntax also allows the use of **extends** word to create sub-classes or child classes. And there are 3 important points to be made here:
-
-1. Subclasses can use **extends** not only from class themselves, but they can also use the word to extend a traditional function-based "class".  
-    1.1. Atention: but the classes cannot extend from regular (non-constructible) objects: for this task there has be used the method Object.setPropertyOf()
-2. There's the necessity to use the **super()** method to call for the super class to initialize properties defined there.
-3. It's also possible to use a **super** keyword for a child makes a direct call from its method for the parents corresponding method.
-
-```
-class Animal {
-    constructor(name) {
-        this.name = name;
-    }
-}
-
-
-class Cat extends Animal {
-    constructor(name) {
-        super(name);
-    }
-    
-    speak() {
-        console.log(`${this.name} makes a noise.`);
-    }
-}
-
-class Lion extends Cat {
-    speak() {
-        super.speak(); // making a call to parents corresponding method
-        console.log(`${this.name} roars.`);
-    }
-}
-
-const lion = new Lion('Fuzzy');
-lion.speak();
-
-// Outpu:
-// Fuzzy makes a noise
-// Fuzzy roars
-```
-
-
-Finally, there is the fact that a subclass can only have one superclass, **so multiple inheritance from tooling classes, for exemple, is not possible**, and the needed functionalities, them, have to be all provided by the superclass directly.
-
-
-` Abstract subclasses or mix-ins are templates for classes. An ECMAScript class can only have a single superclass, so multiple inheritance from tooling classes, for example, is not possible. The functionality must be provided by the superclass. A function with a superclass as input and a subclass extending that superclass as output can be used to implement mix-ins in ECMAScript:`
-
-
-```
-const calculatorMixin = (Base) => class extends Base {
-  calc() { }
-};
-
-const randomizerMixin = (Base) => class extends Base {
-  randomize() { }
-};
-
-class Foo { }
-class Bar extends calculatorMixin(randomizerMixin(Foo)) { }
-```
-
-- **Mix-ins for classes example above from the MDN Docs**: [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-
-
-
-###### Discussion: Is "Class" in ES6 The New "Bad" Part for JavaScript?
-
-This is a discussion taken from the article [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65), in which is examined whether the use of classes in JavaScript is mere a "syntatic sugar" and perhaps even dangerous for the code maintanability?
-
-
-So, the arguments assembled by the author **in favor** of the JavaScript class system:
-
-1. It has a familiar look to the traditional syntax present in traditional OO languages.
-2. It does not restrain the developer to use or to migle it with the core prototypical system in any capacity.
-
-`Also, most JS folks just want to do basic OO stuff and move on. But the current syntax throw them off.` [Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
-
-
-And also the arguments **against it**:
-
-1. The prototypical system is more flexible, since objects can spring without the need of a previous restrictive blueprint.
-2. Also, the prototypical is more inlined with the principals of OO to "Favor Composition over Inheritance", while class based syntax goes in the opposite direction, since "Class" notation favors "Inheritance over Composition".
-
-
-`Bad For Functional Programming: In JS functions are first-class citizens. Functional programming is all about using functions to their fullest extent. There is a notion called: “Favor Composition over Inheritance” and here we are going in the opposite direction because “Class” notation favors “Inheritance over Composition”.` [Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
-
-
-
-###### Other resources about classes online:
-- [Classes - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [Class basic syntax - JavaScript.info](https://javascript.info/class)
-- [Is “Class” In ES6 The New “Bad” Part? - Rajaraodv](https://rajaraodv.medium.com/is-class-in-es6-the-new-bad-part-6c4e6fe1ee65)
-- [JavaScript Classes - Stephen Mayeux](https://www.youtube.com/playlist?list=PLtwj5TTsiP7uTKfTQbcmb59mWXosLP_7S)
-
-
-
-#### ES6 Modules
-
-Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is 
-
-
-
-###### Brief History of JavaScript Developement in the Frontend
+#### Brief History of the JavaScript Module Developement
 
 Peter Jang wrote this article with a brief history of the development of the frontend tasks of delivering working sites to the Web. And, at the beginning the works around were plain and simple, since all that was need was:
 
@@ -1111,7 +247,7 @@ modelu.exports = {
         ]
     }
 };
-
+``` 
 
 So, there the configuration telling the webpack to search for JavaScript files, excluding the node_modules folder, and to apply the preset using the babel-loader.
 
@@ -1171,7 +307,7 @@ $ npm install webpack-dev-server --save-dev
 `Note that the scripts in package.json can run webpack without having to specify the full path ./node_modules/.bin/webpack, since node.js knows the location of each npm module path. This is pretty sweet! We can make things even sweeter by installing webpack-dev-server, a separate tool which provides a simple web server with live reloading. To install it as a development dependency, enter the command [...] This will automatically open the index.html website in your browser with an address of localhost:8080 (by default). Any time you change your JavaScript in index.js, webpack-dev-server will rebuild its own bundled JavaScript and refresh the browser automatically. This is a surprisingly useful time saver, as it allows you to keep your focus on the code instead of having to continually switch contexts between the code and the browser to see new changes.` [Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
 
-So, as a summary:
+So, in summation:
 
 1. The addition of a **package manager** to automate the management of package dependencies.
 2. The addition of a **module blunder** to manage a ecosystem of scripts files next to the filesystem and bring about one resulting file to be linked in the HTML file.
@@ -1180,9 +316,12 @@ So, as a summary:
 
 
 
+#### ES6 Modules
+
+Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is 
 
 
-
+https://www.theodinproject.com/lessons/node-path-javascript-es6-modules
 
 
 
@@ -2101,6 +1240,66 @@ Above we see that:
 
 
 
+
+### Immediately Invoked Function Expressions - IIFE
+
+Immediately invoked function expressions or IIFEs (pronouced "iffy") are JavaScript function of the following pattern:
+
+```
+(function() {
+    // internal logic
+})();
+``` 
+
+It's interesting to remember that in JavaScript there are 2 way to declare a function:
+
+1. **Function declaration**: that is the traditional syntax
+2. **Funcions expression**: which can be a named or a anonymous expression. 
+    2.1. But that in either case implies the return of the value of the function itself either to the correspondent variable or immediately (that is without assgining to a variable).
+
+
+The only other distinction to be done here is the fact the article [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html) highlights the fact thtt the **function expressions** can have the function value to return to a variable or to be immediately applyed:
+
+```
+// Assingment of a function expression to a variable
+const myFunction = function() { /* logic here */ };
+
+// Assignment of a function expression to a object property
+const myObj = {
+    myFunction: function() { /* logic here */ }
+};
+
+// Anything within the parentheses is part of an expression
+(function() { /* logic here */ });
+
+// Anything after the not operator is part of an expression
+!function() { /* logic here */ };
+``` 
+
+
+- **Reasons to Use IIFEs**:
+1. **The IIFE does not pullute the global namespace**:     
+    1.1. So, different from using the internal scope of a regular function declaration that hoilsts to its upper scope, the IIFE as a function expression does not.
+2. **The code of IIFEs are self-documenting**:  
+    2.1. Because a function declaration is not self-documenting it might accidentally be invoked more than once.
+
+
+Finnaly, the article points out that IIFEs can have arguments passed to:
+    
+```
+let foo = foo;
+
+(function(innerFoo) {
+    console.log(innerFoo); // Outputs: 'foo'
+})(foo);
+``` 
+
+
+###### Other resources about IIFEs:
+- [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
+
+
+
 ### The Eval() Function
 
 #### The Risks of the Eval() Function
@@ -2175,62 +1374,6 @@ function test1() {
 
 
 
-### Immediately Invoked Function Expressions - IIFE
-
-Immediately invoked function expressions or IIFEs (pronouced "iffy") are JavaScript function of the following pattern:
-
-```
-(function() {
-    // internal logic
-})();
-``` 
-
-It's interesting to remember that in JavaScript there are 2 way to declare a function:
-
-1. **Function declaration**: that is the traditional syntax
-2. **Funcions expression**: which can be a named or a anonymous expression. 
-    2.1. But that in either case implies the return of the value of the function itself either to the correspondent variable or immediately (that is without assgining to a variable).
-
-
-The only other distinction to be done here is the fact the article [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html) highlights the fact thtt the **function expressions** can have the function value to return to a variable or to be immediately applyed:
-
-```
-// Assingment of a function expression to a variable
-const myFunction = function() { /* logic here */ };
-
-// Assignment of a function expression to a object property
-const myObj = {
-    myFunction: function() { /* logic here */ }
-};
-
-// Anything within the parentheses is part of an expression
-(function() { /* logic here */ });
-
-// Anything after the not operator is part of an expression
-!function() { /* logic here */ };
-``` 
-
-
-- **Reasons to Use IIFEs**:
-1. **The IIFE does not pullute the global namespace**:     
-    1.1. So, different from using the internal scope of a regular function declaration that hoilsts to its upper scope, the IIFE as a function expression does not.
-2. **The code of IIFEs are self-documenting**:  
-    2.1. Because a function declaration is not self-documenting it might accidentally be invoked more than once.
-
-
-Finnaly, the article points out that IIFEs can have arguments passed to:
-    
-```
-let foo = foo;
-
-(function(innerFoo) {
-    console.log(innerFoo); // Outputs: 'foo'
-})(foo);
-``` 
-
-
-###### Other resources about IIFEs:
-- [An Introduction to IIFEs - Immediately Invoked Function Expressions - Adripofjavascript.com](http://adripofjavascript.com/blog/drips/an-introduction-to-iffes-immediately-invoked-function-expressions.html)
 
 
 
@@ -2371,17 +1514,19 @@ For example, even in a simple game, where the developer has to check a dozen res
 [^8]:open-web-application-project-foundation-owasp-overview-2022-04-18
 
 
-[^9]:javascript-trick-patterns-the-dom-overview-2022-06-25
+[^9]:javascript-trick-patterns-part-I-2022-05-26
 
-[^10]:javascript-object-oriented-programming-pattern-2022-07-24
+[^10]:javascript-trick-patterns-the-dom-overview-2022-06-25
 
-[^11]:front-end-development-patterns-overview-2022-03-04
+[^11]:javascript-object-oriented-programming-pattern-2022-07-24
 
-[^12]:front-end-architectures-2022-03-05
+[^12]:front-end-development-patterns-overview-2022-03-04
 
-[^13]:software-architecture-patterns-overview-2022-02-18
+[^13]:front-end-architectures-2022-03-05
 
-[^14]:software-architecture-and-design-2022-02-22
+[^14]:software-architecture-patterns-overview-2022-02-18
+
+[^15]:software-architecture-and-design-2022-02-22
 
 
 

@@ -43,12 +43,13 @@ description: 'This article brings an overview of some trick features related to 
 
 
 ###### Other articles about JavaScript and of Patterns:
-- `JavaScript Trick Patterns - Overview`[^9]   
-- `Javascript Object Oriented Programming (OOP) Pattern` [^10]   
-- `Front-end Development Patterns` [^11]   
-- `Front-end Architectures` [^12]   
-- `Software Architecture Patterns - Overview` [^13]   
-- `Software Architecture and Design` [^14]
+- `JavaScript Trick Patterns - Part I` [^9]
+- `JavaScript Trick Patterns - Part II` [^10]   
+- `Javascript Object Oriented Programming (OOP) Pattern` [^11]   
+- `Front-end Development Patterns` [^12]   
+- `Front-end Architectures` [^13]   
+- `Software Architecture Patterns - Overview` [^14]   
+- `Software Architecture and Design` [^15]
 
 
 
@@ -1501,17 +1502,19 @@ One other feature to help with usability would be to give the user the chance to
 [^8]:open-web-application-project-foundation-owasp-overview-2022-04-18
 
 
-[^9]:javascript-trick-patterns-overview-2022-05-26
+[^9]:javascript-trick-patterns-part-I-2022-05-26
 
-[^10]:javascript-object-oriented-programming-pattern-2022-07-24
+[^10]:javascript-trick-patterns-part-II-2022-07-28
 
-[^11]:front-end-development-patterns-overview-2022-03-04
+[^11]:javascript-object-oriented-programming-pattern-2022-07-24
 
-[^12]:front-end-architectures-2022-03-05
+[^12]:front-end-development-patterns-overview-2022-03-04
 
-[^13]:software-architecture-patterns-overview-2022-02-18
+[^13]:front-end-architectures-2022-03-05
 
-[^14]:software-architecture-and-design-2022-02-22
+[^14]:software-architecture-patterns-overview-2022-02-18
+
+[^15]:software-architecture-and-design-2022-02-22
 
 
 

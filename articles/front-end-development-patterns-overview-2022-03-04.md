@@ -51,7 +51,14 @@ And, in general all patterns have their aim to make a more robust and more relia
 - Other articles about Software Patterns and Architectures:
 - `Software Architecture and Design` [^1].
 - `Software Architecture Patterns - Overview` [^2].
-- `Front-end Architectures` [^3].
+
+
+
+###### Other articles about JavaScript and of Patterns:
+- `JavaScript Trick Patterns - Part I` [^ 3]
+- `JavaScript Trick Patterns - Part II` [^ 4]   
+- `javascript-trick-patterns-the-dom-overview-2022-06-25` [^5]     
+- `Front-end Architectures` [^6]   
 
 
 
@@ -502,4 +509,16 @@ But, as always the author remembers that neither solotion should be used without
 
 [^2]:software-architecture-patterns-overview-2022-02-18
 
-[^3]:front-end-architectures-2022-03-05
+
+
+[^3]:javascript-trick-patterns-part-I-2022-05-26
+
+[^4]:javascript-trick-patterns-part-II-2022-07-28
+
+[^5]:javascript-trick-patterns-the-dom-overview-2022-06-25
+
+[^6]:front-end-development-patterns-overview-2022-03-04
+
+[^7]:front-end-architectures-2022-03-05
+
+

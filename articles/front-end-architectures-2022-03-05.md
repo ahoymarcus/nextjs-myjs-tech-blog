@@ -27,7 +27,14 @@ description: 'In traditional web development the pages are rendered at the Serve
 - Other articles about Software Patterns and Architectures:
 - `Software Architecture and Design` [^1].
 - `Software Architecture Patterns - Overview` [^2].
-- `Front-end Development Patterns` [^3].
+
+
+
+###### Other articles about JavaScript and of Patterns:
+- `JavaScript Trick Patterns - Part I` [^3]
+- `JavaScript Trick Patterns - Part II` [^4]   
+- `javascript-trick-patterns-the-dom-overview-2022-06-25` [^5]    
+- `Front-end Development Patterns` [^6]   
 
 
 
@@ -226,4 +233,15 @@ Interesting to notice, as Emmit Scott points, a SPA full load of the app only co
 
 [^2]:software-architecture-patterns-overview-2022-02-18
 
-[^3]:front-end-development-patterns-overview-2022-03-04
+
+[^3]:javascript-trick-patterns-part-I-2022-05-26
+
+[^4]:javascript-trick-patterns-part-II-2022-07-28
+
+[^5]:javascript-trick-patterns-the-dom-overview-2022-06-25
+
+[^6]:javascript-object-oriented-programming-pattern-2022-07-24
+
+[^7]:front-end-development-patterns-overview-2022-03-04
+
+
