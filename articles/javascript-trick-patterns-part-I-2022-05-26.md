@@ -16,6 +16,8 @@ description: 'This article focuses specially at some trick features that are mor
     2.4. Brief History of the JavaScript Module Developement   
     2.5. ES6 Modules
 3. ##### The Webpack
+    3.1. Webpack's Configuration File  
+    3.2. Webpack's Concepts
 4. #####
 5. #####
 6. #####
@@ -1158,7 +1160,23 @@ So, in summation:
 Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is 
 
 
+
+
+
+
+
+
 https://www.theodinproject.com/lessons/node-path-javascript-es6-modules
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1175,6 +1193,237 @@ https://www.theodinproject.com/lessons/node-path-javascript-es6-modules
 ###### Other resources about classes online:
 - [Modern JavaScript Explained For Dinosaurs - Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
+
+
+### The Webpack
+
+The **Webpack** is simply a tool for bundling modules or in another words, a tool for compiling JavaScript modules. And once installed it can be interacted with from the CLI or API. 
+
+
+So, a basic installation of webpack for a new project could be:
+
+``` 
+$ mkdir webpack-demo
+$ cd webpack-demo
+$ npm init -y
+npm install webpack webpack-cli --save-dev
+```
+
+The flag **-y** quickly configure default option for the new project and than **--save-dev** define webpack as a development dependency. Another point made by the Webpack Docs is the care to change the configuration of package.json for projects that are not for publishing:
+
+```
+{
+   "name": "webpack-demo",
+   "version": "1.0.0",
+   "description": "",
+   "private": true,
+   "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "MIT",
+   "devDependencies": {
+     "webpack": "^5.38.1",
+     "webpack-cli": "^4.7.2"
+   }
+ }
+``` 
+
+Above, the entry point property, **"main": 'index.js'**, was excluded and the private property included. And in the JS script the Docs example uses the Library **Lodash** which come linked in the HTML file.
+
+
+```
+<script src="https://unpkg.com/lodash@4.17.20"></script>
+```
+
+But, this is far from being a ideal set for a professional project:
+
+1. It's not immediately apparent that the script depends on an external library.
+2. If a dependency is missing, or included in the wrong order in the HTML file, the application will not function properly.
+3. If a dependency is included but not used, the browser will be forced to download unnecessary code.
+4. It creates problems of maintainnability, since dependencies have to be manually checked and updated.
+
+
+Before start using the bundler features, the Docs propose to change the directory structure creating a **dist** folder for the minimazed and optimized output.
+
+In the example below the file index.html was changed to the the **dist** folder, but it could also be generated automatically, and **dist** could be left empty:
+
+```
+webpack-demo
+  |- package.json
+  |- package-lock.json
+  |- /dist
+        |- index.html
+  |- /src
+        |- index.js
+```
+
+
+Then, its necessary to have the dependency installed localy:
+
+```
+$ npm install lodash --save
+``` 
+
+`In this setup, index.js explicitly requires lodash to be present, and binds it as _ (no global scope pollution). By stating what dependencies a module needs, webpack can use this information to build a dependency graph. It then uses the graph to generate an optimized bundle where scripts will be executed in the correct order.`[Webpack Docs](https://webpack.js.org/guides/getting-started/)
+
+
+Then the docs define the call for the Webpack binary by the **npx** command from Node 8.2/npm 5.2.0 or higher, considering that its place of origin in the **node_modules** folder is **./node_module/.bin/webpack**:
+
+
+```
+$ npx webpack
+[webpack-cli] Compilation finished
+asset main.js 69.3 KiB [emitted] [minimized] (name: main) 1 related asset
+runtime modules 1000 bytes 5 modules
+cacheable modules 530 KiB
+  ./src/index.js 257 bytes [built] [code generated]
+  ./node_modules/lodash/lodash.js 530 KiB [built] [code generated]
+webpack 5.4.0 compiled successfully in 1851 ms
+``` 
+
+
+The Webpack Docs also points out that:
+1. **Webpack 'transpiles' import and export statements by default**
+2. **But, other features that need to be transpiled should be done by the use of transpiler tools like Babel, via webpack's loader system**
+
+
+
+#### Webpack's Configuration File
+
+According to the Docs, from the version 4 ahead, Webpack simplified configuration for basic projects excluding the need for a speciffic cofiguration file. So, in its default configuration it assumes:
+
+1. **src/index.js**: entry point.
+2. **dist/main.js**: output filename
+
+
+But, more complex projects will benefit from setting a configuration file. So, at the root level of the project, the **webpack.config.js** should be added:
+
+```
+// webpack.config.js
+const path = require('path');
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist')
+    }
+};
+```
+
+Above, it was used the Node's built-in **path module** and the prefix **__dirname** that is set for the root path (the global path):
+
+`his prevents file path issues between operating systems and allows relative paths to work as expected. See this section for more info on POSIX vs. Windows paths.` [Webpack Docs](https://webpack.js.org/configuration/)
+
+
+Now, if the **webpack.config.js** is the only configuration for the project, the webpack tool can catch it by default, but in more complex setups a custom file can be passed or even have the configuration splited in multiple files. 
+
+Be as it may, just run the **npx** tool flagged with the webpack configuration file(s):
+
+```
+$ npx webpack --config webpack.config.js
+
+```
+
+Finally, to improve the basic workflow for the project, instead of calling webpack by the npx tool from the Node/npm, it can be directly setted in a script in package.json file:
+
+```
+{
+   "name": "webpack-demo",
+   "version": "1.0.0",
+   "description": "",
+   "private": true,
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+     "webpack": "^5.4.0",
+     "webpack-cli": "^4.2.0"
+   },
+   "dependencies": {
+     "lodash": "^4.17.20"
+   }
+ }
+``` 
+
+And then it can be run by the **npm run build** command.
+
+
+
+#### Webpack's Concepts
+
+Interesting to point here also some final Webpack concepts that direct the general operation for the tool:
+
+1. Webpack works as a static module bundler:  
+    1.1. It internally processes the applicatoin and builds a **dependency graph** which can have 1 or more **entry points** and also output in 1 or more final bundles, as static assets to serve content for the project.
+2. **Entry point**: this indicate the initial operation for webpack to start constructing the internal dependency graph.    
+    2.1. By default: **./src/index.js**
+    2.2. It can multiple entrie pointis, but once initiated the process, webpack would directly or indirectly figure out the tree of modules dependencies.
+3. **Output**: it defines where to place and how to name the final bundle(s) webpack creates.  
+    3.1. By defaul: **./dist/main.js**
+4. **Loaders**: out of the box, webpack only understand **JavaScript** and **JSON** files, but loaders allow webpack to process other types of files and convert them into valid modules to be added to the dependency graph.  
+    4.1. The basic 2 properties in configuration here are: **test** and **use**.  
+    4.2. The configuration property **test** allows the identification of file or files to be worked upon. For example: **{ module.rules.test: /\.txt$/ }**   
+    4.3. The configuration property **use** indicates which is the right loader to be used for transforming the file(s) apointed. For example: **{ module.rules.use: 'raw-loader' }**
+5. **Plugins**: according to the Docs, the plugins allow for a wider ranger of tasks like: buldle optimization, asset management, injection of enviroment variables, etc.   
+    5.1. The plugins have to be required() in the webpack's configuration file.
+6. **Mode**: here it is possible to enable the webpack's built-in optimizations that correct corresponds to each kind of environment: **developement**, **production**, or **none**.
+7. **Browser compatibility**: Webpack supports all browsers that are ES5-compliant.   
+    7.1. IE8 or older browsers in general will need to load polyfill to work properly with Webpack. 
+8. **Environment**: Webpack 5 runs on Node.js version 10.13.0+.
+
+
+
+###### Out of The Plugins for Webpack
+
+Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found here:
+
+1. [Out of the box plugins](https://webpack.js.org/plugins/)
+2. **Third-party plugins**: [awesome-webpack](https://webpack.js.org/awesome-webpack/#webpack-plugins)
+
+
+- **EnvironmentPlugin**:
+
+    Its a shorthand for using the DefinePlugin on process.env keys
+    
+- **EslintWebpackPlugin**:
+
+    A ESLint plugin for webpack.
+   
+- **HtmlWebpackPlugin**:
+
+    Easily create HMTL files to serve your bundles
+    
+- **IgnorePlugin**:
+
+    Exclude certain modules from bundles.
+    
+- **LimitChunkCountPlugin**:
+
+    Set min/max limits for chunking to better control chunking.
+    
+- **MinChunkSizePlugin**:
+
+    Keep chunk size above the specified limit.
+    
+- **MiniCssExtractPlugin**:
+
+    Creates a CSS file per JS file which requires CSS.
+    
+- **NoEmitOnErrorsPlugin**:
+    Skip the emitting phase when there compilation errors.
+    
+
+###### Resources that dive deeper into the workings of a module blunder:
+- [Manually Bundling an Application](https://www.youtube.com/watch?v=UNMkLHzofQI)
+- [Live Coding a Simple Module Bundler](https://www.youtube.com/watch?v=Gc9-7PBqOC8)
+- [Detailed Explanation of a Simple Module Bundler](https://github.com/ronami/minipack)
 
 
 

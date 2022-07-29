@@ -1,7 +1,7 @@
 ---
 author: 'Marcus Vinicius Richa'
 title: 'JavaScript Trick Patterns - Part II'
-date: '2022-05-26'
+date: '2022-07-28'
 subject: 'web-dev-articles'
 description: 'This article focuses specially at some trick features that are more commonly found in the JavaScript language like prototype, hoisting, etc. And this article also focus on more general tasks, but here seem from the perspective of the JavaScript language and its core tasks.'
 ---
