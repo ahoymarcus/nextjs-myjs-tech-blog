@@ -16,8 +16,8 @@ description: 'This article focuses specially at some trick features that are mor
     2.4. Brief History of the JavaScript Module Developement   
     2.5. ES6 Modules
 3. ##### The Webpack
-    3.1. Webpack's Configuration File  
-    3.2. Webpack's Concepts
+    3.1. Webpack's Basic Concepts    
+    3.2. Webpack's Configuration File
 4. #####
 5. #####
 6. #####
@@ -1157,7 +1157,207 @@ So, in summation:
 
 #### ES6 Modules
 
-Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is 
+Not to be confused with the module pattern, **modules** or more speciffically the **ES6 Module** is The implementation of code modularity feature, meaning a piece of code that is splitted into many familiar sections that leave the global scope of the application free.
+
+
+So, the opposing workflow to modules would be the code of some application all appended in the same scope or contex, that is the application's own global scope. And, of course, such a model where all parts of the code are bloated at the same place makes things much harder to maintain or even to allow re-use of code.
+
+
+Another change that the introduction of this new modular system with **import** and **export** statemens in the JavaScript architecture is the fact that the use the modular pattern together with IIFEs (Immediately Invoked Function Expressions) is not need any more.
+
+
+###### The Static 'Import' Declaration
+
+The static import declaration is used to **import read-only live bindings which are exported by another module**. And the cause that makes this interesting feature to be called **live bindings** is the fact that they can be updated by the orginal module which exported it, but the recipient module for the live bindings cannot modify it on its side.
+
+
+Also, modules **are automatically interpreted in 'stric mode'**, and in terms of HTML, this can be achieved by adding a **type="module" to a <script> element**. Finally, there is also the syntax with a function-like **import()** which dismiss the requirement to have this particular type added to script tags.
+
+
+The import declarations have to come at the top-level, so they must be excluded from inside code blocks, function, etc. And a basic systax for import could be:
+
+```
+import defaultExport, { exportModule1 as alias1, exportModule2 as alias2, /* ...*/ } from 'module-name';
+``` 
+
+The terms:
+
+1. **defaultExport**: it is related to a **default export**.   
+    1.1. And it has to be a valid JavaScript identifier.
+2. **module-name**: it is the name of the module which is exporting the functionality.
+3. **name**: it refers to a valid name for a basic export.
+4. **aliasN**: this alias are used for practicality and they also need to be valid identifiers.   
+    4.1. Alias are obrigatory when the export declaration is made as a string literal, forcing that also the import declaration may receive a valid name as alias.
+
+
+`import declarations are designed to be syntactically rigid (for example, only string literal specifiers, only permitted at the top-level, all bindings must be identifiers), which allows modules to be statically analyzed and linked before getting evaluated. This is the key to making modules asynchronous by nature, powering features like top-level await.` [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+
+
+Treating it specifficaly, there can be 4 forms of **import** declarations:
+
+1. **name import**: as the form **import { export1, export2 } from 'module-name';**.   
+    1.1. Sometimes a functionality may be exported using a string literal, which in terms demands that a alias may be provided to it in the import declaration.
+2. **default import**: as the form **import defaulExport from 'module-name';**.
+3. **namespace import**: as the form **import * as name from 'module-name';**.    
+    3.1. The namespace import inserts all the contents that were exported in a object.   
+    3.2. This object created as namespace for the import is sealed with null prototype.
+4. **side effect import**: as the form **import 'module-name';**
+    4.1. This serves to import the **side effects** os some module, that is executing the functionalities on the global code, but without actualy importing any values from the original module itself. 
+    For example: **import 'main.css';**
+
+
+
+###### The 'Export' Declaration
+
+The export declaration is used to export values from a JavaScript module, and the values that are exported are considered **live bindings**, because once its values are changed in the original module which is exporting it, the new value is made available to the importing module.
+
+
+Modules, as it was said above, are interpreted in **'strict mode'** and its use in HTML, for example, demands the use of as **type="module to the <script> element** in order that the runtime can interpret the functionality as a module.
+
+
+Some important notes:
+
+1. Any mudule can deal with the 2 different types of export at the same time, **named export** or **default export**, but while there can be multiple named exports per module, there can be only one default export per module.
+2. A named export has to be refered by a import with the exact same name, while default exports can be import with any name.
+3. The **export default** syntax allow any kind of expression: **export default 1 + 1;**
+
+
+```
+// file1
+const k = 12;
+export default k;
+
+// file2
+import m from 'file1';
+console.log(m); // 12
+```
+
+
+
+
+- **Exporting Declarations**: 
+
+```
+export let name1;
+
+export const name1 = 1;
+
+export function functionName() {}
+
+export class ClassName {}{}
+
+export const { name1, name2: bar } = o;
+
+export const [ name1, name2 ] = array;
+```
+    
+- **Export List**:
+
+```
+export { name1 as alias1, /* ... */, nameN as aliasN};
+
+export { variable1 as "string literal name" };
+``` 
+   
+- **Default Exports**:
+
+```
+export default expression;
+
+export default functionName() {}
+
+export default class className {} 
+
+export default function() {}
+
+export default class {}
+```
+
+Also, in terms of defalt exports, this two below are equivalent:
+
+```
+export { myFunction as defalt };
+
+export default myFunction;
+```
+
+
+- **Aggregation Modules**:
+
+``` 
+export * from 'module-name';
+
+export * as name1 from 'module-name';
+
+export { name1 as alias1, /* ... */, nameN as aliasN } from 'module-name';
+
+export { default, name1, /* ... */, nameN } from 'module-name';
+```
+
+- **General notes**:
+
+1. The MDN Docs says that that differntly from import declaration which must have it declared at the top-level beforehand, the export declaration does not have "temporal dead zone" rules, it can even be declared beforehand the declaration of the feature which is going to be exported (here, we can remember that the export declaration itself does not utilize per se any of the values it is exporting). [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+2. There can't be JS modules run via a **file:// URL**, because it is going to get cought by CORS.  
+    2.1. It has to go through a HTTP server.
+
+
+
+###### Re-exporting / Aggregating
+
+This is a peculiar feature that allows a module to act as a "relay" for exported values, for example, when some modules are created as a means to concentrate various exports from various modules (**usually called a "barrel moduele"**).
+
+
+```
+export {
+    default as function1,
+    function2,
+} from 'bar.js';
+``` 
+
+This would be comparable to have both a import and a export passing through this "barrel module":
+
+```
+import { default as function1, function2 } from 'bar.js';
+
+export { function1, function2 };
+``` 
+
+###### A Complete Example from MDN Docs
+
+The example works with the following hierarchy;
+1. childModule1.js: 2 exports
+2. childModule2.js: 1 export
+3. ParentModule.js: acting as a aggregator (and doing nothing else)
+4. top level module: consuming the exports from the ParentModule.js.
+
+```
+// childModule1.js
+function myFunction() {
+    console.log('Hello!');
+}
+
+const myVariable = 1;
+
+export { myFunction, myVariable };
+
+// childModule2.js
+class MyClass {
+    constructor(x) {
+         this.x = x;
+    }
+}
+
+export { MyClass };
+
+// parentModule.js
+export { myFunction, myVariable } from 'childModule1.js';
+
+export { MyClass } from 'childModule2.js';
+
+// THE TOP LEVEL MODULE
+import { myFunction, myVariable, MyClass } from 'parentModule.js';
+
+```
 
 
 
@@ -1165,32 +1365,7 @@ Not to be confused with the module pattern, **modules** or more speciffically th
 
 
 
-
-https://www.theodinproject.com/lessons/node-path-javascript-es6-modules
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###### Other resources about classes online:
+###### Other resources about ES6 Modules online:
 - [Modern JavaScript Explained For Dinosaurs - Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 
 
@@ -1290,6 +1465,71 @@ The Webpack Docs also points out that:
 
 
 
+#### Webpack's Basic Concepts
+
+Interesting to point here also some final Webpack concepts that direct the general operation for the tool:
+
+1. Webpack works as a static module bundler:  
+    1.1. It internally processes the applicatoin and builds a **dependency graph** which can have 1 or more **entry points** and also output in 1 or more final bundles, as static assets to serve content for the project.
+2. **Entry point**: this indicate the initial operation for webpack to start constructing the internal dependency graph.    
+    2.1. By default: **./src/index.js**
+    2.2. It can multiple entrie pointis, but once initiated the process, webpack would directly or indirectly figure out the tree of modules dependencies.
+3. **Output**: it defines where to place and how to name the final bundle(s) webpack creates.  
+    3.1. By defaul: **./dist/main.js**
+4. **Loaders**: out of the box, webpack only understand **JavaScript** and **JSON** files, but loaders allow webpack to process other types of files and convert them into valid modules to be added to the dependency graph.  
+    4.1. The basic 2 properties in configuration here are: **test** and **use**.  
+    4.2. The configuration property **test** allows the identification of file or files to be worked upon. For example: **{ module.rules.test: /\.txt$/ }**   
+    4.3. The configuration property **use** indicates which is the right loader to be used for transforming the file(s) apointed. For example: **{ module.rules.use: 'raw-loader' }**
+5. **Plugins**: according to the Docs, the plugins allow for a wider ranger of tasks like: buldle optimization, asset management, injection of enviroment variables, etc.   
+    5.1. The plugins have to be required() in the webpack's configuration file.
+6. **Mode**: here it is possible to enable the webpack's built-in optimizations that correct corresponds to each kind of environment: **developement**, **production**, or **none**.
+7. **Browser compatibility**: Webpack supports all browsers that are ES5-compliant.   
+    7.1. IE8 or older browsers in general will need to load polyfill to work properly with Webpack. 
+8. **Environment**: Webpack 5 runs on Node.js version 10.13.0+.
+
+
+
+###### Out of The Plugins for Webpack
+
+Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found here:
+
+1. Out of the box plugins: [default-webpack-plugins](https://webpack.js.org/plugins/)
+2. Third-party plugins: [awesome-webpack](https://webpack.js.org/awesome-webpack/#webpack-plugins)
+
+
+- **EnvironmentPlugin**:
+
+    Its a shorthand for using the DefinePlugin on process.env keys
+    
+- **EslintWebpackPlugin**:
+
+    A ESLint plugin for webpack.
+   
+- **HtmlWebpackPlugin**:
+
+    Easily create HMTL files to serve your bundles
+    
+- **IgnorePlugin**:
+
+    Exclude certain modules from bundles.
+    
+- **LimitChunkCountPlugin**:
+
+    Set min/max limits for chunking to better control chunking.
+    
+- **MinChunkSizePlugin**:
+
+    Keep chunk size above the specified limit.
+    
+- **MiniCssExtractPlugin**:
+
+    Creates a CSS file per JS file which requires CSS.
+    
+- **NoEmitOnErrorsPlugin**:
+    Skip the emitting phase when there compilation errors.
+
+
+
 #### Webpack's Configuration File
 
 According to the Docs, from the version 4 ahead, Webpack simplified configuration for basic projects excluding the need for a speciffic cofiguration file. So, in its default configuration it assumes:
@@ -1355,70 +1595,6 @@ Finally, to improve the basic workflow for the project, instead of calling webpa
 And then it can be run by the **npm run build** command.
 
 
-
-#### Webpack's Concepts
-
-Interesting to point here also some final Webpack concepts that direct the general operation for the tool:
-
-1. Webpack works as a static module bundler:  
-    1.1. It internally processes the applicatoin and builds a **dependency graph** which can have 1 or more **entry points** and also output in 1 or more final bundles, as static assets to serve content for the project.
-2. **Entry point**: this indicate the initial operation for webpack to start constructing the internal dependency graph.    
-    2.1. By default: **./src/index.js**
-    2.2. It can multiple entrie pointis, but once initiated the process, webpack would directly or indirectly figure out the tree of modules dependencies.
-3. **Output**: it defines where to place and how to name the final bundle(s) webpack creates.  
-    3.1. By defaul: **./dist/main.js**
-4. **Loaders**: out of the box, webpack only understand **JavaScript** and **JSON** files, but loaders allow webpack to process other types of files and convert them into valid modules to be added to the dependency graph.  
-    4.1. The basic 2 properties in configuration here are: **test** and **use**.  
-    4.2. The configuration property **test** allows the identification of file or files to be worked upon. For example: **{ module.rules.test: /\.txt$/ }**   
-    4.3. The configuration property **use** indicates which is the right loader to be used for transforming the file(s) apointed. For example: **{ module.rules.use: 'raw-loader' }**
-5. **Plugins**: according to the Docs, the plugins allow for a wider ranger of tasks like: buldle optimization, asset management, injection of enviroment variables, etc.   
-    5.1. The plugins have to be required() in the webpack's configuration file.
-6. **Mode**: here it is possible to enable the webpack's built-in optimizations that correct corresponds to each kind of environment: **developement**, **production**, or **none**.
-7. **Browser compatibility**: Webpack supports all browsers that are ES5-compliant.   
-    7.1. IE8 or older browsers in general will need to load polyfill to work properly with Webpack. 
-8. **Environment**: Webpack 5 runs on Node.js version 10.13.0+.
-
-
-
-###### Out of The Plugins for Webpack
-
-Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found here:
-
-1. [Out of the box plugins](https://webpack.js.org/plugins/)
-2. **Third-party plugins**: [awesome-webpack](https://webpack.js.org/awesome-webpack/#webpack-plugins)
-
-
-- **EnvironmentPlugin**:
-
-    Its a shorthand for using the DefinePlugin on process.env keys
-    
-- **EslintWebpackPlugin**:
-
-    A ESLint plugin for webpack.
-   
-- **HtmlWebpackPlugin**:
-
-    Easily create HMTL files to serve your bundles
-    
-- **IgnorePlugin**:
-
-    Exclude certain modules from bundles.
-    
-- **LimitChunkCountPlugin**:
-
-    Set min/max limits for chunking to better control chunking.
-    
-- **MinChunkSizePlugin**:
-
-    Keep chunk size above the specified limit.
-    
-- **MiniCssExtractPlugin**:
-
-    Creates a CSS file per JS file which requires CSS.
-    
-- **NoEmitOnErrorsPlugin**:
-    Skip the emitting phase when there compilation errors.
-    
 
 ###### Resources that dive deeper into the workings of a module blunder:
 - [Manually Bundling an Application](https://www.youtube.com/watch?v=UNMkLHzofQI)
