@@ -18,7 +18,9 @@ description: 'This article focuses specially at some trick features that are mor
 3. ##### The Webpack
     3.1. Webpack's Basic Concepts    
     3.2. Webpack's Configuration File
-4. #####
+4. ##### Linting
+    4.1. Regarding the Use of Semicolons   
+    4.2. Some Popular JavaScript Style Guides
 5. #####
 6. #####
 7. ##### Further Reading
@@ -1174,6 +1176,14 @@ The static import declaration is used to **import read-only live bindings which 
 Also, modules **are automatically interpreted in 'stric mode'**, and in terms of HTML, this can be achieved by adding a **type="module" to a <script> element**. Finally, there is also the syntax with a function-like **import()** which dismiss the requirement to have this particular type added to script tags.
 
 
+Also, in the case of older browsers that does not reconize the new feature, developers use the **nomodule** property in the Script  tag, which does not make difference in older browsers, but it is completely ignored by newer browsers that will pass on it and read the one with **type="modue"**:
+
+```
+<script nomodule src=""></script>
+<script type="module" src="main.js"></script>
+```
+
+
 The import declarations have to come at the top-level, so they must be excluded from inside code blocks, function, etc. And a basic systax for import could be:
 
 ```
@@ -1213,6 +1223,13 @@ The export declaration is used to export values from a JavaScript module, and th
 
 
 Modules, as it was said above, are interpreted in **'strict mode'** and its use in HTML, for example, demands the use of as **type="module to the <script> element** in order that the runtime can interpret the functionality as a module.
+
+Also, in the case of older browsers that does not reconize the new feature, developers use the **nomodule** property in the Script  tag, which does not make difference in older browsers, but it is completely ignored by newer browsers that will pass on it and read the one with **type="modue"**:
+
+```
+<script nomodule src=""></script>
+<script type="module" src="main.js"></script>
+```
 
 
 Some important notes:
@@ -1356,13 +1373,7 @@ export { MyClass } from 'childModule2.js';
 
 // THE TOP LEVEL MODULE
 import { myFunction, myVariable, MyClass } from 'parentModule.js';
-
 ```
-
-
-
-
-
 
 
 ###### Other resources about ES6 Modules online:
@@ -1603,7 +1614,46 @@ And then it can be run by the **npm run build** command.
 
 
 
+### Linting
 
+
+
+
+
+
+
+
+
+
+
+
+#### Regarding the Use of Semicolons
+
+
+
+
+
+
+
+
+
+
+#### Some Popular JavaScript Style Guides
+
+1. [Airbnb Style Guide](https://github.com/airbnb/javascript):   
+    1.1. "Yay semicolons"
+2. [Google style guide for JavaScript](https://google.github.io/styleguide/jsguide.html):    
+    2.1. "Yay semicolons"
+3. [JavaScript Standard Style](https://standardjs.com/rules.html)   
+    3.1. "Nay Semicolons"
+4. [ESLint](https://eslint.org/)
+
+
+###### Online resources about Linting:
+1. [Javascript Linting: What Developers Need to Know - Mikecavaliere.com](https://mikecavaliere.com/javascript-linting-what-developers-need-to-know/)
+2. [How linting and ESLint improve code quality - Hackermoon.com](https://hackernoon.com/how-linting-and-eslint-improve-code-quality-fa83d2469efe)
+3. [An Open Letter to JavaScript Leaders Regarding Semicolons - Blog.izs.me](https://blog.izs.me/2010/12/an-open-letter-to-javascript-leaders-regarding/)
+4. [Are Semicolons Necessary in JavaScript? - Kyle Robinson Young](https://www.youtube.com/watch?v=gsfbh17Ax9I)
 
 
 
