@@ -13,7 +13,8 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
     2.1. Webpack's Basic Concepts    
     2.2. Webpack's Configuration File   
     2.3. Webpack's Asset Management    
-    2.4. Webpack's Output Management   
+    2.4. Webpack's Output Management 
+    2.5. Webpack's Development Mode
     2.5. Webpack Resources: Deeper into the Webpack Operation
 3. #####
 4. #####
@@ -27,7 +28,7 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
 
 
 ###### Other articles about JavaScript and of Patterns:
-- `JavaScript Trick Patterns - PartII` [^1]
+- `JavaScript Trick Patterns - PartI` [^1]
 - `JavaScript Trick Patterns - Part II` [^2]
 - `JavaScript Trick Patterns for the DOM - Overview`[^3]   
 - `Javascript Object Oriented Programming (OOP) Pattern` [^4]   
@@ -665,7 +666,320 @@ And for that reason the **clean: true** property was added in the webpack.config
 
 
 
+#### Webpack's Development Mode
 
+In this basic experiment with Webpack, the Docs presents a new configuration that allows webpack to tackle the tasks in the project in a different mode, there is, in a mode more inlined with the processes of development and not the final deliver of the frontend product:
+
+```
+// webpack.config.js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+
+module.exports = {
+    mode: 'development',
+    entry: {
+        index: './src/index.js',
+        print: './src/print.js',
+    },
+    devtool: 'inline-source-map',
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Development',
+        }),
+    ],
+    output: { 
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
+};
+``` 
+
+So, in this new configuration the property **mode: 'development'** is explicitely presented. And one of the more important points to make is about **debugging**, because in its default operation, as webpack bundle the project in some speciffic outputs, also **the stack trace** for the project debugging will also be changed making it difficult for the developer to reach them.
+
+
+`When webpack bundles your source code, it can become difficult to track down errors and warnings to their original location. For example, if you bundle three source files (a.js, b.js, and c.js) into one bundle (bundle.js) and one of the source files contains an error, the stack trace will point to bundle.js. This isn't always helpful as you probably want to know exactly which source file the error came from.` [Webpack Docs](https://webpack.js.org/guides/development/)
+
+
+And, as the Docs says, there are many options available to ajust the projects, and this basic example will be using the **inline-source-map** option: **devetool: 'inline-source-map'**
+
+
+Another 2 important points for this basic operation would be:
+1. Provide the basic starting configurations and scripts for the project.
+2. Provide some errors, so the tools debugging system can be followed.
+
+
+- **The basic configuration and scripts**:
+```
+// package.json
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
+
+
+// ./src/index.js
+// Libraries
+import _ from 'lodash';
+
+// Modules
+import printMe from './printMe.js';
+
+
+function component() {
+    const element = document.createElement('div');
+    const btn = document.createElement('button');
+    
+    element.innerHTML = _.join(['Hello', 'Webpack'], ' ');
+    
+    btn.innerHTML = 'Click me and check the console!';
+    btn.onclick = printMe;
+    
+    element.appendChild(btn);
+    
+    return element;
+}
+
+document.body.appendChild(component());
+
+// ./src/print.js
+export default function printMe() {
+    console.log('I get called from print.js!');
+}
+```
+
+
+Now, that the basic project is set, a basic error to follow along would be to purposely insert a typo in the **./src/print.js** script, just like a misspelling in the method call or a malformed string in the parameters.
+
+
+Comparing the 2 modes in terms of debugging, it is possible to see the great difference made not only to the fact that the stack trace created by the webpack debugging system is more precise in pointing out the origin of the problem, but it is also a lot cleaner than the default console stack trace:
+
+
+- **The original stack trace for the problem**:
+```
+Uncaught ReferenceError: cosnole is not defined
+    e file:///home/marcus/Documents/Studies/Odin-projects/Javascript/Webpack/webpack2/dist/index.bundle.js:2
+    EventHandlerNonNull* file:///home/marcus/Documents/Studies/Odin-projects/Javascript/Webpack/webpack2/dist/index.bundle.js:2
+    <anonymous> file:///home/marcus/Documents/Studies/Odin-projects/Javascript/Webpack/webpack2/dist/index.bundle.js:2
+    <anonymous> file:///home/marcus/Documents/Studies/Odin-projects/Javascript/Webpack/webpack2/dist/index.bundle.js:2
+    <anonymous> file:///home/marcus/Documents/Studies/Odin-projects/Javascript/Webpack/webpack2/dist/index.bundle.js:2
+```
+
+As we can see above, the correct module is never pointed there, since the mistaken was made in the **./src/print.js** file, which is in fact imported by the index.js file that is the one being pointed out.
+
+
+- **The resulting stack trace produced by the webpack development mode configuration**:
+```
+Uncaught ReferenceError: cosnole is not defined
+    printMe print.js:2
+    component index.js:15
+    <anonymous> index.js:22
+    <anonymous> index.bundle.js:17363
+    <anonymous> index.bundle.js:17365
+```
+
+
+###### Other Important Tools from the Development Mode Set
+
+Besides providing a speciffic debugging system for the development, Webpack also has some other interesting tools to help in the development tasks:
+
+1. **Webpack's Watch Mode**
+2. **webpack-dev-server**
+3. **webpack-dev-middleware**
+
+
+###### Webpack's Watch Mode
+
+The Webpack's watch mode can be called direct from the **package.json** scripting property by adding the flag **--watch** to it:
+
+```
+// package.json
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"watch": "webpack --watch",
+"build": "webpack"
+},
+```
+
+And now running **npm run watch** from the command line, it is possible to see that now while the project is built by the Webpack, the console is still running while it is set in watching the project and can catch each change into the files, just like the one necessary to correct the typo in **./src/print.js** used for this test.
+
+
+But, as the [Webpack Docs](https://webpack.js.org/guides/development/) points out, there is still a downside in the fact that the changes are not automatically passed to the browser as well. And for that there is the next feature: the **webpack-dev-server**.
+
+
+###### The webpack-dev-server
+
+So, this is a "rudimentary" web server featured by the webpack tool with the capacity to use **live reloading** for the html file:
+
+```
+$ npm install --save-dev webpack-dev-server
+``` 
+
+And the server can also be called direct from the **package.json** scripting property by adding the flag **serve --open** parameters to it:
+
+```
+// package.json
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"watch": "webpack --watch",
+"statrt": "webpack serve --open",
+"build": "webpack"
+},
+```
+
+
+And, in the **webpack.config.js** file:
+
+```
+// webpack.config.js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+
+module.exports = {
+    mode: 'development',
+    entry: {
+        index: './src/index.js',
+        print: './src/print.js',
+    },
+    devtool: 'inline-source-map',
+    devServer: {
+        static: './dist',
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Development',
+        }),
+    ],
+    output: { 
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
+    optimization: {
+        runtimeChunk: 'single',
+    },
+};
+``` 
+
+Now, with these 2 new configuration sets, the files from the **./dist** directory are being served on **localhost:8080**:
+
+1. **devServer: { static: './dist' }**
+2. **optimization: { runtimeChunk: 'single' }**
+
+
+And 2 very important notes brought by the [Webpack Docs](https://webpack.js.org/guides/development/) here:
+
+1. **optimizatin.runtimeChunk: 'single'**: it is important because the project has splitted the output, and so it has more than 1 entrypoint on a single HTML page.   
+    1.1. Without this measure the Docs says that there could be issues.  
+    1.2. [Multiple entry points per page - Bundlers.tooling.report](https://bundlers.tooling.report/code-splitting/multi-entry/)   
+    1.2. [Code Splitting - Webpack Docs](https://webpack.js.org/guides/code-splitting/)
+2. **How the bundled files are served**: the are available under the assembled structure bellow:  
+    2.1. **http://[devServer.host]:[devServer.port]/[output.publicPath]/[output.filename]**
+
+
+And, it is interesting to notice that the **webpack-dev-server** not only handle the **./dist** folder at localhost:8080, but it was handle the watch for the entire project folder, meaning that it automatic applies the changes made into it.
+
+
+Finally, the [Webpack Docs](https://webpack.js.org/guides/development/) adverts a warning that the **webpack-dev-server** does not **write any output files after compiling**, meaning that for the related tasks it is necessary to use a middleware: **devMiddleware.publicPath**.
+
+
+###### The webpack-dev-middleware
+
+The **webpack-dev-middleware** is a wrapper that will emit files processed by webpack to a server. And according to the [Webpack Docs](https://webpack.js.org/guides/development/), this is a feature used internally by the **webpack-dev-server**, but that is made available in a separated package for more costum setups.
+
+
+So, in this example below, the Docs contrived a session combining **webpack-dev-middleware** with a Express-js server:
+
+```
+$ npm install --save-dev express webpack-dev-middleware
+```
+
+And, in the **webpack.config.js** file these changes are made, first excluding the webpack's server and then adding the **publicPath** property that will be used both:
+
+1. Within the Express server script
+2. To correctly serve assets on http://localhost:3000
+
+```
+// webpack.config.js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+
+module.exports = {
+    mode: 'development',
+    entry: {
+        index: './src/index.js',
+        print: './src/print.js',
+    },
+    devtool: 'inline-source-map',
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Development',
+        }),
+    ],
+    output: { 
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
+        publicPath: '/',
+    },
+};
+``` 
+
+
+Now, create a new file on the project root directory by the name of **server.js**:
+
+- **server.js**
+
+```
+const express = require('express');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+
+const app = express();
+const config = require('./webpack.config.js');
+const compiler = webpack(config);
+
+// Tell express to use the webpack-dev-middleware and use the webpack.config.js
+// configuration file as a base.
+app.use(
+  webpackDevMiddleware(compiler, {
+    publicPath: config.output.publicPath,
+  })
+);
+
+// Serve the files on port 3000.
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!\n');
+});
+```
+
+
+And add a new script for a **server** property at package.json file:
+
+``` 
+// package.json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "serve": "node server.js",
+    "build": "webpack"
+},
+```
 
 
 
