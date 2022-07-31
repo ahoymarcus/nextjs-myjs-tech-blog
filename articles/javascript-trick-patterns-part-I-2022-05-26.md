@@ -1383,6 +1383,29 @@ import { myFunction, myVariable, MyClass } from 'parentModule.js';
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### The Webpack
 
 The **Webpack** is simply a tool for bundling modules or in another words, a tool for compiling JavaScript modules. And once installed it can be interacted with from the CLI or API. 
@@ -1854,11 +1877,11 @@ So, instead of `relying on a global ./assets directory that contains everything,
 
 ```
  |– /components
- |   |–   /my-component
- |   |     |– index.jsx
- |   |     |– index.css
- |   |     |– icon.svg
- |   |     |– img.png
+ |   |– /my-component
+ |   |   |– index.jsx
+ |   |   |– index.css
+ |   |   |– icon.svg
+ |   |   |– img.png
 ``` 
 
 
