@@ -15,8 +15,7 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
     2.3. Webpack's Asset Management    
     2.4. Webpack's Output Management 
     2.5. Webpack's Development Mode
-    2.5. Webpack Resources: Deeper into the Webpack Operation
-3. #####
+3. ##### Webpack Resources: Deeper into the Webpack Operation
 4. #####
 5. #####
 6. #####
@@ -940,7 +939,7 @@ module.exports = {
 ``` 
 
 
-Now, create a new file on the project root directory by the name of **server.js**:
+Now, create a new file on the project root directory by the name of **./server.js**:
 
 - **server.js**
 
@@ -982,12 +981,8 @@ And add a new script for a **server** property at package.json file:
 ```
 
 
+### Webpack Resources: Deeper into the Webpack Operation
 
-
-
-
-
-#### Webpack Resources: Deeper into the Webpack Operation
 - [Code Splitting - Webpack Docs](https://webpack.js.org/guides/code-splitting/)
 - [Caching - Webpack Docs](https://webpack.js.org/guides/caching/)
 - [Manually Bundling an Application](https://www.youtube.com/watch?v=UNMkLHzofQI)
