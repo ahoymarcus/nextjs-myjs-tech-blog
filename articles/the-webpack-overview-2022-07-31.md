@@ -11,10 +11,11 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
 1. ##### Introduction
 2. ##### The Webpack
     2.1. Webpack's Basic Concepts    
-    2.2. Webpack's Configuration File   
-    2.3. Webpack's Asset Management    
-    2.4. Webpack's Output Management 
-    2.5. Webpack's Development Mode
+    2.2. Out of The Box Plugins for Webpack   
+    2.3. Webpack's Configuration File   
+    2.4. Webpack's Asset Management    
+    2.5. Webpack's Output Management    
+    2.6. Webpack's Development Mode
 3. ##### Webpack Resources: Deeper into the Webpack Operation
 4. #####
 5. #####
@@ -157,7 +158,7 @@ Interesting to point here also some final Webpack concepts that direct the gener
 
 
 
-###### Out of The Plugins for Webpack
+#### Out of The Box Plugins for Webpack
 
 Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found here:
 
@@ -414,7 +415,8 @@ Here, theres a new test case to be added into the webpack module configuration:
 
 ```
 // webpack.config.js
-...
+entry: /* ... */,
+output: { /* ... */ },
 module: {
     rules: [
         { /* test CSS */ },
@@ -634,6 +636,7 @@ And for the **webpack.config.js**:
 ```
 // webpack.config.js
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin);
 
 module.exports = {
    entry: { /* ... */ },
@@ -689,6 +692,7 @@ module.exports = {
     output: { 
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
 };
 ``` 
@@ -996,6 +1000,12 @@ And add a new script for a **server** property at package.json file:
 
 
 
+
+
+
+
+
+
 ### Further Reading
 
 - [Modern JavaScript Explained For Dinosaurs - Peterxjang.com](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
@@ -1029,6 +1039,10 @@ And add a new script for a **server** property at package.json file:
 
 
 ### References
+
+- [Out of the box plugins: default-webpack-plugins](https://webpack.js.org/plugins/)
+
+- [Third-party plugins: awesome-webpack](https://webpack.js.org/awesome-webpack/#webpack-plugins)
 
 - [Asset Management - Webpack Docs](https://webpack.js.org/guides/asset-management/)
 

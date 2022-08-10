@@ -12,7 +12,7 @@ description: 'This article focuses specially at some trick features that are mor
 2. ##### Organizing the JavaScript Code
     2.1. Plain Old JavaScript Objects and Object Constructor   
     2.2. Factory Functions and the Module Pattern    
-    2.3. Classes
+    2.3. Classes    
     2.4. Brief History of the JavaScript Module Developement   
     2.5. ES6 Modules
 3. ##### Linting
