@@ -242,7 +242,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 - [  ] O processo de inovação. 
 - [  ] Geração de ideias e o processo criativo. 
 - [  ] Inovação x Invenção. 
-- [  ] Tipos de inovação. Ecossistemas complexos de inf ormação.
+- [  ] Tipos de inovação. Ecossistemas complexos de informação.
 
 
 
@@ -338,7 +338,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 - [  ] Garantias do Sistema Financeiro Nacional: Aval; fiança; penhor mercantil; alienação fiduciária; hipoteca; fianças bancárias; Fundo Garantidor de Crédito (FGC). 
 - [  ] Crime de lavagem de dinheiro:  8.1 Conceito e etapas.
 - [  ] Crime de lavagem de dinheiro:  8.2 Prevenção e combate ao crime de lavagem de dinheiro e financiamento ao terrorismo: Lei nº 9.613/1998, Lei 13.260/2016, Circular Bacen 3.978/2020. 
-- [  ] COAF – Conselho de Controle de At ividades Financeiras. 
+- [  ] COAF – Conselho de Controle de Atividades Financeiras. 
 - [  ] Autorregulação Bancária.
 
 
@@ -356,7 +356,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 - [  ] Fintechs e startups. 
 - [  ] Soluções mobile e service design. 
 - [  ] O dinheiro na era digital: Blockchain e demais criptomoedas. 
-- [  ] O desafio dos bancos na era digit al.
+- [  ] O desafio dos bancos na era digital.
 
 
 
@@ -403,7 +403,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 - [  ] Probabilidade condicional. 
 - [  ] Noções de estatística. 
 - [  ] População e amostra. 
-- [  ] Análise e int erpret ação de tabelas e gráficos. 
+- [  ] Análise e interpretação de tabelas e gráficos. 
 - [  ] Regressão, tendências, extrapolações e interpolações. 
 - [  ] Tabelas de distribuição empírica de variáveis e histogramas. 
 - [  ] Estatística descritiva.
