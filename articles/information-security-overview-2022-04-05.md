@@ -24,8 +24,11 @@ description: 'The basic structure of information security has two primary focus 
 8. ##### Privacy
     8.1. Protection of Information about Individuals    
     8.2. Employee Privacy in the Workplace
-9. ##### Further Reading
-10. ##### References
+9. ##### Backup Routines and Viruses Prevention
+10. ##### Security Routines and File Recovery
+11. ##### 
+12. ##### Further Reading
+13. ##### References
 
 ### Introduction
  

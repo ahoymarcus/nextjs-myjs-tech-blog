@@ -213,13 +213,13 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 ###### 3 USO DE TECNOLOGIAS EM AMBIENTES CORPORATIVOS. 
 
-- [  ] Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados ao uso de informática no ambiente de escritório. 
-- [  ] Aplicativos e uso de ferramentas na internet e(ou) intranet. 
-- [  ] Softwares aplicativos do pacote Microsoft Office (Word, Excel, Power Point, Outlook e Access) e suas funcionalidades. 
-- [  ] Navegadores web (Google Chrome e Internet Explorer). 
-- [  ] Computação nas nuvens: acesso a distância e transferência de informação.
-- [  ] Aplicações e aplicativos em dispositivos móveis. 
-- [  ] Redes sociais.
+- [X] Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados ao uso de informática no ambiente de escritório. 
+- [X] Aplicativos e uso de ferramentas na internet e(ou) intranet. 
+- [X ] Softwares aplicativos do pacote Microsoft Office (Word, Excel, Power Point, Outlook e Access) e suas funcionalidades. 
+- [X] Navegadores web (Google Chrome e Internet Explorer). 
+- [X] Computação nas nuvens: acesso a distância e transferência de informação.
+- [X] Aplicações e aplicativos em dispositivos móveis. 
+- [X] Redes sociais.
 - [  ] Internet das coisas.
 
 
@@ -390,7 +390,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 - [  ] Rotinas de backup e prevenção de vírus.
 - [  ] Rotinas de segurança da informação e recuperação de arquivos. 
-- [  ] Política de confidencialidade: Confidencialidade, disponibilidade e integridade da informação; Diretrizes para uso da informação em ambientes corporativos; Processos e controles para proteção da informação. 
+- [X] Política de confidencialidade: Confidencialidade, disponibilidade e integridade da informação; Diretrizes para uso da informação em ambientes corporativos; Processos e controles para proteção da informação. 
 - [  ] Lei nº 13.709/2018 – LGPD.
 
 
