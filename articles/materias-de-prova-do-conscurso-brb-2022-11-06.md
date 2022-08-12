@@ -68,8 +68,8 @@ EDITAL Nº 1, de 07 de lulho de 2022
     14.2 Os locais, datas e horários de aplicação das provas objetiva e discursiva serão divulgados no endereço eletrônico http://www.iades.com.br, no dia 26 de outubro de 2022.    
     14.3 O candidato deverá transcrever, com caneta esferográfica de tinta preta, fabricada com mat erial transparente, as respostas da prova objetiva para a folha de respostas e o texto definitivo da prova discursiva para a folha de texto definitivo, que serão os únicos documentos válidos para a correção das provas. O preenchimento da folha de respostas e da folha de texto definitivo será de inteira responsabilidade do candidato, que deverá proceder em conformidade com as instruções específicas contidas neste edital, no caderno de provas e na folha de respostas e na folha de texto definitivo. Em hipótese alguma haverá substituição da folha de respostas e/ou folha de texto definitivo por erro do candidato.
 
-
-
+   
+   
 ###  DAS MEDIDAS DE PREVENÇÃO DECORRENTES DA PANDEMIA
 
 14. O IADES será responsável pelas seguintes medidas preventivas, relativamente à emergência de saúde pública de importância internacional decorrente do coronavírus (COVID-19), quando da aplicação das provas:    
@@ -200,15 +200,14 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 - [  ] Sistemas de medidas. 
 - [  ] Volumes. 
 - [  ] Compreensão de estruturas lógicas. 
-- [  ] Lógica de argument ação (analogias, inferências, deduções e conclusões). 12 Diagramas lógicos. 
-- [  ] Noções de Matemática Financeira.    
-    13.1 Juros simples e compostos.    
-    13.2 Capitalização e descontos.    
-    13.3 Taxas de juros: nominal, ef et iva, equivalente, proporcional, real e aparente.    
-    13.4 Rendas uniformes e variáveis.     
-    13.5 Planos de amortização deempréstimos e financiamentos.   
-    13.6 Cálculo financeiro: custo real efetivo de operações de f inanciament o, empréstimo e investimento.    
-    13.7 Inflação, variação cambial e taxa de juros.
+- [  ] Lógica de argumentação (analogias, inferências, deduções e conclusões). 12 Diagramas lógicos. 
+- [  ] Noções de Matemática Financeira: 13.1 Juros simples e compostos.
+- [  ] Noções de Matemática Financeira: 13.2 Capitalização e descontos.
+- [  ] Noções de Matemática Financeira: 13.3 Taxas de juros: nominal, efetiva, equivalente, proporcional, real e aparente.
+- [  ] Noções de Matemática Financeira: 13.4 Rendas uniformes e variáveis.
+- [  ] Noções de Matemática Financeira: 13.5 Planos de amortização deempréstimos e financiamentos.
+- [  ] Noções de Matemática Financeira: 13.6 Cálculo financeiro: custo real efetivo de operações de f inanciament o, empréstimo e investimento.
+- [  ] Noções de Matemática Financeira: 13.7 Inflação, variação cambial e taxa de juros.
 
 
 
@@ -227,16 +226,11 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 ###### 4 GOVERNANÇA CORPORATIVA E COMPLIANCE. 
 
-- [  ] Noções de governança corporativa:    
-    1.1 Gestão por processos.     
-    1.2 Gestão de riscos.    
-    1.3 Processos de análise e tomada de decisão.    
-    1.4 Gerenciamento de crises. 
+- [  ] Noções de governança corporativa: Gestão por processos; Gestão de riscos; Processos de análise e tomada de decisão; Gerenciamento de crises. 
 - [  ] Compliance: conceitos, suporte da alta administração, código de conduta, controles internos, treinamento e comunicação. 
 - [  ] Legislação anticorrupção: Lei nº 12.846/2013 e Decreto no 8.420/2015. 
-- [  ] Noções de Contratos:  
-    4.1. Lei 13.303/16. 
-- [  ] Conduta baseada no Código de Conduta Ética do BRB (disponível no endereço elet ônico http://www.iades.com.br).
+- [  ] Noções de Contratos: Lei 13.303/16. 
+- [  ] Conduta baseada no Código de Conduta Ética do BRB: disponível no endereço elet ônico http://www.iades.com.br
 
 
 
@@ -254,12 +248,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 ###### 6 LEI ORGÂNICA DO DISTRITO FEDERAL E REGIME JURÍDICO DOS SERVIDORES DO DISTRITO FEDERAL. 
 
-- [  ] Lei Orgânica do Distrito Federal.    
-    1.1 Título I - Dos Fundamentos da Organização dos Poderes e do Distrito Federal.     
-    1.2 Título II - Da Organização do Distrito Federal: Capítulos II, III, IV e V.    
-    1.3 Título III – Da Organização dos Poderes: Capítulos I e III.    
-    1.4 Título IV – Da Tributação e do Orçamento do Distrito Federal: Capítulos I e II.     
-    1.5 Título V – Da Ordem Econômica do Distrito Federal: Capítulo I. Título VI – Da Ordem Social e do Meio Ambiente: Capítulos VI, VIII, IX, X e XI. 
+- [  ] Lei Orgânica do Distrito Federal: Título I - Dos Fundamentos da Organização dos Poderes e do Distrito Federal; Título II - Da Organização do Distrito Federal: Capítulos II, III, IV e V.; Título III – Da Organização dos Poderes: Capítulos I e III;  Título IV – Da Tributação e do Orçamento do Distrito Federal: Capítulos I e II; Título V – Da Ordem Econômica do Distrito Federal: Capítulo I; Título VI – Da Ordem Social e do Meio Ambiente: Capítulos VI, VIII, IX, X e XI. 
 - [  ] Lei Complementar no 840/2011 e suas alterações (Regime Jurídico dos servidores públicos civis do Distrito Federal, das autarquias e das fundações públicas distritais), todos os capítulos, títulos e dispositivos legais.
 
 
@@ -279,59 +268,76 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 ###### 1 CONHECIMENTOS BANCÁRIOS. 
 
-- [  ] Estrutura do Sistema Financeiro Nacional.     
-    1.1 Conselho Monetário Nacional.    
-    1.2 Banco Central do Brasil.     
-    1.3 COPOM – Comitê de Política Monetária.     
-    1.4 Comissão de Valores Mobiliários.     
-    1.5 Conselho de Recursos do Sistema Financeiro Nacional.     
-    1.6 Bancos múltiplos; bancos comerciais; caixas econômicas; cooperativas de crédito; bancos comerciais cooperativos; administradoras de consórcios; corretoras de câmbio; bancos de investimento; bancos de desenvolvimento; sociedades de crédito, financiamento e investimento; sociedades de arrendamento mercantil; sociedades corretoras de tít ulos e valores mobiliários; sociedades distribuidoras de títulos e valores mobiliários; sociedades de crédit o imobiliário; associações de poupança e empréstimo.    
-    1.7 BNDES – Banco Nacional de Desenvolvimento Econômico e Social. Agências de Fomento. 
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.1 Conselho Monetário Nacional.
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.2 Banco Central do Brasil.
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.3 COPOM – Comitê de Política Monetária.
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.4 Comissão de Valores Mobiliários.
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.5 Conselho de Recursos do Sistema Financeiro Nacional.
+- [  ] Estrutura do Sistema Financeiro Nacional: 1.6 Bancos múltiplos; bancos comerciais; caixas econômicas; cooperativas de crédito; bancos comerciais cooperativos; administradoras de consórcios; corretoras de câmbio; bancos de investimento; bancos de desenvolvimento; sociedades de crédito, financiamento e investimento; sociedades de arrendamento mercantil; sociedades corretoras de tít ulos e valores mobiliários; sociedades distribuidoras de títulos e valores mobiliários; sociedades de crédit o imobiliário; associações de poupança e empréstimo.
+- [  ] Estrutura do Sistema Financeiro Nacional:  1.7 BNDES – Banco Nacional de Desenvolvimento Econômico e Social. Agências de Fomento. 
 - [  ] Sociedades de fomento mercantil (factoring). 
 - [  ] Sociedades administradoras de cartões de crédito. 
-- [  ] Produtos e serviços financeiros:    
-    4.1 Depósitos e transferências.    
-    4.2 Letras de câmbio.     
-    4.3 Cobrança e pagamento de títulos e carnês.     
-    4.4 Transferências automáticas de f undos.     
-    4.5 Cartões de crédito e débito.    
-    4.6 Arrecadação de tributos e tarifas públicas.    
-    4.7 Crédito rotativo.     
-    4.8 Descontos de títulos.    
-    4.9 Financiamento de capital de giro.     
-    4.10 Leasing: tipos, funcionamento, bens.     
-    4.11 Financiamento de capital fixo.    
-    4.12 Crédito direto ao consumidor.     
-    4.13 Crédito rural.     
-    4.14 Cadernetas de poupança.     
-    4.15 Cartões de crédito.    
-    4.16 Títulos de capitalização.     
-    4.17 Planos de aposentadoria e pensão privados.     
-    4.18 Planos de seguros.    
-    4.19 Abertura e movimentação de contas: documentos básicos.        
-    4.20 Pessoa física e pessoa jurídica: capacidade e incapacidade civil, representação e domicílio.     
-    4.21 Tipos de sociedade: em nome coletivo, por quotas de responsabilidade limitada, anônimas, firma individual ou empresária.     
-    4.22 Documentos comerciais e títulos de crédito: nota promissória, duplicata, fatura, cédula de crédito bancário.     
-    4.23 Cheque: requisitos essenciais, circulação, endosso, cruzamento e compensação.    
-    4.24 Sistema de Pagament o Brasileiro. 
-- [  ] Mercado de capitais.      
-    5.1 Ações: características e direitos.     
-    5.2 Debêntures.   
-    5.3 Diferenças entre companhias abertas e fechadas.    
-    5.4 Funcionamento do mercado à vista de ações.     
-    5.5 Mercado de balcão.    
-    5.6 Operações com ouro. 
-- [  ] Mercado de câmbio.    
-    6.1 Instituições autorizadas a operar.     
-    6.2 Operações básicas.    
-    6.3 Características dos contratos de câmbio.     
-    6.4 Taxas de câmbio.    
-    6.5 Remessas. 
-- [  ] Garantias do Sistema Financeiro Nacional.   
-    7.1 Aval; fiança; penhor mercantil; alienação fiduciária; hipoteca; fianças bancárias; Fundo Garantidor de Crédito (FGC). 
-- [  ] Crime de lavagem de dinheiro.      
-    8.1 Conceito e etapas.     
-    8.2 Prevenção e combate ao crime de lavagem de dinheiro e financiamento ao terrorismo: Lei nº 9.613/1998, Lei 13.260/2016, Circular Bacen 3.978/2020. 
+- [  ] Produtos e serviços financeiros: 4.1 Depósitos e transferências.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.2 Letras de câmbio.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.3 Cobrança e pagamento de títulos e carnês.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.4 Transferências automáticas de f undos.     
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.5 Cartões de crédito e débito.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.6 Arrecadação de tributos e tarifas públicas.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.7 Crédito rotativo.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.8 Descontos de títulos.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.9 Financiamento de capital de giro.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.10 Leasing: tipos, funcionamento, bens.     
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.11 Financiamento de capital fixo.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros:  4.12 Crédito direto ao consumidor.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros:  4.13 Crédito rural.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.14 Cadernetas de poupança.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.15 Cartões de crédito.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.16 Títulos de capitalização.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.17 Planos de aposentadoria e pensão privados.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros:  4.18 Planos de seguros.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.19 Abertura e movimentação de contas: documentos básicos.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.20 Pessoa física e pessoa jurídica: capacidade e incapacidade civil, representação e domicílio.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.21 Tipos de sociedade: em nome coletivo, por quotas de responsabilidade limitada, anônimas, firma individual ou empresária.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.22 Documentos comerciais e títulos de crédito: nota promissória, duplicata, fatura, cédula de crédito bancário.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.23 Cheque: requisitos essenciais, circulação, endosso, cruzamento e compensação.
+- [  ] Sociedades administradoras de cartões de crédito. 
+- [  ] Produtos e serviços financeiros: 4.24 Sistema de Pagament o Brasileiro. 
+- [  ] Mercado de capitais: 5.1 Ações: características e direitos.
+- [  ] Mercado de capitais: 5.2 Debêntures
+- [  ] Mercado de capitais: 5.3 Diferenças entre companhias abertas e fechadas.    
+- [  ] Mercado de capitais: 5.4 Funcionamento do mercado à vista de ações.
+- [  ] Mercado de capitais: 5.5 Mercado de balcão.
+- [  ] Mercado de capitais: 5.6 Operações com ouro. 
+- [  ] Mercado de câmbio: 6.1 Instituições autorizadas a operar.
+- [  ] Mercado de câmbio: 6.2 Operações básicas.
+- [  ] Mercado de câmbio: 6.3 Características dos contratos de câmbio.
+- [  ] Mercado de câmbio: 6.4 Taxas de câmbio
+- [  ] Mercado de câmbio: 6.5 Remessas. 
+- [  ] Garantias do Sistema Financeiro Nacional: Aval; fiança; penhor mercantil; alienação fiduciária; hipoteca; fianças bancárias; Fundo Garantidor de Crédito (FGC). 
+- [  ] Crime de lavagem de dinheiro:  8.1 Conceito e etapas.
+- [  ] Crime de lavagem de dinheiro:  8.2 Prevenção e combate ao crime de lavagem de dinheiro e financiamento ao terrorismo: Lei nº 9.613/1998, Lei 13.260/2016, Circular Bacen 3.978/2020. 
 - [  ] COAF – Conselho de Controle de At ividades Financeiras. 
 - [  ] Autorregulação Bancária.
 
@@ -384,10 +390,7 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 - [  ] Rotinas de backup e prevenção de vírus.
 - [  ] Rotinas de segurança da informação e recuperação de arquivos. 
-- [  ] Política de confidencialidade.
-    3.1. Confidencialidade, disponibilidade e integridade da informação.    
-    3.2. Diretrizes para uso da informação em ambientes corporativos.    
-    3.3. Processos e controles para proteção da informação. 
+- [  ] Política de confidencialidade: Confidencialidade, disponibilidade e integridade da informação; Diretrizes para uso da informação em ambientes corporativos; Processos e controles para proteção da informação. 
 - [  ] Lei nº 13.709/2018 – LGPD.
 
 
