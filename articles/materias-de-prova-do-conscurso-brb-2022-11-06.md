@@ -345,18 +345,18 @@ Federal, e divulgado na internet, no endereço eletrônico http://www.iades.com.
 
 ###### 2 OS BANCOS NA ERA DIGITAL (presente e tendências). 
 
-- [  ] Internet banking, banco virtual e “dinheiro de plástico”. 
-- [  ] Mobile banking. 
-- [  ] Open banking. 
-- [  ] O comportamento do consumidor na relação com o banco. 
-- [  ] A experiência do usuário. 
-- [  ] Segmentação e interações digitais. 
-- [  ] Inteligência artificial cognitiva. 
-- [  ] Banco digitalizado x banco digital. 
-- [  ] Fintechs e startups. 
-- [  ] Soluções mobile e service design. 
-- [  ] O dinheiro na era digital: Blockchain e demais criptomoedas. 
-- [  ] O desafio dos bancos na era digital.
+- [X] Internet banking, banco virtual e “dinheiro de plástico”. 
+- [X] Mobile banking. 
+- [X] Open banking. 
+- [X] O comportamento do consumidor na relação com o banco. 
+- [X] A experiência do usuário. 
+- [X] Segmentação e interações digitais. 
+- [X] Inteligência artificial cognitiva. 
+- [X] Banco digitalizado x banco digital. 
+- [X] Fintechs e startups. 
+- [X] Soluções mobile e service design. 
+- [X] O dinheiro na era digital: Blockchain e demais criptomoedas. 
+- [X] O desafio dos bancos na era digital.
 
 
 
