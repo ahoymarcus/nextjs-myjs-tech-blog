@@ -30,8 +30,12 @@ EDITAL Nº 1, de 07 de lulho de 2022
 	13.5. DIREITO ADMINISTRATIVO
 14. ##### ANEXO I - CONHECIMENTOS ESPECÍFICOS DE CADA ESPECIALIDADE/SUBÁREA
     14.1. INFORMÁTICA LEGISLATIVA/SUBÁREA ANÁLISE DE SISTEMAS
-15. ##### Further Reading     
-16. ##### References
+15. ##### ANEXO II – DO CARGO
+	15.1. DA REGULAMENTAÇÃO     
+	15.2. DA ORGANIZAÇÃO    
+	15.3. DOS REQUISITOS E ATRIBUIÇÕES DO CARGO
+16. ##### Further Reading     
+17. ##### References
 
 
 ### DAS DISPOSIÇÕES PRELIMINARES
@@ -515,5 +519,41 @@ https://conhecimento.fgv.br/concursos/senado22.
 
 
 
+### ANEXO II – DO CARGO 
 
+#### DA REGULAMENTAÇÃO
+
+Os servidores do Senado Federal têm deveres, direitos e vantagens definidos na Lei nº 8.112/90 (Regime Jurídico dos Servidores Civis da União), no Regulamento Administrativo do Senado Federal (Anexo da Resolução nº 13/2018, com suas modificações posteriores) e nas demais normas complementares. 
+
+
+#### DA ORGANIZAÇÃO
+A carreira legislativa é organizada em níveis e integrada por categorias funcionais, especialidades e padrões de ingresso. Em relação aos cargos ofertados neste concurso, as respectivas informações estão discriminadas no quadro abaixo.
+
+
+#### DOS REQUISITOS E ATRIBUIÇÕES DO CARGO
+
+###### CARGO: ANALISTA LEGISLATIVO, ESPECIALIDADE INFORMÁTICA LEGISLATIVA 
+
+O cargo de Analista Legislativo, especialidade Informática Legislativa, acessível ao portador de diploma de conclusão de curso de graduação de nívelsuperior na área de informática, devidamente registrado e fornecido por instituição de ensino superiorreconhecida pelo Ministério da Educação, compreende funções de execução e assessoramento, de nível superior e especializado, em informática e processamento de dados, aos órgãos do Senado Federal e do Congresso Nacional, aos Senadores e usuários, em graus variados de complexidade, e tem por atribuições: 
+i. consultoria das gerências quanto a soluções de informática; 
+ii. diagnóstico de necessidades e modelagem funcional dos processos e rotinas de trabalho; 
+iii. elaboração de modelos de dados para sistemas informatizados; 
+iv. coordenação, desenvolvimento e suporte de sistemas e serviços de informática de nível corporativo; 
+v. coordenação ou execução da manutenção corretiva e evolutiva de sistemas corporativos; 
+vi. coordenação e acompanhamento de mudanças organizacionais e treinamentos decorrentes da implantação de soluções; 
+vii. auditorias e perícias; 
+viii. prospecção, homologação e implementação de novos produtos e ferramentas; 
+ix. especificações técnicas e acompanhamento da aquisição de produtos e serviços de informática; 
+x. fiscalização técnica de contratos; 
+xi. arquitetura, projeto e manutenção da topologia da rede de computadores e recursos de comunicação e armazenamento de dados; 
+xii. instalação e manutenção dos recursos de rede e do ambiente operacional corporativo; 
+xiii. configuração, instalação e gerenciamento de hardware, softwares, bancos de dados e ferramentas de apoio de nível corporativo; 
+xiv. proposição de normas de segurança de acesso e uso dos recursos computacionais, plano de contingência e de proteção contra ataques à rede; 
+xv. gerência de mudanças de serviços; 
+xvi. gestão de cadastros e mapas de configuração; 
+xvii. elaboração de manuais e materiais de treinamento; desempenhar outras atividades correlatas.
+
+
+
+	
 
