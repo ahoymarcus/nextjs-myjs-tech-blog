@@ -313,167 +313,205 @@ https://conhecimento.fgv.br/concursos/senado22.
 
 #### LÍNGUA PORTUGUESA, LITERATURA NACIONAL E REDAÇÃO   
 
-1. Gramática normativa: uso da língua culta. 
-2. Fonética e fonologia. 
-3. Morfologia. 
-4. Sintaxe. 
-5. Semântica. 
-6. Literatura: texto literário, gêneros literários,
-principais movimentos literários. 
-7. Tipos de textos e gêneros textuais. 
-8. Produção e interpretação de texto.
-9. Intertextualidade. 
-10. Citações e transcrições. 
-11. Redação Oficial (conforme o Manual de Redação Oficial da Presidência da República): uso da norma culta da linguagem, clareza e precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização.
+1. [  ] Gramática normativa: uso da língua culta. 
+2. [  ] Fonética e fonologia. 
+3. [  ] Morfologia. 
+4. [  ] Sintaxe. 
+5. [  ] Semântica. 
+6. [  ] Literatura: texto literário, gêneros literários, principais movimentos literários. 
+7. [  ] Tipos de textos e gêneros textuais. 
+8. [  ] Produção e interpretação de texto.
+9. [  ] Intertextualidade. 
+10. [  ] Citações e transcrições. 
+11. [  ] Redação Oficial (conforme o Manual de Redação Oficial da Presidência da República): uso da norma culta da linguagem, clareza e precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização.
 
 
 #### RACIOCÍNIO LÓGICO MATEMÁTICO   
 
-1. Estruturas lógicas e noções básicas de lógica: conectivos, tautologia, contradições, contingência, implicações, equivalências, quantificadores, afirmações e negações. 
-
-2. Lógica de argumentação e análise crítica de informações: analogias, inferências, deduções, conclusões e silogismos. Lógica sentencial ou proposicional: proposições simples e composta, tabelas‐verdade, diagramas lógicos. 
-
-3. Operações com conjuntos. 
-
-4. Análise, interpretação e utilização de dados apresentados em tabelas, gráficos e diagramas. 
-
-5. Características e relações matemáticas envolvendo problemas aritméticos, figuras geométricas e matrizes. 
-
-6. Noções básicas de Contagem e Probabilidades.
+1. [  ] Estruturas lógicas e noções básicas de lógica: conectivos, tautologia, contradições, contingência, implicações, equivalências, quantificadores, afirmações e negações. 
+2. [  ] Lógica de argumentação e análise crítica de informações: analogias, inferências, deduções, conclusões e silogismos. Lógica sentencial ou proposicional: proposições simples e composta, tabelas‐verdade, diagramas lógicos. 
+3. [  ] Operações com conjuntos. 
+4. [  ] Análise, interpretação e utilização de dados apresentados em tabelas, gráficos e diagramas. 
+5. [  ] Características e relações matemáticas envolvendo problemas aritméticos, figuras geométricas e matrizes. 
+6. [  ] Noções básicas de Contagem e Probabilidades.
 
 
 #### LÍNGUA INGLESA   
 
-1. Conhecimento e uso das formas contemporâneas das linguagens inglesa. 
-
-2. Compreensão e interpretação de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 
-
-3. Itens gramaticais relevantes para a compreensão dos conteúdos semânticos. Palavras e expressões equivalentes. Elementos de referência.
+1. [  ] Conhecimento e uso das formas contemporâneas das linguagens inglesa. 
+2. [  ] Compreensão e interpretação de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 
+3. [  ] Itens gramaticais relevantes para a compreensão dos conteúdos semânticos. Palavras e expressões equivalentes. Elementos de referência.
 
 
 #### DIREITO CONSTITUCIONAL   
 
-1. Constituição de 1988: conceito, contexto histórico, características, estrutura do texto. 
-
-2. Poder constituinte: conceito, espécies, limites. 
-
-3. Controle de constitucionalidade: conceito, espécies, instrumentos de controle. 
-
-4. Princípios Fundamentais. Direitos e Garantias Fundamentais: Direitos e Deveres Individuais e Coletivos, Direitos Sociais, Nacionalidade, Direitos Políticos e Partidos Políticos. 
-
-5. Organização do Estado: Organização Político‐Administrativa, União, Estados, Municípios, Distrito Federal e Territórios. Intervenção Federal. 
-
-6. Administração Pública: Disposições Gerais, Servidores Públicos Civis e Militares. 
-
-7. Poder Legislativo. O Congresso Nacional e suas Casas: atribuições, competências, reuniões e comissões. Regime Jurídico‐constitucional dos Parlamentares. Processo Legislativo. Fiscalização Contábil, Financeira e Orçamentária. 
-
-8. Poder Executivo: atribuições e responsabilidades do Presidente da República. Atribuições dos Ministros de Estado. 
-
-9. Poder Judiciário: órgãos, composição, garantias e competências. Funções Essenciais à Justiça. 
-
-10. Defesa do Estado e das Instituições Democráticas.
-
+1. [  ] Constituição de 1988: conceito, contexto histórico, características, estrutura do texto. 
+2. [  ] Poder constituinte: conceito, espécies, limites. 
+3. [  ] Controle de constitucionalidade: conceito, espécies, instrumentos de controle. 
+4. [  ] Princípios Fundamentais. Direitos e Garantias Fundamentais: Direitos e Deveres Individuais e Coletivos, Direitos Sociais, Nacionalidade, Direitos Políticos e Partidos Políticos. 
+5. [  ] Organização do Estado: Organização Político‐Administrativa, União, Estados, Municípios, Distrito Federal e Territórios. Intervenção Federal. 
+6. [  ] Administração Pública: Disposições Gerais, Servidores Públicos Civis e Militares. 
+7. [  ] Poder Legislativo. O Congresso Nacional e suas Casas: atribuições, competências, reuniões e comissões. Regime Jurídico‐constitucional dos Parlamentares. Processo Legislativo. Fiscalização Contábil, Financeira e Orçamentária. 
+8. [  ] Poder Executivo: atribuições e responsabilidades do Presidente da República. Atribuições dos Ministros de Estado. 
+9. [  ] Poder Judiciário: órgãos, composição, garantias e competências. Funções Essenciais à Justiça. 
+10. [  ] Defesa do Estado e das Instituições Democráticas.
 
 
 #### DIREITO ADMINISTRATIVO
 
-1. Conceitos e princípios. Estado. Governo. Administração Pública. Reformas administrativas. 
- 
-2. Organização da Administração. Entidades paraestatais e o Terceiro Setor. A Administração na Constituição de 1988. 
-
-3. Poderes e Deveres Administrativos: poder discricionário, poder regulamentar, poder hierárquico e disciplinar, poder de polícia. Uso e abuso de poder. 
-
-4. Atos Administrativos: conceito, requisitos, atributos, classificação, espécies, extinção, nulidades e revogação. 
-
-5. Agentes Públicos: disposições constitucionais, regime jurídico, Lei nº 8.112/1990, cargo público, provimento, investidura, estabilidade, acumulação, regime disciplinar e seguridade social. 
-
-6. Processo Administrativo Federal. Lei nº 9.784/1999. 
-
-7. Licitações e contratos administrativos: Lei nº 8.666/1993 e Lei nº 14.133/2021, conceito, princípios, contratação direta, modalidades, tipos e aspectos procedimentais. Pregão: Lei nº 10.520/2002, conceito, espécies, objeto, regulamentação e aspectos procedimentais. 
-
-8. Controle Interno e Externo da Administração.
-
-9. Responsabilidade Civil do Estado. 10. Improbidade Administrativa. 11. Lei de Acesso à Informação (Lei nº 12.527/2011). 12. Lei Geral de Proteção de Dados (Lei nº 13.709/2018). 13. Regime jurídico‐administrativo na Lei de Introdução às Normas do Direito Brasileiro (Lei nº 4.657/1942) e suas alterações.
+1. [  ] Conceitos e princípios. Estado. Governo. Administração Pública. Reformas administrativas. 
+ 2. [  ] Organização da Administração. Entidades paraestatais e o Terceiro Setor. A Administração na Constituição de 1988. 
+3. [  ] Poderes e Deveres Administrativos: poder discricionário, poder regulamentar, poder hierárquico e disciplinar, poder de polícia. Uso e abuso de poder. 
+4. [  ] Atos Administrativos: conceito, requisitos, atributos, classificação, espécies, extinção, nulidades e revogação. 
+5. [  ] Agentes Públicos: disposições constitucionais, regime jurídico, Lei nº 8.112/1990, cargo público, provimento, investidura, estabilidade, acumulação, regime disciplinar e seguridade social. 
+6. [  ] Processo Administrativo Federal. Lei nº 9.784/1999. 
+7. [  ] Licitações e contratos administrativos: Lei nº 8.666/1993 e Lei nº 14.133/2021, conceito, princípios, contratação direta, modalidades, tipos e aspectos procedimentais. Pregão: Lei nº 10.520/2002, conceito, espécies, objeto, regulamentação e aspectos procedimentais. 
+8. [  ] Controle Interno e Externo da Administração.
+9. [  ] Responsabilidade Civil do Estado. 
+10. [  ] Improbidade Administrativa. 
+11. [  ] Lei de Acesso à Informação (Lei nº 12.527/2011). 
+12. [  ] Lei Geral de Proteção de Dados (Lei nº 13.709/2018). 
+13. [  ] Regime jurídico‐administrativo na Lei de Introdução às Normas do Direito Brasileiro (Lei nº 4.657/1942) e suas alterações.
 
 
 ### ANEXO I - CONHECIMENTOS ESPECÍFICOS DE CADA ESPECIALIDADE/SUBÁREA
 
 #### 14.1. INFORMÁTICA LEGISLATIVA/SUBÁREA ANÁLISE DE SISTEMAS
 
-1. Contratações de TI: Leis 8.666/1993 e 14.133/2021; Instrução Normativa SGD/ME 01/2019 e alterações; Instrução Normativa SGD/ME 40/2020 e alterações; Instrução Normativa SEGES/ME 65/2021 e alterações; normas relacionadas a contratações de bens e serviços de TI; boas práticas em contratação de soluções de Tecnologia da Informação; Elaboração e fiscalização de contratos. Critérios de remuneração por esforço versus produto. Cláusulas e indicadores de nível de serviço. Papel do fiscalizador do contrato. Papel do preposto da contratada. Acompanhamento da execução contratual. Registro e notificação de irregularidades. Definição e aplicação de penalidades e sanções administrativas. contratações de serviços de TI baseadas em Unidade de Serviço Técnico – UST, em Pontos de Função – PF, e em postos de trabalho com níveis de serviço (aspectos específicos, recomendações do TCU, aplicações e fiscalização). 
-
-
-2. Gestão e Governança de TI: Gestão e planejamento estratégico. O ciclo do planejamento em organizações (PDCA). Balanced Scorecard (BSC): principais conceitos, aplicações, mapa estratégico, referencial estratégico das organizações. Análise de ambiente interno e externo. Ferramentas de análise de ambiente: análise SWOT, análise de cenários, matriz GUT. Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos. Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos. Gerenciamento de Projetos e PMBoK: conceitos básicos. Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos; Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS). Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação). Modelagem de processos e de serviços. Planejamento e Gestão Estratégicos de TI. PETI. PDTI. Indicadores de desempenho de TI. Governança de Dados. Segurança da Informação. Gestão de riscos de Tecnologia da Informação. Gerenciamento do relacionamento entre TI, negócio e usuários. 
-
-
-3. Análise de negócio e de processos: arquitetura corporativa; técnicas de modelagem, análise e redesenho de processos, padrão BPMN, desenvolvimento orientado a processos, workflow. Modelagem conceitual. Design thinking, business canvas. Transformação digital, governo eletrônico, cidadania digital.
-
-
-4. Aquisição de soluções de TI: análise de alternativas, custo x benefício, construir x comprar, cálculo de retorno do investimento, custo total de propriedade. Realização de provas de conceito. Pesquisa e especificação de serviços de sustentação e consultoria em TI. Legislação de compras públicas para soluções de TI.
-
-
-5. Processos de software: evolução histórica dos processos de software; Processo Unificado (UP); Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development. Indicadores de desempenho de processo.
-
-
-6. Engenharia de Requisitos: elicitação e gestão de requisitos, histórias de usuário, casos de uso. Privacidade e segurança por padrão e por projeto. Design de interface e de experiência do usuário, responsividade, usabilidade e acessibilidade. Prototipação, produto mínimo viável, testes A/B.
-
-
-7. Gestão de projetos e produtos de software: gestão de backlog, gestão de dívida técnica, análise de restrições e trade‐offs, priorização, estimativas, análise de pontos de função, story points. Práticas de gerenciamento de projetos do PMBoK.
-
-
-8. Modelos de software: entidades e relacionamentos, modelo E‐R; orientação a objetos, UML, diagramas estruturais e comportamentais. Geração de código, engenharia reversa.
-
-
-9. Princípios de projeto de software: acoplamento, coesão. SOLID. Padrões de projeto. Código limpo, design para reutilização, refatoração, "code smells". 
-
-
-10. Qualidade de software: objetivos da qualidade, restrições e atributos de qualidade, métricas de processo e de código‐fonte, análise estática e dinâmica de software. Padronização.
-
-
-11. Arquitetura de software e de sistemas: arquiteturas em camadas, baseada em serviços, microsserviços, orientação a eventos, cliente‐ servidor, hexagonal, serverless. Anti‐padrões arquiteturais. Modelagem e documentação de arquitetura, Archimate, C4. Tomada de decisão técnica.
-
-
-12. Arquitetura de sistemas web: protocolo HTTP, SSL, servidores proxy, cache, DNS, balanceamento de carga, tolerância a falhas e escalabilidade em sistemas web. 
-
-
-13. Arquitetura de sistemas em nuvem: modelo dos 12 fatores. Estratégias de migração para nuvem. Software, Plataforma e Infraestrutura como Serviço (SaaS, PaaS, IaaS). Escalabilidade, elasticidade, bilhetagem e cobrança de serviços em nuvem.
-
-
-14. Desenvolvimento com containers: Docker, OCI, Kubernetes. Boas práticas para desenvolvimento com containers. Orquestração de containers. Arquitetura altamente distribuída, Content Delivery Networks (CDNs).
-
-
-15. Arquitetura e gestão de dados: Conceitos do Data Management Body of Knowledge (DAMA DMBoK). Arquitetura e qualidade de dados. Segurança e privacidade de dados. Metadados. Master data management
-(MDM). Ontologias. ECM, Gestão de documentos eletrônicos. Gestão arquivística de documentos, modelo e‐Arq Brasil. Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas. Gestão de configuração de esquemas de bancos de dados, Liquibase. Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
-
-
-16. Desenvolvimento de software: Estruturas de dados, lógica de programação, complexidade de algoritmos. Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA. Automação da construção do software, Maven, Npm. HTML, CSS, Bootstrap, Javascript, Typescript, Angular. Aplicativos móveis, arquitetura de sistemas mobile, Ionic. Responsividade, acessibilidade e usabilidade. Python. Plone. Java Liferay.
-
-
-17. Integração de sistemas: padrões de integração de aplicações, REST, web services. Projeto de APIs, comunicação síncrona e assíncrona; Mensageria e orientação a eventos, sincronização de dados, integridade eventual. Formatos de troca de dados, JSON, XML, gRPC.
-
-
-18. Testes de software: testes de unidade, de integração e de sistema; planejamento de testes; testes automatizados e manuais; princípio FIRST; Test‐driven development (TDD), ferramentas xUnit, testabilidade, mocks e stubs. Documentação técnica de software. Documentação de usuário. 
-
-
-19. Gerência de configuração de software: Git, multirepos e monorepos, Gitflow. Versionamento semântico. Gerenciamento de liberação. Desenvolvimento colaborativo, revisão de código, gestão de equipes distribuídas. Gerenciamento de comunidade de software. Developer relations. Licenças de software. Repositórios e dinâmicas de colaboração em projetos de software livre. Utilização e modificação de software de terceiros. 
-
-
-20. DevOps: conceitos e princípios; integração contínua, entrega contínua, feature flags, deploy A/B, deploy canário. Observabilidade, coleta e análise de logs e métricas. Automação, linguagens de scripting (shell, Ruby), operação em ambiente Linux.
-
-
-21. Segurança da informação: conceitos, principais tipos de ataques e vulnerabilidades, técnicas de desenvolvimento seguro, boas práticas da OWASP. Modelo de Controles CIS. Conceitos de gestão de identidades e acesso; autenticação e autorização, single sign‐on; SAML, OAuth2 e OpenId Connect; login social. Privacidade e segurança por padrão. Criptografia e proteção de dados em trânsito e em repouso. SSL, mTLS. Assinatura e certificação digital, ICP‐Brasil. Gestão de segredos. Conceito de "zero‐trust security". Mascaramento de dados. Lei Geral de Proteção de Dados (LGPD). Conceitos de DevSecOps.
-
-
-22. Inteligência artificial: conceitos e principais tecnologias. Aprendizagem de máquina, deep learning, processamento de linguagem natural, chatbots. 
-
-
-23. Blockchain: conceitos e principais aplicações. 
-
-
-24. Sistemas de Suporte à Decisão Analítica: ETL, Big Data, Stream processing, modelagem dimensional. Datawarehouse, Business Intelligence, Data Mining, OLAP e ERP. ECM, Gestão de documentos eletrônicos. Ciência de Dados. Inteligência Artificial. Machine Learning. Deep Learning.
-
-
-25. Direito Digital. Proteção de dados e direito de privacidade de informação. Responsabilidade de provedores de internet, sítios de internet, usuários e empresas. Quebra do sigilo telemático. Redes sociais, direitos de personalidade e notícias falsas, remoção de conteúdo, direito ao esquecimento. Lei nº 9.609/1998 (Propriedade intelectual de programa de computador). Lei nº 12.737/2012 (Lei dos crimes cibernéticos). Lei nº 12.965/2014 (Marco Civil da Internet). Lei nº 13.188/2015 (Direito de resposta). Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais).
+1. Contratações de TI:    
+	1.1. [  ] Leis 8.666/1993 e 14.133/2021;     
+	1.2. [  ] Instrução Normativa SGD/ME 01/2019 e alterações;     
+	1.3. [  ] Instrução Normativa SGD/ME 40/2020 e alterações;    
+	1.4. [  ] Instrução Normativa SEGES/ME 65/2021 e alterações;    
+	1.5. [  ] normas relacionadas a contratações de bens e serviços de TI;    
+	1.6. [  ] boas práticas em contratação de soluções de Tecnologia da Informação; Elaboração e fiscalização de contratos. Critérios de remuneração por esforço versus produto. Cláusulas e indicadores de nível de serviço. Papel do fiscalizador do contrato. Papel do preposto da contratada. Acompanhamento da execução contratual. Registro e notificação de irregularidades. Definição e aplicação de penalidades e sanções administrativas. 
+	1.7. [  ]  contratações de serviços de TI baseadas em Unidade de Serviço Técnico – UST, em Pontos de Função – PF, e em postos de trabalho com níveis de serviço (aspectos específicos, recomendações do TCU, aplicações e fiscalização). 
+2. Gestão e Governança de TI:    
+	2.1. [  ]  Gestão e planejamento estratégico.   
+	2.2. [  ] O ciclo do planejamento em organizações (PDCA). Balanced Scorecard (BSC): principais conceitos, aplicações, mapa estratégico, referencial estratégico das organizações. Análise de ambiente interno e externo. Ferramentas de análise de ambiente: análise SWOT, análise de cenários, matriz GUT.      
+	2.3. [  ]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos. Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos.    
+	2.4. [  ]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
+	2.5. [  ]  Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos;     
+	2.6. [  ]  Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS).   
+	2.7. [  ]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
+	2.8. [  ]  Modelagem de processos e de serviços.    
+	2.9. [  ]    Planejamento e Gestão Estratégicos de TI. PETI. PDTI. Indicadores de desempenho de TI.     
+	2.10. [  ] Governança de Dados. Segurança da Informação.    
+	2.11. [  ]  Gestão de riscos de Tecnologia da Informação.    
+	2.12. [  ]  Gerenciamento do relacionamento entre TI, negócio e usuários. 
+3. Análise de negócio e de processos:     
+	3.1. [  ] arquitetura corporativa; técnicas de modelagem, análise e redesenho de processos,     
+	3.2. [  ] padrão BPMN,    
+	3.3. [  ] desenvolvimento orientado a processos, workflow. Modelagem conceitual.    
+	3.4. [  ] Design thinking, business canvas.   
+	3.5. [  ] Transformação digital, governo eletrônico, cidadania digital.
+4. Aquisição de soluções de TI:    
+	4.1. [  ]  análise de alternativas, custo x benefício, construir x comprar, cálculo de retorno do investimento, custo total de propriedade.    
+	4.2. [  ]  Realização de provas de conceito.     
+	4.3. [  ]  Pesquisa e especificação de serviços de sustentação e consultoria em TI.     
+	4.4. [  ] Legislação de compras públicas para soluções de TI.
+5. Processos de software:     
+	5.1. [  ] evolução histórica dos processos de software;    
+	5.2. [  ]  Processo Unificado (UP);    
+	5.3. [  ] Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development.    
+	5.4. Indicadores de desempenho de processo.
+6. Engenharia de Requisitos:    
+	6.1. [  ] elicitação e gestão de requisitos, histórias de usuário, casos de uso.    
+	6.2. [  ] Privacidade e segurança por padrão e por projeto.     
+	6.3. [  ] Design de interface e de experiência do usuário, responsividade, usabilidade e acessibilidade.    
+	6.4. [  ] Prototipação, produto mínimo viável, testes A/B.
+7. Gestão de projetos e produtos de software:    
+	7.1. [  ] gestão de backlog,     
+	7.2. [  ] gestão de dívida técnica,    
+	7.3. [  ] análise de restrições e trade‐offs, priorização, estimativas,     
+	7.4. [  ] análise de pontos de função, story points.    
+	7.5. [  ] Práticas de gerenciamento de projetos do PMBoK.
+8. Modelos de software:     
+	8.1. [  ] entidades e relacionamentos, modelo E‐R;   
+	8.2. [  ] orientação a objetos,    
+	8.3. UML, diagramas estruturais e comportamentais.     
+	8.4. Geração de código, engenharia reversa.
+9. Princípios de projeto de software:     
+	9.1. [  ] acoplamento, coesão. SOLID.   
+	9.2. [  ] Padrões de projeto. Código limpo, design para reutilização, refatoração, "code smells". 
+10. Qualidade de software:     
+	10.1. [  ] objetivos da qualidade, restrições e atributos de qualidade, métricas de processo e de código‐fonte,    
+	10.2. [  ] análise estática e dinâmica de software.     
+	10.3. [  ] Padronização.
+11. Arquitetura de software e de sistemas:      
+	11.1. [  ] arquiteturas em camadas, baseada em serviços, microsserviços, orientação a eventos, cliente‐ servidor, hexagonal, serverless. Anti‐padrões arquiteturais.     
+	11.2. [  ] Modelagem e documentação de arquitetura,   
+	11.3. [  ] Archimate,  C4.   
+	11.4. [  ] Tomada de decisão técnica.
+12. Arquitetura de sistemas web:    
+	12.1. [  ] protocolo HTTP, SSL, servidores proxy, cache, DNS, balanceamento de carga, tolerância a falhas e escalabilidade em sistemas web. 
+13. Arquitetura de sistemas em nuvem:    
+	13.1. [  ] modelo dos 12 fatores.    
+	13.2. [  ] Estratégias de migração para nuvem.    
+	13.3. [  ] Software, Plataforma e Infraestrutura como Serviço (SaaS, PaaS, IaaS).     
+	13.4. [  ] Escalabilidade, elasticidade, bilhetagem e cobrança de serviços em nuvem.
+14. Desenvolvimento com containers:    
+	14.1. [  ] Docker, OCI, Kubernetes.    
+	14.2. [  ] Boas práticas para desenvolvimento com containers. Orquestração de containers.   
+	14.3. [  ] Arquitetura altamente distribuída,    
+	14.4. [  ] Content Delivery Networks (CDNs).
+15. Arquitetura e gestão de dados:     
+	15.1. [  ] Conceitos do Data Management Body of Knowledge (DAMA DMBoK). Arquitetura e qualidade de dados. Segurança e privacidade de dados. Metadados. Master data management (MDM). Ontologias. ECM, Gestão de documentos eletrônicos. Gestão arquivística de documentos, modelo e‐Arq Brasil.    
+	15.2. [  ] Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas. Gestão de configuração de esquemas de bancos de dados, Liquibase.    
+	15.3. [  ] Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
+16. Desenvolvimento de software:     
+	16.1. [  ] Estruturas de dados, lógica de programação, complexidade de algoritmos.    
+	16.2. [  ] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
+	16.3. [  ] Automação da construção do software, Maven, Npm.   
+	16.4. [  ] HTML, CSS, Bootstrap, Javascript, Typescript, Angular. Aplicativos móveis, arquitetura de sistemas mobile, Ionic. Responsividade, acessibilidade e usabilidade.    
+	16.5. [  ] Python. Plone. Java Liferay.
+17. Integração de sistemas:     
+	17.1. [  ] padrões de integração de aplicações,   
+	17.2. [  ] REST, web services. Projeto de APIs,     
+	17.3. [  ] comunicação síncrona e assíncrona;     
+	17.4. [  ] Mensageria e orientação a eventos,    
+	17.5. [  ] sincronização de dados, integridade eventual. Formatos de troca de dados, JSON, XML, gRPC.
+18. Testes de software:    
+	18.1. [  ] testes de unidade, de integração e de sistema; planejamento de testes; testes automatizados e manuais;    
+	18.2. [  ] princípio FIRST;    
+	18.3. [  ] Test‐driven development (TDD), ferramentas xUnit, testabilidade, mocks e stubs.    
+	18.4. [  ] Documentação técnica de software. Documentação de usuário. 
+19. Gerência de configuração de software:     
+	19.1. [  ] Git, multirepos e monorepos, Gitflow.    
+	19.2. [  ] Versionamento semântico.     
+	19.3. [  ] Gerenciamento de liberação.     
+	19.4. [  ] Desenvolvimento colaborativo, revisão de código, gestão de equipes distribuídas. Gerenciamento de comunidade de software.   
+	19.5. [  ] Developer relations. Licenças de software.     
+	19.6. [  ] Repositórios e dinâmicas de colaboração em projetos de software livre. Utilização e modificação de software de terceiros. 
+20. DevOps: conceitos e princípios;     
+	20.1 [  ] integração contínua, entrega contínua, feature flags, deploy A/B, deploy canário. Observabilidade, coleta e análise de logs e métricas.    
+	20.2. [  ] Automação, linguagens de scripting (shell, Ruby), operação em ambiente Linux.
+21. Segurança da informação:    
+	21.1. [  ] conceitos, principais tipos de ataques e vulnerabilidades,    
+	21.2. [  ] técnicas de desenvolvimento seguro, boas práticas da OWASP. Modelo de Controles CIS.     
+	21.3. [  ] Conceitos de gestão de identidades e acesso; autenticação e autorização, single sign‐on; SAML, OAuth2 e OpenId Connect; login social.    
+	21.4. [  ] Privacidade e segurança por padrão. Criptografia e proteção de dados em trânsito e em repouso. SSL, mTLS. Assinatura e certificação digital, ICP‐Brasil.    
+	21.5. [  ] Gestão de segredos. Conceito de "zero‐trust security". Mascaramento de dados.     
+	21.6. [  ] Lei Geral de Proteção de Dados (LGPD).    
+	22.7. [  ] Conceitos de DevSecOps.
+22. Inteligência artificial:    
+	22.1. [  ] conceitos e principais tecnologias.    
+	22.2. [  ] Aprendizagem de máquina, deep learning, processamento de linguagem natural, chatbots. 
+23. [  ] Blockchain: conceitos e principais aplicações. 
+24. Sistemas de Suporte à Decisão Analítica:    
+	24.1. [  ] ETL, Big Data, Stream processing, modelagem dimensional. Datawarehouse, Business Intelligence, Data Mining, OLAP e ERP.    
+	24.2. [  ] ECM, Gestão de documentos eletrônicos.     
+	24.3. [  ] Ciência de Dados. Inteligência Artificial. Machine Learning. Deep Learning.
+25. Direito Digital.     
+	25.1. [  ] Proteção de dados e direito de privacidade de informação.    
+	25.2. [  ] Responsabilidade de provedores de internet, sítios de internet, usuários e empresas.    
+	25.3. [  ] Quebra do sigilo telemático.     
+	25.4. [  ] Redes sociais, direitos de personalidade e notícias falsas, remoção de conteúdo, direito ao esquecimento.     
+	25.5. [  ] Lei nº 9.609/1998 (Propriedade intelectual de programa de computador).    
+	25.6. [  ] Lei nº 12.737/2012 (Lei dos crimes cibernéticos).     
+	25.7. [  ] Lei nº 12.965/2014 (Marco Civil da Internet).     
+	25.8. [  ] Lei nº 13.188/2015 (Direito de resposta).    
+	25.9. [  ] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais).
 
 
 
