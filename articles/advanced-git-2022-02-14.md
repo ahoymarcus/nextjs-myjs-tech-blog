@@ -580,6 +580,18 @@ And that is due to the fact that in GIT the branch unmerged would be lost eventu
 So, to deal with the task the article propose the use of the command merge with the flag **-s**: **git merge -s ours-obsolete-branch**, that would merge the branch into the current branch, but completely discard the changes.
 
 
+###### Don't Use Pull or Fetch Requests without Branch Argument
+
+Both articles, [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc) and [Why should not use git pull? - StackOverflow](https://stackoverflow.com/questions/70844730/why-should-not-use-git-pull), bring some aspects of working with **git pull** and **git fetch**.
+
+
+And they also bring point on how the automatized pace of **git pull** and a broad context of using **origin master/main** can result in some difficulties:
+
+
+`No doubt there is a good use case for, say, git pull origin master or whatever, but I have yet to understand it. What I do understand is that every time I have seen someone use it, it has ended in tears.` [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc)  
+
+
+
 ###### Make Customizations to Your Own GIT Toolbox
 
 According to the article [Git Best Practices: Workflow Guidelines](https://www.lullabot.com/articles/git-best-practices-workflow-guidelines), GIT is also very flexible working much like a Unix shell, what gives plenty of room to custom configuration, starting with the configuration file at the users home directory: **~/.gitconfig**.
@@ -592,30 +604,110 @@ So, as the article [Commit Often, Perfect Later, Publish Once: Git Best Practice
 
 
 In that case, it is possible to be meticulous and before journing into findind any lost work, it should be importat to:
-1. Make a stash of the current repository.
-2. Analysing the commit history to cherry-pick points in time where recovery would not represent destruction of any work.
+- Make a stash of the current repository.
+- Analysing the commit history to cherry-pick points in time where recovery would not represent destruction of any work.
 
 
-continue Don’t panic............
+Though, the same article says that there are 3 places where "lost changes can be hiding":
+1. **reflog**: the reflog is where you should look first and by default, according to the article,    
+	1.1. It shows each commit that modified the git repository, and it could be used to find the commit name (SHA-1) of the state of the repository before and after the command was typed.   
+	1.2. For manual search: **git log -g** and **git log -Sfoo -g**   
+	1.3. And with gitk: **gitk --all --date-order $(git log -g --pretty=%H)** (Look for dots without children and without green labels)
+2. **Lost and Found**: according to the article, commits or other data that are no longer reachable through any reference (branch, tag, etc.) are called **"dangling"** and may be found using **fsck**.   
+	2.1. And there are legitimate reasons why objects may be dangling through standard actions and normally over 99% of them are entirely uninteresting for this reason.   
+	2.2. So, according to the article, some ways how a commit may become dangling would be due to resets and rebases.   
+	2.3. A gitk command to help visualizing the dangling commits: **gitk --all --date-order $(git fsck | grep "dangling commit" | awk '{print $3;}')** (Look for dots without children and without green labels)
+
+
+And the article also remembers that not always when a commit is lost that would mean that it is supposed to be dangling, because sometimes the commit may have been **stashed** and forgotten or even **misplaced** by accident on a different branch.
+
+
+Here are some ways to inspect and visualize the commits:
+
+```
+$ gitk --all --date-order $(git stash list | awk -F: '{print $1};'})
+``` 
+
+
+###### Don't Change Published History
+
+As it was already talked before, to change the GIT history of public repositories may cause confusion and create the base for larger conflicts for the other users.
+
+And so, also the article the article [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc) adverts against it:
+
+`I’ve said it and I believe it, but…on occasion…if well managed…there are times when changing published history is perhaps a normal course of business. You can plan for particular branches (integration branches especially) or (better) special alternate repositories to be continually rewritten as a matter of course. You see this in git.git with the “pu” branch, for example. Obviously this process must be well controlled and ideally done by one of the most experienced and well trusted engineers (because auditing merges (and worse, non-merge commits) you have essentially seen before is extremely tedious, boring, and error prone and you have lost the protection of git’s cryptographic history validation).`
 
 
 
+###### Do Backups, Choose a Workflow, Choose a Useful Commit Message, Do Enforce Standards
+
+The article [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc) says that eventhough the GIT tools already works as a **highly distributed ad-hoc backsystem**, that are many instances where **it should be wise to add some kind of custom backup to the workflow**.
 
 
+And also talking about **the workflow** in itself, the article also says that it's important to have a workflow, but not forgetting that each kind of project may require different solutions. So, instead of proposing a workflow, the article talks about some important features and properties that should be looked after when choosing a workflow:
+1. **The branch workflows**:   
+	1.1. For example, as the article says, there is no reason for creating a **--orphan** branch that won't have the point of a future merging, but instead create it in its own separated repository.
+2. **The Distributed workflows**
+3. **Release tagging**
+4. **Security model**
+5. **The frequency of updates and the mode of pull requests**:   
+	5.1. This article has a large section explaining different elements involved while working to **keep the repository up to date**.
+6. **Integrate with External Tools**:   
+	6.1. Web views   
+	6.2. Bug tracking   
+	6.3. IRC/chat rooms/bots   
+	6.4. Wikis   
+	6.5. Other services: pastebin-like private text paste service, imagebin-like private image paste service, URL shortener, search, mailing lists, role aliases, VNC-sharing of server consoles, VMs (with VNC sharing) for most services, audio conference, etc.
+7. **Protect the bare/server repos against history rewriting**:    
+	7.1. Initializing a git repository with **-shared** will automatically get the git-config "receive.denyNonFastForwards" set to true.    
+	7.2. Also set "receive.denyDeletes" so that people who are trying to rewrite history cannot simply delete the branch and then recreate it.
 
 
+About **commit messages**, they are very important means of communicating with others and to help dealing with history archeology. So, beside others reasons:
+1. Give insightful and descriptive commit messages that explain the more important aspects for the commit.
+2. Provide a short title with about **50-71 characters** to summarize the commit.   
+	2.1. This helps while using commands like: **$ git log --oneline**
+3. Include tracking numbers in the commit message with associated information.   
+	3.1. This helps also while dealing with integration with external tools.
 
 
+`While this relates to the later topic of integration with external tools, including bug/issue/request tracking numbers in your commit messages provides a great deal of associated information to people trying to understand what is going on. You should also enforce your standards on commit messages, when possible, through hooks.`
 
 
+In terms of **standards**, these are best practices in itself and should improve the quality of the commits, the code-base, and probably enhance **git-bisect**, and history archeology funcionalities, etc.~
 
 
+###### Do Divide Work into Rrepositories
+
+Another important case for best practice would be to proper arrange and work with the repositories, because this could interfere with a large amount of important issues, like - [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc) :
+1. **Managing conceptual groups per repository**: just like some architecture coding pattern, making proper divisions to repositories might make the whole system more clear and more simple to work alltogether.
+2. **Security**: because if everything is tied together, everything is going to be open for reading access.
+3. **Reusing**: separating repositories can help managing reuse of code.
+4. **Separate repositories for large binary files**: according to the article GIT does not handle large binary files ideally yet and large repositories can be slow.   
+	4.1. So, if you must commit then, separating them out into their own repository could make things more efficient.
+5. **Separate repositories for planned continual history rewrites**
+6. **Group concepts into a superproject**
 
 
+###### Do Periodic Maintenance
+
+This are important tasks according to the article  [Commit Often, Perfect Later, Publish Once: Git Best Practices - Seth Robertson](https://sethrobertson.github.io/GitBestPractices/#misc), and the 2 first tasks should be done both in the server repositories as well as in the user repositories:
+1. **Validate your repo is sane (git fsck)**: you do not need to check dangling objects unless you are missing something.
+2. **Compact your repo (git gc and git gc --aggressive)**: this will remove outdated dangling objects (after the two+ week grace period)   
+	2.1. It will also compress any loose objects git has added since your last gc. git will run a minimal gc automatically after certain commands, but doing a manual gc often (and “–aggressive” every few hundred changesets) will save space and speed git operations.
+3. **Prune your remote tracking branches (git remote update --prune)**: this will get rid of any branches that were deleted upstream since you cloned/pruned.   
+	3.1. This normally ins't a major problem one way or another, but it might lead to confusion.
+4. **Check your stash for forgotten work (git stash list)**: if you don't do it very often, the context for the stashed work will be forgetten when you finnaly do stumble on it, creating confusion.
 
 
+###### Do Use Useful GIT Tools
 
-
+More than useful, the use of these tools should help to adhere best practices:
+1. **gitolite**:    
+	1.1. It forms a great git server intermediary for access control.
+2. **gitslave**:   
+	2.1. It forms a great altenative to git-submodules when forming superprojects out of repositories you control.
+3. **gerrit**: to quote the website, Gerrit is a web based code review system, facilitating online code reviews for projects using the GIT version control system.
 
 
 
