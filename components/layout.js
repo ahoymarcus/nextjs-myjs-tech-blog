@@ -166,7 +166,7 @@ export default function Layout({ children }) {
 							<h3 className={style.actionSection__title}>GitHub</h3>
 							<p className={style.actionSection__text}>Come and visit me at my GitHub repository!</p>
 						</div>
-						<button className={style.actionSection__button style.button}><a className={style.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
+						<button className={style.actionSection__button, style.button}><a className={style.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
 					</div>
 				</div>
 			</aside>
