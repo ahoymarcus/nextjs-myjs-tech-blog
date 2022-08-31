@@ -64,7 +64,7 @@ export default function Layout({ children }) {
 					<div className={styles.primeSection__info}>
 						<h1 className={styles.primeSection__title}>Land of Dev-Ops</h1>
 						<p className={styles.primeSection__desc}>I am a Web Developer with more than 5 years of experience, and currently I am doing master at Software Engineering. My focus is the JS stack with Webpack, React.js, Next.js, besides I also can work with Node.js to construct APIs REST with token authentication. I have experience as Web Designer with responsive pages, mobile first pattern and CSS-patterns. I have a master at Databases and Business Intelligence.</p>
-						<button className={styles.primeSectionButton, styles.button}><a  className={styles.link} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcus-vinicius-richa-183104199/">LinkedIn</a></button>
+						<button className={styles.primeSectionButton}><a  className={styles.link} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcus-vinicius-richa-183104199/">LinkedIn</a></button>
 					</div>
 					<a className={styles.link} target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/">
 		
@@ -166,7 +166,7 @@ export default function Layout({ children }) {
 							<h3 className={styles.actionSection__title}>GitHub</h3>
 							<p className={styles.actionSection__text}>Come and visit me at my GitHub repository!</p>
 						</div>
-						<button className={styles.actionSection__button, styles.button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
+						<button className={styles.actionSection__button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
 					</div>
 				</div>
 			</aside>
