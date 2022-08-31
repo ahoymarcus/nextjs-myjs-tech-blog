@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import Image from 'next/image'
+
 // styles
 import styles from '../styles/Layout.module.css';
 
