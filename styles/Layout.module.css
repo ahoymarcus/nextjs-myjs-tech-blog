@@ -39,15 +39,12 @@
 }
 
 .primeSection {
-    padding: 60px 100px;
-
-
-.primeSection {
     background-color: #1F2937;
     
     display: flex;
     align-items: center;
     gap: 40px;
+	padding: 200px 150px;
 }
 
 .primeSection__title {
