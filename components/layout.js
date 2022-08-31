@@ -69,7 +69,6 @@ export default function Layout({ children }) {
 					<a className={styles.link} target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/">
 		
 						<Image 
-							className={styles.primeSection__image}
 							src={webPortolioImg1} 
 							alt="online portfolio page icon" 
 							width={400}
