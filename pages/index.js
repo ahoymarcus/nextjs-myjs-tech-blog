@@ -148,7 +148,7 @@ export default function Home() {
 			<div className={styles.actionSection}>
 				<div className={styles.actionSection__callToAction}>
 					<div>
-// 							<h3 className={styles.actionSection__title}>GitHub</h3>
+						{/*<h3 className={styles.actionSection__title}>GitHub</h3>*/}
 						<h3 className={styles.actionSection__text}>Come and visit me at my GitHub repository!</h3>
 					</div>
 					<button className={styles.actionSection__button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">GitHub</a></button>
