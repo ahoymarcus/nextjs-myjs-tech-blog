@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-	width: 80%;
+	margin: auto;
 	padding: 100px 50px;
 }
 
@@ -53,6 +53,8 @@
     color: #eae3af87; /*#f5e34752;*/
     padding: 10px 0;
     flex: 1;
+	font-weight: bold;
+	line-height: 1.5rem;
 }
 
 .primeSection__link {
@@ -151,6 +153,7 @@
 /* CALLTOACTION SECTION */
 .actionSection {
     padding: 60px 140px 60px;
+	margin-bottom: 40px;
 }
 
 .actionSection__callToAction {
@@ -213,7 +216,7 @@
 
 @media only screen and (min-width: 1200px) {
 	.primeSection {
-		align-items: end;
+		width: 80%;
 	}
 }
 

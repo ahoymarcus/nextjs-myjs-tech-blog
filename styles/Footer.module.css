@@ -8,10 +8,10 @@
 
 .footer p { 
 	color: inherit; 
-	font-weight: 800; 
+	font-weight: bolder; 
 	text-align: end; 
 	font-size: 0.9rem; 
-	padding: 1px 15px;
+	padding: 10px 15px;
 	/*margin-bottom: 5px; */
 }
 

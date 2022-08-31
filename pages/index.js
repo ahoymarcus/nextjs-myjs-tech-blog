@@ -29,7 +29,7 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 			
-		<h1 className={styles.title__title}>
+		<h1 className={styles.main__title}>
 			JavaScript News Blog
 		</h1>
 		<h3 className={styles.main__text}>Your one stop news for JavaScript and Web Development information</h3>
