@@ -27,3 +27,152 @@
 	background-color: #f6aeae; /*#c0858594;*/
 	border: 1px solid transparent;
 }
+
+
+/* ASIDE */
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+        font-weight: 900;
+}
+
+button {
+    cursor: pointer;
+}
+
+.prime-section, .action-section {
+    padding: 16px 100px 60px;
+}
+
+.prime-section {
+    background-color: #1F2937;
+    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.prime-section__title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.prime-section__desc {
+    color: #eae3af87; /*#f5e34752;*/
+    padding: 10px 0;
+    flex: 1;
+}
+
+.prime-section-button {
+    color: white;
+    background-color: #3882F6; /*#49a6e9;*/
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.prime-section__image {
+    width: 400px;
+    height: 200px;
+    flex: 0;
+}
+
+.information-section {
+    padding: 60px 100px;
+}
+
+.information-section-title {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.information-section__items-container {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.information-section__item {
+    width: 200px;
+    height: 550px;
+}
+
+.information-section__item img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #49a6e9;
+    border-radius: 10px;
+}
+
+.information-section__text {
+    text-align: center;
+}
+
+.testimonial-section {
+    color: black;
+    background-color: #f0eeee; /*#f0b9b9; #f5e34752; #E5E7EB;*/
+    padding: 100px 250px;
+}
+
+.testimonial-section__text {
+    color: #7d6969;
+    font-weight: 800;
+    line-height: 35px;
+    text-align: center;
+}
+
+.testimonial-section__author {
+    float: right;
+}
+
+.testimonial-section__author a {
+    color: black;
+    font-weight: 500;
+}
+
+.action-section {
+    padding: 60px 140px 60px;
+}
+
+.action-section__call-to-action {
+    background-color: #3882F6; /*#49a6e9;*/
+    border-radius: 6px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-section__title, .action-section__text {
+    color: white;
+}
+
+.action-section__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.action-section__button { 
+    color: white;
+    background-color: #3882F6; /*#49a6e9;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 25px;
+    align-self: end;
+}
+
+.action-section__button:hover { 
+    border: 2px solid white;
+}
+
+
+
+
+

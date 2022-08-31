@@ -724,7 +724,7 @@ More than useful, the use of these tools should help to adhere best practices:
 7. [Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/)
 8. [Top 10 Git Tutorials for Beginners - Webfx.com](https://www.webfx.com/blog/web-design/git-tutorials-beginners/)
 9. [Git Immersion](https://gitimmersion.com/lab_01.html):   
-	8.1. This is another great tutorial to learn the shortcuts of git (if you are willing to learn some Ruby).
+	9.1. This is another great tutorial to learn the shortcuts of git (if you are willing to learn some Ruby).
 10. [Contributing to Open Source Part II: The Real Way - The Odin Project](https://www.youtube.com/watch?v=mENDYhfxH-o): a descriptive video lesson on how to become a contributor to the platform.
 
 
