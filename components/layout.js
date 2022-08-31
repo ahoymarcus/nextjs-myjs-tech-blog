@@ -72,7 +72,7 @@ export default function Layout({ children }) {
 							className={styles.primeSection__image}
 							src={webPortolioImg1} 
 							alt="online portfolio page icon" 
-							width={200}
+							width={400}
 							height={200}
 						/>
 					</a>
