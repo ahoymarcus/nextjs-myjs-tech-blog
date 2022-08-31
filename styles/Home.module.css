@@ -22,6 +22,173 @@
 }
 
 
+
+/* SECTION */
+.link {
+    color: white;
+    text-decoration: none;
+}
+.link:hover {
+        font-weight: 900;
+}
+
+.primeSection {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+	padding: 100px 50px;
+}
+
+.primeSection__title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.primeSection__desc {
+    color: #eae3af87; /*#f5e34752;*/
+    padding: 10px 0;
+    flex: 1;
+}
+
+.primeSection__link {
+    color: white;
+    text-decoration: none;
+    min-width: 350px;
+}
+.primeSection__link:hover {
+        font-weight: 900;
+}
+
+.primeSectionButton {
+    color: white;
+    background-color: #3882F6; /*#49a6e9;*/
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+	cursor: pointer;
+}
+
+.primeSection__image {
+    min-width: 400px;
+    min-height: 200px;
+    flex: 0;
+}
+
+.informationSection {
+    padding: 60px 100px;
+}
+
+.informationSectionTitle {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.informationSection__itemsContainer {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.informationSection__item {
+    width: 200px;
+    height: 550px;
+}
+
+.informationSection__item img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #49a6e9;
+    border-radius: 10px;
+}
+
+.informationSection__text {
+    text-align: center;
+}
+
+.testimonialSection {
+    color: black;
+    background-color: #f0eeee; /*#f0b9b9; #f5e34752; #E5E7EB;*/
+    padding: 100px 250px;
+}
+
+.testimonialSection__text {
+    color: #7d6969;
+    font-weight: 800;
+    line-height: 35px;
+    text-align: center;
+}
+
+.testimonialSection__author {
+    float: right;
+}
+
+.testimonialSection__author a {
+    color: black;
+    font-weight: 500;
+}
+
+.actionSection {
+    padding: 60px 140px 60px;
+}
+
+.actionSection__callToAction {
+    background-color: #3882F6; /*#49a6e9;*/
+    border-radius: 6px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionSection__title, .actionSection__text {
+    color: white;
+}
+
+.actionSection__title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.actionSection__button { 
+    color: white;
+    background-color: #3882F6; /*#49a6e9;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 25px;
+    align-self: end;
+	cursor: pointer;
+}
+
+.actionSection__button:hover { 
+    border: 2px solid white;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 850px) {
+    .primeSection {
+        padding: 200px 150px;
+    }
+    
+    .actionSection__callToAction {
+        font-size: 1.5rem;
+        padding: 60px 40px;
+        justify-content: space-aroud;
+    }
+    
+    .actionSection__button { 
+        font-size: 1.5rem;
+    }
+}
+
+
 @media only screen and (min-width: 1050px) {
 	.image {
 		margin-bottom: 150px;
