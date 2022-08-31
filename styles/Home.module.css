@@ -8,11 +8,11 @@
 	/*background-color: #f5e34736;*/
 }
 
-.main h1 {
+.main__title {
 	margin-top: 100px;
 }
 
-.main h3 {
+.main__text {
 	text-align: center;
 	margin: 20px 0 80px 0;
 }
@@ -32,11 +32,14 @@
         font-weight: 900;
 }
 
+
+/* PRIME SECTION */
 .primeSection {
     background-color: #1F2937;
     display: flex;
     align-items: center;
     gap: 40px;
+	width: 80%;
 	padding: 100px 50px;
 }
 
@@ -76,6 +79,9 @@
     flex: 0;
 }
 
+
+
+/* INFORMATION SECTION */
 .informationSection {
     padding: 60px 100px;
 }
@@ -111,6 +117,9 @@
     text-align: center;
 }
 
+
+
+/* TESTIMONIAL SECTION */
 .testimonialSection {
     color: black;
     background-color: #f0eeee; /*#f0b9b9; #f5e34752; #E5E7EB;*/
@@ -124,6 +133,10 @@
     text-align: center;
 }
 
+.testimonialSection__span {
+		font-size: 1.7rem;
+}
+
 .testimonialSection__author {
     float: right;
 }
@@ -133,6 +146,9 @@
     font-weight: 500;
 }
 
+
+
+/* CALLTOACTION SECTION */
 .actionSection {
     padding: 60px 140px 60px;
 }
@@ -162,7 +178,7 @@
     border: 1px solid white;
     border-radius: 5px;
     padding: 8px 25px;
-    align-self: end;
+/*     align-self: end; */
 	cursor: pointer;
 }
 
@@ -180,7 +196,7 @@
     .actionSection__callToAction {
         font-size: 1.5rem;
         padding: 60px 40px;
-        justify-content: space-aroud;
+        justify-content: space-around;
     }
     
     .actionSection__button { 
@@ -192,6 +208,12 @@
 @media only screen and (min-width: 1050px) {
 	.image {
 		margin-bottom: 150px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.primeSection {
+		align-items: end;
 	}
 }
 

@@ -23,16 +23,16 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Head>
-			<title>JavaScript News Blog</title>
+			<title >JavaScript News Blog</title>
 			<meta name="description" content="A blog featuring news and technical information about the JavaScript ecosystem (React-JS, Next-JS, Node-JS) and Web Development (HTML, CSS, SEO, Databases SQL and NoSQL)." /> 
 			
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 			
-		<h1 className={styles.title}>
+		<h1 className={styles.title__title}>
 			JavaScript News Blog
 		</h1>
-		<h3>Your one stop news for JavaScript and Web Development information</h3>
+		<h3 className={styles.main__text}>Your one stop news for JavaScript and Web Development information</h3>
 		
 		<div className={styles.image}>
 			<Image 
@@ -47,7 +47,7 @@ export default function Home() {
 		<section className={styles.asideSection}>
 			<div className={styles.primeSection}>
 				<div className={styles.primeSection__info}>
-					<h1 className={styles.primeSection__title}>Land of Dev-Ops</h1>
+					<h2 className={styles.primeSection__title}>Land of Dev-Ops</h2>
 					<p className={styles.primeSection__desc}>I am a Web Developer with more than 5 years of experience, and currently I am doing master at Software Engineering. My focus is the JS stack with Webpack, React.js, Next.js, besides I also can work with Node.js to construct APIs REST with token authentication. I have experience as Web Designer with responsive pages, mobile first pattern and CSS-patterns. I have a master at Databases and Business Intelligence.</p>
 					<button className={styles.primeSectionButton}><a  className={styles.link} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcus-vinicius-richa-183104199/">LinkedIn</a></button>
 				</div>
@@ -131,7 +131,7 @@ export default function Home() {
 			</div>
 			
 			<div className={styles.testimonialSection}>
-				<p className={styles.testimonialSection__text}>NODE.JS is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications. The definition given by its official documentation is as follows: </p>
+				<p className={styles.testimonialSection__text}><span className={styles.testimonialSection__span}>NODE.JS</span> is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications. The definition given by its official documentation is as follows: </p>
 				<p className={styles.testimonialSection__text}>It was built on Chrome&aposs JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
 				<p className={styles.testimonialSection__text}>It also provides a rich library of various JavaScript modules to simplify the development of web applications and has features like:</p>
 				<p className={styles.testimonialSection__text}>I ---  Extremely fast: Node.js is built on Google Chrome&aposs V8 JavaScript Engine, so its library is very fast in code execution.</p>
@@ -147,10 +147,7 @@ export default function Home() {
 			
 			<div className={styles.actionSection}>
 				<div className={styles.actionSection__callToAction}>
-					<div>
-						{/*<h3 className={styles.actionSection__title}>GitHub</h3>*/}
-						<h3 className={styles.actionSection__text}>Come and visit me at my GitHub repository!</h3>
-					</div>
+					<h3 className={styles.actionSection__text}>Come and visit me at my GitHub repository!</h3>
 					<button className={styles.actionSection__button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">GitHub</a></button>
 				</div>
 			</div>
