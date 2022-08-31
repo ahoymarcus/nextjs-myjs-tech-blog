@@ -68,6 +68,12 @@
 	cursor: pointer;
 }
 
+.primeSection__image {
+    min-width: 400px;
+    min-height: 200px;
+    flex: 0;
+}
+
 .informationSection {
     padding: 60px 100px;
 }
