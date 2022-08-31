@@ -30,15 +30,15 @@
 
 
 /* ASIDE */
-a {
+.link {
     color: white;
     text-decoration: none;
 }
-a:hover {
+.link:hover {
         font-weight: 900;
 }
 
-button {
+.button {
     cursor: pointer;
 }
 

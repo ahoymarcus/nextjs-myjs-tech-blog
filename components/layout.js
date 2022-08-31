@@ -64,9 +64,9 @@ export default function Layout({ children }) {
 					<div className="prime-section__info">
 						<h1 className="prime-section__title">Land of Dev-Ops</h1>
 						<p className="prime-section__desc">I am a Web Developer with more than 5 years of experience, and currently I am doing master at Software Engineering. My focus is the JS stack with Webpack, React.js, Next.js, besides I also can work with Node.js to construct APIs REST with token authentication. I have experience as Web Designer with responsive pages, mobile first pattern and CSS-patterns. I have a master at Databases and Business Intelligence.</p>
-						<button className="prime-section-button"><a  target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcus-vinicius-richa-183104199/">LinkedIn</a></button>
+						<button className="prime-section-button button"><a  className="link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marcus-vinicius-richa-183104199/">LinkedIn</a></button>
 					</div>
-					<a target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/">
+					<a className="link" target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/">
 		
 						<Image 
 							className="prime-section__image"
@@ -82,7 +82,7 @@ export default function Layout({ children }) {
 					<h2 className="information-section-title">Some of my other works as a JavaScript Developer</h2>
 					<div className="information-section__items-container">
 						<div className="information-section__item">
-							<a target="_blank" rel="noreferrer" href="https://redux-reactjs-personal-portfolio-webpage-version-2.netlify.app/" >
+							<a className="link" target="_blank" rel="noreferrer" href="https://redux-reactjs-personal-portfolio-webpage-version-2.netlify.app/" >
 							
 								<Image 
 									src={webPortolioImg2} 
@@ -94,7 +94,7 @@ export default function Layout({ children }) {
 							<p className="information-section__text">My Online Portfolio, where I present my personal work, and also some of the main studying projects in software development. It features, interaction, and more descriptive meta-data from the projects and from the techs..</p>
 						</div>
 						<div className="information-section__item">
-							<a target="_blank" rel="noreferrer" href="https://reactjs-rocket-launches-app.netlify.app/" >
+							<a className="link" target="_blank" rel="noreferrer" href="https://reactjs-rocket-launches-app.netlify.app/" >
 							
 							<Image 
 								src={rocketImg1} 
@@ -106,7 +106,7 @@ export default function Layout({ children }) {
 							<p className="information-section__text">This is a React-app written to be a client of the Rocket Launcher API that makes its authentication through JWT tokens and rendering the information about launches and rockets received by the endpoints from the backend.</p>
 						</div>
 						<div className="information-section__item">
-							<a target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus/expressjs-rocket-launches-api" >
+							<a className="link" target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus/expressjs-rocket-launches-api" >
 								<Image 
 									src={rocketImg2} 
 									alt="rocket launche app icon" 
@@ -118,7 +118,7 @@ export default function Layout({ children }) {
 						</div>
 						
 						<div className="information-section__item">
-							<a target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/" >
+							<a className="link" target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/" >
 							
 								<Image 
 									src={myJSBookshelfImg} 
@@ -130,7 +130,7 @@ export default function Layout({ children }) {
 							<p className="information-section__text">A personal project for a book library entirely made with JavaScript. Modeled with UML and designed with Figma. It uses Webpack’s framework to create the build for the app and manage its web dependencies. It uses MVC architectural pattern.</p>
 						</div>
 						<div className="information-section__item">
-							<a target="_blank" rel="noreferrer" href="https://musica-erudita.netlify.app/" >
+							<a className="link" target="_blank" rel="noreferrer" href="https://musica-erudita.netlify.app/" >
 							
 								<Image 
 									src={musEruditaImg} 
@@ -157,7 +157,7 @@ export default function Layout({ children }) {
 					<p className="testimonial-section__text">VI --- Open source: Node.js has an open source community which has produced many excellent modules to add additional capabilities to Node.js applications.</p>
 					<p className="testimonial-section__text">VII --- License: Node.js is released under the MIT license.</p>
 
-					<span className="testimonial-section__author"><a target="_blank" rel="noreferrer" href="https://www.javatpoint.com/nodejs-tutorial">JavaTPoint Tutorials</a></span>
+					<span className="testimonial-section__author"><a className="link" target="_blank" rel="noreferrer" href="https://www.javatpoint.com/nodejs-tutorial">JavaTPoint Tutorials</a></span>
 				</div>
 				
 				<div className="action-section">
@@ -166,7 +166,7 @@ export default function Layout({ children }) {
 							<h3 className="action-section__title">GitHub</h3>
 							<p className="action-section__text">Come and visit me at my GitHub repository!</p>
 						</div>
-						<button className="action-section__button"><a target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
+						<button className="action-section__button button"><a className="link" target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">Enter</a></button>
 					</div>
 				</div>
 			</aside>
