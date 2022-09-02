@@ -391,18 +391,19 @@ https://conhecimento.fgv.br/concursos/senado22.
 	1.6. [  ] boas práticas em contratação de soluções de Tecnologia da Informação; Elaboração e fiscalização de contratos. Critérios de remuneração por esforço versus produto. Cláusulas e indicadores de nível de serviço. Papel do fiscalizador do contrato. Papel do preposto da contratada. Acompanhamento da execução contratual. Registro e notificação de irregularidades. Definição e aplicação de penalidades e sanções administrativas. 
 	1.7. [  ]  contratações de serviços de TI baseadas em Unidade de Serviço Técnico – UST, em Pontos de Função – PF, e em postos de trabalho com níveis de serviço (aspectos específicos, recomendações do TCU, aplicações e fiscalização). 
 2. Gestão e Governança de TI:    
-	2.1. [  ]  Gestão e planejamento estratégico.   
+	2.1. [O] Gestão e planejamento estratégico.   
 	2.2. [  ] O ciclo do planejamento em organizações (PDCA). Balanced Scorecard (BSC): principais conceitos, aplicações, mapa estratégico, referencial estratégico das organizações. Análise de ambiente interno e externo. Ferramentas de análise de ambiente: análise SWOT, análise de cenários, matriz GUT.      
-	2.3. [  ]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos. Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos.    
-	2.4. [  ]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
-	2.5. [  ]  Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos;     
-	2.6. [  ]  Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS).   
-	2.7. [  ]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
-	2.8. [  ]  Modelagem de processos e de serviços.    
-	2.9. [  ]    Planejamento e Gestão Estratégicos de TI. PETI. PDTI. Indicadores de desempenho de TI.     
-	2.10. [  ] Governança de Dados. Segurança da Informação.    
-	2.11. [  ]  Gestão de riscos de Tecnologia da Informação.    
-	2.12. [  ]  Gerenciamento do relacionamento entre TI, negócio e usuários. 
+	2.3. [  ]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos.    
+	2.4. [O] Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos.    
+	2.5. [O]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
+	2.6. [O]  Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos;     
+	2.7. [  ]  Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS).   
+	2.8. [  ]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
+	2.9. [  ]  Modelagem de processos e de serviços.    
+	2.10. [  ]    Planejamento e Gestão Estratégicos de TI. PETI. PDTI. Indicadores de desempenho de TI.     
+	2.11. [  ] Governança de Dados. Segurança da Informação.    
+	2.12. [O]  Gestão de riscos de Tecnologia da Informação.    
+	2.13. [  ]  Gerenciamento do relacionamento entre TI, negócio e usuários. 
 3. Análise de negócio e de processos:     
 	3.1. [  ] arquitetura corporativa; técnicas de modelagem, análise e redesenho de processos,     
 	3.2. [  ] padrão BPMN,    
@@ -417,7 +418,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 5. Processos de software:     
 	5.1. [  ] evolução histórica dos processos de software;    
 	5.2. [  ]  Processo Unificado (UP);    
-	5.3. [  ] Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development.    
+	5.3. [X] Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development.    
 	5.4. Indicadores de desempenho de processo.
 6. Engenharia de Requisitos:    
 	6.1. [  ] elicitação e gestão de requisitos, histórias de usuário, casos de uso.    
@@ -429,21 +430,21 @@ https://conhecimento.fgv.br/concursos/senado22.
 	7.2. [  ] gestão de dívida técnica,    
 	7.3. [  ] análise de restrições e trade‐offs, priorização, estimativas,     
 	7.4. [  ] análise de pontos de função, story points.    
-	7.5. [  ] Práticas de gerenciamento de projetos do PMBoK.
+	7.5. [O] Práticas de gerenciamento de projetos do PMBoK.
 8. Modelos de software:     
-	8.1. [  ] entidades e relacionamentos, modelo E‐R;   
-	8.2. [  ] orientação a objetos,    
-	8.3. UML, diagramas estruturais e comportamentais.     
-	8.4. Geração de código, engenharia reversa.
+	8.1. [O] entidades e relacionamentos, modelo E‐R;   
+	8.2. [O] orientação a objetos,    
+	8.3. [O] UML, diagramas estruturais e comportamentais.     
+	8.4. [  ] Geração de código, engenharia reversa.
 9. Princípios de projeto de software:     
 	9.1. [  ] acoplamento, coesão. SOLID.   
-	9.2. [  ] Padrões de projeto. Código limpo, design para reutilização, refatoração, "code smells". 
+	9.2. [O] Padrões de projeto. Código limpo, design para reutilização, refatoração, "code smells". 
 10. Qualidade de software:     
 	10.1. [  ] objetivos da qualidade, restrições e atributos de qualidade, métricas de processo e de código‐fonte,    
 	10.2. [  ] análise estática e dinâmica de software.     
 	10.3. [  ] Padronização.
 11. Arquitetura de software e de sistemas:      
-	11.1. [  ] arquiteturas em camadas, baseada em serviços, microsserviços, orientação a eventos, cliente‐ servidor, hexagonal, serverless. Anti‐padrões arquiteturais.     
+	11.1. [  ] arquiteturas em camadas, baseada em serviços, microsserviços, orientação a eventos, cliente‐servidor, hexagonal, serverless. Anti‐padrões arquiteturais.     
 	11.2. [  ] Modelagem e documentação de arquitetura,   
 	11.3. [  ] Archimate,  C4.   
 	11.4. [  ] Tomada de decisão técnica.
@@ -460,25 +461,36 @@ https://conhecimento.fgv.br/concursos/senado22.
 	14.3. [  ] Arquitetura altamente distribuída,    
 	14.4. [  ] Content Delivery Networks (CDNs).
 15. Arquitetura e gestão de dados:     
-	15.1. [  ] Conceitos do Data Management Body of Knowledge (DAMA DMBoK). Arquitetura e qualidade de dados. Segurança e privacidade de dados. Metadados. Master data management (MDM). Ontologias. ECM, Gestão de documentos eletrônicos. Gestão arquivística de documentos, modelo e‐Arq Brasil.    
-	15.2. [  ] Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas. Gestão de configuração de esquemas de bancos de dados, Liquibase.    
-	15.3. [  ] Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
+	15.1. [  ] Conceitos do Data Management Body of Knowledge (DAMA DMBoK).    
+	15.2. [  ] Arquitetura e qualidade de dados. Segurança e privacidade de dados. Metadados.    
+	15.3. [  ] Master data management (MDM). Ontologias. ECM, Gestão de documentos eletrônicos. Gestão arquivística de documentos, modelo e‐Arq Brasil.    
+	15.4. [O] Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas.     
+	15.5. [  ] Gestão de configuração de esquemas de bancos de dados   
+	15.6. [  ] Liquibase.    
+	15.7. [O] Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
 16. Desenvolvimento de software:     
-	16.1. [  ] Estruturas de dados, lógica de programação, complexidade de algoritmos.    
-	16.2. [  ] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
-	16.3. [  ] Automação da construção do software, Maven, Npm.   
-	16.4. [  ] HTML, CSS, Bootstrap, Javascript, Typescript, Angular. Aplicativos móveis, arquitetura de sistemas mobile, Ionic. Responsividade, acessibilidade e usabilidade.    
-	16.5. [  ] Python. Plone. Java Liferay.
+	16.1. [O] Estruturas de dados, lógica de programação,    
+	16.2. [  ] complexidade de algoritmos.    
+	16.3. [  ] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
+	16.4. [  ] Automação da construção do software, Maven, Npm.   
+	16.5. [X] HTML, CSS, Bootstrap, Javascript, Typescript, Angular.   
+	16.6. [  ]Aplicativos móveis, arquitetura de sistemas mobile, Ionic.   
+	16.7. [O] Responsividade, acessibilidade e usabilidade.    
+	16.8. [O] Python.    
+	16.9. [  ] Plone.    
+	16.10. [  ] Java Liferay.
 17. Integração de sistemas:     
 	17.1. [  ] padrões de integração de aplicações,   
-	17.2. [  ] REST, web services. Projeto de APIs,     
+	17.2. [O] REST, web services. Projeto de APIs,     
 	17.3. [  ] comunicação síncrona e assíncrona;     
-	17.4. [  ] Mensageria e orientação a eventos,    
-	17.5. [  ] sincronização de dados, integridade eventual. Formatos de troca de dados, JSON, XML, gRPC.
+	17.4. [O] Mensageria e orientação a eventos,    
+	17.5. [O] sincronização de dados, integridade eventual.   
+	17.6. [O] Formatos de troca de dados, JSON, XML.   
+	17.7. [  ] gRPC.
 18. Testes de software:    
-	18.1. [  ] testes de unidade, de integração e de sistema; planejamento de testes; testes automatizados e manuais;    
+	18.1. [O] testes de unidade, de integração e de sistema; planejamento de testes; testes automatizados e manuais;    
 	18.2. [  ] princípio FIRST;    
-	18.3. [  ] Test‐driven development (TDD), ferramentas xUnit, testabilidade, mocks e stubs.    
+	18.3. [O] Test‐driven development (TDD), ferramentas xUnit, testabilidade, mocks e stubs.    
 	18.4. [  ] Documentação técnica de software. Documentação de usuário. 
 19. Gerência de configuração de software:     
 	19.1. [  ] Git, multirepos e monorepos, Gitflow.    
@@ -486,26 +498,29 @@ https://conhecimento.fgv.br/concursos/senado22.
 	19.3. [  ] Gerenciamento de liberação.     
 	19.4. [  ] Desenvolvimento colaborativo, revisão de código, gestão de equipes distribuídas. Gerenciamento de comunidade de software.   
 	19.5. [  ] Developer relations. Licenças de software.     
-	19.6. [  ] Repositórios e dinâmicas de colaboração em projetos de software livre. Utilização e modificação de software de terceiros. 
+	19.6. [O] Repositórios e dinâmicas de colaboração em projetos de software livre. Utilização e modificação de software de terceiros. 
 20. DevOps: conceitos e princípios;     
-	20.1 [  ] integração contínua, entrega contínua, feature flags, deploy A/B, deploy canário. Observabilidade, coleta e análise de logs e métricas.    
+	20.1. [O] integração contínua, entrega contínua   
+	20.2. [  ] feature flags, deploy A/B, deploy canário. Observabilidade, coleta e análise de logs e métricas.    
 	20.2. [  ] Automação, linguagens de scripting (shell, Ruby), operação em ambiente Linux.
 21. Segurança da informação:    
-	21.1. [  ] conceitos, principais tipos de ataques e vulnerabilidades,    
-	21.2. [  ] técnicas de desenvolvimento seguro, boas práticas da OWASP. Modelo de Controles CIS.     
-	21.3. [  ] Conceitos de gestão de identidades e acesso; autenticação e autorização, single sign‐on; SAML, OAuth2 e OpenId Connect; login social.    
-	21.4. [  ] Privacidade e segurança por padrão. Criptografia e proteção de dados em trânsito e em repouso. SSL, mTLS. Assinatura e certificação digital, ICP‐Brasil.    
-	21.5. [  ] Gestão de segredos. Conceito de "zero‐trust security". Mascaramento de dados.     
-	21.6. [  ] Lei Geral de Proteção de Dados (LGPD).    
-	22.7. [  ] Conceitos de DevSecOps.
+	21.1. [O] conceitos, principais tipos de ataques e vulnerabilidades,    
+	21.2. [  ] técnicas de desenvolvimento seguro    
+	21.3. [O] boas práticas da OWASP.     
+	21.4. [  ] Modelo de Controles CIS.     
+	21.5. [O] Conceitos de gestão de identidades e acesso; autenticação e autorização, single sign‐on; SAML, OAuth2 e OpenId Connect; login social.    
+	21.6. [O] Privacidade e segurança por padrão. Criptografia e proteção de dados em trânsito e em repouso. SSL, mTLS. Assinatura e certificação digital, ICP‐Brasil.    
+	21.7. [  ] Gestão de segredos. Conceito de "zero‐trust security". Mascaramento de dados.     
+	21.8. [O] Lei Geral de Proteção de Dados (LGPD).    
+	21.9. [O] Conceitos de DevSecOps.
 22. Inteligência artificial:    
 	22.1. [  ] conceitos e principais tecnologias.    
 	22.2. [  ] Aprendizagem de máquina, deep learning, processamento de linguagem natural, chatbots. 
 23. [  ] Blockchain: conceitos e principais aplicações. 
 24. Sistemas de Suporte à Decisão Analítica:    
-	24.1. [  ] ETL, Big Data, Stream processing, modelagem dimensional. Datawarehouse, Business Intelligence, Data Mining, OLAP e ERP.    
+	24.1. [O] ETL, Big Data, Stream processing, modelagem dimensional. Datawarehouse, Business Intelligence, Data Mining, OLAP e ERP.    
 	24.2. [  ] ECM, Gestão de documentos eletrônicos.     
-	24.3. [  ] Ciência de Dados. Inteligência Artificial. Machine Learning. Deep Learning.
+	24.3. [O] Ciência de Dados. Inteligência Artificial. Machine Learning. Deep Learning.
 25. Direito Digital.     
 	25.1. [  ] Proteção de dados e direito de privacidade de informação.    
 	25.2. [  ] Responsabilidade de provedores de internet, sítios de internet, usuários e empresas.    

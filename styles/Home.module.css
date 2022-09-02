@@ -40,7 +40,7 @@
     align-items: center;
     gap: 40px;
 	margin: auto;
-	padding: 100px 50px;
+	padding: 80px 50px;
 }
 
 .primeSection__title {
@@ -136,7 +136,8 @@
 }
 
 .testimonialSection__span {
-		font-size: 1.7rem;
+    color: #792828;
+    font-size: 1.7rem;
 }
 
 .testimonialSection__author {
@@ -193,7 +194,7 @@
 /* MEDIA QUERIES */
 @media only screen and (min-width: 850px) {
     .primeSection {
-        padding: 90px 130px;
+        padding: 70px 130px;
     }
     
     .actionSection__callToAction {
