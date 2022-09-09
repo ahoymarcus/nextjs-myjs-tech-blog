@@ -37,10 +37,10 @@ The DevOps culture shorten the gap between developement and operation teams, it 
 These are the DevOps components:
 
 1. **Build**: in traditionally deployments, the cost of consumption of the resources is based on the pre-defined individual usage with fixed hardware allocation, while with DevOps usage on clouds, it could be shapen by the user's need.
-2. **Code**: there are many good practices, beign Git one of them, since it allows versioning together with many other features.
+2. **Code**: there are many good practices, being Git one of them, since it allows versioning together with many other features.
 3. **Test**: again, traditionally, testing come after production and them with the code working in the production environment. And with DevOps there should be a less rigid separation between these two distinct phases, that could interwind. 
 4. **Plan**: and the DevOps uses Agile methodology to plan the development in synch with the operations.
-5. **Moniter**:and countinous monitoring is used to identify any risk of failure, and the monitoring `becomes more confortable with services where the log data may get monitored through many third-party tools such as Splunk`[JavaTPoint](https://www.javatpoint.com/devops).
+5. **Moniter**: and countinous monitoring is used to identify any risk of failure, and the monitoring `becomes more confortable with services where the log data may get monitored through many third-party tools such as Splunk` [JavaTPoint](https://www.javatpoint.com/devops).
 6. **Deploy**: many systems can support the scheduler for automated deployment, besides the optimizations, analytics, etc...
 7. **Operate**: here it is shortned the traditional gap of two different cycles between development and operation, because here they should come up with a monitoring plan which serves the IT and business requirements as a whole.
 8. **Release**: here automation also may have a distinc gain to lessen the impact on the customers.
@@ -55,8 +55,8 @@ So, just as in the DevOps architecture there is a "agile relationship" between o
 3. **Continous testing**: this stage is the predicate where the system is tested throughout the lifeclycle of the system, that is from the development phase and after the commit to build or to release a new version, the system goes through the necessary tests, even as it is going to the production environment.
 4. **Continous monitoring**: this is also a importante phase that through the use of recorded information to the logs of the system it is possible to find trends and identify problem areas.
 5. **Continous feedback**: also the continous operations with the software with information and with feedback is a important source for data to be analysed for critical updates for the next versions.
-6. **Continous deployment**: at this stage there a a great number of popular tools that helps the maintain this flow of continuous deployment practice.
-	6.1. But tools like Docker or Vagrant, that manages containers, are specially important, because they help to produce consistency across development, staging, testing and production.
+6. **Continous deployment**: at this stage there a a great number of popular tools that helps the maintain this flow of continuous deployment practice.    
+	6.1. But tools like Docker or Vagrant, that manages containers, are specially important, because they help to produce consistency across development, staging, testing and production.    
 	6.1. With containers there is no chance of errors or failure in the production environment as they package and replicate the same build with all its dependencies across the system.
 7. **Continous operations**: just as the other phases, it is imperative for DevOps the continuity of the operations instead of rigid and separated phases, because a operational system works with all its parts and its environment all together.
 
@@ -91,7 +91,7 @@ Here, some of the most recurrent DevOps practices:
 
 ### DevOps Automation
 
-Automation is a crucial task for all DevOps practices and it's also a principle, that is **Automate Everithing**.
+Automation is a crucial task for all DevOps practices and it's also a principle for **Automate Everithing**.
 
 And the automation should begin as early as the coding phase and accompany the development and operation of the system throughout all the phases.
 
@@ -99,21 +99,21 @@ And the automation should begin as early as the coding phase and accompany the d
 [JavaTPoint](https://www.javatpoint.com/devops)
 
 
-#### The DevOps Phases and Automation Tools
+#### Integrating DevOps Phases and with Automation Tools
 
 Here we have some tools and their use in the DevOps phases:
 
-1. **Infrastructure Automation**
+1. **Infrastructure Automation**:     
 	1.1. Amazon Web Services (AWS): a cloud service that can be scaled on-demand and that can be configured automaticaly.
-2. **Configuration Management**
+2. **Configuration Management**:    
 	2.1. Chef: is a tool to achieve speed, scale and consistency, since it can be used to complex tasks and perform configuration management. So, instead of making changes across hundreds of servers, it can be performed in only one place and be reflected throughout the system.
-3. ** Deployment Automation**
+3. **Deployment Automation**:    
 	3.1. Jenkins: it facilitates continous integration and testing at building time.
-4. **Performance Management**
+4. **Performance Management**:   
 	4.1. App Dynamic: it offers real-time performance monitoring, while the data produced can help professionals to debug the systems.
-5. **Log Management**
-	5.1. Splunk: this tool solves issues such as storing, aggregation and analysing all logs in one place.
-6. **Monitoring**
+5. **Log Management**:   
+	5.1. Splunk: this tool solves issues such as storing, aggregating and analysing all logs in one place.
+6. **Monitoring**:   
 	6.1. Nagios: it notifies people involved with the system in events like a system halt. It also helps to find and correct problems.
 
 
@@ -132,7 +132,7 @@ Some roles, responsabilities and skills that are expected from DevOps engineers:
 
 ### DevOps Pipeline
 
-A pipeline is software engineering `is a set of automated processes` which allows DevOps professionals to continously build integration, test automation, and deployment automation.
+A pipeline in software engineering `is a set of automated processes` which allows DevOps professionals to continously build integration, test automation, and deployment automation.
 [JavaTPoint](https://www.javatpoint.com/devops)
 
 A pipeline can contain the following categories of practices:
@@ -153,7 +153,7 @@ Some advantages in CI are:
 - Small changes are easy to integrate into large codebases.
 - More comfortable for other team members to see what you have been working.
 - Fewer integration issues allowing rapid code delivery.
-- Bufs are identified early, making them easy to fix, resulting in less debugging work.
+- Bugs are identified early, making them easy to fix, resulting in less debugging work.
 
 
 #### Continous Delivery Pipeline (CD)
@@ -183,7 +183,7 @@ And here some differences:
 1. Agile implies to work in smaller tasks with a small team to improve management, while DevOps implies a large team working in end to end tasks. 
 2. Agile focuses on constant changes and improvement on the system, while DevOps focuses on constant testing and delivering.
 3. While Agile is more opinionated with its own frameworks, DevOps is more agnostic while it does not have any commonly accepted framework.
-4. The normal timeline for Agile are the shor sprints, while the timeline for DevOps is daily or even few hours of continously coding and delivering.
+4. The normal timeline for Agile are the short sprints, while the timeline for DevOps is daily or even few hours of continously coding and delivering.
 5. The feedback in Agile comes from the customer, while in DevOps it comes internaly from its automated logging and analytics.
 6. Agile does not emphasize automaton, whereas DevOps does.
 

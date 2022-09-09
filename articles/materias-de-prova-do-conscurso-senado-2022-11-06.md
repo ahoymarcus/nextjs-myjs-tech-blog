@@ -135,7 +135,7 @@ e) **após a confirmação da inscrição pela FGV, o comprovante de inscrição
 
 9.2 As questões da Prova Objetiva e da Prova Discursiva serão elaboradas com base nos conteúdos programáticos constantes do Anexo I deste Edital.
 
-9.3 **Os locais para realização das Provas Objetiva e Discursiva serão divulgados no endereço eletrônico** https://conhecimento.fgv.br/concursos/senado22.
+9.3 **Os locais para realização das Provas Objetiva e Discursiva serão divulgados no endereço eletrônico** https://conhecimento.fgv.br/concursos/senado22
 
 9.4 É de responsabilidade exclusiva do candidato a identificação correta do local onde fará as provas e o comparecimento no horário determinado.
 

@@ -63,7 +63,7 @@ Here, some key features from the DevOps architecture:
 
 1. **Automation**: not only it can reduce the time consumption, especially during testing and deployments phase, but it also makes the finding of bugs easyer and the deployment a continous features. 
 2. **Collaboration**: having Development and Operations teams working closer improves their timelines and synchrony, thus improving the productivity and making deployment faster.
-3. **Integration**: working in a more integrated environment strengh the reliability of testing, since the tests are streatched to the deployed build, and it also bring more readiness to the development of new functionalities that can easily tested and deployed.
+3. **Integration**: working in a more integrated environment strengh the reliability of testing, since the tests are stretched to the deployed build, and it also bring more readiness to the development of new functionalities that can easily tested and deployed.
 4. **Configuration Management**: this features brings assurance that the application will only interact with the resources that are concerned with its running environment. 
 
 
