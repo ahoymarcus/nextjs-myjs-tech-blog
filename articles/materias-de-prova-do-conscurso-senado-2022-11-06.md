@@ -135,7 +135,7 @@ e) **após a confirmação da inscrição pela FGV, o comprovante de inscrição
 
 9.2 As questões da Prova Objetiva e da Prova Discursiva serão elaboradas com base nos conteúdos programáticos constantes do Anexo I deste Edital.
 
-9.3 **Os locais para realização das Provas Objetiva e Discursiva serão divulgados no endereço eletrônico** https://conhecimento.fgv.br/concursos/senado22
+9.3 **Os locais para realização das Provas Objetiva e Discursiva serão divulgados no endereço eletrônico** https://conhecimento.fgv.br/concursos/senado22.
 
 9.4 É de responsabilidade exclusiva do candidato a identificação correta do local onde fará as provas e o comparecimento no horário determinado.
 
@@ -317,17 +317,17 @@ https://conhecimento.fgv.br/concursos/senado22.
 
 #### LÍNGUA PORTUGUESA, LITERATURA NACIONAL E REDAÇÃO   
 
-1. [  ] Gramática normativa: uso da língua culta. 
-2. [  ] Fonética e fonologia. 
-3. [  ] Morfologia. 
-4. [  ] Sintaxe. 
-5. [  ] Semântica. 
-6. [  ] Literatura: texto literário, gêneros literários, principais movimentos literários. 
-7. [  ] Tipos de textos e gêneros textuais. 
-8. [  ] Produção e interpretação de texto.
-9. [  ] Intertextualidade. 
-10. [  ] Citações e transcrições. 
-11. [  ] Redação Oficial (conforme o Manual de Redação Oficial da Presidência da República): uso da norma culta da linguagem, clareza e precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização.
+1. [X] Gramática normativa: uso da língua culta. 
+2. [X] Fonética e fonologia. 
+3. [X] Morfologia. 
+4. [X] Sintaxe. 
+5. [X] Semântica. 
+6. [X] Literatura: texto literário, gêneros literários, principais movimentos literários. 
+7. [X] Tipos de textos e gêneros textuais. 
+8. [X] Produção e interpretação de texto.
+9. [X] Intertextualidade. 
+10. [X] Citações e transcrições. 
+11. [X] Redação Oficial (conforme o Manual de Redação Oficial da Presidência da República): uso da norma culta da linguagem, clareza e precisão, objetividade, concisão, coesão e coerência, impessoalidade, formalidade e padronização.
 
 
 #### RACIOCÍNIO LÓGICO MATEMÁTICO   
@@ -342,9 +342,9 @@ https://conhecimento.fgv.br/concursos/senado22.
 
 #### LÍNGUA INGLESA   
 
-1. [  ] Conhecimento e uso das formas contemporâneas das linguagens inglesa. 
-2. [  ] Compreensão e interpretação de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 
-3. [  ] Itens gramaticais relevantes para a compreensão dos conteúdos semânticos. Palavras e expressões equivalentes. Elementos de referência.
+1. [X] Conhecimento e uso das formas contemporâneas das linguagens inglesa. 
+2. [X] Compreensão e interpretação de textos variados: domínio do vocabulário e da estrutura da língua, ideias principais e secundárias, explícitas e implícitas, relações intratextuais e intertextuais. 
+3. [X] Itens gramaticais relevantes para a compreensão dos conteúdos semânticos. Palavras e expressões equivalentes. Elementos de referência.
 
 
 #### DIREITO CONSTITUCIONAL   
@@ -395,7 +395,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 	2.2. [  ] O ciclo do planejamento em organizações (PDCA). Balanced Scorecard (BSC): principais conceitos, aplicações, mapa estratégico, referencial estratégico das organizações. Análise de ambiente interno e externo. Ferramentas de análise de ambiente: análise SWOT, análise de cenários, matriz GUT.      
 	2.3. [  ]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos.    
 	2.4. [O] Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos.    
-	2.5. [O]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
+	2.5. [X]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
 	2.6. [O]  Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos;     
 	2.7. [  ]  Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS).   
 	2.8. [  ]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
@@ -416,14 +416,14 @@ https://conhecimento.fgv.br/concursos/senado22.
 	4.3. [  ]  Pesquisa e especificação de serviços de sustentação e consultoria em TI.     
 	4.4. [  ] Legislação de compras públicas para soluções de TI.
 5. Processos de software:     
-	5.1. [  ] evolução histórica dos processos de software;    
+	5.1. [X] evolução histórica dos processos de software;    
 	5.2. [  ]  Processo Unificado (UP);    
 	5.3. [X] Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development.    
-	5.4. Indicadores de desempenho de processo.
+	5.4. [X] Indicadores de desempenho de processo.
 6. Engenharia de Requisitos:    
 	6.1. [  ] elicitação e gestão de requisitos, histórias de usuário, casos de uso.    
 	6.2. [  ] Privacidade e segurança por padrão e por projeto.     
-	6.3. [  ] Design de interface e de experiência do usuário, responsividade, usabilidade e acessibilidade.    
+	6.3. [X] Design de interface e de experiência do usuário, responsividade, usabilidade e acessibilidade.    
 	6.4. [  ] Prototipação, produto mínimo viável, testes A/B.
 7. Gestão de projetos e produtos de software:    
 	7.1. [  ] gestão de backlog,     
@@ -432,7 +432,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 	7.4. [  ] análise de pontos de função, story points.    
 	7.5. [O] Práticas de gerenciamento de projetos do PMBoK.
 8. Modelos de software:     
-	8.1. [O] entidades e relacionamentos, modelo E‐R;   
+	8.1. [X] entidades e relacionamentos, modelo E‐R;   
 	8.2. [O] orientação a objetos,    
 	8.3. [O] UML, diagramas estruturais e comportamentais.     
 	8.4. [  ] Geração de código, engenharia reversa.
@@ -440,9 +440,9 @@ https://conhecimento.fgv.br/concursos/senado22.
 	9.1. [  ] acoplamento, coesão. SOLID.   
 	9.2. [O] Padrões de projeto. Código limpo, design para reutilização, refatoração, "code smells". 
 10. Qualidade de software:     
-	10.1. [  ] objetivos da qualidade, restrições e atributos de qualidade, métricas de processo e de código‐fonte,    
+	10.1. [X] objetivos da qualidade, restrições e atributos de qualidade, métricas de processo e de código‐fonte,    
 	10.2. [  ] análise estática e dinâmica de software.     
-	10.3. [  ] Padronização.
+	10.3. [X] Padronização.
 11. Arquitetura de software e de sistemas:      
 	11.1. [  ] arquiteturas em camadas, baseada em serviços, microsserviços, orientação a eventos, cliente‐servidor, hexagonal, serverless. Anti‐padrões arquiteturais.     
 	11.2. [  ] Modelagem e documentação de arquitetura,   
@@ -464,18 +464,18 @@ https://conhecimento.fgv.br/concursos/senado22.
 	15.1. [  ] Conceitos do Data Management Body of Knowledge (DAMA DMBoK).    
 	15.2. [  ] Arquitetura e qualidade de dados. Segurança e privacidade de dados. Metadados.    
 	15.3. [  ] Master data management (MDM). Ontologias. ECM, Gestão de documentos eletrônicos. Gestão arquivística de documentos, modelo e‐Arq Brasil.    
-	15.4. [O] Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas.     
+	15.4. [X] Modelagem relacional, orientada a objetos e mapeamento objeto‐relacional; SQL, Oracle PL/SQL, timização de consultas.     
 	15.5. [  ] Gestão de configuração de esquemas de bancos de dados   
 	15.6. [  ] Liquibase.    
-	15.7. [O] Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
+	15.7. [X] Modelos não relacionais, bancos de dados NoSQL, indexação de dados e conteúdo. 
 16. Desenvolvimento de software:     
 	16.1. [O] Estruturas de dados, lógica de programação,    
 	16.2. [  ] complexidade de algoritmos.    
 	16.3. [  ] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
 	16.4. [  ] Automação da construção do software, Maven, Npm.   
 	16.5. [X] HTML, CSS, Bootstrap, Javascript, Typescript, Angular.   
-	16.6. [  ]Aplicativos móveis, arquitetura de sistemas mobile, Ionic.   
-	16.7. [O] Responsividade, acessibilidade e usabilidade.    
+	16.6. [  ] SAplicativos móveis, arquitetura de sistemas mobile, Ionic.   
+	16.7. [X] Responsividade, acessibilidade e usabilidade.    
 	16.8. [O] Python.    
 	16.9. [  ] Plone.    
 	16.10. [  ] Java Liferay.
@@ -530,7 +530,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 	25.6. [  ] Lei nº 12.737/2012 (Lei dos crimes cibernéticos).     
 	25.7. [  ] Lei nº 12.965/2014 (Marco Civil da Internet).     
 	25.8. [  ] Lei nº 13.188/2015 (Direito de resposta).    
-	25.9. [  ] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais).
+	25.9. [X] Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais).
 
 
 
