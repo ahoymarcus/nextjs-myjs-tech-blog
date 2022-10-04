@@ -388,17 +388,17 @@ https://conhecimento.fgv.br/concursos/senado22.
 	1.3. [  ] Instrução Normativa SGD/ME 40/2020 e alterações;    
 	1.4. [  ] Instrução Normativa SEGES/ME 65/2021 e alterações;    
 	1.5. [  ] normas relacionadas a contratações de bens e serviços de TI;    
-	1.6. [  ] boas práticas em contratação de soluções de Tecnologia da Informação; Elaboração e fiscalização de contratos. Critérios de remuneração por esforço versus produto. Cláusulas e indicadores de nível de serviço. Papel do fiscalizador do contrato. Papel do preposto da contratada. Acompanhamento da execução contratual. Registro e notificação de irregularidades. Definição e aplicação de penalidades e sanções administrativas. 
+	1.6. [  ] boas práticas em contratação de soluções de Tecnologia da Informação; Elaboração e fiscalização de contratos. Critérios de remuneração por esforço versus produto. Cláusulas e indicadores de nível de serviço. Papel do fiscalizador do contrato. Papel do preposto da contratada. Acompanhamento da execução contratual. Registro e notificação de irregularidades. Definição e aplicação de penalidades e sanções administrativas.      
 	1.7. [  ]  contratações de serviços de TI baseadas em Unidade de Serviço Técnico – UST, em Pontos de Função – PF, e em postos de trabalho com níveis de serviço (aspectos específicos, recomendações do TCU, aplicações e fiscalização). 
 2. Gestão e Governança de TI:    
 	2.1. [O] Gestão e planejamento estratégico.   
 	2.2. [  ] O ciclo do planejamento em organizações (PDCA). Balanced Scorecard (BSC): principais conceitos, aplicações, mapa estratégico, referencial estratégico das organizações. Análise de ambiente interno e externo. Ferramentas de análise de ambiente: análise SWOT, análise de cenários, matriz GUT.      
-	2.3. [  ]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos.    
+	2.3. [X]  Negócio, missão, visão de futuro, valores. Indicadores de desempenho organizacional. Melhores práticas e modelos.    
 	2.4. [O] Gerenciamento de serviços (ITIL V3): conceitos básicos, estrutura e objetivos.    
 	2.5. [X]  Gerenciamento de Projetos e PMBoK: conceitos básicos.   
 	2.6. [O]  Governança de TI (COBIT 5): conceitos básicos, estrutura e objetivos;     
 	2.7. [  ]  Gestão de Serviços de TI, Acordos de Nível de Serviço (ANS).   
-	2.8. [  ]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
+	2.8. [X]  Gestão de projetos, gestão de produtos, gestão de equipes (liderança, feedback, comunicação).      
 	2.9. [  ]  Modelagem de processos e de serviços.    
 	2.10. [  ]    Planejamento e Gestão Estratégicos de TI. PETI. PDTI. Indicadores de desempenho de TI.     
 	2.11. [  ] Governança de Dados. Segurança da Informação.    
@@ -408,7 +408,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 	3.1. [  ] arquitetura corporativa; técnicas de modelagem, análise e redesenho de processos,     
 	3.2. [  ] padrão BPMN,    
 	3.3. [  ] desenvolvimento orientado a processos, workflow. Modelagem conceitual.    
-	3.4. [  ] Design thinking, business canvas.   
+	3.4. [O] Design thinking, business canvas.   
 	3.5. [  ] Transformação digital, governo eletrônico, cidadania digital.
 4. Aquisição de soluções de TI:    
 	4.1. [  ]  análise de alternativas, custo x benefício, construir x comprar, cálculo de retorno do investimento, custo total de propriedade.    
@@ -421,14 +421,14 @@ https://conhecimento.fgv.br/concursos/senado22.
 	5.3. [X] Processo ágil, Extreme Programming (XP), Scrum, Kanban, Lean development.    
 	5.4. [X] Indicadores de desempenho de processo.
 6. Engenharia de Requisitos:    
-	6.1. [  ] elicitação e gestão de requisitos, histórias de usuário, casos de uso.    
+	6.1. [X] elicitação e gestão de requisitos, histórias de usuário, casos de uso.    
 	6.2. [  ] Privacidade e segurança por padrão e por projeto.     
 	6.3. [X] Design de interface e de experiência do usuário, responsividade, usabilidade e acessibilidade.    
 	6.4. [  ] Prototipação, produto mínimo viável, testes A/B.
 7. Gestão de projetos e produtos de software:    
-	7.1. [  ] gestão de backlog,     
-	7.2. [  ] gestão de dívida técnica,    
-	7.3. [  ] análise de restrições e trade‐offs, priorização, estimativas,     
+	7.1. [X] gestão de backlog,     
+	7.2. [X] gestão de dívida técnica,    
+	7.3. [X] análise de restrições e trade‐offs, priorização, estimativas,     
 	7.4. [  ] análise de pontos de função, story points.    
 	7.5. [O] Práticas de gerenciamento de projetos do PMBoK.
 8. Modelos de software:     
@@ -449,14 +449,14 @@ https://conhecimento.fgv.br/concursos/senado22.
 	11.3. [  ] Archimate,  C4.   
 	11.4. [  ] Tomada de decisão técnica.
 12. Arquitetura de sistemas web:    
-	12.1. [  ] protocolo HTTP, SSL, servidores proxy, cache, DNS, balanceamento de carga, tolerância a falhas e escalabilidade em sistemas web. 
+	12.1. [O] protocolo HTTP, SSL, servidores proxy, cache, DNS, balanceamento de carga, tolerância a falhas e escalabilidade em sistemas web. 
 13. Arquitetura de sistemas em nuvem:    
 	13.1. [  ] modelo dos 12 fatores.    
 	13.2. [  ] Estratégias de migração para nuvem.    
-	13.3. [  ] Software, Plataforma e Infraestrutura como Serviço (SaaS, PaaS, IaaS).     
+	13.3. [O] Software, Plataforma e Infraestrutura como Serviço (SaaS, PaaS, IaaS).     
 	13.4. [  ] Escalabilidade, elasticidade, bilhetagem e cobrança de serviços em nuvem.
 14. Desenvolvimento com containers:    
-	14.1. [  ] Docker, OCI, Kubernetes.    
+	14.1. [O] Docker, OCI, Kubernetes.    
 	14.2. [  ] Boas práticas para desenvolvimento com containers. Orquestração de containers.   
 	14.3. [  ] Arquitetura altamente distribuída,    
 	14.4. [  ] Content Delivery Networks (CDNs).
@@ -471,8 +471,8 @@ https://conhecimento.fgv.br/concursos/senado22.
 16. Desenvolvimento de software:     
 	16.1. [O] Estruturas de dados, lógica de programação,    
 	16.2. [  ] complexidade de algoritmos.    
-	16.3. [  ] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
-	16.4. [  ] Automação da construção do software, Maven, Npm.   
+	16.3. [O] Ecossistema Java: evolução da linguagem, JVM, Spring, Spring Boot, Spring Cloud, JPA.    
+	16.4. [O] Automação da construção do software, Maven, Npm.   
 	16.5. [X] HTML, CSS, Bootstrap, Javascript, Typescript, Angular.   
 	16.6. [  ] SAplicativos móveis, arquitetura de sistemas mobile, Ionic.   
 	16.7. [X] Responsividade, acessibilidade e usabilidade.    
@@ -482,7 +482,7 @@ https://conhecimento.fgv.br/concursos/senado22.
 17. Integração de sistemas:     
 	17.1. [  ] padrões de integração de aplicações,   
 	17.2. [O] REST, web services. Projeto de APIs,     
-	17.3. [  ] comunicação síncrona e assíncrona;     
+	17.3. [X] comunicação síncrona e assíncrona;     
 	17.4. [O] Mensageria e orientação a eventos,    
 	17.5. [O] sincronização de dados, integridade eventual.   
 	17.6. [O] Formatos de troca de dados, JSON, XML.   
