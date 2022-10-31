@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Materias de Provas do Conscurso do SEEC - DF'
+title: 'Materias de Provas do Concurso do SEEC - 2022-12-11'
 date: '2022-12-11'
 subject: 'misc-articles'
 description: 'Estrutura geral e Materias das Provas do concurso.'
 ---
 
-#  Materias de Provas do Conscurso do SEEC - DF
+#  Materias de Provas do Concurso do SEEC - DF
 
 EDITAL Nº 1, de 09 de setembro de 2022
 
