@@ -24,7 +24,7 @@ EDITAL Nº 1, de 09 de setembro de 2022
 12. ##### DO RESULTADO FINAL 
 13. ##### DA NOMEAÇÃO
 14. ##### ANEXO I - CONTEÚDO PROGRAMÁTICO
-	9.1. LÍNGUA PORTUGUESA   
+	9.1. Língua Portuguesa      
 	9.2. Realidade étnica, social, histórica, geográfica, cultural, política e econômica do DF e da RIDE e sobre a RIDE.   
 	9.3. Noções de Informática e do Sistema Eletrônico de Informações - SEI. 1 Conceito de internet e intranet.     
 	9.4. Noções de Raciocínio Lógico e Matemática.   
@@ -51,17 +51,15 @@ formação de cadastro de reserva, conforme indicado nos subitens 3.1.1 e 3.2.
 
 1.2.1 O cadastro de reserva somente será aproveitado mediante a abertura de novas vagas, atendendo aos interesses de conveniência e de oportunidade da Administração Pública.
 
-1.3 O concurso público compreenderá:
-a) a aplicação de prova objetiva, de caráter eliminatório e classificatório, para todos os cargos;
-b) a aplicação de prova discursiva, de caráter eliminatório e classificatório, para o cargo de Gestor em Políticas Públicas e Gestão Governamental;
-c) o curso de formação, de caráter eliminatório e classificatório, para o cargo de Gestor em Políticas Públicas e Gestão Governamental; e
+1.3 O concurso público compreenderá:   
+a) a aplicação de prova objetiva, de caráter eliminatório e classificatório, para todos os cargos;  
+b) a aplicação de prova discursiva, de caráter eliminatório e classificatório, para o cargo de Gestor em Políticas Públicas e Gestão Governamental;   
+c) o curso de formação, de caráter eliminatório e classificatório, para o cargo de Gestor em Políticas Públicas e Gestão Governamental; e    
 d) a avaliação de títulos, de caráter classificatório, para o cargo de Gestor em Políticas Públicas e Gestão Governamental.
 
 1.4 As provas e as etapas referentes ao concurso público serão aplicadas no Distrito Federal.
 
-1.5 Os candidatos nomeados estarão sujeitos ao Regime Jurídico dos Servidores Públicos
-Civis do Distrito Federal, instituído pela Lei Complementar n° 840, de 23 dezembro de
-2011, e as normas internas do órgão de lotação.
+1.5 **Os candidatos nomeados estarão sujeitos ao Regime Jurídico dos Servidores Públicos Civis do Distrito Federal, instituído pela Lei Complementar n° 840, de 23 dezembro de 2011, e as normas internas do órgão de lotação.**
 
 1.6 Os horários mencionados no presente edital e nos demais editais a serem publicados para o certame obedecerão ao horário oficial de Brasília.
 
@@ -72,7 +70,9 @@ assume, entretanto, qualquer responsabilidade quanto ao deslocamento e à hosped
     
 ### DOS CARGOS
 
-3.1.2 Quantidade de vagas: 100 (cem) vagas para provimento imediato e 300 (trezentas) vagas para formação de cadastro de reserva, distribuídas da seguinte forma:
+3.1.2 Quantidade de vagas:  
+- 100 (cem) vagas para provimento imediato e    
+- 300 (trezentas) vagas para formação de cadastro de reserva, distribuídas da seguinte forma:
 
 3.1.2.1 Das vagas para provimento imediato:
 
@@ -95,13 +95,14 @@ assume, entretanto, qualquer responsabilidade quanto ao deslocamento e à hosped
 | Total | 53 | 15 | 21 | 11 |      
 
 
-3.1.2.2 Das vagas para formação de cadastro reserva
+3.1.2.2 Das vagas para formação de cadastro reserva:
+
 | Código | Área de Atuação | Ampla Concorrência | Vagas reservadas para candidatos com | deficiência | Vagas reservadas para candidatos negros | Vagas reservadas para candidatos hipossuficientes |     
 | 113 | Tecnologia da Informação e Comunicação | 23 | 9 | 9 | 4 |     
 
 3.1.3 Remuneração Inicial:R$ 7.760.00 (sete mil, setecentos e sessenta reais).
 
-3.1.4 As informações sobre a jornada de trabalho, sobre os pré-requisitos obrigatórios para a nomeação e posse e sobre a descrição sumária das atribuições para cada especialidade encontram-se no Anexo II.
+3.1. **4 As informações sobre a jornada de trabalho, sobre os pré-requisitos obrigatórios para a nomeação e posse e sobre a descrição sumária das atribuições para cada especialidade encontram-se no Anexo II.**
 
     
 ### DOS REQUISITOS BÁSICOS PARA A INVESTIDURA NO CARGO
@@ -130,11 +131,11 @@ assume, entretanto, qualquer responsabilidade quanto ao deslocamento e à hosped
 
 5.1 O valor da taxa de inscrição é de R$ 79,00 (setenta e nove reais) para o cargo de Gestor em Políticas Públicas e Gestão Governamental e de R$ 54,00 (cinquenta e quatro reais) para o cargo de Analista em Políticas Públicas e Gestão Governamental.
 
-5.2 As inscrições serão feitas exclusivamente via internet, no endereço eletrônico http://www.iades.com.br, no período compreendido entre 8h (oito horas) do dia 14 de outubro de 2022 e 22h (vinte e duas horas) do dia 20 de novembro de 2022.
+5.2 **As inscrições serão feitas exclusivamente via internet, no endereço eletrônico http://www.iades.com.br, no período compreendido entre 8h (oito horas) do dia 14 de outubro de 2022 e 22h (vinte e duas horas) do dia 20 de novembro de 2022.**
 
 5.2.1 O IADES não se responsabiliza por solicitação de inscrição via internet não recebida por motivos de ordem técnica dos computadores, falhas de comunicação, congestionamento das linhas de comunicação, bem como outros fatores de ordem técnica que impossibilitem a transferência de dados.
 
-5.2.2 Após a conclusão da inscrição, o candidato deverá efetuar o pagamento da taxa de inscrição por meio de boleto de cobrança, pagável em toda a rede bancária, em casas lotéricas e nos Correios; e disponível para visualização e impressão no endereço eletrônico http://www.iades.com.br.
+5.2.2 **Após a conclusão da inscrição, o candidato deverá efetuar o pagamento da taxa de inscrição por meio de boleto de cobrança, pagável em toda a rede bancária, em casas lotéricas e nos Correios; e disponível para visualização e impressão no endereço eletrônico http://www.iades.com.br.**
 
 5.2.3 O IADES disponibilizará computadores com acesso à internet na CAC-IADES (ver
 item 22) para uso pelos candidatos.
@@ -153,9 +154,26 @@ inscrição, sob as penas da lei.
 
 11.3 Por ocasião da realização de qualquer prova, etapa e(ou) atividade, o candidato que não apresentar documento de identidade original (ver subitem 11.4), quando exigido, será excluído do concurso público, à exceção da situação prevista no subitem 11.5 deste Edital.
 
-11.4 Serão considerados documentos de identidade: carteiras expedidas pelos Comandos Militares, pelas Secretarias de Segurança Pública, pelos Institutos de Identificação, pelas Polícias Militares e pelos Corpos de Bombeiros Militares; carteiras expedidas pelas entidades fiscalizadores de exercício profissional (ordens, conselhos, entre outros); passaporte brasileiro; certificado de reservista; carteiras funcionais expedidas por órgão público que, por lei federal, valham como identidade; Carteira de Trabalho; e Carteira Nacional de Habilitação.
+11.4 **Serão considerados documentos de identidade**:   
+- carteiras expedidas pelos Comandos Militares, pelas Secretarias de Segurança Pública, pelos Institutos de Identificação, pelas Polícias Militares e pelos Corpos de Bombeiros Militares;    
+- carteiras expedidas pelas entidades fiscalizadores de exercício profissional (ordens, conselhos, entre outros);    
+- passaporte brasileiro; certificado de reservista;    
+- carteiras funcionais expedidas por órgão público que, por lei federal, valham como identidade;    
+- Carteira de Trabalho; e   
+- **Carteira Nacional de Habilitação**.
 
-11.4.1 Não serão aceitos como documentos de identidade: protocolos de solicitação de documentos, certidão de nascimento e de casamento; cartão de inscrição no CPF; título eleitoral; Carteira Nacional de Habilitação (modelo eletrônico); Carteira Nacional de Habilitação (sem foto); carteira estudantil; carteiras funcionais sem valor de identidade; carteiras de identidade digitais (modelo eletrônico); carteiras de identidade com validade vencida; Carteira de Trabalho-CTPS (modelo eletrônico); cópia de documentos, ainda que autenticadas; e documentos ilegíveis, não identificáveis e(ou) danificados.
+11.4.1 **Não serão aceitos como documentos de identidade**:    
+- protocolos de solicitação de documentos, certidão de nascimento e de casamento;   
+- cartão de inscrição no CPF; título eleitoral;   
+- **Carteira Nacional de Habilitação (modelo eletrônico)**;   
+- **Carteira Nacional de Habilitação (sem foto);**  
+- carteira estudantil;   
+- carteiras funcionais sem valor de identidade;  
+- carteiras de identidade digitais (modelo eletrônico);   
+- carteiras de identidade com validade vencida;   
+- Carteira de Trabalho-CTPS (modelo eletrônico);    
+- cópia de documentos, ainda que autenticadas; e    
+- documentos ilegíveis, não identificáveis e(ou) danificados.
 
 11.4.2 Não serão aceitos outros documentos ou documentos fora do prazo de validade como documentos de identidade, documentos ilegíveis, não identificáveis e(ou) danificados, nem cópias autenticadas e protocolos de documento de identidade.
 
@@ -163,25 +181,25 @@ inscrição, sob as penas da lei.
 
 11.6 Quando houver fundada suspeita acerca da identidade do candidato, é facultado ao IADES realizar procedimentos adicionais de identificação. A identificação especial será exigida, também, ao candidato cujo documento de identificação apresente dúvidas relativas à titularidade, fisionomia e(ou) à assinatura do portador.
 
-11.7 Terá suas provas e(ou) etapas anuladas e será automaticamente eliminado do concurso público o candidato que, durante a realização de qualquer uma das provas e(ou) etapas:
-a) utilizar ou tentar utilizar meios fraudulentos e(ou) ilegais para a sua realização e(ou) para obter vantagens para si e(ou) para terceiros;
+11.7 Terá suas provas e(ou) etapas anuladas e será automaticamente eliminado do concurso público o candidato que, durante a realização de qualquer uma das provas e(ou) etapas:   
+a) utilizar ou tentar utilizar meios fraudulentos e(ou) ilegais para a sua realização e(ou) para obter vantagens para si e(ou) para terceiros;    
 b) for surpreendido dando ou recebendo qualquer forma de auxílio para a execução de prova ou atividade;
-c) for surpreendido portando anotações;
-d) utilizar-se de lápis, borracha, livros, dicionários, meios, notas e(ou) impressos e quaisquer objetos que não forem expressamente permitidos em edital, bem como se comunicar com outro candidato;
-e) for surpreendido com qualquer recipiente ou embalagem, tais como: garrafa de água, suco, refrigerante, embalagem de alimentos (biscoitos, barras de cereais, chocolates, balas etc), que não seja fabricado com material transparente. Os alimentos devem ser acondicionados em saco de plástico transparente ou porta objetos de plástico transparente, que deverá ser providenciado pelo candidato;
-f) for surpreendido portando e(ou) utilizando máquina fotográfica, telefone celular, relógio de qualquer espécie, gravador, bip, receptor, pager,notebook, tablets eletrônicos, walkman, aparelho portátil de armazenamento e de reprodução de músicas, vídeos e outros arquivos digitais, agenda eletrônica, palmtop, régua de cálculo, máquina de calcular e(ou) equipamento similar, arma de fogo, objetos cortantes;
-g) faltar com o devido respeito e cortesia para com qualquer um dos fiscais, examinadores, auxiliares, instrutores, autoridades ou outros candidatos;
-h) fizer anotação de informações relativas às suas respostas ou à sua identificação no comprovante de inscrição e(ou) em qualquer outro meio;
-i) recusar-se a entregar a folha de respostas da prova objetiva, a folha de texto definitivo da prova discursiva e demais materiais relacionados às provas e(ou) etapas ao término do tempo regulamentar;
-j) afastar-se do local de realização da prova, a qualquer tempo, sem o acompanhamento de fiscal ou membro da coordenação do IADES;
-k) ausentar-se do local das provas, a qualquer tempo, portando folha de respostas da prova objetiva, folha de texto definitivo da prova discursiva e(ou) folha(s) de rascunho, bem como portando o caderno de provas antes do horário permitido para que o candidato possa levá-lo;
-l) não permitir a coleta de sua assinatura, de sua impressão digital e outros mecanismos de identificação de candidatos a serem utilizados pelo IADES;
-m) descumprir as instruções contidas no caderno das provas, na folha de respostas e(ou) na folha de texto definitivo, bem como nos editais de convocações e demais instruções de regulamentação das etapas;
-n) se recusar a transcrever para o cartão ótico de respostas, a frase apresentada durante a aplicação da prova objetiva para posterior exame grafológico;
-o) se recusar à coleta de dado biométrico e fotográfico pelo IADES, se for o caso, para confirmação da presença e da identidade quando da realização das provas e(ou) etapas;
-p) perturbar, de qualquer modo, a ordem dos trabalhos, incorrendo em comportamento indevido;
-q) usar óculos escuros; bem como usar boné, lenço, chapéu, gorro ou qualquer outro acessório que cubra as orelhas do candidato;
-r) tenha qualquer objeto, tais como aparelho celular, aparelhos eletrônicos ou relógio de qualquer espécie, que venha a emitir ruídos, durante a realização das provas, mesmo que devidamente acondicionado no envelope de guarda de pertences e(ou) conforme as orientações deste Edital; e/ou
+c) for surpreendido portando anotações;   
+d) utilizar-se de lápis, borracha, livros, dicionários, meios, notas e(ou) impressos e quaisquer objetos que não forem expressamente permitidos em edital, bem como se comunicar com outro candidato;     
+e) for surpreendido com qualquer recipiente ou embalagem, tais como: garrafa de água, suco, refrigerante, embalagem de alimentos (biscoitos, barras de cereais, chocolates, balas etc), que não seja fabricado com material transparente. Os alimentos devem ser acondicionados em saco de plástico transparente ou porta objetos de plástico transparente, que deverá ser providenciado pelo candidato;    
+f) for surpreendido portando e(ou) utilizando máquina fotográfica, telefone celular, relógio de qualquer espécie, gravador, bip, receptor, pager,notebook, tablets eletrônicos, walkman, aparelho portátil de armazenamento e de reprodução de músicas, vídeos e outros arquivos digitais, agenda eletrônica, palmtop, régua de cálculo, máquina de calcular e(ou) equipamento similar, arma de fogo, objetos cortantes;     
+g) faltar com o devido respeito e cortesia para com qualquer um dos fiscais, examinadores, auxiliares, instrutores, autoridades ou outros candidatos;    
+h) fizer anotação de informações relativas às suas respostas ou à sua identificação no comprovante de inscrição e(ou) em qualquer outro meio;    
+i) recusar-se a entregar a folha de respostas da prova objetiva, a folha de texto definitivo da prova discursiva e demais materiais relacionados às provas e(ou) etapas ao término do tempo regulamentar;    
+j) afastar-se do local de realização da prova, a qualquer tempo, sem o acompanhamento de fiscal ou membro da coordenação do IADES;     
+k) ausentar-se do local das provas, a qualquer tempo, portando folha de respostas da prova objetiva, folha de texto definitivo da prova discursiva e(ou) folha(s) de rascunho, bem como portando o caderno de provas antes do horário permitido para que o candidato possa levá-lo;     
+l) não permitir a coleta de sua assinatura, de sua impressão digital e outros mecanismos de identificação de candidatos a serem utilizados pelo IADES;    
+m) descumprir as instruções contidas no caderno das provas, na folha de respostas e(ou) na folha de texto definitivo, bem como nos editais de convocações e demais instruções de regulamentação das etapas;     
+n) se recusar a transcrever para o cartão ótico de respostas, a frase apresentada durante a aplicação da prova objetiva para posterior exame grafológico;    
+o) se recusar à coleta de dado biométrico e fotográfico pelo IADES, se for o caso, para confirmação da presença e da identidade quando da realização das provas e(ou) etapas;   
+p) perturbar, de qualquer modo, a ordem dos trabalhos, incorrendo em comportamento indevido;    
+q) usar óculos escuros; bem como usar boné, lenço, chapéu, gorro ou qualquer outro acessório que cubra as orelhas do candidato;    
+r) tenha qualquer objeto, tais como aparelho celular, aparelhos eletrônicos ou relógio de qualquer espécie, que venha a emitir ruídos, durante a realização das provas, mesmo que devidamente acondicionado no envelope de guarda de pertences e(ou) conforme as orientações deste Edital; e/ou   
 s) descumprir os comandos constantes deste Edital e(ou) outros que vierem a ser publicados.
 
 11.8 Nos casos de eventual falta de prova e(ou) material de aplicação de prova, em razão de falha de impressão ou de equívoco na distribuição de prova e(ou) material, o IADES tem a prerrogativa para entregar ao candidato reserva não personalizada eletronicamente, o que será registrado em atas de sala e de coordenação.
@@ -198,9 +216,9 @@ s) descumprir os comandos constantes deste Edital e(ou) outros que vierem a ser 
 
 ### DAS INSTRUÇÕES PARA APLICAÇÃO DAS PROVAS OBJETIVA E DISCURSIVA
 
-12.1 Data e turno de aplicação das provas:
-a) para o cargo Gestor em Políticas Púbicas e Gestão Governamental as provas objetiva e discursiva serão aplicadas no dia 18 de dezembro de 2022, no turno da manhã e com a duração de 4 (quatro) horas e 30 (trinta) minutos;
-b) para o cargo Analista em Políticas Púbicas, a prova objetiva será aplicada no dia 18 de dezembro de 2022, no turno da tarde e com a duração de 4 (quatro) horas;
+12.1 **Data e turno de aplicação das provas**:   
+a) **para o cargo Gestor em Políticas Púbicas e Gestão Governamental**: as provas objetiva e discursiva serão aplicadas no **dia 18 de dezembro de 2022, no turno da manhã** e com a duração de 4 (quatro) horas e 30 (trinta) minutos;    
+b) **para o cargo Analista em Políticas Púbicas**: a prova objetiva será aplicada no dia 18 de dezembro de 2022, no turno da tarde e com a duração de 4 (quatro) horas;
 
 12.2 Os locais, as datas e os horários de aplicação das provas objetiva e discursiva serão divulgados no endereço eletrônico http://www.iades.com.br, no dia 8 de dezembro de 2022.
 
@@ -212,7 +230,9 @@ b) para o cargo Analista em Políticas Púbicas, a prova objetiva será aplicada
 
 12.3 O candidato deverá transcrever, com caneta esferográfica de tinta preta, fabricada com material transparente, as respostas da prova objetiva para a folha de respostas e o texto definitivo da prova discursiva para a folha de texto definitivo, que serão os únicos documentos válidos para a correção das provas. O preenchimento da folha de respostas e da folha de texto definitivo será de inteira responsabilidade do candidato, que deverá proceder em conformidade com as instruções específicas contidas neste Edital, no caderno de provas e na folha de respostas e na folha de texto definitivo. Em hipótese alguma haverá substituição da folha de respostas e(ou) folha de texto definitivo por erro do candidato.
 
-12.3.1 O candidato é responsável pela devolução da sua folha de respostas e da sua folha de texto definitivo devidamente preenchida(s) ao final da prova. Em hipótese alguma, o candidato poderá sair da sala de aplicação de prova com a folha de respostas da prova objetiva e(ou) com a folha de texto definitivo da prova discursiva. 12.3.2 O preenchimento da folha de respostas e da folha de texto definitivo deverá ser feito dentro do prazo estipulado no subitem 12.1 letra “a”.
+12.3.1 O candidato é responsável pela devolução da sua folha de respostas e da sua folha de texto definitivo devidamente preenchida(s) ao final da prova. Em hipótese alguma, o candidato poderá sair da sala de aplicação de prova com a folha de respostas da prova objetiva e(ou) com a folha de texto definitivo da prova discursiva.
+
+12.3.2 O preenchimento da folha de respostas e da folha de texto definitivo deverá ser feito dentro do prazo estipulado no subitem 12.1 letra “a”.
 
 12.4 Serão de inteira responsabilidade do candidato os prejuízos advindos do
 preenchimento indevido da folha de respostas e(ou) da folha de texto definitivo. Serão consideradas marcações indevidas as que estiverem em desacordo com este edital e(ou) com as folhas de respostas, tais como: marcação rasurada ou emendada, campo de marcação não preenchido integralmente e(ou) mais de 1 (uma) marcação por questão.
@@ -224,7 +244,7 @@ prejuízos advindos da impossibilidade de realização da leitura óptica.
 
 12.7 Não serão fornecidas, por telefone, fax e(ou) e-mail, informações a respeito de data, local e horário de aplicação das provas. O candidato deverá observar rigorosamente os editais e os comunicados a serem publicados na internet, no endereço eletrônico http://www.iades.com.br.
 
-12.8 O candidato deverá comparecer ao local designado para a realização das provas com antecedência mínima de 1 (uma) hora do horário fixado para o seu início, munido de caneta esferográfica de tinta preta, fabricada com material transparente, de comprovante de inscrição e de documento de identidade original. Não será permitido, em hipótese alguma, o uso de lápis, lapiseira/grafite e(ou) borracha durante a realização das provas. 
+12.8 **O candidato deverá comparecer ao local designado para a realização das provas com antecedência mínima de 1 (uma) hora do horário fixado para o seu início, munido de caneta esferográfica de tinta preta, fabricada com material transparente, de comprovante de inscrição e de documento de identidade original. Não será permitido, em hipótese alguma, o uso de lápis, lapiseira/grafite e(ou) borracha durante a realização das provas.** 
 
 12.8.1 Não será admitido ingresso de candidato no local de realização das provas após o horário fixado para o seu início.
 
@@ -234,10 +254,10 @@ prejuízos advindos da impossibilidade de realização da leitura óptica.
 
 ### DAS MEDIDAS DE PREVENÇÃO DECORRENTES DA PANDEMIA
 
-12.22.1 O IADES será responsável pelas seguintes medidas preventivas, relativamente à emergência de saúde pública de importância internacional decorrente do coronavírus (COVID-19), quando da aplicação das provas:
-a) triagem rápida na entrada dos candidatos para reduzir o tempo de espera no atendimento, com horários diferenciados de entrada, por coordenação, e demarcações das filas a serem respeitadas; uso dos banheiros pelos candidatos com rígido processo de controle, evitando o uso simultâneo e incentivando a prática da higiene e a devida assepsia;
-b) processo individual de identificação do candidato na entrada no ambiente de prova;
-c) coleta manual de digitais diretamente no formulário ótico de respostas do candidato;
+12.22.1 O IADES será responsável pelas seguintes medidas preventivas, relativamente à emergência de saúde pública de importância internacional decorrente do coronavírus (COVID-19), quando da aplicação das provas:   
+a) triagem rápida na entrada dos candidatos para reduzir o tempo de espera no atendimento, com horários diferenciados de entrada, por coordenação, e demarcações das filas a serem respeitadas; uso dos banheiros pelos candidatos com rígido processo de controle, evitando o uso simultâneo e incentivando a prática da higiene e a devida assepsia;   
+b) processo individual de identificação do candidato na entrada no ambiente de prova;    
+c) coleta manual de digitais diretamente no formulário ótico de respostas do candidato;    
 d) controle individual de saída dos candidatos ao término das provas, evitando tumulto e aglomeração de pessoas.
 
 12.22.2 O candidato que for observado com sinais ou sintomas de febre ou gripe/resfriado será orientado a realizar avaliação médica com equipe que estará disponível no local.
@@ -251,7 +271,7 @@ obrigatoriedade do uso de equipamentos de proteção individual e demais medidas
 
 ### DA PROVA OBJETIVA
 
-13.1 A prova objetiva será composta de 60 (sessenta) questões, de múltipla escolha, com 5 (cinco) alternativas em cada questão, para escolha de 1 (uma) única resposta correta; de acordo com a pontuação total, quantidade de questões e os pesos definidos de acordo com o quadro a seguir:
+13.1 **A prova objetiva será composta de 60 (sessenta) questões, de múltipla escolha, com 5 (cinco) alternativas em cada questão, para escolha de 1 (uma) única resposta correta;** de acordo com a pontuação total, quantidade de questões e os pesos definidos de acordo com o quadro a seguir:
 
 13.1.1 PARA O CARGO: GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO
 GOVERNAMENTAL – ESPECIALIDADE: POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL
@@ -278,14 +298,14 @@ econômica do DF e da RIDE | 3 | 1 | 3 |
 
 13.2 Todos os candidatos terão as suas provas objetivas corrigidas por meio de processamento eletrônico, a partir das marcações feitas pelos candidatos na folha de respostas.
 
-13.3 O candidato não poderá, sob pena de eliminação do certame:
-a) obter pontuação igual a 0 (zero) nas questões de Língua Portuguesa;
-b) obter pontuação menor que 50% (cinquenta por cento) nas questões de Conhecimentos Gerais; e
+13.3 **O candidato não poderá, sob pena de eliminação do certame**:    
+a) obter pontuação igual a 0 (zero) nas questões de Língua Portuguesa;   
+b) obter pontuação menor que 50% (cinquenta por cento) nas questões de Conhecimentos Gerais; e    
 c) obter pontuação menor que 50% (cinquenta por cento) nas questões de Conhecimentos Específicos.
 
 13.4 Serão considerados aprovados na prova objetiva os candidatos que obtiverem o mínimo de 50% (cinquenta por cento) da pontuação total máxima permitida para a prova objetiva, desde que não se enquadrem nas condições de eliminação constantes do subitem 13.3.
 
-13.5 Se do exame de recursos da prova objetiva resultar anulação de questão(ões), a pontuação correspondente a cada questão que tiver o seu gabarito anulado será distribuída, proporcionalmente, entre as demais questões da prova de mesmo peso, ou seja:
+13.5 **Se do exame de recursos da prova objetiva resultar anulação de questão(ões), a pontuação correspondente a cada questão que tiver o seu gabarito anulado será distribuída, proporcionalmente, entre as demais questões da prova de mesmo peso**, ou seja:
 a) no caso de anulação de questão no bloco relativo aos Conhecimentos Gerais, a distribuição da pontuação da questão anulada será feita única e exclusivamente nas questões de conhecimentos gerais, mantendo-se a pontuação máxima permitida para esse
 conjunto de questões em 30,0 (trinta) pontos;
 b) no caso de anulação de questão no bloco relativo aos Conhecimentos Específicos, a distribuição da pontuação da questão anulada será feita única e exclusivamente nas questões de conhecimentos específicos, mantendo-se a pontuação máxima permitida para esse conjunto de questões em 60,0 (sessenta) pontos.
@@ -298,7 +318,7 @@ b) no caso de anulação de questão no bloco relativo aos Conhecimentos Especí
 
 14.2 A prova discursiva terá o objetivo de avaliar, com base em proposta apresentada pela Banca Examinadora e relacionada aos conhecimentos constantes do conteúdo programático elencados no Anexo I, a capacidade de expressão na modalidade escrita e o uso das normas do registro formal culto da Língua Portuguesa.
 
-14.3 A prova discursiva receberá pontuação máxima igual a 10,00 (dez) pontos.
+14.3 **A prova discursiva receberá pontuação máxima igual a 10,00 (dez) pontos.**
 
 14.4 A prova discursiva deverá ser manuscrita, em letra legível, com caneta esferográfica de tinta preta, fabricada com material transparente, não sendo permitida a interferência e(ou) a participação de outras pessoas, salvo em caso de candidato com deficiência, se a deficiência impossibilitar a redação pelo próprio candidato, e de candidato que solicitou atendimento especial, observado o disposto no item 10 deste Edital. Nesse caso, o candidato será acompanhado por um fiscal do IADES devidamente treinado, para o qual deverá ditar o texto, especificando oralmente a grafia das palavras e os sinais gráficos de
 pontuação.
@@ -311,29 +331,27 @@ pontuação.
 
 14.8 A folha para rascunho, contida no caderno de provas, é de preenchimento facultativo e não valerá para a avaliação pela Banca Examinadora.
 
-14.9 A prova discursiva consistirá na elaboração de texto dissertativo e(ou) descritivo, com extensão mínima de 20 (vinte) linhas e máxima de 30 (trinta) linhas, com base no conhecimento específico de cada área de atuação, primando pela clareza, precisão, consistência e concisão.
+14.9 **A prova discursiva consistirá na elaboração de texto dissertativo e(ou) descritivo, com extensão mínima de 20 (vinte) linhas e máxima de 30 (trinta) linhas, com base no conhecimento específico de cada área de atuação, primando pela clareza, precisão, consistência e concisão.**
 
 14.10 O candidato receberá nota zero na prova discursiva em casos de fuga ao tema, de haver texto com quantidade inferior a 20 (vinte) linhas, de não haver texto ou de identificação em local indevido.
 
-14.11 Somente será computada como linha aquela que apresentar pelo menos uma palavra inteira, não se considerando fragmentos de palavras resultantes da divisão silábica ao final da linha anterior.
+14.11 **Somente será computada como linha aquela que apresentar pelo menos uma palavra inteira, não se considerando fragmentos de palavras resultantes da divisão silábica ao final da linha anterior.**
 
-14.12 No texto avaliado, a utilização da norma culta, a adequação ao tema, a argumentação, a coerência e a elaboração crítica, totalizarão a pontuação relativa ao Domínio do Conhecimento Específico (DCE), assim distribuídos:
-a) Tema/Texto (TX), pontuação máxima igual a 2,5 (dois e meio) pontos: serão verificadas a adequação ao tema (pertinência ao tema proposto), a adequação à proposta (pertinência quanto ao gênero proposto) e a organização textual (paragrafação e
-periodização);
-b) Argumentação (AR), pontuação máxima igual a 2,5 (dois e meio) pontos: serão verificados a especificação do tema, o conhecimento do assunto, a seleção de ideias distribuídas de forma lógica, concatenadas e sem fragmentação e a apresentação de informações fatos e opiniões pertinentes ao tema, com articulação e consistência de raciocínio, sem contradição, estabelecendo um diálogo contemporâneo;
-c) Coesão e Coerência (CC), pontuação máxima igual a 2,5 (dois e meio) pontos: serão verificadas a coesão textual (retomada pronominal; substituição lexical; elipses; emprego de anafóricos; emprego de articuladores/conjunções; emprego de tempos e modos verbais; emprego de processos lexicais: sinonímia, antonímia, hiperonímia, hiponímia) e a coerência argumentativa (seleção e ordenação de argumentos; relações de implicação ou de adequação entre premissas e as conclusões que delas se tiram ou entre afirmações e as
-consequências que delas decorrem); e
-d) Elaboração Crítica (EC), pontuação máxima igual a 2,5 (dois e meio) pontos: serão verificadas a elaboração de proposta de intervenção relacionada ao tema abordado e a pertinência dos argumentos selecionados fundamentados em informações de apoio, estabelecendo relações lógicas, que visem propor valores e conceitos.
+14.12 No texto avaliado, a utilização da norma culta, a adequação ao tema, a argumentação, a coerência e a elaboração crítica, totalizarão a pontuação relativa ao Domínio do Conhecimento Específico (DCE), assim distribuídos:    
+a) **Tema/Texto (TX), pontuação máxima igual a 2,5 (dois e meio) pontos**: serão verificadas a adequação ao tema (pertinência ao tema proposto), a adequação à proposta (pertinência quanto ao gênero proposto) e a organização textual (paragrafação e periodização);    
+b) **Argumentação (AR), pontuação máxima igual a 2,5 (dois e meio) pontos**: serão verificados a especificação do tema, o conhecimento do assunto, a seleção de ideias distribuídas de forma lógica, concatenadas e sem fragmentação e a apresentação de informações fatos e opiniões pertinentes ao tema, com articulação e consistência de raciocínio, sem contradição, estabelecendo um diálogo contemporâneo;   
+c) **Coesão e Coerência (CC), pontuação máxima igual a 2,5 (dois e meio) pontos**: serão verificadas a coesão textual (retomada pronominal; substituição lexical; elipses; emprego de anafóricos; emprego de articuladores/conjunções; emprego de tempos e modos verbais; emprego de processos lexicais: sinonímia, antonímia, hiperonímia, hiponímia) e a coerência argumentativa (seleção e ordenação de argumentos; relações de implicação ou de adequação entre premissas e as conclusões que delas se tiram ou entre afirmações e as consequências que delas decorrem); e   
+d) **Elaboração Crítica (EC), pontuação máxima igual a 2,5 (dois e meio) pontos**: serão verificadas a elaboração de proposta de intervenção relacionada ao tema abordado e a pertinência dos argumentos selecionados fundamentados em informações de apoio, estabelecendo relações lógicas, que visem propor valores e conceitos.
 
-14.13 Desta forma, DCE (Domínio do Conhecimento Específico) = TX + AR + CC + EC.
+14.13 Desta forma: **DCE (Domínio do Conhecimento Específico) = TX + AR + CC + EC**.
 
-14.14 A avaliação do domínio da modalidade escrita da Língua Portuguesa totalizará o número de erros (NE) do candidato, considerando-se aspectos como acentuação, grafia, pontuação, concordância, regência, morfossintaxe, propriedade vocabular e translineação.
+14.14 **A avaliação do domínio da modalidade escrita da Língua Portuguesa**: totalizará o **número de erros (NE)** do candidato, considerando-se aspectos como acentuação, grafia, pontuação, concordância, regência, morfossintaxe, propriedade vocabular e translineação.
 
-14.15 Para o texto dissertativo e(ou) descritivo, será computado o número total de linhas (TL) efetivamente escritas pelo candidato.
+14.15 Para o texto dissertativo e(ou) descritivo, **será computado o número total de linhas (TL)** efetivamente escritas pelo candidato.
 
 14.16 Será desconsiderado, para efeito de avaliação, qualquer fragmento de texto que for escrito fora do local apropriado ou que ultrapassar a extensão máxima permitida.
 
-14.17 É facultado ao candidato anular, por meio de um traço horizontal, parte do texto transcrito para a folha de texto definitivo.
+14.17 **É facultado ao candidato anular, por meio de um traço horizontal, parte do texto transcrito para a folha de texto definitivo.**
 
 14.18 Para cada candidato, será calculada a pontuação final na prova discursiva (PPD) da seguinte forma:
 PPD = DCE - ((NE/TL) x 2).
@@ -374,7 +392,7 @@ e) auferir nota inferior a 60% (sessenta por cento) da pontuação máxima defin
 
 ### DA AVALIAÇÃO DE TÍTULOS
 
-16.1 Serão convocados para a apresentação da documentação relativa à avaliação de títulos todos os candidatos do cargo Gestor em Políticas Públicas e Gestão Governamental,convocados para etapa do curso de formação profissional. 
+16.1 **Serão convocados para a apresentação da documentação relativa à avaliação de títulos todos os candidatos do cargo Gestor em Políticas Públicas e Gestão Governamental, convocados para etapa do curso de formação profissional.** 
 
 16.1.1 Somente serão divulgados, em caráter definitivo, os resultados finais na avaliação de títulos dos candidatos aprovados na etapa curso de formação.
 
@@ -391,7 +409,7 @@ fornecido por instituição de ensino reconhecido pelo Ministério da Educação
 | TOTAL MÁXIMO DE PONTOS | 5,00 |   
 
 
-16.4 Todos os documentos referentes à avaliação de títulos deverão ser apresentados em cópias frente e verso, autenticadas em cartório, cuja autenticidade será objeto de comprovação mediante apresentação de original e outros procedimentos julgados necessários, caso o candidato venha a ser aprovado.
+16.4 **Todos os documentos referentes à avaliação de títulos deverão ser apresentados em cópias frente e verso, autenticadas em cartório, cuja autenticidade será objeto de comprovação mediante apresentação de original e outros procedimentos julgados necessários, caso o candidato venha a ser aprovado.**
 
 16.5 Os documentos deverão estar em perfeitas condições, de forma a permitir a avaliação com clareza.
 
@@ -401,7 +419,7 @@ fornecido por instituição de ensino reconhecido pelo Ministério da Educação
 
 16.8 Apenas os cursos já concluídos até a data da convocação para apresentação dos títulos serão passíveis de pontuação na avaliação.
 
-16.9 O certificado de curso de pós-graduação lato sensu, em nível de especialização, que não apresentar a carga horária mínima de 360 (trezentos e sessenta) horas/aula não será pontuado.
+16.9 **O certificado de curso de pós-graduação lato sensu, em nível de especialização, que não apresentar a carga horária mínima de 360 (trezentos e sessenta) horas/aula não será pontuado.**
 
 16.10 É de exclusiva responsabilidade do candidato o envio e a comprovação dos documentos da avaliação de títulos.
 
@@ -409,9 +427,9 @@ fornecido por instituição de ensino reconhecido pelo Ministério da Educação
 
 16.12 Comprovada, em qualquer tempo, irregularidade ou ilegalidade na obtenção dos documentos apresentados de avaliação de títulos, a respectiva pontuação do candidato será anulada, sem prejuízo da aplicabilidade do subitem 11.7 (letra “a”).
 
-16.13 Os pontos que excederem o valor máximo de cada título, bem como os que excederem o limite de pontos estipulados nas tabelas, serão desconsiderados.
+16.13 **Os pontos que excederem o valor máximo de cada título, bem como os que excederem o limite de pontos estipulados nas tabelas, serão desconsiderados.**
 
-16.14 Os documentos para a avaliação de títulos serão oportunamente entregues, conforme instrução a ser fornecida em edital específico de convocação para esta etapa.
+16.14 **Os documentos para a avaliação de títulos serão oportunamente entregues, conforme instrução a ser fornecida em edital específico de convocação para esta etapa.**
 
 
 ###  DO RESULTADO FINAL
@@ -452,99 +470,101 @@ PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O C
 
 ###### Língua Portuguesa. 
 
-1 Compreensão e interpretação de textos de gêneros variados. 
-2 Reconhecimento de tipos e gêneros textuais. 
-3 Domínio da ortografia oficial. 
-4 Domínio dos mecanismos de coesão textual.   
-	4.1 Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.   
-	4.2 Emprego de tempos e modos verbais.
-5 Domínio da estrutura morfossintática do período.   
-	5.1 Emprego das classes de palavras.   
-	5.2 Relações de coordenação entre orações e entre termos da oração.  
+1. [ ] Compreensão e interpretação de textos de gêneros variados. 
+2. [ ] Reconhecimento de tipos e gêneros textuais. 
+3. [ ] Domínio da ortografia oficial. 
+4. Domínio dos mecanismos de coesão textual.   
+	4.1. [ ] Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.   
+	4.2. [ ] Emprego de tempos e modos verbais.
+5. Domínio da estrutura morfossintática do período.   
+	5.1. [ ] Emprego das classes de palavras.   
+	5.2. [ ] Relações de coordenação entre orações e entre termos da oração.  
 	
-	5.3 Relações de subordinação entre orações e entre termos da oração.   
-	5.4 Emprego dos sinais de pontuação.  
- 	5.5 Concordância verbal e nominal.   
-	5.6 Regência verbal e nominal.    
-	5.7 Emprego do sinal indicativo de crase.    
-	5.8 Colocação dos pronomes átonos.   
-6 Reescrita de frases e parágrafos do texto.    
-	6.1 Significação das palavras.    
-	6.2 Substituição de palavras ou de trechos de texto.    
-	6.3 Reorganização da estrutura de orações e de períodos do texto.    
-	6.4 Reescrita de textos de diferentes gêneros e níveis de formalidade.
+	5.3. [ ] Relações de subordinação entre orações e entre termos da oração.   
+	5.4. [ ] Emprego dos sinais de pontuação.  
+ 	5.5. [ ] Concordância verbal e nominal.   
+	5.6. [ ] Regência verbal e nominal.    
+	5.7. [ ] Emprego do sinal indicativo de crase.    
+	5.8. [ ] Colocação dos pronomes átonos.   
+6. Reescrita de frases e parágrafos do texto.    
+	6.1. [ ] Significação das palavras.    
+	6.2. [ ] Substituição de palavras ou de trechos de texto.    
+	6.3. [ ] Reorganização da estrutura de orações e de períodos do texto.    
+	6.4. [ ] Reescrita de textos de diferentes gêneros e níveis de formalidade.
 
 
 
 ###### Realidade étnica, social, histórica, geográfica, cultural, política e econômica do DF e da RIDE e sobre a RIDE. 
 
-1 Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do
+1 [ ] Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do
 Distrito Federal e Entorno (RIDE), instituída pela **Lei Complementar no 94/1998** e suas alterações.
 
 
 
 ###### Noções de Informática e do Sistema Eletrônico de Informações - SEI. 
 
-1 Conceito de internet e intranet. 
-2 Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet.    
-	2.1 Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais.   
-	2.2 Noções de sistema operacional (ambiente Windows).    
-	2.3 Acesso à distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia. 2.4 Edição de textos, planilhas e apresentações (ambientes Microsoft Office). 3 Redes de computadores.
-4 Conceitos de proteção e segurança.   
-	4.1 Noções de vírus, worms e pragas virtuais.   
-	4.2 Aplicativos para segurança (antivírus,
-firewall, anti-spyware etc.).
-5 Redes de comunicação.    
-	5.1 Introdução a redes (computação/telecomunicações).    
-	5.2 Noções básicas de transmissão de dados.   
-	5.3 Tipos de enlace, códigos, modos e meios de transmissão.
-6 Metadados de arquivos.  
-7. Decreto Distrital nº 36.756/2015 e suas alterações (Sistema Eletrônico de Informações – SEI).
+1. [X] Conceito de internet e intranet. 
+2. Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet.    
+	2.1. [X] Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais.   
+	2.2. [X] Noções de sistema operacional (ambiente Windows).    
+	2.3. [X] Acesso à distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia.   
+	2.4. [X] Edição de textos, planilhas e apresentações (ambientes Microsoft Office). 
+3. [X] Redes de computadores.
+4. Conceitos de proteção e segurança.   
+	4.1. [X] Noções de vírus, worms e pragas virtuais.   
+	4.2. [X] Aplicativos para segurança (antivírus, firewall, anti-spyware etc.).
+5. Redes de comunicação.    
+	5.1. [X] Introdução a redes (computação/telecomunicações).    
+	5.2. [ ] Noções básicas de transmissão de dados.   
+	5.3. [ ] Tipos de enlace, códigos, modos e meios de transmissão.
+6. [ ] Metadados de arquivos.  
+7. [ ] Decreto Distrital nº 36.756/2015 e suas alterações (Sistema Eletrônico de Informações – SEI).
 
 
 
 ###### Noções de Raciocínio Lógico e Matemática. 
 
-1 Operações, propriedades e aplicações (soma, subtração, multiplicação, divisão, potenciação e radiciação). 
-2 Princípios de contagem e probabilidade. 
-3 Arranjos e permutações. 
-4 Combinações. 
-5 Conjuntos numéricos (números naturais, inteiros, racionais e reais) e operações com conjuntos. 
-6 Razões e proporções (grandezas diretamente proporcionais, grandezas inversamente
+1. [ ] Operações, propriedades e aplicações (soma, subtração, multiplicação, divisão, potenciação e radiciação). 
+2. [ ] Princípios de contagem e probabilidade. 
+3. [ ] Arranjos e permutações. 
+4. [ ] Combinações. 
+5. [ ] Conjuntos numéricos (números naturais, inteiros, racionais e reais) e operações com conjuntos. 
+6. [ ] Razões e proporções (grandezas diretamente proporcionais, grandezas inversamente
 proporcionais, porcentagem, regras de três simples e compostas). 
-7 Equações e inequações. 
-8 Sistemas de medidas. 
-9 Volumes. 
-10 Compreensão de estruturas lógicas. 
-11 Lógica de argumentação (analogias, inferências, deduções e conclusões). 12 Diagramas
+7. [ ] Equações e inequações. 
+8. [ ] Sistemas de medidas. 
+9. [ ] Volumes. 
+10. [ ] Compreensão de estruturas lógicas. 
+11. [ ] Lógica de argumentação (analogias, inferências, deduções e conclusões). 
+12. [ ] Diagramas
 lógicos. 
-13 Noções de Matemática Financeira.    
-	13.1 Juros simples e compostos.   
-	13.2 Capitalização e descontos. 
-	13.3 Taxas de juros: nominal, efetiva, equivalente, proporcional, real e aparente.   
-	13.4 Rendas uniformes e variáveis.   
-	13.5 Planos de amortização de empréstimos e financiamentos.   
-	13.6 Cálculo financeiro: custo real efetivo de operações de financiamento, empréstimo e investimento.   
-	13.7 Inflação, variação cambial e taxa de juros.
+13. Noções de Matemática Financeira.    
+	13.1. [ ] Juros simples e compostos.   
+	13.2. [ ] Capitalização e descontos. 
+	13.3. [ ] Taxas de juros: nominal, efetiva, equivalente, proporcional, real e aparente.   
+	13.4. [ ] Rendas uniformes e variáveis.   
+	13.5. [ ] Planos de amortização de empréstimos e financiamentos.   
+	13.6. [ ] Cálculo financeiro: custo real efetivo de operações de financiamento, empréstimo e investimento.   
+	13.7. [ ] Inflação, variação cambial e taxa de juros.
 
 
 
 ###### Plano Distrital de Política para Mulheres. 
 
-1 Plano Distrital de Política Para Mulheres (2020 – 2023), de acordo com o **Decreto Distrital 42.590/2021**, disponível em: https://www.mulher.df.gov.br/pdpm/.
+1. [ ] Plano Distrital de Política Para Mulheres (2020 – 2023), de acordo com o **Decreto Distrital 42.590/2021**, disponível em: https://www.mulher.df.gov.br/pdpm/.
 
 
 
-###### * 1.6 Políticas Públicas e Gestão Governamental. 
+###### 1.6 Políticas Públicas e Gestão Governamental. (*)
 
-1 Políticas Públicas. 
-2 Análise de políticas públicas.    
-	2.1 Modelos de tomada de decisão em política pública: incremental, racional e suas variantes. 
-3 Análise das estratégias e dos resultados das políticas públicas.
-4 Formulação e implementação de políticas públicas. 
-5 Políticas públicas distributivas, regulatórias e redistributivas. 
-6 Políticas Públicas e suas fases: formação da agenda, formulação, implementação, monitoramento e avaliação. 
-7 Controle Social.
+1. [ ] Políticas Públicas. 
+2. Análise de políticas públicas.    
+	2.1. [ ] Modelos de tomada de decisão em política pública: incremental, racional e suas variantes. 
+3. [ ] Análise das estratégias e dos resultados das políticas públicas.
+4. [ ] Formulação e implementação de políticas públicas. 
+5. [ ] Políticas públicas distributivas, regulatórias e redistributivas. 
+6. [ ] Políticas Públicas e suas fases: formação da agenda, formulação, implementação, monitoramento e avaliação. 
+7. [ ] Controle Social.
 
 (*) EXCLUSIVO PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL
 
@@ -557,137 +577,133 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 
 ###### 2.1 Direito Administrativo: 
 
-1 Estado, governo e administração pública.   
-	1.1 Conceitos.   
-	1.2 Elementos.
-2 Direito administrativo.   
-	2.1 Conceito.  
-	2.2 Objeto.   
-	2.3 Fontes.
-3 Ato administrativo.   
-	3.1 Conceito, requisitos, atributos, classificação e espécies.   
-	3.2 Extinção do ato administrativo: Cassação, anulação, revogação e convalidação.   
-	3.3 Decadência administrativa. 
-4 Agentes públicos do Distrito Federal.   
-	4.1 Disposições constitucionais aplicáveis.   
-	4.2 Disposições doutrinárias: Conceito, Espécies.   
-	4.3. Cargo, emprego e função pública.    
-	4.4. Provimento.   
-	4.5. Vacância.   
-	4.6 Efetividade, estabilidade e vitaliciedade.    
-	4.7 Remuneração.    
-	4.8 Direitos e deveres.    
-	4.9 Responsabilidade.  
-	4.10 Processo administrativo disciplinar. 
-5 Poderes da administração pública.   
-	5.1 Hierárquico, disciplinar, regulamentar e de polícia.   
-	5.2 Uso e abuso do poder.
-6 Regime jurídico administrativo.   
-	6.1 Conceito.   
-	6.2 Princípios expressos e implícitos da administração pública. 
-7 Responsabilidade civil do Estado. 
-8 Serviços públicos.   
-	8.1 Conceito.   
-	8.2 Elementos constitutivos.  
-	8.3 Formas de prestação e meios de execução.   
-	8.4 Delegação.   
-	8.5. Concessão, permissão e autorização.   
-	8.6 Classificação.   
-	8.7 Princípios. 
-9 Organização administrativa. 
-9.1 Centralização, descentralização,
-concentração e desconcentração. 
-9.2 Administração direta e indireta. 
-9.3 Autarquias, fundações, empresas públicas e sociedades de economia mista. 
-9.4 Entidades paraestatais e terceiro setor. 
-10 Controle da administração pública.   
-	10.1 Controle exercido pela administração pública.   
-	10.2 Controle judicial.   
-	10.3 Controle legislativo.   
-	10.4 Improbidade administrativa. 10.4.1 Lei nº 8.429/1992 e suas alterações.
-11 Processo administrativo.   
-	11.1 Lei nº 9.784/1999 e suas alterações. 
-12 Licitações e contratos administrativos.   
-	12.1 Legislação pertinente. 12.1.1 Lei de licitações e contratos administrativos (Lei Federal n° 14.133/2021). 12.1.2 Lei nº 10.520/2002. 12.1.3 Decreto nº 7.892/2013 e suas alterações (Sistema de Registro de Preços).
+1. Estado, governo e administração pública.   
+	1.1. [ ] Conceitos.   
+	1.2. [ ] Elementos.
+2. Direito administrativo.   
+	2.1. [ ] Conceito.  
+	2.2. [ ] Objeto.   
+	2.3. [ ] Fontes.
+3. Ato administrativo.   
+	3.1. [ ] Conceito, requisitos, atributos, classificação e espécies.   
+	3.2. [ ] Extinção do ato administrativo: Cassação, anulação, revogação e convalidação.   
+	3.3. [ ] Decadência administrativa. 
+4. Agentes públicos do Distrito Federal.   
+	4.1. [ ] Disposições constitucionais aplicáveis.   
+	4.2. [ ] Disposições doutrinárias: Conceito, Espécies.   
+	4.3. [ ] Cargo, emprego e função pública.    
+	4.4. [ ] Provimento.   
+	4.5. [ ] Vacância.   
+	4.6. [ ] Efetividade, estabilidade e vitaliciedade.    
+	4.7. [ ] Remuneração.    
+	4.8. [ ] Direitos e deveres.    
+	4.9. [ ] Responsabilidade.  
+	4.10. [ ] Processo administrativo disciplinar. 
+5. Poderes da administração pública.   
+	5.1. [ ] Hierárquico, disciplinar, regulamentar e de polícia.   
+	5.2. [ ] Uso e abuso do poder.
+6. Regime jurídico administrativo.   
+	6.1. [ ] Conceito.   
+	6.2. [ ] Princípios expressos e implícitos da administração pública. 
+7. Responsabilidade civil do Estado. 
+8. Serviços públicos.   
+	8.1. [ ] Conceito.   
+	8.2. [ ] Elementos constitutivos.  
+	8.3. [ ] Formas de prestação e meios de execução.   
+	8.4. [ ] Delegação.   
+	8.5. [ ] Concessão, permissão e autorização.   
+	8.6. [ ] Classificação.   
+	8.7. [ ] Princípios. 
+9. Organização administrativa.  
+	9.1. [ ] Centralização, descentralização, concentração e desconcentração.   
+	9.2. [ ] Administração direta e indireta.   
+	9.3. [ ] Autarquias, fundações, empresas públicas e sociedades de economia mista. 
+	9.4. [ ] Entidades paraestatais e terceiro setor.
+10. Controle da administração pública.   
+	10.1. [ ] Controle exercido pela administração pública.   
+	10.2. [ ] Controle judicial.   
+	10.3. [ ] Controle legislativo.   
+	10.4. [ ] Improbidade administrativa. Lei nº 8.429/1992 e suas alterações.
+11. Processo administrativo.   
+	11.1. [ ] Lei nº 9.784/1999 e suas alterações. 
+12. Licitações e contratos administrativos.   
+	12.1. [ ] Legislação pertinente. 12.1.1 Lei de licitações e contratos administrativos (Lei Federal n° 14.133/2021). 12.1.2 Lei nº 10.520/2002. 12.1.3 Decreto nº 7.892/2013 e suas alterações (Sistema de Registro de Preços).
 
 
 ###### 2.2 Direito Constitucional. 
 
-1 Constituição da República Federativa do Brasil de 1988.   
-	1.1 Princípios fundamentais.
-2 Aplicabilidade das normas constitucionais.   
-	2.1 Normas de eficácia plena, contida e limitada. 
-	2.2 Normas programáticas. Constitucionalismo e neoconstitucionalismo: características e evolução histórica. 
-3 Direito constitucional contemporâneo: conceitos fundamentais e a construção do novo modelo.   
-	3.1 Novos paradigmas de interpretação e a mutação constitucional.
-4 Direitos e garantias fundamentais.   
-	4.1 Direitos e deveres individuais e coletivos, direitos sociais. 
-5 Organização político-administrativa do Estado.   
-	5.1. Estado federal brasileiro, União.
-6 Administração pública. 
-	6.1 Disposições gerais, servidores públicos. Regras de organização do Estado na CF/88. 
-7 Poderes Legislativo, Executivo e Judiciário na Constituição.   
-	7.1 Atribuições e responsabilidades do Presidente da República.
+1. Constituição da República Federativa do Brasil de 1988.   
+	1.1. [ ] Princípios fundamentais.
+2. Aplicabilidade das normas constitucionais.   
+	2.1. [ ] Normas de eficácia plena, contida e limitada. 
+	2.2. [ ] Normas programáticas. Constitucionalismo e neoconstitucionalismo: características e evolução histórica. 
+3. Direito constitucional contemporâneo: conceitos fundamentais e a construção do novo modelo.   
+	3.1. [ ] Novos paradigmas de interpretação e a mutação constitucional.
+4. Direitos e garantias fundamentais.   
+	4.1. [ ] Direitos e deveres individuais e coletivos, direitos sociais. 
+5. Organização político-administrativa do Estado.   
+	5.1. [ ] Estado federal brasileiro, União.
+6. Administração pública. 
+	6.1. [ ] Disposições gerais, servidores públicos. Regras de organização do Estado na CF/88. 
+7. Poderes Legislativo, Executivo e Judiciário na Constituição.   
+	7.1. [ ] Atribuições e responsabilidades do Presidente da República.
 
 
 
 ###### 2.3 Noções de Administração Financeira e Orçamentária. Administração Orçamentária e Financeira e Orçamento Público. 
 
-1 Orçamento público. 
-1.1 Conceito 
-1.2 Técnicas
-orçamentárias. 
-1.3 Princípios orçamentários. 
-1.4 Ciclo orçamentário. 
-1.5 Processo
-orçamentário. 
-2 O orçamento público no Brasil. 
-2.1 Sistema de planejamento e de
+1. Orçamento público. 
+	1.1. [ ] Conceito   
+	1.2. [ ] Técnicas orçamentárias. 
+	1.3. [ ] Princípios orçamentários.  
+	1.4. [ ] Ciclo orçamentário. 
+	1.5. [ ] Processo orçamentário.
+2. O orçamento público no Brasil. 
+	2.1. [ ] Sistema de planejamento e de
 orçamento federal. 
-2.2 Plano plurianual. 
-2.3 Diretrizes orçamentárias. 
-2.4 Orçamento anual.
-2.5 Sistema e processo de orçamentação. 
-2.6 Classificações orçamentárias. 
-2.7 Estrutura
-programática. 
-2.8 Créditos ordinários e adicionais. 
-3 Programação e execução orçamentária
+	2.2. [ ] Plano plurianual. 
+	2.3. [ ] Diretrizes orçamentárias. 
+	2.4. [ ] Orçamento anual.
+	2.5. [ ] Sistema e processo de orçamentação. 
+	2.6. [ ] Classificações orçamentárias. 
+	2.7. [ ] Estrutura programática. 
+	2.8. [ ] Créditos ordinários e adicionais.
+3. Programação e execução orçamentária
 e financeira. 
-3.1 Descentralização orçamentária e financeira. 
-3.2 Acompanhamento da
+	3.1. [ ] Descentralização orçamentária e financeira. 
+	3.2. [ ] Acompanhamento da
 execução. 
-3.3 Sistemas de informações. 
-3.4 Alterações orçamentárias. 
-4 Receita pública.
-4.1 Conceito e classificações. 
-4.2 Estágios. 
-4.3 Fontes. 
-4.4 Dívida ativa. 
-5 Despesa pública.
-5.1 Conceito e classificações. 
-5.2 Estágios. 
-5.3 Restos a pagar. 
-5.4 Despesas de exercícios
+	3.3. [ ] Sistemas de informações. 
+	3.4. [ ] Alterações orçamentárias.
+4. Receita pública.
+	4.1. [ ] Conceito e classificações. 
+	4.2. [ ] Estágios. 
+	4.3. [ ] Fontes. 
+	4.4. [ ] Dívida ativa.
+5. Despesa pública.
+	5.1. [ ] Conceito e classificações. 
+	5.2. [ ] Estágios. 
+	5.3. [ ] Restos a pagar. 
+	5.4. [ ] Despesas de exercícios
 anteriores. 
-5.5 Dívida flutuante e fundada. 
-5.6 Suprimento de fundos. 
-6 Lei Complementar
-nº 101/2000 e suas alterações (Lei de Responsabilidade Fiscal). 
-7 Lei nº 4.320/1964 e suas
-alterações.
+	5.5. [ ] Dívida flutuante e fundada. 
+	5.6. [ ] Suprimento de fundos.
+6. Lei Complementar nº 101/2000 e suas alterações (Lei de Responsabilidade Fiscal). 
+7. Lei nº 4.320/1964 e suas alterações.
 
 
 
 ###### 2.4 Lei Orgânica do Distrito Federal. 
 
-1.1. Fundamentos da Organização dos Poderes e do Distrito Federal. 
+1. [ ] Fundamentos da Organização dos Poderes e do Distrito Federal. 
+2. [ ] Organização do Distrito Federal.   
+3. [ ] Organização Administrativa do Distrito Federal.
 
-1.2. Organização do Distrito Federal.   
-1.3. Organização Administrativa do Distrito Federal.
-2.5 Lei Complementar n° 840/2011. (Regime Jurídico dos servidores públicos civis do
-Distrito Federal, das autarquias e das fundações públicas distritais), todos os capítulos,
-títulos e dispositivos legais.
+
+
+###### Lei Complementar n° 840/2011. (Regime Jurídico dos servidores)
+
+1. [ ] Lei Complementar n° 840/2011. (Regime Jurídico dos servidores públicos civis do Distrito Federal, das autarquias e das fundações públicas distritais), todos os capítulos, títulos e dispositivos legais.
 
 
 
@@ -697,77 +713,83 @@ títulos e dispositivos legais.
 ###### 3.13 TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (CÓDIGO 113). 
 
 - Gestão e Governança de Tecnologia Da Informação: 
-1 Gestão de segurança da informação.   
-	1.1 Normas NBR ISO/IEC nº 27001 e nº 27002.   
-	1.2 Gestão de riscos e continuidade de negócio. 1.3 Norma NBR ISO/IEC nº 27005.   
-2 Gerenciamento de projetos – PMBOK 5ª edição. 2.1 Projetos e a organização.   
-	2.2 Escritório de projetos. 2.2.1 Modelos e características.    
-	2.3 Processos, grupos de processos e área de conhecimento.
+1. Gestão de segurança da informação.   
+	1.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002.   
+	1.2. [ ] Gestão de riscos e continuidade de negócio. 1.3 Norma NBR ISO/IEC nº 27005.   
+2 Gerenciamento de projetos – PMBOK 5ª edição.  
+	2.1. [X] Projetos e a organização.   
+	2.2. [X] Escritório de projetos.   
+	2.3. [ ] Modelos e características.    
+	2.4. [ ] Processos, grupos de processos e área de conhecimento.
 3. Gerenciamento de serviços (ITIL v3).   
-	3.1 Conceitos básicos, estrutura e objetivos.
-4 Governança de TI (COBIT 5).   
-	4.1 Conceitos básicos, estrutura e objetivos. 
-5 Qualidade de software.   
-	5.1 MPSBR.   
-	5.2 Conceitos básicos e objetivos.   
-	5.3 Disciplinas e formas de representação.   
-	5.4 Níveis de capacidade e maturidade.   
-	5.5 Processos e categorias de processos. 
+	3.1. [ ] Conceitos básicos, estrutura e objetivos.
+4. Governança de TI (COBIT 5).   
+	4.1. [ ] Conceitos básicos, estrutura e objetivos. 
+5. Qualidade de software.   
+	5.1. [X] MPSBR.   
+	5.2. [X] Conceitos básicos e objetivos.   
+	5.3. [ ] Disciplinas e formas de representação.   
+	5.4. [ ] Níveis de capacidade e maturidade.   
+	5.5. [ ] Processos e categorias de processos. 
 
 
 - Desenvolvimento de Sistemas de Computação: 
-1 Desenvolvimento web em Java. 
-1.1 JavaScript, HTML5, CSS3, WebSocket, Single Page Application (SPA). Framework JavaScript AngularJS, DHTML, AJAX. 
-1.2 Java EE e frameworks. 1.2.1 Java Server Faces (JSF 1.x e 2.x), Enterprise Java Beans (EJB 3.x), Java Persistence API (JPA 2.x), JAX-RS (2.x), Hibernate, JBoss Seam, JAX-WS”. 
-1.3 JMS. 
-1.4 Spring Framework.
-1.5 JSon. 
-1.6 JUnit. 
-1.7 Jasper. 
-1.8 JDBC. 
-1.9 Noções e conceitos de desenvolvimento para dispositivos móveis. 
-1.10 iText 9. 
-1.11 Java 8. 
-1.12 Framework Apache CXF. 
-1.13 Programação PHP. 
-1.13.1 Framework Zend, ambiente Drupal e serviços RESTful. 
-1.14 Programação .Net/C#: .NET Framework Office solutions para integração com MSWord. 
-2 Análise estática de código fonte (Clean Code e ferramenta SonarQube). 
-3 Interoperabilidade de sistemas. 
-3.1 Arquitetura orientada a serviços e Web Services. 
-3.2 Arquitetura de software. 3.2.1 Arquitetura 
-3 Camadas, modelo MVC. 
-3.3 Arquitetura de aplicações para ambiente web. 3.3.1 Servidor de aplicações. Servidor Web. Ambientes Internet, Extranet, Intranet e Portal - finalidades, características físicas e lógicas, aplicações e serviços 
-3.4 Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON. 
-3.5 REST. 
+1. Desenvolvimento web em Java. 
+	1.1. [X] JavaScript, HTML5, CSS3, WebSocket, Single Page Application (SPA). Framework JavaScript AngularJS, DHTML, AJAX. 
+	1.2. [ ] Java EE e frameworks. 1.2.1 Java Server Faces (JSF 1.x e 2.x), Enterprise Java Beans (EJB 3.x), Java Persistence API (JPA 2.x), JAX-RS (2.x), Hibernate, JBoss Seam, JAX-WS”. 
+	1.3. [ ] JMS. 
+	1.4. [ ] Spring Framework.
+	1.5. [X] JSon. 
+	1.6. [ ] JUnit. 
+	1.7. [ ] Jasper. 
+	1.8. [ ] JDBC. 
+	1.9. [ ] Noções e conceitos de desenvolvimento para dispositivos móveis. 
+	1.10. [ ] iText 9. 
+	1.11. [ ] Java 8. 
+	1.12. [ ] Framework Apache CXF. 
+	1.13. [ ] Programação PHP. 
+	1.14. [ ] Framework Zend, ambiente Drupal e serviços RESTful. 
+	1.15. [ ] Programação .Net/C#: .NET Framework Office solutions para integração com MSWord. 
+2. [ ] Análise estática de código fonte (Clean Code e ferramenta SonarQube). 
+3. [X] Interoperabilidade de sistemas. 
+4.1. [ ] Arquitetura orientada a serviços e Web Services. 
+5. [X] Arquitetura de software. 
+	5.1. [X] Arquitetura de software. 
+	5.2. [X] Arquitetura 3 Camadas, modelo MVC.  
+	5.3. [X] Arquitetura de aplicações para ambiente web.   
+	5.4. [ ] Servidor de aplicações. Servidor Web. Ambientes Internet, Extranet, Intranet e Portal - finalidades, características físicas e lógicas, aplicações e serviços 
+6. [X] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON. 
+7. [X] REST. 
 
 
 - Qualidade de software. Segurança da Informação: 
-1 Políticas de segurança da informação. 
-2 Segurança de redes de computadores, inclusive redes sem fio. 
-3 Vulnerabilidades e ataques a sistemas computacionais. 
-3.1 Prevenção e tratamento de incidentes. 
-4 Ataques e proteções relativos a hardware, software, sistemas operacionais, aplicações, bancos de dados, redes, inclusive firewalls e proxies. 
-5 Gestão de segurança da informação. 
-5.1 Normas NBR ISO/IEC nº 27001 e nº 27002. 
-5.2 Classificação e controle de ativos de informação, segurança de ambientes físicos e lógicos, controles de acesso. 
-5.3 Definição, implantação e gestão de políticas de segurança e auditoria. 
-6 Gestão de riscos.
-7. Norma NBR ISO/IEC nº 27005. 
-8. Planejamento, identificação e análise de riscos.
-9. Plano de continuidade de negócio. Fiscalização de Contratos de Tecnologia da Informação:   
-	9.1. Legislação aplicável à contratação de bens e serviços de TI. 
-	9.2. Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
-	9.3 Atos normativos do MPOG/SLTI. 
-	9.4 Instruções Normativas nº 5/2017 e nº 4/2014 e suas alterações. 
-	9.5 Elaboração e fiscalização de contratos. 
-	9.6 Critérios de remuneração por esforço versus produto. 
-	9.7 Cláusulas e indicadores de nível de serviço. 
-	9.8. Papel do fiscalizador do contrato. 
-	9.9. Papel dopreposto da contratada. 
-	9.10 Acompanhamento da execução contratual.   
-	9.11 Registro e notificação de irregularidades.   
-	9.12. Definição e aplicação de penalidades e sanções administrativas.
+1. [ ] Políticas de segurança da informação. 
+2. [ ] Segurança de redes de computadores, inclusive redes sem fio. 
+3. [ ] Vulnerabilidades e ataques a sistemas computacionais. 
+4. [ ] Prevenção e tratamento de incidentes. 
+5. [ ] Ataques e proteções relativos a hardware, software, sistemas operacionais, aplicações, bancos de dados, redes, inclusive firewalls e proxies. 
+6. [ ] Gestão de segurança da informação:  
+	6.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002. 
+	6.2. [ ] Classificação e controle de ativos de informação, segurança de ambientes físicos e lógicos, controles de acesso. 
+	6.3. [ ] Definição, implantação e gestão de políticas de segurança e auditoria. 
+8. [ ] Gestão de riscos:
+	8.1. [ ] Norma NBR ISO/IEC nº 27005. 
+	8.2. [ ] Planejamento, identificação e análise de riscos.
+	8.3. [ ] Plano de continuidade de negócio. 
+9. Fiscalização de Contratos de Tecnologia da Informação:   
+	9.1. [ ] Legislação aplicável à contratação de bens e serviços de TI. 
+	9.2. [ ] Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
+10. Atos normativos do MPOG/SLTI:  
+	10.1. [ ] Instrução Normativa nº 5/2017    
+	10.2. [] Instrução Normativa nº 4/2014 e suas alterações. 
+16. [ ] Elaboração e fiscalização de contratos. 
+	16.1. [ ] Critérios de remuneração por esforço versus produto. 
+	16.2. [ ] Cláusulas e indicadores de nível de serviço. 
+	16.3. [ ] Papel do fiscalizador do contrato. 
+	16.4. [ ] Papel dopreposto da contratada. 
+	16.5. [ ] Acompanhamento da execução contratual.   
+	16.6. [ ] Registro e notificação de irregularidades.   
+	16.7. [ ] Definição e aplicação de penalidades e sanções administrativas.
 
 
 
