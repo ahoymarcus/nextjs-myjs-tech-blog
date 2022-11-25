@@ -468,7 +468,7 @@ b) o restante das vagas previstas neste edital será preenchido durante a valida
 PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O CARGO DE ANALISTA EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL
 
 
-###### Língua Portuguesa. 
+###### Língua Portuguesa 
     
 1. [ ] Compreensão e interpretação de textos de gêneros variados.
 2. [ ] Reconhecimento de tipos e gêneros textuais.
@@ -539,7 +539,7 @@ proporcionais, porcentagem, regras de três simples e compostas).
 lógicos. 
 13. Noções de Matemática Financeira.    
 	13.1. [ ] Juros simples e compostos.   
-	13.2. [ ] Capitalização e descontos. 
+	13.2. [ ] Capitalização e descontos.      
 	13.3. [ ] Taxas de juros: nominal, efetiva, equivalente, proporcional, real e aparente.   
 	13.4. [ ] Rendas uniformes e variáveis.   
 	13.5. [ ] Planos de amortização de empréstimos e financiamentos.   
@@ -766,15 +766,15 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 4. [ ] Prevenção e tratamento de incidentes. 
 5. [ ] Ataques e proteções relativos a hardware, software, sistemas operacionais, aplicações, bancos de dados, redes, inclusive firewalls e proxies. 
 6. [ ] Gestão de segurança da informação:  
-	6.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002. 
-	6.2. [ ] Classificação e controle de ativos de informação, segurança de ambientes físicos e lógicos, controles de acesso. 
+	6.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002.   
+	6.2. [ ] Classificação e controle de ativos de informação, segurança de ambientes físicos e lógicos, controles de acesso.   
 	6.3. [ ] Definição, implantação e gestão de políticas de segurança e auditoria. 
-7. [ ] Gestão de riscos:
-	7.1. [ ] Norma NBR ISO/IEC nº 27005. 
-	7.2. [ ] Planejamento, identificação e análise de riscos.
+7. [ ] Gestão de riscos:   
+	7.1. [ ] Norma NBR ISO/IEC nº 27005.    
+	7.2. [ ] Planejamento, identificação e análise de riscos.   
 	7.3. [ ] Plano de continuidade de negócio. 
 8. Fiscalização de Contratos de Tecnologia da Informação:   
-	8.1. [ ] Legislação aplicável à contratação de bens e serviços de TI. 
+	8.1. [ ] Legislação aplicável à contratação de bens e serviços de TI.   
 	8.2. [ ] Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
 9. Atos normativos do MPOG/SLTI:  
 	9.1. [ ] Instrução Normativa nº 5/2017    
