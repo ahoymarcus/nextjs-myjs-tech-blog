@@ -710,8 +710,10 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
    
 - Gestão e Governança de Tecnologia Da Informação: 
 1. Gestão de segurança da informação.   
-	1.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002.   
-	1.2. [ ] Gestão de riscos e continuidade de negócio. 1.3 Norma NBR ISO/IEC nº 27005.   
+	1.1. [ ] Norma NBR ISO/IEC nº 27001   
+	1.2. [ ] Norma NBR ISO/IEC nº 27002.   
+	1.3. [ ] Gestão de riscos e continuidade de negócio.  
+	1.3 Norma NBR ISO/IEC nº 27005.
 2. Gerenciamento de projetos – PMBOK 5ª edição.  
 	2.1. [X] Projetos e a organização.   
 	2.2. [X] Escritório de projetos.   
@@ -726,7 +728,7 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	5.2. [X] Conceitos básicos e objetivos.   
 	5.3. [ ] Disciplinas e formas de representação.   
 	5.4. [ ] Níveis de capacidade e maturidade.   
-	5.5. [ ] Processos e categorias de processos. 
+	5.5. [ ] Processos e categorias de processos.
 
 
 - Desenvolvimento de Sistemas de Computação: 
@@ -749,11 +751,11 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 2. [ ] Análise estática de código fonte (Clean Code e ferramenta SonarQube). 
 3. [X] Interoperabilidade de sistemas. 
 4. [ ] Arquitetura orientada a serviços e Web Services. 
-5. [X] Arquitetura de software. 
-	5.1. [X] Arquitetura de software. 
-	5.2. [X] Arquitetura 3 Camadas, modelo MVC.  
+5. [X] Arquitetura de software.   
+	5.1. [X] Arquitetura de software.   
+	5.2. [X] Arquitetura 3 Camadas, modelo MVC.   
 	5.3. [X] Arquitetura de aplicações para ambiente web.   
-	5.4. [ ] Servidor de aplicações. Servidor Web. Ambientes Internet, Extranet, Intranet e Portal - finalidades, características físicas e lógicas, aplicações e serviços 
+	5.4. [ ] Servidor de aplicações. Servidor Web. Ambientes Internet, Extranet, Intranet e Portal - finalidades, características físicas e lógicas, aplicações e serviços
 6. [X] Padrões XML, XSLT, UDDI, WSDL, SOAP e JSON. 
 7. [X] REST. 
 
@@ -777,7 +779,7 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	8.2. [ ] Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
 9. Atos normativos do MPOG/SLTI:  
 	9.1. [ ] Instrução Normativa nº 5/2017    
-	9.2. [] Instrução Normativa nº 4/2014 e suas alterações. 
+	9.2. [ ] Instrução Normativa nº 4/2014 e suas alterações. 
 10. [ ] Elaboração e fiscalização de contratos.   
 	10.1. [ ] Critérios de remuneração por esforço versus produto.   
 	10.2. [ ] Cláusulas e indicadores de nível de serviço.   
