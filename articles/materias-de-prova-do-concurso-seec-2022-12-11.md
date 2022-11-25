@@ -469,10 +469,10 @@ PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O C
 
 
 ###### Língua Portuguesa. 
-
-1. [ ] Compreensão e interpretação de textos de gêneros variados. 
-2. [ ] Reconhecimento de tipos e gêneros textuais. 
-3. [ ] Domínio da ortografia oficial. 
+    
+1. [ ] Compreensão e interpretação de textos de gêneros variados.
+2. [ ] Reconhecimento de tipos e gêneros textuais.
+3. [ ] Domínio da ortografia oficial.
 4. Domínio dos mecanismos de coesão textual.   
 	4.1. [ ] Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual.   
 	4.2. [ ] Emprego de tempos e modos verbais.
@@ -485,7 +485,7 @@ PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O C
  	5.5. [ ] Concordância verbal e nominal.   
 	5.6. [ ] Regência verbal e nominal.    
 	5.7. [ ] Emprego do sinal indicativo de crase.    
-	5.8. [ ] Colocação dos pronomes átonos.   
+	5.8. [ ] Colocação dos pronomes átonos.
 6. Reescrita de frases e parágrafos do texto.    
 	6.1. [ ] Significação das palavras.    
 	6.2. [ ] Substituição de palavras ou de trechos de texto.    
@@ -494,15 +494,14 @@ PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O C
 
 
 
-###### Realidade étnica, social, histórica, geográfica, cultural, política e econômica do DF e da RIDE e sobre a RIDE. 
-
-1 [ ] Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do
-Distrito Federal e Entorno (RIDE), instituída pela **Lei Complementar no 94/1998** e suas alterações.
-
+###### Realidade étnica, social, histórica, geográfica, cultural, política e econômica do DF e da RIDE e sobre a RIDE 
+    
+1. [ ] Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), instituída pela **Lei Complementar no 94/1998** e suas alterações.
 
 
-###### Noções de Informática e do Sistema Eletrônico de Informações - SEI. 
 
+###### Noções de Informática e do Sistema Eletrônico de Informações - SEI 
+    
 1. [X] Conceito de internet e intranet. 
 2. Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet.    
 	2.1. [X] Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais.   
@@ -522,8 +521,8 @@ Distrito Federal e Entorno (RIDE), instituída pela **Lei Complementar no 94/199
 
 
 
-###### Noções de Raciocínio Lógico e Matemática. 
-
+###### Noções de Raciocínio Lógico e Matemática 
+   
 1. [ ] Operações, propriedades e aplicações (soma, subtração, multiplicação, divisão, potenciação e radiciação). 
 2. [ ] Princípios de contagem e probabilidade. 
 3. [ ] Arranjos e permutações. 
@@ -549,14 +548,14 @@ lógicos.
 
 
 
-###### Plano Distrital de Política para Mulheres. 
-
+###### Plano Distrital de Política para Mulheres 
+    
 1. [ ] Plano Distrital de Política Para Mulheres (2020 – 2023), de acordo com o **Decreto Distrital 42.590/2021**, disponível em: https://www.mulher.df.gov.br/pdpm/.
 
 
 
-###### 1.6 Políticas Públicas e Gestão Governamental. (*)
-
+###### 1.6 Políticas Públicas e Gestão Governamental (*)
+    
 1. [ ] Políticas Públicas. 
 2. Análise de políticas públicas.    
 	2.1. [ ] Modelos de tomada de decisão em política pública: incremental, racional e suas variantes. 
@@ -575,8 +574,8 @@ lógicos.
 PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O CARGO DE ANALISTA EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL
 
 
-###### 2.1 Direito Administrativo: 
-
+###### 2.1 Direito Administrativo 
+    
 1. Estado, governo e administração pública.   
 	1.1. [ ] Conceitos.   
 	1.2. [ ] Elementos.
@@ -630,8 +629,8 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	12.1. [ ] Legislação pertinente. 12.1.1 Lei de licitações e contratos administrativos (Lei Federal n° 14.133/2021). 12.1.2 Lei nº 10.520/2002. 12.1.3 Decreto nº 7.892/2013 e suas alterações (Sistema de Registro de Preços).
 
 
-###### 2.2 Direito Constitucional. 
-
+###### 2.2 Direito Constitucional 
+    
 1. Constituição da República Federativa do Brasil de 1988.   
 	1.1. [ ] Princípios fundamentais.
 2. Aplicabilidade das normas constitucionais.   
@@ -650,8 +649,8 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 
 
 
-###### 2.3 Noções de Administração Financeira e Orçamentária. Administração Orçamentária e Financeira e Orçamento Público. 
-
+###### 2.3 Noções de Administração Financeira e Orçamentária. Administração Orçamentária e Financeira e Orçamento Público 
+    
 1. Orçamento público. 
 	1.1. [ ] Conceito   
 	1.2. [ ] Técnicas orçamentárias. 
@@ -659,8 +658,7 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	1.4. [ ] Ciclo orçamentário. 
 	1.5. [ ] Processo orçamentário.
 2. O orçamento público no Brasil. 
-	2.1. [ ] Sistema de planejamento e de
-orçamento federal. 
+	2.1. [ ] Sistema de planejamento e de orçamento federal. 
 	2.2. [ ] Plano plurianual. 
 	2.3. [ ] Diretrizes orçamentárias. 
 	2.4. [ ] Orçamento anual.
@@ -668,11 +666,9 @@ orçamento federal.
 	2.6. [ ] Classificações orçamentárias. 
 	2.7. [ ] Estrutura programática. 
 	2.8. [ ] Créditos ordinários e adicionais.
-3. Programação e execução orçamentária
-e financeira. 
+3. Programação e execução orçamentária e financeira. 
 	3.1. [ ] Descentralização orçamentária e financeira. 
-	3.2. [ ] Acompanhamento da
-execução. 
+	3.2. [ ] Acompanhamento da execução. 
 	3.3. [ ] Sistemas de informações. 
 	3.4. [ ] Alterações orçamentárias.
 4. Receita pública.
@@ -684,8 +680,7 @@ execução.
 	5.1. [ ] Conceito e classificações. 
 	5.2. [ ] Estágios. 
 	5.3. [ ] Restos a pagar. 
-	5.4. [ ] Despesas de exercícios
-anteriores. 
+	5.4. [ ] Despesas de exercícios anteriores. 
 	5.5. [ ] Dívida flutuante e fundada. 
 	5.6. [ ] Suprimento de fundos.
 6. Lei Complementar nº 101/2000 e suas alterações (Lei de Responsabilidade Fiscal). 
@@ -693,8 +688,8 @@ anteriores.
 
 
 
-###### 2.4 Lei Orgânica do Distrito Federal. 
-
+###### 2.4 Lei Orgânica do Distrito Federal 
+   
 1. [ ] Fundamentos da Organização dos Poderes e do Distrito Federal. 
 2. [ ] Organização do Distrito Federal.   
 3. [ ] Organização Administrativa do Distrito Federal.
@@ -702,7 +697,7 @@ anteriores.
 
 
 ###### Lei Complementar n° 840/2011. (Regime Jurídico dos servidores)
-
+    
 1. [ ] Lei Complementar n° 840/2011. (Regime Jurídico dos servidores públicos civis do Distrito Federal, das autarquias e das fundações públicas distritais), todos os capítulos, títulos e dispositivos legais.
 
 
@@ -711,12 +706,12 @@ anteriores.
 
 
 ###### 3.13 TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (CÓDIGO 113). 
-
+   
 - Gestão e Governança de Tecnologia Da Informação: 
 1. Gestão de segurança da informação.   
 	1.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002.   
 	1.2. [ ] Gestão de riscos e continuidade de negócio. 1.3 Norma NBR ISO/IEC nº 27005.   
-2 Gerenciamento de projetos – PMBOK 5ª edição.  
+2. Gerenciamento de projetos – PMBOK 5ª edição.  
 	2.1. [X] Projetos e a organização.   
 	2.2. [X] Escritório de projetos.   
 	2.3. [ ] Modelos e características.    
@@ -738,10 +733,10 @@ anteriores.
 	1.1. [X] JavaScript, HTML5, CSS3, WebSocket, Single Page Application (SPA). Framework JavaScript AngularJS, DHTML, AJAX. 
 	1.2. [ ] Java EE e frameworks. 1.2.1 Java Server Faces (JSF 1.x e 2.x), Enterprise Java Beans (EJB 3.x), Java Persistence API (JPA 2.x), JAX-RS (2.x), Hibernate, JBoss Seam, JAX-WS”. 
 	1.3. [ ] JMS. 
-	1.4. [ ] Spring Framework.
+	1.4. [ ] Spring Framework.   
 	1.5. [X] JSon. 
 	1.6. [ ] JUnit. 
-	1.7. [ ] Jasper. 
+	1.7. [ ] Jasper.    
 	1.8. [ ] JDBC. 
 	1.9. [ ] Noções e conceitos de desenvolvimento para dispositivos móveis. 
 	1.10. [ ] iText 9. 
@@ -772,24 +767,24 @@ anteriores.
 	6.1. [ ] Normas NBR ISO/IEC nº 27001 e nº 27002. 
 	6.2. [ ] Classificação e controle de ativos de informação, segurança de ambientes físicos e lógicos, controles de acesso. 
 	6.3. [ ] Definição, implantação e gestão de políticas de segurança e auditoria. 
-8. [ ] Gestão de riscos:
-	8.1. [ ] Norma NBR ISO/IEC nº 27005. 
-	8.2. [ ] Planejamento, identificação e análise de riscos.
-	8.3. [ ] Plano de continuidade de negócio. 
-9. Fiscalização de Contratos de Tecnologia da Informação:   
-	9.1. [ ] Legislação aplicável à contratação de bens e serviços de TI. 
-	9.2. [ ] Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
-10. Atos normativos do MPOG/SLTI:  
-	10.1. [ ] Instrução Normativa nº 5/2017    
-	10.2. [] Instrução Normativa nº 4/2014 e suas alterações. 
-16. [ ] Elaboração e fiscalização de contratos. 
-	16.1. [ ] Critérios de remuneração por esforço versus produto. 
-	16.2. [ ] Cláusulas e indicadores de nível de serviço. 
-	16.3. [ ] Papel do fiscalizador do contrato. 
-	16.4. [ ] Papel dopreposto da contratada. 
-	16.5. [ ] Acompanhamento da execução contratual.   
-	16.6. [ ] Registro e notificação de irregularidades.   
-	16.7. [ ] Definição e aplicação de penalidades e sanções administrativas.
+7. [ ] Gestão de riscos:
+	7.1. [ ] Norma NBR ISO/IEC nº 27005. 
+	7.2. [ ] Planejamento, identificação e análise de riscos.
+	7.3. [ ] Plano de continuidade de negócio. 
+8. Fiscalização de Contratos de Tecnologia da Informação:   
+	8.1. [ ] Legislação aplicável à contratação de bens e serviços de TI. 
+	8.2. [ ] Leis 14.133/2021 e suas alterações e nº 10.520/2002. 
+9. Atos normativos do MPOG/SLTI:  
+	9.1. [ ] Instrução Normativa nº 5/2017    
+	9.2. [] Instrução Normativa nº 4/2014 e suas alterações. 
+10. [ ] Elaboração e fiscalização de contratos. 
+	10.1. [ ] Critérios de remuneração por esforço versus produto. 
+	10.2. [ ] Cláusulas e indicadores de nível de serviço. 
+	10.3. [ ] Papel do fiscalizador do contrato. 
+	10.4. [ ] Papel dopreposto da contratada. 
+	10.5. [ ] Acompanhamento da execução contratual.   
+	10.6. [ ] Registro e notificação de irregularidades.   
+	10.7. [ ] Definição e aplicação de penalidades e sanções administrativas.
 
 
 
