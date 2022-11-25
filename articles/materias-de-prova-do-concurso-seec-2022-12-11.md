@@ -625,8 +625,10 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	10.4. [ ] Improbidade administrativa. Lei nº 8.429/1992 e suas alterações.
 11. Processo administrativo.   
 	11.1. [ ] Lei nº 9.784/1999 e suas alterações. 
-12. Licitações e contratos administrativos.   
-	12.1. [ ] Legislação pertinente. 12.1.1 Lei de licitações e contratos administrativos (Lei Federal n° 14.133/2021). 12.1.2 Lei nº 10.520/2002. 12.1.3 Decreto nº 7.892/2013 e suas alterações (Sistema de Registro de Preços).
+12. [ ] Licitações e contratos administrativos.   
+	12.1. [ ] Lei de licitações e contratos administrativos (Lei Federal n° 14.133/2021)   
+	12.2. [ ] Lei nº 10.520/2002.    
+	12.3. [ ] Decreto nº 7.892/2013 e suas alterações (Sistema de Registro de Preços).
 
 
 ###### 2.2 Direito Constitucional 
@@ -642,8 +644,8 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 	4.1. [ ] Direitos e deveres individuais e coletivos, direitos sociais. 
 5. Organização político-administrativa do Estado.   
 	5.1. [ ] Estado federal brasileiro, União.
-6. Administração pública. 
-	6.1. [ ] Disposições gerais, servidores públicos. Regras de organização do Estado na CF/88. 
+6. Administração pública.   
+	6.1. [ ] Disposições gerais, servidores públicos. Regras de organização do Estado na CF/88.
 7. Poderes Legislativo, Executivo e Judiciário na Constituição.   
 	7.1. [ ] Atribuições e responsabilidades do Presidente da República.
 
@@ -651,37 +653,37 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 
 ###### 2.3 Noções de Administração Financeira e Orçamentária. Administração Orçamentária e Financeira e Orçamento Público 
     
-1. Orçamento público. 
+1. Orçamento público.   
 	1.1. [ ] Conceito   
-	1.2. [ ] Técnicas orçamentárias. 
-	1.3. [ ] Princípios orçamentários.  
-	1.4. [ ] Ciclo orçamentário. 
+	1.2. [ ] Técnicas orçamentárias.   
+	1.3. [ ] Princípios orçamentários.    
+	1.4. [ ] Ciclo orçamentário.   
 	1.5. [ ] Processo orçamentário.
-2. O orçamento público no Brasil. 
-	2.1. [ ] Sistema de planejamento e de orçamento federal. 
-	2.2. [ ] Plano plurianual. 
-	2.3. [ ] Diretrizes orçamentárias. 
-	2.4. [ ] Orçamento anual.
-	2.5. [ ] Sistema e processo de orçamentação. 
-	2.6. [ ] Classificações orçamentárias. 
-	2.7. [ ] Estrutura programática. 
+2. O orçamento público no Brasil.   
+	2.1. [ ] Sistema de planejamento e de orçamento federal.   
+	2.2. [ ] Plano plurianual.   
+	2.3. [ ] Diretrizes orçamentárias.   
+	2.4. [ ] Orçamento anual.  
+	2.5. [ ] Sistema e processo de orçamentação.   
+	2.6. [ ] Classificações orçamentárias.   
+	2.7. [ ] Estrutura programática.   
 	2.8. [ ] Créditos ordinários e adicionais.
-3. Programação e execução orçamentária e financeira. 
-	3.1. [ ] Descentralização orçamentária e financeira. 
-	3.2. [ ] Acompanhamento da execução. 
-	3.3. [ ] Sistemas de informações. 
+3. Programação e execução orçamentária e financeira.   
+	3.1. [ ] Descentralização orçamentária e financeira.   
+	3.2. [ ] Acompanhamento da execução.   
+	3.3. [ ] Sistemas de informações.   
 	3.4. [ ] Alterações orçamentárias.
-4. Receita pública.
-	4.1. [ ] Conceito e classificações. 
-	4.2. [ ] Estágios. 
-	4.3. [ ] Fontes. 
+4. Receita pública.   
+	4.1. [ ] Conceito e classificações.   
+	4.2. [ ] Estágios.   
+	4.3. [ ] Fontes.  
 	4.4. [ ] Dívida ativa.
-5. Despesa pública.
-	5.1. [ ] Conceito e classificações. 
-	5.2. [ ] Estágios. 
-	5.3. [ ] Restos a pagar. 
-	5.4. [ ] Despesas de exercícios anteriores. 
-	5.5. [ ] Dívida flutuante e fundada. 
+5. Despesa pública.   
+	5.1. [ ] Conceito e classificações.   
+	5.2. [ ] Estágios.   
+	5.3. [ ] Restos a pagar.   
+	5.4. [ ] Despesas de exercícios anteriores.   
+	5.5. [ ] Dívida flutuante e fundada.  
 	5.6. [ ] Suprimento de fundos.
 6. Lei Complementar nº 101/2000 e suas alterações (Lei de Responsabilidade Fiscal). 
 7. Lei nº 4.320/1964 e suas alterações.
@@ -729,25 +731,25 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 
 
 - Desenvolvimento de Sistemas de Computação: 
-1. Desenvolvimento web em Java. 
-	1.1. [X] JavaScript, HTML5, CSS3, WebSocket, Single Page Application (SPA). Framework JavaScript AngularJS, DHTML, AJAX. 
-	1.2. [ ] Java EE e frameworks. 1.2.1 Java Server Faces (JSF 1.x e 2.x), Enterprise Java Beans (EJB 3.x), Java Persistence API (JPA 2.x), JAX-RS (2.x), Hibernate, JBoss Seam, JAX-WS”. 
-	1.3. [ ] JMS. 
-	1.4. [ ] Spring Framework.   
-	1.5. [X] JSon. 
-	1.6. [ ] JUnit. 
-	1.7. [ ] Jasper.    
-	1.8. [ ] JDBC. 
-	1.9. [ ] Noções e conceitos de desenvolvimento para dispositivos móveis. 
-	1.10. [ ] iText 9. 
-	1.11. [ ] Java 8. 
-	1.12. [ ] Framework Apache CXF. 
-	1.13. [ ] Programação PHP. 
-	1.14. [ ] Framework Zend, ambiente Drupal e serviços RESTful. 
-	1.15. [ ] Programação .Net/C#: .NET Framework Office solutions para integração com MSWord. 
+1. Desenvolvimento web em Java.   
+	1.1. [X] JavaScript, HTML5, CSS3, WebSocket, Single Page Application (SPA). Framework JavaScript AngularJS, DHTML, AJAX.   
+	1.2. [ ] Java EE e frameworks. 1.2.1 Java Server Faces (JSF 1.x e 2.x), Enterprise Java Beans (EJB 3.x), Java Persistence API (JPA 2.x), JAX-RS (2.x), Hibernate, JBoss Seam, JAX-WS”.    
+	1.3. [ ] JMS.   
+	1.4. [ ] Spring Framework.    
+	1.5. [X] JSon.   
+	1.6. [ ] JUnit.   
+	1.7. [ ] Jasper.     
+	1.8. [ ] JDBC.   
+	1.9. [ ] Noções e conceitos de desenvolvimento para dispositivos móveis.   
+	1.10. [ ] iText 9.   
+	1.11. [ ] Java 8.   
+	1.12. [ ] Framework Apache CXF.   
+	1.13. [ ] Programação PHP.   
+	1.14. [ ] Framework Zend, ambiente Drupal e serviços RESTful.   
+	1.15. [ ] Programação .Net/C#: .NET Framework Office solutions para integração com MSWord.
 2. [ ] Análise estática de código fonte (Clean Code e ferramenta SonarQube). 
 3. [X] Interoperabilidade de sistemas. 
-4.1. [ ] Arquitetura orientada a serviços e Web Services. 
+4. [ ] Arquitetura orientada a serviços e Web Services. 
 5. [X] Arquitetura de software. 
 	5.1. [X] Arquitetura de software. 
 	5.2. [X] Arquitetura 3 Camadas, modelo MVC.  
@@ -777,12 +779,12 @@ PARA O CARGO DE GESTOR EM POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O 
 9. Atos normativos do MPOG/SLTI:  
 	9.1. [ ] Instrução Normativa nº 5/2017    
 	9.2. [] Instrução Normativa nº 4/2014 e suas alterações. 
-10. [ ] Elaboração e fiscalização de contratos. 
-	10.1. [ ] Critérios de remuneração por esforço versus produto. 
-	10.2. [ ] Cláusulas e indicadores de nível de serviço. 
-	10.3. [ ] Papel do fiscalizador do contrato. 
-	10.4. [ ] Papel dopreposto da contratada. 
-	10.5. [ ] Acompanhamento da execução contratual.   
+10. [ ] Elaboração e fiscalização de contratos.   
+	10.1. [ ] Critérios de remuneração por esforço versus produto.   
+	10.2. [ ] Cláusulas e indicadores de nível de serviço.   
+	10.3. [ ] Papel do fiscalizador do contrato.   
+	10.4. [ ] Papel dopreposto da contratada.   
+	10.5. [ ] Acompanhamento da execução contratual.    
 	10.6. [ ] Registro e notificação de irregularidades.   
 	10.7. [ ] Definição e aplicação de penalidades e sanções administrativas.
 
