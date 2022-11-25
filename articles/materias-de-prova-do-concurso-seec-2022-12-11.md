@@ -478,8 +478,7 @@ PARA O CARGO DE GESTOR E POLÍTICAS PÚBLICAS E GESTÃO GOVERNAMENTAL E PARA O C
 	4.2. [ ] Emprego de tempos e modos verbais.
 5. Domínio da estrutura morfossintática do período.   
 	5.1. [ ] Emprego das classes de palavras.   
-	5.2. [ ] Relações de coordenação entre orações e entre termos da oração.  
-	
+	5.2. [ ] Relações de coordenação entre orações e entre termos da oração.  	
 	5.3. [ ] Relações de subordinação entre orações e entre termos da oração.   
 	5.4. [ ] Emprego dos sinais de pontuação.  
  	5.5. [ ] Concordância verbal e nominal.   
