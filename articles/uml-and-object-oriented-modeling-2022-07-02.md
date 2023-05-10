@@ -107,12 +107,7 @@ Todo esse trabalho de unificações de todas essas linguagens e ferramentas foi 
 
 #### Listagem dos Diagramas da UML
 
-
-- **Esquema Representando diversos tipos de diagramas presentes na linguagem UML**
-![esquema-rep-diversos-tipos-de-diagramas-uml](/images/articles/development/esquema-rep-diversos-tipos-de-diagramas-uml.png)
-
-
-E, dividindo os diagramas UML em categorias, temos:
+Dividindo os diagramas UML em categorias, temos:
 1. **Diagramas Estruturais ou Estáticos**:   
     1.1. Diagrama de Classes: descreve a estrutura, mostrando as classes de sistema, atributos e relações.   
     1.2. Diagrama de Estrutura Composta: descreve a parte interior de uma classe e colaborações possíveis com essa estrutura.    
