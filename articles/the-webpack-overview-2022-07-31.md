@@ -30,7 +30,7 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
 ###### See also the correlate articles for the Web Dev Packaging System
 - `Babel Transpiler - Overview` [^1]
  
- 
+
 ###### Other articles about JavaScript and of Patterns:
 - `JavaScript Trick Patterns - PartI` [^2]
 - `JavaScript Trick Patterns - Part II` [^3]
@@ -172,42 +172,27 @@ Interesting to point here also some final Webpack concepts that direct the gener
 
 #### Out of The Box Plugins for Webpack
 
-Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found here:
+Below, there's a list of some very common plugins to be used that are recognized by default by Webpack. And complete lists can be found at these two lists bellow:
 
 1. Out of the box plugins: [default-webpack-plugins](https://webpack.js.org/plugins/)
 2. Third-party plugins: [awesome-webpack](https://webpack.js.org/awesome-webpack/#webpack-plugins)
 
 
-- **EnvironmentPlugin**:
-
-    Its a shorthand for using the DefinePlugin on process.env keys
+- **EnvironmentPlugin**: its a shorthand for using the DefinePlugin on process.env keys
     
-- **EslintWebpackPlugin**:
-
-    A ESLint plugin for webpack.
+- **EslintWebpackPlugin**: a ESLint plugin for webpack.
    
-- **HtmlWebpackPlugin**:
-
-    Easily create HMTL files to serve your bundles
+- **HtmlWebpackPlugin**: easily create HMTL files to serve your bundles
     
-- **IgnorePlugin**:
-
-    Exclude certain modules from bundles.
+- **IgnorePlugin**: exclude certain modules from bundles.
     
-- **LimitChunkCountPlugin**:
-
-    Set min/max limits for chunking to better control chunking.
+- **LimitChunkCountPlugin**: set min/max limits for chunking to better control chunking.
     
-- **MinChunkSizePlugin**:
-
-    Keep chunk size above the specified limit.
+- **MinChunkSizePlugin**: keep chunk size above the specified limit.
     
-- **MiniCssExtractPlugin**:
-
-    Creates a CSS file per JS file which requires CSS.
+- **MiniCssExtractPlugin**: creates a CSS file per JS file which requires CSS.
     
-- **NoEmitOnErrorsPlugin**:
-    Skip the emitting phase when there compilation errors.
+- **NoEmitOnErrorsPlugin**: skip the emitting phase when there compilation errors.
 
 
 
@@ -236,7 +221,8 @@ module.exports = {
 
 Above, it was used the Node's built-in **path module** and the prefix **__dirname** that is set for the root path (the global path):
 
-`his prevents file path issues between operating systems and allows relative paths to work as expected. See this section for more info on POSIX vs. Windows paths.` [Webpack Docs](https://webpack.js.org/configuration/)
+> `"This prevents file path issues between operating systems and allows relative paths to work as expected. See this section for more info on POSIX vs. Windows paths."` 
+> [Webpack Docs](https://webpack.js.org/configuration/)
 
 
 Now, if the **webpack.config.js** is the only configuration for the project, the webpack tool can catch it by default, but in more complex setups a custom file can be passed or even have the configuration splited in multiple files. 
@@ -277,9 +263,6 @@ And then it can be run by the **npm run build** command.
 
 
 
-
-
-
 #### Webpack's Asset Management    
 
 According to [Webpack Docs](https://webpack.js.org/guides/asset-management/), the tradition task of asset management with tools like **grunt** and **gulp** would consist of moving the assets from a project development folder like **./src** into a realease one like **./dist** or **./build**.
@@ -291,8 +274,8 @@ But, that in the case of Webpack, eventhough the essential task would remain the
 Plus, its **loader feature** which lets it deal with other kinds of languages different from JS, allow webpack to replicate the same workflow to the assets being managed and, so, to also apply explicity dependencies to other assets, like CSS, for example.
 
 
+**package.json**
 ```
-// package.json
 {
   "name": "webpack1",
   "version": "1.0.0",
@@ -320,8 +303,11 @@ Plus, its **loader feature** which lets it deal with other kinds of languages di
     "lodash": "^4.17.21"
   }
 }
+```
 
-// ./src/style.css
+
+**./src/style.css**
+``` 
 @font-face {
     font-family: 'MyFont';
     src: url('./BhuTukaExpandedOne-Regular.ttf') format('ttf');
@@ -333,8 +319,11 @@ Plus, its **loader feature** which lets it deal with other kinds of languages di
     color: red;
     background: url('./icon.png');
 }
+``` 
 
-// ./src/index.js
+
+**./src/index.js**
+``` 
 // Libraries
 import _ from 'lodash';
 
@@ -391,7 +380,7 @@ So, in this small project, Webpack Docs is using as dependencies **style-loader*
 $ npm install style-loader css-loader --save-dev
 ```
 
-And in its configuration file the module loaders chains works in the reverse order, from the last to the first one in the array, acting like mixins where each one applies its transformations passing the results into the chain flow.
+And in its configuration file **the module loaders chains works in the reverse order**, from the last to the first one in the array, **acting like mixins** where each one applies its transformations passing the results into the chain flow.
 
 
 ``` 
@@ -440,7 +429,7 @@ module: {
 }
 ```
 
-So, here also happens a similar process already seem above, because where some import is made within a module, the image cought be the test will be added as asset dependency and some MyImage variable that will be responsible to carry the **final URL** for the respect image, which, in turn, will be loaded into the HTML file as **<img src="./my-image.png" />** by the html-loader, just like in the case of the css-loader inserting stringified CSS into a Style tag, 
+So, here also happens a similar process already seem above, because where some import is made within a module, the image caught can be the tested in order to be added as asset dependency, while some javascript variable will be responsible to carry the **final URL** for the respect image, which, in turn, will be loaded into the HTML file as **<img src="./my-image.png" />** by the html-loader, just like in the case of the css-loader inserting stringified CSS into a Style tag, 
 
 
 ###### Going For the Data
@@ -470,8 +459,9 @@ module: {
 Now, it is possible for the JS module to import any of the types of data and get a Data variable containing a parsed JSON for the module consumption.
 
 
-- **Tip from the Webpack Docs**:
-- This can be especially helpful when implementing some sort of data visualization using a tool like d3. Instead of making an ajax request and parsing the data at runtime you can load it into your module during the build process so that the parsed data is ready to go as soon as the module hits the browser.
+> **Tip from the Webpack Docs**:
+> "This can be especially helpful when implementing some sort of data visualization using a tool like d3. Instead of making an ajax request and parsing the data at runtime you can load it into your module during the build process so that the parsed data is ready to go as soon as the module hits the browser".
+> [Asset Management - Webpack Docs](https://webpack.js.org/guides/asset-management/)
 
 
 And, eventhough JSONs are understandible by default, Webpack Docs says that the tool would still allow for the customization of JSON files being consumed nonetheless:
@@ -480,7 +470,7 @@ And, eventhough JSONs are understandible by default, Webpack Docs says that the 
 $ npm install --save-dev toml yamljs json5
 ```
 
-And below the configuration for the customization of the JSON parsing fror the modules:
+And below the configuration for the customization of the JSON parsing for the modules:
 
 
 ```
@@ -518,7 +508,11 @@ module: {
 
 Wrapping up this small project test to try out some of the speciffic configurations from Webpack for a variaty of assest (CSS, Images, Fonts, Different types of data), the [Webpack Docs](https://webpack.js.org/guides/asset-management/) highlights again that tackling tasks with such workflow from Webpack modules and its assets are grouped in a more intuitive away.
 
-So, instead of `relying on a global ./assets directory that contains everything, you can group assets with the code that uses them. For example, a strucutre like this can be useful:` 
+
+So, instead of relying on a global **./assets** directory that contains everything, you can group assets with the code that uses them. 
+
+
+For example, a strucutre like this can be useful:
 
 
 ```
@@ -533,7 +527,7 @@ So, instead of `relying on a global ./assets directory that contains everything,
 
 #### Webpack's Output Management
 
-Still according to the Webpack Docs, the workflow that has been implemented is a solid one to be used in small and medium projects, but as the application grows, it also becomes a problem o maintainability to manually handle the insertion of all and every asset into the index.html file.
+Still according to the Webpack Docs, the workflow that has been implemented is a solid one to be used in small and medium projects, but as the application grows, it also becomes a problem of maintainability to manually handle the insertion of all and every asset into the index.html file.
 
 
 And things get even harder when there are multiples outputs with different bundles being presented for the final project presentation. So, for these instances the Docs says that there are some plugins available to make all these process easier to manage.
@@ -557,14 +551,16 @@ webpack-demo
 
 In the **./src** folder, these are the initial scripts:
 
-```
-// ./src/print.js
+**./src/print.js**
+``` 
 export default function printMe() {
     console.log('I get called from print.js!');
 }
+``` 
 
 
-// ./src/index.js
+**./src/index.js**
+``` 
 // Libraries
 import _ from 'lodash';
 
@@ -594,9 +590,8 @@ As for the initial configuration of the project:
 1. **package.json**
 2. **webpack.config.js**
 
-
-```
-// package.json
+**package.json**
+``` 
 {
   "name": "webpack1",
   "version": "1.0.0",
@@ -617,8 +612,10 @@ As for the initial configuration of the project:
     "lodash": "^4.17.21"
   }
 }
+```
 
-// webpack.config.js
+**webpack.config.js**
+```
 const path = require('path');
 
 module.exports = {
@@ -664,13 +661,25 @@ module.exports = {
 };
 ``` 
 
-Now, with the set of configuration, the HtmlWebpackPlugin will automatically create a new index.html file or overwrite with there is one already. And bellow is a example of the file that was created that brings the 2 separated outputs:
+Now, with the set of configuration, the HtmlWebpackPlugin will automatically create a new index.html file or overwrite the one already present. And bellow is a example of the file that was created that brings the 2 separated outputs:
 
 1. **./dist/index.bundle.js**
 2. **./dist/print.bundle.js**
 
 ```
-<!doctype html><html><head><meta charset="utf-8"><title>Output Management</title><meta name="viewport" content="width=device-width,initial-scale=1"><script defer="defer" src="index.bundle.js"></script><script defer="defer" src="print.bundle.js"></script></head><body></body></html>
+<!doctype html>
+ <html>
+  <head>
+   <meta charset="utf-8">
+   <title>Output Management</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <script defer="defer" src="index.bundle.js"></script>
+   <script defer="defer" src="print.bundle.js"></script>
+	</head>
+	<body>
+	 <!-- Page content... -->
+	</body>
+</html>
 ``` 
 
 
@@ -682,10 +691,21 @@ And for that reason the **clean: true** property was added in the webpack.config
 
 #### Webpack's Development Mode
 
-In this basic experiment with Webpack, the Docs presents a new configuration that allows webpack to tackle the tasks in the project in a different mode, there is, in a mode more inlined with the processes of development and not the final deliver of the frontend product:
+In this basic experiment with Webpack, the Docs presents a new configuration that allows webpack to tackle the tasks in the speciffic mode of development, there is, using a mode more inlined with the processes of development and not the final deliver of the frontend product.
 
+
+And this is important because Webpack in it default operation, the bundler brings the project to its speciffic outputs, also bringing **the stack trace** with it, what in turn will make the debugging task more difficult:
+
+
+> `"When webpack bundles your source code, it can become difficult to track down errors and warnings to their original location. For example, if you bundle three source files (a.js, b.js, and c.js) into one bundle (bundle.js) and one of the source files contains an error, the stack trace will point to bundle.js. This isn't always helpful as you probably want to know exactly which source file the error came from."` 
+> [Webpack Docs](https://webpack.js.org/guides/development/)
+
+
+Bellow, it's possible to see the development mode explicity presented:
+
+
+**webpack.config.js**
 ```
-// webpack.config.js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 
@@ -709,13 +729,11 @@ module.exports = {
 };
 ``` 
 
-So, in this new configuration the property **mode: 'development'** is explicitely presented. And one of the more important points to make is about **debugging**, because in its default operation, as webpack bundle the project in some speciffic outputs, also **the stack trace** for the project debugging will also be changed making it difficult for the developer to reach them.
+
+Then, with this change it can help develompent task and make the work of the developer while debugging the system...
 
 
-`When webpack bundles your source code, it can become difficult to track down errors and warnings to their original location. For example, if you bundle three source files (a.js, b.js, and c.js) into one bundle (bundle.js) and one of the source files contains an error, the stack trace will point to bundle.js. This isn't always helpful as you probably want to know exactly which source file the error came from.` [Webpack Docs](https://webpack.js.org/guides/development/)
-
-
-And, as the Docs says, there are many options available to ajust the projects, and this basic example will be using the **inline-source-map** option: **devetool: 'inline-source-map'**
+And, as the Docs says, there are many options available to ajust the projects, and this basic example will be using the **inline-source-map** option: **devtool: 'inline-source-map'**
 
 
 Another 2 important points for this basic operation would be:
@@ -724,8 +742,9 @@ Another 2 important points for this basic operation would be:
 
 
 - **The basic configuration and scripts**:
+
+**package.json**
 ```
-// package.json
 {
   "name": "webpack1",
   "version": "1.0.0",
@@ -746,9 +765,19 @@ Another 2 important points for this basic operation would be:
     "lodash": "^4.17.21"
   }
 }
+```
 
 
-// ./src/index.js
+**./src/print.js**
+```
+export default function printMe() {
+    console.log('I get called from print.js!');
+}
+```
+
+
+**./src/index.js**
+``` 
 // Libraries
 import _ from 'lodash';
 
@@ -771,11 +800,6 @@ function component() {
 }
 
 document.body.appendChild(component());
-
-// ./src/print.js
-export default function printMe() {
-    console.log('I get called from print.js!');
-}
 ```
 
 
