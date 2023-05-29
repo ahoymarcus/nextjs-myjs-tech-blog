@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Projeto de Competências Profissionais e Getão de Carreira'
 date: '2023-04-08'
-subject: 'databases'
+subject: 'databases-articles'
 description: 'As a field of study, **machile learning** is classified as a subset of **artificial intelligence** where computer science and statistics are brought together for creating predictive models used to allow machines learn from historical data.'
 ---
 
