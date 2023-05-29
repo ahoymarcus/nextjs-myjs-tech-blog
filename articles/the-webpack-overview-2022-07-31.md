@@ -26,22 +26,26 @@ description: 'The Webpack is a tool for bundling modules or in another words, a 
 ### Introduction
  
 
-
+ 
+###### See also the correlate articles for the Web Dev Packaging System
+- `Babel Transpiler - Overview` [^1]
+ 
+ 
 ###### Other articles about JavaScript and of Patterns:
-- `JavaScript Trick Patterns - PartI` [^1]
-- `JavaScript Trick Patterns - Part II` [^2]
-- `JavaScript Trick Patterns for the DOM - Overview`[^3]   
-- `Javascript Object Oriented Programming (OOP) Pattern` [^4]   
-- `Front-end Development Patterns` [^5]   
-- `Front-end Architectures` [^6]   
-- `Software Architecture Patterns - Overview` [^7]   
-- `Software Architecture and Design` [^8]
+- `JavaScript Trick Patterns - PartI` [^2]
+- `JavaScript Trick Patterns - Part II` [^3]
+- `JavaScript Trick Patterns for the DOM - Overview`[^4]   
+- `Javascript Object Oriented Programming (OOP) Pattern` [^5]   
+- `Front-end Development Patterns` [^6]   
+- `Front-end Architectures` [^7]   
+- `Software Architecture Patterns - Overview` [^8]   
+- `Software Architecture and Design` [^9]
 
 
 
 ### The Webpack
 
-The **Webpack** is simply a tool for bundling modules or in another words, a tool for compiling JavaScript modules. And once installed it can be interacted with from the CLI or API. 
+The **Webpack** is simply a tool for bundling modules or in another words, a tool for compiling JavaScript modules. And once installed it can be interacted with from the CLI or from its API. 
 
 
 So, a basic installation of webpack for a new project could be:
@@ -53,13 +57,16 @@ $ npm init -y
 npm install webpack webpack-cli --save-dev
 ```
 
-The flag **-y** quickly configure default option for the new project and than **--save-dev** define webpack as a development dependency. Another point made by the Webpack Docs is the care to change the configuration of package.json for projects that are not for publishing:
+The flag **-y** quickly configure default option for the new project and than **--save-dev** define webpack as a development dependency. 
+
+Another point made by the Webpack Docs is the necessity to change the configuration of package.json for the project in order to preventing accidental publishing of the code:
 
 ```
 {
    "name": "webpack-demo",
    "version": "1.0.0",
    "description": "",
+   // "main": "index.js", 
    "private": true,
    "scripts": {
      "test": "echo \"Error: no test specified\" && exit 1"
@@ -74,14 +81,17 @@ The flag **-y** quickly configure default option for the new project and than **
  }
 ``` 
 
-Above, the entry point property, **"main": 'index.js'**, was excluded and the private property included. And in the JS script the Docs example uses the Library **Lodash** which come linked in the HTML file.
+Above we see the entry point property, **"main": 'index.js'**, that was excluded and the private property included. 
+
+
+Another point made by the Docs is that in such structures it may become difficult to relate to the dependencies being used by the project because the won't be explicity references to the libraries being used. In the case of this example the Library **Lodash** which traditionally would come linked in the HTML file like this:
 
 
 ```
 <script src="https://unpkg.com/lodash@4.17.20"></script>
 ```
 
-But, this is far from being a ideal set for a professional project:
+So, changing the traditional structure from the project, it would bring some additional challenges to the project:
 
 1. It's not immediately apparent that the script depends on an external library.
 2. If a dependency is missing, or included in the wrong order in the HTML file, the application will not function properly.
@@ -89,9 +99,10 @@ But, this is far from being a ideal set for a professional project:
 4. It creates problems of maintainnability, since dependencies have to be manually checked and updated.
 
 
-Before start using the bundler features, the Docs propose to change the directory structure creating a **dist** folder for the minimazed and optimized output.
+To improve the general structure for the project and to deal with some of the acknowledged problems, the Webpack tool sets a change to the directory structure creating a **dist** folder for the minimazed and optimized output that will carry all the javascript code and dump it all into the html script tag.
 
-In the example below the file index.html was changed to the the **dist** folder, but it could also be generated automatically, and **dist** could be left empty:
+
+In the example below the file index.html was changed to the the **dist** folder, but it could also be generated automatically and **dist** folder could be left empty:
 
 ```
 webpack-demo
@@ -110,7 +121,8 @@ Then, its necessary to have the dependency installed localy:
 $ npm install lodash --save
 ``` 
 
-`In this setup, index.js explicitly requires lodash to be present, and binds it as _ (no global scope pollution). By stating what dependencies a module needs, webpack can use this information to build a dependency graph. It then uses the graph to generate an optimized bundle where scripts will be executed in the correct order.`[Webpack Docs](https://webpack.js.org/guides/getting-started/)
+> `"In this setup, index.js explicitly requires lodash to be present, and binds it as _ (no global scope pollution). By stating what dependencies a module needs, webpack can use this information to build a dependency graph. It then uses the graph to generate an optimized bundle where scripts will be executed in the correct order."` 
+> [Webpack Docs](https://webpack.js.org/guides/getting-started/)
 
 
 Then the docs define the call for the Webpack binary by the **npx** command from Node 8.2/npm 5.2.0 or higher, considering that its place of origin in the **node_modules** folder is **./node_module/.bin/webpack**:
@@ -141,17 +153,17 @@ Interesting to point here also some final Webpack concepts that direct the gener
 1. Webpack works as a static module bundler:  
     1.1. It internally processes the applicatoin and builds a **dependency graph** which can have 1 or more **entry points** and also output in 1 or more final bundles, as static assets to serve content for the project.
 2. **Entry point**: this indicate the initial operation for webpack to start constructing the internal dependency graph.    
-    2.1. By default: **./src/index.js**
-    2.2. It can multiple entrie pointis, but once initiated the process, webpack would directly or indirectly figure out the tree of modules dependencies.
+    2.1. By default: **./src/index.js**  
+    2.2. It can multiple entrie points, but once initiated the process, webpack would directly or indirectly figure out the tree of modules dependencies.
 3. **Output**: it defines where to place and how to name the final bundle(s) webpack creates.  
     3.1. By defaul: **./dist/main.js**
 4. **Loaders**: out of the box, webpack only understand **JavaScript** and **JSON** files, but loaders allow webpack to process other types of files and convert them into valid modules to be added to the dependency graph.  
     4.1. The basic 2 properties in configuration here are: **test** and **use**.  
     4.2. The configuration property **test** allows the identification of file or files to be worked upon. For example: **{ module.rules.test: /\.txt$/ }**   
     4.3. The configuration property **use** indicates which is the right loader to be used for transforming the file(s) apointed. For example: **{ module.rules.use: 'raw-loader' }**
-5. **Plugins**: according to the Docs, the plugins allow for a wider ranger of tasks like: buldle optimization, asset management, injection of enviroment variables, etc.   
+5. **Plugins**: according to the Docs, the plugins allow for a wider ranger of tasks like: bundle optimization, asset management, injection of enviroment variables, etc.   
     5.1. The plugins have to be required() in the webpack's configuration file.
-6. **Mode**: here it is possible to enable the webpack's built-in optimizations that correct corresponds to each kind of environment: **developement**, **production**, or **none**.
+6. **Mode**: here it is possible to enable the webpack's built-in optimizations that will correctly corresponds to each kind of environment needed: **developement**, **production**, or **none**.
 7. **Browser compatibility**: Webpack supports all browsers that are ES5-compliant.   
     7.1. IE8 or older browsers in general will need to load polyfill to work properly with Webpack. 
 8. **Environment**: Webpack 5 runs on Node.js version 10.13.0+.
@@ -1054,21 +1066,24 @@ And add a new script for a **server** property at package.json file:
 []()
 
 
-[^1]:javascript-trick-patterns-part-I-2022-05-26
+[^1]:babel-transpiler-overview-2023-05-29
 
-[^2]:javascript-trick-patterns-part-II-2022-07-28
 
-[^3]:javascript-trick-patterns-the-dom-overview-2022-06-25
+[^2]:javascript-trick-patterns-part-I-2022-05-26
 
-[^4]:javascript-object-oriented-programming-pattern-2022-07-24
+[^3]:javascript-trick-patterns-part-II-2022-07-28
 
-[^5]:front-end-development-patterns-overview-2022-03-04
+[^4]:javascript-trick-patterns-the-dom-overview-2022-06-25
 
-[^6]:front-end-architectures-2022-03-05
+[^5]:javascript-object-oriented-programming-pattern-2022-07-24
 
-[^7]:software-architecture-patterns-overview-2022-02-18
+[^6]:front-end-development-patterns-overview-2022-03-04
 
-[^8]:software-architecture-and-design-2022-02-22
+[^7]:front-end-architectures-2022-03-05
+
+[^8]:software-architecture-patterns-overview-2022-02-18
+
+[^9]:software-architecture-and-design-2022-02-22
 
 
 
