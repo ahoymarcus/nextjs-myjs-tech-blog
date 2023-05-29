@@ -1,6 +1,6 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'Projeto de Competências Profissionais e Getão de Carreira'
+title: 'Introduction to Machine Learning and Natural Language Processing'
 date: '2023-04-08'
 subject: 'databases-articles'
 description: 'As a field of study, **machile learning** is classified as a subset of **artificial intelligence** where computer science and statistics are brought together for creating predictive models used to allow machines learn from historical data.'
@@ -452,7 +452,7 @@ Below, there is a example of a two dimension scatterplot created by the article 
 3. Lastly, in white there is the part of the dataset that has not been classified yet, meaning that there is not a pattern yet to differ homes with lower elevation and lower per-square-foot prices.
 
 
-![two-dimension-scatterplot-example](two-dimension-scatterplot-example.png)
+![two-dimension-scatterplot-example](/images/articles/databases/two-dimension-scatterplot-example.png)
 
 
 But the article explains that the dataset they used to create the mode has at least 7 dimensions, and that it would be the task from the data scientist to furnish the model with the necessary variables to make it hold a dicisive picture necessary to classify all the data being handled.
