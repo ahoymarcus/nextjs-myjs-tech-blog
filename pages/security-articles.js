@@ -50,7 +50,7 @@ export default function SecurityArticles({ allPostsData }) {
 			</Head>
 			
 			<h1 className={styles.title}>
-				Web Development articles
+				Cybersecurity Development articles
 			</h1>
 			<h3>Technical papers and general news about Security in Software Development and Web Technologies.</h3>
 		
