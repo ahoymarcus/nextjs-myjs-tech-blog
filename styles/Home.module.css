@@ -41,8 +41,12 @@
     align-items: center;
     gap: 40px;
     margin: auto;
-    padding: 80px 50px;
+    padding: 80px 0px;
+    
+     /*TEST*/
+/*
     width: 38%;
+*/
 }
 
 .primeSection__title {
@@ -55,17 +59,21 @@
     color: #eae3af87; /*#f5e34752;*/
     padding: 10px 0;
     flex: 1;
-	font-weight: bold;
-	line-height: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5rem;
 }
 
 .primeSection__link {
     color: white;
     text-decoration: none;
+    
+    /*TEST*/
+/*
     min-width: 280px;
+*/
 }
 .primeSection__link:hover {
-        font-weight: 900;
+    font-weight: 900;
 }
 
 .primeSectionButton {
@@ -74,7 +82,7 @@
     border: none;
     border-radius: 5px;
     padding: 5px 15px;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .primeSection__image {
