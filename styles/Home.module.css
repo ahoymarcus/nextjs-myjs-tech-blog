@@ -269,12 +269,24 @@
 	width: 90%;
     }
     
-    .image {
+    .primeSection__info {
+	width: 60%;
+    }
+    
+    .image { /* HERO IMAGE */
 	margin-bottom: 150px;
     }
 }
 
+
 @media only screen and (min-width: 1200px) {
+    .primeSection {
+	width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
     .primeSection {
 	width: 70%;
     }
