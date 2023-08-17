@@ -42,7 +42,7 @@
     gap: 40px;
     margin: auto;
     padding: 80px 50px;
-    width: 95%;
+    width: 38%;
 }
 
 .primeSection__title {
@@ -62,7 +62,7 @@
 .primeSection__link {
     color: white;
     text-decoration: none;
-    min-width: 350px;
+    min-width: 280px;
 }
 .primeSection__link:hover {
         font-weight: 900;
@@ -199,6 +199,35 @@
 
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 350px) {
+    .primeSection {
+	width: 42%;
+    }
+}
+
+
+@media only screen and (min-width: 400px) {
+    .primeSection {
+	width: 48%;
+    }
+}
+
+
+@media only screen and (min-width: 550px) {
+    .primeSection {
+	width: 60%;
+    }
+}
+
+
+@media only screen and (min-width: 750px) {
+    .primeSection {
+	flex-direction: column;
+	width: 95%;
+    }
+}
+
+
 @media only screen and (min-width: 850px) {
     .primeSection {
         padding: 70px 130px;
