@@ -93,13 +93,19 @@
 /* INFORMATION SECTION */
 .informationSection {
     padding: 60px 100px;
+    
+    /*TEST*/
+    width: 90%;
 }
 
 .informationSectionTitle {
     color: black;
-    font-size: 2rem;
     font-weight: 700;
     text-align: center;
+    
+    /*TEST*/
+    font-size: 1.4rem;
+    margin-left: 70px;
 }
 
 .informationSection__itemsContainer {
@@ -108,6 +114,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    
+    /*TEST*/
+    flex-direction: column;
+    margin-left: 180px;
 }
 
 .informationSection__item {
@@ -222,7 +232,7 @@
 
 @media only screen and (min-width: 750px) {
     .primeSection {
-	flex-direction: column;
+	flex-direction: row;
 	width: 95%;
     }
 }
