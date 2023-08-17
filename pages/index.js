@@ -57,8 +57,8 @@ export default function Home() {
 						className={styles.primeSection__image}
 						src={webPortolioImg1} 
 						alt="online portfolio page icon" 
-						width={500}
-						height={300}
+						width={410}
+						height={230}
 					/>
 				</a>
 			</div>
