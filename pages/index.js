@@ -148,12 +148,15 @@ export default function Home() {
 			*/}
 			
 			
-			<div className={styles.actionSection}>
-				<div className={styles.actionSection__callToAction}>
-					<h3 className={styles.actionSection__text}>Come and visit me at my GitHub repository!</h3>
-					<button className={styles.actionSection__button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">GitHub</a></button>
+			{/*
+				<div className={styles.actionSection}>
+					<div className={styles.actionSection__callToAction}>
+						<h3 className={styles.actionSection__text}>Come and visit me at my GitHub repository!</h3>
+						<button className={styles.actionSection__button}><a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus">GitHub</a></button>
+					</div>
 				</div>
-			</div>
+			*/}
+				
 		</section>
     </div> 
   )
