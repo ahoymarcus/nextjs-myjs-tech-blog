@@ -130,7 +130,7 @@ export default function Home() {
 				</div>
 			</div>
 			
-			<!--
+			/*
 			<div className={styles.testimonialSection}>
 				<p className={styles.testimonialSection__text}><span className={styles.testimonialSection__span}>NODE.JS</span> is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications. The definition given by its official documentation is as follows: </p>
 				<p className={styles.testimonialSection__text}>It was built on Chrome&aposs JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
@@ -145,7 +145,7 @@ export default function Home() {
 
 				<span className={styles.testimonialSection__author}><a className={styles.link} target="_blank" rel="noreferrer" href="https://www.javatpoint.com/nodejs-tutorial">JavaTPoint Tutorials</a></span>
 			</div>
-			-->
+			*/
 			
 			
 			<div className={styles.actionSection}>
