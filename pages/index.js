@@ -131,16 +131,16 @@ export default function Home() {
 			</div>
 			
 			<div className={styles.testimonialSection}>
-				<span className={styles.testimonialSection__text}><span className={styles.testimonialSection__span}>NODE.JS</span> is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications. The definition given by its official documentation is as follows: </span>
-				<span className={styles.testimonialSection__text}>It was built on Chrome&aposs JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</span>
-				<span className={styles.testimonialSection__text}>It also provides a rich library of various JavaScript modules to simplify the development of web applications and has features like:</span>
-				<span className={styles.testimonialSection__text}>I ---  Extremely fast: Node.js is built on Google Chrome&aposs V8 JavaScript Engine, so its library is very fast in code execution.</span>
-				<span className={styles.testimonialSection__text}>II --- I/O is Asynchronous and Event Driven: All APIs of Node.js library are asynchronous i.e. non-blocking. So a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call. It is also a reason that it is very fast.</span>
-				<span className={styles.testimonialSection__text}>III --- Single threaded: Node.js follows a single threaded model with event looping.</span>
-				<span className={styles.testimonialSection__text}>IV ---  Highly Scalable: Node.js is highly scalable because event mechanism helps the server to respond in a non-blocking way.</span>
-				<span className={styles.testimonialSection__text}>V --- No buffering: Node.js cuts down the overall processing time while uploading audio and video files. Node.js applications never buffer any data. These applications simply output the data in chunks.</span>
-				<span className={styles.testimonialSection__text}>VI --- Open source: Node.js has an open source community which has produced many excellent modules to add additional capabilities to Node.js applications.</span>
-				<span className={styles.testimonialSection__text}>VII --- License: Node.js is released under the MIT license.</span>
+				<p className={styles.testimonialSection__text}><span className={styles.testimonialSection__span}>NODE.JS</span> is a cross-platform environment and library for running JavaScript applications which is used to create networking and server-side applications. The definition given by its official documentation is as follows: </p>
+				<p className={styles.testimonialSection__text}>It was built on Chrome&aposs JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+				<p className={styles.testimonialSection__text}>It also provides a rich library of various JavaScript modules to simplify the development of web applications and has features like:</p>
+				<p className={styles.testimonialSection__text}>I ---  Extremely fast: Node.js is built on Google Chrome&aposs V8 JavaScript Engine, so its library is very fast in code execution.</p>
+				<p className={styles.testimonialSection__text}>II --- I/O is Asynchronous and Event Driven: All APIs of Node.js library are asynchronous i.e. non-blocking. So a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call. It is also a reason that it is very fast.</p>
+				<p className={styles.testimonialSection__text}>III --- Single threaded: Node.js follows a single threaded model with event looping.</p>
+				<p className={styles.testimonialSection__text}>IV ---  Highly Scalable: Node.js is highly scalable because event mechanism helps the server to respond in a non-blocking way.</p>
+				<p className={styles.testimonialSection__text}>V --- No buffering: Node.js cuts down the overall processing time while uploading audio and video files. Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
+				<p className={styles.testimonialSection__text}>VI --- Open source: Node.js has an open source community which has produced many excellent modules to add additional capabilities to Node.js applications.</p>
+				<p className={styles.testimonialSection__text}>VII --- License: Node.js is released under the MIT license.</p>
 
 				<span className={styles.testimonialSection__author}><a className={styles.link} target="_blank" rel="noreferrer" href="https://www.javatpoint.com/nodejs-tutorial">JavaTPoint Tutorials</a></span>
 			</div>
