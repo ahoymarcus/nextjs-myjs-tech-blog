@@ -63,72 +63,76 @@ export default function Home() {
 				</a>
 			</div>
 			
-			<div className={styles.informationSection}>
-				<h2 className={styles.informationSectionTitle}>Some of my personal works as a JavaScript Developer</h2>
-				<div className={styles.informationSection__itemsContainer}>
-					<div className={styles.informationSection__item}>
-						<a className={styles.link} target="_blank" rel="noreferrer" href="https://redux-reactjs-personal-portfolio-webpage-version-2.netlify.app/" >
-						
+			
+			{/*
+				<div className={styles.informationSection}>
+					<h2 className={styles.informationSectionTitle}>Some of my personal works as a JavaScript Developer</h2>
+					<div className={styles.informationSection__itemsContainer}>
+						<div className={styles.informationSection__item}>
+							<a className={styles.link} target="_blank" rel="noreferrer" href="https://redux-reactjs-personal-portfolio-webpage-version-2.netlify.app/" >
+							
+								<Image 
+									src={webPortolioImg2} 
+									alt="online portfolio page icon" 
+									width={200}
+									height={200}
+								/>
+							</a>
+							<p className={styles.informationSection__text}>My Online Portfolio, where I present my personal work, and also some of the main studying projects in software development. It features, interaction, and more descriptive meta-data from the projects and from the techs..</p>
+						</div>
+						<div className={styles.informationSection__item}>
+							<a className={styles.link} target="_blank" rel="noreferrer" href="https://reactjs-rocket-launches-app.netlify.app/" >
+							
 							<Image 
-								src={webPortolioImg2} 
-								alt="online portfolio page icon" 
-								width={200}
-								height={200}
-							/>
-						</a>
-						<p className={styles.informationSection__text}>My Online Portfolio, where I present my personal work, and also some of the main studying projects in software development. It features, interaction, and more descriptive meta-data from the projects and from the techs..</p>
-					</div>
-					<div className={styles.informationSection__item}>
-						<a className={styles.link} target="_blank" rel="noreferrer" href="https://reactjs-rocket-launches-app.netlify.app/" >
-						
-						<Image 
-							src={rocketImg1} 
-							alt="rocket launche app icon" 
-							width={200}
-							height={200}
-						/>
-						</a>
-						<p className={styles.informationSection__text}>This is a React-app written to be a client of the Rocket Launcher API that makes its authentication through JWT tokens and rendering the information about launches and rockets received by the endpoints from the backend.</p>
-					</div>
-					<div className={styles.informationSection__item}>
-						<a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus/expressjs-rocket-launches-api" >
-							<Image 
-								src={rocketImg2} 
+								src={rocketImg1} 
 								alt="rocket launche app icon" 
 								width={200}
 								height={200}
 							/>
-						</a>
-						<p className={styles.informationSection__text}>This is the REST API version for the React-app, and it uses Node-js to arrange a small web-service gathering information from a larger public API about the SpaceX project. It also authenticatis with JWT.</p>
-					</div>
-					
-					<div className={styles.informationSection__item}>
-						<a className={styles.link} target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/" >
+							</a>
+							<p className={styles.informationSection__text}>This is a React-app written to be a client of the Rocket Launcher API that makes its authentication through JWT tokens and rendering the information about launches and rockets received by the endpoints from the backend.</p>
+						</div>
+						<div className={styles.informationSection__item}>
+							<a className={styles.link} target="_blank" rel="noreferrer" href="https://github.com/ahoymarcus/expressjs-rocket-launches-api" >
+								<Image 
+									src={rocketImg2} 
+									alt="rocket launche app icon" 
+									width={200}
+									height={200}
+								/>
+							</a>
+							<p className={styles.informationSection__text}>This is the REST API version for the React-app, and it uses Node-js to arrange a small web-service gathering information from a larger public API about the SpaceX project. It also authenticatis with JWT.</p>
+						</div>
 						
-							<Image 
-								src={myJSBookshelfImg} 
-								alt="JavaScript bookshelf app icon" 
-								width={200}
-								height={200}
-							/>
-						</a>
-						<p className={styles.informationSection__text}>A personal project for a book library entirely made with JavaScript. Modeled with UML and designed with Figma. It uses Webpack’s framework to create the build for the app and manage its web dependencies. It uses MVC architectural pattern.</p>
+						<div className={styles.informationSection__item}>
+							<a className={styles.link} target="_blank" rel="noreferrer" href="https://my-javascript-bookshelf.netlify.app/" >
+							
+								<Image 
+									src={myJSBookshelfImg} 
+									alt="JavaScript bookshelf app icon" 
+									width={200}
+									height={200}
+								/>
+							</a>
+							<p className={styles.informationSection__text}>A personal project for a book library entirely made with JavaScript. Modeled with UML and designed with Figma. It uses Webpack’s framework to create the build for the app and manage its web dependencies. It uses MVC architectural pattern.</p>
+						</div>
+						<div className={styles.informationSection__item}>
+							<a className={styles.link} target="_blank" rel="noreferrer" href="https://musica-erudita.netlify.app/" >
+							
+								<Image 
+									src={musEruditaImg} 
+									alt="musica erudita page icon" 
+									width={200}
+									height={200}
+								/>
+							</a>
+							<p className={styles.informationSection__text}>My personal site about Music, made early in 2018 to practice my skills in Web Design at that time. They are a set of web pages, all responsive and following the mobile-first pattern. They also use SASS and have a SVG animation of my own creation.</p>
+						</div>
+							
 					</div>
-					<div className={styles.informationSection__item}>
-						<a className={styles.link} target="_blank" rel="noreferrer" href="https://musica-erudita.netlify.app/" >
-						
-							<Image 
-								src={musEruditaImg} 
-								alt="musica erudita page icon" 
-								width={200}
-								height={200}
-							/>
-						</a>
-						<p className={styles.informationSection__text}>My personal site about Music, made early in 2018 to practice my skills in Web Design at that time. They are a set of web pages, all responsive and following the mobile-first pattern. They also use SASS and have a SVG animation of my own creation.</p>
-					</div>
-						
 				</div>
-			</div>
+			*/}
+			
 			
 			{/*
 				<div className={styles.testimonialSection}>
