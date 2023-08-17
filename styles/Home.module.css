@@ -37,10 +37,12 @@
 .primeSection {
     background-color: #1F2937;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
-	margin: auto;
-	padding: 80px 50px;
+    margin: auto;
+    padding: 80px 50px;
+    width: 95%;
 }
 
 .primeSection__title {
@@ -76,8 +78,12 @@
 }
 
 .primeSection__image {
-    min-width: 400px;
-    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    max-width: 410px;
+    max-height: 230px;
+    /*min-width: 400px;
+    min-height: 200px;*/
     flex: 0;
 }
 
