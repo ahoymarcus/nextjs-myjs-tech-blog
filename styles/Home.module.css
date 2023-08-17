@@ -142,9 +142,10 @@
 .testimonialSection {
     color: black;
     background-color: #f0eeee; /*#f0b9b9; #f5e34752; #E5E7EB;*/
-    padding: 100px 250px;
+    
     
     /*TEST*/
+    padding: 100px 20px;
     margin-left: 230px;
 }
 
@@ -155,8 +156,8 @@
     text-align: center;
     
     /*TEST*/
-    width: 550%;
-    padding: 100px 30px;
+    width: 53%;
+    
 }
 
 .testimonialSection__span {
