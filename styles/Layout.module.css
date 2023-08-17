@@ -6,11 +6,14 @@
 }
 
 .upwardLink {
-	width: 50%;
-	margin: auto;
-	margin-bottom: 80px;
+	margin: 0px auto 80px;
 	display: flex;
 	justify-content: center;
+	
+	/* TEST */
+/*
+	width: 50%;
+*/
 }
 
 .upwardLink h5 {
