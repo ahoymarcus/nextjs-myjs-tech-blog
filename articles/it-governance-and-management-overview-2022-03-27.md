@@ -13,7 +13,7 @@ description: 'Considering some definitions from Control Objectives for Informati
     2.1. The Importance of IT Governance   
     2.2. The Importance of IT Management
 3. ##### IT Strategic Planning   
-    3,1, Advantages from IT Strategic Planning   
+    3.1. Advantages from IT Strategic Planning   
     3.2. Key Elements from the IT Strategic Planning   
     3.3. Errors in Planning
 4. ##### Methodology Indicators
@@ -333,12 +333,11 @@ And, this other article from CIO, also makes the same clear remark about the imp
 `Having managed and rescued dozens of projects, and helped others do so, I’ve noted that there is always one critical success factor (CSF) that has either been effectively addressed or missed/messed up: clarity around the roles and responsibilities for each project participant and key stakeholder. No matter how detailed and complete a project plan may be for any project, confusion or omission of participant roles and responsibilities will cause major problems.` [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
 
 
-So, returning to the four basic points of analysis for this managing tool, we have that:
-
+- [11 Free SWOT Analysis Templates and Examples](https://clickup.com/blog/swot-analysis-templates/) - Clickup.com
 ![swot-analysis-template-tool-diamond-shape](/images/articles/development/swot-analysis-template-tool-diamond-shape.jpeg)
 
-- [11 Free SWOT Analysis Templates and Examples](https://clickup.com/blog/swot-analysis-templates/)
 
+So, returning to the four basic points of analysis for this managing tool, we have that:
 
 1. **Responsible**: this attribute refers to a person directly related to work in a task/process at hand.  
     1.1. But see that this attribute does not imply that should not be other persons which could also responsible for that same task/process to be made.
@@ -392,13 +391,13 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 Project Management Office (PMO) is a new feature in governance and management that aims to be a link or bridge in an organization between the strategic departments and the production departments responsible for projects/services. 
 
 
-It brings effort to create a professional structure to create some standardization for the processes, creating tools and methods to support the production teams, while stays connceted to the strategic demands from the stakeholder.
+It brings effort to create a professional structure that can manage and monitor projects and tasks, and even devise standardization or applying tools and methods to support the production teams, while stays connceted to the strategic demands from the stakeholder.
 
 
-As the site [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/) states, there has been a shift in the way some departments offer services of develop projects, where Agile methods has been taking over and directing many of the practices.
+As the site [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/) states, there has been a shift in the way some departments offer services as development projects, since Agile methods have been taking over and directing many of its practices.
 
 
-Some of the results from this change is that the working teams are less focused on the top-down hierarchy of the compony and more aligned with its own responsabilities:
+So, some of the results from this change is that the working teams are less focused on the top-down hierarchy of the compony and more aligned with its own responsabilities:
 
 1. **Focus on the aspect of the product they're working on**
 2. **Continously development of the services and products: making decisions and increasing the whole experience.**
@@ -422,7 +421,7 @@ The site [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-man
 2. **Support and brace up project managers**: not only in the context of the group led by the project manager, but also across other groups inside the organization that can collaborate and share resources.
 
 
-Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) also brings some numbers about the problem related to projects complition. For that the site cites two reports:
+Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) also brings some numbers about the problem related to projects completion. For that the site cites two reports:
 
 1. **68% of projects does not reach the goals from timeframe, costs, or scope**: from CHAOS Standish, from 2009.
 2. **From 1524 organizations, innadequate plannings and evaluations are responsible for 30% of the project failures**: and the second from a research from [PwC](https://www.pwc.com/ceosurvey).
@@ -436,13 +435,14 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 4. **Resources management**
 5. **Projects integration**
 6. **Risk management**
-7. **Monitoring patters, methodologies and processes**
+7. **Monitoring patterns, methodologies and processes**
 8. **Metodology definition**
 9. **Processes improvement**
 10. **Definition of metrics**
 11. **Governance and performance management**
 12. **Performance reports**
 13. **Sharing information**
+
 
 
 #### The 3 Basic Types of a PMO
@@ -452,7 +452,7 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 2. **Delivery PMO**: the PMO is closer to the tactical execution of the projects, bringing support and monitioring to the teams to achieve the business expectations.    
     2.1. This are the most common type.
 3. **Complience PMO**: they are usually related to organizations where there are speciffic processes necessary because regulartory reasons.
-4. **Controlling PMO**: it is a kind of PMO that asserts a bit more of its presence amont the teams and can make use of audits. 
+4. **Controlling PMO**: it is a kind of PMO that asserts a bit more of its presence among the teams and can make use of audits. 
 5. **Directive PMO**: this one is the most enforcing kind there is, where comes from its responsability many, and even most, of the directives demanded from the teams.   
     5.1. Distributes resources.   
     5.2. Distributes responsabilities   
@@ -462,7 +462,7 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 ### COBIT
 
-Control Objectives for Information and Related Technology (COBIT) are a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
+**COBIT** or **Control Objectives for Information and Related Technology** is a framework devised as a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
 
 
 `The COBIT Framework provides a tool for the business process owner that affect the discharge of business process tasks. COBIT is an IT-centric framework designed to provide users, businesses, and auditors with a standard approach for designing, implementing, and testing IT controls. This framework has been created and adopted by the Big N audit houses as a solution to some IT audit, compliance, and control problems.` [TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
@@ -478,7 +478,7 @@ There is also certifications related to this framework, which aims to showcase t
 3. **COBIT 5 Assessor**
 
 
-###### Note: the certification does not have a validation date and has a 50% correction for approvement.
+###### Note: the certification does not have a revalidation date and has a 50% correction for approvement.
 
 
 There is a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
@@ -491,10 +491,10 @@ There is a set of tasks that are inherent to the scope of IT operations, and tha
 - **Crisis Contaiment**
 
 
-Another important point about COBIT is that it does not prevent its use together with other frameworks, like the Information Technology Infrastructure Library (ITIL), which is more inline with tasks management inside the IT department and its operartions..
+Another important point about COBIT is that it does not prevent its use together with other frameworks, like the Information Technology Infrastructure Library (ITIL), which is more inline with tasks management inside the IT department and its operartions.
 
 
-So, while thinking about the use of COBIT together with ITIL, there should be on the first  then the aim to optimize the process and stages related to IT Governance, and on the second the best practices to achieve value to the company while the IT services are put to use for the whole operation.
+So, when thinking about the compound use of COBIT together with ITIL, there should be a specific focus on processes and stages related to IT Governance by the first, and there should be a specific focus on IT services put to the use for the whole operation by the second one, where with both there should be a aim of optimizing best practices to achieve the most value to the whole organization.
 
 
 
@@ -506,16 +506,17 @@ So, while thinking about the use of COBIT together with ITIL, there should be on
 4. Monitoring and Evaluation
 
 
+
 #### Principles from COBIT 5
 
 1. **Meeting stakeholders needs**: since IT correlates to different parts of the administration, from strategic planning to the daily IT process, it should also meet the expectation of each involved part.
-2. **Covering the enterprise end to end**: since IT process spred acress all the department and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
+2. **Covering the enterprise end to end**: since IT process spread acress all the departments and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
 3. **Applying a single integrated framework**: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.
 4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
     4.1. Departments   
     4.2. Processes   
     4.3. Activities   
-    4.4. Resources and finantial assets   
+    4.4. Resources and financial assets   
     4.5. Culture, etc.
 5. **Separating governance from management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly, from the evaluation of the quality and security of day-by-day management of processes, to the monitoring and evaluation of strategic goals and the value achieved.
 

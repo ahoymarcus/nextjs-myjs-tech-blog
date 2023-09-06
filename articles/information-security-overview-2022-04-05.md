@@ -12,20 +12,21 @@ description: 'The basic structure of information security has two primary focus 
 2. ##### Information Security Concepts
 	2.1. Basic Elements of Security Information   
 	2.2. Security Police
-4. ##### Basic Principles of Preventing Breaches of Security
-    2.1. Individual Accountability   
-    2.2. Audit   
-    2.3. Separation of Duty
-5. ##### Responding to Beaches of Security
-    5.1. Detection Control   
-    5.2. Recovery Control
-6. ##### Developing Polices and Appropriate Controls
-7. ##### Risks and Vulnerability 
-8. ##### Privacy
+3. ##### Basic Principles of Preventing Breaches of Security
+    3.1. Individual Accountability   
+    3.2. Audit   
+    3.3. Separation of Duty
+4. ##### Responding to Breaches of Security
+    4.1. Detection Control   
+    4.2. Recovery Control
+5. ##### Developing Polices and Appropriate Controls
+6. ##### Risks and Vulnerability 
+7. ##### Privacy
     8.1. Protection of Information about Individuals    
     8.2. Employee Privacy in the Workplace
-9. ##### Backup Routines and Viruses Prevention
-10. ##### Security Routines and File Recovery
+8. ##### Backup Routines and Viruses Prevention
+9. ##### Security Routines and File Recovery
+10. ##### 
 11. ##### 
 12. ##### Further Reading
 13. ##### References
@@ -161,7 +162,7 @@ The document from [National Research Concil](https://nap.nationalacademies.org/r
     3.1. The separation of duty not only strenghten the security, but can also reduce errors by providing for independent checks.
 
 
-### Responding to Beaches of Security
+### Responding to Breaches of Security
 
 One important process to deal with breaches of security is **Recovery Control**, which exists not to prevent, but to bring some responses to breaches events.
 
