@@ -35,13 +35,14 @@ description: 'Considering some definitions from Control Objectives for Informati
 
 ### Introduction
  
-To try to understand these two terms that seems particularly close, in an article, [Magowan](https://www.bmc.com/blogs/governance-vs-management/) starts this topic with a generic differentiation of the two ideas:
+Trying to understand these two terms that appears particularly close at first sight, Kirstie Magowan starts this topic with a generic differentiation of the two ideas in the article, [IT Governance vs IT Management: Mastering the Differences](https://www.bmc.com/blogs/governance-vs-management/):
 
 1. **Governance**: it should be more inline with the organization and its strategic directions.
-2. **Management**: it should be more inline with transposing of the organization directives into action.
+2. **Management**: it should be more inline with transposition of the organization directives into action.
 
 
-And taking off from that basic division, the author then brings some clarification to the matter applying some of the definitions from Control Objectives for Information Technology (COBIT), which is a framework for governance and management specifically tailored to IT.
+And, thus, taking off from that basic division, the author brings then some extra clarification to the matter by applying some of the definitions from the COBIT framework (Control Objectives for Information Technology), which is a framework for governance and management specifically tailored to IT.
+
 
 So, applying some of the underling ideas from COBIT, the problem could be presented this way:
 
@@ -60,38 +61,13 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 
 ### IT Government and IT Management
 
-
 #### The Importance of IT Governance
 
-**COMING SOON...**
-
-
-#### The Importance of IT Management
-
-Bringing the problem even more to the center of the IT Area, it could be said that IT Management have two basic functions:
-
-1. To set and monitor the efficiency of the information systems infrastructure.
-2. To prepare and help the workers to cope better with the IT operation.
-
-
-So, considering that the IT resources have to available and functional at all times, there could be said that the IT Management responsabilities should include:
-
-1. **Determining business requirements for IT systems**
-2. **Managing IT budgets and costs**
-3. **Monitoring safety and compliance**
-4. **Controlling system and network security**
-5. **Implementing new software, hardware and data systems**
-6. **Providing technical or help desk support**
-
-
-Since in the contemporary society guided by an information economy, it should be the responsability of IT management to make this connection between the business of the organization and the informational tools it effectively needs to succed.
+Since that this contemporary society seems to be guided by an information economy, it should be the responsability of IT management to make this connection between the business of the organization and the informational tools it effectively needs to succed.
 
 
 `In turn, businesses who wish to remain competitive long-term must understand how to integrate IT services into their daily operations in a responsible and meaningful way.` [Trio.dev](https://trio.dev/blog/it-management)
 
-
-
-### IT Strategic Planning
 
 The idea of a strategic planning for the IT area is a concept that has been gaining strength since technology has become a important piece inside the organization of a company.
 
@@ -110,9 +86,33 @@ Some elements that should be around a IT strategic planning:
 7. **To have a understand about the real position of the competition**
 
 
+
+#### The Importance of IT Management
+
+Now, for IT Management, the focus should be brought even even more into the center of the IT Area as it could be said that IT Management was supposed to have two basic functions:
+
+1. To set and monitor the efficiency of the information systems infrastructure.
+2. To prepare and help the workers to cope better with the IT operation.
+
+
+Then, considering that the IT resources have to available and functional at all times, there should be said that the IT Management responsabilities have to include:
+
+1. **Determining business requirements for IT systems**
+2. **Managing IT budgets and costs**
+3. **Monitoring safety and compliance**
+4. **Controlling system and network security**
+5. **Implementing new software, hardware and data systems**
+6. **Providing technical or help desk support**
+
+
+
+### IT Strategic Planning
+
 #### Advantages from IT Strategic Planning
 
-1. o help the organization reach its strategic plans
+So, as it was stated before about the importance of implementing IT Governance, the task of performing a Strategic Planning is essential to allow the IT area adhere its operations to the business model and strategy:
+
+1. To help the organization reach its strategic plans
 2. Improving the positioning of the IT area in the company operation and the optimization in the use of technological resources
 3. Reduction of costs and risks
 4. To improve workflow
@@ -123,27 +123,27 @@ Some elements that should be around a IT strategic planning:
 
 #### Key Elements from the IT Strategic Planning
 
- 1. **Mission**: it should state how the IT fits the strategic plans of the company and which should be its main efforts.
- 2. **Diagnostics**: it means to have a descriptive vision of the IT area current state, both its strong poinst and short comings.   
+1. **Mission**: it should state how the IT fits the strategic plans of the company and which should be its main efforts.
+2. **Diagnostics**: it means to have a descriptive vision of the IT area current state, both its strong poinst and short comings:   
     2.1. Its culture   
     2.2. The competition   
     2.3. The opportunities    
     2.4. The risks
-3. **Priorities**: once it is clear the  main description for the IT area, it's time to define priorities, not only to tackle opportunities, but also to minimaze risks and short comings.
-4. **Tactical Plan**: the should be a clear and concret paths to deal with the tasks ahead, and even in terms of short, medium, and in long term. 
-5. **Roles and Responsabilities**: the roles and responsabilities should be very well known by each parson, and it also should be written and validated.
+3. **Priorities**: once it is clear the  main description for the IT area, it's time to define its priorities, not only to tackle the opportunities, but also to minimaze risks and short comings.
+4. **Tactical Plan**: there should be clear and concret paths to deal with the tasks ahead, and also landmarks in terms of short, medium, and in long term commitments. 
+5. **Roles and Responsabilities**: the roles and responsabilities should be very well known by each person, and it also should be written and validated.
 6. **Goals**: it's important that the plans and actions should have definive goals and quantified measures to define quality, just as to state the unacceptable results.
-7. **Resources**: it's also very important to know that the resources are correct and sufficient to achieve each of the goals. Pehaps, to define also where to go for extra resources needed.
+7. **Resources**: it's also very important to know that the resources are correct and sufficient to achieve each of the goals. And pehaps, even to define also the means to go for extra resources needed if this may be needed.
 
 
 #### Errors in Planning
 
-1. **Loose focus and low efficacy**: the planning has to be clear and pragmatic.    
+1. **Loose focus and low efficacy**: the planning has to be clear and pragmatic:      
     1.1. There should be a comprehensive calendar with timelines to be achieved.
 2. **To treat the final document/plan as a mere formality**
 3. **To await to the right time!**: the right time for the IT Strategic Planning should be the current time, meaning that the lack of plan is a problem, but that a existent plan has also to be put to action.
 4. **A Rigid Plan**: the planning has to be flexible to be updated as to follow close potential changes, both internaly or externaly, that may change perspective over past decisions.
-5. **A inbalanced plan**: the plan should be aware both of short goals, as of long goals. To miss either part of the equation could result in loss for the company. 
+5. **A inbalanced plan**: the plan should be aware both of short goals, as of long goals. To miss either part of the equation could result in losses for the company. 
 
 
 
@@ -151,28 +151,32 @@ Some elements that should be around a IT strategic planning:
  
 Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
 
-Two of these indicators are **KPI** and **OKR**, and eventhough sometimes the may overlap each other in some aspects, they should be treated as different and specific tools. And there are also many others indicators, like **BSC**, etc.
+Two of these indicators are **KPI** and **OKR**, and eventhough sometimes they may overlap each other in some aspects, they should be treated as different and specific tools. And there are still others indicators, like **BSC**, for example.
 
 
 #### KPI Indicator
 
-This is the acronym for Key Performance Indicator (KPI), and it is `used to evaluate performance over time for an organization, individual, program, project, action, etc.` [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
+This is the acronym for **Key Performance Indicator** (KPI), and it is `used to evaluate performance over time for an organization, individual, program, project, action, etc.` [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
 
 
-And in the article linked above, the author sees 3 specific indicators that may vary a little bit and be some what confused with the concepts measured by other tools, like OKR, for exemple:
+And in the article linked above, the author, Angel Oh, observes 3 specific indicators that can vary a little bit and that can also be some what confused with concepts measured by some other tools, like OKR, that was mentioned just above.
+
+
+So, for the **KPI**, Angel Oh points out these indicators:
 
 1. **Link to strategic objectives**
 2. **Direct where to focus resources**
 3. **Be measured against targets**
 
 
-###### Some notes on KPI Indicators: 
-1. This indicator should always be designed in a quantative nature, because as it is taught by some, it makes easier to provide context and for comparing performace.
+
+###### Some notes on **KPI** Indicators: 
+1. This indicator should always be designed in a quantative nature, because as it is taught by some, it makes not only easier to provide context to it, but also for comparing its performace.
 2. They should be specific (not vague), and should have context and meaning for each KPI.
-3. They must me **Key features** or indicators from strategic level.
+3. They must be **Key features** or key indicators from strategic level.
 
 
-- Some exemples of the use KPI indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
+- Some exemples of the use **KPI** indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
 - **Retail Industry**: revenue per square foot, same-store sales, sales per employee.
 - **HR Department**: attrition rate, employee performance, average recruitment time.
 - **Sales Department**: customer lifetime value, sales revenue, calls made.
@@ -180,23 +184,24 @@ And in the article linked above, the author sees 3 specific indicators that may 
 - **Healthcare Industry**: patient wait time, average treatment charge, number of educational programs.
 
 
+
 #### OKR Indicator
  
-On the other hand, OKR is the acronym for Objective and Key Results, or more specifically `an objective is tied to key results. OKR is a strategic framework, whereas KPIs are measurements that exist witin a framework`. [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
+On the other hand, **OKR** is the acronym for **Objective and Key Results**, or more specifically `an objective is tied to key results. OKR is a strategic framework, whereas KPIs are measurements that exist within a framework`. [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
  
 
-The same article also states that OKR has a more simplistic fashion as a framework, which groups a limited number of high-level objectives to some, also a limited number of key results per objective.
+That same article also states that **OKR** has a more simplistic fashion as a framework, which groups a limited number of high-level objectives to some, also a limited number of key results per objective.
 
 
-Some characteristics a OKR should have:
+Some characteristics a **OKR** should have:
 
 1. **Always quantifiable**
-2. **Able to be objectively scored on a 0-1 or 0-100 scale**
+2. **To be able to be objectively scored on a 0-1 or 0-100 scale**
 3. **Timelined**
-4. **Ambitious**: the objectives and the results should be some what hard to reach or some distinctive in that nature.
+4. **Ambitious**: the objectives and the results should be some what hard to reach or have some distinctive distinction in that nature.
 
 
-- Some exemples of the use OKR indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
+- Some exemples of the use **OKR** indicators [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/):
 1. Objective: Become the market leader in our industry.     
     1.1. Key result #1: record $100 million in revenue.   
     1.2. Key result #2: increase staff by 45 percent.   
@@ -211,14 +216,16 @@ Some characteristics a OKR should have:
     3.3. Key resutl #3: increase customer retention to 85 percent.
 
 
-###### Some notes on OKR Indicators: 
+
+###### Some notes on **OKR** Indicators: 
 1. They must have alignment with the rest of the orginization, especially beign created from top down in the company structure.
-2. These indicators are better fitted for strategic impruvements, so they are not the best fit for focusing on mainataining the pace of processes.
- 
+2. These indicators are better fitted for strategic improvements, so they are not the best fit for focusing on maintaining the pace of processes.
+
+
  
 #### BSC Indicator
  
-Balance Score Card (BSC) is a strategic planning and management system, and it is use with the aim of:
+**Balance Score Card (BSC)** is a strategic planning and management system, and it is used with the aim of:
 
 - **Communicate goals to be accomplished**
 - **Align the day-to-day work with the organization strategy**
@@ -232,17 +239,20 @@ According to the [Balance Score Card Institute](https://balancedscorecard.org/bs
 `The concept of balanced scorecard has evolved beyond the simple use of perspectives and it is now a holistic system for managing strategy. A key benefit of using a disciplined framework is that it gives organizations a way to “connect the dots” between the various components of strategic planning and management, meaning that there will be a visible connection between the projects and programs that people are working on, the measurements being used to track success (KPIs), the strategic objectives the organization is trying to accomplish, and the mission, vision, and strategy of the organization.`  [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
  
  
-And according to a article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), this same concept from Kaplan & Norton with the BSC idea became a foundational principle in the evaluation of Governance, business strategy, and management performance, for short, medium, and also long term. 
+And this same view is present also in this article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), where the idea of extending the traditional view of contemplating the business performance beyond the mere regards of short term financial metrics, that were brought forth by Kaplan & Norton into their new system, the "Balanced Scorecard (BSC)".
+
+
+So, in this new conception, it became adamant with the **BSC** principles to extend the evaluatinon of the business to add also non-financial measures and  incorporating intangible assets also, all within the new context of applying busuness governance, business strategy, and management the operations performance, not only for short, but also for medium, and long term:
 
 
 `The inference was that organizations could enhance their creation of value and enterprise performance by improving the management of their non-financial, intangible assets, through the integration of these into their existing performance management systems. As the saying goes, if you can’t measure it, you can’t improve it… so in retrospect it seemed inevitable that non-financial measures would emerge as critical to the overall performance management of the enterprise.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
  
  
-And the BSC concept also suggets that an organization should be examined from four different perspectives:
+And the **BSC** concept also suggets that an organization should be examined from four different perspectives:
 
-1. **Financial (or Stewardship)**: measure an organization's financial performance and also its use of the resources finantially.
+1. **Financial (or Stewardship)**: measure an organization's financial performance and also its use of the resources financially.
 2. **Customer/Stakeholder**: it focuses on performance from the point of view of customers or from the point of view of stakeholders.
-3. **Internal Process**: this measure is focused on the quality and efficiency of processes and products, or other key business factor.
+3. **Internal Process**: this measure is focused on the quality and efficiency of processes and products, or some other key business factors.
 4. **Organization Capacity (or Learning & Growth)**: this last area has the focus on the different kinds of capital and values from the organization:   
     4.1. Human capital  
     4.2. Infrastructure   
@@ -251,12 +261,13 @@ And the BSC concept also suggets that an organization should be examined from fo
     4.5. Any other capacity that may bring breakthrough performance.
 
 
+
 ###### BSC and COBIT 5
 
-So, for [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), it became no surprise that a framework that has widen the scope of governance beyond the mere financial view, but to also include intangible assets would merge perfectly into the COBIT 5 environment.
+So, the article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard) also states that it were no surprise that such a framework that has widen the scope of governance beyond the mere financial view, also including important intangible assets, that it would merge perfectly into the COBIT 5 environment.
  
 
-Another interesting point underlined from the above site, though, it is the fact that the BSC and COBIT 5 especially fit into a cohese system concerning the point of **The stakeholders** which cascades down to the more specific areas. 
+Another interesting point underlined from the above article was that, it is a fact that the **BSC** and **COBIT 5** are especially fited into a cohesive system that applies concerns to the point of view for **The stakeholders**, which in itself cascades down to the more specific areas of the business: 
  
 `The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
 
@@ -266,7 +277,7 @@ Another interesting point underlined from the above site, though, it is the fact
 
 #### SWOT Analysis   
 
-The acronym SWOT stads for Strenghs, Weakeness, Opportunities, and Threats, which are all attributes for analysis and are divided into 2 categories:
+The acronym **SWOT** stads for **Strenghs, Weakeness, Opportunities, and Threats**, which are all attributes for analysis and are divided into 2 categories:
 
 1. **Internal factors**:  
     1.1. Strenghts: they can be any kind of resource, either tangible or intangible, that the organization have.   
@@ -276,15 +287,16 @@ The acronym SWOT stads for Strenghs, Weakeness, Opportunities, and Threats, whic
     2.2. Threats
 
 
-According to the site [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm), the SWOT Analysis is the most renowned tool for audit and analysis, where in its use for analysis it becomes a key element for governance to identify and define strategies for the business model.
+According to the site [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm), the **SWOT** Analysis is the most renowned tool for audit and analysis, where in its use for analysis it becomes a key element for governance to identify and define strategies for the business model.
     
 
 So, in its form, the tool aims to help evaluating the internal potentials ans limitations of a organization, service or process, and also to find and measure opportunities and threats externally.
     
 
+
 ###### Advantages of SWOT Analysis
 
-It is a simple methodology that can be use in vasts areas and operations, but its also a subjective tool, and that is why the [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm) states that, this tool is `best when used as a guide, and not as a prescription`:
+It is a simple methodology that can be used in vasts areas and operations, but it is also a subjective tool, and that is why the [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm) states that, this tool is in its `best when used as a guide, and not as a prescription`:
 
 1. It's a source of information for strategic planning.
 2. Builds organization's strengths.
@@ -293,6 +305,7 @@ It is a simple methodology that can be use in vasts areas and operations, but it
 5. Overcome organizations's threats.
 6. It helps in identifying core competencies of the firm.
 7. I helps in setting of objectives for strategic planning.
+
 
 
 ###### Limitations of SWOT Analysis
@@ -306,23 +319,31 @@ There are 2 basic limitations for this tool:
 
 #### RACI Matrix
 
-According to the site [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/), the RACI Matrix, also called RACI Chart or RACI Model, is a diagram that identifies the key roles and responsabilities of users against major tasks within a project, while it also servers as visual representation of the functional role played by each person on a project team.
+According to the site [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/), the **RACI Matrix**, also called **RACI Chart** or **RACI Model**, is a diagram that identifies the key roles and responsabilities of users against major tasks within a project, while it also servers as visual representation of the functional role played by each person on a project team.
 
 
-The acronym stands for **Responsible**, **Accountable**, **Consulted**, and **Informed**, all of which defines attributes for the roles and levels of involvement of each professional within a project.
-
-More over, the site also gives a `PRO TIP`, explaining that within this tool, responsabilities should better be definied in individual terms `as to avoid confusion and slow decision-making`. [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
+The **RACI** acronym stands for **Responsible**, **Accountable**, **Consulted**, and **Informed**, all of which defines attributes for the roles and levels of involvement of each professional within a project:
 
 
-And the site also clearly states this about the importance of clarity among roles and responsabilities for projects:
+More over, the site also gives a `"PRO TIP"`, explaining that within this tool, responsabilities should better be definied in individual terms `as to avoid confusion and slow decision-making`. [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
+
+
+And, this other article from CIO, also makes the same clear remark about the importance of managing carefully the roles and responsabilities for each of the projects in a organization:
 
 `Having managed and rescued dozens of projects, and helped others do so, I’ve noted that there is always one critical success factor (CSF) that has either been effectively addressed or missed/messed up: clarity around the roles and responsibilities for each project participant and key stakeholder. No matter how detailed and complete a project plan may be for any project, confusion or omission of participant roles and responsibilities will cause major problems.` [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
 
 
+So, returning to the four basic points of analysis for this managing tool, we have that:
+
+![swot-analysis-template-tool-diamond-shape](/images/articles/development/swot-analysis-template-tool-diamond-shape.jpeg)
+
+- [11 Free SWOT Analysis Templates and Examples](https://clickup.com/blog/swot-analysis-templates/)
+
 
 1. **Responsible**: this attribute refers to a person directly related to work in a task/process at hand.  
-    1.1. But this attribute does not imply the possibility that other persons may be also responsible for that same task/process to be made.
-2. **Accountable**: this is a exclusive attribute which imparts ownership over the task/processe to one the one person which will attain the sole voice to give account about it.
+    1.1. But see that this attribute does not imply that should not be other persons which could also responsible for that same task/process to be made.
+2. **Accountable**: on the other hand, this one is a exclusive attribute which imparts to the ownership over some task or process; thus, giving to one person sole ownership to a task/process.   
+    2.1. In this manner, then, this person will attain the sole voice to give account about it.
 3. **Consulted**: these are people or stakeholders who need to give their input before any work can be done or sign-off.
 4. **Informed**: again, these are people or stakeholder who need to be kept informed about any progress in relation to the task/process.   
     4.1. Although they do not contribute directly to the task/process.
@@ -334,6 +355,7 @@ The site also cite a quotation from Gartner where it states the importance of cl
 And the that site makes another interesting distinction when it adverts that the RACI Chart diagram does not replace any methodology for planning and managing, but it gives important help to all that same management processes in setting responsabilities visually and in simple terms.
 
 
+
 ###### Steps to Create a RACI Matrix
 
 The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html) also gives a interesting example on how to build a RACI diagram:
@@ -341,12 +363,13 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 1. Indentify all taks involved in delivering the project and list them along the left site of the chart.
 2. Identify all the project stakeholders and list then along the top of the chart.
 3. Complete the cells of the model identifying that 4 fold responsabilities already mentioned.
-4. Ensure that every taks has to have one stakeholder to account for it.
+4. Ensure that every task has to have one stakeholder to account for it.
 5. Complete the aggrement among all parts in relation to what has been defined and documented in the tool's diagram.
 
 
 [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html) - RACI diagram
 ![raci-matrix-example-01](/images/articles/development/raci-matrix-example-01.png)
+
 
 
 ###### RACI Matrix Best Practices
@@ -356,10 +379,10 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 3. **Lack of consistency**: the roles defined on the diagram must reflect the real representation of the the work to be done in a task/project. There can be no arbitrary replaciments involved.
 4. **Adding too many columns**: the diagram should be clear and simple, adding only key tasks.   
     4.1. So, do not add administrative tasks, like team meetings, for example.
-5. **Mixing up who is responsible for who is accountable**: the person designated as 'responsible' for some task should not also be 'accountable' for the same task.   
+5. **Mixing up the persons who is responsible, and person who should be accountable for**: the person designated as 'responsible' for some task should not be also 'accountable' for that same task.   
     5.1. Besides, this add a layer of compliance to the tool. 
 6. **Too many assignments given to one stakeholder**: this can lead to performance issues.
-7. **There can be no empty cells left behind**: since the tool aims to birng key tasks, there should not be important element unsigned in terms of responsabilities in the task/project document.
+7. **There can be no empty cells left behind**: since the tool aims to bring key tasks, there should not be important element unsigned in terms of responsabilities in the task/project document.
 8. **Clear aggrements**: there should be clear aggrement about the responsabilities taken in the document.
 
 
