@@ -18,13 +18,13 @@ description: 'A project management methodology is a set of principles and practi
     2.6. Kanban Methodology   
     2.7. Lean Methodology   
     2.8. New Product Introduction Methodology   
-    2.9.  Outcome Mapping Methodology  
+    2.9. Outcome Mapping Methodology  
     2.10. Package Enabled Reengineering Methodology  
-    2.11.  PMI's PMBOK Methodology  
-    2.12.  PRINCE2 Methodology    
-    2.13.  Rapid Application Development Methodology (RAD)     
-    2.14.  Scrum Methodology   
-    2.15.  Scrumban Methodology   
+    2.11. PMI's PMBOK Methodology  
+    2.12. PRINCE2 Methodology    
+    2.13. Rapid Application Development Methodology (RAD)     
+    2.14. Scrum Methodology   
+    2.15. Scrumban Methodology   
     2.16. Six Sigma Methodology  
     2.17 Waterfall Methodology
 3. ##### The PMBOK Guide
@@ -34,8 +34,9 @@ description: 'A project management methodology is a set of principles and practi
     3.4. The Concept of Project in the PMBOK    
     3.5. Advantages of PMBOK   
     3.6. The Agile Project Management and the PMBOK Guide
-4. ##### Further Reading
-5. ##### References
+4. ##### Project Management Certifications
+5. ##### Further Reading
+6. ##### References
 
 ### Introduction
  
@@ -758,14 +759,63 @@ The PMBOK 6th Edition has 132 project management tools and techniques distribute
 
 
 
+### Project Management Certifications
+
+#### 05 PMI Certifications
+
+1. PMP:   
+    1.1. The **Project Management Professional or PMP** is the most known certification from the PMI institute, and it has a validity of 3 years.
+2. CAPM:  
+    2.1. According to [What is CAPM Certification? - PMI](https://www.pmi.org/certifications/certified-associate-capm) the **Certified Associate in Project Management** is a foundational tier exam and it has a 3 years cycle for accumulation the 60 educational units.
+3. PgMP:
+    3.1. This one is the [Program Management Professional (PgMP-PMI)](https://pmisp.org.br/pgmp/) that aims to certify a professional that manages multiple projects at the same time.
+4. PMI-PBA:   
+    4.1. The [Professional in Business Analysis (PMI-PBA)®](https://www.pmtech.com.br/pmi-pba.html) has a three-years cycle for accumulating the 60 units of continous study.
+5. PMI-ACP:   
+    5.1. The **Agile Certified Practitioner or ACP** has a validity of 3 years.
+
+
+#### Other Project Management Certifications
+
+1. CompTIA Project+:   
+    1.1. According to the [CompTIA Project+](https://www.comptia.org/certifications/project) site, this series of certification are targeted to entry-level skills and medium-sized projects.   
+    1.2. The site also claims that the certification **does not have a validity period** and does not have to be renewed, but that it focus on building continous knowledge.
+2. CSM: 
+    2.1. The **Certified Scrum Master** from the [ScrumAlliance](https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster) has a validity of two years.
+3. IAPM:    
+    3.1. The [Certified Project Manager from IAPM](https://www.iapm.net/en/certification/levels-of-certification/certified-project-manager-iapm/) from the International Association of Project Managers has **lifetime validity**.
+4. MPM:
+    4.1. This is the [Master Project Manager (MPM®)](https://pmrgi.com/master-project-manager.cfm)
+    from the Project Management Resource Group.
+    4.2. And according to the article [MPM vs. PMP®: Which Path Should You Take?](https://www.examspm.com/mpm-vs-pmp/), the MPM certification is an academic certification, instead of a professional one. Thus, it should have a junior-level tier with a validity should be of five years.
+5. PPM: 
+    5.1. The [Professional In Project Management (PPM)](https://gaqm.org/certifications/project_management/ppm) has a 5 years validity cycle for the candidate accumulates units in continous educational studies.
+6. PMITS: 
+    6.1. The **Project Management in IT Security** certification from the EC-Council.
+7. PRINCE2:  
+    7.1. The [PRINCE2 Qualifications Explained](https://www.prince2.com/usa/prince2-qualifications-explained) plataform has a series of certifications that vary from Foundation to different tiers of seniority.
+8. Six Sigma:   
+    8.1. The [Council for Six Sigma Certification](https://www.sixsigmacouncil.org/) offers two variaties of the certification, the **Six Sigma** and the **Lean Six Sigma**.   
+    8.2. The certificates are arranged in tiers or levels, starting from the White one which is a free entry level exam. And above it there is the Yellow, Green and Black tiers.  
+    8.3. Another interesting point from Six Sigma Council is the fact that they arrange their course formation in a style that **does not apply expiration date** to the certificates.   
+    8.4. Finally, the council also has a [Free Self-Study Traning Guide and manuals](https://www.sixsigmacouncil.org/six-sigma-training-material/) for the Six Sigma courses.
+
+
+
 ### Further Reading
 
 [PMP Certification? Use this List of Helpful PMBOK Guide Resources - Wrike.com](https://www.wrike.com/blog/pmp-certification-use-this-list-of-helpful-pmbok-guide-resources/)
 
 [Part 1: Data Gathering – PMP Exam Tools and Techniques You Need to Study - PM Exam SmartNotes](https://www.pmexamsmartnotes.com/pmp-exam-tools-and-techniques-part1/)
 
+[HAROLD Kerzner. Project Management - A System Approach to Planning, Scheduling and Controlling](https://www.amazon.com/Project-Management-Approach-Scheduling-Controlling/dp/1118022270)
+
+[WYSOCKI R. K. Effective Project Management - Traditional, Agile, Extreme, Hybrid. Wiley.](https://www.wiley.com/en-ca/Effective+Project+Management:+Traditional,+Agile,+Extreme,+Hybrid,+8th+Edition-p-9781119562801)
+
 
 ### References
+
+[Project Management Full Course | Project Management Training | Edureka](https://www.youtube.com/watch?v=PqQqTAu_FiM&pp=ygULZWR1cmVrYSBwbXA%3D)
 
 [PMBOK® - A Guide to Project Management Body of Knowledge - SimpliLearn.com](https://www.simplilearn.com/pmbok-a-guide-to-project-management-body-of-knowledge-rar73-article)
 
