@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Introduction to Machine Learning and Natural Language Processing'
 date: '2023-04-08'
-subject: 'databases-articles'
+subject: 'database-articles'
 description: 'As a field of study, **machile learning** is classified as a subset of **artificial intelligence** where computer science and statistics are brought together for creating predictive models used to allow machines learn from historical data.'
 ---
 

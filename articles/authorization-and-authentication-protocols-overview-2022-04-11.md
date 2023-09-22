@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Authorization and Authentication Protocols - Overview'
 date: '2022-04-11'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'User Authorization and User Authentication are some of the biggest priorities related to software applications, and it is directly related to the role of the applications and to how they are designed to interact with its users. nd there are several protocols created that aim to standardaze this important feature in software security, including: OAuth2, OpenID, SAML, etc.'
 ---
 

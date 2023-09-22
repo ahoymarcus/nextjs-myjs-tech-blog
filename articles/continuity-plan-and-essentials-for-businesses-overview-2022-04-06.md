@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Continuity Plan and Essentials for Business - Overview'
 date: '2022-04-06'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'The concept behind a continuity business plan is the fact that unfortunate event cannot be averted all the time, even in sound organizations that have installed many standards and best pratices, or a risk management process. So, eventhough all those processes are very important and help to make a more robust operation, there still have some processes that have be thought in the case of a concret disrupt event hapenning. And these are the reason for devising a business continuity plan that will bring effort to keep the company running, at least in some capacity, that is for its essentials businesses.'
 ---
 

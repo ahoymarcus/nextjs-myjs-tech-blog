@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'ICP-Brasil - Overview'
 date: '2022-04-13'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'Infraestrutura de Chaves Públicas Brasileira ou ICP-Brasil é a hierarquia de confiança que viabiliza a emissão de certificados digitais para a identificação virtual do cidadão e de empresas, autoridade instituída pela Medida Provisória nº 2.000-2, de 24 de agosto de 2001. O modelo brasileiro de emissão de certificados digitais é o modelo de raíz única, em que a AC-Raiz é a primeira autoridade da cadeia de certificação, cujo papel é representado pelo Instituto Nacional de Tecnologia da Informação (ITI).'
 ---
 

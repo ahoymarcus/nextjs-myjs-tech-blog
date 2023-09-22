@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Keycloak Identity and Authentication Platform - Overview'
 date: '2022-04-12'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'Keycloak is an open-cource application that provides identity and authorization management, which allow users to to authenticate with Keycloak instead of authenticating with each individual application separately. For that reason the client applications managed by Keycloak does not have to deal with login forms, authenticating users and storing users. And the same with signing-out.'
 ---
 

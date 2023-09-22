@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Cryptography, Steganography and Criptanalysis - Overview'
 date: '2022-04-07'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'Cryptography is the study and practice of techniques for secure communication in the presence of third parties, and nowdays it works with developing and analysing protocols which prevents malicious third parties from retrieving information being exchanged through various means. The roots of the word comes from the Greek language, where Krypto means secret or hiden, and Graphene means written.'
 ---
 

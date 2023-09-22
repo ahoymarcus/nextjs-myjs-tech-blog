@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Indexação e Hashing'
 date: '2021-06-02'
-subject: 'databases-articles'
+subject: 'database-articles'
 description: 'Otimização de bancos de dados na obra de Abraham
 Silberschatz.'
 ---

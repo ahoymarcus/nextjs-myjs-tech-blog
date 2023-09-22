@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Information Security - Overview'
 date: '2022-04-05'
-subject: 'security-articles'
+subject: 'management-articles'
 description: 'The basic structure of information security has two primary focus or requirements, where the first one is related to the information itself and its contents, while the second refers to the persons who may use the information: the information and the user. And around these key factors arises a certain number of controls like: confidentiality, integrity, availability, authentication, authorization, nonrepudiation, etc.'
 ---
 

@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Plano de Consultas em Bancos de Dados NoSQL'
 date: '2021-06-28'
-subject: 'databases-articles'
+subject: 'database-articles'
 description: 'Melhorando a Performance dos bancos de dados NoSQL- Um Estudo de Caso.'
 ---
     
