@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Open Web Application Project Foundation (OWASP) - Overview'
 date: '2022-04-18'
-subject: 'web-dev-articles'
+subject: 'security-articles'
 description: 'The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software, and servers as the base for developers and technologists to secure the web: Tools and Resources;  Community and Networking; Education & Training.'
 ---
 
