@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'ITIL - Service Management Framework'
 date: '2022-03-30'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'ITIL stands for Information Technology Infrastructure LIbrary, and it is a set of best practices for delivering IT services, to maximaze efficiency and bring predictability to the services provided, all in accord with the organization strategic plans. And has become the de facto standard in IT service management. So, ITIL works around any kind of organization to help them accomplish their services in a quality-driven and economical way.'
 ---
 

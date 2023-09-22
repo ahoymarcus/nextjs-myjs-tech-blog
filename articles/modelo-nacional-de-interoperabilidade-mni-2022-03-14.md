@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Modelo Nacional de Interoperabilidade (MNI)'
 date: '2022-03-14'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'Segundo o tutorial online do PJe, o Modelo Nacional de interoperabilidade (MNI) é definido como a integração entre os sistemas, por meio da tecnologia Web Service, para garantir interoperabilidade, junto com segurança, para os processos judiciais, permitindo o intercâmbio de dados de maneira independente de tecnologias individuais sendo utilizadas, além de estar disponível para acesso por pessoas físicas, jurídicas ou por entidades.'
 ---
 

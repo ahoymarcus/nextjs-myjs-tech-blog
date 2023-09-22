@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Capability Maturity Model Integration (CMMI)'
 date: '2022-02-12'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'The the Capability Mature Model Integration or CMMI is a sucessor of the CMM, in the sense that it aims to incorporate all the individual disciplines for the development of software and integrate them all together. In a broader spectrum it aims for optimizing development processes, to allows its continous improvement, enhance the organization culture, decrease risks, etc.'
 ---
 

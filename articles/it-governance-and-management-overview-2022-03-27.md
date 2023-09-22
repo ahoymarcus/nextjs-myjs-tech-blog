@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'IT Governance and Mangement - Overview'
 date: '2022-03-27'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'Considering some definitions from Control Objectives for Information Technology (COBIT), which is a framework for governance and management specifically tailored to IT, Evaluate, Direct, and Monitor (EDM): which would cover the main governance activities, to access and evaluate the needs of the stakeholders, to direct through priorization and monitoring results, and, Plan, Build, Run, and Monitor (PBRM): which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.'
 ---
 

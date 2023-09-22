@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'PMBOK and others Project Management Methodologies'
 date: '2022-03-29'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'A project management methodology is a set of principles and practices, that is a framework, that guide the organization of projects to ensure maximum performance. The Project Management Body of Knowledge a guide for project management, developed by the Project Management Institute (PMI), is one example of project management methodologies on the market.'
 ---
 
