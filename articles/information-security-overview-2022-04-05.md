@@ -263,19 +263,57 @@ Here, there is a dificult line to be drawn, because from one side it is imperati
 
 
 
-
 ### Cyber Security Protocols and Market Solutions
 
+According to the article [6 Network Security Protocols You Should Know](https://https://www.catonetworks.com/network-security/network-security-protocols/) from CATO Networks, the security protocols are a string of tools and safeguards that help the Internet, and that as we may say, should help all systems and processes to keep in check all those necessary security scontrols already stated in this present article:
+
+1. Confidentiality
+2. Integrity
+3. Availability, etc.
+
+
+So, in the case of the Internet Security Protocols, the article from Cyber Pedia presents four types:
+
+1. Access Control protocols: here, again it is the task of validating the right user to the correct identity provided.
+2. Encryption Algorithms protocols: these are mostly processes that ensures the safeguard of the original resources by applying a level of encoding and encryption above them.
+3. Key Management protocols: these are protocols that deal and handle with user identity and all the necessary means to manage and to monitor them.
+4. Message Integrity protocols: this sets of protocols handles mainly integrety for messages and for data, bringing means that they are kept true to its original form and are not tempered with.
+
+
+There is also a recurrent relation that can be made for these types of protocols with the commonly known abstractions layers found in networks, specially those of the Internet with the OSI (Open Systems Interconnection) model.
+
+
+So, in each of these layers there is the same idea of protecting and imposing all the necessary controls within each own layer or level of abstraction:
+1. Physical layer: at this level, it is a control defined over equipaments and of the premises that house the information. 
+2. Data Link layer: at this level, it is the control defined over links responsible to the exchange of messages or data.   
+    2.1. Common protocols found here are: encrypting protocols.
+3. Network layer: at this level, a network is managed by devising forms of communication by means of Addressing and and Packaging efforts:   
+    3.1. Common protocols found here are: IPSec (Internet Protocol Security) and VPNs (Virtual Private Networks).
+4. Transport layer: at this level, the task is to promote the delivery of data in a safely and error-free manner:     
+    4.1. Common protocols found here are: the TSL (Transport Layer Security) is a important current protocol that ensure security for others protocols like the new HTTPS (HyperText Transfer Protocol Secure). 
+5. Session layer: at this level, the protocols here work to define the behavior for all the user agents present in the ecosystem by what is called a "Session", just like a session over Internet, for example:  
+    5.1. Common protocols found here are: SSL (Secure Socket Layer).
+6. Presentation layer: at this level, the protocols work in terms of presenting information for those same user agents that are participants in all the system:       
+    6.1. Common protocols found here are: protocols related to logins and to encrypting are very common.
+7. Application layer: at this layer, there are all the tools and application that are currently being used by all the parties involved in all these processes:   
+    7.1. Common protocols found here are: SFTP (Secure File Transfer Protocol), PGP (Pretty Good Privacy), SMP (Secure Messaging Protocol), FTP (File Transfer Protocol), DNS (Domain Name System), Kerberos, SNMP (Simple Network Management Protocol), etc.
 
 
 
-
-
-
-
-
-
-
+A gereral list of important security protocols:
+- **DTLS (Datagram Transport Layer Security)**: it is a transport protocol that is based on TSL and operates trough datagram kind of messaging.
+- **HTTPS (HyperText Transfer Protocol Secure)**: this is a broader protocol that operats over Internet links, that together with other protocols like SSL and TSL, allow the linkage connection of two or more systems.
+- **IPSec (Internet Protocol Security)**: released by the IETF (Internet Engineering Task Force) in the 1900s, it offers a suit of tools that provide data authentication and integrity with the help of protocols like ESP (Encapsulating Security Payload) and AH (Authentication Header), while allowing manual and automatic management of cryptographic keys (with the help of IKE, Internet Key Exchange protocol):    
+    - It also can protect VPNs by providing tunneling to encrypt data transfers.
+- **Kerberos**: this is a network validation protocol that provides strong authentication between client-server applications.   
+    - It can be used over untrusted networks, like public networks, providing trusted communication, and it has support over many OSs like Windows (which uses it by default), Mac and Linux.
+- **SNMP (Simple Network Management Protocol)**: it is a network device management and monitoring protocol working at the application layer, which can secure devices on LANs OR WANs, and it is an original part of the Internet Protocol suit defined by the IETF (Internet Engineering Task Force).   
+    - SNMP has a three fold architecture based on a manager, an agent and a information base (the manager is the client, the agent the server and the information base the database).   
+    - With its 3rd version in 2004, SNMP incorporated also features for encrypting packages, integrity checks and authentication.
+- **SSH (Secure Shell)**: invented in 1995, it is a security protocol that acts over a network, allowing a command-line tool to login and remotely operates tasks.
+- **SSL (Secure Sockets Layer)**: it is a standard security mechanism for preserving a secure connection between two parties:    
+    5.1. It encrypts data, authenticates data origins, and ensures message integrity, negotiating security within the Session.
+- **TSL (Transport Layer Security)**: this protocol is related to the SSL protocol, but that is is currently defined by the IETF (Internet Engineering Task Force) group.
 
 
 
@@ -284,8 +322,6 @@ Here, there is a dificult line to be drawn, because from one side it is imperati
 1.1. [ ] Firewall, Intrusion Detection System (IDS), Intrusion Prevention System (IPS), Security Information and Event Manageme nt (SIEM), Proxy, Identity Access Management (IAM), Privileged Access Management (PAM), Antivírus, Antispam.  
 1.2. [ ] Protocolos da camada de aplicação, como Simple Mail Transfer Protocol (SMTP), Hypertext Transfer Protocol (HTTP), Hypertext Transfer Protocol (HTTPS), SSL/TLS, Lightweight Directory Access Protocol (LDAP), Network File System (NFS), Server Message Block (SMB). 
 1.3. [ ] Protocolos de autenticação Windows NT LAN Manager (NTLM) e Kerberos.
-
-
 
 
 
@@ -433,10 +469,15 @@ Here, there is a dificult line to be drawn, because from one side it is imperati
 
 ### References
 
+[CATO Networks. 6 Network Security Protocols You Should Know](https://www.catonetworks.com/network-security/network-security-protocols/)
+
 [Computers at Risk: Safe Computing in the Information Age (1991) - Chapter 04 - National Research Concil](https://nap.nationalacademies.org/read/1581/chapter/4#51)
+
+[CYBERPEDIA. Types of Security Protocols (And How They Protect You from Risks)](https://www.bitdefender.com/cyberpedia/types-of-security-protocols/from)
 
 [INFOBASICS-Basic Concept of Information Security - SecureReading.com](https://securereading.com/infobasics-basic-concept-information-security/)
 
+[W3Schools. Network Protocols and Its Security](https://www.w3schools.in/cyber-security/network-protocols-and-its-security)
 
 
 []()
