@@ -301,7 +301,7 @@ So, in each of these layers there is the same idea of protecting and imposing al
 
 
 > _**Note**_:
-- For understanding purposes, taking the TCP/IP _de facto_ architecure for LANs, we can reference four layers only that would hold together these generic protocols:
+> For understanding purposes, taking the TCP/IP _de facto_ architecure for LANs, we can reference four layers only that would hold together these generic protocols:
 1. **Access or Link layer**:   
     1.1. Common protocols found here are: the TCP/IP architecture does not dictate specific protocols for transmission over the physical layer, only discribes then (SILVA, 2021, p. 105).
 2. **Internert layer**:   
@@ -314,214 +314,27 @@ So, in each of these layers there is the same idea of protecting and imposing al
 
 
 #### A gereral list of important security protocols:
-- **DTLS (Datagram Transport Layer Security)**: 
+- **DTLS (Datagram Transport Layer Security)**:    
 It is a transport protocol that is based on TSL and operates trough datagram kind of messaging.
-- **HTTPS (HyperText Transfer Protocol Secure)**: 
+- **HTTPS (HyperText Transfer Protocol Secure)**:    
 This is a broader protocol that operats over Internet links, that together with other protocols like SSL and TSL, allow the linkage connection of two or more systems.
-- **IPSec (Internet Protocol Security)**: 
+- **IPSec (Internet Protocol Security)**:    
 Released by the IETF (Internet Engineering Task Force) in the 1900s, it offers a suit of tools that provide data authentication and integrity with the help of protocols like ESP (Encapsulating Security Payload) and AH (Authentication Header), while allowing manual and automatic management of cryptographic keys (with the help of IKE, Internet Key Exchange protocol):    
     - It also can protect VPNs by providing tunneling to encrypt data transfers.
-- **Kerberos**: 
+- **Kerberos**:    
 This is a network validation protocol that provides strong authentication between client-server applications.   
     - It can be used over untrusted networks, like public networks, providing trusted communication, and it has support over many OSs like Windows (which uses it by default), Mac and Linux.
-- **SNMP (Simple Network Management Protocol)**: 
+- **SNMP (Simple Network Management Protocol)**:    
 It is a network device management and monitoring protocol working at the application layer, which can secure devices on LANs OR WANs, and it is an original part of the Internet Protocol suit defined by the IETF (Internet Engineering Task Force).   
     - SNMP has a three fold architecture based on a manager, an agent and a information base (the manager is the client, the agent the server and the information base the database).   
     - With its 3rd version in 2004, SNMP incorporated also features for encrypting packages, integrity checks and authentication.
-- **SSH (Secure Shell)**: 
+- **SSH (Secure Shell)**:    
 Invented in 1995, it is a security protocol that acts over a network, allowing a command-line tool to login and remotely operates tasks.
-- **SSL (Secure Sockets Layer)**: 
+- **SSL (Secure Sockets Layer)**:    
 It is a standard security mechanism for preserving a secure connection between two parties:    
     - It encrypts data, authenticates data origins, and ensures message integrity, negotiating security within the Session.
-- **TSL (Transport Layer Security)**: 
+- **TSL (Transport Layer Security)**:     
 This protocol is related to the SSL protocol, but that is is currently defined by the IETF (Internet Engineering Task Force) group.
-
-
-
-
-
-
-
-
-
-1.2. [ ] Protocolos da camada de aplicação, 
-1.2. [ ] como Simple Mail Transfer Protocol (SMTP),
-1.2. [ ] Hypertext Transfer Protocol (HTTP),
-1.2. [ ] Hypertext Transfer Protocol (HTTPS),
-1.2. [ ] SSL/TLS, 
-1.2. [ ] Lightweight Directory Access Protocol (LDAP),
-1.2. [ ] Network File System (NFS), 
-1.2. [ ] Server Message Block (SMB). 
-1.3. [ ] Protocolos de autenticação Windows NT LAN Manager (NTLM) e 
-1.3. [ ] Kerberos.
-
-
- 
-
-
-
-
-#### Cyber Security Devices
-
-
-
-###### Firewall
-
-According to the site [Cisco.com](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html), a **firewall** is a `"network security device that monitors incoming and outgoing network traffic"`, so it is a security device that can manage the network traffic based on preset security rules specified.
-
-
-Another interesting aspect from **firewalls** according to [Cisco.com](https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html) is that this device can can assume the form of hardware, or software, or software-as-a-service (SaaS), or public cloud, or private cloud (virtualization).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1.1. [ ] Firewall, 
-1.1. [ ] Intrusion Detection System (IDS), 
-1.1. [ ] Intrusion Prevention System (IPS),
-1.1. [ ] Security Information and Event Manageme nt (SIEM), 1.1. [ ] Proxy,
-1.1. [ ] Identity Access Management (IAM),
-1.1. [ ] Privileged Access Management (PAM),
-1.1. [ ] Antivírus, Antispam. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Storage and Backup, Cloud and Safe Devolopment Techniques
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3. Storage e Backup:   
-    3.1. [ ] Administração e operação de serviços de arquivamento.    
-    3.2. [ ] Implantação e administração de soluções de proteção e de recuperação de dados contra-ataques cibernéticos.    
-    3.4. [ ] Implantação e administração de serviços de nuvem e multicamada.
-6.5. [ ] Técnicas de desenvolvimento seguro.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Security and Databases
-    
-    
-    
-    
-    
-    
-    
-#### Adjusting System and Query Performances
-
-
-
-
-
-
-#### Backup, Fault Tolerance and Recovery Routines
-
-
-
-
-
-
-
-
-
-
-
-
-#### Database Configuration and Auditing
-
-
-
-
-
-6. Banco de Dados:   
-    6.1. [X] Conhecimentos de Sistemas Gerenciadores de Banco de Dados (SGBD) relacionais Oracle Database Server, Microsoft SQL Server e PostgreSQL. Instalação e configuração. Administração (infraestrutura e aplicação).   
-    6.2. [ ] Backup e recuperação.    
-    6.3. [ ] Ajuste de desempenho de banco de dados.    
-    6.4. [X] Bancos de dados NoSQL.    
-    6.5. [X] Linguagem SQL e linguagem de programação para banco de dados.   
-    6.6. [ ] Ajuste de desempenho de aplicação. Ajuste de desempenho de comandos de SQL.    
-    6.7. [ ] Tolerância a falhas e continuidade de operação. Auditoria de banco de dados.    
-    6.8. [ ] Configuração de auditoria de dados. Produção de relatórios de auditoria. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
