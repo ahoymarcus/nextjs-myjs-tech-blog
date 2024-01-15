@@ -22,7 +22,7 @@ description: 'User Authorization and User Authentication are some of the biggest
 
 ### Introduction
  
-User Authorization and User Authentication are some of the biggest priorities related to software applications, and it is directly related to the role of the applications and to how they are designed to interact with its users.
+User Authorization and User Authentication are some of the biggest priorities related to software applications, and they are directly related to the role of the applications and to how they are designed to interact with its users.
 
 
 And there are several protocols created that aim to standardaze this important feature in software security, including:
@@ -42,6 +42,7 @@ And there are several protocols created that aim to standardaze this important f
 - `Risk Management - Overview` [^3]
 - `ITIL - Service Management Framework` [^4]
 - `Cryptography, Steganography and Criptanalysis - Overview` [^5]
+- `Keycloak Identity and Authorization Platform - Overview` [^6]
 
 
 
@@ -67,12 +68,11 @@ It is designed for executing storng authentication in mass-produced products, an
 
 #### Lightweidh Directory Access Protocol (LDAP)
 
-The Lightweight Directory Access Protocol (LDAP) is a protocol that is used for determining any individuals, organizations, and other devices accessing a network, regardless coming from a public of or corporate net. 
+The Lightweight Directory Access Protocol (LDAP) is a protocol that is used for determining any individuals, organizations, and other devices accessing a network, regardless coming from a public or corporative net.
 
-It is also treated as Director-as-a-Service, and it is the ground for Microsof building its Activity Directory.
+- It is also treated as Directories-as-a-Service, and it is the ground for Microsof building its Activity Directory [GeeksforGeeks](https://www.geeksforgeeks.org/types-of-authentication-protocols/).
 
-
-`Lightweight Directory Access Protocol (LDAP) is simply an industry standard that defines a way to organize and query directory information. LDAP allows you to centrally manage resources like users and systems. LDAP, however, does not define how you log into those systems, meaning it does not define the actual protocols that are used in authentication. It is, however, often used as part of the authentication process and access control processes. For example, before a user can access a particular resource, LDAP might be used to query for that user and any groups that they belong to in order to see if the user has access to that resource. LDAP solutions like OpenLDAP do provide authentication through their support of authentication protocols like Simple Authentication and Security Layer (SASL)`  [Onelogin.com](https://www.onelogin.com/learn/how-single-sign-on-works)
+- `Lightweight Directory Access Protocol (LDAP) is simply an industry standard that defines a way to organize and query directory information. LDAP allows you to centrally manage resources like users and systems. LDAP, however, does not define how you log into those systems, meaning it does not define the actual protocols that are used in authentication. It is, however, often used as part of the authentication process and access control processes. For example, before a user can access a particular resource, LDAP might be used to query for that user and any groups that they belong to in order to see if the user has access to that resource. LDAP solutions like OpenLDAP do provide authentication through their support of authentication protocols like Simple Authentication and Security Layer (SASL)`  [Onelogin.com](https://www.onelogin.com/learn/how-single-sign-on-works)
 
 
 
@@ -81,7 +81,7 @@ It is also treated as Director-as-a-Service, and it is the ground for Microsof b
 - It supports the existing technologies and allow multiple directories.
 
 - **Some Disadvantages of LDAP**
-- It requires the experience of deployment.
+- It requires the experience on deployment.
 - The directory servers are required to be LDAP obedient for deployment.
 
 
@@ -112,7 +112,7 @@ In 2007 OpenID2 was released, while OpenID Connect came upon in 2014:
 `OpenID Connect allows clients of all types, including Web-based, mobile, and JavaScript clients, to request and receive information about authenticated sessions and end-users. The specification suite is extensible, allowing participants to use optional features such as encryption of identity data, discovery of OpenID Providers, and session management, when it makes sense for them.` [OpenID.net](https://openid.net/connect/)
 
 
-Eventhough the OpenID Connect and OpenID2 performs many of the same tasks alike, but OpenID Connect also allow:
+Eventhough the OpenID Connect and OpenID2 performs many of the same tasks alike, OpenID Connect can also allow:
 
 1. API-friendly mechanism.
 2. Usable by native or mobile applications.
@@ -127,7 +127,7 @@ Also, the OpenID Connect allows its clients to access additional information abo
 
 ###### How Does the OpenID Connect Work
 
-he application starts with an OAuth flow that asks the user to authorize a request. As part of that flow, the client will include the OpenID Connect scope along with scopes for any additional information it wants about the user.
+The application starts with an OAuth flow that asks the user to authorize a request. As part of that flow, the client will include the OpenID Connect scope along with scopes for any additional information it wants about the user.
 
 
 After the request is processed, the client will receive an access token as well as an ID token issued by the authorization server that contains claims that carry information about the user. The user’s SSO experience is made possible by the delivery of the ID token from the authorization server to the client. The client can then contact a special endpoint on the authorization server known as the UserInfo endpoint to receive the remaining claims about the user.
@@ -155,12 +155,12 @@ RADIUS stands for Remote Authentication Dial-In User Service, and it is a networ
 
 - **Some Disadvantages of RADIUS**
 - Initial implementation for this mechanism is hard on hardware.
-- It has a variety of models that may require a special team which is cont consuming.
+- It has a variety of models that may require a special team which is cost consuming.
 
 
 #### SAML
 
-SAML stands for Security Assertion Markup Language which is based on XML. It has a data scheme for authentication between a provider and a consumer. And it is a product of  Organization for the Advancement of Structured Information Standards (OASIS). 
+SAML stands for Security Assertion Markup Language which is based on XML. It has a data scheme for authentication between a provider and a consumer. And it is a product of the  Organization for the Advancement of Structured Information Standards (OASIS). 
 
 
 It works as a federation pattern allowing that a identity provider (IdP) may manage user authentication while providing a token also for a application known as service provider (SP).
@@ -177,7 +177,7 @@ With SAML there is a experience of o Single Sign-on (SSO), allowing that a SSO m
 SAML works passing informations about the users, and also logins and attributes between the IdP and the SP applications. So, with SAML each user may have a single authentication by the IdP application an can extend its session authenticating with many other applications.
 
 
-The IdP pass what is known as SAML assertion to the SP when the user tries to access the services being managed by the SP. So here there is a example for a potential login with SAML:
+The IdP pass what is known as SAML Assertion to the SP when the user tries to access the services being managed by the SP. So here there is a example for a potential login with SAML:
 
 1. Make the login and have access and authentication like SSO.
 2. Export metadata from the IdP and import them.
@@ -186,7 +186,7 @@ The IdP pass what is known as SAML assertion to the SP when the user tries to ac
 
 
 
-Finalmente, a SAML assertion is a XML document that the IdP send to the SP having the authorization status from the user, and there can be 3 types os SAML assertions: **Assertion of Authentication**, **Attributed Assertion**, and **Assertion of Authorization**.
+Finally, a SAML assertion is a XML document that the IdP sends to the SP having the authorization status from the user, and there can be 3 types os SAML assertions: **Assertion of Authentication**, **Attributed Assertion**, and **Assertion of Authorization**.
 
 
 
@@ -217,7 +217,7 @@ Steps with a example of how SSO works:
 1.  A user browses to the application or website they want access to, aka, the Service Provider.
 2. The Service Provider sends a token that contains some information about the user, like their email address, to the SSO system, aka, the Identity Provider, as part of a request to authenticate the user.
 3. The Identity Provider first checks to see whether the user has already been authenticated, in which case it will grant the user access to the Service Provider application and skip to step 5.
-4. If the user hasn’t logged in, they will be prompted to do so by providing the credentials required by the Identity Provider. This could simply be a username and password or it might include some other form of authentication like a One-Time Password (OTP).
+4. If the user hasn’t logged in, it will be prompted to do so by providing the credentials required by the Identity Provider. This could simply be a username and password or it might include some other form of authentication like a One-Time Password (OTP).
 5. Once the Identity Provider validates the credentials provided, it will send a token back to the Service Provider confirming a successful authentication.
 6. This token is passed through the user’s browser to the Service Provider.
 7. The token that is received by the Service Provider is validated according to the trust relationship that was set up between the Service Provider and the Identity Provider during the initial configuration.
@@ -264,4 +264,4 @@ Steps with a example of how SSO works:
 
 [^5]:cryptography-steganography-and-cryptanalysis-overview-2022-04-07
 
-
+[^6]:keycloak-identity-and-authorization-platform-overview-2022-04-12
