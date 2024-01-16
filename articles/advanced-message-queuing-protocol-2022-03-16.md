@@ -43,9 +43,9 @@ The RabbitMQ is a project from Erlang, and it is a important product in the mark
  
 ### The Broker Architecture 
 
-The messaging brokers receive messages from publishers, and this this messages are either directly or through some layer routed to the consumers. Also, since this is a network protocol, publishers and consumers can all reside on different machines.    
+The messaging brokers receive messages from publishers, and these this messages are either directly or through some layer routed to the consumers. Also, since this is a network protocol, publishers and consumers can all reside on different machines.    
 
--  read more about the Broker Architecture in these articles:
+-  read more about the Broker Pattern and the Broker Architecture respectively in these articles:
 - `Software Architecture Patterns - Overview` [²]
 - `Software Architecture and Design` [³]
  
