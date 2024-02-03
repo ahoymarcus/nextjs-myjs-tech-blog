@@ -9,15 +9,15 @@ description: 'Updating and Upgrading the Debian Linux system between new distro 
 #  Upgrading the Debian OS -  Linux Administration
 
 1. ##### Testing the Linux OS System - Basic Configuration
-2. ##### Upgrading the Debian System i
-  2.1. Debian Main Packaging Management Tools   
+2. ##### Upgrading the Debian System
+  2.1. Debian Main Packaging Management Tools    
   2.2. Understanding The /etc/apt/sources.list File
 3. ##### Upgrading from Debian 11 (Bullseye) to Debian 12 (Bookworm)
-4. ##### 
-	4.1.       
-	4.2.      
-5. ##### Troubleshooting 
-6. ##### Further Reading     
+4. #####
+	4.1.   
+	4.2.
+5. ##### Troubleshooting
+6. ##### Further Reading
 7. ##### References
 
 
@@ -71,7 +71,7 @@ The APT interface on the other hand, is a advanced interface for the Debian pack
 So, as it was seeem, the **apt-get** itself utilizes the framework **dpkg** in its works, but differrent from the later, it does not works with _.deb_ files, and it has to be configured using the specifications from the file _/etc/apt/sources.list_.
 
 
-According to the manual, [Capítulo 8. As ferramentas de gestão de pacotes Debian](https://www.debian.org/doc/manuals/debian-faq/pkgtools.pt.html), this new binary **apt** merges both **apt-get** and **apt-cache** functionalities from the original APT interface, besides inserting a users friendly formatting system with colors and better spacing:
+According to the Debian Manual, [Capítulo 8. As ferramentas de gestão de pacotes Debian](https://www.debian.org/doc/manuals/debian-faq/pkgtools.pt.html), this new binary **apt** merges both **apt-get** and **apt-cache** functionalities from the original APT interface, besides inserting a users friendly formatting system with colors and better spacing:
 
 ```
  apt-get update             ->  apt update
@@ -115,7 +115,7 @@ The main *apt* sources configuration file are at: _*/etc/apt/sources.list*_
 _"Avoid using stable in your sources.list as that results in nasty surprises and broken systems when the next release is made; upgrading to a new release should be a deliberate, careful action and editing a file once every two years is not a burden."_
 
 
-An example for _/etc/apt/sources.list_ with the Debian 12 (Bookworm stable): [SourcesList - Debian Wiki]
+An example for _/etc/apt/sources.list_ with the Debian 12 ([SourcesList - Debian Wiki](https://wiki.debian.org/SourcesList)):
 
 ```
 deb http://deb.debian.org/debian bookworm main
@@ -129,7 +129,7 @@ deb-src http://deb.debian.org/debian bookworm-updates main
 ```
 
 
-Now, a example also using the _contrib_, _non-free_ and _non-free-firmware_ components: [SourcesList - Debian Wiki]
+Now, a example also using the _contrib_, _non-free_ and _non-free-firmware_ components ([SourcesList - Debian Wiki](https://wiki.debian.org/SourcesList)):
 
 ```
 deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
@@ -144,13 +144,14 @@ deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-
 
 - _**Notes**_:   
 1. The first item of each pair repository marked as **deb** indicates the pre-compiled packages that are normally used by the installation, and the second item, **deb-src**, indicates the _source packages_, which are the original program sources plus the Debian control file (.dsc) and the diff.gz containing the changes needed for packaging the program.   
-  1.1. _"deb-src lines are relative to source packages (as downloaded by apt-get source $package) and next compiled. Source packages are needed only if you want to compile some package yourself, or inspect the source code for a bug. Ordinary users don't need to include such repositories."_ [The difference between deb versus deb-src in sources.list - Unix & Linux](https://unix.stackexchange.com/questions/20504/the-difference-between-deb-versus-deb-src-in-sources-list)
+  1.1. _"deb-src lines are relative to source packages (as downloaded by apt-get source $package) and next compiled. Source packages are needed only if you want to compile some package yourself, or inspect the source code for a bug. Ordinary users don't need to include such repositories."_ [The difference between deb versus deb-src in sources.list - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/20504/the-difference-between-deb-versus-deb-src-in-sources-list)
 2. From the _nixCraft_ site, _How to enable contrib repo on Debian Linux 10/11/12_:   
   2.1. _"Sometimes, when you try to install specific Debian Linux packages, you might encounter an error message that reads:
 Unable to locate package pkg-name-here
-In many cases, the required package might already be present in the remote download repos. It would be best to have an additional repository, such as contrib, which adds extra packages to the core Debian Linux system. To enable and use the contrib repository in Debian Linux version 10/11/12 or newer versions, follow the instructions below."_ [How to enable contrib repo on Debian Linux 10/11/12](https://www.cyberciti.biz/faq/enabling-contrib-repo-in-on-debian-linux/)
+In many cases, the required package might already be present in the remote download repos. It would be best to have an additional repository, such as contrib, which adds extra packages to the core Debian Linux system. To enable and use the contrib repository in Debian Linux version 10/11/12 or newer versions, follow the instructions below."_ [How to enable contrib repo on Debian Linux 10/11/12 - nixCraft](https://www.cyberciti.biz/faq/enabling-contrib-repo-in-on-debian-linux/)
 3. Also from the _nixCraft_ site, _A note about the non-free-firmware repo_:   
-  3.1. _"If you intend to use Debian 12 on either a desktop or server that requires non-free firmware for hardware such as WiFi, GPU, Sound, Nvida/AMD GPU, NIC and more, it is recommended to include the non-free firmware repository. Below is the updated file /etc/apt/sources.list file. The orange color repo config indicates that non-free firmware is required for your hardware. If you’re unsure about your hardware, I suggest adding those repositories."_
+  3.1. _"If you intend to use Debian 12 on either a desktop or server that requires non-free firmware for hardware such as WiFi, GPU, Sound, Nvida/AMD GPU, NIC and more, it is recommended to include the non-free firmware repository. Below is the updated file /etc/apt/sources.list file. The orange color repo config indicates that non-free firmware is required for your hardware. If you’re unsure about your hardware, I suggest adding those repositories."_ [How to upgrade Debian 11 to Debian 12 bookworm using CLI - nixCraft](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
+
  
 
 
@@ -158,7 +159,9 @@ In many cases, the required package might already be present in the remote downl
 ### Upgrading from Debian 11 (Bullseye) to Debian 12 (Bookworm)
 
 - _**Note from the nixCraft site**_:
-- _"Just to be clear, it is not possible to upgrade from Debian Linux version 10 directly to version 12. You will need to go through the Debian 10 to 11 upgrade first, and then upgrade from version 11 to version 12."_ 
+- _"Just to be clear, it is not possible to upgrade from Debian Linux version 10 directly to version 12. You will need to go through the Debian 10 to 11 upgrade first, and then upgrade from version 11 to version 12."_ [How to upgrade Debian 11 to Debian 12 bookworm using CLI - nixCraft](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
+
+
 
 
 As the site states, the procedure is as follows:
@@ -210,7 +213,7 @@ Another **very important issues** present in these current step are:
 2. Determ how the upgrade process should proceed with the **Grub** installation.  
   2.1. And here, the _nixCraft_ site suggests **keeping the local version currently installed**:
 
-_"Here is another example, about GRUB package. A new version (/tmp/grub.nSxPVErDRh) of the configuration file /etc/default/grub is available, but the version installed currently has been locally modified. What do you want to do about the modified configuration file grub? Again review all options carefully. I typically chose the “keep the local version currently installed”_ [How to upgrade Debian 11 to Debian 12 bookworm using CLI](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
+_"Here is another example, about GRUB package. A new version (/tmp/grub.nSxPVErDRh) of the configuration file /etc/default/grub is available, but the version installed currently has been locally modified. What do you want to do about the modified configuration file grub? Again review all options carefully. I typically chose the “keep the local version currently installed”_ [How to upgrade Debian 11 to Debian 12 bookworm using CLI - nixCraft](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
 
 
 Finally, the _nixCraft_ site stress about the importance of the second part of the upgrade, that is the full upgrade from the **step 6**: 
@@ -218,7 +221,7 @@ Finally, the _nixCraft_ site stress about the importance of the second part of t
 _"To fully update from Debian 11 to Debian 12, it’s necessary to make complete upgrades, rather than just minimum ones. This step is crucial for the upgrade process. To do this, enter the following command to ensure that the latest versions of all packages are installed and any potential dependencies are resolved."_
 
 
-Once again the user may be prompted to suggest about configuration options, like OpenSSH, for example. And at the end of all this process, the site adverts that it should be important to check the connection with the remote server, for those that are using this kind of connection:
+Once again the user may be prompted to suggest about configuration options, like OpenSSH, for example. And at the end of all this process, the site adverts that it should be important to check the connection with the remote server, for those that are connected this way:
 
 ```
 sudo sshd -t
@@ -258,13 +261,13 @@ Another **issue from the same upgrade above** was that the new installation lost
 
 ### Further Reading
 
-- [The Debian GNU/Linux FAQ](https://www.debian.org/doc/manuals/debian-faq/)
+- [The Debian GNU/Linux FAQ - Debian Docs](https://www.debian.org/doc/manuals/debian-faq/)
 
-- [APT User's Guide](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
+- [APT User's Guide - Debian Docs](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
 
-- [The Debian Administrator's Handbook Next Debian 11](https://www.debian.org/doc/manuals/debian-handbook/index.en.html)
+- [The Debian Administrator's Handbook Next Debian 11 - Debian Docs](https://www.debian.org/doc/manuals/debian-handbook/index.en.html)
 
-- [Securing Debian Manual 3.19](https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html)
+- [Securing Debian Manual 3.19 - Debian Docs](https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html)
 
 
 ### References
@@ -273,7 +276,7 @@ Another **issue from the same upgrade above** was that the new installation lost
 
 - [SourcesList - Debian Wiki](https://wiki.debian.org/SourcesList)
 
-- [The Debian Archive](https://www.debian.org/doc/debian-policy/ch-archive.html)
+- [The Debian Archive - Debian.org](https://www.debian.org/doc/debian-policy/ch-archive.html)
 
-- [How to upgrade Debian 11 to Debian 12 bookworm using CLI](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
+- [How to upgrade Debian 11 to Debian 12 bookworm using CLI - nixCraft](https://www.cyberciti.biz/faq/update-upgrade-debian-11-to-debian-12-bookworm/)
 
