@@ -10,15 +10,12 @@ description: 'Updating and Upgrading the Debian Linux system between new distro 
 
 1. ##### Testing the Linux OS System - Basic Configuration
 2. ##### Upgrading the Debian System
-  2.1. Debian Main Packaging Management Tools    
-  2.2. Understanding The /etc/apt/sources.list File
+    2.1. Debian Main Packaging Management Tools    
+    2.2. Understanding The /etc/apt/sources.list File
 3. ##### Upgrading from Debian 11 (Bullseye) to Debian 12 (Bookworm)
-4. #####
-	4.1.   
-	4.2.
-5. ##### Troubleshooting
-6. ##### Further Reading
-7. ##### References
+4. ##### Troubleshooting
+5. ##### Further Reading
+6. ##### References
 
 
 ### Introduction
