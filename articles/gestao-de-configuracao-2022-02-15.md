@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Gestão de Configuração'
 date: '2022-02-15'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'Durante o ciclo de vida de um sistema ou de um software, indo desde do seu design, passando pelo desenvolvimento, testes, implementação e manutenção, ocorrem inúmeras mudanças e uma grande quantidade de código é constituído. Nesse sentido, facilitar o trabalho de reunir todo esse material e de permitir gerir as suas mudanças e versões faz parte de uma prática genérica chamada de Gestão de Configuração.'
 ---
 

@@ -50,9 +50,9 @@ export default function SecurityArticles({ allPostsData }) {
 			</Head>
 			
 			<h1 className={styles.title}>
-				Cybersecurity Development articles
+				Management Information Technology articles
 			</h1>
-			<h3>Technical papers and general news about Security in Software Development and Web Technologies.</h3>
+			<h3>Technical papers and general news about Governance, Managegement and Cybersecurity in Software Development and Web Technologies.</h3>
 		
 			<section className={styles.postsSection}>
 				{currentArticles.map((article) => {

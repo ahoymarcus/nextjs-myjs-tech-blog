@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Dev-Ops - Architecture'
 date: '2022-02-14'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'This article brings an extensive view about many points of the DevOps practices, its architecture and its workflow. It also brings the principles, the tools and its workflows in terms of the pipelines for integration (CI) and for deployment (CD) that makes this practice so important for continously improvement.'
 ---
 

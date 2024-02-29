@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Dev-Sec-Ops - Overview'
 date: '2022-02-14'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'DevSecOps is short for Development, Security and Operations, and it aims for the automation of security at every phase of software development lifecycle, from the planning and design through testing, deployment and software delivery.'
 ---
 

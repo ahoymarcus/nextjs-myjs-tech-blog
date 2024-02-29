@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Advanced GIT'
 date: '2022-02-16'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'Git is a version control system used for: handling the source code history of projects, tracking changes made to files, handling small and large projects with speed and efficiency, to collaborate with other developers on different projects.'
 ---
 

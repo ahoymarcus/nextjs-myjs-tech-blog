@@ -2,7 +2,7 @@
 author: 'Marcus Vinicius Richa'
 title: 'Dev-Ops - Overview'
 date: '2022-02-14'
-subject: 'development-articles'
+subject: 'management-articles'
 description: 'This article brings a overview about the DevOps culture and how it promotes the development and operation process to work closer and in synchrony. The name DevOps is a combination of two words, that is Development and Operations and it is a important practice for continously improvement in essential areas of TI, just as software developers, quality assurance (QA) and system administrators.'
 ---
 
