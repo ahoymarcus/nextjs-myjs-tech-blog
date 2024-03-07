@@ -1,12 +1,12 @@
 ---
 author: 'Marcus Vinicius Richa'
-title: 'IT Governance and Mangement - Overview'
+title: 'IT Governance and Management - Overview'
 date: '2022-03-27'
 subject: 'management-articles'
 description: 'Considering some definitions from Control Objectives for Information Technology (COBIT), which is a framework for governance and management specifically tailored to IT, Evaluate, Direct, and Monitor (EDM): which would cover the main governance activities, to access and evaluate the needs of the stakeholders, to direct through priorization and monitoring results, and, Plan, Build, Run, and Monitor (PBRM): which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.'
 ---
 
-# IT Governance and Mangement - Overview
+# IT Governance and Management - Overview
 
 1. ##### Introduction  
 2. ##### IT Government and IT Management   
@@ -35,16 +35,16 @@ description: 'Considering some definitions from Control Objectives for Informati
 
 ### Introduction
  
-Trying to understand these two terms that appears particularly close at first sight, Kirstie Magowan starts this topic with a generic differentiation of the two ideas in the article, [IT Governance vs IT Management: Mastering the Differences](https://www.bmc.com/blogs/governance-vs-management/):
+Talking about IT Governance and IT Management may sound a bit confusing to differenciate at first, but to improve into the understand of these two terms that appears particularly close at first sight, Kirstie Magowan starts this topic with a generic differentiation of the two ideas in the article, [IT Governance vs IT Management: Mastering the Differences](https://www.bmc.com/blogs/governance-vs-management/):
 
 1. **Governance**: it should be more inline with the organization and its strategic directions.
 2. **Management**: it should be more inline with transposition of the organization directives into action.
 
 
-And, thus, taking off from that basic division, the author brings then some extra clarification to the matter by applying some of the definitions from the COBIT framework (Control Objectives for Information Technology), which is a framework for governance and management specifically tailored to IT.
+And, thus, taking off from that basic division, the author brings some extra clarification to the matter by applying some of the definitions from the **COBIT framework (Control Objectives for Information Technology)** itself, which is a framework for governance and management specifically tailored to IT.
 
 
-So, applying some of the underling ideas from COBIT, the problem could be presented this way:
+So, while bringing some of the underling ideas from the **COBIT** framework, the problem could be presented this way:
 
 1. **Evaluate, Direct, and Monitor (EDM)**: which would cover the main governance activities, to access and evaluate the needs of the stakeholders, to direct through priorization and monitoring results.
 2. **Plan, Build, Run, and Monitor (PBRM)**: which would cover the main management activities, that would mean to put the government dispositions into action and to be monitored.
@@ -63,10 +63,10 @@ So, applying some of the underling ideas from COBIT, the problem could be presen
 
 #### The Importance of IT Governance
 
-Since that this contemporary society seems to be guided by an information economy, it should be the responsability of IT management to make this connection between the business of the organization and the informational tools it effectively needs to succed.
+Since that this contemporary society seems to be guided by a kind of **"informative economy"**, it should be the actual responsability of IT management to make this connection between the business of the organization and the informational tools it effectively needs to succed.
 
 
-`In turn, businesses who wish to remain competitive long-term must understand how to integrate IT services into their daily operations in a responsible and meaningful way.` [Trio.dev](https://trio.dev/blog/it-management)
+`"In turn, businesses who wish to remain competitive long-term must understand how to integrate IT services into their daily operations in a responsible and meaningful way."` [Trio.dev](https://trio.dev/blog/it-management)
 
 
 The idea of a strategic planning for the IT area is a concept that has been gaining strength since technology has become a important piece inside the organization of a company.
@@ -95,7 +95,7 @@ Now, for IT Management, the focus should be brought even even more into the cent
 2. To prepare and help the workers to cope better with the IT operation.
 
 
-Then, considering that the IT resources have to available and functional at all times, there should be said that the IT Management responsabilities have to include:
+Then, considering that the IT resources have to be available and functional at all times, there should be said that the IT Management responsabilities have to include:
 
 1. **Determining business requirements for IT systems**
 2. **Managing IT budgets and costs**
@@ -118,7 +118,7 @@ So, as it was stated before about the importance of implementing IT Governance, 
 4. To improve workflow
 5. Brings transparency to the IT operation and help to define and monitor the priorities
 6. To improve communication with the other departments of the organization
-7. *Create means to measure and to analyse all the operation
+7. To create means to measure and to analyse all the operation
 
 
 #### Key Elements from the IT Strategic Planning
@@ -129,11 +129,15 @@ So, as it was stated before about the importance of implementing IT Governance, 
     2.2. The competition   
     2.3. The opportunities    
     2.4. The risks
-3. **Priorities**: once it is clear the  main description for the IT area, it's time to define its priorities, not only to tackle the opportunities, but also to minimaze risks and short comings.
-4. **Tactical Plan**: there should be clear and concret paths to deal with the tasks ahead, and also landmarks in terms of short, medium, and in long term commitments. 
-5. **Roles and Responsabilities**: the roles and responsabilities should be very well known by each person, and it also should be written and validated.
-6. **Goals**: it's important that the plans and actions should have definive goals and quantified measures to define quality, just as to state the unacceptable results.
-7. **Resources**: it's also very important to know that the resources are correct and sufficient to achieve each of the goals. And pehaps, even to define also the means to go for extra resources needed if this may be needed.
+3. **Priorities**: once it is clear the  main description for the IT area, it should be time to define what had to be IT's real priorities, that is, to tackle the best opportunities for its devised mission, and also to minimaze risks and its short comings.
+4. **Tactical Plan**: then, together with those set of priorities, there should be clear and concret paths to deal with each of the tasks ahead and priorities ahead.   
+  4.1. There should be also **landmarks** to stress the terms of the **short**, the **medium**, and in the **long** term commitments presented by this Strategic Plan itself. 
+5. **Roles and Responsabilities**: the roles and responsabilities should be very well known by each person.   5.1. Besides making the ownership for each strategic role and responsability to individual members of the staff, they should also be written down and validated as well.
+6. **Goals**: it's important that the plans and actions should have **definive goals** and **quantified measures** to define quality, just as to state the unacceptable results.
+7. **Resources**: it's also very important to know that the resources are correct and sufficient to achieve each of the goals.  
+  7.1. And pehaps, besides this verificaion about the actual resourses, there should be planned also the means for extra resources in case it is needed.
+
+
 
 
 #### Errors in Planning
@@ -147,26 +151,30 @@ So, as it was stated before about the importance of implementing IT Governance, 
 
 
 
+
 ### Kinds of Methodology Indicators 
  
 Just as the frameworks concerning governance and management that exist in the market, there are also smaller frameworks and specialized frameworks to deal with indicators and measurement tools.
 
+
 Two of these indicators are **KPI** and **OKR**, and eventhough sometimes they may overlap each other in some aspects, they should be treated as different and specific tools. And there are still others indicators, like **BSC**, for example.
+
 
 
 #### KPI Indicator
 
-This is the acronym for **Key Performance Indicator** (KPI), and it is `used to evaluate performance over time for an organization, individual, program, project, action, etc.` [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
+This is the acronym for **Key Performance Indicator (KPI)**, and it is `"used to evaluate performance over time for an organization, individual, program, project, action, etc."` [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
 
 
-And in the article linked above, the author, Angel Oh, observes 3 specific indicators that can vary a little bit and that can also be some what confused with concepts measured by some other tools, like OKR, that was mentioned just above.
+And in the article linked above, the author, Angel Oh, observes 3 specific indicators that can vary a little bit and that can also be some what confused with concepts measured by some other tools, like the **OKR** framework, because **KPI** is a concrete mesurement used within frameworks, while **OKR** is a complete strategic framework by itself.
 
 
-So, for the **KPI**, Angel Oh points out these indicators:
+So, for the part of **KPI** measurements, Angel Oh points out these indicators:
 
 1. **Link to strategic objectives**
 2. **Direct where to focus resources**
 3. **Be measured against targets**
+
 
 
 
@@ -185,12 +193,13 @@ So, for the **KPI**, Angel Oh points out these indicators:
 
 
 
+
 #### OKR Indicator
  
-On the other hand, **OKR** is the acronym for **Objective and Key Results**, or more specifically `an objective is tied to key results. OKR is a strategic framework, whereas KPIs are measurements that exist within a framework`. [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
+On the other hand, for the **OKR** framework which come from the acronym for **Objective and Key Results**, it is important to remember, as it was sais above, that it is `"an objective is tied to key results. OKR is a strategic framework, whereas KPIs are measurements that exist within a framework"`. [ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
  
 
-That same article also states that **OKR** has a more simplistic fashion as a framework, which groups a limited number of high-level objectives to some, also a limited number of key results per objective.
+Also in that same article, it explains that **OKR** has a more simplistic fashion as a framework, which groups a limited number of high-level objectives to some, also a limited number of key results per objective.
 
 
 Some characteristics a **OKR** should have:
@@ -222,6 +231,7 @@ Some characteristics a **OKR** should have:
 2. These indicators are better fitted for strategic improvements, so they are not the best fit for focusing on maintaining the pace of processes.
 
 
+
  
 #### BSC Indicator
  
@@ -236,7 +246,7 @@ Some characteristics a **OKR** should have:
 According to the [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/), the concept of the name 'Balance Scorecard' comes from the idea of a more balanced approach to strategically measuring organizations or processes besides the limited traditional financial measurements.
 
 
-`The concept of balanced scorecard has evolved beyond the simple use of perspectives and it is now a holistic system for managing strategy. A key benefit of using a disciplined framework is that it gives organizations a way to “connect the dots” between the various components of strategic planning and management, meaning that there will be a visible connection between the projects and programs that people are working on, the measurements being used to track success (KPIs), the strategic objectives the organization is trying to accomplish, and the mission, vision, and strategy of the organization.`  [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
+`"The concept of balanced scorecard has evolved beyond the simple use of perspectives and it is now a holistic system for managing strategy. A key benefit of using a disciplined framework is that it gives organizations a way to “connect the dots” between the various components of strategic planning and management, meaning that there will be a visible connection between the projects and programs that people are working on, the measurements being used to track success (KPIs), the strategic objectives the organization is trying to accomplish, and the mission, vision, and strategy of the organization."`  [Balance Score Card Institute](https://balancedscorecard.org/bsc-basics-overview/)
  
  
 And this same view is present also in this article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard), where the idea of extending the traditional view of contemplating the business performance beyond the mere regards of short term financial metrics, that were brought forth by Kaplan & Norton into their new system, the "Balanced Scorecard (BSC)".
@@ -245,11 +255,10 @@ And this same view is present also in this article from [OrbusSoftware](https://
 So, in this new conception, it became adamant with the **BSC** principles to extend the evaluatinon of the business to add also non-financial measures and  incorporating intangible assets also, all within the new context of applying busuness governance, business strategy, and management the operations performance, not only for short, but also for medium, and long term:
 
 
-`The inference was that organizations could enhance their creation of value and enterprise performance by improving the management of their non-financial, intangible assets, through the integration of these into their existing performance management systems. As the saying goes, if you can’t measure it, you can’t improve it… so in retrospect it seemed inevitable that non-financial measures would emerge as critical to the overall performance management of the enterprise.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+`"The inference was that organizations could enhance their creation of value and enterprise performance by improving the management of their non-financial, intangible assets, through the integration of these into their existing performance management systems. As the saying goes, if you can’t measure it, you can’t improve it… so in retrospect it seemed inevitable that non-financial measures would emerge as critical to the overall performance management of the enterprise."` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
  
  
 And the **BSC** concept also suggets that an organization should be examined from four different perspectives:
-
 1. **Financial (or Stewardship)**: measure an organization's financial performance and also its use of the resources financially.
 2. **Customer/Stakeholder**: it focuses on performance from the point of view of customers or from the point of view of stakeholders.
 3. **Internal Process**: this measure is focused on the quality and efficiency of processes and products, or some other key business factors.
@@ -262,14 +271,17 @@ And the **BSC** concept also suggets that an organization should be examined fro
 
 
 
+
 ###### BSC and COBIT 5
 
-So, the article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard) also states that it were no surprise that such a framework that has widen the scope of governance beyond the mere financial view, also including important intangible assets, that it would merge perfectly into the COBIT 5 environment.
+So, the article from [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard) also states that there were no surprise that such a framework that had gain so widen scope for governance going beyond the mere financial view, could also be including another important intangible assets, that is that it would merge perfectly into the COBIT 5 environment.
  
 
-Another interesting point underlined from the above article was that, it is a fact that the **BSC** and **COBIT 5** are especially fited into a cohesive system that applies concerns to the point of view for **The stakeholders**, which in itself cascades down to the more specific areas of the business: 
+Another interesting point underlined from the above article was the fact that the **BSC** and **COBIT 5** are especially fited into a cohesive system that applies concerns to the point of view of the **stakeholders**, which in itself cascades down to the more specific areas of the business: 
  
-`The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization.` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+`"The BSC provides for a balanced, holistic view of the Enterprise, and by using the BSC as a common tool to represent and align Enterprise and IT goals, COBIT 5 has provided an essential snapshot of the total value delivery of Enterprise IT to the organization."` [OrbusSoftware](https://www.orbussoftware.com/resources/blog/article/cobit-5-and-the-balanced-scorecard)
+
+
 
 
 
@@ -290,8 +302,13 @@ The acronym **SWOT** stads for **Strenghs, Weakeness, Opportunities, and Threats
 According to the site [Management Study Guide](https://www.managementstudyguide.com/swot-analysis.htm), the **SWOT** Analysis is the most renowned tool for audit and analysis, where in its use for analysis it becomes a key element for governance to identify and define strategies for the business model.
     
 
-So, in its form, the tool aims to help evaluating the internal potentials ans limitations of a organization, service or process, and also to find and measure opportunities and threats externally.
+So, in its form, the tool aims to help evaluating the internal potentials and limitations of a organization, service or process, and also to find and measure opportunities and threats externally.
     
+
+
+![swot-analysis-template-tool-diamond-shape](/images/articles/development/swot-analysis-template-tool-diamond-shape.jpeg)
+- [11 Free SWOT Analysis Templates and Examples](https://clickup.com/blog/swot-analysis-templates/) - Clickup.com
+
 
 
 ###### Advantages of SWOT Analysis
@@ -317,6 +334,9 @@ There are 2 basic limitations for this tool:
 
 
 
+
+
+
 #### RACI Matrix
 
 According to the site [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/), the **RACI Matrix**, also called **RACI Chart** or **RACI Model**, is a diagram that identifies the key roles and responsabilities of users against major tasks within a project, while it also servers as visual representation of the functional role played by each person on a project team.
@@ -325,22 +345,19 @@ According to the site [SoftwareAdvice.com](https://www.softwareadvice.com/resour
 The **RACI** acronym stands for **Responsible**, **Accountable**, **Consulted**, and **Informed**, all of which defines attributes for the roles and levels of involvement of each professional within a project:
 
 
-More over, the site also gives a `"PRO TIP"`, explaining that within this tool, responsabilities should better be definied in individual terms `as to avoid confusion and slow decision-making`. [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
+Moreover, the site also gives a `"PRO TIP"`, explaining that within this tool, responsabilities should better be definied in individual terms `as to avoid confusion and slow decision-making`. [SoftwareAdvice.com](https://www.softwareadvice.com/resources/what-is-a-raci-chart/)
 
 
 And, this other article from CIO, also makes the same clear remark about the importance of managing carefully the roles and responsabilities for each of the projects in a organization:
 
-`Having managed and rescued dozens of projects, and helped others do so, I’ve noted that there is always one critical success factor (CSF) that has either been effectively addressed or missed/messed up: clarity around the roles and responsibilities for each project participant and key stakeholder. No matter how detailed and complete a project plan may be for any project, confusion or omission of participant roles and responsibilities will cause major problems.` [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
+`"Having managed and rescued dozens of projects, and helped others do so, I’ve noted that there is always one critical success factor (CSF) that has either been effectively addressed or missed/messed up: clarity around the roles and responsibilities for each project participant and key stakeholder. No matter how detailed and complete a project plan may be for any project, confusion or omission of participant roles and responsibilities will cause major problems."` [Cio.com](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)
 
-
-- [11 Free SWOT Analysis Templates and Examples](https://clickup.com/blog/swot-analysis-templates/) - Clickup.com
-![swot-analysis-template-tool-diamond-shape](/images/articles/development/swot-analysis-template-tool-diamond-shape.jpeg)
 
 
 So, returning to the four basic points of analysis for this managing tool, we have that:
 
 1. **Responsible**: this attribute refers to a person directly related to work in a task/process at hand.  
-    1.1. But see that this attribute does not imply that should not be other persons which could also responsible for that same task/process to be made.
+    1.1. But see that this attribute does not imply that should not be other persons around which could also responsible for that same task/process to be made.
 2. **Accountable**: on the other hand, this one is a exclusive attribute which imparts to the ownership over some task or process; thus, giving to one person sole ownership to a task/process.   
     2.1. In this manner, then, this person will attain the sole voice to give account about it.
 3. **Consulted**: these are people or stakeholders who need to give their input before any work can be done or sign-off.
@@ -351,7 +368,8 @@ So, returning to the four basic points of analysis for this managing tool, we ha
 The site also cite a quotation from Gartner where it states the importance of clearly defining all the related authority and responsabilities for each endeavour that aims to be successful. 
 
 
-And the that site makes another interesting distinction when it adverts that the RACI Chart diagram does not replace any methodology for planning and managing, but it gives important help to all that same management processes in setting responsabilities visually and in simple terms.
+And that same site also makes another interesting distinction when it adverts that the RACI Chart diagram does not replace any methodology for planning and managing, but it gives important help to all that same management processes in setting responsabilities visually and in simple terms.
+
 
 
 
@@ -371,6 +389,7 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 
 
 
+
 ###### RACI Matrix Best Practices
 
 1. **Don't get too granular**: the RACI matrix is not the project plan, it is solely a visual tool to give agility into responsabilities.
@@ -379,16 +398,18 @@ The site [Cio.com](https://www.cio.com/article/287088/project-management-how-to-
 4. **Adding too many columns**: the diagram should be clear and simple, adding only key tasks.   
     4.1. So, do not add administrative tasks, like team meetings, for example.
 5. **Mixing up the persons who is responsible, and person who should be accountable for**: the person designated as 'responsible' for some task should not be also 'accountable' for that same task.   
-    5.1. Besides, this add a layer of compliance to the tool. 
+    5.1. Besides, this same caution into adding a separation between the ownership and the participation within a process/task serves also to bring a layer of compliance to the tool. 
 6. **Too many assignments given to one stakeholder**: this can lead to performance issues.
 7. **There can be no empty cells left behind**: since the tool aims to bring key tasks, there should not be important element unsigned in terms of responsabilities in the task/project document.
 8. **Clear aggrements**: there should be clear aggrement about the responsabilities taken in the document.
 
 
 
+
+
 ### Project Management Office (PMO)
 
-Project Management Office (PMO) is a new feature in governance and management that aims to be a link or bridge in an organization between the strategic departments and the production departments responsible for projects/services. 
+The **Project Management Office (PMO)** is a new feature in governance and management that aims to be a link or bridge in an organization between the strategic departments and the production departments responsible for projects/services. 
 
 
 It brings effort to create a professional structure that can manage and monitor projects and tasks, and even devise standardization or applying tools and methods to support the production teams, while stays connceted to the strategic demands from the stakeholder.
@@ -397,34 +418,31 @@ It brings effort to create a professional structure that can manage and monitor 
 As the site [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/) states, there has been a shift in the way some departments offer services as development projects, since Agile methods have been taking over and directing many of its practices.
 
 
-So, some of the results from this change is that the working teams are less focused on the top-down hierarchy of the compony and more aligned with its own responsabilities:
-
+So, some of the results from this change is that the working teams are less focused on the top-down hierarchy of the company and more aligned with its own responsabilities:
 1. **Focus on the aspect of the product they're working on**
 2. **Continously development of the services and products: making decisions and increasing the whole experience.**
 
 
 The problem with this new set is that it can result in some form of gap between the production from services/products and the business strategy:
 
+`"Some DevOps teams lose focus on the consumer’s needs and the company’s resources and focus entirely on releasing new features whether they’re necessary or not. Not all businesses seemed ideal for the application of Agile practices, especially without adding modifications such as standardized procedures. Establishing a core set of best practices and standards for all projects throughout the organization was a key for these companies to ensure everyone could maintain the newly expected pace while still delivering quality results."`  [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/)
 
-`Some DevOps teams lose focus on the consumer’s needs and the company’s resources and focus entirely on releasing new features whether they’re necessary or not. Not all businesses seemed ideal for the application of Agile practices, especially without adding modifications such as standardized procedures. Establishing a core set of best practices and standards for all projects throughout the organization was a key for these companies to ensure everyone could maintain the newly expected pace while still delivering quality results.`  [Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/)
 
-
-So, it is in this sense that a PMO team or deparment can be valuable for uniting both the efforts from production and from management, where the PMO can make this two set of works:
-
+So, it is in this sense that a **PMO team or deparment** can be valuable for uniting both the efforts from production and from management, where the PMO can make this two set of works:
 1. **To represent stakeholders and keep the effectiveness of the business model and its strategies.**
 2. **Help the effort of productions teams to complete projects and also to monitor the effectiveness of the projects procedures that were outlined.**
 
 
 The site [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) brings another important tasks that the PMO can use to improve management:
-
 1. **To consolidate documents and best practices across the organization**: this can be especially providential when a organization has a diverse group of production and also has changes within its personal.
 2. **Support and brace up project managers**: not only in the context of the group led by the project manager, but also across other groups inside the organization that can collaborate and share resources.
 
 
-Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) also brings some numbers about the problem related to projects completion. For that the site cites two reports:
-
+Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) also brings some numbers about the problem related to projects completion. For that, the site cites two reports:
 1. **68% of projects does not reach the goals from timeframe, costs, or scope**: from CHAOS Standish, from 2009.
 2. **From 1524 organizations, innadequate plannings and evaluations are responsible for 30% of the project failures**: and the second from a research from [PwC](https://www.pwc.com/ceosurvey).
+
+
 
 
 #### Primary Functions from a PMO
@@ -445,7 +463,8 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 
 
-#### The 3 Basic Types of a PMO
+
+#### Basic Types of a PMO
 
 1. **Corporative or centralized PMO**: this type is closer to the governance of the organization, and its responsabilities are more inline with bringing strategic value to the organization.   
     1.1. This kind is not the the more prevalent PMO to be found at the organizations.
@@ -460,25 +479,30 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 
 
+
+
 ### COBIT
 
-**COBIT** or **Control Objectives for Information and Related Technology** is a framework devised as a set of best practices and recommendations for IT Governance to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
+The **COBIT** framework or the **Control Objectives for Information and Related Technology** which is a framework devised as a set of best practices and recommendations for IT Governance, and to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
 
 
-`The COBIT Framework provides a tool for the business process owner that affect the discharge of business process tasks. COBIT is an IT-centric framework designed to provide users, businesses, and auditors with a standard approach for designing, implementing, and testing IT controls. This framework has been created and adopted by the Big N audit houses as a solution to some IT audit, compliance, and control problems.` [TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
+`"The COBIT Framework provides a tool for the business process owner that affect the discharge of business process tasks. COBIT is an IT-centric framework designed to provide users, businesses, and auditors with a standard approach for designing, implementing, and testing IT controls. This framework has been created and adopted by the Big N audit houses as a solution to some IT audit, compliance, and control problems."` [TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
 
 
-Moreover, COBIT provides maturity models, critical success factors, main objective indicators, and implementation indicators, administrative guidelines, etc.
+Moreover, **COBIT**, as a framework, also provides:
+1. **Mmaturity models**,
+2. **Critical success factors**,
+3. **Main objective indicators**, and
+4. **Implementation of indicators and administrative guidelines, etc.
 
 
-There is also certifications related to this framework, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring him closer to the core of the organization and its strategic plans.
-
+There is also certifications related to this framework, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring it closer to the core of the organization and its strategic plans:
 1. **COBIT 5 Foundation**
 2. **COBIT 5 Implementation**
 3. **COBIT 5 Assessor**
 
-
-###### Note: the certification does not have a revalidation date and has a 50% correction for approvement.
+- _**Note**_:
+- The certification does not have a revalidation date and has a 50% correction for approvement.
 
 
 There is a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
@@ -498,6 +522,7 @@ So, when thinking about the compound use of COBIT together with ITIL, there shou
 
 
 
+
 #### Funcionalities from COBIT 5   
 
 1. Planning and Organizing
@@ -507,10 +532,11 @@ So, when thinking about the compound use of COBIT together with ITIL, there shou
 
 
 
+
 #### Principles from COBIT 5
 
 1. **Meeting stakeholders needs**: since IT correlates to different parts of the administration, from strategic planning to the daily IT process, it should also meet the expectation of each involved part.
-2. **Covering the enterprise end to end**: since IT process spread acress all the departments and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
+2. **Covering the enterprise end to end**: since IT process spread across all the departments and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
 3. **Applying a single integrated framework**: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.
 4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
     4.1. Departments   
@@ -518,7 +544,11 @@ So, when thinking about the compound use of COBIT together with ITIL, there shou
     4.3. Activities   
     4.4. Resources and financial assets   
     4.5. Culture, etc.
-5. **Separating governance from management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly, from the evaluation of the quality and security of day-by-day management of processes, to the monitoring and evaluation of strategic goals and the value achieved.
+5. **Separating Governance from Management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly.  
+  5.1. So, from one side there should be the evaluation of the quality and security on a day-by-day basis for the management of processes,   
+  5.2. And, from the other side the necessity for the  monitoring and evaluation of strategic goals and its related the value that should be achieved.
+
+
 
 
 #### Advantages from the COBIT Framework
@@ -530,6 +560,8 @@ So, when thinking about the compound use of COBIT together with ITIL, there shou
 5. Productivity
 6. Compliance 
 7. Risk assessment
+
+
 
 
 
