@@ -591,14 +591,13 @@ From the ISACA's overview paper:
 4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations. And in the framework it is devised a set of seven _"Enablers"_, which would work to grasp this holistic ideal within an enterprise:   
   4.1. **Principles, Polices and Frameworks**: these are some general vehicles for guidelines.   
   4.2. **Processes**: this are the processes designed for certain objectives and to produce related goals.    
-  4.3. **Organisational Structures**: this are the _"key decision-making entities"_ in and organization (p. 23)
-  
+  4.3. **Organisational Structures**: this are the _"key decision-making entities"_ in and organization (p. 23)    
   4.4. **Culture, Ethics, and Behaviour**: this are sets of individual and organization factors that are _"very often underestimated as a success factor in governance and management activieties"_ (p. 23)   
-  5.5. **Information**: this is a resource _"pervasive throughout any organization, i.e., deals with all information produced and used by the enterprise. Information is required for keeping the organisations running and well governed, but at the operational level, information is very often the key product of the enterprise itself"_.    
-  4.6. **Services, Infrasctructure, and Applications**: these include the material and formal infrastructure/technology which facilitates and help to sustain the enterprise with information technology processing and servicing...        
+  4.5. **Information**: this is a resource _"pervasive throughout any organization, i.e., deals with all information produced and used by the enterprise. Information is required for keeping the organisations running and well governed, but at the operational level, information is very often the key product of the enterprise itself"_.   
+  4.6. **Services, Infrasctructure, and Applications**: these include the material and formal infrastructure/technology which facilitates and help to sustain the enterprise with information technology processing and servicing...    
   4.7. **People, Skills and Competencies**: these are the engines and the links that drive the activities, and make up for their correctness and corrective goals.
-5. **Separating Governance from Management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly.  
-  5.1. So, from one side there should be the evaluation of the quality and security on a day-by-day basis for the management of processes,   
+5. **Separating Governance from Management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly.   
+  5.1. So, from one side there should be the evaluation of the quality and security on a day-by-day basis for the management of processes.    
   5.2. And, from the other side the necessity for the  monitoring and evaluation of strategic goals and its related the value that should be achieved.
 
 
@@ -610,7 +609,7 @@ From the ISACA's overview paper:
 From this image by ISACA's overview paper (p. 28), it is possible to observe both the COBITs **Domains** and its related **Processes** that work together to sustain the enterprise governance:
 
 ![COBIT framework Domains and its related Processes](/images/articles/security/cobit-domains-and-processes-graph.png)
-- `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. (p. 4)
+- `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. (p. 28)
 
 
 So, in terms of its **Domains**, the COBIT framework works to reach the enterprise end-to-end, covering from Stakeholders until operations and its necessary monitoring:
@@ -628,7 +627,7 @@ And, as it can be seem in the image above, the COBIT framework joins **37 Proces
 
 ###### Evaluate, Direct, and Monitor (EDM)
 
-Here, at the Evaluating, Directing and Monitoring domain, we find 5 processes that starts with the verb to ensure:
+Here, at the Evaluating, Directing and Monitoring domain, we find 5 processes that starts with the verb _to Ensure_:
 1. **(EDM01) Ensure Governance Framework Setting and Maintenace**
 2. **(EDM02) Ensure Benefits Delivery**
 3. **(EDM03) Ensure Risk Optimisation**
@@ -641,7 +640,7 @@ Here, at the Evaluating, Directing and Monitoring domain, we find 5 processes th
 
 ###### Align, Plan, and Organise (APO)
 
-And for this second domain, we have 13 processes that starts with the verb to manage:
+And for this second domain, we have 13 processes that starts with the verb _to Manage_:
 1. **(APO01) Manage the IT Management Framework**
 2. **(APO02) Manage Strategy**
 3. **(APO03) Manage Enterprise Architecture**
@@ -661,7 +660,7 @@ And for this second domain, we have 13 processes that starts with the verb to ma
 
 ###### Build, Acquire, and Implement (BAI)
 
-At here, there 10 processes, and they start with the verb Manage also:
+At here, there 10 processes, and they also start with the verb _to Manage_:
 1. **(BAI01) Manage Programmes and Projects**
 2. **(BAI02) Manage Requirements Definition**
 3. **(BAI03) Manage Solutions, Identification and Build**
@@ -678,7 +677,7 @@ At here, there 10 processes, and they start with the verb Manage also:
 
 ###### Deliver, Service, and Support (DSS)
 
-In this next domain, there are 6 processess, also starting with the verb to manage:
+In this next domain, there are 6 processess, also starting with the verb _to manage_:
 1. **(DSS01) Manage Operations**
 2. **(DSS02) Manage Service Requests and Incidents**
 3. **(DSS03) Manage Problems**
@@ -689,9 +688,9 @@ In this next domain, there are 6 processess, also starting with the verb to mana
 
 
 
-##### Monitor, Evaluate, and Assess (MEA)
+###### Monitor, Evaluate, and Assess (MEA)
 
-Finally, at this 5th and last domain, there are 3 processess that start with this complex verb compound, to monitor, to evaluate and, to assess:
+Finally, at this 5th and last domain, there are 3 processess that start with this complex compound verb, _to Monitor, to Evaluate and, to Assess_:
 1. **(MEA01) Monitor, Evaluate and Assess Performance and Conformance**
 2. **(MEA02) Monitor, Evaluate and Assess the System of Internal Control** 
 3. **(MEA03) Monitor, Evaluate and Assess Compliance with External Requirements**
@@ -700,8 +699,14 @@ Finally, at this 5th and last domain, there are 3 processess that start with thi
 
 
 
-   
 #### Control Objectives from COBIT 5
+
+According to the site [ITSMDocs](https://www.itsm-docs.com/blogs/cobit/cobit-control-objectives), while the COBIT framework allows for maintaining stability, security and compliance for the IT operations, the COBIT'S **Control Objectives** specifically works to:
+
+_"provide measurable targets to enhance IT processes. These objectives not only streamline IT operations but also bolster risk management practices and ensure regulatory compliance"_ [COBIT Control Objectives](https://www.itsm-docs.com/blogs/cobit/cobit-control-objectives)
+
+
+/*MORE COMING SOON */
 
 
 
@@ -715,28 +720,50 @@ Finally, at this 5th and last domain, there are 3 processess that start with thi
 
 #### Implementation and Supporting Products
 
+This framework applies a **Implementation Cycle** designed to strength **Management**, enable **Change**, and evolve into a **Continous Improvement** cycle.
+
+
+For that to happen, the framwork devise controls objectives to help to setup all those processes inside each domain, and make they progress from that Governance and Management Culture, to Monitoring, Evaluations and Assessment to improve the Changes and to garantee a Continuous Improvement cycle.
+
+
+Thus, from this chart bellow, at ISACA's overview paper, it resumes the implementing cycle into 7 steps to get the drive of governace into action inside a enterprise:
+1. **What are the drivers?**      
+  1.1. So, Initiate the governamental programme stablishing the **desire to change** by **recognizing the need to act**.
+2. **Where are we now?**    
+  2.1. Here, the enterprise has to **define problems and opportunities**, then **form the implementation team**, and **assess the current state**.
+3. **Where do we want to be?**   
+  3.1. Now, **define a road map** capable of both **communicating the desired outcome** and clearly **defining that current state**.
+4. **What needs to be done?**   
+  4.1. Next, after defining the drivers and desire to change, and evaluating and defining the current state of the enterprise, comes the step to design the **plan programme**.   
+  4.2. This **plan programme** that collected the drivers direction and its counterpart in the reality of the organization, now in this planning phase has to be accounted into **identifying role players** to answer for those stats collected, and that should expect to be conveyed into **building improvements**.
+5. **How do we get there?**   
+  5.1. Finally, after closing all that preparating within the planning step, it is time to **execute the plan**, devising accurate **opperation and use**, always maintaing an eye into the **implementation of improvements** along the whole processs.
+6. **Did we get there?**   
+  6.1. Then, after putting the plan in motion, it is important to **realise the benefits** sown. Again, also here pertains the same notion of thinking of improvements, so **embed new forms of approaches**, by testing the **operation through metrics**.
+7. **How do we keep momentum going?**   
+  7.1. Thus, at the end of each cycle, **review effectivess** for the whole governance plan, working towards into keeping what was understood as necessary to be **sustained** and closing out with **monitoring and evaluation** to prepare for the next cycles of drivers and changes into the Governance Plan. 
+
+
+![COBIT implementation cycle](/images/articles/security/cobit-implementation-cycle-chart.png)
+- `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. (p. 36)
+
+
+
+Finally, **some of the tools that pertain to the COBIT 5 Family**:
+1. **COBIT 5 Enabler Guides**:   
+  1.1. COBIT 5 Enabling Processes   
+  1.2. COBIT 5 Enabling Information   
+  1.3. Other Enabler Guides
+2. **COBIT 5 Professional Guides**:   
+  2.1. COBIT 5 Implementation   
+  2.2. COBIT 5 for Information Security   
+  2.3. COBIT 5 for Assurance   
+  2.4. COBIT 5 for Risk   
+  2.5. Other Professrional Guides
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-2.1 Control Objectives for Information and Related Technology - COBIT 5: 
-[X] Conceitos básicos; 
-[X] Domínios; 
-[X] Processos; 
-[ ] Objetivos de controle.
 
 
 
@@ -790,6 +817,8 @@ Finally, at this 5th and last domain, there are 3 processess that start with thi
 [What is COBIT in information security? - TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
 
 [O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com](https://www.zendesk.com.br/blog/cobit-o-que-e/)
+
+[COBIT Control Objectives - ITSMDocs](https://www.itsm-docs.com/blogs/cobit/cobit-control-objectives)
 
 `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. Accessed: march, 8 2024. At: COBIT_5_ISACA_COBIT_5_ISACAs_new_framework_for_IT_Governance_Risk_Security_and_Auditing_An_overview_M_Garsoux_COBIT_5_Licensed_Training_Provider_COBIT_5_ISACA.
 
