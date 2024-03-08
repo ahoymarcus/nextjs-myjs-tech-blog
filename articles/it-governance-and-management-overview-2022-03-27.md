@@ -27,9 +27,12 @@ description: 'Considering some definitions from Control Objectives for Informati
     6.1. Primary Functions from a PMO    
     6.2. The 3 Basic Types of a PMO
 7. ##### COBIT
-    7.1. 4 Funcionalities from COBIT 5   
-    7.2. 5 Principles from COBIT 5    
-    7.3. Advantages from the COBIT Framework
+    7.1. Basic Concepts from the COBIT Framework   
+    7.2. Advantages from the COBIT Framework   
+    7.3. Principles from COBIT 5   
+    7.4. Domains, Processes and Funcionalities from COBIT 5   
+    7.5. Control Objectives from COBIT 5   
+    7.6. Implementation and Supporting Products
 8. ##### Further Reading
 9. ##### References
 
@@ -445,6 +448,7 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 
 
+
 #### Primary Functions from a PMO
 
 1. **Project management delivery**
@@ -460,6 +464,7 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 11. **Governance and performance management**
 12. **Performance reports**
 13. **Sharing information**
+
 
 
 
@@ -481,7 +486,12 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 
 
+
+
+
 ### COBIT
+
+#### Basic Concepts from the COBIT Framework
 
 The **COBIT** framework or the **Control Objectives for Information and Related Technology** which is a framework devised as a set of best practices and recommendations for IT Governance, and to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
 
@@ -490,13 +500,13 @@ The **COBIT** framework or the **Control Objectives for Information and Related 
 
 
 Moreover, **COBIT**, as a framework, also provides:
-1. **Mmaturity models**,
+1. **Maturity models**,
 2. **Critical success factors**,
 3. **Main objective indicators**, and
-4. **Implementation of indicators and administrative guidelines, etc.
+4. **Implementation of indicators and administrative guidelines**, etc.
 
 
-There is also certifications related to this framework, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring it closer to the core of the organization and its strategic plans:
+The COBIT framework may also provide many sets of certifications, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring it closer to the core of the organization and its strategic plans:
 1. **COBIT 5 Foundation**
 2. **COBIT 5 Implementation**
 3. **COBIT 5 Assessor**
@@ -505,7 +515,7 @@ There is also certifications related to this framework, which aims to showcase t
 - The certification does not have a revalidation date and has a 50% correction for approvement.
 
 
-There is a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
+There is also a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
 
 - **Information Management**
 - **IT Services Monitoring**
@@ -518,17 +528,23 @@ There is a set of tasks that are inherent to the scope of IT operations, and tha
 Another important point about COBIT is that it does not prevent its use together with other frameworks, like the Information Technology Infrastructure Library (ITIL), which is more inline with tasks management inside the IT department and its operartions.
 
 
-So, when thinking about the compound use of COBIT together with ITIL, there should be a specific focus on processes and stages related to IT Governance by the first, and there should be a specific focus on IT services put to the use for the whole operation by the second one, where with both there should be a aim of optimizing best practices to achieve the most value to the whole organization.
+So, when thinking about the compound use of **COBIT together with ITIL**, there should be a specific focus on processes and stages related to IT Governance by the first, and there should be a specific focus on IT services put to the use for the whole operation by the second one, where with both there should be a aim of optimizing best practices to achieve the most value to the whole organization.
 
 
 
 
-#### Funcionalities from COBIT 5   
 
-1. Planning and Organizing
-2. Acquirement and Organization
-3. Deliver and Support
-4. Monitoring and Evaluation
+#### Advantages from the COBIT Framework
+
+1. Strategic planning and IT department alignment
+2. Transparency form plans and goals
+3. Quality of the service
+4. Improve the value of IT operation
+5. Productivity
+6. Compliance 
+7. Risk assessment
+
+
 
 
 
@@ -551,18 +567,65 @@ So, when thinking about the compound use of COBIT together with ITIL, there shou
 
 
 
-#### Advantages from the COBIT Framework
 
-1. Strategic planning and IT department alignment
-2. Transparency form plans and goals
-3. Quality of the service
-4. Improve the value of IT operation
-5. Productivity
-6. Compliance 
-7. Risk assessment
+#### Domains, Processes and Funcionalities from COBIT 5
 
 
 
+
+
+
+
+###### Functionalities from the COBIT 5
+
+1. Planning and Organizing
+2. Acquirement and Organization
+3. Deliver and Support
+4. Monitoring and Evaluation
+
+
+
+
+
+
+
+   
+#### Control Objectives from COBIT 5
+
+
+
+
+
+
+
+
+
+
+
+#### Implementation and Supporting Products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.1 Control Objectives for Information and Related Technology - COBIT 5: 
+[X] Conceitos básicos; 
+[ ] Domínios; 
+[ ] Processos; 
+[ ] Objetivos de controle.
 
 
 
