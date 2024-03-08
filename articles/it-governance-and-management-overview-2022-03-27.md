@@ -588,12 +588,15 @@ From the ISACA's overview paper:
 2. **Covering the enterprise end to end**: since IT process spread across all the departments and operations, it is necessary that each and all of them should account to the IT assets and their assessment to the strategic plannig.
 3. **Applying a single integrated framework**: meaning that even when COBIT is used together with other frameworks, they should all be integrated to cover a broader, but single IT Governance and Management.   
   3.1. And, considering the some of the objectives presented at the ISACA's overview paper, the COBIT framework could be that instrument to act as a _"overarching governance and management framework integrator"_ (p. 20).   
-4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations:   
-  4.1. Departments or Organisational Structures: this are the _"key decision-making entities"_ in and organization (p. 23)
-  4.2. Activities or Service Infrastructure Applications: this are the processes designed for certain objectives and to produce related goals.     
-  4.3. Resources, financial assets, principles, polices and frameworks: this are some general vehicles for guidelines.   
-  4.4. Culture, Ethics, Behaviour, etc.: this are sets of individual and organization factors that are _"very often underestimated as a success factor in governance and management activieties"_ (p. 23)   
-  4.5. People, Skills and Competences: this are the engines and the links that drive the activities, and make up for their correctness and corrective goals.
+4. **Enabling a holistic approach**: this should imply that the effort with IT Governance and Management should involve every diverse field of the organizations. And in the framework it is devised a set of seven _"Enablers"_, which would work to grasp this holistic ideal within an enterprise:   
+  4.1. **Principles, Polices and Frameworks**: these are some general vehicles for guidelines.   
+  4.2. **Processes**: this are the processes designed for certain objectives and to produce related goals.    
+  4.3. **Organisational Structures**: this are the _"key decision-making entities"_ in and organization (p. 23)
+  
+  4.4. **Culture, Ethics, and Behaviour**: this are sets of individual and organization factors that are _"very often underestimated as a success factor in governance and management activieties"_ (p. 23)   
+  5.5. **Information**: this is a resource _"pervasive throughout any organization, i.e., deals with all information produced and used by the enterprise. Information is required for keeping the organisations running and well governed, but at the operational level, information is very often the key product of the enterprise itself"_.    
+  4.6. **Services, Infrasctructure, and Applications**: these include the material and formal infrastructure/technology which facilitates and help to sustain the enterprise with information technology processing and servicing...        
+  4.7. **People, Skills and Competencies**: these are the engines and the links that drive the activities, and make up for their correctness and corrective goals.
 5. **Separating Governance from Management**: here, there is the importance of creating some layers in the operation, and to separate each concern accordingly.  
   5.1. So, from one side there should be the evaluation of the quality and security on a day-by-day basis for the management of processes,   
   5.2. And, from the other side the necessity for the  monitoring and evaluation of strategic goals and its related the value that should be achieved.
@@ -613,14 +616,85 @@ From this image by ISACA's overview paper (p. 28), it is possible to observe bot
 So, in terms of its **Domains**, the COBIT framework works to reach the enterprise end-to-end, covering from Stakeholders until operations and its necessary monitoring:
 1. **Evaluate, Direct, and Monitor (EDM)**
 2. **Align, Plan, and Organise (APO)**
-2. **Build, Acquire, and Implement (BAI)**
-3. **Deliver, Service, and Support (DSS)**
-4. **Monitor, Evaluate, and Assess (MEA)**
+3. **Build, Acquire, and Implement (BAI)**
+4. **Deliver, Service, and Support (DSS)**
+5. **Monitor, Evaluate, and Assess (MEA)**
+
+
+And, as it can be seem in the image above, the COBIT framework joins **37 Processes** along those same **5 Domains** to devise its successfully script for Governance and Management and enterprise; and that in its division, the domains conform as 1 count for Governance, while 4 counts for Management.
+
+
+
+
+###### Evaluate, Direct, and Monitor (EDM)
+
+Here, at the Evaluating, Directing and Monitoring domain, we find 5 processes that starts with the verb to ensure:
+1. **(EDM01) Ensure Governance Framework Setting and Maintenace**
+2. **(EDM02) Ensure Benefits Delivery**
+3. **(EDM03) Ensure Risk Optimisation**
+4. **(EDM04) Ensure Resource Optimisation**
+5. **(EDM05) Ensure Stakeholder Transparency**
 
 
 
 
 
+###### Align, Plan, and Organise (APO)
+
+And for this second domain, we have 13 processes that starts with the verb to manage:
+1. **(APO01) Manage the IT Management Framework**
+2. **(APO02) Manage Strategy**
+3. **(APO03) Manage Enterprise Architecture**
+4. **(APO04) Manage Innovation**
+5. **(APO05) Manage Portifolio**
+6. **(APO06) Manage Budget and Costs**
+7. **(APO07) Manage Human Resources**
+8. **(APO08) Manage Relationships**
+9. **(APO09) Mange Service Agreements**
+10. **(APO10) Manage Suppliers**
+11. **(APO11) Manage Quality**
+12. **(APO12) Mange Risk**
+13. **(APO13) Manage Security**
+
+
+
+
+###### Build, Acquire, and Implement (BAI)
+
+At here, there 10 processes, and they start with the verb Manage also:
+1. **(BAI01) Manage Programmes and Projects**
+2. **(BAI02) Manage Requirements Definition**
+3. **(BAI03) Manage Solutions, Identification and Build**
+4. **(BAI04) Manage availability and Capability**
+5. **(BAI05) Manage Organisational Change Enablement**
+6. **(BAI06) Manage Changes**
+7. **(BAI07) Manage Change Acceptance and Transitioning**
+8. **(BAI08) Manage Knowledge**
+9. **(BAI09) Manage Assets**
+10. **(BAI10) Manage Configuration**
+
+
+
+
+###### Deliver, Service, and Support (DSS)
+
+In this next domain, there are 6 processess, also starting with the verb to manage:
+1. **(DSS01) Manage Operations**
+2. **(DSS02) Manage Service Requests and Incidents**
+3. **(DSS03) Manage Problems**
+4. **(DSS04) Manage Continuity**
+5. **(DSS05) Manage Security Services**
+6. **(DSS06) Manage Business Process Controls**
+
+
+
+
+##### Monitor, Evaluate, and Assess (MEA)
+
+Finally, at this 5th and last domain, there are 3 processess that start with this complex verb compound, to monitor, to evaluate and, to assess:
+1. **(MEA01) Monitor, Evaluate and Assess Performance and Conformance**
+2. **(MEA02) Monitor, Evaluate and Assess the System of Internal Control** 
+3. **(MEA03) Monitor, Evaluate and Assess Compliance with External Requirements**
 
 
 
@@ -660,8 +734,8 @@ So, in terms of its **Domains**, the COBIT framework works to reach the enterpri
 
 2.1 Control Objectives for Information and Related Technology - COBIT 5: 
 [X] Conceitos básicos; 
-[ ] Domínios; 
-[ ] Processos; 
+[X] Domínios; 
+[X] Processos; 
 [ ] Objetivos de controle.
 
 
