@@ -493,7 +493,7 @@ Besides, the same site above, [ProjectBuilder.com](https://www.projectbuilder.co
 
 #### Basic Concepts from the COBIT Framework
 
-The **COBIT** framework or the **Control Objectives for Information and Related Technology** which is a framework devised as a set of best practices and recommendations for IT Governance, and to promote security and quality within the IT operations, and it was developed in the 1990s by the IT Governance Institute.
+The **COBIT** framework or the **Control Objectives for Information and Related Technology** which is a framework devised as a set of best practices and recommendations for IT Governance, and to promote security and quality within the IT operations, and it was developed in the 1990s by ISACA (Information Systems Audit & Control Association) and IT Governance Institute.
 
 
 `"The COBIT Framework provides a tool for the business process owner that affect the discharge of business process tasks. COBIT is an IT-centric framework designed to provide users, businesses, and auditors with a standard approach for designing, implementing, and testing IT controls. This framework has been created and adopted by the Big N audit houses as a solution to some IT audit, compliance, and control problems."` [TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
@@ -507,9 +507,9 @@ Moreover, **COBIT**, as a framework, also provides:
 
 
 The COBIT framework may also provide many sets of certifications, which aims to showcase the IT professinal knowledge on the COBIT `foundations` and `principles`, and to bring it closer to the core of the organization and its strategic plans:
-1. **COBIT 5 Foundation**
-2. **COBIT 5 Implementation**
-3. **COBIT 5 Assessor**
+- **COBIT 5 Foundation**
+- **COBIT 5 Implementation**
+- **COBIT 5 Assessor**
 
 - _**Note**_:
 - The certification does not have a revalidation date and has a 50% correction for approvement.
@@ -517,18 +517,50 @@ The COBIT framework may also provide many sets of certifications, which aims to 
 
 There is also a set of tasks that are inherent to the scope of IT operations, and that should be addressed with high priority:
 
-- **Information Management**
-- **IT Services Monitoring**
-- **The Work Force**
-- **Security**
-- **Data Administration**
-- **Crisis Contaiment**
+1. **Information Management**
+2. **IT Services Monitoring**
+3. **The Work Force**
+4. **Security**
+5. **Data Administration**
+6. **Crisis Contaiment**
 
 
 Another important point about COBIT is that it does not prevent its use together with other frameworks, like the Information Technology Infrastructure Library (ITIL), which is more inline with tasks management inside the IT department and its operartions.
 
 
 So, when thinking about the compound use of **COBIT together with ITIL**, there should be a specific focus on processes and stages related to IT Governance by the first, and there should be a specific focus on IT services put to the use for the whole operation by the second one, where with both there should be a aim of optimizing best practices to achieve the most value to the whole organization.
+
+
+From the ISACAS's overview paper, `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`, we learn that in its evolution the **COBIT framework** has been shifting its focus to reach a more holistic view of the enterprise at each of its steps:
+
+![raci-matrix-example-01](/images/articles/security/cobit-framework-evolution-graph.png)
+
+- `COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. (p. 4)
+
+So, as we can see, starting in 1996 with a **audit** orientation at its first version, the COBIT framework has passed through stages of **Control**, **Management**, **IT Governance**, between its versions 2, 3 and 4. And finally reaching a **Governance of Enterprise IT** view in its last scope as COBIT 5, in 2012.
+
+
+So, this current version of the framework that aims to provide end-to-end **information value** to businesses, because as it is stated at that same overview paper, it can improve the use of that information as:
+1. **Information is a key resource for all enterprises**
+2. **Information is created, use, retained, disclesed and destroyed**
+3. **Technology plays a key role in these actions**
+4. **Technology is becoming pervasive in all aspects of business and personal life**
+
+
+And thus, by providing proper sound information, the framework can help with **some of the struggles** that enterprises and executives strive to achieve:
+- Maintain quality and soundness of information to support business decisions.
+- Generate value from IT-enabled investiment.
+- Achieve operational excellence.
+- Maintain IT-related risk at an accepted level.
+- Optimise the cost of IT services and technology.
+
+
+Again, it's importantant to observe the focus presented at the high value of **information** for this framework:
+- Order complex standards and frameworks.
+- Extract value from the information chaos.
+- Recognize and address the stakeholders needs.
+- Maximize value for corporate information.
+- Protect and drive the enterprise value.
 
 
 
@@ -631,14 +663,16 @@ So, when thinking about the compound use of **COBIT together with ITIL**, there 
 
 ### Further Reading
 
-[COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
+- [COBIT - ISACA.org](https://www.isaca.org/resources/cobit)
 
-[How to Make a RACI Chart for a Project (with Example) - ProjectManager.com](https://www.projectmanager.com/blog/how-to-make-a-raci-chart-for-a-project-with-example)
+- [How to Make a RACI Chart for a Project (with Example) - ProjectManager.com](https://www.projectmanager.com/blog/how-to-make-a-raci-chart-for-a-project-with-example)
 
-[O que é PMO? 7 passos para implantar um escritório de projetos com sucesso na sua empresa!](https://www.euax.com.br/2018/09/pmo-escritorio-de-projetos/)
+- [O que é PMO? 7 passos para implantar um escritório de projetos com sucesso na sua empresa!](https://www.euax.com.br/2018/09/pmo-escritorio-de-projetos/)
 
 
 ### References
+
+- General Concepts:
 
 [What is IT management? - IBM](https://www.ibm.com/topics/it-management)
 
@@ -648,9 +682,10 @@ So, when thinking about the compound use of **COBIT together with ITIL**, there 
 
 [IT Governance vs IT Management: Mastering the Differences - Bmc.com](https://www.bmc.com/blogs/governance-vs-management/)
 
-[O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com](https://www.zendesk.com.br/blog/cobit-o-que-e/)
 
-[What is COBIT in information security? - TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
+
+
+- Balance Scorecard, KPI, OKR, SWOT Analysis, RACI Matrix, Project Management Office {PMO)
 
 [OKRs Vs. KPIs: Breaking Down The Difference - ClearPointStrategy.com](https://www.clearpointstrategy.com/okrs-vs-kpis/)
 
@@ -667,6 +702,21 @@ So, when thinking about the compound use of **COBIT together with ITIL**, there 
 [The Project Management Office (PMO) & Its Role in IT Organizations - Bmc.com](https://www.bmc.com/blogs/pmo-project-management-office/)
 
 [Project Management Office: tudo o que você precisa saber - ProjectBuilder.com](https://www.projectbuilder.com.br/blog/project-management-office-tudo-o-que-voce-precisa-saber/) 
+
+
+
+
+- COBIT Framework
+
+[What is COBIT in information security? - TutorialsPoint](https://www.tutorialspoint.com/what-is-cobit-in-information-security)
+
+[O que é COBIT? Para que serve? Quais os benefícios? - Zendesk.com](https://www.zendesk.com.br/blog/cobit-o-que-e/)
+
+`COBIT 5 ISACA’s new framework for IT Governance, Risk, Security and Auditing An overview`. Accessed: march, 8 2024. At: COBIT_5_ISACA_COBIT_5_ISACAs_new_framework_for_IT_Governance_Risk_Security_and_Auditing_An_overview_M_Garsoux_COBIT_5_Licensed_Training_Provider_COBIT_5_ISACA.
+
+
+
+
 
 
 [^1]:pmbok-and-project-management-methodologies-2022-03-29
